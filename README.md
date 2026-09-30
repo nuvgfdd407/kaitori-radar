@@ -87,16 +87,20 @@ python -m http.server 8765 --directory public
    - アクセスは必ず引数の `http.get()` を使う（アクセス間隔と再試行を共通で管理している）
 2. `scraper/shops/__init__.py` の `SHOPS` に追加する（並び順が表の列の順になる）
 
-## 公開の手順（予定）
+## 公開の仕組み
 
-1. GitHub に**公開リポジトリ**を作ってプッシュする（公開リポジトリなら GitHub Actions は無料）
-2. リポジトリの Secrets に `YAHOO_CLIENT_ID` を登録する
-3. Actions の画面で「商品画像の更新」と「買取価格の更新」を手動実行し、全店舗が取得できるか確認する
-   - GitHub Actions はデータセンターからアクセスするため、店舗によっては弾かれる可能性がある
-4. Cloudflare Pages でリポジトリを接続し、公開ディレクトリを `public` にする
-
-Cloudflare Pages の無料プランはビルドが月500回までです。価格が変わったときだけコミットする作りにしていますが、
-変更の頻度が高く上限を超えそうな場合は、公開方法を見直します。
+- リポジトリ: https://github.com/nuvgfdd407/kaitori-radar （公開リポジトリなので GitHub Actions は無料）
+- サイトは Cloudflare Pages の `kaitori-radar` プロジェクトに、GitHub Actions から直接アップロードする（Direct Upload）
+  - Cloudflare Pages と GitHub を直接つなぐ方式は、コミットのたびにビルドが数えられ、無料プランの月500回を超えるおそれがあるため使わない
+  - 価格が変わったときは「買取価格の更新」の最後で公開し直す
+  - `public/` の中を変えてプッシュしたときは「サイトの公開」が公開し直す（Actions の画面から手動でも実行できる）
+- GitHub の Secrets に登録するもの
+  - `YAHOO_CLIENT_ID`: Yahoo!デベロッパーネットワークの Client ID
+  - `CLOUDFLARE_API_TOKEN`: Cloudflare の API トークン（権限は Account → Cloudflare Pages → Edit）
+  - `CLOUDFLARE_ACCOUNT_ID`: Cloudflare のアカウントID
+- GitHub Actions はデータセンターからアクセスするため、店舗によっては一時的につながらないことがある
+  （つながらなかった店舗は前回の価格を残し、画面にお知らせを出す）
+- 自動更新のコミットが GitHub 側に増えていくので、手元で作業するときは先に `git pull` する
 
 ## 注意
 

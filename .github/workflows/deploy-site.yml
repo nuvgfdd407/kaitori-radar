@@ -1,0 +1,26 @@
+name: サイトの公開
+
+# 画面のファイル（public/ の中）を変えてプッシュしたときに、Cloudflare Pages に公開する。
+# 価格の自動更新による公開は「買取価格の更新」の中で行っている。
+on:
+  push:
+    branches: [main]
+    paths: ["public/**", ".github/workflows/deploy-site.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=kaitori-radar --branch=main
