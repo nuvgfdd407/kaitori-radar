@@ -275,6 +275,9 @@ tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }
 .yahoo-credit { font-size: 15px; }
 .yahoo-credit a { color: revert; }
 
+.not-found { padding: 64px 16px; text-align: center; }
+.not-found h1 { font-size: 22px; }
+
 @media (max-width: 600px) {
   body { font-size: 14px; }
   .site-title { font-size: 19px; }

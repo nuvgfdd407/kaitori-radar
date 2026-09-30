@@ -89,6 +89,11 @@ python -m http.server 8765 --directory public
 
 ## 公開の仕組み
 
+- サイト: https://kaitori-radar.com （Cloudflare で取得したドメイン。`kaitori-radar-a5l.pages.dev` でも開ける）
+  - 検索エンジンには `kaitori-radar.com` が正式なURLだと伝えている（index.html の canonical）
+  - `public/robots.txt`・`public/sitemap.xml` は検索エンジン向け。ページを増やしたらサイトマップにも追加する
+  - `public/404.html` がないと、Cloudflare Pages はどのURLでもトップページを返してしまうので消さない
+  - 共有用の画像 `public/ogp.png` は `python scripts/make_ogp_image.py` で作る（要 `pip install pillow`）
 - リポジトリ: https://github.com/nuvgfdd407/kaitori-radar （公開リポジトリなので GitHub Actions は無料）
 - サイトは Cloudflare Pages の `kaitori-radar` プロジェクトに、GitHub Actions から直接アップロードする（Direct Upload）
   - Cloudflare Pages と GitHub を直接つなぐ方式は、コミットのたびにビルドが数えられ、無料プランの月500回を超えるおそれがあるため使わない
