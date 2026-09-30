@@ -1,0 +1,287 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-2: #f0f2f5;
+  --text: #1c222c;
+  --muted: #667085;
+  --line: #e2e5ea;
+  --brand: #3b5bdb;
+  --brand-contrast: #ffffff;
+  --best-bg: #fff3c4;
+  --best-text: #6b4e00;
+  --pos: #0b7a43;
+  --neg: #c92a2a;
+  --warn-bg: #fff4e5;
+  --warn-line: #f5b25b;
+  --tag-bg: #eef0f4;
+  --shadow: 0 1px 2px rgb(16 24 40 / 6%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1217;
+    --surface: #171b22;
+    --surface-2: #1e232c;
+    --text: #e7eaf0;
+    --muted: #9aa3b2;
+    --line: #2b313b;
+    --brand: #7b93ff;
+    --brand-contrast: #0f1217;
+    --best-bg: #3d3210;
+    --best-text: #ffd966;
+    --pos: #3ecf8e;
+    --neg: #ff7b7b;
+    --warn-bg: #3a2a12;
+    --warn-line: #9a6a24;
+    --tag-bg: #262c36;
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a { color: var(--brand); }
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ヘッダー */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0 16px;
+  margin-bottom: 16px;
+}
+.site-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  letter-spacing: .02em;
+}
+.logo-mark { width: 1.3em; height: 1.3em; flex: none; }
+.logo-bg { fill: var(--brand); }
+.logo-ring { fill: none; stroke: #fff; stroke-opacity: .45; stroke-width: 1.5; }
+.logo-sweep { fill: #fff; fill-opacity: .3; }
+.logo-beam { stroke: #fff; stroke-width: 2; stroke-linecap: round; }
+.logo-blip { fill: #ffd43b; }
+.lead { margin: 4px 0 0; color: var(--muted); }
+.lead strong { color: var(--text); }
+.meta {
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+#updated { color: var(--text); font-weight: 600; }
+
+/* お知らせ（取得エラーなど） */
+.alert {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+/* 絞り込み・並び替え */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-bottom: 8px;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--brand); }
+.chip[aria-pressed="true"] {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-contrast);
+  font-weight: 600;
+}
+.sort { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.sort select {
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+.count { margin: 0 0 6px; font-size: 12px; color: var(--muted); }
+
+/* 比較表。表の中だけをスクロールさせ、見出し行と商品名の列を固定する */
+.table-wrap {
+  overflow: auto;
+  max-height: 80vh;
+  max-height: 80dvh;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.price-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.price-table th,
+.price-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  vertical-align: middle;
+}
+.price-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-2);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  text-align: right;
+}
+.price-table thead th:first-child { text-align: left; }
+.price-table thead th a { color: inherit; }
+.price-table .col-name {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 16em;
+  max-width: 25em;
+  text-align: left;
+  font-weight: 400;
+  border-right: 1px solid var(--line);
+}
+.price-table thead .col-name { z-index: 3; }
+
+.name-wrap { display: flex; align-items: center; gap: 10px; }
+.thumb {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  /* 商品画像は白背景のものが多いので、ダークモードでも白い台紙に載せる */
+  background: #fff;
+}
+.thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.thumb-empty { background: var(--surface-2); }
+
+.product { display: block; font-weight: 600; font-size: 14px; line-height: 1.4; }
+.sub { display: block; font-size: 11px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+.tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-left: 4px;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.num { text-align: right; white-space: nowrap; }
+.col-best { font-weight: 700; font-size: 15px; }
+.profit.pos { color: var(--pos); font-weight: 600; }
+.profit.neg { color: var(--neg); font-weight: 600; }
+.none { color: var(--muted); }
+
+.shop a { color: var(--text); text-decoration: none; }
+.shop a:hover { text-decoration: underline; }
+.shop.is-best { background: var(--best-bg); }
+.shop.is-best a { color: var(--best-text); font-weight: 700; }
+.shop.is-stale a { color: var(--muted); font-style: italic; }
+.warn-mark { color: var(--neg); margin-left: 2px; }
+
+.group th {
+  background: var(--surface-2);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.group th span { position: sticky; left: 10px; }
+
+tbody tr:not(.group):hover td,
+tbody tr:not(.group):hover th { background: var(--surface-2); }
+tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }
+
+.empty { text-align: center; color: var(--muted); padding: 24px; }
+
+/* 注意書き・フッター */
+.notes {
+  margin: 24px 0 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.notes h2 { font-size: 14px; color: var(--text); margin: 0 0 6px; }
+.notes ul { margin: 0; padding-left: 1.2em; }
+.sources a { margin-right: 10px; }
+.site-footer {
+  margin-top: 24px;
+  padding: 16px 0 32px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.site-footer p { margin: 0 0 8px; }
+/* Yahoo!のクレジット表記は色や大きさを変えてはいけないので、ブラウザ標準の見た目に戻す */
+.yahoo-credit { font-size: 15px; }
+.yahoo-credit a { color: revert; }
+
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  .site-title { font-size: 19px; }
+  .price-table th, .price-table td { padding: 7px 8px; }
+  .price-table .col-name { min-width: 12.5em; max-width: 13.5em; }
+  .name-wrap { gap: 8px; }
+  .thumb { width: 34px; height: 34px; }
+  .product { font-size: 13px; }
+  .col-best { font-size: 14px; }
+}
