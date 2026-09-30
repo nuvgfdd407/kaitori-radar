@@ -41,11 +41,14 @@ jobs:
           git commit -m "買取価格を更新"
           git push
 
-      # 価格が変わったときだけ、Cloudflare Pages に公開し直す
+      # 価格が変わったときだけ、サイトを組み立て直して Cloudflare Pages に公開する
       # （この実行が作ったコミットでは他のワークフローが動かないので、ここで公開まで行う）
+      - if: steps.update.outputs.changed == 'true'
+        run: python -m scraper.build
+
       - if: steps.update.outputs.changed == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=kaitori-radar --branch=main
+          command: pages deploy dist --project-name=kaitori-radar --branch=main

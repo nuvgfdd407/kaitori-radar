@@ -6,6 +6,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog" / "products.json"
 IMAGES = ROOT / "catalog" / "images.json"
+PRICES = ROOT / "public" / "data" / "prices.json"
+
+# 公開しているサイトの正式なURL（canonical やサイトマップに使う）
+SITE_URL = "https://kaitori-radar.com"
 
 
 def load_json(path):

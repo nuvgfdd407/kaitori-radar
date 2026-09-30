@@ -19,10 +19,23 @@ GitHub Actions（15分ごと）
       ├ 各店舗のサイトから価格を取得（店舗ごとに並行して実行）
       ├ catalog/products.json の商品と JAN コードで突き合わせ、画像も載せる
       └ 価格が変わったときだけ public/data/prices.json を更新してコミット
+  └ python -m scraper.build（価格が変わったときだけ）
+      └ public/ と prices.json から、公開用のサイトを dist/ に組み立てる
             ↓
-public/ をそのまま公開（Cloudflare Pages など）
-  └ index.html が data/prices.json を読み込んで表を表示
+dist/ を Cloudflare Pages に公開
 ```
+
+公開するページ（HTMLは `scraper/build.py` と `scraper/templates.py` が作る）
+
+| URL | 内容 |
+|---|---|
+| `/` | 全商品の比較表 |
+| `/switch2/`・`/switch/`・`/ps5/`・`/xbox/` | 機種ごとの比較表 |
+| `/item/<JAN>/` | 商品ごとの、店舗別の価格（高い順） |
+| `/sitemap.xml` | 上のすべてのページの一覧（組み立てるときに自動で作る） |
+
+表はHTMLとして組み立てておく（検索エンジンが JavaScript なしで価格を読めるように）。
+`public/app.js` は表の並び替えと、切れた画像の差し替えだけを行う。
 
 ## ファイル構成
 
@@ -33,7 +46,9 @@ public/ をそのまま公開（Cloudflare Pages など）
 | `scraper/shops/*.py` | 店舗ごとの取得処理 |
 | `scraper/update.py` | 全店舗の取得と `prices.json` の書き出し |
 | `scraper/images.py` | Yahoo!ショッピングからの商品画像の取得 |
-| `public/` | 公開するページ（HTML・CSS・JavaScript・価格データ） |
+| `scraper/build.py`・`scraper/templates.py` | 公開用のサイトを `dist/` に組み立てる（ページのHTMLのひな形は templates.py） |
+| `public/` | そのまま公開するファイル（CSS・JavaScript・画像・robots.txt・404ページ・価格データ） |
+| `dist/` | 組み立てたサイト（生成物なので Git には入れない） |
 | `reports/unmatched.json` | カタログにない2万円以上の商品（新しい本体の登録漏れチェック用。公開はしない） |
 | `.github/workflows/update-prices.yml` | 15分ごとの価格の更新 |
 | `.github/workflows/update-images.yml` | 1日1回の画像の更新 |
@@ -44,10 +59,11 @@ public/ をそのまま公開（Cloudflare Pages など）
 python -m venv .venv
 .venv/Scripts/python -m pip install -r requirements.txt   # macOS / Linux は .venv/bin/python
 .venv/Scripts/python -m scraper.update
-python -m http.server 8765 --directory public
+.venv/Scripts/python -m scraper.build
+python -m http.server 8765 --directory dist
 ```
 
-ブラウザで http://localhost:8765 を開きます（`index.html` を直接開くと、データを読み込めません）。
+ブラウザで http://localhost:8765 を開きます。画面やひな形を変えたら、`scraper.build` を実行し直してください。
 
 ## 商品を追加する
 
@@ -90,15 +106,16 @@ python -m http.server 8765 --directory public
 ## 公開の仕組み
 
 - サイト: https://kaitori-radar.com （Cloudflare で取得したドメイン。`kaitori-radar-a5l.pages.dev` でも開ける）
-  - 検索エンジンには `kaitori-radar.com` が正式なURLだと伝えている（index.html の canonical）
-  - `public/robots.txt`・`public/sitemap.xml` は検索エンジン向け。ページを増やしたらサイトマップにも追加する
+  - 検索エンジンには `kaitori-radar.com` が正式なURLだと伝えている（各ページの canonical。`scraper/common.py` の `SITE_URL`）
+  - `public/robots.txt` と、組み立てのときに作る `sitemap.xml` は検索エンジン向け（Search Console に登録済み）
   - `public/404.html` がないと、Cloudflare Pages はどのURLでもトップページを返してしまうので消さない
   - 共有用の画像 `public/ogp.png` は `python scripts/make_ogp_image.py` で作る（要 `pip install pillow`）
 - リポジトリ: https://github.com/nuvgfdd407/kaitori-radar （公開リポジトリなので GitHub Actions は無料）
 - サイトは Cloudflare Pages の `kaitori-radar` プロジェクトに、GitHub Actions から直接アップロードする（Direct Upload）
   - Cloudflare Pages と GitHub を直接つなぐ方式は、コミットのたびにビルドが数えられ、無料プランの月500回を超えるおそれがあるため使わない
-  - 価格が変わったときは「買取価格の更新」の最後で公開し直す
-  - `public/` の中を変えてプッシュしたときは「サイトの公開」が公開し直す（Actions の画面から手動でも実行できる）
+  - 価格が変わったときは「買取価格の更新」の最後で、組み立て直して公開する
+  - `public/` の中やページのひな形を変えてプッシュしたときは「サイトの公開」が組み立て直して公開する（Actions の画面から手動でも実行できる）
+  - CSS と JavaScript は、中身から作った目印を付けたURL（`/style.css?v=…`）で読み込むので、公開し直すとブラウザも新しいファイルを使う
 - GitHub の Secrets に登録するもの
   - `YAHOO_CLIENT_ID`: Yahoo!デベロッパーネットワークの Client ID
   - `CLOUDFLARE_API_TOKEN`: Cloudflare の API トークン（権限は Account → Cloudflare Pages → Edit）

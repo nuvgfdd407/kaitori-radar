@@ -76,11 +76,16 @@ a { color: var(--brand); }
 }
 .site-title {
   margin: 0;
-  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.site-title a {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 22px;
-  letter-spacing: .02em;
+  color: inherit;
+  text-decoration: none;
 }
 .logo-mark { width: 1.3em; height: 1.3em; flex: none; }
 .logo-bg { fill: var(--brand); }
@@ -88,17 +93,23 @@ a { color: var(--brand); }
 .logo-sweep { fill: #fff; fill-opacity: .3; }
 .logo-beam { stroke: #fff; stroke-width: 2; stroke-linecap: round; }
 .logo-blip { fill: #ffd43b; }
-.lead { margin: 4px 0 0; color: var(--muted); }
-.lead strong { color: var(--text); }
 .meta {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 4px 12px;
   font-size: 13px;
   color: var(--muted);
 }
-#updated { color: var(--text); font-weight: 600; }
+.updated { color: var(--text); font-weight: 600; }
+
+/* ページの見出しと説明 */
+.page-title { font-size: 20px; line-height: 1.4; margin: 16px 0 6px; }
+.lead { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+.lead strong { color: var(--text); }
+.section-title { font-size: 16px; margin: 24px 0 8px; }
+.breadcrumb { font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
+.breadcrumb a { color: var(--muted); }
 
 /* お知らせ（取得エラーなど） */
 .alert {
@@ -126,12 +137,11 @@ a { color: var(--brand); }
   color: var(--text);
   border-radius: 999px;
   padding: 5px 12px;
-  font: inherit;
   font-size: 13px;
-  cursor: pointer;
+  text-decoration: none;
 }
 .chip:hover { border-color: var(--brand); }
-.chip[aria-pressed="true"] {
+.chip[aria-current="page"] {
   background: var(--brand);
   border-color: var(--brand);
   color: var(--brand-contrast);
@@ -213,8 +223,10 @@ a { color: var(--brand); }
 }
 .thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .thumb-empty { background: var(--surface-2); }
+.thumb--large { width: 112px; height: 112px; border-radius: 10px; }
 
-.product { display: block; font-weight: 600; font-size: 14px; line-height: 1.4; }
+.product { display: block; font-weight: 600; font-size: 14px; line-height: 1.4; color: var(--text); text-decoration: none; }
+a.product:hover { text-decoration: underline; }
 .sub { display: block; font-size: 11px; color: var(--muted); font-weight: 400; margin-top: 2px; }
 .tag {
   display: inline-block;
@@ -248,6 +260,55 @@ a { color: var(--brand); }
   padding-bottom: 6px;
 }
 .group th span { position: sticky; left: 10px; }
+.group th a { color: inherit; text-decoration: none; }
+.group th a:hover { text-decoration: underline; }
+
+/* 商品ページ */
+.item-summary {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+.item-heading .page-title { margin-top: 0; }
+.item-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 10px 0 12px;
+}
+.item-facts dt { font-size: 12px; color: var(--muted); }
+.item-facts dd { margin: 0; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.item-facts .col-best { font-size: 20px; }
+.table-wrap--auto { max-height: none; }
+.shop-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.shop-table th, .shop-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.shop-table thead th { background: var(--surface-2); font-size: 12px; color: var(--muted); font-weight: 600; }
+.shop-table .num { text-align: right; }
+.shop-table .price a { color: var(--text); font-weight: 600; }
+.shop-table tr.is-best td, .shop-table tr.is-best th { background: var(--best-bg); }
+.shop-table tr.is-best .price a { color: var(--best-text); font-weight: 700; }
+.shop-table tr.is-stale .price a { color: var(--muted); font-style: italic; }
+.shop-table .diff { color: var(--muted); font-size: 13px; }
+.shop-table tr.none th, .shop-table tr.none td { color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 0 0 12px; }
+.related li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.related-price { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 tbody tr:not(.group):hover td,
 tbody tr:not(.group):hover th { background: var(--surface-2); }
@@ -285,6 +346,9 @@ tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }
   .price-table .col-name { min-width: 12.5em; max-width: 13.5em; }
   .name-wrap { gap: 8px; }
   .thumb { width: 34px; height: 34px; }
+  .thumb--large { width: 80px; height: 80px; }
   .product { font-size: 13px; }
   .col-best { font-size: 14px; }
+  .page-title { font-size: 18px; }
+  .item-summary { gap: 12px; }
 }
