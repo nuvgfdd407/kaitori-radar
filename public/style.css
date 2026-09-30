@@ -310,6 +310,80 @@ a.product:hover { text-decoration: underline; }
 }
 .related-price { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
+/* 比較リスト。ボタンは JavaScript が動くときだけ出す */
+.add-btn { display: none; }
+.js .add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: none;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--brand);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.js .add-btn:hover { border-color: var(--brand); }
+.add-btn .add-icon::before { content: "＋"; }
+.add-btn[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: var(--brand-contrast); }
+.add-btn[aria-pressed="true"] .add-icon::before { content: "✓"; }
+.name-wrap .add-btn { margin-left: auto; }
+.js .add-btn--label { height: 34px; padding: 0 14px; margin-bottom: 8px; }
+
+.cart-bar {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: var(--brand-contrast);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgb(16 24 40 / 20%);
+}
+.cart-bar strong { font-size: 16px; }
+
+.cart-table .qty { white-space: nowrap; }
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.qty-btn:disabled { opacity: .4; cursor: default; }
+.qty-value { display: inline-block; min-width: 2em; text-align: center; font-variant-numeric: tabular-nums; }
+.link-btn { border: 0; background: none; color: var(--brand); font: inherit; font-size: 13px; cursor: pointer; text-decoration: underline; }
+.cart-total { font-size: 15px; margin: 0 0 4px; }
+.cart-total strong { font-size: 24px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.cart-note { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+.cart-note strong { color: var(--pos); }
+.plan { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.plan-shop {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.plan-shop h3 { display: flex; justify-content: space-between; margin: 0 0 6px; font-size: 15px; }
+.plan-subtotal { font-variant-numeric: tabular-nums; }
+.plan-shop ul { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.plan-shop li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-top: 1px solid var(--line); }
+.plan-shop li span { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
 tbody tr:not(.group):hover td,
 tbody tr:not(.group):hover th { background: var(--surface-2); }
 tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }

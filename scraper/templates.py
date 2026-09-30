@@ -40,14 +40,18 @@ NONE_CELL = '<td class="num none">—</td>'
 
 # ---- 共通の外枠 ---------------------------------------------------------------
 
-def page(site, *, path, title, description, active, content, controls="", breadcrumbs=None):
+def page(site, *, path, title, description, active, content, controls="", breadcrumbs=None,
+         noindex=False, page_id=""):
     """全ページ共通の外枠。
 
     site は build.py が用意する辞書（shops・series・updated・shop_count など）。
     active はシリーズの切り替えで強調するもの（"all" またはシリーズID）。
+    noindex は検索結果に出さないページ（比較リストなど、人ごとに中身が違うページ）。
     """
     url = SITE_URL + path
     structured = _breadcrumb_json(breadcrumbs) if breadcrumbs else ""
+    robots = '\n  <meta name="robots" content="noindex">' if noindex else ""
+    body_attr = f' data-page="{page_id}"' if page_id else ""
     return f"""<!doctype html>
 <html lang="ja">
 <head>
@@ -55,7 +59,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>{esc(title)}</title>
-  <meta name="description" content="{esc(description)}">
+  <meta name="description" content="{esc(description)}">{robots}
   <link rel="canonical" href="{esc(url)}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{SITE_NAME}">
@@ -71,7 +75,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
   <link rel="stylesheet" href="{site["css"]}">
   <script src="{site["js"]}" defer></script>{structured}
 </head>
-<body>
+<body{body_attr}>
   <header class="site-header">
     <div class="inner">
       <p class="site-title"><a href="/">
@@ -214,10 +218,10 @@ def _row(p, shops):
     )
     sub = _sub_line(p)
     name = (
-        f'<th scope="row" class="col-name"><div class="name-wrap">{thumb(p)}<div>'
+        f'<th scope="row" class="col-name"><div class="name-wrap">{thumb(p)}<div class="name-text">'
         f'<a class="product" href="/item/{p["jan"]}/">{esc(p["name"])}</a>'
         + (f'<span class="sub">{sub}</span>' if sub else "")
-        + "</div></div></th>"
+        + f"</div>{add_button(p)}</div></th>"
     )
     msrp = f'<td class="num">{yen(p["msrp"])}</td>' if p.get("msrp") else NONE_CELL
     best = (
@@ -300,6 +304,7 @@ def item_content(site, p, series, siblings):
         <h1 class="page-title">{esc(p["name"])}の新品買取価格</h1>
         {f'<p class="sub">{sub}</p>' if sub else ""}
         <dl class="item-facts">{facts_html}</dl>
+        {add_button(p, label=True)}
       </div>
     </section>
     <p class="lead">{summary}</p>
@@ -319,6 +324,27 @@ def item_content(site, p, series, siblings):
 
 def item_breadcrumbs(series, p):
     return [(SITE_NAME, "/"), (series["name"], f"/{series['id']}/"), (p["name"], f"/item/{p['jan']}/")]
+
+
+# ---- 比較リスト ------------------------------------------------------------------
+
+def add_button(p, label=False):
+    """比較リストに入れるボタン。動かすのは app.js（JavaScript が使えないときは表示しない）。"""
+    text = '<span class="add-label">比較リストに追加</span>' if label else ""
+    size = "add-btn add-btn--label" if label else "add-btn"
+    return (
+        f'<button type="button" class="{size}" data-add="{p["jan"]}" aria-pressed="false"'
+        f' aria-label="{esc(p["name"])}を比較リストに追加"><span class="add-icon" aria-hidden="true"></span>{text}</button>'
+    )
+
+
+def cart_content():
+    """比較リストのページ。中身は app.js が、このブラウザに保存したリストと価格データから組み立てる。"""
+    return """    <h1 class="page-title">比較リスト</h1>
+    <p class="lead">選んだ商品を、どの店舗に売ると一番高くなるかを計算します。
+      リストはこのブラウザの中だけに保存され、最後に変更してから1日たつと自動で消えます。</p>
+    <div id="cart-root"><p class="empty">読み込み中…</p></div>
+    <noscript><p class="alert">比較リストを使うには JavaScript を有効にしてください。</p></noscript>"""
 
 
 # ---- 小さな部品 ------------------------------------------------------------------

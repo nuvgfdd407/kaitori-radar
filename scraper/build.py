@@ -32,12 +32,14 @@ def main():
     pages = [("/", list_page(site, None))]
     pages += [(f"/{s['id']}/", list_page(site, s)) for s in site["series"]]
     pages += [(f"/item/{p['jan']}/", item_page(site, p)) for p in site["products"]]
-    for path, html in pages:
+    # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
+    private_pages = [("/cart/", cart_page(site))]
+    for path, html in pages + private_pages:
         out = DIST / path.strip("/") / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html, encoding="utf-8")
     write_sitemap([path for path, _ in pages], data["updated_at"])
-    print(f"{len(pages)}ページを dist/ に作りました")
+    print(f"{len(pages) + len(private_pages)}ページを dist/ に作りました")
 
 
 def prepare(data):
@@ -123,6 +125,12 @@ def item_page(site, p):
     return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=series["id"],
                   content=t.item_content(site, p, series, siblings),
                   breadcrumbs=t.item_breadcrumbs(series, p))
+
+
+def cart_page(site):
+    return t.page(site, path="/cart/", title=f"比較リスト｜{t.SITE_NAME}",
+                  description="選んだゲーム機を、どの買取店に売ると一番高くなるかを計算します。",
+                  active=None, content=t.cart_content(), noindex=True, page_id="cart")
 
 
 def write_sitemap(paths, updated_at):
