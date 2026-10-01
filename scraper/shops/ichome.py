@@ -4,8 +4,12 @@
 【ゲーム】の中に本体だけのカテゴリがあるので、そこだけを取得する。
 価格は goodsKbDetails の中にあり、「来店」（来店時の加算）ではない方の価格を使う。
 （商品データの price は買取価格ではないので使わない）
+iPhone は携帯用の API にあり、JANのない「iPhone 17 Pro 256GB」のような機種＋容量の商品で、
+「未開封」の価格に色ごとの増減（varPrice）が付く。いちばん高い色の価格を使う。
 """
 import re
+
+from ..iphone import iphone_key
 
 ID = "ichome"
 NAME = "買取一丁目"
@@ -18,32 +22,53 @@ CATEGORIES = [
     "bBNHyqptq0nqvbcg", "KKXBEAyI9PC2HMjU", "NE0hGv3ube9UbM3H", "axsZ6sOue6IQhfht",
     "Hi6VUvS3BHzS9kvL", "Y3pbA65dEt2seG0B", "20304465", "20464007",
 ]
+IPHONE_API = "https://www.1-chome.com/api/keitai/listPage"
+# iPhone 18シリーズ / 17シリーズ / 16シリーズ
+IPHONE_CATEGORIES = ["3mMfFdssdWf0cUTv", "FOwhVgpORbuy43jx", "sqwDCccRt4Woon0R"]
 PAGE_SIZE = 100
 
 
 def fetch(http):
     offers = []
     for category in CATEGORIES:
-        page = 1
-        while True:
-            body = http.get(API, params={"cateCode": category, "page": page, "size": PAGE_SIZE}).json()
-            if body.get("code") != 200:
-                raise RuntimeError(f"API のエラー: {body.get('msg')}")
-            data = body["data"]
-            for item in data.get("content") or []:
-                price = _new_price(item)
-                if item.get("jan") and price and item.get("disp") is not False:
-                    offers.append({
-                        "jan": item["jan"],
-                        "name": (item.get("title") or "").strip(),
-                        "price": price,
-                        # サイトの共有リンクと同じ形の商品ページ
-                        "url": f"{URL}wineDetail/{item['goodsId']}/{item['allGoodsKbId']}",
-                    })
-            if page * PAGE_SIZE >= (data.get("totalElements") or 0):
-                break
-            page += 1
+        for item in _read_category(http, API, category):
+            price = _new_price(item)
+            if item.get("jan") and price:
+                offers.append({
+                    "jan": item["jan"],
+                    "name": (item.get("title") or "").strip(),
+                    "price": price,
+                    # サイトの共有リンクと同じ形の商品ページ
+                    "url": f"{URL}wineDetail/{item['goodsId']}/{item['allGoodsKbId']}",
+                })
+    for category in IPHONE_CATEGORIES:
+        for item in _read_category(http, IPHONE_API, category):
+            name = (item.get("title") or "").strip()
+            price = _unopened_price(item)
+            if price:
+                offers.append({
+                    "jan": None,
+                    "key": iphone_key(name),
+                    "name": name,
+                    "price": price,
+                    "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
+                })
     return offers
+
+
+def _read_category(http, api, category):
+    page = 1
+    while True:
+        body = http.get(api, params={"cateCode": category, "page": page, "size": PAGE_SIZE}).json()
+        if body.get("code") != 200:
+            raise RuntimeError(f"API のエラー: {body.get('msg')}")
+        data = body["data"]
+        for item in data.get("content") or []:
+            if item.get("disp") is not False:
+                yield item
+        if page * PAGE_SIZE >= (data.get("totalElements") or 0):
+            break
+        page += 1
 
 
 def _new_price(item):
@@ -57,3 +82,20 @@ def _new_price(item):
     ]
     prices = [p for p in prices if p]
     return max(prices) if prices else None
+
+
+def _unopened_price(item):
+    """iPhone の「未開封」の価格（色による増減があれば、いちばん高い色の価格）。"""
+    if not re.search("新品", item.get("kbName") or ""):
+        return None
+    detail = next((d for d in item.get("goodsKbDetails") or [] if d.get("kbDetailName") == "未開封"), None)
+    if not detail or not detail.get("kbDetailPrice"):
+        return None
+    base = detail["kbDetailPrice"]
+    changes = [
+        rel.get("varPrice") or 0
+        for color in item.get("keitaiColorOptions") or []
+        for rel in color.get("keitaiKbDetailColorRels") or []
+        if rel.get("keitaiKbDetailId") == detail.get("allGoodsKbDetailId")
+    ]
+    return base + max(changes, default=0)

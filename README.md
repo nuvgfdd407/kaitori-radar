@@ -1,7 +1,7 @@
 # 買取レーダー
 
-Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットの
-**新品買取価格**を、買取店ごとに比較するサイトです。
+Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
+iPhone 18・17・16シリーズ（SIMフリー版）の**新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
 
 - 対象店舗: 買取ホムラ・買取商店・海峡通信・買取一丁目・買取当番・買取ルデヤ・買取wiki（7店舗）
 - 店舗ごとの価格、最高値、定価との差益を一覧表示
@@ -18,7 +18,7 @@ GitHub Actions（毎日 9:50）
 GitHub Actions（15分ごと）
   └ python -m scraper.update
       ├ 各店舗のサイトから価格を取得（店舗ごとに並行して実行）
-      ├ catalog/products.json の商品と JAN コードで突き合わせ、画像も載せる
+      ├ catalog/products.json の商品と JAN コード（iPhone は機種＋容量）で突き合わせ、画像も載せる
       └ 価格が変わったときだけ public/data/prices.json を更新してコミット
   └ python -m scraper.build（価格が変わったときだけ）
       └ public/ と prices.json から、公開用のサイトを dist/ に組み立てる
@@ -31,7 +31,7 @@ dist/ を Cloudflare Pages に公開
 | URL | 内容 |
 |---|---|
 | `/` | 全商品の比較表 |
-| `/switch2/`・`/switch/`・`/ps5/`・`/xbox/` | 機種ごとの比較表 |
+| `/switch2/`・`/ps5/`・`/iphone17/` など | シリーズごとの比較表（そのシリーズを扱っている店舗だけの列にする） |
 | `/item/<JAN>/` | 商品ごとの、店舗別の価格（高い順） |
 | `/cart/` | 比較リスト（検索結果に出さない。サイトマップにも載せない） |
 | `/sitemap.xml` | 上のすべてのページの一覧（組み立てるときに自動で作る） |
@@ -50,6 +50,7 @@ dist/ を Cloudflare Pages に公開
 | `catalog/products.json` | 対象商品の一覧（JAN・シリーズ・表示名・型番・定価）。**手で管理する** |
 | `catalog/images.json` | 商品画像のURL（`scraper.images` が自動で作る） |
 | `scraper/shops/*.py` | 店舗ごとの取得処理 |
+| `scraper/iphone.py` | iPhone の商品名から「機種＋容量」を読み取る（突き合わせ用） |
 | `scraper/update.py` | 全店舗の取得と `prices.json` の書き出し |
 | `scraper/images.py` | Yahoo!ショッピングからの商品画像の取得 |
 | `scraper/build.py`・`scraper/templates.py` | 公開用のサイトを `dist/` に組み立てる（ページのHTMLのひな形は templates.py） |
@@ -82,9 +83,21 @@ python -m http.server 8765 --directory dist
 
 定価（`msrp`）は**メーカー希望小売価格（税込）**です。値上げがあったら更新してください。
 限定版など現在の定価がない商品は `null` にしておくと、表では「—」になり差益も出しません。
+iPhone の定価は Apple の販売価格（税込）で、販売終了したモデルは発売時の価格にしています。
 
 発売前の商品には発売日（`"release": "2026-10-29"`）を書いておくと、発売日までは「10/29発売」と表示し、
 差益は出しません（発売前の買取価格は仮のことが多いため）。発売日を過ぎると自動で通常の表示になります。
+
+### iPhone
+
+iPhone は店舗によって色ごとに別の商品として載っていたり、JAN がなかったりするので、
+**機種＋容量**（`scraper/iphone.py` の `iphone_key`。例: `iPhone 17 Pro 256GB`）で突き合わせる。
+
+- 1行＝機種＋容量。色違いはまとめ、色で価格が違う店舗では**いちばん高い色の価格**を使う
+- 対象は SIMフリー版の新品未開封だけ（「開封済未使用」などの価格は使わない）
+- カタログの iPhone は、シリーズIDを `iphone` で始め、商品名を `iphone_key` の結果と同じ文字列にする
+  （`jan` はどれか1色のJAN。画像の検索に使う）
+- 新しい機種が出たら、各店舗モジュールの iPhone のカテゴリ（`IPHONE_SUBS` など）にも追加する
 
 商品を追加したら、画像の更新（`python -m scraper.images`、または Actions の「商品画像の更新」）も実行してください。
 
@@ -110,6 +123,7 @@ python -m http.server 8765 --directory dist
 
 1. `scraper/shops/` に店舗のモジュールを作る（`ID`・`NAME`・`SHORT`・`URL` と `fetch(http)`）
    - `fetch` は `{"jan", "name", "price", "url"}` のリストを返す。**新品・買取中の商品だけ**にする
+   - iPhone は `"key": iphone_key(name)` も付ける（JAN がなければ `"jan": None`）
    - アクセスは必ず引数の `http.get()` を使う（アクセス間隔と再試行を共通で管理している）
 2. `scraper/shops/__init__.py` の `SHOPS` に追加する（並び順が表の列の順になる）
 

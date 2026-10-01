@@ -7,6 +7,8 @@
   （GitHub Actions で変化があったときだけコミットするため）
 - カタログにない高額商品は reports/unmatched.json に書き出す（新しい本体の登録漏れに気づくため）
 - 商品画像は scraper.images が作った catalog/images.json から載せる
+- iPhone は JAN ではなく「機種＋容量」（scraper.iphone.iphone_key）で突き合わせる。
+  色違いが同じ商品にまとまるので、高い方の価格（いちばん高い色の価格）が残る
 """
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -14,6 +16,7 @@ from datetime import datetime, timedelta, timezone
 
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 from .http import Http
+from .iphone import iphone_key
 from .shops import SHOPS
 
 OUTPUT = ROOT / "public" / "data" / "prices.json"
@@ -23,7 +26,7 @@ JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN）
-INTERNAL_KEYS = {"image_item", "aliases"}
+INTERNAL_KEYS = {"image_item", "image_from", "aliases"}
 
 
 def main():
@@ -32,6 +35,7 @@ def main():
     images = load_json(IMAGES) if IMAGES.exists() else {}
     # 同じ商品が別のJAN（新旧のJANなど）で載っていることがあるので、"aliases" のJANも同じ商品として扱う
     owner = {jan: p["jan"] for p in catalog["products"] for jan in [p["jan"], *p.get("aliases", [])]}
+    by_key = {iphone_key(p["name"]): p["jan"] for p in catalog["products"] if p["series"].startswith("iphone")}
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
     previous = load_json(OUTPUT) if OUTPUT.exists() else {"shops": [], "products": []}
     prev_shops = {s["id"]: s for s in previous["shops"]}
@@ -49,11 +53,12 @@ def main():
         if offers:
             for offer in offers:
                 jan = offer["jan"]
-                if jan in owner:
-                    # 同じ商品が複数回（ページ内の重複や別のJANで）載っていたら、高い方を使う
-                    current = found.get(owner[jan])
+                target = owner.get(jan) or by_key.get(offer.get("key"))
+                if target:
+                    # 同じ商品が複数回（ページ内の重複・別のJAN・色違い）載っていたら、高い方を使う
+                    current = found.get(target)
                     if current is None or offer["price"] > current["price"]:
-                        found[owner[jan]] = {"price": offer["price"], "url": offer["url"]}
+                        found[target] = {"price": offer["price"], "url": offer["url"]}
                 elif jan not in ignored and offer["price"] >= REPORT_MIN_PRICE:
                     unmatched.append({"shop": shop.NAME, **offer})
             if not found:
@@ -109,10 +114,12 @@ def fetch_shop(shop):
 
 
 def _unique(offers):
+    """同じ商品（iPhone は色違いも同じとみなす）は1件だけにする。"""
     seen = set()
     for o in offers:
-        if (o["shop"], o["jan"]) not in seen:
-            seen.add((o["shop"], o["jan"]))
+        key = (o["shop"], o.get("key") or o["jan"] or o["name"])
+        if key not in seen:
+            seen.add(key)
             yield o
 
 

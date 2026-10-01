@@ -37,6 +37,12 @@ YAHOO_CREDIT = """<!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
 
 NONE_CELL = '<td class="num none">—</td>'
 
+# iPhone は色違いを1行にまとめている（scraper.iphone を参照）
+IPHONE_NOTE = (
+    "iPhoneはSIMフリー版の新品未開封の価格を、色違いをまとめて機種と容量ごとに載せています。"
+    "色によって買取価格が違う店舗では、いちばん高い色の価格です。"
+)
+
 
 # ---- 共通の外枠 ---------------------------------------------------------------
 
@@ -44,7 +50,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
          noindex=False, page_id=""):
     """全ページ共通の外枠。
 
-    site は build.py が用意する辞書（shops・series・updated・shop_count など）。
+    site は build.py が用意する辞書（shops・series・products・updated など）。
     active はシリーズの切り替えで強調するもの（"all" またはシリーズID）。
     noindex は検索結果に出さないページ（比較リストなど、人ごとに中身が違うページ）。
     """
@@ -136,7 +142,8 @@ def _notes(site):
       <ul>
         <li>各店舗の公式サイトに掲載されている、新品（未開封）の買取価格を自動で集めています。</li>
         <li>実際の買取価格は、申込の時点で各店舗が決めます。お申込みの前に、必ず各店舗のページで最新の価格と条件をご確認ください。</li>
-        <li>定価はメーカー希望小売価格（税込）です。限定版など、現在の定価がない商品は「—」と表示しています。</li>
+        <li>定価はメーカー希望小売価格（税込）です。限定版など、現在の定価がない商品は「—」と表示しています。iPhoneの定価はAppleの販売価格（税込）で、販売終了したモデルは発売時の価格です。</li>
+        <li>{IPHONE_NOTE}</li>
         <li>発売前の商品は、買取価格が仮のことが多いため、差益は表示していません。</li>
         <li>価格の確認は10:00〜21:00のあいだ15分ごとに行っています。価格をクリックすると、その店舗の商品ページが開きます。</li>
         <li>商品画像は、Yahoo!ショッピングに出品されている同じ商品（JANコードが一致するもの）の画像を表示しています。画像をクリックすると、その出品ページが開きます。</li>
@@ -164,6 +171,7 @@ def breadcrumb_nav(crumbs):
 
 # ---- 比較表（トップページと機種別ページ） -------------------------------------
 
+
 SORT_CONTROL = """<label class="sort">
         <span>並び順</span>
         <select id="sort">
@@ -175,8 +183,7 @@ SORT_CONTROL = """<label class="sort">
       </label>"""
 
 
-def price_table(site, products, *, grouped):
-    shops = site["shops"]
+def price_table(site, products, shops, *, grouped):
     columns = 4 + len(shops)
     head = (
         '<tr><th scope="col" class="col-name">商品名</th><th scope="col">定価</th>'
@@ -204,7 +211,7 @@ def price_table(site, products, *, grouped):
         body = '<tbody class="rows">' + "".join(_row(p, shops) for p in products) + "</tbody>"
     return f"""    <div class="table-wrap">
       <table class="price-table">
-        <caption class="visually-hidden">ゲーム機本体の新品買取価格（店舗別）</caption>
+        <caption class="visually-hidden">新品買取価格（店舗別）</caption>
         <thead>{head}</thead>
         {body}
       </table>
@@ -254,8 +261,7 @@ def _profit_cell(p):
 
 # ---- 商品ページ -----------------------------------------------------------------
 
-def item_content(site, p, series, siblings):
-    shops = site["shops"]
+def item_content(site, p, series, siblings, shops):
     offers = sorted(
         ((s, p["prices"][s["id"]]) for s in shops if s["id"] in p["prices"]),
         key=lambda so: -so[1]["price"],
@@ -283,6 +289,8 @@ def item_content(site, p, series, siblings):
         )
     else:
         summary = "現在、この商品の新品買取価格を掲載している店舗はありません。"
+    if is_iphone(series):
+        summary += IPHONE_NOTE
 
     facts = [("最高買取", f'<span class="col-best">{yen(p["best"])}</span>' if p["best"] else "—")]
     facts.append(("定価", yen(p["msrp"]) if p.get("msrp") else "—"))
@@ -320,6 +328,10 @@ def item_content(site, p, series, siblings):
     <h2 class="section-title">{esc(series["name"])}のほかの商品</h2>
     <ul class="related">{related}</ul>
     <p><a href="/{series["id"]}/">{esc(series["name"])}の新品買取価格を一覧で比較する</a></p>"""
+
+
+def is_iphone(series):
+    return series["id"].startswith("iphone")
 
 
 def item_breadcrumbs(series, p):

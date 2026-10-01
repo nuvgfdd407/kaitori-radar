@@ -65,7 +65,6 @@ def prepare(data):
         "series": data["series"],
         "products": data["products"],
         "updated": format_time(data["updated_at"]),
-        "shop_count": len(shops),
         "css": versioned("style.css"),
         "js": versioned("app.js"),
     }
@@ -79,42 +78,54 @@ def versioned(name):
 
 def list_page(site, series):
     """トップページ（series が None）と機種別ページ。"""
-    n = site["shop_count"]
     if series is None:
         products = site["products"]
+        shops = site["shops"]
+        n = len(shops)
         path, active = "/", "all"
-        title = f"{t.SITE_NAME}｜Switch 2・PS5・Xboxなどゲーム機の新品買取価格を比較"
-        heading = f"ゲーム機の新品買取価格を{n}店舗で比較"
+        title = f"{t.SITE_NAME}｜Switch 2・PS5・iPhoneなどの新品買取価格を比較"
+        heading = f"ゲーム機・iPhoneの新品買取価格を{n}店舗で比較"
         description = (
-            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deck・Meta Questなど、ゲーム機の新品買取価格を買取店ごとに比較。"
+            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deck・Meta Questなどのゲーム機と、"
+            "iPhone 18・17・16シリーズの新品買取価格を買取店ごとに比較。"
             "いちばん高く売れるお店と、定価との差額がひと目でわかります。"
         )
-        lead = f"ゲーム機{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        lead = f"ゲーム機とiPhone、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
     else:
         products = [p for p in site["products"] if p["series"] == series["id"]]
+        shops = series_shops(site, series)
+        n = len(shops)
         path, active = f"/{series['id']}/", series["id"]
         title = f"{series['name']}の新品買取価格比較【{n}店舗】｜{t.SITE_NAME}"
         heading = f"{series['name']}の新品買取価格を{n}店舗で比較"
-        lead = f"{series['name']}の本体{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        lead = f"{series['name']}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
         top = next((p for p in products if p["best"]), None)
         if top:
             lead += f"{top['name']}の最高値は、{t.best_shop_names(top, full=True)}の{t.yen(top['best'])}です（{site['updated']}時点）。"
-        description = f"{series['name']}の本体の新品買取価格を{n}店舗で比較。" + (
+        description = f"{series['name']}の新品買取価格を{n}店舗で比較。" + (
             f"{top['name']}は最高{t.yen(top['best'])}（{t.best_shop_names(top, full=True)}）。" if top else ""
         ) + "15分ごとに自動更新。"
 
     content = f"""    <h1 class="page-title">{t.esc(heading)}</h1>
     <p class="lead">{t.esc(lead)}</p>
     <p class="count">{len(products)}商品</p>
-{t.price_table(site, products, grouped=series is None)}"""
+{t.price_table(site, products, shops, grouped=series is None)}"""
     return t.page(site, path=path, title=title, description=description, active=active,
                   content=content, controls=t.SORT_CONTROL)
+
+
+def series_shops(site, series):
+    """そのシリーズの商品を1つでも扱っている店舗（iPhone を扱わない店舗などは、表や店舗数から外す）。"""
+    products = [p for p in site["products"] if p["series"] == series["id"]]
+    shops = [s for s in site["shops"] if any(s["id"] in p["prices"] for p in products)]
+    return shops or site["shops"]
 
 
 def item_page(site, p):
     series = next(s for s in site["series"] if s["id"] == p["series"])
     siblings = [q for q in site["products"] if q["series"] == p["series"]]
-    n = site["shop_count"]
+    shops = series_shops(site, series)
+    n = len(shops)
     if p["best"]:
         best = f"最高{t.yen(p['best'])}（{t.best_shop_names(p, full=True)}）"
         title = f"{p['name']}の買取価格比較｜{best}｜{t.SITE_NAME}"
@@ -123,13 +134,13 @@ def item_page(site, p):
         title = f"{p['name']}の買取価格比較｜{t.SITE_NAME}"
         description = f"{p['name']}の新品買取価格を{n}店舗で比較しています。"
     return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=series["id"],
-                  content=t.item_content(site, p, series, siblings),
+                  content=t.item_content(site, p, series, siblings, shops),
                   breadcrumbs=t.item_breadcrumbs(series, p))
 
 
 def cart_page(site):
     return t.page(site, path="/cart/", title=f"比較リスト｜{t.SITE_NAME}",
-                  description="選んだゲーム機を、どの買取店に売ると一番高くなるかを計算します。",
+                  description="選んだ商品を、どの買取店に売ると一番高くなるかを計算します。",
                   active=None, content=t.cart_content(), noindex=True, page_id="cart")
 
 

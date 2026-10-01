@@ -8,6 +8,8 @@
   選ばれた画像が宣伝用の文字入りなどでいまいちなときは、--candidates で候補を見て、
   catalog/products.json の商品に "image_item": "<出品コード>" を書くと、その出品の画像を使う
   （同じ店舗が画像の違う出品を複数出していることがあるので、店舗ではなく出品で指定する）
+- 新品の出品がない商品は、見た目が同じ別の商品（容量違いの iPhone など）のJANを
+  "image_from": "<JAN>" に書くと、その商品の画像を使う
 - API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている。
   全商品で2分ほどかかる。1日1回の実行で十分
 - 画像ファイルはコピーせず、Yahoo!が配信している画像のURLをそのまま使う
@@ -48,7 +50,8 @@ def update_all(session, client_id):
     previous = load_json(IMAGES) if IMAGES.exists() else {}
     images = {}
     errors = 0
-    for i, product in enumerate(catalog["products"]):
+    searched = [p for p in catalog["products"] if not p.get("image_from")]
+    for i, product in enumerate(searched):
         if i:
             time.sleep(INTERVAL)
         jan = product["jan"]
@@ -69,6 +72,12 @@ def update_all(session, client_id):
             print(f"[OK] {product['name']}（{chosen['seller']}）")
         else:
             print(f"[--] {product['name']}: 画像のある出品が見つかりませんでした")
+    for product in catalog["products"]:
+        source = product.get("image_from")
+        if source and source in images:
+            images[product["jan"]] = images[source]
+        elif source:
+            warn(f"{product['name']}: image_from の商品（{source}）に画像がありません")
 
     changed = images != previous
     if changed:
@@ -76,7 +85,7 @@ def update_all(session, client_id):
     print(f"{len(images)}/{len(catalog['products'])}商品の画像あり。"
           + ("images.json を更新しました" if changed else "変化なし"))
     set_github_output("changed", "true" if changed else "false")
-    if errors == len(catalog["products"]):
+    if errors == len(searched):
         sys.exit("すべての商品で検索に失敗しました")
 
 
