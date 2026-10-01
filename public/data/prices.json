@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T17:23:24+09:00",
+  "updated_at": "2026-10-01T18:54:04+09:00",
   "series": [
     {
       "id": "switch2",
@@ -58,7 +58,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-01T18:54:04+09:00"
     },
     {
       "id": "ichome",
