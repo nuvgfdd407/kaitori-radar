@@ -501,13 +501,14 @@ def best_shop_names(p, full=False):
 
 
 def thumb(p, large=False):
-    """商品画像（Yahoo!ショッピングの出品の画像）。クリックすると、画像の出典の出品ページが開く。"""
+    """商品画像（Yahoo!ショッピングの出品の画像を public/images/ に保存したもの）。
+    クリックすると、画像の出典の出品ページが開く。"""
     size = "thumb thumb--large" if large else "thumb"
     image = p.get("image") or {}
     src = image.get("src")
-    if not _is_http(src):
+    if not (isinstance(src, str) and src.startswith("/images/")):
         return f'<span class="{size} thumb-empty" aria-hidden="true"></span>'
-    img = f'<img src="{esc(src)}" alt="" width="44" height="44" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
+    img = f'<img src="{esc(src)}" alt="" width="44" height="44" loading="lazy" decoding="async">'
     url = image.get("url")
     if not _is_http(url):
         return f'<span class="{size}">{img}</span>'

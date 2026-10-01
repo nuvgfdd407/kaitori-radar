@@ -10,11 +10,9 @@
   （同じ店舗が画像の違う出品を複数出していることがあるので、店舗ではなく出品で指定する）
 - 新品の出品がない商品は、見た目が同じ別の商品（容量違いの iPhone など）のJANを
   "image_from": "<JAN>" に書くと、その商品の画像を使う
-- 一度決めた画像は使い続ける（毎日選び直すと、確認した画像が勝手に変わってしまうため）。
-  探し直すのは、まだ画像がない商品、"image_item" を変えた商品、画像の元の出品が消えた商品だけ
-  （出品が消えると、画像のURLは「画像なし」の GIF を返すようになるので、それで見分ける）
+- 選んだ画像は public/images/<JAN>.jpg に保存して、サイトから直接出す（元の出品が消えても使える）。
+  一度保存した画像は使い続け、探し直すのは、まだ画像がない商品と "image_item" を変えた商品だけ
 - API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている
-- 画像ファイルはコピーせず、Yahoo!が配信している画像のURLをそのまま使う
 """
 import argparse
 import os
@@ -23,10 +21,11 @@ import time
 
 import requests
 
-from .common import CATALOG, IMAGES, load_json, set_github_output, warn, write_json
+from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 
 API = "https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch"
 INTERVAL = 2.5   # 秒。1秒に1回の上限ぎりぎりだと、30件ほどで制限がかかった
+IMAGE_DIR = ROOT / "public" / "images"
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
 # 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
@@ -63,7 +62,7 @@ def update_all(session, client_id):
             continue
         old = previous.get(product["jan"])
         item_code = product.get("image_item")
-        if old and (not item_code or old.get("code") == item_code) and _still_listed(session, old["src"]):
+        if old and (not item_code or old.get("code") == item_code) and save(session, product["jan"], old):
             images[product["jan"]] = old
         else:
             searched.append(product)
@@ -85,7 +84,7 @@ def update_all(session, client_id):
         chosen = choose(hits, jan, item_code)
         if chosen and item_code and chosen["code"] != item_code:
             warn(f"{product['name']}: 指定した出品（{item_code}）が見つからないので、自動で選びました")
-        if chosen:
+        if chosen and save(session, jan, chosen):
             images[jan] = chosen
             print(f"[OK] {product['name']}（{chosen['seller']}）")
         else:
@@ -107,13 +106,23 @@ def update_all(session, client_id):
         sys.exit("すべての商品で検索に失敗しました")
 
 
-def _still_listed(session, src):
-    """画像の元の出品がまだあるか。消えた出品の画像のURLは「画像なし」の GIF を返す。"""
-    try:
-        res = session.head(src, timeout=15)
-    except requests.RequestException:
-        return True  # 確かめられないときは、前回の画像をそのまま使う
-    return res.status_code == 200 and res.headers.get("content-type") != "image/gif"
+def save(session, jan, image):
+    """画像を public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
+    path = IMAGE_DIR / f"{jan}.jpg"
+    if not path.exists():
+        if not image["src"].startswith("https://"):
+            return False
+        try:
+            res = session.get(image["src"], timeout=30)
+        except requests.RequestException:
+            return False
+        # 出品が消えた画像のURLは「画像なし」の GIF を返す
+        if res.status_code != 200 or res.headers.get("content-type") != "image/jpeg":
+            return False
+        IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(res.content)
+    image["src"] = f"/images/{jan}.jpg"
+    return True
 
 
 def show_candidates(session, client_id, jans):
