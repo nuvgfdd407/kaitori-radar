@@ -30,7 +30,7 @@ JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
-INTERNAL_KEYS = {"image_item", "image_from", "aliases", "names"}
+INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names"}
 
 
 def main():

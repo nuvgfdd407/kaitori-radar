@@ -1,4 +1,7 @@
-"""Yahoo!ショッピングの商品検索APIで、カタログの商品画像を探して catalog/images.json に保存する。
+"""カタログの商品画像を用意して public/images/ と catalog/images.json に保存する。
+
+商品に "image_url"（メーカー公式サイトの本体画像のURL）があれば、その画像を使う。
+ないときだけ、Yahoo!ショッピングの商品検索APIで JAN から探す。
 
     python -m scraper.images                        # 画像がまだない商品などの画像を探す
     python -m scraper.images --candidates JAN ...   # 画像の候補（出品ごと）を一覧表示する
@@ -33,6 +36,7 @@ IMAGE_DIR = ROOT / "public" / "images"
 LARGE_URL = "https://item-shopping.c.yimg.jp/i/l/{code}"  # 600px の画像（i/g/ は 146px）
 IMAGE_SIZE = 240   # 保存する画像の一辺（商品ページの大きい画像の2倍）
 IMAGE_FILL = 0.86  # 商品が正方形に占める大きさ
+IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
 # 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
@@ -66,6 +70,13 @@ def update_all(session, client_id):
     searched = []
     for product in catalog["products"]:
         if product.get("image_from"):
+            continue
+        if product.get("image_url"):
+            official = official_image(session, product, previous.get(product["jan"]))
+            if official:
+                images[product["jan"]] = official
+            else:
+                warn(f"{product['name']}: 公式の画像（{product['image_url']}）を取得できませんでした")
             continue
         old = previous.get(product["jan"])
         item_code = product.get("image_item")
@@ -113,10 +124,18 @@ def update_all(session, client_id):
         sys.exit("すべての商品で検索に失敗しました")
 
 
-def save(session, jan, image):
+def official_image(session, product, old):
+    """メーカー公式の画像（"image_url"）を保存する。前回と同じ画像なら、保存済みのファイルを使う。"""
+    url = product["image_url"]
+    image = {"src": url, "url": product.get("image_page") or "", "origin": url}
+    same = bool(old) and old.get("origin") == url and (IMAGE_DIR / f"{product['jan']}.jpg").exists()
+    return image if save(session, product["jan"], image, refresh=not same) else None
+
+
+def save(session, jan, image, refresh=False):
     """画像を整えて public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
     path = IMAGE_DIR / f"{jan}.jpg"
-    if not path.exists():
+    if refresh or not path.exists():
         urls = [LARGE_URL.format(code=image["code"])] if image.get("code") else []
         urls += [image["src"]] if image["src"].startswith("https://") else []
         data = next((d for d in (_download(session, url) for url in urls) if d), None)
@@ -133,22 +152,65 @@ def _download(session, url):
         res = session.get(url, timeout=30)
     except requests.RequestException:
         return None
-    # 出品が消えた画像のURLは「画像なし」の GIF を返す
-    if res.status_code != 200 or res.headers.get("content-type") != "image/jpeg":
+    # Yahoo!の出品が消えた画像のURLは「画像なし」の GIF を返す
+    if res.status_code != 200 or res.headers.get("content-type", "").split(";")[0].strip().lower() not in IMAGE_TYPES:
         return None
     return res.content
 
 
+def _product_box(mask):
+    """写っているもののうち、細い文字（著作権表示や「Front」など）を除いた商品の範囲。
+
+    画像を 100×100 のマスに分け、つながったマスのかたまりごとに見る。
+    高さが画像の長い方の辺の 5% に満たないかたまりは文字とみなして除く。
+    """
+    n = 100
+    cw, ch = mask.width / n, mask.height / n
+    filled = {(x, y) for y in range(n) for x in range(n)
+              if mask.crop((int(x * cw), int(y * ch), int((x + 1) * cw) or 1, int((y + 1) * ch) or 1)).getbbox()}
+    boxes = []
+    seen = set()
+    for cell in filled:
+        if cell in seen:
+            continue
+        stack, part = [cell], []
+        seen.add(cell)
+        while stack:
+            x, y = stack.pop()
+            part.append((x, y))
+            for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+                if (nx, ny) in filled and (nx, ny) not in seen:
+                    seen.add((nx, ny))
+                    stack.append((nx, ny))
+        xs, ys = [c[0] for c in part], [c[1] for c in part]
+        if (max(ys) - min(ys) + 1) * ch >= max(mask.width, mask.height) * 0.05:
+            boxes.append((min(xs), min(ys), max(xs) + 1, max(ys) + 1))
+    if not boxes:
+        return mask.getbbox()
+    left, top = min(b[0] for b in boxes), min(b[1] for b in boxes)
+    right, bottom = max(b[2] for b in boxes), max(b[3] for b in boxes)
+    region = (int(left * cw), int(top * ch), int(right * cw), int(bottom * ch))
+    inner = mask.crop(region).getbbox()
+    return (region[0] + inner[0], region[1] + inner[1], region[0] + inner[2], region[1] + inner[3]) if inner else None
+
+
 def normalize(data):
     """余白を切り取り、白い正方形の中央に同じ大きさで置いた JPEG にする。"""
-    image = Image.open(io.BytesIO(data)).convert("RGB")
+    image = Image.open(io.BytesIO(data))
+    # 背景が透明な画像（公式サイトの PNG など）は、白い背景に載せる
+    if image.mode in ("RGBA", "LA", "P"):
+        image = image.convert("RGBA")
+        white = Image.new("RGBA", image.size, (255, 255, 255, 255))
+        image = Image.alpha_composite(white, image)
+    image = image.convert("RGB")
     w, h = image.size
     corners = [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)]
     # 背景が白っぽい（薄い灰色など）ときは、背景を白にそろえる（四隅からつながっている部分だけ）
     if all(min(image.getpixel(c)) >= 215 for c in corners):
         for c in corners:
             ImageDraw.floodfill(image, c, (255, 255, 255), thresh=24)
-    box = image.convert("L").point(lambda v: 255 if v < 245 else 0).getbbox()
+    mask = image.convert("L").point(lambda v: 255 if v < 245 else 0)
+    box = _product_box(mask)
     if box:
         image = image.crop(box)
     target = IMAGE_SIZE * IMAGE_FILL

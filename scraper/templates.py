@@ -501,8 +501,8 @@ def best_shop_names(p, full=False):
 
 
 def thumb(p, large=False):
-    """商品画像（Yahoo!ショッピングの出品の画像を public/images/ に保存したもの）。
-    クリックすると、画像の出典の出品ページが開く。"""
+    """商品画像（メーカー公式サイトか Yahoo!ショッピングの出品の画像を public/images/ に保存したもの）。
+    クリックすると、画像の出典のページが開く。"""
     size = "thumb thumb--large" if large else "thumb"
     image = p.get("image") or {}
     src = image.get("src")
@@ -512,10 +512,11 @@ def thumb(p, large=False):
     url = image.get("url")
     if not _is_http(url):
         return f'<span class="{size}">{img}</span>'
-    title = "画像の出典: Yahoo!ショッピング" + (f'（{image["seller"]}）' if image.get("seller") else "")
+    source = "メーカー公式サイト" if image.get("origin") else "Yahoo!ショッピング"
+    title = f"画像の出典: {source}" + (f'（{image["seller"]}）' if image.get("seller") and not image.get("origin") else "")
     return (
         f'<a class="{size}" href="{esc(url)}" target="_blank" rel="noopener" title="{esc(title)}"'
-        f' aria-label="{esc(p["name"])}の画像の出典（Yahoo!ショッピング）">{img}</a>'
+        f' aria-label="{esc(p["name"])}の画像の出典（{source}）">{img}</a>'
     )
 
 
