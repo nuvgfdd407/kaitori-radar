@@ -5,17 +5,17 @@ iPhone 18・17・16シリーズ（SIMフリー版）の**新品（未開封）�
 
 - 対象店舗: 買取ホムラ・買取商店・海峡通信・買取一丁目・買取当番・買取ルデヤ・買取wiki（7店舗）
 - 店舗ごとの価格、最高値、定価との差益を一覧表示
-- 日本時間 10:00〜21:00 に15分ごとに価格を確認（GitHub Actions）
+- 日本時間 10:00〜21:00 に15分ごとに価格を確認（GitHub Actions。開始の合図は Cloudflare の Worker）
 - 商品画像は Yahoo!ショッピングの商品検索APIから取得（1日1回）
 
 ## 仕組み
 
 ```
-GitHub Actions（毎日 9:50）
+GitHub Actions（毎日 9:50。Cloudflare の Worker が開始する）
   └ python -m scraper.images
       └ JAN コードで Yahoo!ショッピングを検索し、画像のURLを catalog/images.json に保存
 
-GitHub Actions（15分ごと）
+GitHub Actions（10:07〜20:52 に15分ごと。Cloudflare の Worker が開始する）
   └ python -m scraper.update
       ├ 各店舗のサイトから価格を取得（店舗ごとに並行して実行）
       ├ catalog/products.json の商品と JAN コード（iPhone は機種＋容量）で突き合わせ、画像も載せる
@@ -147,7 +147,7 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
   - `CLOUDFLARE_ACCOUNT_ID`: Cloudflare のアカウントID
   - `DISPATCH_TOKEN`: 定期実行の合図に使う GitHub のトークン（上を参照）
 - 定期実行の合図は Cloudflare の Worker（`trigger/`）から出す
-  - GitHub Actions の定期実行（schedule）は、混んでいると実行が飛ばされることが多く、ほとんど動かなかったため
+  - GitHub Actions の定期実行（schedule）は、混んでいると実行が飛ばされることが多く、ほとんど動かなかったため使っていない
   - Worker の Cron Triggers が決まった時刻に GitHub の API でワークフローを開始する（時刻は `trigger/wrangler.toml`）
   - `trigger/` を変えてプッシュすると「定期実行の合図の公開」が Worker を公開し直す
   - Worker が使う GitHub のトークンは Secrets の `DISPATCH_TOKEN`（このリポジトリの Actions: Read and write だけの

@@ -1,9 +1,8 @@
 name: 商品画像の更新
 
+# 毎日 日本時間 9:50（価格の確認が始まる前）に、Cloudflare の Worker（trigger/）が開始する
 on:
-  schedule:
-    - cron: "50 0 * * *"        # 日本時間 9:50（価格の確認が始まる前）
-  workflow_dispatch:            # 商品を追加したときは Actions の画面から手動で実行する
+  workflow_dispatch:            # 商品を追加したときは Actions の画面から手動でも実行できる
 
 permissions:
   contents: write
