@@ -4,11 +4,13 @@
 一覧は1ページ40件でページ送りがある。
 各商品の「追加」ボタンに商品IDと価格が埋め込まれていて、JANはカード内に表示されている。
 iPhone は色ごとに「【未開封】iPhone 17 Pro 256GB orange」のような名前で載っている。
+トレカは JAN が載っていないので、「【BOX】ストームエメラルダ」のような名前のセット名で突き合わせる。
 """
 import re
 
 from bs4 import BeautifulSoup
 
+from ..cards import card_key
 from ..iphone import iphone_key
 from ..text import find_jan
 
@@ -24,6 +26,9 @@ IPHONE_CATEGORY = 10
 GAME_SUBS = [124, 122, 126, 121, 127]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / 17 / Air / 17e / 16 Pro / 16 Pro Max / 16 / 16 Plus / 16e
 IPHONE_SUBS = [194, 193, 192, 96, 97, 95, 155, 173, 100, 101, 98, 99, 156]
+CARD_CATEGORY = 14
+# ポケモンカード（シュリンク有りのBOX） / ワンピース 未開封BOX
+CARD_SUBS = [128, 132]
 MAX_PAGES = 10
 
 
@@ -36,6 +41,9 @@ def fetch(http):
         for name, jan, price, url in _read_list(http, IPHONE_CATEGORY, sub):
             if "未開封" in name:
                 offers.append({"jan": jan, "key": iphone_key(name), "name": name, "price": price, "url": url})
+    for sub in CARD_SUBS:
+        for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
+            offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})
     return [o for o in offers if (o["jan"] or o.get("key")) and o["price"] > 0]
 
 

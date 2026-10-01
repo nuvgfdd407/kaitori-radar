@@ -10,6 +10,7 @@
 - 日ごとの価格の記録（data/history/）も更新する（scraper.history を参照）
 - iPhone は JAN ではなく「機種＋容量」（scraper.iphone.iphone_key）で突き合わせる。
   色違いが同じ商品にまとまるので、高い方の価格（いちばん高い色の価格）が残る
+- JAN を載せていない店舗のトレカは、カタログの "names"（セット名）と商品名（scraper.cards.card_key）で突き合わせる
 """
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -17,6 +18,7 @@ from datetime import datetime, timedelta, timezone
 
 from . import history
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
+from .cards import card_key
 from .http import Http
 from .iphone import iphone_key
 from .shops import SHOPS
@@ -27,8 +29,8 @@ UNMATCHED = ROOT / "reports" / "unmatched.json"
 JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
-# カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN）
-INTERNAL_KEYS = {"image_item", "image_from", "aliases"}
+# カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
+INTERNAL_KEYS = {"image_item", "image_from", "aliases", "names"}
 
 
 def main():
@@ -38,6 +40,8 @@ def main():
     # 同じ商品が別のJAN（新旧のJANなど）で載っていることがあるので、"aliases" のJANも同じ商品として扱う
     owner = {jan: p["jan"] for p in catalog["products"] for jan in [p["jan"], *p.get("aliases", [])]}
     by_key = {iphone_key(p["name"]): p["jan"] for p in catalog["products"] if p["series"].startswith("iphone")}
+    by_key |= {card_key(name): p["jan"] for p in catalog["products"] for name in p.get("names", [])}
+    by_key.pop(None, None)  # 名前から読み取れなかった商品が、互いに一致しないように
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
     previous = load_json(OUTPUT) if OUTPUT.exists() else {"shops": [], "products": []}
     prev_shops = {s["id"]: s for s in previous["shops"]}

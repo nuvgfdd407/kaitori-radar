@@ -7,6 +7,7 @@ POST で取得する（画面上のページ送りと同じ）。商品ごとの
 そのJANにも同じ価格を当てはめる。
 iPhone はJANがなく、「iPhone 17 Pro 256GB」「simfree未開封」のように機種＋容量と状態で載っている。
 色による減額は備考に書かれていて、表示価格はいちばん高い色の価格。
+ポケモンカードはおもちゃ買取（3）> ポケモン トレーディングカード（04）にあり、JAN が載っている。
 """
 import re
 
@@ -33,7 +34,7 @@ def fetch(http):
     offers = []
     aliases = []
     for mid in CATEGORIES:
-        for card, name, price, url in _read_category(http, "2", mid):
+        for card, name, price, url in _read_category(http, "2", "01", mid):
             jan = find_jan(_text(card.select_one("small.text-muted")))
             if not jan:
                 continue
@@ -42,17 +43,23 @@ def fetch(http):
             for alias in re.findall(r"JAN:\s*(\d{13})\s*同額", _text(card.select_one("small.my-prod-remarks"))):
                 aliases.append({**offer, "jan": alias})
     for mid in IPHONE_CATEGORIES:
-        for card, name, price, url in _read_category(http, "1", mid):
+        for card, name, price, url in _read_category(http, "1", "01", mid):
             # 状態は「simfree未開封」「simfree開封」のように書かれている
             if "未開封" in name:
                 offers.append({"jan": None, "key": iphone_key(name), "name": name, "price": price, "url": url})
+    for card, name, price, url in _read_category(http, "3", "04"):
+        # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている
+        labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
+        jan = find_jan(_text(card.select_one("small.text-muted")))
+        if jan and any("未開封" in label for label in labels[1:3]):
+            offers.append({"jan": jan, "name": name, "price": price, "url": url})
     # 「同額」で当てはめた価格は、そのJANの直接の出品があればそちらを優先したいので後ろに置く
     return offers + aliases
 
 
-def _read_category(http, kid, mid):
+def _read_category(http, kid, bid, mid=None):
     """カテゴリの全ページの（商品カード, 商品名, 新品の価格, ページのURL）を順に返す。"""
-    page_url = f"{BASE}/Prod/{kid}/01/{mid}"
+    page_url = f"{BASE}/Prod/{kid}/{bid}" + (f"/{mid}" if mid else "")
     soup = BeautifulSoup(http.get(page_url).content, "html.parser")
     yield from _read_cards(soup, page_url)
 
@@ -64,7 +71,7 @@ def _read_category(http, kid, mid):
     for page in range(2, int(pager["data-pagecount"]) + 1):
         res = http.post(
             f"{BASE}/G01_ProdutShow/Index/{page}",
-            params={"kid": kid, "bid": "01", "mid": mid},
+            params={"kid": kid, "bid": bid, **({"mid": mid} if mid else {})},
             data=data,
             headers={"X-Requested-With": "XMLHttpRequest", "Referer": page_url},
         )

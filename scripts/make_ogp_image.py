@@ -34,7 +34,7 @@ def main():
 
     x = 470 * s
     draw.text((x, 170 * s), "買取レーダー", font=font(96), fill=TEXT)
-    draw.text((x, 310 * s), "Switch 2・PS5・iPhoneの", font=font(40), fill=TEXT)
+    draw.text((x, 310 * s), "Switch 2・iPhone・ポケカの", font=font(40), fill=TEXT)
     draw.text((x, 365 * s), "新品買取価格を7店舗で比較", font=font(40), fill=TEXT)
     draw.text((x, 450 * s), "15分ごとに自動更新", font=font(30), fill=MUTED)
     draw.text((x, 520 * s), "kaitori-radar.com", font=font(30), fill=BRAND)

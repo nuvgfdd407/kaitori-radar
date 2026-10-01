@@ -1,7 +1,8 @@
 # 買取レーダー
 
 Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
-iPhone 18・17・16シリーズ（SIMフリー版）の**新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
+iPhone 18・17・16シリーズ（SIMフリー版）、ポケモンカード・ワンピースカードの未開封BOXの
+**新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
 
 - 対象店舗: 買取ホムラ・買取商店・海峡通信・買取一丁目・買取当番・買取ルデヤ・買取wiki（7店舗）
 - 店舗ごとの価格、最高値、定価との差益を一覧表示
@@ -52,6 +53,7 @@ dist/ を Cloudflare Pages に公開
 | `catalog/images.json` | 商品画像のURL（`scraper.images` が自動で作る） |
 | `scraper/shops/*.py` | 店舗ごとの取得処理 |
 | `scraper/iphone.py` | iPhone の商品名から「機種＋容量」を読み取る（突き合わせ用） |
+| `scraper/cards.py` | トレカの商品名からセット名を取り出す（JAN を載せていない店舗との突き合わせ用） |
 | `scraper/update.py` | 全店舗の取得と `prices.json` の書き出し |
 | `scraper/images.py` | Yahoo!ショッピングからの商品画像の取得 |
 | `scraper/build.py`・`scraper/templates.py` | 公開用のサイトを `dist/` に組み立てる（ページのHTMLのひな形は templates.py） |
@@ -103,6 +105,16 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - カタログの iPhone は、シリーズIDを `iphone` で始め、商品名を `iphone_key` の結果と同じ文字列にする
   （`jan` はどれか1色のJAN。画像の検索に使う）
 - 新しい機種が出たら、各店舗モジュールの iPhone のカテゴリ（`IPHONE_SUBS` など）にも追加する
+
+### トレカ（ポケモンカード・ワンピースカード）
+
+- 対象はシュリンク付き・未開封の BOX（カートン・デッキ・特別セットは対象外）
+- 取得している店舗: 買取ホムラ・買取商店・海峡通信（ポケモンのみ）・買取当番・買取ルデヤ（買取一丁目・買取wiki はトレカなし）
+- 買取ホムラと買取当番の一部は JAN を載せていないので、商品名のセット名で突き合わせる。
+  カタログの商品に、その店舗での名前を `"names": ["ストームエメラルダ"]` のように書く
+  （`scraper/cards.py` の `card_key` で、【BOX】などの飾りや空白を除いてから比べる）
+- 定価は 1パックの価格 × 1BOX のパック数（公式の商品ページより）
+- JAN がわかっていない古い BOX（サン&ムーンの頃など）は、まだカタログに入れていない
 
 商品を追加したら、画像の更新（`python -m scraper.images`、または Actions の「商品画像の更新」）も実行してください。
 

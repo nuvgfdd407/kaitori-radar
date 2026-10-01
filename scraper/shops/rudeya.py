@@ -17,6 +17,8 @@ URL = "https://kaitori-rudeya.com/"
 # Nintendo Switch 2 / Nintendo Switch / PlayStation5 / Xbox / PlayStation Portal / Steam / ASUS ROG /
 # Meta Quest / PlayStation VR / PICO 4 / Legion Go
 PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 3, 159, 55, 136, 42, 120, 121, 160)]
+# ポケモンカード / ワンピースカード（カートンは対象外）
+CARD_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (114, 224)]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / Air / 17 / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max / 16e
 IPHONE_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}"
                 for i in (255, 254, 253, 219, 220, 221, 218, 232, 183, 184, 185, 186, 205)]
@@ -26,6 +28,8 @@ def fetch(http):
     offers = []
     for page in PAGES:
         offers += _read_page(http, page)
+    for page in CARD_PAGES:
+        offers += [o for o in _read_page(http, page) if "カートン" not in o["name"]]
     for page in IPHONE_PAGES:
         offers += [{**o, "key": iphone_key(o["name"])} for o in _read_page(http, page) if "未開封" in o["name"]]
     return [o for o in offers if o["jan"] and o["price"]]
