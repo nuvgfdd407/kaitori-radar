@@ -63,6 +63,10 @@ def prepare(data):
         p["profit"] = best - p["msrp"] if has_msrp else None
         p["ratio"] = best / p["msrp"] if has_msrp else None
         p["history"] = [(day, prices[p["jan"]]) for day, prices in records if p["jan"] in prices]
+        # 画像を差し替えたら URL も変わるようにして、ブラウザに古い画像を使い回させない
+        src = (p.get("image") or {}).get("src", "")
+        if src.startswith("/images/") and (PUBLIC / src.lstrip("/")).exists():
+            p["image"] = {**p["image"], "src": versioned(src.lstrip("/"))}
         # 前日比: 今日より前で最後に記録がある日の最高値と比べる
         before = [max(prices.values()) for day, prices in p["history"] if day < today and prices]
         p["change"] = best - before[-1] if best and before else None
