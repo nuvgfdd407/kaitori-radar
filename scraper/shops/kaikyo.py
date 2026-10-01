@@ -8,7 +8,8 @@ POST で取得する（画面上のページ送りと同じ）。商品ごとの
 iPhone はJANがなく、「iPhone 17 Pro 256GB」「simfree未開封」のように機種＋容量と状態で載っている。
 色による減額は備考に「シルバー -32000 / グレイシャー、ブラック -8000」のように書かれていて、
 表示価格はいちばん高い色の価格（備考に出てこない色は表示価格のまま）。
-ポケモンカードはおもちゃ買取（3）> ポケモン トレーディングカード（04）にあり、JAN が載っている。
+ポケモンカード・遊戯王はおもちゃ買取（3）> ポケモン トレーディングカード（04）・遊戯王トレーディングカード（07）にあり、
+JAN が載っている。
 """
 import re
 import unicodedata
@@ -30,6 +31,8 @@ CATEGORIES = ["11", "01", "02", "03", "04", "07", "09"]
 # 携帯買取（1）> iPhone（01）> 18 Pro Max / 18 Pro / 17 Pro Max / 17 Pro / Air / 17 / 17e /
 # 16 Pro Max / 16 Pro / 16 / 16e / 16 Plus
 IPHONE_CATEGORIES = ["40", "39", "37", "36", "35", "34", "38", "32", "31", "30", "33", "29"]
+# おもちゃ買取（3）> ポケモン トレーディングカード / 遊戯王トレーディングカード
+CARD_CATEGORIES = ["04", "07"]
 
 
 def fetch(http):
@@ -53,12 +56,13 @@ def fetch(http):
                 remark = labels[2] if len(labels) > 2 else ""
                 offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
                                "colors": _color_prices(key, price, remark)})
-    for card, name, price, url in _read_category(http, "3", "04"):
-        # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている
-        labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
-        jan = find_jan(_text(card.select_one("small.text-muted")))
-        if jan and any("未開封" in label for label in labels[1:3]):
-            offers.append({"jan": jan, "name": name, "price": price, "url": url})
+    for bid in CARD_CATEGORIES:
+        for card, name, price, url in _read_category(http, "3", bid):
+            # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている
+            labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
+            jan = find_jan(_text(card.select_one("small.text-muted")))
+            if jan and any("未開封" in label for label in labels[1:3]):
+                offers.append({"jan": jan, "name": name, "price": price, "url": url})
     # 「同額」で当てはめた価格は、そのJANの直接の出品があればそちらを優先したいので後ろに置く
     return offers + aliases
 

@@ -10,7 +10,9 @@
     { "id": "iphone17", "name": "iPhone 17シリーズ" },
     { "id": "iphone16", "name": "iPhone 16シリーズ" },
     { "id": "pokemon", "name": "ポケモンカード" },
-    { "id": "onepiece", "name": "ワンピースカード" }
+    { "id": "onepiece", "name": "ワンピースカード" },
+    { "id": "yugioh", "name": "遊戯王" },
+    { "id": "fusionworld", "name": "ドラゴンボール フュージョンワールド" }
   ],
   "products": [
     { "jan": "4902370553024", "series": "switch2", "name": "Nintendo Switch 2（日本語・国内専用）", "model": "BEE-S-KB6CA", "msrp": 59980, "image_url": "https://www.nintendo.com/jp/hardware/switch2/lineup/assets/img/img_products_switch2_jp.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/lineup/" },
@@ -335,9 +337,38 @@
     { "jan": "4549660954958", "series": "onepiece", "name": "ブースターパック 謀略の王国 BOX", "model": "OP-04", "msrp": 5280, "names": ["OP-04 謀略の王国"] },
     { "jan": "4549660863373", "series": "onepiece", "name": "ブースターパック 強大な敵 BOX", "model": "OP-03", "msrp": 4752, "names": ["OP-03 強大な敵"] },
     { "jan": "4549660862963", "series": "onepiece", "name": "ブースターパック 頂上決戦 BOX", "model": "OP-02", "msrp": 4752, "names": ["OP-02 頂上決戦"] },
-    { "jan": "4549660853503", "series": "onepiece", "name": "ブースターパック ROMANCE DAWN BOX", "model": "OP-01", "msrp": 4752, "names": ["OP-01 ロマンスドーン"] }
+    { "jan": "4549660853503", "series": "onepiece", "name": "ブースターパック ROMANCE DAWN BOX", "model": "OP-01", "msrp": 4752, "names": ["OP-01 ロマンスドーン"] },
+
+    { "jan": "4988602180701", "series": "yugioh", "name": "ORIGINAL ARTWORK COLLECTION BOX", "model": "YAC1", "msrp": 5940, "image_item": "brownie-store_4988602180701" },
+    { "jan": "4988602180305", "series": "yugioh", "name": "BEYOND THE BRAVE BOX", "model": "BETB", "msrp": 5940, "image_item": "taroubou_yugioh-beyondthebrave" },
+    { "jan": "4988602179750", "series": "yugioh", "name": "CHAOS ORIGINS BOX", "model": "CORI", "msrp": 5940, "image_item": "comgstore_6101-4988602179750" },
+    { "jan": "4988602179514", "series": "yugioh", "name": "LIMIT OVER COLLECTION -THE RIVALS- BOX", "model": "LOCR", "msrp": 5775 },
+    { "jan": "4988602179507", "series": "yugioh", "name": "LIMIT OVER COLLECTION -THE HEROES- BOX", "model": "LOCH", "msrp": 5775 },
+    { "jan": "4988602179316", "series": "yugioh", "name": "LIMITED PACK -STAMP EDITION- BOX", "model": "LPST", "msrp": 3500, "image_item": "picopicoshop_4988602179316" },
+    { "jan": "4988602178760", "series": "yugioh", "name": "LIMITED PACK GX -オシリスレッド- BOX", "model": "LPG1", "msrp": 3500, "image_item": "picopicoshop_4988602178760" },
+    { "jan": "4988602178166", "series": "yugioh", "name": "QUARTER CENTURY ART COLLECTION BOX", "model": "QCAC", "msrp": 5775, "image_item": "shijimi-ya_qcac-01" },
+    { "jan": "4988602177749", "series": "yugioh", "name": "QUARTER CENTURY LIMITED PACK BOX", "model": "QCLP", "msrp": 3500, "image_item": "happylifesuginami_260426k003500" },
+    { "jan": "4988602177138", "series": "yugioh", "name": "QUARTER CENTURY CHRONICLE side:PRIDE BOX", "model": "QCCP", "msrp": 5775, "image_item": "comgstore_6101-4988602177138" },
+    { "jan": "4988602177121", "series": "yugioh", "name": "QUARTER CENTURY CHRONICLE side:UNITY BOX", "model": "QCCU", "msrp": 5775, "image_item": "comgstore_6101-4988602177121" },
+
+    { "jan": "4582770066562", "series": "fusionworld", "name": "ブースターパック BRIGHTNESS OF HOPE BOX", "model": "FB11", "msrp": 5760 },
+    { "jan": "4582770011982", "series": "fusionworld", "name": "STORY BOOSTER 01 BOX", "model": "ST01", "msrp": 6600 },
+    { "jan": "4582769965937", "series": "fusionworld", "name": "ブースターパック CROSS FORCE BOX", "model": "FB10", "msrp": 5280, "image_item": "mediaworld-plus_13921190000" },
+    { "jan": "4582769937071", "series": "fusionworld", "name": "ブースターパック DUAL EVOLUTION BOX", "model": "FB09", "msrp": 5280 },
+    { "jan": "4582769912498", "series": "fusionworld", "name": "ブースターパック 誇り高き戦闘民族 BOX", "model": "FB08", "msrp": 5280 },
+    { "jan": "4582769912511", "series": "fusionworld", "name": "MANGA BOOSTER 02 BOX", "model": "SB02", "msrp": 7920, "names": ["SB-02 フュージョンワールド MANGA BOOSTER 02"] },
+    { "jan": "4582769893971", "series": "fusionworld", "name": "ブースターパック 神龍への願い BOX", "model": "FB07", "msrp": 5280, "names": ["FB-07 神龍への願い"] },
+    { "jan": "4582769865190", "series": "fusionworld", "name": "MANGA BOOSTER 01 BOX", "model": "SB01", "msrp": 7920, "names": ["SB-01 MANGA BOOSTER 01"] },
+    { "jan": "4582769824548", "series": "fusionworld", "name": "ブースターパック 迫り来る脅威 BOX", "model": "FB06", "msrp": 5280, "image_item": "toreneko_4582769824548" },
+    { "jan": "4582769733710", "series": "fusionworld", "name": "ブースターパック 未知なる冒険 BOX", "model": "FB05", "msrp": 5280 },
+    { "jan": "4570118259486", "series": "fusionworld", "name": "ブースターパック 限界を超えし者 BOX", "model": "FB04", "msrp": 5280 },
+    { "jan": "4570118259479", "series": "fusionworld", "name": "ブースターパック 怒りの咆哮 BOX", "model": "FB03", "msrp": 5280 },
+    { "jan": "4570118189561", "series": "fusionworld", "name": "ブースターパック 烈火の闘気 BOX", "model": "FB02", "msrp": 5280 },
+    { "jan": "4570118119698", "series": "fusionworld", "name": "ブースターパック 覚醒の鼓動 BOX", "model": "FB01", "msrp": 5280 }
   ],
   "ignore": [
+    { "jan": "4582769982255", "note": "ドラゴンボールスーパーダイバーズ（フュージョンワールドとは別のゲーム）" },
+    { "jan": "4582770079296", "note": "ドラゴンボールスーパーダイバーズ（フュージョンワールドとは別のゲーム）" },
     { "jan": "0814585022803", "note": "Steam Controller" },
     { "jan": "4948872416900", "note": "PULSE Explore" },
     { "jan": "0815820022480", "note": "Oculus Quest 2（旧世代のため対象外）" },
