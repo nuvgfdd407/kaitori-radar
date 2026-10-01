@@ -9,7 +9,8 @@
 - 商品画像は scraper.images が作った catalog/images.json から載せる
 - 日ごとの価格の記録（data/history/）も更新する（scraper.history を参照）
 - iPhone は JAN ではなく「機種＋容量」（scraper.iphone.iphone_key）で突き合わせる。
-  色違いが同じ商品にまとまるので、高い方の価格（いちばん高い色の価格）が残る
+  色違いが同じ商品にまとまるので、高い方の価格（いちばん高い色の価格）が残る。
+  色ごとの価格も "colors" に残す（色の名前は scraper.iphone.iphone_color で公式の日本語名にそろえる）
 - JAN を載せていない店舗のトレカは、カタログの "names"（セット名）と商品名（scraper.cards.card_key）で突き合わせる
 """
 import sys
@@ -62,9 +63,13 @@ def main():
                 target = owner.get(jan) or by_key.get(offer.get("key"))
                 if target:
                     # 同じ商品が複数回（ページ内の重複・別のJAN・色違い）載っていたら、高い方を使う
-                    current = found.get(target)
-                    if current is None or offer["price"] > current["price"]:
-                        found[target] = {"price": offer["price"], "url": offer["url"]}
+                    current = found.setdefault(target, {"price": 0, "url": offer["url"]})
+                    if offer["price"] > current["price"]:
+                        current.update(price=offer["price"], url=offer["url"])
+                    # iPhone は色ごとの価格も残す（商品ページの「色別の買取価格」に使う）
+                    for color, price in (offer.get("colors") or {}).items():
+                        colors = current.setdefault("colors", {})
+                        colors[color] = max(colors.get(color, 0), price)
                 elif jan not in ignored and offer["price"] >= REPORT_MIN_PRICE:
                     unmatched.append({"shop": shop.NAME, **offer})
             if not found:

@@ -9,7 +9,7 @@ iPhone は携帯用の API にあり、JANのない「iPhone 17 Pro 256GB」の�
 """
 import re
 
-from ..iphone import iphone_key
+from ..iphone import iphone_color, iphone_key
 
 ID = "ichome"
 NAME = "買取一丁目"
@@ -44,13 +44,15 @@ def fetch(http):
     for category in IPHONE_CATEGORIES:
         for item in _read_category(http, IPHONE_API, category):
             name = (item.get("title") or "").strip()
-            price = _unopened_price(item)
+            key = iphone_key(name)
+            price, colors = _unopened_prices(item, key)
             if price:
                 offers.append({
                     "jan": None,
-                    "key": iphone_key(name),
+                    "key": key,
                     "name": name,
                     "price": price,
+                    "colors": colors,
                     "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
                 })
     return offers
@@ -84,18 +86,19 @@ def _new_price(item):
     return max(prices) if prices else None
 
 
-def _unopened_price(item):
-    """iPhone の「未開封」の価格（色による増減があれば、いちばん高い色の価格）。"""
+def _unopened_prices(item, key):
+    """iPhone の「未開封」の価格。（いちばん高い色の価格, {色: 価格}）を返す。"""
     if not re.search("新品", item.get("kbName") or ""):
-        return None
+        return None, {}
     detail = next((d for d in item.get("goodsKbDetails") or [] if d.get("kbDetailName") == "未開封"), None)
     if not detail or not detail.get("kbDetailPrice"):
-        return None
+        return None, {}
     base = detail["kbDetailPrice"]
-    changes = [
-        rel.get("varPrice") or 0
-        for color in item.get("keitaiColorOptions") or []
-        for rel in color.get("keitaiKbDetailColorRels") or []
-        if rel.get("keitaiKbDetailId") == detail.get("allGoodsKbDetailId")
-    ]
-    return base + max(changes, default=0)
+    colors = {}
+    for option in item.get("keitaiColorOptions") or []:
+        change = next((rel.get("varPrice") or 0 for rel in option.get("keitaiKbDetailColorRels") or []
+                       if rel.get("keitaiKbDetailId") == detail.get("allGoodsKbDetailId")), 0)
+        color = iphone_color(key, option.get("color"))
+        if color:
+            colors[color] = max(colors.get(color, 0), base + change)
+    return (max(colors.values()) if colors else base), colors

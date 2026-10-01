@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_key
+from ..iphone import iphone_key, one_color
 from ..text import find_jan, parse_yen
 
 ID = "shouten"
@@ -32,7 +32,9 @@ def fetch(http):
     for page in PAGES:
         offers += [o for o in _read_table(http, page) if o["jan"]]
     for page in IPHONE_PAGES:
-        offers += [{**o, "key": iphone_key(o["name"])} for o in _read_table(http, page)]
+        for o in _read_table(http, page):
+            key = iphone_key(o["name"])
+            offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
     return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
 
 

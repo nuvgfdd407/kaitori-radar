@@ -11,7 +11,7 @@ import re
 from bs4 import BeautifulSoup
 
 from ..cards import card_key
-from ..iphone import iphone_key
+from ..iphone import iphone_key, one_color
 from ..text import find_jan
 
 ID = "homura"
@@ -40,7 +40,9 @@ def fetch(http):
     for sub in IPHONE_SUBS:
         for name, jan, price, url in _read_list(http, IPHONE_CATEGORY, sub):
             if "未開封" in name:
-                offers.append({"jan": jan, "key": iphone_key(name), "name": name, "price": price, "url": url})
+                key = iphone_key(name)
+                offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
+                               "colors": one_color(key, name, price)})
     for sub in CARD_SUBS:
         for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
             offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})

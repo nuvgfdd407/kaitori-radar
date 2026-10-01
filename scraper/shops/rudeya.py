@@ -6,7 +6,7 @@ iPhone は色ごとに「iPhone 17 Pro 256GB ブラック … 未開封 SIMフ�
 """
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_key
+from ..iphone import iphone_key, one_color
 from ..text import find_jan, parse_yen
 
 ID = "rudeya"
@@ -31,7 +31,10 @@ def fetch(http):
     for page in CARD_PAGES:
         offers += [o for o in _read_page(http, page) if "カートン" not in o["name"]]
     for page in IPHONE_PAGES:
-        offers += [{**o, "key": iphone_key(o["name"])} for o in _read_page(http, page) if "未開封" in o["name"]]
+        for o in _read_page(http, page):
+            if "未開封" in o["name"]:
+                key = iphone_key(o["name"])
+                offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"])})
     return [o for o in offers if o["jan"] and o["price"]]
 
 

@@ -6,14 +6,16 @@ POST で取得する（画面上のページ送りと同じ）。商品ごとの
 備考に「JAN:xxxx同額」とあるときは、そのJANの商品も同じ価格で買い取るという意味なので、
 そのJANにも同じ価格を当てはめる。
 iPhone はJANがなく、「iPhone 17 Pro 256GB」「simfree未開封」のように機種＋容量と状態で載っている。
-色による減額は備考に書かれていて、表示価格はいちばん高い色の価格。
+色による減額は備考に「シルバー -32000 / グレイシャー、ブラック -8000」のように書かれていて、
+表示価格はいちばん高い色の価格（備考に出てこない色は表示価格のまま）。
 ポケモンカードはおもちゃ買取（3）> ポケモン トレーディングカード（04）にあり、JAN が載っている。
 """
 import re
+import unicodedata
 
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_key
+from ..iphone import iphone_color, iphone_colors, iphone_key
 from ..text import find_jan, parse_yen
 
 ID = "kaikyo"
@@ -46,7 +48,11 @@ def fetch(http):
         for card, name, price, url in _read_category(http, "1", "01", mid):
             # 状態は「simfree未開封」「simfree開封」のように書かれている
             if "未開封" in name:
-                offers.append({"jan": None, "key": iphone_key(name), "name": name, "price": price, "url": url})
+                key = iphone_key(name)
+                labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
+                remark = labels[2] if len(labels) > 2 else ""
+                offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
+                               "colors": _color_prices(key, price, remark)})
     for card, name, price, url in _read_category(http, "3", "04"):
         # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている
         labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
@@ -55,6 +61,20 @@ def fetch(http):
             offers.append({"jan": jan, "name": name, "price": price, "url": url})
     # 「同額」で当てはめた価格は、そのJANの直接の出品があればそちらを優先したいので後ろに置く
     return offers + aliases
+
+
+def _color_prices(key, price, remark):
+    """備考の色ごとの減額から {色: 価格} を作る。"""
+    colors = dict.fromkeys(iphone_colors(key), price)
+    pending = []
+    for token in re.findall(r"[-−]\s*\d+|[^\s/、,・\-−\d]+", unicodedata.normalize("NFKC", remark)):
+        if token[0] in "-−":
+            for color in pending:
+                colors[color] = price - int(token[1:].strip())
+            pending = []
+        elif color := iphone_color(key, token):
+            pending.append(color)
+    return colors
 
 
 def _read_category(http, kid, bid, mid=None):

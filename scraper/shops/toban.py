@@ -4,6 +4,7 @@
 SKU 欄に JAN コードが入っている。この店は新品専門で、中古は別カテゴリ。
 iPhone は JAN がなく「iPhone 17 Pro 256GB」のような機種＋容量の商品で、
 色ごとに価格が違うときは価格の幅（price_range）が付くので、その最大値を使う。
+色ごとの価格は、色の選択肢（variation）をカテゴリごとにまとめて取得する。
 トレカは「BOXシュリンクあり」「カートン」などの選択肢があり、表示価格（いちばん安い選択肢）が
 BOX の価格になる。「BOXシュリンクなし」もある商品だけは、シュリンクありの選択肢の価格を取り直す。
 「郵送専用」「来店専用」の2つで載っている商品は、郵送の方を使う（郵送の方は JAN がないことが多い）。
@@ -12,7 +13,7 @@ import html
 from urllib.parse import unquote
 
 from ..cards import card_key
-from ..iphone import iphone_key
+from ..iphone import iphone_color, iphone_key
 
 ID = "toban"
 NAME = "買取当番"
@@ -36,9 +37,13 @@ def fetch(http):
         for item, name in _read_category(http, category):
             offers.append({"jan": item["sku"].strip(), "name": name, "price": _price(item, "max"), "url": item["permalink"]})
     for category in IPHONE_CATEGORIES:
-        for item, name in _read_category(http, category):
-            offers.append({"jan": None, "key": iphone_key(name), "name": name,
-                           "price": _price(item, "max"), "url": item["permalink"]})
+        items = list(_read_category(http, category))
+        colors = _variation_prices(http, [item for item, _ in items])
+        for item, name in items:
+            key = iphone_key(name)
+            offers.append({"jan": None, "key": key, "name": name, "price": _price(item, "max"), "url": item["permalink"],
+                           "colors": {c: price for text, price in colors.get(item["id"], [])
+                                      if (c := iphone_color(key, text))}})
     for category in CARD_CATEGORIES:
         for item, name in _read_category(http, category):
             if "来店専用" in name:
@@ -60,6 +65,19 @@ def _read_category(http, category):
         if page >= int(res.headers.get("X-WP-TotalPages", 1)):
             break
         page += 1
+
+
+def _variation_prices(http, items):
+    """{親の商品ID: [（「カラー: ブラック」のような選択肢の文字列, 価格）]}。"""
+    parents = [item["id"] for item in items if item["type"] == "variable"]
+    if not parents:
+        return {}
+    params = [("type", "variation"), ("per_page", 100)] + [("parent[]", i) for i in parents]
+    result = {}
+    for variation in http.get(API, params=params).json():
+        if variation.get("is_purchasable"):
+            result.setdefault(variation["parent"], []).append((variation.get("variation") or "", _price(variation)))
+    return result
 
 
 def _price(item, which="min"):
