@@ -11,21 +11,28 @@
 - 新品の出品がない商品は、見た目が同じ別の商品（容量違いの iPhone など）のJANを
   "image_from": "<JAN>" に書くと、その商品の画像を使う
 - 選んだ画像は public/images/<JAN>.jpg に保存して、サイトから直接出す（元の出品が消えても使える）。
+  出品ごとに余白や大きさがバラバラなので、大きい画像（600px）から余白を切り取り、
+  同じ大きさの白い正方形の中央に、同じ大きさで置いて保存する（normalize）
   一度保存した画像は使い続け、探し直すのは、まだ画像がない商品と "image_item" を変えた商品だけ
 - API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている
 """
 import argparse
+import io
 import os
 import sys
 import time
 
 import requests
+from PIL import Image, ImageDraw
 
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 
 API = "https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch"
 INTERVAL = 2.5   # 秒。1秒に1回の上限ぎりぎりだと、30件ほどで制限がかかった
 IMAGE_DIR = ROOT / "public" / "images"
+LARGE_URL = "https://item-shopping.c.yimg.jp/i/l/{code}"  # 600px の画像（i/g/ は 146px）
+IMAGE_SIZE = 240   # 保存する画像の一辺（商品ページの大きい画像の2倍）
+IMAGE_FILL = 0.86  # 商品が正方形に占める大きさ
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
 # 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
@@ -107,22 +114,51 @@ def update_all(session, client_id):
 
 
 def save(session, jan, image):
-    """画像を public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
+    """画像を整えて public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
     path = IMAGE_DIR / f"{jan}.jpg"
     if not path.exists():
-        if not image["src"].startswith("https://"):
-            return False
-        try:
-            res = session.get(image["src"], timeout=30)
-        except requests.RequestException:
-            return False
-        # 出品が消えた画像のURLは「画像なし」の GIF を返す
-        if res.status_code != 200 or res.headers.get("content-type") != "image/jpeg":
+        urls = [LARGE_URL.format(code=image["code"])] if image.get("code") else []
+        urls += [image["src"]] if image["src"].startswith("https://") else []
+        data = next((d for d in (_download(session, url) for url in urls) if d), None)
+        if data is None:
             return False
         IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(res.content)
+        path.write_bytes(normalize(data))
     image["src"] = f"/images/{jan}.jpg"
     return True
+
+
+def _download(session, url):
+    try:
+        res = session.get(url, timeout=30)
+    except requests.RequestException:
+        return None
+    # 出品が消えた画像のURLは「画像なし」の GIF を返す
+    if res.status_code != 200 or res.headers.get("content-type") != "image/jpeg":
+        return None
+    return res.content
+
+
+def normalize(data):
+    """余白を切り取り、白い正方形の中央に同じ大きさで置いた JPEG にする。"""
+    image = Image.open(io.BytesIO(data)).convert("RGB")
+    w, h = image.size
+    corners = [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)]
+    # 背景が白っぽい（薄い灰色など）ときは、背景を白にそろえる（四隅からつながっている部分だけ）
+    if all(min(image.getpixel(c)) >= 215 for c in corners):
+        for c in corners:
+            ImageDraw.floodfill(image, c, (255, 255, 255), thresh=24)
+    box = image.convert("L").point(lambda v: 255 if v < 245 else 0).getbbox()
+    if box:
+        image = image.crop(box)
+    target = IMAGE_SIZE * IMAGE_FILL
+    scale = min(target / image.width, target / image.height)
+    image = image.resize((max(1, round(image.width * scale)), max(1, round(image.height * scale))), Image.LANCZOS)
+    canvas = Image.new("RGB", (IMAGE_SIZE, IMAGE_SIZE), (255, 255, 255))
+    canvas.paste(image, ((IMAGE_SIZE - image.width) // 2, (IMAGE_SIZE - image.height) // 2))
+    out = io.BytesIO()
+    canvas.save(out, "JPEG", quality=88, optimize=True)
+    return out.getvalue()
 
 
 def show_candidates(session, client_id, jans):
