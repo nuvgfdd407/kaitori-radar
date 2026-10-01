@@ -10,8 +10,9 @@
 import hashlib
 import shutil
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
+from . import history
 from . import templates as t
 from .common import PRICES, ROOT, SITE_URL, load_json
 
@@ -45,6 +46,7 @@ def main():
 def prepare(data):
     """テンプレートで使う値（最高値・差益・日時の表示など）を計算しておく。"""
     today = datetime.now(JST).date().isoformat()
+    records = history.load(date.fromisoformat(today), t.HISTORY_DAYS)
     shops = data["shops"]
     for shop in shops:
         if not shop["ok"]:
@@ -60,6 +62,10 @@ def prepare(data):
         has_msrp = best and p.get("msrp") and p["released"]
         p["profit"] = best - p["msrp"] if has_msrp else None
         p["ratio"] = best / p["msrp"] if has_msrp else None
+        p["history"] = [(day, prices[p["jan"]]) for day, prices in records if p["jan"] in prices]
+        # 前日比: 今日より前で最後に記録がある日の最高値と比べる
+        before = [max(prices.values()) for day, prices in p["history"] if day < today and prices]
+        p["change"] = best - before[-1] if best and before else None
     return {
         "shops": shops,
         "series": data["series"],

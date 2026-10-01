@@ -7,6 +7,7 @@
   （GitHub Actions で変化があったときだけコミットするため）
 - カタログにない高額商品は reports/unmatched.json に書き出す（新しい本体の登録漏れに気づくため）
 - 商品画像は scraper.images が作った catalog/images.json から載せる
+- 日ごとの価格の記録（data/history/）も更新する（scraper.history を参照）
 - iPhone は JAN ではなく「機種＋容量」（scraper.iphone.iphone_key）で突き合わせる。
   色違いが同じ商品にまとまるので、高い方の価格（いちばん高い色の価格）が残る
 """
@@ -14,6 +15,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
+from . import history
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 from .http import Http
 from .iphone import iphone_key
@@ -91,6 +93,10 @@ def main():
     if changed:
         write_json(OUTPUT, {"updated_at": now, **data})
     print("価格や取得状況に変化あり。prices.json を更新しました" if changed else "変化なし")
+    # その日の最初の実行では、価格が変わっていなくても記録のファイルができる（グラフに今日の点が増える）
+    if history.record({"shops": shops, **data}, now[:10]):
+        changed = True
+        print("価格の記録（data/history/）を更新しました")
 
     unmatched = sorted(_unique(unmatched), key=lambda o: (o["shop"], -o["price"]))
     if not UNMATCHED.exists() or load_json(UNMATCHED) != unmatched:

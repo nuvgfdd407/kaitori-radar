@@ -19,7 +19,8 @@ GitHub Actions（10:07〜20:52 に15分ごと。Cloudflare の Worker が開始�
   └ python -m scraper.update
       ├ 各店舗のサイトから価格を取得（店舗ごとに並行して実行）
       ├ catalog/products.json の商品と JAN コード（iPhone は機種＋容量）で突き合わせ、画像も載せる
-      └ 価格が変わったときだけ public/data/prices.json を更新してコミット
+      ├ 価格が変わったときだけ public/data/prices.json を更新してコミット
+      └ 日ごとの価格の記録 data/history/<日付>.json も更新（その日の最後の価格が残る）
   └ python -m scraper.build（価格が変わったときだけ）
       └ public/ と prices.json から、公開用のサイトを dist/ に組み立てる
             ↓
@@ -32,7 +33,7 @@ dist/ を Cloudflare Pages に公開
 |---|---|
 | `/` | 全商品の比較表 |
 | `/switch2/`・`/ps5/`・`/iphone17/` など | シリーズごとの比較表（そのシリーズを扱っている店舗だけの列にする） |
-| `/item/<JAN>/` | 商品ごとの、店舗別の価格（高い順） |
+| `/item/<JAN>/` | 商品ごとの、店舗別の価格（高い順）と、最近30日の価格の推移のグラフ・前日比 |
 | `/cart/` | 比較リスト（検索結果に出さない。サイトマップにも載せない） |
 | `/sitemap.xml` | 上のすべてのページの一覧（組み立てるときに自動で作る） |
 
@@ -56,6 +57,7 @@ dist/ を Cloudflare Pages に公開
 | `scraper/build.py`・`scraper/templates.py` | 公開用のサイトを `dist/` に組み立てる（ページのHTMLのひな形は templates.py） |
 | `public/` | そのまま公開するファイル（CSS・JavaScript・画像・robots.txt・404ページ・価格データ） |
 | `dist/` | 組み立てたサイト（生成物なので Git には入れない） |
+| `data/history/` | 日ごとの店舗別の価格の記録（`scraper/history.py`。商品ページのグラフに使う） |
 | `reports/unmatched.json` | カタログにない2万円以上の商品（新しい本体の登録漏れチェック用。公開はしない） |
 | `.github/workflows/update-prices.yml` | 15分ごとの価格の更新 |
 | `.github/workflows/update-images.yml` | 1日1回の画像の更新 |
@@ -101,6 +103,14 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - 新しい機種が出たら、各店舗モジュールの iPhone のカテゴリ（`IPHONE_SUBS` など）にも追加する
 
 商品を追加したら、画像の更新（`python -m scraper.images`、または Actions の「商品画像の更新」）も実行してください。
+
+## 価格の推移（data/history/）
+
+- 価格の更新のたびに、その日のファイル（`data/history/2026-10-02.json` など）に各店舗の価格を上書きする。
+  1日の最後に取得した価格が、その日の価格として残る
+- 取得に失敗している店舗は、前回の価格を使い回しているだけなので記録しない
+- 商品ページのグラフはサイトを組み立てるときに SVG として作る（JavaScript なし）。2日分以上の記録がある商品だけ表示する
+- 記録を始める前の日の分は `python -m scraper.history --backfill` で、Git に残っている prices.json の各版から作れる
 
 ## 商品画像（Yahoo!ショッピング）
 

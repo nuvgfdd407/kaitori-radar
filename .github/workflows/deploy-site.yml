@@ -11,6 +11,7 @@ on:
       - "scraper/build.py"
       - "scraper/templates.py"
       - "scraper/common.py"
+      - "scraper/history.py"
       - ".github/workflows/deploy-site.yml"
   workflow_dispatch:
 

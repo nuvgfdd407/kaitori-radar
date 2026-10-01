@@ -4,6 +4,8 @@
 ブラウザ側の app.js は、表の並び替えと、切れた画像の差し替えだけを行う。
 """
 import json
+import math
+from datetime import date, timedelta
 from html import escape
 
 from .common import SITE_URL
@@ -294,6 +296,9 @@ def item_content(site, p, series, siblings, shops):
 
     facts = [("最高買取", f'<span class="col-best">{yen(p["best"])}</span>' if p["best"] else "—")]
     facts.append(("定価", yen(p["msrp"]) if p.get("msrp") else "—"))
+    if p.get("change") is not None:
+        cls = "pos" if p["change"] > 0 else "neg" if p["change"] < 0 else ""
+        facts.append(("前日比", f'<span class="profit {cls}">{signed_yen(p["change"])}</span>'))
     if p["profit"] is not None:
         cls = "pos" if p["profit"] > 0 else "neg" if p["profit"] < 0 else ""
         facts.append(("差益", f'<span class="profit {cls}">{signed_yen(p["profit"])}（{signed_pct(p["ratio"])}）</span>'))
@@ -325,6 +330,9 @@ def item_content(site, p, series, siblings, shops):
       </table>
     </div>
 
+    <h2 class="section-title">買取価格の推移（最近{HISTORY_DAYS}日）</h2>
+{price_history(site, p, shops)}
+
     <h2 class="section-title">{esc(series["name"])}のほかの商品</h2>
     <ul class="related">{related}</ul>
     <p><a href="/{series["id"]}/">{esc(series["name"])}の新品買取価格を一覧で比較する</a></p>"""
@@ -336,6 +344,115 @@ def is_iphone(series):
 
 def item_breadcrumbs(series, p):
     return [(SITE_NAME, "/"), (series["name"], f"/{series['id']}/"), (p["name"], f"/item/{p['jan']}/")]
+
+
+# ---- 価格の推移（商品ページ） ---------------------------------------------------
+
+HISTORY_DAYS = 30  # 商品ページのグラフに出す日数
+CHART_W, CHART_H = 560, 240
+CHART_LEFT, CHART_RIGHT, CHART_TOP, CHART_BOTTOM = 84, 8, 12, 28
+
+
+def price_history(site, p, shops):
+    """店舗ごとの買取価格の推移のグラフ（SVG）と、日ごとの最高値の表。
+
+    p["history"] は build.py が用意する [(日付の文字列, {店舗ID: 価格})]（古い順）。
+    線の色は店舗ごとに固定（全店舗の並び順で style.css の .c0〜.c6 を使う）。
+    """
+    history = p["history"]
+    if len(history) < 2:
+        return ('    <p class="chart-note">価格の記録を始めたばかりです。'
+                '2日分以上の記録がたまると、ここに店舗ごとの推移のグラフを表示します。</p>')
+    color = {s["id"]: i for i, s in enumerate(site["shops"])}
+    first = date.fromisoformat(history[0][0])
+    span = max((date.fromisoformat(history[-1][0]) - first).days, 1)
+    lines = []
+    for shop in shops:
+        points = [((date.fromisoformat(day) - first).days, prices[shop["id"]])
+                  for day, prices in history if shop["id"] in prices]
+        if points:
+            lines.append((shop, points))
+    if not lines:
+        return '    <p class="chart-note">この期間に、この商品の買取価格を掲載していた店舗はありません。</p>'
+
+    ticks = _nice_ticks(min(v for _, pts in lines for _, v in pts), max(v for _, pts in lines for _, v in pts))
+    low, high = ticks[0], ticks[-1]
+    plot_w, plot_h = CHART_W - CHART_LEFT - CHART_RIGHT, CHART_H - CHART_TOP - CHART_BOTTOM
+
+    def x(offset):
+        return round(CHART_LEFT + offset / span * plot_w, 1)
+
+    def y(value):
+        return round(CHART_TOP + (high - value) / (high - low) * plot_h, 1)
+
+    grid = "".join(
+        f'<line x1="{CHART_LEFT}" x2="{CHART_W - CHART_RIGHT}" y1="{y(v)}" y2="{y(v)}"/>'
+        f'<text x="{CHART_LEFT - 6}" y="{y(v) + 4}" text-anchor="end">{yen(v)}</text>'
+        for v in ticks
+    )
+    label_days = sorted({round(i * span / 4) for i in range(5)}) if span >= 4 else range(span + 1)
+    # 両端の日付は、はみ出さないように内側に寄せる
+    anchors = {0: "start", span: "end"}
+    grid += "".join(
+        f'<text x="{x(d)}" y="{CHART_H - 6}" text-anchor="{anchors.get(d, "middle")}">'
+        f'{_month_day(first + timedelta(days=d))}</text>'
+        for d in label_days
+    )
+    paths = "".join(
+        f'<g class="c{color[shop["id"]]}"><title>{esc(shop["name"])}</title>'
+        f'<polyline class="line" points="{" ".join(f"{x(d)},{y(v)}" for d, v in points)}"/>'
+        + "".join(f'<circle class="dot" cx="{x(d)}" cy="{y(v)}" r="2.5"/>' for d, v in points)
+        + "</g>"
+        for shop, points in lines
+    )
+    latest = sorted(lines, key=lambda line: -line[1][-1][1])
+    legend = "".join(
+        f'<li><span class="swatch c{color[shop["id"]]}" aria-hidden="true"></span>{esc(shop["short"])}'
+        f' <span class="legend-price">{yen(points[-1][1])}</span></li>'
+        for shop, points in latest
+    )
+    period = f"{_month_day(first)}〜{_month_day(date.fromisoformat(history[-1][0]))}"
+    rows = []
+    for day, prices in reversed(history):
+        shown = {s["short"]: prices[s["id"]] for s in shops if s["id"] in prices}
+        if not shown:
+            continue
+        best = max(shown.values())
+        names = "・".join(name for name, price in shown.items() if price == best)
+        rows.append(f'<tr><th scope="row">{_month_day(date.fromisoformat(day))}</th>'
+                    f'<td class="num">{yen(best)}</td><td>{esc(names)}</td></tr>')
+    return f"""    <figure class="chart-wrap">
+      <svg class="chart" viewBox="0 0 {CHART_W} {CHART_H}" role="img" aria-label="{esc(p["name"])}の店舗別の買取価格の推移（{period}）">
+        <g class="grid">{grid}</g>{paths}
+      </svg>
+      <figcaption><ul class="chart-legend">{legend}</ul></figcaption>
+    </figure>
+    <details class="history-table">
+      <summary>日ごとの最高値を表で見る</summary>
+      <div class="table-wrap table-wrap--auto">
+        <table class="shop-table">
+          <thead><tr><th scope="col">日付</th><th scope="col">最高買取</th><th scope="col">店舗</th></tr></thead>
+          <tbody>{"".join(rows)}</tbody>
+        </table>
+      </div>
+    </details>"""
+
+
+def _nice_ticks(low, high, count=4):
+    """グラフの縦軸の目盛り（きりのいい金額）。"""
+    if low == high:
+        low, high = low - max(1000, low // 20), high + max(1000, low // 20)
+    raw = (high - low) / count
+    magnitude = 10 ** math.floor(math.log10(raw))
+    step = next(m * magnitude for m in (1, 2, 2.5, 5, 10) if m * magnitude >= raw)
+    step = max(int(step), 100)
+    start = math.floor(low / step) * step
+    end = math.ceil(high / step) * step
+    return list(range(start, end + 1, step))
+
+
+def _month_day(d):
+    return f"{d.month}/{d.day}"
 
 
 # ---- 比較リスト ------------------------------------------------------------------

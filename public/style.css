@@ -15,6 +15,14 @@
   --warn-line: #f5b25b;
   --tag-bg: #eef0f4;
   --shadow: 0 1px 2px rgb(16 24 40 / 6%);
+  /* 価格の推移のグラフの、店舗ごとの線の色（全店舗の並び順） */
+  --c0: #3b5bdb;
+  --c1: #e8590c;
+  --c2: #2b8a3e;
+  --c3: #c2255c;
+  --c4: #7048e8;
+  --c5: #0c8599;
+  --c6: #b08900;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +43,13 @@
     --warn-line: #9a6a24;
     --tag-bg: #262c36;
     --shadow: none;
+    --c0: #7b93ff;
+    --c1: #ff922b;
+    --c2: #51cf66;
+    --c3: #f06595;
+    --c4: #9775fa;
+    --c5: #3bc9db;
+    --c6: #fcc419;
   }
 }
 
@@ -299,6 +314,58 @@ a.product:hover { text-decoration: underline; }
 .shop-table tr.is-stale .price a { color: var(--muted); font-style: italic; }
 .shop-table .diff { color: var(--muted); font-size: 13px; }
 .shop-table tr.none th, .shop-table tr.none td { color: var(--muted); }
+/* 価格の推移のグラフ */
+.chart-wrap {
+  margin: 0;
+  max-width: 760px;
+  padding: 12px 12px 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+.chart { display: block; width: 100%; height: auto; }
+.chart .grid line { stroke: var(--line); }
+.chart text { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.chart .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.chart .grid line { vector-effect: non-scaling-stroke; }
+/* グラフは画面の幅に合わせて縮むので、狭い画面では文字を大きめにしておく */
+@media (max-width: 600px) {
+  .chart text { font-size: 17px; }
+}
+.chart .dot { stroke: var(--surface); stroke-width: 1; }
+/* 線（polyline）は塗らず、点（circle）は線と同じ色で塗る */
+.chart .c0 { stroke: var(--c0); fill: var(--c0); }
+.chart .c1 { stroke: var(--c1); fill: var(--c1); }
+.chart .c2 { stroke: var(--c2); fill: var(--c2); }
+.chart .c3 { stroke: var(--c3); fill: var(--c3); }
+.chart .c4 { stroke: var(--c4); fill: var(--c4); }
+.chart .c5 { stroke: var(--c5); fill: var(--c5); }
+.chart .c6 { stroke: var(--c6); fill: var(--c6); }
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 13px;
+}
+.chart-legend li { display: flex; align-items: center; gap: 6px; }
+.legend-price { color: var(--muted); font-variant-numeric: tabular-nums; }
+.swatch { width: 12px; height: 3px; border-radius: 2px; flex: none; }
+.swatch.c0 { background: var(--c0); }
+.swatch.c1 { background: var(--c1); }
+.swatch.c2 { background: var(--c2); }
+.swatch.c3 { background: var(--c3); }
+.swatch.c4 { background: var(--c4); }
+.swatch.c5 { background: var(--c5); }
+.swatch.c6 { background: var(--c6); }
+.chart-note { color: var(--muted); }
+.history-table { margin: 8px 0 0; max-width: 760px; }
+.history-table summary { cursor: pointer; color: var(--brand); font-size: 14px; }
+.history-table .table-wrap { margin-top: 8px; }
+
 .related { list-style: none; padding: 0; margin: 0 0 12px; }
 .related li {
   display: flex;
