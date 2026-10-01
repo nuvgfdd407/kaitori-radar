@@ -17,8 +17,8 @@ URL = "https://kaitori-homura.com/"
 
 LIST_URL = "https://kaitori-homura.com/products"
 GAME_CATEGORY = 13
-# Switch（Switch 2 を含む） / PlayStation / Xbox
-SUB_CATEGORIES = [124, 122, 126]
+# Switch（Switch 2 を含む） / PlayStation / Xbox / Meta Quest / その他（Steam Deck など）
+SUB_CATEGORIES = [124, 122, 126, 121, 127]
 MAX_PAGES = 10
 
 

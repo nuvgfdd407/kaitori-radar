@@ -18,8 +18,9 @@ SHORT = "海峡"
 URL = "https://www.mobile-ichiban.com/"
 
 BASE = "https://www.mobile-ichiban.com"
-# 家電買取（2）> ゲーム（01）> Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox Series
-CATEGORIES = ["11", "01", "02", "03"]
+# 家電買取（2）> ゲーム（01）> Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox Series /
+# Meta Quest / Steam Deck / ASUS
+CATEGORIES = ["11", "01", "02", "03", "04", "07", "09"]
 
 
 def fetch(http):

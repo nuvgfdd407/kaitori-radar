@@ -1,6 +1,7 @@
 # 買取レーダー
 
-Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S の本体の**新品買取価格**を、買取店ごとに比較するサイトです。
+Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットの
+**新品買取価格**を、買取店ごとに比較するサイトです。
 
 - 対象店舗: 買取ホムラ・買取商店・海峡通信・買取一丁目・買取当番・買取ルデヤ・買取wiki（7店舗）
 - 店舗ごとの価格、最高値、定価との差益を一覧表示
@@ -76,6 +77,9 @@ python -m http.server 8765 --directory dist
 2. 本体なら `catalog/products.json` の `products` に追加する（並び順が表の標準の並びになる）
 3. 本体でないもの（コントローラーなど）は `ignore` に追加すると、以後は報告されなくなる
 
+同じ商品が店舗によって別のJAN（新旧のJANなど）で載っているときは、`"aliases": ["<別のJAN>"]` を書くと同じ商品として扱う
+（同じ店舗に両方あるときは高い方の価格を使う）。
+
 定価（`msrp`）は**メーカー希望小売価格（税込）**です。値上げがあったら更新してください。
 限定版など現在の定価がない商品は `null` にしておくと、表では「—」になり差益も出しません。
 
@@ -90,7 +94,8 @@ python -m http.server 8765 --directory dist
   - 手元: 環境変数 `YAHOO_CLIENT_ID` に設定する
   - GitHub: リポジトリの Settings → Secrets and variables → Actions に `YAHOO_CLIENT_ID` として登録する
   - Client ID はコードやファイルに書かない（公開リポジトリなので誰でも見られてしまう）
-- JAN コードで検索し、画像のある出品のうちレビュー数が最も多いものの画像を使う
+- JAN コードで検索し、画像のある**新品の**出品のうちレビュー数が最も多いものの画像を使う
+  （中古の出品は実物の写真のことが多いので使わない。新品の出品がない商品は画像なしになる）
 - 画像ファイルはコピーせず、Yahoo!が配信している画像のURLをそのまま表示する
 - 選ばれた画像が宣伝の文字入りなどでいまいちなときは、出品を指定して差し替える
   1. `python -m scraper.images --candidates <JAN>` で候補（出品コードと画像URL）を一覧表示する

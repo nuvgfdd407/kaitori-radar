@@ -13,8 +13,11 @@ SHORT = "一丁目"
 URL = "https://www.1-chome.com/"
 
 API = "https://www.1-chome.com/api/goods/listPage"
-# Switch 2 / Switch本体 / PlayStation本体 / Xbox本体
-CATEGORIES = ["bBNHyqptq0nqvbcg", "KKXBEAyI9PC2HMjU", "NE0hGv3ube9UbM3H", "axsZ6sOue6IQhfht"]
+# Switch 2 / Switch本体 / PlayStation本体 / Xbox本体 / PlayStation 周辺機器 / Meta Quest / Steam Deck / ASUS
+CATEGORIES = [
+    "bBNHyqptq0nqvbcg", "KKXBEAyI9PC2HMjU", "NE0hGv3ube9UbM3H", "axsZ6sOue6IQhfht",
+    "Hi6VUvS3BHzS9kvL", "Y3pbA65dEt2seG0B", "20304465", "20464007",
+]
 PAGE_SIZE = 100
 
 

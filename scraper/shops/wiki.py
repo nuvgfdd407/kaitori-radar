@@ -15,7 +15,7 @@ NAME = "買取wiki"
 SHORT = "買取wiki"
 URL = "https://gamekaitori.jp/"
 
-BRANDS = ["nintendo", "sony", "microsoft"]
+BRANDS = ["nintendo", "sony", "microsoft", "Oculus"]
 MAX_PAGES = 20
 
 

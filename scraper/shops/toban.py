@@ -11,8 +11,8 @@ SHORT = "当番"
 URL = "https://tobansyoji.co.jp/"
 
 API = "https://tobansyoji.co.jp/wp-json/wc/store/v1/products"
-# Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox
-CATEGORIES = [184, 185, 186, 187]
+# Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox / Meta Quest / Steam Deck / ASUS ROG / PS5 周辺機器
+CATEGORIES = [184, 185, 186, 187, 188, 189, 190, 239]
 
 
 def fetch(http):

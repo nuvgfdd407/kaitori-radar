@@ -17,8 +17,8 @@ NAME = "買取商店"
 SHORT = "買取商店"
 URL = "https://www.kaitorishouten-co.jp/"
 
-# Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox
-PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (703, 281, 280, 279)]
+# Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox / VR / Steam Deck / ASUS ROG / ゲーム周辺機器
+PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (703, 281, 280, 279, 587, 602, 639, 637)]
 
 
 def fetch(http):

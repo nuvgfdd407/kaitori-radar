@@ -22,13 +22,16 @@ UNMATCHED = ROOT / "reports" / "unmatched.json"
 JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
+# カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN）
+INTERNAL_KEYS = {"image_item", "aliases"}
 
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     catalog = load_json(CATALOG)
     images = load_json(IMAGES) if IMAGES.exists() else {}
-    known = {p["jan"] for p in catalog["products"]}
+    # 同じ商品が別のJAN（新旧のJANなど）で載っていることがあるので、"aliases" のJANも同じ商品として扱う
+    owner = {jan: p["jan"] for p in catalog["products"] for jan in [p["jan"], *p.get("aliases", [])]}
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
     previous = load_json(OUTPUT) if OUTPUT.exists() else {"shops": [], "products": []}
     prev_shops = {s["id"]: s for s in previous["shops"]}
@@ -38,7 +41,7 @@ def main():
         results = list(pool.map(fetch_shop, SHOPS))
 
     now = datetime.now(JST).isoformat(timespec="seconds")
-    prices = {jan: {} for jan in known}
+    prices = {p["jan"]: {} for p in catalog["products"]}
     shops = []
     unmatched = []
     for shop, offers, error in results:
@@ -46,9 +49,11 @@ def main():
         if offers:
             for offer in offers:
                 jan = offer["jan"]
-                if jan in known:
-                    # 同じ商品がページ内に複数回載っていることがあるので最初の1件を使う
-                    found.setdefault(jan, {"price": offer["price"], "url": offer["url"]})
+                if jan in owner:
+                    # 同じ商品が複数回（ページ内の重複や別のJANで）載っていたら、高い方を使う
+                    current = found.get(owner[jan])
+                    if current is None or offer["price"] > current["price"]:
+                        found[owner[jan]] = {"price": offer["price"], "url": offer["url"]}
                 elif jan not in ignored and offer["price"] >= REPORT_MIN_PRICE:
                     unmatched.append({"shop": shop.NAME, **offer})
             if not found:
@@ -58,7 +63,7 @@ def main():
         if error:
             warn(f"{shop.NAME}: {error}")
             entry["failing_since"] = prev_shops.get(shop.ID, {}).get("failing_since") or now
-            found = {jan: p[shop.ID] for jan, p in prev_prices.items() if jan in known and shop.ID in p}
+            found = {jan: p[shop.ID] for jan, p in prev_prices.items() if jan in prices and shop.ID in p}
         else:
             print(f"[OK] {shop.NAME}: {len(offers)}件を取得、うち対象商品 {len(found)}件")
         for jan, offer in found.items():
@@ -70,7 +75,7 @@ def main():
         "shops": shops,
         "products": [
             {
-                **{k: v for k, v in p.items() if k != "image_item"},  # 画像選びの設定は公開しない
+                **{k: v for k, v in p.items() if k not in INTERNAL_KEYS},
                 **({"image": images[p["jan"]]} if p["jan"] in images else {}),
                 "prices": prices[p["jan"]],
             }

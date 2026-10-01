@@ -4,7 +4,7 @@
     python -m scraper.images --candidates JAN ...   # 画像の候補（出品ごと）を一覧表示する
 
 - Client ID は環境変数 YAHOO_CLIENT_ID から読む（コードやファイルには書かない）
-- JAN コードで検索し、画像のある出品の中から1件を選ぶ。
+- JAN コードで検索し、画像のある新品の出品の中から1件を選ぶ（中古の出品は、実物の写真のことが多いので使わない）。
   選ばれた画像が宣伝用の文字入りなどでいまいちなときは、--candidates で候補を見て、
   catalog/products.json の商品に "image_item": "<出品コード>" を書くと、その出品の画像を使う
   （同じ店舗が画像の違う出品を複数出していることがあるので、店舗ではなく出品で指定する）
@@ -130,7 +130,10 @@ def choose(hits, jan, item_code=None):
 
 
 def _with_image(hits, jan):
-    return [h for h in hits if h.get("janCode") == jan and (h.get("image") or {}).get("medium")]
+    return [
+        h for h in hits
+        if h.get("janCode") == jan and h.get("condition") == "new" and (h.get("image") or {}).get("medium")
+    ]
 
 
 if __name__ == "__main__":

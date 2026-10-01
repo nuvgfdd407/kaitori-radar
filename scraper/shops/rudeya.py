@@ -12,8 +12,9 @@ NAME = "買取ルデヤ"
 SHORT = "ルデヤ"
 URL = "https://kaitori-rudeya.com/"
 
-# Nintendo Switch 2 / Nintendo Switch / PlayStation5 / Xbox
-PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 3)]
+# Nintendo Switch 2 / Nintendo Switch / PlayStation5 / Xbox / PlayStation Portal / Steam / ASUS ROG /
+# Meta Quest / PlayStation VR / PICO 4 / Legion Go
+PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 3, 159, 55, 136, 42, 120, 121, 160)]
 
 
 def fetch(http):
