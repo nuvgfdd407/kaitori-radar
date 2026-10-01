@@ -162,6 +162,20 @@ a { color: var(--brand); }
   color: var(--brand-contrast);
   font-weight: 600;
 }
+.search { display: none; flex: 1 1 220px; max-width: 360px; }
+.js .search { display: block; }
+.search input {
+  width: 100%;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+.search input:focus { outline: 2px solid var(--brand); outline-offset: 1px; border-color: var(--brand); }
+.no-results { color: var(--muted); padding: 12px 4px; }
 .sort { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
 .sort select {
   font: inherit;

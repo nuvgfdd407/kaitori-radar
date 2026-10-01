@@ -175,6 +175,12 @@ def breadcrumb_nav(crumbs):
 # ---- 比較表（トップページと機種別ページ） -------------------------------------
 
 
+# 一覧の絞り込み（動かすのは app.js。JavaScript が使えないときは表示しない）
+SEARCH_CONTROL = """<label class="search">
+        <span class="visually-hidden">商品を検索</span>
+        <input type="search" id="search" placeholder="商品名・型番で絞り込み" autocomplete="off" enterkeyhint="search">
+      </label>"""
+
 SORT_CONTROL = """<label class="sort">
         <span>並び順</span>
         <select id="sort">
@@ -223,6 +229,7 @@ def price_table(site, products, shops, *, grouped):
 
 def _row(p, shops):
     attrs = (
+        f'data-search="{esc(" ".join(filter(None, [p["name"], p.get("model"), p.get("series_name")])))}" '
         f'data-index="{p["index"]}" data-best="{_num(p["best"])}" '
         f'data-profit="{_num(p["profit"])}" data-ratio="{_num(p["ratio"])}"'
     )

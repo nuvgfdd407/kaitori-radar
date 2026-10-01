@@ -55,6 +55,7 @@ def prepare(data):
         prices = [(s, p["prices"][s["id"]]["price"]) for s in shops if s["id"] in p["prices"]]
         best = max((price for _, price in prices), default=None)
         p["index"] = index
+        p["series_name"] = next((s["name"] for s in data["series"] if s["id"] == p["series"]), "")
         p["best"] = best
         p["best_shops"] = [s for s, price in prices if price == best]
         # 発売前の買取価格は仮のことが多いので、差益は出さない
@@ -118,10 +119,11 @@ def list_page(site, series):
 
     content = f"""    <h1 class="page-title">{t.esc(heading)}</h1>
     <p class="lead">{t.esc(lead)}</p>
-    <p class="count">{len(products)}商品</p>
-{t.price_table(site, products, shops, grouped=series is None)}"""
+    <p class="count" data-total="{len(products)}">{len(products)}商品</p>
+{t.price_table(site, products, shops, grouped=series is None)}
+    <p class="no-results" hidden>条件に合う商品はありません。</p>"""
     return t.page(site, path=path, title=title, description=description, active=active,
-                  content=content, controls=t.SORT_CONTROL)
+                  content=content, controls=t.SEARCH_CONTROL + t.SORT_CONTROL)
 
 
 def series_shops(site, series):

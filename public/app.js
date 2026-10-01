@@ -1,7 +1,7 @@
 'use strict';
 
 // 表や商品ページのHTMLは scraper/build.py が作っている。
-// ここでは、表の並び替え、切れた商品画像の差し替え、比較リストだけを行う。
+// ここでは、一覧の絞り込みと並び替え、切れた商品画像の差し替え、比較リストだけを行う。
 
 document.documentElement.classList.add('js');
 
@@ -21,6 +21,45 @@ document.addEventListener('error', (e) => {
   const large = thumb.classList.contains('thumb--large') ? ' thumb--large' : '';
   thumb.outerHTML = `<span class="thumb${large} thumb-empty" aria-hidden="true"></span>`;
 }, true);
+
+// ---- 一覧の絞り込み ---------------------------------------------------------------
+// 全角・半角、大文字・小文字、ひらがな・カタカナ、空白や記号の違いは区別しない。
+// 空白で区切ると、すべての言葉を含む商品だけを出す。
+
+const searchInput = $('search');
+if (searchInput) {
+  const fold = (s) => s.normalize('NFKC').toLowerCase()
+    .replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
+    .replace(/[\s\-‐－―・/()「」『』.,、。]/g, '');
+  const rows = [...document.querySelectorAll('.price-table tbody.rows tr')];
+  const texts = new Map(rows.map((row) => [row, fold(row.dataset.search || '')]));
+  const count = document.querySelector('.count');
+  const noResults = document.querySelector('.no-results');
+
+  const filter = () => {
+    const words = searchInput.value.normalize('NFKC').split(/\s+/).map(fold).filter(Boolean);
+    let shown = 0;
+    rows.forEach((row) => {
+      const hit = words.every((w) => texts.get(row).includes(w));
+      row.hidden = !hit;
+      if (hit) shown += 1;
+    });
+    // シリーズの見出しは、そのシリーズの商品が1つも出ていなければ隠す
+    document.querySelectorAll('.price-table tbody.rows').forEach((tbody) => {
+      const empty = ![...tbody.rows].some((row) => !row.hidden);
+      tbody.hidden = empty;
+      const head = tbody.previousElementSibling;
+      if (head && head.querySelector('tr.group')) head.hidden = empty;
+    });
+    if (count) {
+      const total = count.dataset.total;
+      count.textContent = words.length ? `${total}商品中 ${shown}件` : `${total}商品`;
+    }
+    if (noResults) noResults.hidden = shown > 0;
+  };
+  searchInput.addEventListener('input', filter);
+  if (searchInput.value) filter();  // ブラウザが前の入力を残しているとき
+}
 
 // ---- 表の並び替え ---------------------------------------------------------------
 
