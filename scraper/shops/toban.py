@@ -41,9 +41,11 @@ def fetch(http):
         colors = _variation_prices(http, [item for item, _ in items])
         for item, name in items:
             key = iphone_key(name)
-            offers.append({"jan": None, "key": key, "name": name, "price": _price(item, "max"), "url": item["permalink"],
-                           "colors": {c: price for text, price in colors.get(item["id"], [])
-                                      if (c := iphone_color(key, text))}})
+            offer = {"jan": None, "key": key, "name": name, "price": _price(item, "max"), "url": item["permalink"]}
+            # 色の選択肢がない商品は、どの色でも同じ価格（"colors" を付けない）
+            if item["type"] == "variable":
+                offer["colors"] = {c: price for text, price in colors.get(item["id"], []) if (c := iphone_color(key, text))}
+            offers.append(offer)
     for category in CARD_CATEGORIES:
         for item, name in _read_category(http, category):
             if "来店専用" in name:

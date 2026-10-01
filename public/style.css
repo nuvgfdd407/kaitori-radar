@@ -314,9 +314,6 @@ a.product:hover { text-decoration: underline; }
 .shop-table tr.is-stale .price a { color: var(--muted); font-style: italic; }
 .shop-table .diff { color: var(--muted); font-size: 13px; }
 .shop-table tr.none th, .shop-table tr.none td { color: var(--muted); }
-.color-table td.is-best { background: var(--best-bg); color: var(--best-text); font-weight: 700; }
-.color-table td.none { color: var(--muted); }
-.color-table th[scope="row"] { white-space: nowrap; }
 /* 価格の推移のグラフ */
 .chart-wrap {
   margin: 0;

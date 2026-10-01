@@ -27,6 +27,12 @@ API = "https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch"
 INTERVAL = 2.5   # 秒。1秒に1回の上限ぎりぎりだと、30件ほどで制限がかかった
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
+# 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
+# ほかに画像のある出品がないときだけ使う
+NOISY_STORES = {
+    "jcka-mobile", "jcka-mobile2", "quality-shop", "mobax", "brave-shopping", "evalue-omochayasan",
+    "free-world", "1913store", "panda-mobile", "anshin-happy-mark", "arunni7", "mobilestation",
+}
 
 
 def main():
@@ -120,7 +126,7 @@ def search(session, client_id, jan):
 def choose(hits, jan, item_code=None):
     """画像のある出品から1件選ぶ。
 
-    出品の指定があればその出品を使う。なければ、レビューの多い出品ほど
+    出品の指定があればその出品を使う。なければ、画像に文字を入れている店舗（NOISY_STORES）を除いて、レビューの多い出品ほど
     きちんとした商品画像を使っていることが多いので、レビュー数が最も多いものを選ぶ
     （同数なら API のおすすめ順で先のもの）。
     """
@@ -128,6 +134,8 @@ def choose(hits, jan, item_code=None):
     if not candidates:
         return None
     preferred = [h for h in candidates if item_code and h.get("code") == item_code]
+    if not preferred:
+        candidates = [h for h in candidates if _store(h) not in NOISY_STORES] or candidates
     best = preferred[0] if preferred else max(
         candidates, key=lambda h: (h.get("review") or {}).get("count") or 0)
     return {
@@ -136,6 +144,10 @@ def choose(hits, jan, item_code=None):
         "seller": (best.get("seller") or {}).get("name", ""),
         "code": best.get("code", ""),
     }
+
+
+def _store(hit):
+    return (hit.get("code") or "").split("_")[0]
 
 
 def _with_image(hits, jan):

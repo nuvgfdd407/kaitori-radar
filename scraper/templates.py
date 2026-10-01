@@ -9,7 +9,6 @@ from datetime import date, timedelta
 from html import escape
 
 from .common import SITE_URL
-from .iphone import iphone_colors
 
 SITE_NAME = "買取レーダー"
 SCHEDULE = "10:00〜21:00は15分ごとに確認"
@@ -40,10 +39,10 @@ YAHOO_CREDIT = """<!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
 
 NONE_CELL = '<td class="num none">—</td>'
 
-# iPhone は色違いを1行にまとめている（scraper.iphone を参照）
+# iPhone は機種＋容量＋色ごとに載せている（scraper.iphone を参照）
 IPHONE_NOTE = (
-    "iPhoneはSIMフリー版の新品未開封の価格を、色違いをまとめて機種と容量ごとに載せています。"
-    "色によって買取価格が違う店舗では、いちばん高い色の価格です。"
+    "iPhoneはSIMフリー版の新品未開封の価格を、色ごとに載せています。"
+    "色を区別していない店舗の価格は、すべての色に同じ価格を表示しています。"
 )
 
 
@@ -332,42 +331,12 @@ def item_content(site, p, series, siblings, shops):
       </table>
     </div>
 
-{color_table(p, shops)}
     <h2 class="section-title">買取価格の推移（最近{HISTORY_DAYS}日）</h2>
 {price_history(site, p, shops)}
 
     <h2 class="section-title">{esc(series["name"])}のほかの商品</h2>
     <ul class="related">{related}</ul>
     <p><a href="/{series["id"]}/">{esc(series["name"])}の新品買取価格を一覧で比較する</a></p>"""
-
-
-def color_table(p, shops):
-    """iPhone の色別の買取価格（色 × 店舗）。色ごとの価格がない商品では何も出さない。"""
-    shops = [s for s in shops if (p["prices"].get(s["id"]) or {}).get("colors")]
-    if not shops:
-        return ""
-    found = {color for s in shops for color in p["prices"][s["id"]]["colors"]}
-    colors = [c for c in iphone_colors(p["name"]) if c in found] + sorted(found - set(iphone_colors(p["name"])))
-    rows = []
-    for color in colors:
-        values = [p["prices"][s["id"]]["colors"].get(color) for s in shops]
-        best = max((v for v in values if v), default=None)
-        cells = "".join(
-            f'<td class="num is-best">{yen(v)}</td>' if v and v == best else
-            (f'<td class="num">{yen(v)}</td>' if v else '<td class="num none">—</td>')
-            for v in values
-        )
-        rows.append(f'<tr><th scope="row">{esc(color)}</th>{cells}</tr>')
-    head = "".join(f'<th scope="col">{esc(s["short"])}</th>' for s in shops)
-    return f"""
-    <h2 class="section-title">色別の買取価格</h2>
-    <div class="table-wrap table-wrap--auto">
-      <table class="shop-table color-table">
-        <thead><tr><th scope="col">色</th>{head}</tr></thead>
-        <tbody>{"".join(rows)}</tbody>
-      </table>
-    </div>
-"""
 
 
 def is_iphone(series):
