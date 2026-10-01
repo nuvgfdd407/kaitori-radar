@@ -1,6 +1,6 @@
 """Yahoo!ショッピングの商品検索APIで、カタログの商品画像を探して catalog/images.json に保存する。
 
-    python -m scraper.images                        # 全商品の画像を更新する
+    python -m scraper.images                        # 画像がまだない商品などの画像を探す
     python -m scraper.images --candidates JAN ...   # 画像の候補（出品ごと）を一覧表示する
 
 - Client ID は環境変数 YAHOO_CLIENT_ID から読む（コードやファイルには書かない）
@@ -10,8 +10,10 @@
   （同じ店舗が画像の違う出品を複数出していることがあるので、店舗ではなく出品で指定する）
 - 新品の出品がない商品は、見た目が同じ別の商品（容量違いの iPhone など）のJANを
   "image_from": "<JAN>" に書くと、その商品の画像を使う
-- API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている。
-  全商品で2分ほどかかる。1日1回の実行で十分
+- 一度決めた画像は使い続ける（毎日選び直すと、確認した画像が勝手に変わってしまうため）。
+  探し直すのは、まだ画像がない商品、"image_item" を変えた商品、画像の元の出品が消えた商品だけ
+  （出品が消えると、画像のURLは「画像なし」の GIF を返すようになるので、それで見分ける）
+- API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている
 - 画像ファイルはコピーせず、Yahoo!が配信している画像のURLをそのまま使う
 """
 import argparse
@@ -55,8 +57,18 @@ def update_all(session, client_id):
     catalog = load_json(CATALOG)
     previous = load_json(IMAGES) if IMAGES.exists() else {}
     images = {}
+    searched = []
+    for product in catalog["products"]:
+        if product.get("image_from"):
+            continue
+        old = previous.get(product["jan"])
+        item_code = product.get("image_item")
+        if old and (not item_code or old.get("code") == item_code) and _still_listed(session, old["src"]):
+            images[product["jan"]] = old
+        else:
+            searched.append(product)
+    print(f"{len(images)}商品は前回の画像のまま。{len(searched)}商品の画像を探します")
     errors = 0
-    searched = [p for p in catalog["products"] if not p.get("image_from")]
     for i, product in enumerate(searched):
         if i:
             time.sleep(INTERVAL)
@@ -91,8 +103,17 @@ def update_all(session, client_id):
     print(f"{len(images)}/{len(catalog['products'])}商品の画像あり。"
           + ("images.json を更新しました" if changed else "変化なし"))
     set_github_output("changed", "true" if changed else "false")
-    if errors == len(searched):
+    if searched and errors == len(searched):
         sys.exit("すべての商品で検索に失敗しました")
+
+
+def _still_listed(session, src):
+    """画像の元の出品がまだあるか。消えた出品の画像のURLは「画像なし」の GIF を返す。"""
+    try:
+        res = session.head(src, timeout=15)
+    except requests.RequestException:
+        return True  # 確かめられないときは、前回の画像をそのまま使う
+    return res.status_code == 200 and res.headers.get("content-type") != "image/gif"
 
 
 def show_candidates(session, client_id, jans):
