@@ -1,0 +1,11 @@
+# 価格と画像の更新の合図を出す Cloudflare Worker（index.js を参照）
+name = "kaitori-radar-trigger"
+main = "index.js"
+compatibility_date = "2025-09-01"
+
+# 決まった時刻に動くだけなので、URL では公開しない
+workers_dev = false
+
+[triggers]
+# 時刻は UTC（日本時間 -9時間）。変えるときは index.js の WORKFLOWS も合わせる
+crons = ["7,22,37,52 1-11 * * *", "50 0 * * *"]

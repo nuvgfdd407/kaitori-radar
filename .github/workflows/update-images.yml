@@ -39,4 +39,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add catalog/images.json
           git commit -m "商品画像を更新"
+          git pull --rebase   # 実行中に手元からのプッシュなどがあっても、その上に積む
           git push

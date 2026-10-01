@@ -59,6 +59,7 @@ dist/ を Cloudflare Pages に公開
 | `reports/unmatched.json` | カタログにない2万円以上の商品（新しい本体の登録漏れチェック用。公開はしない） |
 | `.github/workflows/update-prices.yml` | 15分ごとの価格の更新 |
 | `.github/workflows/update-images.yml` | 1日1回の画像の更新 |
+| `trigger/` | 決まった時刻に価格と画像の更新を始めさせる Cloudflare Worker |
 
 ## 手元で動かす
 
@@ -142,8 +143,16 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
   - CSS と JavaScript は、中身から作った目印を付けたURL（`/style.css?v=…`）で読み込むので、公開し直すとブラウザも新しいファイルを使う
 - GitHub の Secrets に登録するもの
   - `YAHOO_CLIENT_ID`: Yahoo!デベロッパーネットワークの Client ID
-  - `CLOUDFLARE_API_TOKEN`: Cloudflare の API トークン（権限は Account → Cloudflare Pages → Edit）
+  - `CLOUDFLARE_API_TOKEN`: Cloudflare の API トークン（権限は Account → Cloudflare Pages → Edit と Account → Workers Scripts → Edit）
   - `CLOUDFLARE_ACCOUNT_ID`: Cloudflare のアカウントID
+  - `DISPATCH_TOKEN`: 定期実行の合図に使う GitHub のトークン（上を参照）
+- 定期実行の合図は Cloudflare の Worker（`trigger/`）から出す
+  - GitHub Actions の定期実行（schedule）は、混んでいると実行が飛ばされることが多く、ほとんど動かなかったため
+  - Worker の Cron Triggers が決まった時刻に GitHub の API でワークフローを開始する（時刻は `trigger/wrangler.toml`）
+  - `trigger/` を変えてプッシュすると「定期実行の合図の公開」が Worker を公開し直す
+  - Worker が使う GitHub のトークンは Secrets の `DISPATCH_TOKEN`（このリポジトリの Actions: Read and write だけの
+    Fine-grained token）。**有効期限が切れると自動更新が止まる**ので、期限前に作り直して Secrets を更新し、
+    「定期実行の合図の公開」を実行する
 - GitHub Actions はデータセンターからアクセスするため、店舗によっては一時的につながらないことがある
   （つながらなかった店舗は前回の価格を残し、画面にお知らせを出す）
 - 自動更新のコミットが GitHub 側に増えていくので、手元で作業するときは先に `git pull` する

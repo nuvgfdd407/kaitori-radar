@@ -1,0 +1,33 @@
+name: 定期実行の合図の公開
+
+# trigger/ の Cloudflare Worker（価格と画像の更新を決まった時刻に始めさせるもの）を公開する。
+# 必要な Secrets:
+#   CLOUDFLARE_API_TOKEN（Workers Scripts の編集権限も必要）・CLOUDFLARE_ACCOUNT_ID
+#   DISPATCH_TOKEN: このリポジトリの Actions を開始できる GitHub のトークン（Worker のシークレットとして登録する）
+on:
+  push:
+    branches: [main]
+    paths:
+      - "trigger/**"
+      - ".github/workflows/deploy-trigger.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: trigger
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - run: npx --yes wrangler@4 deploy
+
+      # Worker を作ったあとで、GitHub のトークンをシークレットとして登録する（ログには表示されない）
+      - env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: printf '%s' "$DISPATCH_TOKEN" | npx --yes wrangler@4 secret put DISPATCH_TOKEN
