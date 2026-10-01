@@ -12,7 +12,7 @@ const REPO = "nuvgfdd407/kaitori-radar";
 
 const WORKFLOWS = {
   "7,22,37,52 1-11 * * *": "update-prices.yml", // 日本時間 10:07〜20:52 に15分ごと
-  "50 4 * * *": "update-images.yml", // 動作確認のため一時的に日本時間 13:50
+  "50 0 * * *": "update-images.yml", // 日本時間 9:50
 };
 
 export default {

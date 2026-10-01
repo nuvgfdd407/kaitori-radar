@@ -8,7 +8,7 @@ workers_dev = false
 
 [triggers]
 # 時刻は UTC（日本時間 -9時間）。変えるときは index.js の WORKFLOWS も合わせる
-crons = ["7,22,37,52 1-11 * * *", "50 4 * * *"]
+crons = ["7,22,37,52 1-11 * * *", "50 0 * * *"]
 
 # 実行の記録（エラーの理由など）を Cloudflare の画面の Observability で見られるようにする
 [observability]
