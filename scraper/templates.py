@@ -5,6 +5,7 @@
 """
 import json
 import math
+import re
 from datetime import date, timedelta
 from html import escape
 
@@ -181,6 +182,38 @@ SEARCH_CONTROL = """<label class="search">
         <input type="search" id="search" placeholder="商品名・型番で絞り込み" autocomplete="off" enterkeyhint="search">
       </label>"""
 
+# 検索で、英語の名前をカナ（ひらがなでも）で打っても見つかるようにする読み。
+# 商品名の英単語を読みに置き換えた文字を検索用に足す（「あいふぉん17ぷろ」のようにつなげて打っても当たる）。
+# 読みが2通りあるものは、2つめの読みでも置き換えた文字を足す
+READINGS = [
+    ("Nintendo", ["ニンテンドー"]), ("Switch", ["スイッチ"]), ("Lite", ["ライト"]),
+    ("PlayStation", ["プレイステーション", "プレステ"]), ("Portal", ["ポータル"]), ("VR2", ["ブイアール2"]),
+    ("iPhone", ["アイフォン", "アイフォーン"]), ("Pro", ["プロ"]), ("Max", ["マックス"]), ("Plus", ["プラス"]),
+    ("Air", ["エアー"]), ("Duo", ["デュオ"]),
+    ("Xbox", ["エックスボックス"]), ("Series", ["シリーズ"]), ("Steam", ["スチーム"]), ("Deck", ["デッキ"]),
+    ("Machine", ["マシン"]), ("Frame", ["フレーム"]), ("Controller", ["コントローラー"]),
+    ("ROG", ["ログ", "アールオージー"]), ("Ally", ["アライ"]), ("Legion", ["レギオン"]), ("Go", ["ゴー"]),
+    ("Meta", ["メタ"]), ("Quest", ["クエスト"]), ("PICO", ["ピコ"]), ("Ultra", ["ウルトラ"]),
+    ("Pokémon", ["ポケモン"]), ("BOX", ["ボックス"]),
+]
+# シリーズの呼び方（検索用）
+SERIES_ALIASES = {"pokemon": "ポケカ", "onepiece": "ワンピ ワンピカ", "ps5": "プレステ5 PS5"}
+
+
+def search_text(p):
+    """一覧の行の検索用の文字（商品名・型番・シリーズ名と、英語の名前の読み）。"""
+    readings = []
+    for i in range(2):
+        text = p["name"]
+        for word, kana in READINGS:
+            text = re.sub(rf"(?<![A-Za-z]){re.escape(word)}(?![A-Za-z])", kana[min(i, len(kana) - 1)], text,
+                          flags=re.IGNORECASE)
+        if text != p["name"] and text not in readings:
+            readings.append(text)
+    parts = [p["name"], p.get("model"), p.get("series_name"), *readings, SERIES_ALIASES.get(p["series"])]
+    return " ".join(part for part in parts if part)
+
+
 SORT_CONTROL = """<label class="sort">
         <span>並び順</span>
         <select id="sort">
@@ -229,7 +262,7 @@ def price_table(site, products, shops, *, grouped):
 
 def _row(p, shops):
     attrs = (
-        f'data-search="{esc(" ".join(filter(None, [p["name"], p.get("model"), p.get("series_name")])))}" '
+        f'data-search="{esc(search_text(p))}" '
         f'data-index="{p["index"]}" data-best="{_num(p["best"])}" '
         f'data-profit="{_num(p["profit"])}" data-ratio="{_num(p["ratio"])}"'
     )
