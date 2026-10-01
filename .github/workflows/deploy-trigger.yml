@@ -31,3 +31,23 @@ jobs:
       - env:
           DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
         run: printf '%s' "$DISPATCH_TOKEN" | npx --yes wrangler@4 secret put DISPATCH_TOKEN
+
+      # 使えるようになったかを確かめる（結果は実行画面の注記に出す。トークンの中身は表示しない）
+      # Worker と同じように価格の更新を1回開始してみて、Worker に登録された時刻の設定も表示する
+      - env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$DISPATCH_TOKEN" ]; then
+            echo "::error::Secrets に DISPATCH_TOKEN がありません"
+            exit 1
+          fi
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $DISPATCH_TOKEN" -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/update-prices.yml/dispatches" \
+            -d '{"ref":"main"}')
+          echo "::notice::DISPATCH_TOKEN で価格の更新を開始した結果: HTTP $code（204 なら成功）"
+          schedules=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/kaitori-radar-trigger/schedules")
+          echo "::notice::Worker の時刻の設定: $(echo "$schedules" | jq -c '{success, crons: [.result.schedules[]?.cron], errors: [.errors[]?.message]}')"
+          [ "$code" = 204 ]
