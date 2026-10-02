@@ -156,16 +156,19 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 
 ### iPad・Apple Watch・AirPods
 
-- iPad: Pro（M5・M4）・Air（M4・M3）・iPad（A16）・iPad mini（A17 Pro）。1行＝サイズ・チップ・容量・Wi-Fi/Cellular・
+- iPad: Pro（M5・M4）・Air（M4・M3）・iPad（A16）・iPad mini（A17 Pro）。
+  販売が終わった旧モデル（Pro 11インチ 第3・4世代、12.9インチ 第5・6世代、Air（M2）・第5世代、iPad 第9・10世代、
+  iPad mini 第6世代）も、店舗が買い取っている色・容量だけ載せる。1行＝サイズ・チップ・容量・Wi-Fi/Cellular・
   （Pro の Nano-textureガラス）・色（例: `iPad Pro 11インチ（M5）256GB Wi-Fi スペースブラック`）。`jan` はその JAN
-- Apple Watch: Series 12・11、Ultra 4・3、SE 3。1行＝シリーズ・ケースサイズ・GPS/GPS + Cellular・ケースの色と素材
+- Apple Watch: Series 12・11、Ultra 4・3、SE 3（旧モデルは Series 10・8、Ultra 2、SE 第2世代も）。1行＝シリーズ・ケースサイズ・GPS/GPS + Cellular・ケースの色と素材
   （例: `Apple Watch Series 12 46mm GPS ブラックアルミニウム`）。バンドは区別しない。`jan` は仮のID
-- AirPods: Pro 3・Pro 2・AirPods 5（ワイヤレス充電ケース付きも）・AirPods 4（ノイズキャンセリング搭載も）・AirPods Max 2・Max（USB-C）
+- AirPods: Pro 3・Pro 2・AirPods 5（ワイヤレス充電ケース付きも）・AirPods 4（ノイズキャンセリング搭載も）・AirPods Max 2・Max（USB-C）。
+  旧モデルの AirPods Max（Lightning）・Pro 第1・2世代（Lightning）・AirPods 第1〜3世代も
 - 突き合わせは JAN と Apple の型番（`scraper/apple.py`）。カタログの `"aliases"` に、その商品の型番と、
   Apple Watch はバンド違いの JAN・型番をすべて書いてある。店舗の出品には `"codes": {型番: 価格}` を付ける
   （ケータイゴッドのように1行に全色の型番が書かれていれば、その全部に同じ価格を当てはめる）
 - 定価は Apple Store の今の価格（販売が終わったものは最後の価格）。JAN は Apple が公表していないので、
-  複数の店舗の載せている JAN の多数決で決めた
+  複数の店舗の載せている JAN の多数決で決めた（旧モデルで JAN がわからないものは仮のID）
 - 画像は Apple Store の色ごとの画像（Apple Watch はケースだけの画像）
 - 買取当番の iPad、買取wiki の iPad（機種ごとにまとめた価格しかない）、PANDA買取（実際には買い取っていない）は取らない
 
