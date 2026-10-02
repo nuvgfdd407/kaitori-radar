@@ -43,6 +43,7 @@ IMAGE_FILL = 0.86  # 商品が正方形に占める大きさ
 SLAB_CARD = (0.1, 0.268, 0.9, 0.924)
 SLAB_RATIO = 0.65
 IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
+IMAGE_MAGIC = (b"\xff\xd8\xff", b"\x89PNG", b"RIFF")  # JPEG・PNG・WebP のファイルの先頭
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
 # 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
@@ -163,8 +164,11 @@ def _download(session, url):
     except requests.RequestException:
         return None
     # Yahoo!の出品が消えた画像のURLは「画像なし」の GIF を返す
-    if res.status_code != 200 or res.headers.get("content-type", "").split(";")[0].strip().lower() not in IMAGE_TYPES:
+    if res.status_code != 200:
         return None
+    if res.headers.get("content-type", "").split(";")[0].strip().lower() not in IMAGE_TYPES \
+            and not res.content.startswith(IMAGE_MAGIC):
+        return None  # 種類が正しく付いていない画像（トレカバースの画像は text/plain で返る）は、中身で見分ける
     return res.content
 
 

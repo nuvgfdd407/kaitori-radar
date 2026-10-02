@@ -2,13 +2,24 @@
 
     python -m scraper.psa_catalog
 
-- PSA を買い取っている店舗（買取ホムラ・森森買取・トレカラウンジ）の出品を集め、同じカードを1商品にまとめる
+- PSA を買い取っている店舗（SHOP_ORDER）の出品を集め、同じカードを1商品にまとめる
 - 同じカードとみなすのは、psa_key が同じとき。または、ゲーム・点数・カード番号・バリエーションが同じで、
   片方の名前がもう片方の名前で始まるとき（「R団のサンダー 25th」と「R団のサンダー(25th)」など）。
   ただし、同じ店舗が別々に載せている商品（ナミと「ナミ SP」など）は、別のカードなのでまとめない
-- すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する
+- 名前を通称で書く店舗（トレカバースの「ムンクコダック」）や、番号を略す店舗（ゴールデンホビーの「063」、
+  トレカバースの遊戯王の「JP003」）のために、次のどちらかで候補が1つに決まり、価格も近ければ同じカードとみなす（_loose）
+  - 番号が合っていて（「063」と「063/051」、「JP003」と「QCCU-JP003」も合うとする）、片方の名前がもう片方に含まれる。
+    ただし、その店舗の同じ番号のカードのうち、名前が合うのが1枚だけのとき（トレカバースの「フラシペローナ」と
+    「ぬいぐるみペローナ」のように、同じ番号の別のカードを通称で分けている店舗があるため）
+  - ワンピースで、番号とバリエーションがまったく同じ商品が1つしかなく、その店舗もその番号のカードを1枚しか載せていない
+    （名前は見ない。ワンピースの番号は収録弾ごとに別なので。ポケモンカードは「173/086」がブラックボルトと
+    ホワイトフレアの両方にあるように、番号だけでは決まらない）
+  価格が近いとは、その商品のほかの店舗の価格との差が PRICE_RATIO 倍以内（金のカードと通常のカードなどを取り違えないように）
+- すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する。
+  ただし、番号を略す店舗（NO_NEW）のカードや、番号がまったく同じ商品があるのに同じカードと決められなかったカードは、
+  重複を避けるため商品を追加しない
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
-- 画像は、トレカラウンジ → 買取ホムラ → 森森買取 の順に、載っている店舗のカード画像を使う（IMAGE_SHOPS）。
+- 画像は、IMAGE_SHOPS の順に、載っている店舗のカード画像を使う。
   森森買取は一覧に画像がないので、画像のないカードだけ商品ページを見にいく。
   森森買取の画像には PSA のケースごと写したものもあり、"image_crop": "slab" を付けてカードの部分だけ切り抜く
   （scraper.images）。上の店舗に載ったら、その店舗の画像に替える
@@ -21,8 +32,8 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 from .common import CATALOG, load_json, write_catalog
-from .http import Http
-from .shops import homura, lounge, morimori
+from .http import INTERVAL, Http
+from .shops import birth, club, golden, homura, lounge, morimori
 
 SERIES = {
     "pokemon": {"id": "psa-pokemon", "name": "PSA鑑定品（ポケモンカード）", "category": "tcg"},
@@ -30,14 +41,20 @@ SERIES = {
     "yugioh": {"id": "psa-yugioh", "name": "PSA鑑定品（遊戯王）", "category": "tcg"},
 }
 # 名前を付けるときに優先する店舗（トレカラウンジは名前・レアリティ・番号が別々に載っていて読みやすい）
-SHOP_ORDER = ["lounge", "homura", "morimori"]
-# 画像を使う店舗（先のものほど優先）
-IMAGE_SHOPS = {"lounge": lounge.NAME, "homura": homura.NAME, "morimori": morimori.NAME}
+SHOP_ORDER = ["lounge", "homura", "morimori", "club", "birth", "golden"]
+SHOPS = {"lounge": lounge, "homura": homura, "morimori": morimori, "club": club, "birth": birth, "golden": golden}
+# カタログにないカードでも商品を追加しない店舗（番号が略してあり、ほかの店舗のカードと突き合わせられなくなる）
+NO_NEW = {"golden"}
+# 名前を見ずに番号だけで突き合わせてよいゲーム（番号に収録弾が入っている）
+NUMBER_ONLY_GAMES = {"onepiece"}
+PRICE_RATIO = 2
+# 画像を使う店舗（先のものほど優先。どれもカード単体の画像で、森森買取だけ PSA のケースごとの画像があるので最後）
+IMAGE_SHOPS = {name: SHOPS[name].NAME for name in ["lounge", "homura", "club", "birth", "golden", "morimori"]}
 
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
-    jobs = [("lounge", lounge, Http()), ("homura", homura, Http()), ("morimori", morimori, Http(morimori.INTERVAL))]
+    jobs = [(name, shop, Http(getattr(shop, "INTERVAL", INTERVAL))) for name, shop in SHOPS.items()]
     with ThreadPoolExecutor(len(jobs)) as pool:
         results = list(pool.map(lambda job: [{**o, "shop": job[0]} for o in job[1].fetch_psa(job[2])], jobs))
     offers = [o for result in results for o in result]
@@ -45,12 +62,12 @@ def main():
 
     catalog = load_json(CATALOG)
     before = json.dumps(catalog, ensure_ascii=False)
-    added, lookups = merge(catalog, offers)
+    added, lookups, skipped = merge(catalog, offers)
     if lookups:
         print(f"森森買取の商品ページで画像を探します（{len(lookups)}件）")
     for product, url in lookups:
         try:
-            image = morimori.psa_image(jobs[2][2], url)
+            image = morimori.psa_image(Http(morimori.INTERVAL), url)
         except Exception as e:  # noqa: BLE001 - 画像が取れなくてもカタログの更新は続ける
             print(f"{product['name']}: 画像を取得できませんでした（{e}）", file=sys.stderr)
             continue
@@ -60,6 +77,8 @@ def main():
     if changed:
         write_catalog(catalog)
     count = sum(1 for p in catalog["products"] if p["series"].startswith("psa-"))
+    if skipped:
+        print(f"カタログと突き合わせられなかった出品 {len(skipped)}件: " + "、".join(skipped[:20]))
     print(f"PSA の商品は {count}件（うち新しく追加 {added}件）。"
           + ("catalog/products.json を更新しました" if changed else "変化なし"))
 
@@ -76,10 +95,21 @@ def merge(catalog, offers):
     best = {}
     images = {}  # 商品 → 画像を使う店舗の（店舗, 出品）
     added = 0
+    skipped = []  # 突き合わせられず、商品も追加しなかった出品の名前
     offers = sorted(offers, key=lambda o: SHOP_ORDER.index(o["shop"]))
+    # 店舗ごとの、同じ番号・バリエーションのカードの名前
+    same_number = {}
+    for o in offers:
+        same_number.setdefault((o["shop"], *_number_head(o["key"])), []).append(o["key"].split("|")[3])
     for o in offers:
         key = o["key"]
         product = by_key.get(key) or _similar(products, key, o["shop"], shops)
+        if product is None:
+            group = same_number[(o["shop"], *_number_head(key))]
+            product, candidates = _loose(products, key, o["shop"], shops, o["price"], best, group)
+            if product is None and (candidates or o["shop"] in NO_NEW):
+                skipped.append(f"{SHOPS[o['shop']].NAME} {o['name']}")
+                continue
         if product is None:
             info = o["psa"]
             product = {"jan": "psa-" + hashlib.sha1(key.encode()).hexdigest()[:10],
@@ -112,7 +142,7 @@ def merge(catalog, offers):
     tcg = {s["id"] for s in catalog["series"] if s["category"] == "tcg" and s["id"] not in psa_ids}
     i = max((n for n, p in enumerate(others) if p["series"] in tcg), default=len(others) - 1) + 1
     catalog["products"] = others[:i] + products + others[i:]
-    return added, lookups
+    return added, lookups, skipped
 
 
 def _image_rank(shop):
@@ -144,6 +174,60 @@ def _similar(products, key, shop, shops):
             if other_head == head and len(short) >= 2 and (core.startswith(other_core) or other_core.startswith(core)):
                 return p
     return None
+
+
+def _number_head(key):
+    game, grade, number, _, variant = key.split("|")
+    return game, grade, number, variant
+
+
+def _loose(products, key, shop, shops, price, best, group):
+    """名前を通称で書く店舗・番号を略す店舗のための、ゆるい突き合わせ（説明は先頭）。
+    group は、その店舗が同じ番号・バリエーションで載せているカードの名前（_core）の一覧。
+    （商品, 候補があったか）を返す。候補が絞れないか価格が離れていれば、商品は None。
+    候補があったのに決められなかったカードは、重複を避けるため商品を追加しない。"""
+    game, grade, number, core, variant = key.split("|")
+    by_name, by_number, seen = [], [], False
+    for p in products:
+        if shops.get(p["jan"], {}).get(shop, key) != key:
+            continue
+        for other in p.get("keys", []):
+            o_game, o_grade, o_number, o_core, o_variant = other.split("|")
+            if (o_game, o_grade, o_variant) != (game, grade, variant) or not _same_number(number, o_number):
+                continue
+            # 番号がまったく同じ商品がある（遊戯王の「JP001」のように略した番号は、別のカードでも同じになるので数えない）
+            seen = seen or (number == o_number and ("/" in number or "-" in number))
+            # 名前が合い、この店舗の同じ番号のカードのうち名前が合うのがこのカードだけ
+            if _name_match(core, o_core) and sum(_name_match(c, o_core) for c in group) == 1:
+                by_name.append(p)
+            if number == o_number and game in NUMBER_ONLY_GAMES and len(group) == 1:
+                by_number.append(p)
+    by_name = list({p["jan"]: p for p in by_name}.values())
+    by_number = list({p["jan"]: p for p in by_number}.values())
+    for candidates, need_price in ((by_name, False), (by_number, True)):
+        if len(candidates) == 1:
+            p = candidates[0]
+            known = best.get(p["jan"])
+            if known and max(known, price) / max(min(known, price), 1) > PRICE_RATIO:
+                return None, True
+            if known or not need_price:
+                return p, True
+        if candidates:
+            return None, True
+    return None, seen
+
+
+def _name_match(a, b):
+    """片方の名前（_core）がもう片方に含まれる（「ムンクコダック」と「コダック」）。"""
+    return len(min(a, b, key=len)) >= 2 and (a in b or b in a)
+
+
+def _same_number(a, b):
+    """「063」と「063/051」、「JP003」と「QCCU-JP003」のように、略した番号も合うとみなす。"""
+    if a == b:
+        return True
+    short, full = sorted((a, b), key=len)
+    return full.split("/")[0] == short if short.isdigit() else full.endswith("-" + short)
 
 
 def _name(info):

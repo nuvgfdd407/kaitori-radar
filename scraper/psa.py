@@ -10,8 +10,8 @@ import unicodedata
 
 GAMES = ("pokemon", "onepiece", "yugioh")
 _RARITY = r"(?:SAR|SR|UR|AR|SA|CHR|CSR|MUR|HR|BWR|MA|ACE|RRR|RR|R|PR|MM|SSR|S|K|U|C|P|PROMO|-)"
-_LANGUAGE = re.compile(r"英語版|韓国語版|中国版|簡体字|繁体字|海外版|English", re.IGNORECASE)
-_LANGUAGE_CODES = {"英語版": "en", "韓国語版": "ko", "中国版": "zh", "簡体字": "zh", "繁体字": "zh"}
+_LANGUAGE = re.compile(r"英語版|韓国語版|中国語版|中国版|簡体字|繁体字|海外版|English", re.IGNORECASE)
+_LANGUAGE_CODES = {"英語版": "en", "韓国語版": "ko", "中国語版": "zh", "中国版": "zh", "簡体字": "zh", "繁体字": "zh"}
 # 「PSA10 ブラッキーVMAX SA 095/069」「ポケモンカード PSA10 リーリエ SR 119/114」のような商品名
 _NAME = re.compile(rf"(PSA\s*\d+)\s+(.*?)(?:\s+({_RARITY}))?(?:\s+(1ED))?\s+(\d{{1,3}}/[\w\-/]+|\d{{3}})(?:\s+\S+)?$")
 
@@ -47,8 +47,11 @@ def _number(number):
         return f"{int(m.group(1)):03d}/{m.group(2)}"
     if re.fullmatch(r"\d{1,3}", text):
         return f"{int(text):03d}"
-    # ワンピース「OP05-119」、遊戯王「QCCU-JP001」など
-    m = re.search(r"[A-Z0-9]+-[A-Z0-9]+", text)
+    # 遊戯王で収録弾の略号を省いた「JP003」
+    if re.fullmatch(r"[A-Z]{2}[A-Z0-9]{3}", text):
+        return text
+    # ワンピース「OP05-119」（金のカードは「OP05-119_GL」）、遊戯王「QCCU-JP001」など
+    m = re.search(r"[A-Z0-9]+-[A-Z0-9]+(?:_[A-Z0-9]+)?", text)
     return m.group(0) if m else None
 
 
@@ -58,7 +61,7 @@ def _core(name):
     text = re.sub(r":?1ED", " ", text)
     text = re.sub(rf"(?<![A-Za-z]){_RARITY}(?:仕様)?(?![A-Za-z])", " ", text)
     text = text.replace("仕様", "")
-    return re.sub(r"[\s・&＆!！~〜\-_]", "", text).lower()
+    return re.sub(r"[\s・&＆!！~〜\-_()]", "", text).lower()  # 閉じていない括弧（「1ED）ピカチュウ」）も除く
 
 
 def _variant(name):
@@ -66,9 +69,10 @@ def _variant(name):
     flags = []
     if "1ED" in text:
         flags.append("1ED")
-    if "マスターボールミラー" in text or re.search(r"(?<![A-Za-z])MM(?![A-Za-z])", text):
+    # 「マスボ」「モンボ」と略す店舗もある
+    if re.search(r"マスターボール|マスボ|(?<![A-Za-z])MM(?![A-Za-z])", text):
         flags.append("masterball")
-    elif "モンスターボールミラー" in text:
+    elif re.search(r"モンスターボール|モンボ", text):
         flags.append("monsterball")
     elif re.search(r"ミラー|ホイル", text):
         flags.append("mirror")
