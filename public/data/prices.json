@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T06:27:05+09:00",
+  "updated_at": "2026-10-03T06:49:51+09:00",
   "shops": [
     {
       "id": "homura",
@@ -43442,9 +43442,21 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "morimori": {
+          "price": 1000000,
+          "url": "https://www.morimori-kaitori.jp/category/2401009/product/344447"
+        },
         "lounge": {
           "price": 1350000,
           "url": "https://kaitori.toreca-lounge.com/product/6NwG1AHjCXm6HsBpw1e3vR"
+        },
+        "shinsoku": {
+          "price": 1350000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "club": {
+          "price": 1350000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/286-SM-P/"
         },
         "birth": {
           "price": 1250000,
@@ -43511,32 +43523,6 @@
         "lounge": {
           "price": 1020000,
           "url": "https://kaitori.toreca-lounge.com/product/4eFRv1cjK3yjmBvAaqTSCa"
-        }
-      }
-    },
-    {
-      "jan": "psa-4ce73c6b02",
-      "series": "psa-pokemon",
-      "name": "PSA10 コダック(ムンク) PROMO 286/SM-P",
-      "msrp": null,
-      "image": {
-        "src": "/images/psa-4ce73c6b02.jpg",
-        "url": "https://torecaclub.com/pokemon/cards/psa10/286-SM-P/",
-        "origin": "https://storage.googleapis.com/card-image-hashed-url/cards/78f4fe7ea504f79101bced97b560f6e3.png?v=1785608447314505",
-        "source": "トレカクラブ"
-      },
-      "prices": {
-        "morimori": {
-          "price": 1000000,
-          "url": "https://www.morimori-kaitori.jp/category/2401009/product/344447"
-        },
-        "shinsoku": {
-          "price": 1350000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "club": {
-          "price": 1350000,
-          "url": "https://torecaclub.com/pokemon/cards/psa10/286-SM-P/"
         }
       }
     },
@@ -50392,6 +50378,10 @@
           "price": 36500,
           "url": "https://kaitori-homura.com/products/6088"
         },
+        "morimori": {
+          "price": 35000,
+          "url": "https://www.morimori-kaitori.jp/category/2401009/product/344428"
+        },
         "lounge": {
           "price": 37800,
           "url": "https://kaitori.toreca-lounge.com/product/4piQZBBHDR0kisgSRWBpjD"
@@ -50539,24 +50529,6 @@
         "golden": {
           "price": 33000,
           "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
-        }
-      }
-    },
-    {
-      "jan": "psa-c0da6b4b44",
-      "series": "psa-pokemon",
-      "name": "PSA10 ブラッキー スター P 012/025",
-      "msrp": null,
-      "image": {
-        "src": "/images/psa-c0da6b4b44.jpg",
-        "url": "https://www.morimori-kaitori.jp/category/2401009/product/344428",
-        "origin": "https://www.morimori-kaitori.jp/files/c8306f08-10a7-4e73-9999-cc3386f5947e/8200000000074.webp",
-        "source": "森森買取"
-      },
-      "prices": {
-        "morimori": {
-          "price": 35000,
-          "url": "https://www.morimori-kaitori.jp/category/2401009/product/344428"
         }
       }
     },

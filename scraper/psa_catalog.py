@@ -20,6 +20,7 @@
   重複を避けるため商品を追加しない。ワンピースは、トレカラウンジ以外の店舗のカードは、バリエーションが違っても
   番号がまったく同じ商品があれば追加しない（和柄・金背景・手配書などの別の版を、店舗ごとにばらばらの書き方で分けているため）
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
+- 店舗ごとの書き方の違いで同じカードが2つの商品になっていたら、まとめる（_duplicates）
 - 画像は、IMAGE_SHOPS の順に、載っている店舗のカード画像を使う。
   森森買取は一覧に画像がないので、画像のないカードだけ商品ページを見にいく。
   シンソク・森森買取の画像には PSA のケースごと写したものがあり、"image_crop": "slab" を付けてカードの部分だけ切り抜く
@@ -127,6 +128,8 @@ def merge(catalog, offers):
         shops.setdefault(product["jan"], {}).setdefault(o["shop"], key)
         by_key[key] = product
         best[product["jan"]] = max(best.get(product["jan"], 0), o["price"] or 0)
+    for gone in _duplicates(products, shops, best):
+        products.remove(gone)
     lookups = []  # 森森買取の商品ページで画像を探す（商品, 商品ページのURL）
     by_name = {v: k for k, v in IMAGE_SHOPS.items()}
     for p in products:
@@ -147,6 +150,36 @@ def merge(catalog, offers):
     i = max((n for n, p in enumerate(others) if p["series"] in tcg), default=len(others) - 1) + 1
     catalog["products"] = others[:i] + products + others[i:]
     return added, lookups, skipped
+
+
+def _duplicates(products, shops, best):
+    """店舗ごとの書き方の違いで別々にできてしまった同じカードの商品（「ムンクコダック」と「コダック(ムンク)」）を
+    まとめ、消す方の商品を返す。番号・バリエーションがまったく同じで、片方の名前がもう片方に含まれ、
+    同じ店舗が両方に載せておらず、価格も近いものをまとめる。先にある商品（URL）を残し、後の商品の "keys" を移す。"""
+    gone = []
+    for i, a in enumerate(products):
+        for b in products[i + 1:]:
+            if b in gone or a in gone or not _same_card(a, b) or set(shops.get(a["jan"], {})) & set(shops.get(b["jan"], {})):
+                continue
+            if not _near(best.get(a["jan"]), best.get(b["jan"])):
+                continue
+            a["keys"] += [k for k in b["keys"] if k not in a["keys"]]
+            shops.setdefault(a["jan"], {}).update(shops.get(b["jan"], {}))
+            best[a["jan"]] = max(best.get(a["jan"], 0), best.get(b["jan"], 0))
+            gone.append(b)
+    return gone
+
+
+def _same_card(a, b):
+    for ka in a.get("keys", []):
+        game, grade, number, core, variant = ka.split("|")
+        if "/" not in number and "-" not in number:
+            continue  # 略した番号（遊戯王の「JP001」）は別のカードでも同じになる
+        for kb in b.get("keys", []):
+            o_game, o_grade, o_number, o_core, o_variant = kb.split("|")
+            if (game, grade, number, variant) == (o_game, o_grade, o_number, o_variant) and _name_match(core, o_core):
+                return True
+    return False
 
 
 def _image_rank(shop):
