@@ -17,6 +17,7 @@ from ..text import parse_yen
 ID = "golden"
 NAME = "ゴールデンホビー"
 SHORT = "ゴールデン"
+MODE = "郵送"  # 店名の後ろに付ける買取方法
 URL = "https://buy-gh.tokyo/"
 
 LIST_URL = URL + quote("ポケモンカードPSA10.html")

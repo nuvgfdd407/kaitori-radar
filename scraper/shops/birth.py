@@ -3,7 +3,7 @@
 買取表のページ（/page/pk_purchase など）は、Google スプレッドシートを「ウェブに公開」した CSV を読んで表示しているので、
 その CSV を直接読む。列は 分類1〜4・ガチャ選択肢名称・画像URL・店頭価格・大口価格・郵送価格。
 名称は「リーリエ SR 119/114」「コミパラエース(受け継がれる意志) OP13-119」のように、最後がカード番号。
-価格はどれも PSA10 のもので、ほかの店舗に合わせて郵送価格を使う。
+価格はどれも PSA10 のもの。このモジュールは郵送価格を、birth_store は店頭価格を使う。
 「AR保証 PSA10 999」のような最低保証の行や、番号のない行（BOX など）は使わない。
 名前は「ムンクコダック」「マスボ グレイシア」のような通称が多いので、カタログとは番号を中心に突き合わせる（scraper.psa_catalog）。
 """
@@ -17,6 +17,7 @@ from ..text import parse_yen
 ID = "birth"
 NAME = "トレカバース"
 SHORT = "バース"
+MODE = "郵送"  # 店名の後ろに付ける買取方法（PSA 鑑定品は郵送と店頭で価格が違う店舗がある）
 URL = "https://www.torecabirth.jp/"
 
 _CSV = "https://docs.google.com/spreadsheets/d/e/{}/pub?gid={}&single=true&output=csv"
@@ -36,14 +37,14 @@ def fetch(http):
     return fetch_psa(http)
 
 
-def fetch_psa(http):
-    """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
+def fetch_psa(http, column="郵送価格"):
+    """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。column は使う価格の列（「郵送価格」「店頭価格」）。"""
     offers = []
     for game, page, csv_url in GAMES:
         for row in csv.DictReader(io.StringIO(http.get(csv_url).content.decode("utf-8"))):
             title = " ".join((row.get("ガチャ選択肢名称") or "").split())
             name, _, number = title.rpartition(" ")
-            price = parse_yen(row.get("郵送価格"))
+            price = parse_yen(row.get(column))
             # 遊戯王は同じカードの別の版を括弧の中で分けている（「青眼の白龍(プリシク) JP001」「青眼の白龍(25th浮世絵) JP001」）。
             # psa_key は括弧の中を除くので、括弧を外して名前の一部にする
             key_name = re.sub(r"[()（）]", " ", name) if game == "yugioh" else name

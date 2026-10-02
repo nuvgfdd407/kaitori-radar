@@ -82,7 +82,7 @@ def _psa_offers(rows, category):
         parsed = parse_name(o["name"]) if "PSA" in o["name"] and category in CARD_GAMES else None
         key = psa_key(CARD_GAMES[category], parsed[0], parsed[1], parsed[3]) if parsed else None
         if key:
-            offers.append({**o, "jan": None, "key": key,
+            offers.append({**o, "jan": None, "key": key, "mode": "郵送",  # PSA 鑑定品は郵送買取のみ
                            "psa": {"game": CARD_GAMES[category], "grade": parsed[0], "name": parsed[1],
                                    "rarity": parsed[2], "number": parsed[3]}})
     return offers

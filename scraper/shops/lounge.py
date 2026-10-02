@@ -14,6 +14,7 @@ from ..psa import psa_key
 ID = "lounge"
 NAME = "トレカラウンジ"
 SHORT = "ラウンジ"
+MODE = "郵送"  # 店名の後ろに付ける買取方法
 URL = "https://kaitori.toreca-lounge.com/"
 
 # ゲーム（サイトの URL の名前, 突き合わせ用の名前）

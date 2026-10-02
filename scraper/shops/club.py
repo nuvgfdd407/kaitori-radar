@@ -16,6 +16,7 @@ from ..text import parse_yen
 ID = "club"
 NAME = "トレカクラブ"
 SHORT = "クラブ"
+MODE = "郵送"  # 店名の後ろに付ける買取方法
 URL = "https://torecaclub.com/"
 
 LIST_URL = URL + "pokemon/psa10/"

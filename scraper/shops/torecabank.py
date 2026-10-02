@@ -17,6 +17,7 @@ from ..text import parse_yen
 ID = "torecabank"
 NAME = "トレカバンク"
 SHORT = "バンク"
+MODE = "郵送"  # 店頭買取の価格は torecabank_store
 URL = "https://store.torecabank.com/"
 
 LIST_URL = URL + "mail_buy_list"

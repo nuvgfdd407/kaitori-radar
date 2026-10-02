@@ -314,7 +314,7 @@ def _shop_prices(p, shops):
         title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         classes = " ".join(c for c in ["is-best" if best else "", "is-stale" if not shop["ok"] else ""] if c)
         items.append(
-            f'<li class="{classes}"><span class="shop-name">{esc(shop["name"])}{_offer_note(offer)}</span>'
+            f'<li class="{classes}"><span class="shop-name">{esc(shop_label(shop, offer))}{_offer_note(offer)}</span>'
             f'<span class="shop-price">{_link(offer.get("url"), yen(offer["price"]), title)}</span>'
             f'<span class="shop-diff">{diff}</span></li>'
         )
@@ -324,6 +324,14 @@ def _shop_prices(p, shops):
         f'<div class="item-shops"><ul class="shop-prices">{"".join(items)}</ul>'
         f'<a class="item-more" href="/item/{p["jan"]}/">価格の推移・商品の詳細 →</a></div>'
     )
+
+
+def shop_label(shop, offer=None, short=False):
+    """店名。買取方法が出品ごとに決まっている店舗（ホムラ・森森の PSA 鑑定品は郵送だけ）は「買取ホムラ(郵送)」のようにする。
+    PSA 鑑定品だけの店舗は、店名にすでに買取方法が入っている（scraper.update）。"""
+    name = shop["short" if short else "name"]
+    mode = (offer or {}).get("mode")
+    return f"{name}({mode})" if mode and not name.endswith(")") else name
 
 
 def _offer_note(offer):
@@ -355,7 +363,7 @@ def item_content(site, p, series, siblings, shops):
         classes = " ".join(c for c in ["is-best" if diff == 0 else "", "is-stale" if not shop["ok"] else ""] if c)
         title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         rows.append(
-            f'<tr class="{classes}"><th scope="row">{esc(shop["name"])}{_offer_note(offer)}</th>'
+            f'<tr class="{classes}"><th scope="row">{esc(shop_label(shop, offer))}{_offer_note(offer)}</th>'
             f'<td class="num price">{_link(offer.get("url"), yen(offer["price"]), title)}</td>'
             f'<td class="num diff">{diff_label}</td></tr>'
         )
@@ -444,13 +452,13 @@ def price_history(site, p, shops):
     """店舗ごとの買取価格の推移のグラフ（SVG）と、日ごとの最高値の表。
 
     p["history"] は build.py が用意する [(日付の文字列, {店舗ID: 価格})]（古い順）。
-    線の色は店舗ごとに固定（全店舗の並び順で style.css の .c0〜.c6 を使う）。
+    線の色は、そのページの店舗の並び順で style.css の .c0〜.c9 を使う（店舗が多い PSA 鑑定品でも色が分かれるように）。
     """
     history = p["history"]
     if len(history) < 2:
         return ('    <p class="chart-note">価格の記録を始めたばかりです。'
                 '2日分以上の記録がたまると、ここに店舗ごとの推移のグラフを表示します。</p>')
-    color = {s["id"]: i for i, s in enumerate(site["shops"])}
+    color = {s["id"]: i % 10 for i, s in enumerate(shops)}
     first = date.fromisoformat(history[0][0])
     span = max((date.fromisoformat(history[-1][0]) - first).days, 1)
     lines = []
@@ -486,7 +494,7 @@ def price_history(site, p, shops):
         for d in label_days
     )
     paths = "".join(
-        f'<g class="c{color[shop["id"]]}"><title>{esc(shop["name"])}</title>'
+        f'<g class="c{color[shop["id"]]}"><title>{esc(shop_label(shop, p["prices"].get(shop["id"])))}</title>'
         f'<polyline class="line" points="{" ".join(f"{x(d)},{y(v)}" for d, v in points)}"/>'
         + "".join(f'<circle class="dot" cx="{x(d)}" cy="{y(v)}" r="2.5"/>' for d, v in points)
         + "</g>"
@@ -494,14 +502,15 @@ def price_history(site, p, shops):
     )
     latest = sorted(lines, key=lambda line: -line[1][-1][1])
     legend = "".join(
-        f'<li><span class="swatch c{color[shop["id"]]}" aria-hidden="true"></span>{esc(shop["short"])}'
+        f'<li><span class="swatch c{color[shop["id"]]}" aria-hidden="true"></span>'
+        f'{esc(shop_label(shop, p["prices"].get(shop["id"]), short=True))}'
         f' <span class="legend-price">{yen(points[-1][1])}</span></li>'
         for shop, points in latest
     )
     period = f"{_month_day(first)}〜{_month_day(date.fromisoformat(history[-1][0]))}"
     rows = []
     for day, prices in reversed(history):
-        shown = {s["short"]: prices[s["id"]] for s in shops if s["id"] in prices}
+        shown = {shop_label(s, p["prices"].get(s["id"]), short=True): prices[s["id"]] for s in shops if s["id"] in prices}
         if not shown:
             continue
         best = max(shown.values())
@@ -585,8 +594,9 @@ def signed_pct(ratio):
 def best_shop_names(p, full=False):
     """最高値の店舗名。一覧の略称では、買取に条件がある店舗（Apple Store の購入証明が必要など）に「※」を付ける。"""
     if full:
-        return "・".join(s["name"] for s in p["best_shops"])
-    return "・".join(s["short"] + ("※" if p["prices"][s["id"]].get("note") else "") for s in p["best_shops"])
+        return "・".join(shop_label(s, p["prices"][s["id"]]) for s in p["best_shops"])
+    return "・".join(shop_label(s, p["prices"][s["id"]], short=True) + ("※" if p["prices"][s["id"]].get("note") else "")
+                    for s in p["best_shops"])
 
 
 def thumb(p, large=False):

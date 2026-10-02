@@ -90,14 +90,19 @@ def main():
                     current = found.get(target)
                     if current is None or price > current["price"]:
                         # 店舗の条件（「Apple Store の購入証明が必要」など）があれば、価格と一緒に載せる
+                        # 買取方法（ホムラ・森森の PSA 鑑定品は「郵送」だけ）も、店名に付けて出すので一緒に載せる
                         found[target] = {"price": price, "url": offer["url"],
-                                         **({"note": offer["note"]} if offer.get("note") else {})}
+                                         **({"note": offer["note"]} if offer.get("note") else {}),
+                                         **({"mode": offer["mode"]} if offer.get("mode") else {})}
                 if not targets and jan not in ignored and offer["price"] >= REPORT_MIN_PRICE:
                     unmatched.append({"shop": shop.NAME, **offer})
             if not found:
                 error = "対象商品が1件も見つかりませんでした（ページの構成が変わった可能性があります）"
 
-        entry = {"id": shop.ID, "name": shop.NAME, "short": shop.SHORT, "url": shop.URL, "ok": error is None}
+        # PSA 鑑定品だけの店舗は、店名の後ろに買取方法を付ける（「トレカバンク(郵送)」「トレカバンク(店頭)」）
+        mode = f"({shop.MODE})" if getattr(shop, "MODE", None) else ""
+        entry = {"id": shop.ID, "name": shop.NAME + mode, "short": shop.SHORT + mode, "url": shop.URL,
+                 "ok": error is None}
         if error:
             warn(f"{shop.NAME}: {error}")
             entry["failing_since"] = prev_shops.get(shop.ID, {}).get("failing_since") or now

@@ -13,6 +13,7 @@ from ..psa import psa_key
 ID = "shinsoku"
 NAME = "シンソク"
 SHORT = "シンソク"
+MODE = "郵送・店頭"  # 店名の後ろに付ける買取方法（郵送と店頭で同じ価格）
 URL = "https://shinsoku-tcg.com/"
 
 LIST_URL = URL + "yuso-kaitori"

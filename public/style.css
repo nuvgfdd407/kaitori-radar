@@ -15,7 +15,7 @@
   --warn-line: #f5b25b;
   --tag-bg: #eef0f4;
   --shadow: 0 1px 2px rgb(16 24 40 / 6%);
-  /* 価格の推移のグラフの、店舗ごとの線の色（全店舗の並び順） */
+  /* 価格の推移のグラフの、店舗ごとの線の色（そのページの店舗の並び順） */
   --c0: #3b5bdb;
   --c1: #e8590c;
   --c2: #2b8a3e;
@@ -23,6 +23,9 @@
   --c4: #7048e8;
   --c5: #0c8599;
   --c6: #b08900;
+  --c7: #5c940d;
+  --c8: #862e9c;
+  --c9: #495057;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,6 +53,9 @@
     --c4: #9775fa;
     --c5: #3bc9db;
     --c6: #fcc419;
+    --c7: #94d82d;
+    --c8: #e599f7;
+    --c9: #adb5bd;
   }
 }
 
@@ -384,6 +390,9 @@ a.product:hover { text-decoration: underline; }
 .chart .c4 { stroke: var(--c4); fill: var(--c4); }
 .chart .c5 { stroke: var(--c5); fill: var(--c5); }
 .chart .c6 { stroke: var(--c6); fill: var(--c6); }
+.chart .c7 { stroke: var(--c7); fill: var(--c7); }
+.chart .c8 { stroke: var(--c8); fill: var(--c8); }
+.chart .c9 { stroke: var(--c9); fill: var(--c9); }
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
@@ -403,6 +412,9 @@ a.product:hover { text-decoration: underline; }
 .swatch.c4 { background: var(--c4); }
 .swatch.c5 { background: var(--c5); }
 .swatch.c6 { background: var(--c6); }
+.swatch.c7 { background: var(--c7); }
+.swatch.c8 { background: var(--c8); }
+.swatch.c9 { background: var(--c9); }
 .chart-note { color: var(--muted); }
 .history-table { margin: 8px 0 0; max-width: 760px; }
 .history-table summary { cursor: pointer; color: var(--brand); font-size: 14px; }

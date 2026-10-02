@@ -90,7 +90,7 @@ def fetch_psa(http):
         parsed = parse_name(name)
         key = psa_key("pokemon", parsed[0], parsed[1], parsed[3]) if parsed else None
         if key:
-            offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
+            offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url, "mode": "郵送",
                            "psa": {"game": "pokemon", "grade": parsed[0], "name": parsed[1], "rarity": parsed[2],
                                    "number": parsed[3], "image": image, "page": url}})
     return offers
