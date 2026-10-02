@@ -18,12 +18,19 @@
   同じ大きさの白い正方形の中央に、同じ大きさで置いて保存する（normalize）
   一度保存した画像は使い続け、探し直すのは、まだ画像がない商品と "image_item" を変えた商品だけ
 - API は1秒に1回までだが、続けて使うと一時的に制限されるので間隔を広めにしている
+- JAN がない PSA 鑑定品は「カード名 カード番号」（例: ブラッキーVMAX 095/069）で検索し、出品名に同じカード番号が
+  入っている出品の画像を使う（PSA のケース入りの写真のこともカード単体の写真のこともある）。
+  1回に探すのは KEYWORD_LIMIT 件まで（--all ですべて）。見つからなかったカードは catalog/image_misses.json に
+  記録し、30日たつまで探し直さない
 """
 import argparse
 import io
 import os
+import re
 import sys
 import time
+import unicodedata
+from datetime import date, timedelta
 
 import requests
 from PIL import Image, ImageDraw
@@ -38,6 +45,9 @@ IMAGE_SIZE = 240   # 保存する画像の一辺（商品ページの大きい�
 IMAGE_FILL = 0.86  # 商品が正方形に占める大きさ
 IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
 RESULTS = 20     # 1商品あたりに見る出品の数
+KEYWORD_LIMIT = 80   # 1回に名前で探す PSA 鑑定品の数（毎日の実行が制限時間内に終わるように）
+MISSES = ROOT / "catalog" / "image_misses.json"
+MISS_DAYS = 30
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
 # 画像に「送料無料」「レビュー特典」などの文字や枠を入れている店舗（出品コードの「_」より前）。
 # ほかに画像のある出品がないときだけ使う
@@ -51,6 +61,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="Yahoo!ショッピングから商品画像を取得する")
     parser.add_argument("--candidates", nargs="+", metavar="JAN", help="指定した商品の画像の候補を一覧表示する")
+    parser.add_argument("--all", action="store_true", help="PSA 鑑定品を件数の上限なしで探す")
     args = parser.parse_args()
 
     client_id = os.environ.get("YAHOO_CLIENT_ID")
@@ -60,14 +71,15 @@ def main():
     if args.candidates:
         show_candidates(session, client_id, args.candidates)
     else:
-        update_all(session, client_id)
+        update_all(session, client_id, keyword_limit=None if args.all else KEYWORD_LIMIT)
 
 
-def update_all(session, client_id):
+def update_all(session, client_id, keyword_limit=KEYWORD_LIMIT):
     catalog = load_json(CATALOG)
     previous = load_json(IMAGES) if IMAGES.exists() else {}
     images = {}
     searched = []
+    by_name = []
     for product in catalog["products"]:
         if product.get("image_from"):
             continue
@@ -79,7 +91,13 @@ def update_all(session, client_id):
                 warn(f"{product['name']}: 公式の画像（{product['image_url']}）を取得できませんでした")
             continue
         if not product["jan"].isdigit():
-            continue  # JAN がない商品（PSA 鑑定品など）は、Yahoo!ショッピングで探せないので画像なし
+            # JAN がない商品: PSA 鑑定品は名前で探す。前回の画像があればそのまま使う
+            old = previous.get(product["jan"])
+            if old and save(session, product["jan"], old):
+                images[product["jan"]] = old
+            elif product["series"].startswith("psa-") and not product.get("no_image"):
+                by_name.append(product)  # "no_image": true の商品は、別の商品の画像しか見つからなかったもの
+            continue
         old = previous.get(product["jan"])
         item_code = product.get("image_item")
         if old and (not item_code or old.get("code") == item_code) and save(session, product["jan"], old):
@@ -109,6 +127,7 @@ def update_all(session, client_id):
             print(f"[OK] {product['name']}（{chosen['seller']}）")
         else:
             print(f"[--] {product['name']}: 画像のある出品が見つかりませんでした")
+    _search_by_name(session, client_id, by_name, images, keyword_limit)
     for product in catalog["products"]:
         source = product.get("image_from")
         if source and source in images:
@@ -237,8 +256,60 @@ def show_candidates(session, client_id, jans):
             print(f"      {hit['image']['medium']}")
 
 
-def search(session, client_id, jan):
-    params = {"appid": client_id, "jan_code": jan, "results": RESULTS}
+def _search_by_name(session, client_id, products, images, limit):
+    """PSA 鑑定品を「カード名 カード番号」で探す。見つからなかったものは MISSES に記録する。"""
+    misses = load_json(MISSES) if MISSES.exists() else {}
+    cutoff = (date.today() - timedelta(days=MISS_DAYS)).isoformat()
+    targets = [p for p in products if misses.get(p["jan"], "") < cutoff][:limit]
+    if targets:
+        print(f"PSA 鑑定品 {len(targets)}件の画像を名前で探します（画像なし {len(products)}件）")
+    for i, product in enumerate(targets):
+        if i:
+            time.sleep(INTERVAL)
+        query, number = _card_query(product["name"])
+        card = query.rsplit(" ", 1)[0]
+        try:
+            hits = search(session, client_id, query=query)
+        except RuntimeError as e:
+            warn(f"{product['name']}: {e}")
+            continue
+        chosen = _choose_card(hits, number, card)
+        if chosen and save(session, product["jan"], chosen):
+            images[product["jan"]] = chosen
+            misses.pop(product["jan"], None)
+        else:
+            misses[product["jan"]] = date.today().isoformat()
+    if targets:
+        found = sum(1 for p in targets if p["jan"] in images)
+        print(f"PSA 鑑定品: {found}/{len(targets)}件の画像が見つかりました")
+        write_json(MISSES, dict(sorted(misses.items())))
+
+
+def _card_query(name):
+    """「PSA10 ブラッキーVMAX SA 095/069」→（「ブラッキーVMAX 095/069」, 「095/069」）。"""
+    words = unicodedata.normalize("NFKC", name).split()
+    number = words[-1]
+    card = re.sub(r"\([^)]*\)", "", words[1] if len(words) > 2 else words[0])
+    return f"{card} {number}", number
+
+
+def _choose_card(hits, number, card):
+    """出品名に同じカード番号が入っている、画像のある出品から1件選ぶ（レビューの多いもの）。
+    番号が「151」のように数字だけのときは、別の商品にも当てはまりやすいので、カード名も入っているものに限る。"""
+    def flat(text):
+        return re.sub(r"\s", "", unicodedata.normalize("NFKC", text or "")).upper()
+    need = [flat(number)] + ([] if re.search(r"[/-]", number) else [flat(card)])
+    candidates = [h for h in hits if (h.get("image") or {}).get("medium") and all(n in flat(h.get("name")) for n in need)]
+    candidates = [h for h in candidates if _store(h) not in NOISY_STORES] or candidates
+    if not candidates:
+        return None
+    best = max(candidates, key=lambda h: (h.get("review") or {}).get("count") or 0)
+    return {"src": best["image"]["medium"], "url": best["url"], "seller": (best.get("seller") or {}).get("name", ""),
+            "code": best.get("code", "")}
+
+
+def search(session, client_id, jan=None, query=None):
+    params = {"appid": client_id, "results": RESULTS, **({"jan_code": jan} if jan else {"query": query})}
     for wait in [*RETRY_WAITS, None]:
         try:
             res = session.get(API, params=params, timeout=30)

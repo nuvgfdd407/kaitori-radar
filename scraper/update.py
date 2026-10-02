@@ -35,7 +35,7 @@ REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
 # 機種＋容量＋色で突き合わせるスマホのジャンル
 PHONE_CATEGORIES = ("apple", "android")
-INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names", "keys"}
+INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names", "keys", "no_image"}
 
 
 def main():
