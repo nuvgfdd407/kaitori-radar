@@ -205,6 +205,8 @@ READINGS = [
     ("iPhone", ["アイフォン", "アイフォーン"]), ("Pro", ["プロ"]), ("Max", ["マックス"]), ("Plus", ["プラス"]),
     ("Air", ["エアー"]), ("Duo", ["デュオ"]),
     ("Pixel", ["ピクセル"]), ("Fold", ["フォールド"]), ("XL", ["エックスエル"]),
+    ("iPad", ["アイパッド"]), ("mini", ["ミニ"]), ("Watch", ["ウォッチ"]), ("AirPods", ["エアーポッズ", "エアポッズ"]),
+    ("Cellular", ["セルラー"]), ("Wi-Fi", ["ワイファイ"]),
     ("Galaxy", ["ギャラクシー"]), ("Flip", ["フリップ"]), ("Xperia", ["エクスペリア"]), ("AQUOS", ["アクオス"]),
     ("sense", ["センス"]), ("wish", ["ウィッシュ"]), ("SIM", ["シム"]), ("docomo", ["ドコモ"]),
     ("au", ["エーユー"]), ("SoftBank", ["ソフトバンク"]), ("Y!mobile", ["ワイモバイル"]),
@@ -215,7 +217,7 @@ READINGS = [
     ("Pokémon", ["ポケモン"]), ("BOX", ["ボックス"]),
 ]
 # ジャンルの呼び方（検索用）
-CATEGORY_ALIASES = {"android": "アンドロイド", "tcg": "トレーディングカード"}
+CATEGORY_ALIASES = {"apple": "アップル", "android": "アンドロイド", "tcg": "トレーディングカード"}
 # シリーズの呼び方（検索用）
 SERIES_ALIASES = {
     "pokemon": "ポケカ", "onepiece": "ワンピ ワンピカ", "ps5": "プレステ5 PS5",
@@ -413,7 +415,7 @@ def item_content(site, p, series, siblings, shops):
 
 
 def is_phone(p):
-    return p["category"]["id"] in ("iphone", "android")
+    return p["series"].startswith(("iphone", "pixel", "galaxy", "xperia", "aquos"))
 
 
 def item_breadcrumbs(series, p):

@@ -9,6 +9,7 @@ iPhone はJANがなく、「iPhone 17 Pro 256GB」「simfree未開封」のよ�
 色による減額は備考に「シルバー -32000 / グレイシャー、ブラック -8000」のように書かれていて、
 表示価格はいちばん高い色の価格（備考に出てこない色は表示価格のまま）。
 Android は携帯買取（1）> SIMフリー・キャリアごとのカテゴリにあり、色ごとに載っている。「新品」の価格が未開封品の価格。
+iPad は携帯買取（1）> iPad（09）、Apple Watch・AirPods は家電買取（2）にあり、JAN と型番が載っている。
 ポケモンカード・遊戯王はおもちゃ買取（3）> ポケモン トレーディングカード（04）・遊戯王トレーディングカード（07）にあり、
 JAN が載っている。
 """
@@ -17,6 +18,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_color, phone_colors, phone_key
 from ..text import find_jan, parse_yen
 
@@ -37,6 +39,11 @@ IPHONE_CATEGORIES = ["40", "39", "37", "36", "35", "34", "38", "32", "31", "30",
 PIXEL_CATEGORIES = ["14", "15", "16", "17", "13", "09", "10", "11", "12", "04", "05", "06", "07"]
 # 携帯買取（1）> SIMフリー / Docomo / AU（UQ版も同額） / SoftBank / Y!mobile（メーカーの区別なしで全部を取る）
 ANDROID_CATEGORIES = [("02", "SIMフリー"), ("03", "docomo"), ("04", "au"), ("05", "SoftBank"), ("07", "Y!mobile")]
+# iPad（1/09）: Pro M5 / Pro M4 / Pro M4 Cellular / Air M4 / Air M3 / mini（A17 Pro） / iPad（A16）
+# Apple Watch（2/05）: Ultra 4 / Series 12 / Ultra 3 / Series 11 / SE 3、AirPods（2/02）: AirPods / AirPods Max
+APPLE_CATEGORIES = ([("1", "09", m) for m in ("25", "26", "17", "19", "18", "28", "27", "23", "24", "21", "22")]
+                    + [("2", "05", m) for m in ("22", "21", "20", "19", "18")]
+                    + [("2", "02", "01"), ("2", "02", "13")])
 # おもちゃ買取（3）> ポケモン トレーディングカード / 遊戯王トレーディングカード
 CARD_CATEGORIES = ["04", "07"]
 
@@ -77,6 +84,10 @@ def fetch(http):
                 jan = find_jan(_text(card.select_one("small.text-muted")))
                 offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
                                "colors": one_color(key, name, price)})
+    for kid, bid, mid in APPLE_CATEGORIES:
+        for card, name, price, url in _read_category(http, kid, bid, mid):
+            jan = find_jan(_text(card.select_one("small.text-muted")))
+            offers.append(apple_offer(name, price, url, jan=jan))
     for bid in CARD_CATEGORIES:
         for card, name, price, url in _read_category(http, "3", bid):
             # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている

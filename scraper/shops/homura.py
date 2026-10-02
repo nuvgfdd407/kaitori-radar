@@ -7,11 +7,13 @@ iPhone は色ごとに「【未開封】iPhone 17 Pro 256GB orange」のよう�
 トレカは JAN が載っていないので、「【BOX】ストームエメラルダ」のような名前のセット名で突き合わせる。
 Android（18）は「【未開封】Galaxy A25 5G SC-53F docomo版 [ブルー]」のように色・キャリアごとに載っていて、
 「【開封】」「【中古】」の付いた行は新品未開封ではないので使わない。
+iPad・Apple Watch・AirPods はその他（16）にあり、JAN と型番が載っている（AirPods はイヤホンの中にある）。
 """
 import re
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..cards import card_key
 from ..phones import android_key, one_color, phone_key
 from ..text import find_jan
@@ -34,6 +36,8 @@ PIXEL_SUBS = [78, 79, 80, 184, 81, 82, 83, 84, 85]
 ANDROID_CATEGORY = 18
 # Galaxy / AQUOS / Xperia
 ANDROID_SUBS = [158, 161, 163]
+# その他（16）> iPad / AppleWatch / イヤホン・ヘッドホン・スピーカー（AirPods だけ使う）
+APPLE_SUBS = [(16, 137), (16, 174), (16, 140)]
 CARD_CATEGORY = 14
 # ポケモンカード（シュリンク有りのBOX・スペシャルセット） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
 CARD_SUBS = [128, 130, 132, 159, 171]
@@ -62,10 +66,14 @@ def fetch(http):
             if key and not re.search(r"【(開封|中古)", name):
                 offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
                                "colors": one_color(key, name, price)})
+    for category, sub in APPLE_SUBS:
+        for name, jan, price, url in _read_list(http, category, sub):
+            if sub != 140 or "AirPods" in name:
+                offers.append(apple_offer(name, price, url, jan=jan))
     for sub in CARD_SUBS:
         for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
             offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})
-    return [o for o in offers if (o["jan"] or o.get("key")) and o["price"] > 0]
+    return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"] > 0]
 
 
 def _read_list(http, category, sub):

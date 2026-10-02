@@ -6,12 +6,15 @@
 スマホは同じ買取wiki のスマホ用のサイト（iphonekaitori.tokyo）に、同じ作りの一覧で載っている。
 iPhone は色ごとに「iPhone 18 Pro 256GB ブラック」のように載っていて、一覧の価格は未開封の価格。
 Android はキャリア版も同じ一覧に載っていて、商品名の「Softbank版」「docomo」や型番でキャリアを見分ける。
+Apple Watch・AirPods は家電用のサイト（kadenkaitori.tokyo）の Apple の一覧に、JAN と型番つきで載っている。
+（iPad 用のサイトは機種ごとにまとめた価格しか載っていないので使わない）
 """
 import re
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_colors, phone_key
 from ..text import find_jan, parse_yen
 
@@ -24,6 +27,7 @@ BRANDS = ["nintendo", "sony", "microsoft", "Oculus"]
 PHONE_URL = "https://iphonekaitori.tokyo/"
 # iPhone / Google（Pixel） / SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
 PHONE_LISTS = ["series/iphone", "brand/google", "brand/samsung", "brand/sony", "brand/sharp"]
+APPLE_URL = "https://kadenkaitori.tokyo/"
 MAX_PAGES = 20
 
 
@@ -38,6 +42,8 @@ def fetch(http):
             # 古い機種や、扱っていない機種は取らない
             if key and phone_colors(key):
                 offers.append({**o, "key": key, "colors": one_color(key, name, o["price"])})
+    for o in _read_list(http, APPLE_URL, "brand/apple"):
+        offers.append(apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]))
     return [o for o in offers if o["price"]]
 
 

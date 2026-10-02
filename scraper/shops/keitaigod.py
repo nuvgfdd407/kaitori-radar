@@ -6,12 +6,15 @@ iPhone は「iPhone 18 Pro 256GB【APPLEストア版】」「…【docomo/au/Sof
 色による価格の違いはない。APPLEストア版の新品価格は、Apple Store で買ったことがわかる書類がある場合の価格なので、
 その条件を "note" として価格と一緒に載せる。
 Android は SIMフリー・キャリアごとの一覧から、Galaxy・Xperia・AQUOS・Pixel を取る。
+iPad・Apple Watch・AirPods は機種（と容量）ごとの1行に、全色の型番（iPad は JAN も）が書かれている。
+色による価格の違いはないので、書かれている型番の商品すべてに同じ価格を当てはめる。
 """
 import re
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -37,6 +40,10 @@ ANDROID_MAKERS = [
     (18, "楽天モバイル", [266, 263, 267]),
     (5, "Y!mobile", [441, 56, 186]),
 ]
+# iPad（12） / Apple Watch（9） / AirPods・AirPods Max（4）の機種
+APPLE_MODELS = ([(12, m) for m in (461, 462, 425, 426, 442, 387, 469, 468, 444, 443, 427, 428, 438, 313)]
+                + [(9, m) for m in (503, 455, 498, 499, 449, 450, 456, 457, 448, 447, 458, 459, 434, 435, 436, 437)]
+                + [(4, 189), (4, 292)])
 MAX_PAGES = 10
 APPLE_STORE_NOTE = "Apple Storeで購入した証明が必要"
 _JAN = re.compile(r"(?<!\d)\d{13}(?!\d)")
@@ -61,6 +68,8 @@ def fetch(http):
                 key = phone_key(name) if "Pixel" in name else android_key(name, carrier)
                 if key and phone_colors(key):
                     offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url})
+    for ci, mi in APPLE_MODELS:
+        offers += [apple_offer(name, price, url) for name, price, url in _read_list(http, ci, mi)]
     return [o for o in offers if o["price"]]
 
 

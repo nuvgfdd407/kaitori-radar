@@ -6,6 +6,7 @@
 iPhone は色ごとに「iPhone 17 Pro 256GB シルバー … SIMフリー」のような名前で載っている。
 Android は SIMフリー・キャリアごとの表（「Galaxy S26 Ultra SC-53G 12G+256G docomo [ブラック]」のように色ごと）から、
 Galaxy・Xperia・AQUOS の行を使う。
+iPad（Wi-Fi は家電、Cellular は携帯の機種ごとのページ）・Apple Watch・AirPods も同じ形の表で、型番が名前に入っている。
 """
 import json
 import re
@@ -13,6 +14,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_key
 from ..text import find_jan, parse_yen
 
@@ -35,6 +37,11 @@ PIXEL_PAGES = [f"https://www.kaitorishouten-co.jp/model/google-pixel-{m}"
 ANDROID_PAGES = [(f"https://www.kaitorishouten-co.jp/category/1/{i}", carrier) for i, carrier in (
     (262, "SIMフリー"), (261, "docomo"), (260, "au"), (418, "au"), (259, "SoftBank"), (258, "Y!mobile"), (419, "楽天モバイル"))]
 
+# iPad（Wi-Fi） / Apple Watch（GPS） / Apple Watch（GPS + Cellular） / AirPods / AirPods Max
+APPLE_PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (278, 274, 489, 277, 571)]
+# iPad（Cellular）: Pro M5 / Pro M4 / Air M4 / Air M3 / mini（A17 Pro） / iPad（A16）
+APPLE_PAGES += [f"https://www.kaitorishouten-co.jp/category/1/{i}" for i in (745, 684, 726, 700, 696, 699)]
+
 
 def fetch(http):
     offers = []
@@ -55,7 +62,11 @@ def fetch(http):
             # 「セット付き」は付属品込みの別の買取なので使わない
             if key and not o["name"].startswith("セット付き"):
                 offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
-    return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
+    for page in APPLE_PAGES:
+        for o in _read_table(http, page):
+            if o["price"]:
+                offers.append(apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]))
+    return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"]]
 
 
 def _read_table(http, page):

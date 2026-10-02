@@ -8,10 +8,14 @@ iPhone は JAN がなく「iPhone 17 Pro 256GB」のような機種＋容量の�
 トレカは「BOXシュリンクあり」「カートン」などの選択肢があり、表示価格（いちばん安い選択肢）が
 BOX の価格になる。「BOXシュリンクなし」もある商品だけは、シュリンクありの選択肢の価格を取り直す。
 「郵送専用」「来店専用」の2つで載っている商品は、郵送の方を使う（郵送の方は JAN がないことが多い）。
+Apple Watch・AirPods は JAN か型番が載っている（iPad は JAN も型番もないので使わない）。
+AirPods は「保証未開始」「保証開始済」の選択肢があり、高い方（保証未開始）が未開封の価格。
+同じ商品が2回載っていて片方の価格が桁違い（入力ミス）のことがあるので、同じ商品は安い方を使う。
 """
 import html
 from urllib.parse import unquote
 
+from ..apple import apple_offer
 from ..cards import card_key
 from ..phones import phone_color, phone_key
 
@@ -27,6 +31,8 @@ CATEGORIES = [184, 185, 186, 187, 188, 189, 190, 239]
 IPHONE_CATEGORIES = [306, 207, 208, 263]
 # ポケモンカード / ワンピース
 CARD_CATEGORIES = [172, 174]
+# Apple Watch / Apple Watch GPS+Cellular / AirPods / AirPods Max
+APPLE_CATEGORIES = [168, 169, 165, 166]
 SHRINK = "BOXシュリンクあり"
 NO_SHRINK = "BOXシュリンクなし"
 
@@ -52,6 +58,14 @@ def fetch(http):
                 continue
             offers.append({"jan": item["sku"].strip() or None, "key": card_key(name), "name": name,
                            "price": _card_price(http, item), "url": item["permalink"]})
+    apple = {}
+    for category in APPLE_CATEGORIES:
+        for item, name in _read_category(http, category):
+            offer = apple_offer(name, _price(item, "max"), item["permalink"], jan=item["sku"].strip() or None)
+            same = offer["jan"] or tuple(offer["codes"])
+            if same and (same not in apple or offer["price"] < apple[same]["price"]):
+                apple[same] = offer
+    offers += apple.values()
     return [o for o in offers if o["price"] > 0]
 
 

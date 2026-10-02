@@ -9,9 +9,12 @@ iPhone・Pixel は携帯用の API にあり、JANのない「iPhone 17 Pro 256G
 Android も同じ API にあり、SIMフリー・キャリアごとのカテゴリに機種＋容量の商品で載っている。
 価格の選択肢の名前は「新品未開封」「未開封」「docomo版 未開封」「銀色シール未開封」「新品」などいろいろで、
 SIMフリーの商品に「楽天版 未開封」（楽天モバイル版の価格）が付いていることもある。
+iPad・Apple Watch も携帯用の API にあり、色（Watch はバンド）ごとの JAN と型番、価格の増減が付いている。
+AirPods は家電用の API にあり、JAN が付いている。
 """
 import re
 
+from ..apple import apple_codes, apple_offer
 from ..phones import android_key, phone_color, phone_key
 
 ID = "ichome"
@@ -33,6 +36,9 @@ PIXEL_KEYWORD = "Pixel"
 # Android の SIMフリー / AU&UQ / Docomo / Softbank / Y!mobile / 楽天モバイル
 ANDROID_CATEGORIES = [("WkCcKCxwC6NInC5c", "SIMフリー"), ("GsGv92VhqBU8Mvuj", "au"), ("eUuVCbUWMuHBlQ6p", "docomo"),
                       ("3Hrb86KrMNz86mzg", "SoftBank"), ("T0hAdlufks5mS1ez", "Y!mobile"), ("vYZ5NQzgQ1sIaXO4", "楽天モバイル")]
+# iPad / Apple Watch（携帯用の API）、AirPods / AirPods Max（家電用の API）
+APPLE_KEITAI_CATEGORIES = ["df7CCyzC7GlrzAMt", "CS6O5bYC0Ezu2Zj9"]
+APPLE_GOODS_CATEGORIES = ["P2GdGa4Qo46DdnXO", "lWMiNtQABsWADyJY"]
 PAGE_SIZE = 100
 
 
@@ -64,6 +70,15 @@ def fetch(http):
                 "colors": colors,
                 "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
             })
+    for category in APPLE_KEITAI_CATEGORIES:
+        for item in _read_category(http, IPHONE_API, category):
+            offers += _apple_offers(item)
+    for category in APPLE_GOODS_CATEGORIES:
+        for item in _read_category(http, API, category):
+            price = _new_price(item)
+            if price:
+                offers.append(apple_offer((item.get("title") or "").strip(), price,
+                                          f"{URL}wineDetail/{item['goodsId']}/{item['allGoodsKbId']}", jan=item.get("jan")))
     for category, carrier in ANDROID_CATEGORIES:
         for item in _read_category(http, IPHONE_API, category):
             name = (item.get("title") or "").strip()
@@ -109,7 +124,7 @@ def _new_price(item):
     prices = [
         detail.get("kbDetailPrice")
         for detail in item.get("goodsKbDetails") or []
-        if not re.search("来店|中古|開封済|傷", detail.get("kbDetailName") or "")
+        if not re.search("来店|中古|開封済|傷(?!なし)", detail.get("kbDetailName") or "")
     ]
     prices = [p for p in prices if p]
     return max(prices) if prices else None
@@ -124,6 +139,26 @@ def _unopened_prices(item, key):
         return None, {}
     colors = _color_prices(item, key, detail)
     return (max(colors.values()) if colors else detail["kbDetailPrice"]), colors
+
+
+def _apple_offers(item):
+    """iPad・Apple Watch の商品の、色（バンド）ごとの出品。未開封の価格に色ごとの増減を足す。"""
+    details = _android_details(item, None)
+    if not details:
+        return []
+    detail = details[0][1]
+    name = (item.get("title") or "").strip()
+    url = f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}"
+    offers = []
+    for option in item.get("keitaiColorOptions") or []:
+        change = next((rel.get("varPrice") or 0 for rel in option.get("keitaiKbDetailColorRels") or []
+                       if rel.get("keitaiKbDetailId") == detail.get("allGoodsKbDetailId")), 0)
+        price = detail["kbDetailPrice"] + change
+        jan = (option.get("jan") or "").strip() or None
+        offer = apple_offer(f"{name} {option.get('color') or ''}", price, url, jan=jan)
+        if jan or apple_codes(option.get("color")):
+            offers.append(offer)
+    return offers
 
 
 def _android_details(item, carrier):

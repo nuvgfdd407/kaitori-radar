@@ -12,6 +12,8 @@
   店舗の色の書き方は scraper.phones.phone_color で公式の色名にそろえる。色の区別がない店舗の価格は、全色に当てはめる。
   容量を書かない店舗の商品は、その機種（とキャリア）の容量が1種類だけなら、その容量の商品に当てはめる
 - JAN を載せていない店舗のトレカは、カタログの "names"（セット名）と商品名（scraper.cards.card_key）で突き合わせる
+- iPad・Apple Watch・AirPods は JAN か Apple の型番（"codes"）で突き合わせる。カタログの "aliases" に、
+  その商品の JAN と型番（Apple Watch はバンド違いの分もすべて）を書いておく
 """
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -32,7 +34,7 @@ JST = timezone(timedelta(hours=9))
 REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
 # 機種＋容量＋色で突き合わせるスマホのジャンル
-PHONE_CATEGORIES = ("iphone", "android")
+PHONE_CATEGORIES = ("apple", "android")
 INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names"}
 
 
@@ -46,8 +48,8 @@ def main():
     phone_series = {s["id"] for s in catalog["series"] if s["category"] in PHONE_CATEGORIES}
     by_color = {}
     for p in catalog["products"]:
-        if p["series"] in phone_series:
-            key = phone_key(p["name"])
+        key = phone_key(p["name"]) if p["series"] in phone_series else None
+        if key:  # iPad・Apple Watch・AirPods は JAN・型番で突き合わせるので、ここには入れない
             by_color.setdefault(key, {})[phone_color(key, color_part(p["name"]))] = p["jan"]
     # 容量を書かない店舗用: {"Galaxy A25 docomo": {色: JAN}}（容量が1種類だけの機種のみ）
     capacities = {}
@@ -78,6 +80,9 @@ def main():
                 if not targets:  # スマホでない商品と、色を読み取れなかったスマホ（JANがあればJANで探す）
                     target = owner.get(jan) or by_key.get(offer.get("key"))
                     targets = {target: offer["price"]} if target else {}
+                if not targets and offer.get("codes"):
+                    # Apple の型番（{型番: 価格}）。1行に何色分も書かれていれば、それぞれの商品に当てはめる
+                    targets = {owner[code]: price for code, price in offer["codes"].items() if code in owner}
                 for target, price in targets.items():
                     # 同じ商品が複数回（ページ内の重複・別のJAN）載っていたら、高い方を使う
                     current = found.get(target)

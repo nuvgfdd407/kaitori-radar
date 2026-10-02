@@ -4,9 +4,11 @@
 商品カードに「新品」「中古」のバッジがあるので、新品だけを取る。
 iPhone は色ごとに「iPhone 17 Pro 256GB ブラック … 未開封 SIMフリー」のような名前で載っている。
 Galaxy・Xperia・AQUOS も色ごとに載っていて、SIMフリー版の未開封品だけを買い取っている（キャリア版は対象外）。
+iPad・Apple Watch・AirPods も色ごと（Watch はバンドごと）に、JAN と型番つきで載っている。
 """
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_key
 from ..text import find_jan, parse_yen
 
@@ -22,6 +24,8 @@ PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 
 PIXEL_PAGES = ["https://kaitori-rudeya.com/category/detail/172"]
 # SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
 ANDROID_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (249, 248, 247)]
+# iPad / Apple Watch Series 12 / Series 11 / SE 3 / Ultra 3 / Ultra 4 / AirPods / AirPods Pro / AirPods Max
+APPLE_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (5, 71, 72, 73, 256, 222, 223, 244, 259, 4, 74, 33)]
 # ポケモンカード / ワンピースカード / 遊戯王 / ドラゴンボールカード（カートンは対象外）
 CARD_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (114, 224, 116, 225)]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / Air / 17 / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max / 16e
@@ -45,7 +49,9 @@ def fetch(http):
             key = android_key(o["name"], "SIMフリー")
             if key:
                 offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"])})
-    return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
+    for page in APPLE_PAGES:
+        offers += [apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]) for o in _read_page(http, page)]
+    return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"]]
 
 
 def _read_page(http, page):

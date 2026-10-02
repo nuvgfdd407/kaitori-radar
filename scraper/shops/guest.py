@@ -8,11 +8,14 @@
   SoftBank のページの機種は、備考に「Yモバイル/ソフトバンク同額」とあれば Y!mobile 版も同じ価格
 - ゲーム機など: 「ピックアップ買取機種」のページ。JAN は備考に「JAN:…」と書かれている
 色減額が読み取れない書き方（「黒/赤/桃 -2000」など）の機種は、色ごとの価格がわからないので使わない。
+- iPad・AirPods: 「タブレット」「イヤホン・ヘッドホン」のページ。機種名に全色の型番が書かれていて、
+  色による減額は備考に「色減額:イエロー(MD4D4J)-1000」のように型番の頭で書かれている（Wi-Fi 版だけ）
 """
 import re
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_codes
 from ..phones import android_key, phone_color, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -30,6 +33,9 @@ ANDROID_PAGES = [
     (URL + "sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/", "SoftBank"),
 ]
 PICKUP_PAGE = URL + "%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
+# タブレット（iPad） / イヤホン・ヘッドホン（AirPods）
+APPLE_PAGES = ["https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/",
+               "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"]
 _JAN = re.compile(r"JAN\s*[:：]\s*(\d{13})")
 
 
@@ -46,6 +52,12 @@ def fetch(http):
                 offers += _phone_offer(android_key(name, c), name, note, price, page)
     for name, note, price in _read_rows(http, PICKUP_PAGE):
         offers += [{"jan": jan, "name": name, "price": price, "url": PICKUP_PAGE} for jan in _JAN.findall(note)]
+    for page in APPLE_PAGES:
+        for name, note, price in _read_rows(http, page):
+            codes = apple_codes(name)
+            if codes:
+                offers.append({"jan": None, "codes": _code_prices(codes, price, note), "name": name, "price": price,
+                               "url": page})
     return [o for o in offers if o["price"]]
 
 
@@ -75,6 +87,16 @@ def _phone_offer(key, name, note, price, page):
     if colors is None:
         return []
     return [{"jan": None, "key": key, "name": name, "price": price, "url": page, "colors": colors}]
+
+
+def _code_prices(codes, base, note):
+    """iPad などの {型番: 価格}。備考の「色減額:イエロー(MD4D4J)-1000」の型番の色だけ減額する。"""
+    prices = dict.fromkeys(codes, base)
+    for head, amount in re.findall(r"\(([A-Z0-9]{4,6})\)\s*[-−]\s*(\d+)", note.upper()):
+        for code in codes:
+            if code.startswith(head):
+                prices[code] = base - int(amount)
+    return prices
 
 
 def _color_prices(key, base, note):

@@ -6,6 +6,8 @@
 iPhone は色ごとに「Apple iPhone18 ProMax 256GB バーガンディ SIMフリー」のように、
 Android はキャリア版も「… docomo」「… (SIMフリー)」のように、別の行で載っている。
 JAN は、先頭が0のもの（Steam Deck など）を、0を省いた12桁で載せていることがある。
+iPad・Apple Watch も同じ一覧で、色ごと（Watch はバンドごと）に JAN と型番が載っている。
+AirPods は専用のカテゴリがないので、ヘッドホン・イヤホンの一覧から「AirPods」の行だけを使う。
 robots.txt に Crawl-delay: 5 があるので、アクセスは5秒ずつ空ける。
 """
 import re
@@ -13,6 +15,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -29,6 +32,8 @@ GAME_CATEGORIES = ["0104001", "0101001", "0108001", "0113001", "0115001", "01160
 IPHONE_CATEGORIES = ["0301"]
 # Android: SAMSUNG / Google Pixel / SONY Xperia / AQUOS
 ANDROID_CATEGORIES = ["0304012", "0304001", "0304002", "0304003"]
+# iPad Pro / iPad Air / iPad / iPad mini / Apple Watch / ヘッドホン・イヤホン（AirPods）
+APPLE_CATEGORIES = ["0401001", "0401002", "0401003", "0401004", "0303001", "0602001"]
 # トレカ: ポケモンカード / 遊戯王 / ワンピース / ドラゴンボール
 CARD_CATEGORIES = ["2401", "2402", "2403", "2404"]
 MAX_PAGES = 10
@@ -45,7 +50,11 @@ def fetch(http):
             # 古い機種（iPhone 15 など）は扱っていないので取らない
             if key and phone_colors(key):
                 offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"])})
-    return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
+    for category in APPLE_CATEGORIES:
+        for o in _read_list(http, category):
+            if category != "0602001" or "AirPods" in o["name"]:
+                offers.append(apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]))
+    return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"]]
 
 
 def _read_list(http, category):

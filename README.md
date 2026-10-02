@@ -1,7 +1,7 @@
 # 買取レーダー
 
 Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
-iPhone 18・17・16シリーズ（SIMフリー版）、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
+iPhone 18・17・16シリーズ（SIMフリー版）、iPad・Apple Watch・AirPods、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
 ポケモンカード・ワンピースカードなどの未開封BOXの
 **新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
 
@@ -35,13 +35,13 @@ dist/ を Cloudflare Pages に公開
 | URL | 内容 |
 |---|---|
 | `/` | 全商品の比較表 |
-| `/nintendo/`・`/iphone/`・`/tcg/` など | ジャンルごとの比較表（シリーズごとに分けて並べる。シリーズが1つだけのジャンルは作らず、シリーズのページを使う） |
+| `/nintendo/`・`/apple/`・`/tcg/` など | ジャンルごとの比較表（シリーズごとに分けて並べる。シリーズが1つだけのジャンルは作らず、シリーズのページを使う） |
 | `/switch2/`・`/ps5/`・`/iphone17/` など | シリーズごとの比較表（店舗数は、そのシリーズを扱っている店舗だけで数える） |
 | `/item/<JAN>/` | 商品ごとの、店舗別の価格（高い順）と、最近30日の価格の推移のグラフ・前日比 |
 | `/cart/` | 比較リスト（検索結果に出さない。サイトマップにも載せない） |
 | `/sitemap.xml` | 上のすべてのページの一覧（組み立てるときに自動で作る） |
 
-一覧の上の切り替えボタンは2段で、上の段がジャンル（すべて・Nintendo・PlayStation・Xbox・iPhone・Android・トレカ・その他）、
+一覧の上の切り替えボタンは2段で、上の段がジャンル（すべて・Nintendo・PlayStation・Xbox・Apple・Android・トレカ・その他）、
 下の段が選んでいるジャンルの中のシリーズ。ジャンルとシリーズの分け方は `catalog/products.json` の
 `categories` と、各シリーズの `category` で決める（価格の更新を待たずに、サイトを組み立て直せば反映される）。
 
@@ -149,6 +149,21 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
   （買取当番・PANDA買取は Pixel 以外の Android を扱っていない）
 - 買取wiki のスマホは、同じ買取wiki のスマホ用のサイト（iphonekaitori.tokyo）から取る（ゲーム機は gamekaitori.jp）
 - 色の区別がない店舗（ケータイゴッドなど）しか買い取っていない組み合わせも、その機種・キャリアの仕様にある色なら載せる
+
+### iPad・Apple Watch・AirPods
+
+- iPad: Pro（M5・M4）・Air（M4・M3）・iPad（A16）・iPad mini（A17 Pro）。1行＝サイズ・チップ・容量・Wi-Fi/Cellular・
+  （Pro の Nano-textureガラス）・色（例: `iPad Pro 11インチ（M5）256GB Wi-Fi スペースブラック`）。`jan` はその JAN
+- Apple Watch: Series 12・11、Ultra 4・3、SE 3。1行＝シリーズ・ケースサイズ・GPS/GPS + Cellular・ケースの色と素材
+  （例: `Apple Watch Series 12 46mm GPS ブラックアルミニウム`）。バンドは区別しない。`jan` は仮のID
+- AirPods: Pro 3・Pro 2・AirPods 5（ワイヤレス充電ケース付きも）・AirPods 4（ノイズキャンセリング搭載も）・AirPods Max 2・Max（USB-C）
+- 突き合わせは JAN と Apple の型番（`scraper/apple.py`）。カタログの `"aliases"` に、その商品の型番と、
+  Apple Watch はバンド違いの JAN・型番をすべて書いてある。店舗の出品には `"codes": {型番: 価格}` を付ける
+  （ケータイゴッドのように1行に全色の型番が書かれていれば、その全部に同じ価格を当てはめる）
+- 定価は Apple Store の今の価格（販売が終わったものは最後の価格）。JAN は Apple が公表していないので、
+  複数の店舗の載せている JAN の多数決で決めた
+- 画像は Apple Store の色ごとの画像（Apple Watch はケースだけの画像）
+- 買取当番の iPad、買取wiki の iPad（機種ごとにまとめた価格しかない）、PANDA買取（実際には買い取っていない）は取らない
 
 ### トレカ（ポケモンカード・ワンピースカード・遊戯王・ドラゴンボール フュージョンワールド）
 
