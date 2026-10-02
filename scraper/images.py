@@ -43,7 +43,7 @@ RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われ
 # ほかに画像のある出品がないときだけ使う
 NOISY_STORES = {
     "jcka-mobile", "jcka-mobile2", "quality-shop", "mobax", "brave-shopping", "evalue-omochayasan",
-    "free-world", "1913store", "panda-mobile", "anshin-happy-mark", "arunni7", "mobilestation",
+    "free-world", "1913store", "panda-mobile", "anshin-happy-mark", "arunni7", "mobilestation", "whitemocha",
 }
 
 

@@ -27,8 +27,8 @@ GAME_SUBS = [124, 122, 126, 121, 127]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / 17 / Air / 17e / 16 Pro / 16 Pro Max / 16 / 16 Plus / 16e
 IPHONE_SUBS = [194, 193, 192, 96, 97, 95, 155, 173, 100, 101, 98, 99, 156]
 CARD_CATEGORY = 14
-# ポケモンカード（シュリンク有りのBOX） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
-CARD_SUBS = [128, 132, 159, 171]
+# ポケモンカード（シュリンク有りのBOX・スペシャルセット） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
+CARD_SUBS = [128, 130, 132, 159, 171]
 MAX_PAGES = 10
 
 
