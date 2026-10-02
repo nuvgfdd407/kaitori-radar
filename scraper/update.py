@@ -35,7 +35,7 @@ REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
 # 機種＋容量＋色で突き合わせるスマホのジャンル
 PHONE_CATEGORIES = ("apple", "android")
-INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names"}
+INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names", "keys"}
 
 
 def main():
@@ -59,6 +59,8 @@ def main():
                      if len(keys) == 1 and short != keys[0]})
     by_key = {card_key(name): p["jan"] for p in catalog["products"] for name in p.get("names", [])}
     by_key.pop(None, None)  # 名前から読み取れなかった商品が、互いに一致しないように
+    # PSA 鑑定品: カタログの "keys"（scraper.psa.psa_key の結果）で突き合わせる
+    by_key.update({key: p["jan"] for p in catalog["products"] for key in p.get("keys", [])})
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
     previous = load_json(OUTPUT) if OUTPUT.exists() else {"shops": [], "products": []}
     prev_shops = {s["id"]: s for s in previous["shops"]}

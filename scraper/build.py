@@ -112,13 +112,15 @@ def list_page(site, *, category=None, series=None):
         shops = shops_for(site, products)
         n = len(shops)
         path, active = f"/{series['id']}/", (category_of(site, series)["id"], series["id"])
-        title = f"{series['name']}の新品買取価格比較【{n}店舗】｜{t.SITE_NAME}"
-        heading = f"{series['name']}の新品買取価格を{n}店舗で比較"
-        lead = f"{series['name']}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        word = t.price_word(series["id"])
+        title = f"{series['name']}の{word}比較【{n}店舗】｜{t.SITE_NAME}"
+        heading = f"{series['name']}の{word}を{n}店舗で比較"
+        lead = (f"{series['name']}の{len(products)}商品の"
+                f"{'買取価格' if series['id'].startswith('psa-') else '新品（未開封）買取価格'}を、{n}店舗の最新の価格で比較しています。")
         top = next((p for p in products if p["best"]), None)
         if top:
             lead += f"{top['name']}の最高値は、{t.best_shop_names(top, full=True)}の{t.yen(top['best'])}です（{site['updated']}時点）。"
-        description = f"{series['name']}の新品買取価格を{n}店舗で比較。" + (
+        description = f"{series['name']}の{word}を{n}店舗で比較。" + (
             f"{top['name']}は最高{t.yen(top['best'])}（{t.best_shop_names(top, full=True)}）。" if top else ""
         ) + "15分ごとに自動更新。"
     elif category:
@@ -175,10 +177,10 @@ def item_page(site, p):
     if p["best"]:
         best = f"最高{t.yen(p['best'])}（{t.best_shop_names(p, full=True)}）"
         title = f"{p['name']}の買取価格比較｜{best}｜{t.SITE_NAME}"
-        description = f"{p['name']}の新品買取価格を{n}店舗で比較。{best}。{site['updated']}時点の価格です。"
+        description = f"{p['name']}の{t.price_word(p['series'])}を{n}店舗で比較。{best}。{site['updated']}時点の価格です。"
     else:
         title = f"{p['name']}の買取価格比較｜{t.SITE_NAME}"
-        description = f"{p['name']}の新品買取価格を{n}店舗で比較しています。"
+        description = f"{p['name']}の{t.price_word(p['series'])}を{n}店舗で比較しています。"
     return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=(p["category"]["id"], series["id"]),
                   content=t.item_content(site, p, series, siblings, shops),
                   breadcrumbs=t.item_breadcrumbs(series, p))

@@ -161,6 +161,7 @@ def _notes(site):
         <li>実際の買取価格は、申込の時点で各店舗が決めます。お申込みの前に、必ず各店舗のページで最新の価格と条件をご確認ください。</li>
         <li>定価は、メーカー希望小売価格またはメーカー公式ストアの販売価格（税込）です。販売終了した商品は、販売していたときの最後の価格です。限定版など、定価を決めにくい商品は「—」と表示しています。スマホのキャリア版は、各キャリアのオンラインショップの販売価格（割引なし）です。</li>
         <li>{PHONE_NOTE}</li>
+        <li>PSA鑑定品は、PSA10 のシングルカードの買取価格です。カード名とカード番号で同じカードかどうかを判断しています。定価がないので差益は出していません。</li>
         <li>トレカ（ポケモンカード・ワンピースカード・遊戯王・フュージョンワールド）は、シュリンク付き・未開封のBOX（ポケモンカードは特別なセットも）の買取価格です。</li>
         <li>発売前の商品は、買取価格が仮のことが多いため、差益は表示していません。</li>
         <li>価格の確認は10:00〜21:00のあいだ15分ごとに行っています。価格をクリックすると、その店舗の商品ページが開きます。</li>
@@ -340,6 +341,7 @@ def _profit_cell(p):
 # ---- 商品ページ -----------------------------------------------------------------
 
 def item_content(site, p, series, siblings, shops):
+    word = price_word(series["id"])
     offers = sorted(
         ((s, p["prices"][s["id"]]) for s in shops if s["id"] in p["prices"]),
         key=lambda so: -so[1]["price"],
@@ -366,7 +368,7 @@ def item_content(site, p, series, siblings, shops):
             f'<strong>{yen(p["best"])}</strong>です（{esc(site["updated"])}時点）。'
         )
     else:
-        summary = "現在、この商品の新品買取価格を掲載している店舗はありません。"
+        summary = f"現在、この商品の{word}を掲載している店舗はありません。"
     if is_phone(p):
         summary += PHONE_NOTE
 
@@ -390,7 +392,7 @@ def item_content(site, p, series, siblings, shops):
     <section class="item-summary">
       {thumb(p, large=True)}
       <div class="item-heading">
-        <h1 class="page-title">{esc(p["name"])}の新品買取価格</h1>
+        <h1 class="page-title">{esc(p["name"])}の{word}</h1>
         {f'<p class="sub">{sub}</p>' if sub else ""}
         <dl class="item-facts">{facts_html}</dl>
         {add_button(p, label=True)}
@@ -398,10 +400,10 @@ def item_content(site, p, series, siblings, shops):
     </section>
     <p class="lead">{summary}</p>
 
-    <h2 class="section-title">店舗別の新品買取価格</h2>
+    <h2 class="section-title">店舗別の{word}</h2>
     <div class="table-wrap table-wrap--auto">
       <table class="shop-table">
-        <thead><tr><th scope="col">店舗</th><th scope="col">新品買取価格</th><th scope="col">最高値との差</th></tr></thead>
+        <thead><tr><th scope="col">店舗</th><th scope="col">{word}</th><th scope="col">最高値との差</th></tr></thead>
         <tbody>{"".join(rows)}</tbody>
       </table>
     </div>
@@ -411,7 +413,12 @@ def item_content(site, p, series, siblings, shops):
 
     <h2 class="section-title">{esc(series["name"])}のほかの商品</h2>
     <ul class="related">{related}</ul>
-    <p><a href="/{series["id"]}/">{esc(series["name"])}の新品買取価格を一覧で比較する</a></p>"""
+    <p><a href="/{series["id"]}/">{esc(series["name"])}の{word}を一覧で比較する</a></p>"""
+
+
+def price_word(series_id):
+    """見出しなどに使う言葉。PSA 鑑定品は新品ではないので「買取価格」にする。"""
+    return "買取価格" if series_id.startswith("psa-") else "新品買取価格"
 
 
 def is_phone(p):

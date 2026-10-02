@@ -8,6 +8,7 @@ iPhone は色ごとに「【未開封】iPhone 17 Pro 256GB orange」のよう�
 Android（18）は「【未開封】Galaxy A25 5G SC-53F docomo版 [ブルー]」のように色・キャリアごとに載っていて、
 「【開封】」「【中古】」の付いた行は新品未開封ではないので使わない。
 iPad・Apple Watch・AirPods はその他（16）にあり、JAN と型番が載っている（AirPods はイヤホンの中にある）。
+PSA 鑑定品（21）はポケモンカードの PSA10 だけで、「PSA10 ブラッキーVMAX SA 095/069」のような名前で載っている。
 """
 import re
 
@@ -16,6 +17,7 @@ from bs4 import BeautifulSoup
 from ..apple import apple_offer
 from ..cards import card_key
 from ..phones import android_key, one_color, phone_key
+from ..psa import parse_name, psa_key
 from ..text import find_jan
 
 ID = "homura"
@@ -38,10 +40,12 @@ ANDROID_CATEGORY = 18
 ANDROID_SUBS = [158, 161, 163]
 # その他（16）> iPad / AppleWatch / イヤホン・ヘッドホン・スピーカー（AirPods だけ使う）
 APPLE_SUBS = [(16, 137), (16, 174), (16, 140)]
+# PSA（21）> PSA
+PSA_CATEGORY, PSA_SUB = 21, 182
 CARD_CATEGORY = 14
 # ポケモンカード（シュリンク有りのBOX・スペシャルセット） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
 CARD_SUBS = [128, 130, 132, 159, 171]
-MAX_PAGES = 10
+MAX_PAGES = 20
 
 
 def fetch(http):
@@ -70,10 +74,24 @@ def fetch(http):
         for name, jan, price, url in _read_list(http, category, sub):
             if sub != 140 or "AirPods" in name:
                 offers.append(apple_offer(name, price, url, jan=jan))
+    offers += fetch_psa(http)
     for sub in CARD_SUBS:
         for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
             offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})
     return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"] > 0]
+
+
+def fetch_psa(http):
+    """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
+    offers = []
+    for name, jan, price, url in _read_list(http, PSA_CATEGORY, PSA_SUB):
+        parsed = parse_name(name)
+        key = psa_key("pokemon", parsed[0], parsed[1], parsed[3]) if parsed else None
+        if key:
+            offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
+                           "psa": {"game": "pokemon", "grade": parsed[0], "name": parsed[1], "rarity": parsed[2],
+                                   "number": parsed[3]}})
+    return offers
 
 
 def _read_list(http, category, sub):

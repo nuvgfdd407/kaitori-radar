@@ -31,3 +31,24 @@ def set_github_output(name, value):
     if "GITHUB_OUTPUT" in os.environ:
         with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
             f.write(f"{name}={value}\n")
+
+
+def write_catalog(catalog):
+    """catalog/products.json を、手で編集しやすい書き方（1行に1件、商品はシリーズの変わり目に空行）で書き出す。"""
+    def line(obj):
+        return json.dumps(obj, ensure_ascii=False, separators=(", ", ": ")).replace("{", "{ ", 1)[:-1] + " }"
+
+    lines = ["{"]
+    for key, items in catalog.items():
+        lines.append(f'  "{key}": [')
+        previous = None
+        for item in items:
+            if key == "products" and previous is not None and item["series"] != previous:
+                lines.append("")
+            lines.append(f"    {line(item)},")
+            previous = item.get("series")
+        lines[-1] = lines[-1].rstrip(",")
+        lines.append("  ],")
+    lines[-1] = lines[-1].rstrip(",")
+    lines.append("}")
+    CATALOG.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

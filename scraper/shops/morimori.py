@@ -8,6 +8,8 @@ Android はキャリア版も「… docomo」「… (SIMフリー)」のよう�
 JAN は、先頭が0のもの（Steam Deck など）を、0を省いた12桁で載せていることがある。
 iPad・Apple Watch も同じ一覧で、色ごと（Watch はバンドごと）に JAN と型番が載っている。
 AirPods は専用のカテゴリがないので、ヘッドホン・イヤホンの一覧から「AirPods」の行だけを使う。
+トレカの一覧には PSA 鑑定品（「ポケモンカード PSA10 リーリエ SR 119/114」、仮のJAN付き）も載っていて、
+カード名・番号・点数で突き合わせる。
 robots.txt に Crawl-delay: 5 があるので、アクセスは5秒ずつ空ける。
 """
 import re
@@ -17,6 +19,7 @@ from bs4 import BeautifulSoup
 
 from ..apple import apple_offer
 from ..phones import android_key, one_color, phone_colors, phone_key
+from ..psa import parse_name, psa_key
 from ..text import parse_yen
 
 ID = "morimori"
@@ -36,14 +39,16 @@ ANDROID_CATEGORIES = ["0304012", "0304001", "0304002", "0304003"]
 APPLE_CATEGORIES = ["0401001", "0401002", "0401003", "0401004", "0303001", "0602001"]
 # トレカ: ポケモンカード / 遊戯王 / ワンピース / ドラゴンボール
 CARD_CATEGORIES = ["2401", "2402", "2403", "2404"]
+CARD_GAMES = {"2401": "pokemon", "2402": "yugioh", "2403": "onepiece"}
 MAX_PAGES = 10
 
 
 def fetch(http):
     offers = []
     for category in GAME_CATEGORIES + CARD_CATEGORIES:
-        # 鑑定済みのシングルカード（PSA）は、仮のJANが付いているだけなので使わない
-        offers += [o for o in _read_list(http, category) if "PSA" not in o["name"]]
+        rows = _read_list(http, category)
+        offers += [o for o in rows if "PSA" not in o["name"]]
+        offers += _psa_offers(rows, category)
     for category in IPHONE_CATEGORIES + ANDROID_CATEGORIES:
         for o in _read_list(http, category):
             key = phone_key(o["name"]) if re.search("iPhone|Pixel", o["name"]) else android_key(o["name"])
@@ -55,6 +60,24 @@ def fetch(http):
             if category != "0602001" or "AirPods" in o["name"]:
                 offers.append(apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]))
     return [o for o in offers if (o["jan"] or o.get("key") or o.get("codes")) and o["price"]]
+
+
+def fetch_psa(http):
+    """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
+    return [o for category in CARD_GAMES for o in _psa_offers(_read_list(http, category), category)]
+
+
+def _psa_offers(rows, category):
+    """鑑定済みのシングルカード（PSA）の JAN は仮のものなので、カード名・番号・点数で突き合わせる。"""
+    offers = []
+    for o in rows:
+        parsed = parse_name(o["name"]) if "PSA" in o["name"] and category in CARD_GAMES else None
+        key = psa_key(CARD_GAMES[category], parsed[0], parsed[1], parsed[3]) if parsed else None
+        if key:
+            offers.append({**o, "jan": None, "key": key,
+                           "psa": {"game": CARD_GAMES[category], "grade": parsed[0], "name": parsed[1],
+                                   "rarity": parsed[2], "number": parsed[3]}})
+    return offers
 
 
 def _read_list(http, category):
