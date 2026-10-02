@@ -191,6 +191,7 @@ COLORS = {
     "Pixel 10a": _pixel(["Obsidian", "Fog", "Lavender", "Berry", "Isai Blue"]),
     "Pixel 9": _pixel(["Obsidian", "Porcelain", "Peony", "Wintergreen"]),
     "Pixel 9 Pro": _pixel(["Obsidian", "Porcelain", "Hazel", "Rose Quartz"]),
+    "Pixel 9 Pro XL": _pixel(["Obsidian", "Porcelain", "Hazel", "Rose Quartz"]),
     "Pixel 9a": _pixel(["Obsidian", "Porcelain", "Peony", "Iris"]),
     # Galaxy・Xperia・AQUOS（ここに載っている機種だけを扱う。キャリアごとの色の違いはカタログで決まる）
     "Galaxy S26 Ultra": _S26,
