@@ -1,6 +1,7 @@
 name: 商品画像の更新
 
-# 毎日 日本時間 9:50（価格の確認が始まる前）に、Cloudflare の Worker（trigger/）が開始する
+# 毎日 日本時間 9:50（価格の確認が始まる前）に、Cloudflare の Worker（trigger/）が開始する。
+# 先に PSA 鑑定品のカタログを店舗の一覧から更新し（新しく買取が始まったカードを足す）、そのあと画像を更新する
 on:
   workflow_dispatch:            # 商品を追加したときは Actions の画面から手動でも実行できる
 
@@ -26,17 +27,21 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # 店舗のサイトが落ちていても、画像の更新は続ける
+      - run: python -m scraper.psa_catalog
+        continue-on-error: true
+
       - id: images
         run: python -m scraper.images
         env:
           YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
 
-      # 画像が変わったときだけコミットする（ページへの反映は次の価格の更新時）
-      - if: steps.images.outputs.changed == 'true'
-        run: |
+      # カタログか画像が変わったときだけコミットする（ページへの反映は次の価格の更新時）
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog/images.json public/images
-          git commit -m "商品画像を更新"
+          git add catalog/products.json catalog/images.json public/images
+          git diff --cached --quiet && exit 0
+          git commit -m "PSA鑑定品のカタログと商品画像を更新"
           git pull --rebase   # 実行中に手元からのプッシュなどがあっても、その上に積む
           git push

@@ -8,9 +8,11 @@
   ただし、同じ店舗が別々に載せている商品（ナミと「ナミ SP」など）は、別のカードなのでまとめない
 - すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
-- 並び順は、ゲームごとに今の最高値の高い順
+- 並び順は、ゲームごとに、すでにある商品は今のまま、新しい商品はその後ろに最高値の高い順で足す
+  （毎日自動で動かすので、変化がなければファイルを書き換えない）
 """
 import hashlib
+import json
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
@@ -36,10 +38,14 @@ def main():
     print("出品: " + "・".join(f"{name} {len(result)}件" for (name, _, _), result in zip(jobs, results)))
 
     catalog = load_json(CATALOG)
+    before = json.dumps(catalog, ensure_ascii=False)
     added = merge(catalog, offers)
-    write_catalog(catalog)
+    changed = json.dumps(catalog, ensure_ascii=False) != before
+    if changed:
+        write_catalog(catalog)
     count = sum(1 for p in catalog["products"] if p["series"].startswith("psa-"))
-    print(f"PSA の商品は {count}件（うち新しく追加 {added}件）。catalog/products.json を更新しました")
+    print(f"PSA の商品は {count}件（うち新しく追加 {added}件）。"
+          + ("catalog/products.json を更新しました" if changed else "変化なし"))
 
 
 def merge(catalog, offers):
@@ -48,6 +54,7 @@ def merge(catalog, offers):
         if series["id"] not in {s["id"] for s in catalog["series"]}:
             catalog["series"].append(dict(series))
     products = [p for p in catalog["products"] if p["series"] in psa_ids]
+    position = {p["jan"]: n for n, p in enumerate(products)}
     by_key = {key: p for p in products for key in p.get("keys", [])}
     shops = {}  # 商品 → {店舗: その店舗での書き方}
     best = {}
@@ -68,7 +75,8 @@ def merge(catalog, offers):
         by_key[key] = product
         best[product["jan"]] = max(best.get(product["jan"], 0), o["price"] or 0)
     order = [s["id"] for s in SERIES.values()]
-    products.sort(key=lambda p: (order.index(p["series"]) if p["series"] in order else 99, -best.get(p["jan"], 0)))
+    products.sort(key=lambda p: (order.index(p["series"]) if p["series"] in order else 99, p["jan"] not in position,
+                                 position.get(p["jan"], 0), -best.get(p["jan"], 0)))
     # PSA 以外の商品の並びは変えず、PSA の商品はトレカの最後のシリーズの後ろに置く
     others = [p for p in catalog["products"] if p["series"] not in psa_ids]
     tcg = {s["id"] for s in catalog["series"] if s["category"] == "tcg" and s["id"] not in psa_ids}
