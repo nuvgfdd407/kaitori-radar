@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T17:25:51+09:00",
+  "updated_at": "2026-10-02T17:40:59+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-02T17:40:59+09:00"
     },
     {
       "id": "ichome",
@@ -97,7 +98,7 @@
           "url": "https://kaitori-homura.com/products/5148"
         },
         "shouten": {
-          "price": 53300,
+          "price": 53000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/23170"
         },
         "kaikyo": {
@@ -1669,7 +1670,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 191700,
+          "price": 192000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25543"
         },
         "kaikyo": {
@@ -1720,7 +1721,7 @@
           "url": "https://kaitori-homura.com/products/5104"
         },
         "shouten": {
-          "price": 191700,
+          "price": 192000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21060"
         },
         "kaikyo": {
@@ -4031,7 +4032,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 205000,
+          "price": 200000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -4089,7 +4090,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 205000,
+          "price": 200000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -4147,7 +4148,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 205000,
+          "price": 200000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -4873,7 +4874,7 @@
           "url": "https://kaitori-homura.com/products/7289"
         },
         "shouten": {
-          "price": 256000,
+          "price": 255000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27097"
         },
         "kaikyo": {
@@ -5047,7 +5048,7 @@
           "url": "https://kaitori-homura.com/products/7271"
         },
         "shouten": {
-          "price": 231000,
+          "price": 230000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27099"
         },
         "kaikyo": {
@@ -38752,11 +38753,11 @@
       },
       "prices": {
         "homura": {
-          "price": 12300,
+          "price": 12400,
           "url": "https://kaitori-homura.com/products/3465"
         },
         "shouten": {
-          "price": 12500,
+          "price": 12300,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25365"
         },
         "kaikyo": {
