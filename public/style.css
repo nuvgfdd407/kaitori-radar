@@ -188,53 +188,88 @@ a { color: var(--brand); }
 }
 .count { margin: 0 0 6px; font-size: 12px; color: var(--muted); }
 
-/* 比較表。表の中だけをスクロールさせ、見出し行と商品名の列を固定する */
+/* 表（商品ページの店舗別の価格や、日ごとの最高値など）。中だけを横スクロールさせる */
 .table-wrap {
   overflow: auto;
-  max-height: 80vh;
-  max-height: 80dvh;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
-.price-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  width: 100%;
+
+/* 一覧。1行に 商品名・定価・最高買取・差益 を並べ、タップで店舗ごとの価格を開く（店舗が増えても横に広がらない） */
+.price-list {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
   font-variant-numeric: tabular-nums;
 }
-.price-table th,
-.price-table td {
-  padding: 8px 10px;
-  border-bottom: 1px solid var(--line);
-  background: var(--surface);
-  vertical-align: middle;
+.list-head,
+.item-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5em 8.5em 7em 14px;
+  align-items: center;
+  gap: 0 14px;
+  padding: 8px 12px;
 }
-.price-table thead th {
+.list-head {
   position: sticky;
   top: 0;
   z-index: 2;
   background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  border-radius: 10px 10px 0 0;
   font-size: 12px;
   font-weight: 600;
   color: var(--muted);
-  white-space: nowrap;
-  text-align: right;
 }
-.price-table thead th:first-child { text-align: left; }
-.price-table thead th a { color: inherit; }
-.price-table .col-name {
-  position: sticky;
-  left: 0;
-  z-index: 1;
-  min-width: 16em;
-  max-width: 25em;
-  text-align: left;
-  font-weight: 400;
-  border-right: 1px solid var(--line);
+.group-title {
+  margin: 0;
+  padding: 10px 12px 6px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 700;
 }
-.price-table thead .col-name { z-index: 3; }
+.group-title a { color: inherit; text-decoration: none; }
+.group-title a:hover { text-decoration: underline; }
+.item { border-bottom: 1px solid var(--line); }
+.price-list > .rows > .item:last-child,
+.list-group:last-child .item:last-child { border-bottom: 0; }
+.item-main { cursor: pointer; list-style: none; }
+.item-main::-webkit-details-marker { display: none; }
+.item-main:hover,
+.item[open] > .item-main { background: var(--surface-2); }
+.chevron::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: 0 auto;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: translateY(-2px) rotate(45deg);
+}
+.item[open] .chevron::before { transform: translateY(2px) rotate(-135deg); }
+.item-shops { padding: 4px 12px 12px 66px; background: var(--surface-2); }
+.shop-prices { list-style: none; margin: 0; padding: 0; max-width: 440px; }
+.shop-prices li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 5.5em;
+  gap: 10px;
+  align-items: baseline;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.shop-prices li.is-best { background: var(--best-bg); }
+.shop-price a { color: var(--text); font-weight: 600; text-decoration: none; }
+.shop-price a:hover { text-decoration: underline; }
+.shop-prices .is-best .shop-price a { color: var(--best-text); font-weight: 700; }
+.shop-prices .is-stale .shop-price a { color: var(--muted); font-style: italic; }
+.shop-diff { text-align: right; color: var(--muted); font-size: 12px; }
+.item-more { display: inline-block; margin: 6px 0 0 8px; font-size: 13px; }
 
 .name-wrap { display: flex; align-items: center; gap: 10px; }
 .thumb {
@@ -273,24 +308,6 @@ a.product:hover { text-decoration: underline; }
 .profit.neg { color: var(--neg); font-weight: 600; }
 .none { color: var(--muted); }
 
-.shop a { color: var(--text); text-decoration: none; }
-.shop a:hover { text-decoration: underline; }
-.shop.is-best { background: var(--best-bg); }
-.shop.is-best a { color: var(--best-text); font-weight: 700; }
-.shop.is-stale a { color: var(--muted); font-style: italic; }
-.warn-mark { color: var(--neg); margin-left: 2px; }
-
-.group th {
-  background: var(--surface-2);
-  font-size: 13px;
-  font-weight: 700;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 6px;
-}
-.group th span { position: sticky; left: 10px; }
-.group th a { color: inherit; text-decoration: none; }
-.group th a:hover { text-decoration: underline; }
 
 /* 商品ページ */
 .item-summary {
@@ -309,7 +326,6 @@ a.product:hover { text-decoration: underline; }
 .item-facts dt { font-size: 12px; color: var(--muted); }
 .item-facts dd { margin: 0; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .item-facts .col-best { font-size: 20px; }
-.table-wrap--auto { max-height: none; }
 .shop-table {
   border-collapse: collapse;
   width: 100%;
@@ -465,9 +481,6 @@ a.product:hover { text-decoration: underline; }
 .plan-shop li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-top: 1px solid var(--line); }
 .plan-shop li span { white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-tbody tr:not(.group):hover td,
-tbody tr:not(.group):hover th { background: var(--surface-2); }
-tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }
 
 .empty { text-align: center; color: var(--muted); padding: 24px; }
 
@@ -497,13 +510,32 @@ tbody tr:not(.group):hover td.is-best { background: var(--best-bg); }
 @media (max-width: 600px) {
   body { font-size: 14px; }
   .site-title { font-size: 19px; }
-  .price-table th, .price-table td { padding: 7px 8px; }
-  .price-table .col-name { min-width: 12.5em; max-width: 13.5em; }
   .name-wrap { gap: 8px; }
   .thumb { width: 34px; height: 34px; }
   .thumb--large { width: 80px; height: 80px; }
   .product { font-size: 13px; }
   .col-best { font-size: 14px; }
+  /* スマホでは1段目に商品名、2段目に 定価・最高買取・差益 を並べる */
+  .list-head,
+  .item-main {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 12px;
+    grid-template-areas: "name name name chev" "msrp best profit chev";
+    gap: 4px 8px;
+    padding: 8px 10px;
+  }
+  .item-main > :nth-child(1) { grid-area: name; }
+  .item-main > :nth-child(2) { grid-area: msrp; }
+  .item-main > :nth-child(3) { grid-area: best; }
+  .item-main > :nth-child(4) { grid-area: profit; }
+  .item-main > :nth-child(5) { grid-area: chev; }
+  .item-main > .num { align-self: start; }
+  .list-head { grid-template-areas: "msrp best profit chev"; }
+  .list-head > :nth-child(1) { display: none; }
+  .list-head > :nth-child(2) { grid-area: msrp; }
+  .list-head > :nth-child(3) { grid-area: best; }
+  .list-head > :nth-child(4) { grid-area: profit; }
+  .list-head > :nth-child(5) { grid-area: chev; }
+  .item-shops { padding: 4px 10px 12px; }
   .page-title { font-size: 18px; }
   .item-summary { gap: 12px; }
 }

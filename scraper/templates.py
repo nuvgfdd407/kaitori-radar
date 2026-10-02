@@ -38,7 +38,6 @@ YAHOO_CREDIT = """<!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
         <span style="margin:15px 15px 15px 15px"><a href="https://developer.yahoo.co.jp/sitemap/">Webサービス by Yahoo! JAPAN</a></span>
         <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->"""
 
-NONE_CELL = '<td class="num none">—</td>'
 
 # iPhone は機種＋容量＋色ごとに載せている（scraper.iphone を参照）
 IPHONE_NOTE = (
@@ -231,37 +230,28 @@ SORT_CONTROL = """<label class="sort">
 
 
 def price_table(site, products, shops, *, grouped):
-    columns = 4 + len(shops)
-    head = (
-        '<tr><th scope="col" class="col-name">商品名</th><th scope="col">定価</th>'
-        '<th scope="col">最高買取</th><th scope="col">差益</th>'
-        + "".join(
-            f'<th scope="col" title="{esc(s["name"])}"><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["short"])}</a>'
-            + ("" if s["ok"] else '<span class="warn-mark" aria-label="取得エラー">⚠</span>') + "</th>"
-            for s in shops
-        )
-        + "</tr>"
-    )
+    """一覧（定価・最高買取・差益だけを並べ、タップで店舗ごとの価格を開く）。
+
+    店舗が増えても横に広がらないように、店舗ごとの価格は行を開いたときだけ出す。
+    行は <details> なので、JavaScript がなくても開ける。並び替えと絞り込みは app.js。
+    """
+    head = ('<div class="list-head" aria-hidden="true"><span>商品名</span><span class="num">定価</span>'
+            '<span class="num">最高買取</span><span class="num">差益</span><span></span></div>')
     if grouped:
-        bodies = []
+        groups = []
         for series in site["series"]:
             items = [p for p in products if p["series"] == series["id"]]
-            if not items:
-                continue
-            bodies.append(
-                f'<tbody><tr class="group"><th colspan="{columns}" scope="rowgroup">'
-                f'<span><a href="/{series["id"]}/">{esc(series["name"])}</a></span></th></tr></tbody>'
-            )
-            bodies.append('<tbody class="rows">' + "".join(_row(p, shops) for p in items) + "</tbody>")
-        body = "".join(bodies)
+            if items:
+                groups.append(
+                    f'<section class="list-group"><h2 class="group-title"><a href="/{series["id"]}/">'
+                    f'{esc(series["name"])}</a></h2><div class="rows">{"".join(_row(p, shops) for p in items)}</div></section>'
+                )
+        body = "".join(groups)
     else:
-        body = '<tbody class="rows">' + "".join(_row(p, shops) for p in products) + "</tbody>"
-    return f"""    <div class="table-wrap">
-      <table class="price-table">
-        <caption class="visually-hidden">新品買取価格（店舗別）</caption>
-        <thead>{head}</thead>
-        {body}
-      </table>
+        body = f'<div class="rows">{"".join(_row(p, shops) for p in products)}</div>'
+    return f"""    <div class="price-list">
+      {head}
+      {body}
     </div>"""
 
 
@@ -273,38 +263,50 @@ def _row(p, shops):
     )
     sub = _sub_line(p)
     name = (
-        f'<th scope="row" class="col-name"><div class="name-wrap">{thumb(p)}<div class="name-text">'
+        f'<div class="name-wrap">{thumb(p)}<div class="name-text">'
         f'<a class="product" href="/item/{p["jan"]}/">{esc(p["name"])}</a>'
         + (f'<span class="sub">{sub}</span>' if sub else "")
-        + f"</div>{add_button(p)}</div></th>"
+        + f"</div>{add_button(p)}</div>"
     )
-    msrp = f'<td class="num">{yen(p["msrp"])}</td>' if p.get("msrp") else NONE_CELL
+    msrp = f'<div class="num col-msrp">{yen(p["msrp"])}</div>' if p.get("msrp") else '<div class="num none">—</div>'
     best = (
-        f'<td class="num col-best">{yen(p["best"])}<span class="sub">{esc(best_shop_names(p))}</span></td>'
-        if p["best"] else NONE_CELL
+        f'<div class="num col-best">{yen(p["best"])}<span class="sub">{esc(best_shop_names(p))}</span></div>'
+        if p["best"] else '<div class="num none">—</div>'
     )
-    cells = "".join(_shop_cell(p, s) for s in shops)
-    return f"<tr {attrs}>{name}{msrp}{best}{_profit_cell(p)}{cells}</tr>"
+    return (
+        f'<details class="item" {attrs}><summary class="item-main">{name}{msrp}{best}{_profit_cell(p)}'
+        f'<span class="chevron" aria-hidden="true"></span></summary>{_shop_prices(p, shops)}</details>'
+    )
 
 
-def _shop_cell(p, shop):
-    offer = p["prices"].get(shop["id"])
-    if not offer:
-        return '<td class="num shop none" aria-label="取扱なし">—</td>'
-    classes = ["num", "shop"]
-    if offer["price"] == p["best"]:
-        classes.append("is-best")
-    if not shop["ok"]:
-        classes.append("is-stale")
-    title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
-    return f'<td class="{" ".join(classes)}">{_link(offer.get("url"), yen(offer["price"]), title)}</td>'
+def _shop_prices(p, shops):
+    """行を開いたときに出す、店舗ごとの価格（高い順）。"""
+    offers = sorted(((s, p["prices"][s["id"]]) for s in shops if s["id"] in p["prices"]),
+                    key=lambda so: -so[1]["price"])
+    items = []
+    for shop, offer in offers:
+        best = offer["price"] == p["best"]
+        diff = "最高値" if best else signed_yen(offer["price"] - p["best"])
+        title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
+        classes = " ".join(c for c in ["is-best" if best else "", "is-stale" if not shop["ok"] else ""] if c)
+        items.append(
+            f'<li class="{classes}"><span class="shop-name">{esc(shop["name"])}</span>'
+            f'<span class="shop-price">{_link(offer.get("url"), yen(offer["price"]), title)}</span>'
+            f'<span class="shop-diff">{diff}</span></li>'
+        )
+    if not items:
+        items.append('<li class="none">現在、買取価格を掲載している店舗はありません。</li>')
+    return (
+        f'<div class="item-shops"><ul class="shop-prices">{"".join(items)}</ul>'
+        f'<a class="item-more" href="/item/{p["jan"]}/">価格の推移・商品の詳細 →</a></div>'
+    )
 
 
 def _profit_cell(p):
     if p["profit"] is None:
-        return NONE_CELL
+        return '<div class="num none">—</div>'
     cls = "pos" if p["profit"] > 0 else "neg" if p["profit"] < 0 else ""
-    return f'<td class="num profit {cls}">{signed_yen(p["profit"])}<span class="sub">{signed_pct(p["ratio"])}</span></td>'
+    return f'<div class="num profit {cls}">{signed_yen(p["profit"])}<span class="sub">{signed_pct(p["ratio"])}</span></div>'
 
 
 # ---- 商品ページ -----------------------------------------------------------------

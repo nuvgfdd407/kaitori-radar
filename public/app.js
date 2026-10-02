@@ -31,7 +31,7 @@ if (searchInput) {
   const fold = (s) => s.normalize('NFKC').toLowerCase()
     .replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
     .replace(/[\s\-‐－―・/()「」『』.,、。]/g, '');
-  const rows = [...document.querySelectorAll('.price-table tbody.rows tr')];
+  const rows = [...document.querySelectorAll('.price-list .item')];
   const texts = new Map(rows.map((row) => [row, fold(row.dataset.search || '')]));
   const count = document.querySelector('.count');
   const noResults = document.querySelector('.no-results');
@@ -44,12 +44,9 @@ if (searchInput) {
       row.hidden = !hit;
       if (hit) shown += 1;
     });
-    // シリーズの見出しは、そのシリーズの商品が1つも出ていなければ隠す
-    document.querySelectorAll('.price-table tbody.rows').forEach((tbody) => {
-      const empty = ![...tbody.rows].some((row) => !row.hidden);
-      tbody.hidden = empty;
-      const head = tbody.previousElementSibling;
-      if (head && head.querySelector('tr.group')) head.hidden = empty;
+    // シリーズのまとまりは、そのシリーズの商品が1つも出ていなければ見出しごと隠す
+    document.querySelectorAll('.price-list .list-group').forEach((group) => {
+      group.hidden = ![...group.querySelectorAll('.item')].some((row) => !row.hidden);
     });
     if (count) {
       const total = count.dataset.total;
@@ -83,12 +80,12 @@ if (sortSelect) {
   sortRows(sortSelect.value);
 }
 
-// シリーズごとのまとまり（tbody.rows）の中で行を並べ替える
+// シリーズごとのまとまり（.rows）の中で行を並べ替える
 function sortRows(key) {
-  document.querySelectorAll('.price-table tbody.rows').forEach((tbody) => {
-    [...tbody.rows]
+  document.querySelectorAll('.price-list .rows').forEach((rows) => {
+    [...rows.children]
       .sort((a, b) => compareRows(a, b, key))
-      .forEach((row) => tbody.appendChild(row));
+      .forEach((row) => rows.appendChild(row));
   });
 }
 
@@ -118,6 +115,7 @@ const cartRoot = $('cart-root');
 document.addEventListener('click', (e) => {
   const add = e.target.closest('[data-add]');
   if (add) {
+    e.preventDefault();  // 一覧の行（<details>）の中にあるので、行が開かないようにする
     const jan = add.dataset.add;
     if (cart[jan]) delete cart[jan];
     else cart[jan] = 1;
