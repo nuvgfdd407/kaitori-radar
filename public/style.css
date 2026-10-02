@@ -146,6 +146,8 @@ a { color: var(--brand); }
   margin-bottom: 8px;
 }
 .nav { flex: 1 1 100%; display: grid; gap: 8px; }
+/* 一覧を切り替えている途中（app.js が次のページを読み込んでいる間） */
+#content[aria-busy="true"] { opacity: .5; transition: opacity .15s .1s; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   border: 1px solid var(--line);

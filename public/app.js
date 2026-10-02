@@ -1,7 +1,7 @@
 'use strict';
 
 // 表や商品ページのHTMLは scraper/build.py が作っている。
-// ここでは、一覧の絞り込みと並び替え、切れた商品画像の差し替え、比較リストだけを行う。
+// ここでは、一覧の絞り込みと並び替え、一覧の切り替え、切れた商品画像の差し替え、比較リストだけを行う。
 
 document.documentElement.classList.add('js');
 
@@ -26,36 +26,37 @@ document.addEventListener('error', (e) => {
 // 全角・半角、大文字・小文字、ひらがな・カタカナ、空白や記号の違いは区別しない。
 // 空白で区切ると、すべての言葉を含む商品だけを出す。
 
+const fold = (s) => s.normalize('NFKC').toLowerCase()
+  .replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
+  .replace(/[\s\-‐－―・/()「」『』.,、。]/g, '');
+const searchTexts = new WeakMap();  // 行 → 比較用に変換した検索用の文字
+
 const searchInput = $('search');
 if (searchInput) {
-  const fold = (s) => s.normalize('NFKC').toLowerCase()
-    .replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
-    .replace(/[\s\-‐－―・/()「」『』.,、。]/g, '');
-  const rows = [...document.querySelectorAll('.price-list .item')];
-  const texts = new Map(rows.map((row) => [row, fold(row.dataset.search || '')]));
-  const count = document.querySelector('.count');
-  const noResults = document.querySelector('.no-results');
+  searchInput.addEventListener('input', filterRows);
+  if (searchInput.value) filterRows();  // ブラウザが前の入力を残しているとき
+}
 
-  const filter = () => {
-    const words = searchInput.value.normalize('NFKC').split(/\s+/).map(fold).filter(Boolean);
-    let shown = 0;
-    rows.forEach((row) => {
-      const hit = words.every((w) => texts.get(row).includes(w));
-      row.hidden = !hit;
-      if (hit) shown += 1;
-    });
-    // シリーズのまとまりは、そのシリーズの商品が1つも出ていなければ見出しごと隠す
-    document.querySelectorAll('.price-list .list-group').forEach((group) => {
-      group.hidden = ![...group.querySelectorAll('.item')].some((row) => !row.hidden);
-    });
-    if (count) {
-      const total = count.dataset.total;
-      count.textContent = words.length ? `${total}商品中 ${shown}件` : `${total}商品`;
-    }
-    if (noResults) noResults.hidden = shown > 0;
-  };
-  searchInput.addEventListener('input', filter);
-  if (searchInput.value) filter();  // ブラウザが前の入力を残しているとき
+function filterRows() {
+  const words = searchInput.value.normalize('NFKC').split(/\s+/).map(fold).filter(Boolean);
+  let shown = 0;
+  document.querySelectorAll('.price-list .item').forEach((row) => {
+    if (!searchTexts.has(row)) searchTexts.set(row, fold(row.dataset.search || ''));
+    const hit = words.every((w) => searchTexts.get(row).includes(w));
+    row.hidden = !hit;
+    if (hit) shown += 1;
+  });
+  // シリーズのまとまりは、そのシリーズの商品が1つも出ていなければ見出しごと隠す
+  document.querySelectorAll('.price-list .list-group').forEach((group) => {
+    group.hidden = ![...group.querySelectorAll('.item')].some((row) => !row.hidden);
+  });
+  const count = document.querySelector('.count');
+  if (count) {
+    const total = count.dataset.total;
+    count.textContent = words.length ? `${total}商品中 ${shown}件` : `${total}商品`;
+  }
+  const noResults = document.querySelector('.no-results');
+  if (noResults) noResults.hidden = shown > 0;
 }
 
 // ---- 表の並び替え ---------------------------------------------------------------
@@ -99,6 +100,80 @@ function compareRows(a, b, key) {
   if (va === null) return 1;
   if (vb === null) return -1;
   return vb - va || byIndex;
+}
+
+// ---- 一覧の切り替え ---------------------------------------------------------------
+// ジャンル・シリーズのボタンを押したとき、ページ全体を読み込み直さずに、ボタンと一覧の部分だけを
+// 次のページのものに入れ替える（URLは変わるので、戻る・共有・検索エンジンはふつうのページと同じ）。
+// ボタンに指やマウスが乗った時点で先に読み込んでおく。読み込めないときは、ふつうにページを開く。
+
+const SWAP_LINKS = '.nav a, .group-title a';
+const pageCache = new Map();  // URL → 読み込み中または読み込んだ HTML（Promise）
+
+if (searchInput) {
+  history.replaceState({ swap: true }, '');
+  document.addEventListener('pointerover', (e) => prefetchPage(e.target.closest && e.target.closest(SWAP_LINKS)));
+  document.addEventListener('focusin', (e) => prefetchPage(e.target.closest(SWAP_LINKS)));
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest(SWAP_LINKS);
+    if (!link || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (link.origin !== location.origin) return;
+    e.preventDefault();
+    if (link.pathname === location.pathname) return;
+    showPage(link.pathname, { push: true, focus: link.pathname });
+  });
+  window.addEventListener('popstate', () => showPage(location.pathname, { push: false }));
+}
+
+function prefetchPage(link) {
+  if (link && link.origin === location.origin) loadPage(link.pathname);
+}
+
+function loadPage(path) {
+  if (!pageCache.has(path)) {
+    const request = fetch(path).then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.text();
+    });
+    request.catch(() => pageCache.delete(path));
+    pageCache.set(path, request);
+  }
+  return pageCache.get(path);
+}
+
+async function showPage(path, { push, focus }) {
+  const content = $('content');
+  content.setAttribute('aria-busy', 'true');
+  let doc;
+  try {
+    doc = new DOMParser().parseFromString(await loadPage(path), 'text/html');
+  } catch (e) {
+    location.href = path;  // 読み込めないときは、ふつうにページを開く
+    return;
+  }
+  const nextContent = doc.getElementById('content');
+  const nextNav = doc.querySelector('.nav');
+  if (!nextContent || !nextNav || !doc.getElementById('search')) {
+    location.href = path;
+    return;
+  }
+  if (push) history.pushState({ swap: true }, '', path);
+  document.title = doc.title;
+  ['link[rel="canonical"]', 'meta[name="description"]'].forEach((selector) => {
+    const now = document.querySelector(selector);
+    const next = doc.querySelector(selector);
+    if (now && next) now.replaceWith(next);
+  });
+  document.querySelector('.nav').replaceWith(nextNav);
+  content.replaceWith(nextContent);
+  // 入力中の絞り込みと、選んでいる並び順は、切り替えたあとの一覧にもそのまま使う
+  filterRows();
+  if (sortSelect) sortRows(sortSelect.value);
+  updateCartUi();
+  if (focus) {
+    const chip = [...nextNav.querySelectorAll('a')].find((a) => a.pathname === focus);
+    if (chip) chip.focus({ preventScroll: true });
+  }
 }
 
 // ---- 比較リスト -----------------------------------------------------------------

@@ -103,7 +103,9 @@ def page(site, *, path, title, description, active, content, controls="", breadc
       {_nav(site, active, path)}
       {controls}
     </div>
+    <div id="content">
 {content}
+    </div>
 {_notes(site)}
   </main>
 
