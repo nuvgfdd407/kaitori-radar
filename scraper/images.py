@@ -78,6 +78,8 @@ def update_all(session, client_id):
             else:
                 warn(f"{product['name']}: 公式の画像（{product['image_url']}）を取得できませんでした")
             continue
+        if not product["jan"].isdigit():
+            continue  # JAN がない商品（PSA 鑑定品など）は、Yahoo!ショッピングで探せないので画像なし
         old = previous.get(product["jan"])
         item_code = product.get("image_item")
         if old and (not item_code or old.get("code") == item_code) and save(session, product["jan"], old):
