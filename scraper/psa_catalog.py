@@ -17,11 +17,12 @@
   価格が近いとは、その商品のほかの店舗の価格との差が PRICE_RATIO 倍以内（金のカードと通常のカードなどを取り違えないように）
 - すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する。
   ただし、番号を略す店舗（NO_NEW）のカードや、番号がまったく同じ商品があるのに同じカードと決められなかったカードは、
-  重複を避けるため商品を追加しない
+  重複を避けるため商品を追加しない。ワンピースは、トレカラウンジ以外の店舗のカードは、バリエーションが違っても
+  番号がまったく同じ商品があれば追加しない（和柄・金背景・手配書などの別の版を、店舗ごとにばらばらの書き方で分けているため）
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
 - 画像は、IMAGE_SHOPS の順に、載っている店舗のカード画像を使う。
   森森買取は一覧に画像がないので、画像のないカードだけ商品ページを見にいく。
-  森森買取の画像には PSA のケースごと写したものもあり、"image_crop": "slab" を付けてカードの部分だけ切り抜く
+  シンソク・森森買取の画像には PSA のケースごと写したものがあり、"image_crop": "slab" を付けてカードの部分だけ切り抜く
   （scraper.images）。上の店舗に載ったら、その店舗の画像に替える
 - 並び順は、ゲームごとに、すでにある商品は今のまま、新しい商品はその後ろに最高値の高い順で足す
   （毎日自動で動かすので、変化がなければファイルを書き換えない）
@@ -33,7 +34,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from .common import CATALOG, load_json, write_catalog
 from .http import INTERVAL, Http
-from .shops import birth, club, golden, homura, lounge, morimori
+from .shops import birth, club, golden, homura, lounge, morimori, shinsoku, torecabank
 
 SERIES = {
     "pokemon": {"id": "psa-pokemon", "name": "PSA鑑定品（ポケモンカード）", "category": "tcg"},
@@ -41,15 +42,18 @@ SERIES = {
     "yugioh": {"id": "psa-yugioh", "name": "PSA鑑定品（遊戯王）", "category": "tcg"},
 }
 # 名前を付けるときに優先する店舗（トレカラウンジは名前・レアリティ・番号が別々に載っていて読みやすい）
-SHOP_ORDER = ["lounge", "homura", "morimori", "club", "birth", "golden"]
-SHOPS = {"lounge": lounge, "homura": homura, "morimori": morimori, "club": club, "birth": birth, "golden": golden}
+SHOP_ORDER = ["lounge", "homura", "morimori", "shinsoku", "torecabank", "club", "birth", "golden"]
+SHOPS = {"lounge": lounge, "homura": homura, "morimori": morimori, "shinsoku": shinsoku, "torecabank": torecabank,
+         "club": club, "birth": birth, "golden": golden}
 # カタログにないカードでも商品を追加しない店舗（番号が略してあり、ほかの店舗のカードと突き合わせられなくなる）
 NO_NEW = {"golden"}
 # 名前を見ずに番号だけで突き合わせてよいゲーム（番号に収録弾が入っている）
 NUMBER_ONLY_GAMES = {"onepiece"}
 PRICE_RATIO = 2
-# 画像を使う店舗（先のものほど優先。どれもカード単体の画像で、森森買取だけ PSA のケースごとの画像があるので最後）
-IMAGE_SHOPS = {name: SHOPS[name].NAME for name in ["lounge", "homura", "club", "birth", "golden", "morimori"]}
+# 画像を使う店舗（先のものほど優先。カード単体の画像の店舗が先で、PSA のケースごと写した画像の店舗（SLAB_SHOPS）は後）
+IMAGE_SHOPS = {name: SHOPS[name].NAME
+               for name in ["lounge", "homura", "club", "birth", "torecabank", "golden", "shinsoku", "morimori"]}
+SLAB_SHOPS = {"shinsoku", "morimori"}
 
 
 def main():
@@ -103,7 +107,7 @@ def merge(catalog, offers):
         same_number.setdefault((o["shop"], *_number_head(o["key"])), []).append(o["key"].split("|")[3])
     for o in offers:
         key = o["key"]
-        product = by_key.get(key) or _similar(products, key, o["shop"], shops)
+        product = by_key.get(key) or _similar(products, key, o["shop"], shops, o["price"], best)
         if product is None:
             group = same_number[(o["shop"], *_number_head(key))]
             product, candidates = _loose(products, key, o["shop"], shops, o["price"], best, group)
@@ -152,7 +156,7 @@ def _image_rank(shop):
 def _set_image(product, url, page, shop):
     product.update({"image_url": url, "image_page": page, "image_source": IMAGE_SHOPS[shop]})
     product.pop("image_crop", None)
-    if shop == "morimori":
+    if shop in SLAB_SHOPS:
         product["image_crop"] = "slab"
 
 
@@ -161,12 +165,13 @@ def _parts(key):
     return (game, grade, number, variant.replace("1ED", "").strip("+")), core
 
 
-def _similar(products, key, shop, shops):
+def _similar(products, key, shop, shops, price, best):
     """番号などが同じで、名前の片方がもう片方で始まる商品（なければ None）。
-    同じ店舗が別の書き方で載せている商品は、別のカードなので選ばない。"""
+    同じ店舗が別の書き方で載せている商品や、価格が離れている商品（シンソクの「モンキー・D・ルフィ(ONE PIECE magazine)」と
+    ほかの店舗の「モンキー・D・ルフィ」など）は、別のカードなので選ばない。"""
     head, core = _parts(key)
     for p in products:
-        if shops.get(p["jan"], {}).get(shop, key) != key:
+        if shops.get(p["jan"], {}).get(shop, key) != key or not _near(price, best.get(p["jan"])):
             continue
         for other in p.get("keys", []):
             other_head, other_core = _parts(other)
@@ -174,6 +179,11 @@ def _similar(products, key, shop, shops):
             if other_head == head and len(short) >= 2 and (core.startswith(other_core) or other_core.startswith(core)):
                 return p
     return None
+
+
+def _near(price, known):
+    """価格が近いか（片方がわからなければ近いとみなす）。"""
+    return not (price and known) or max(known, price) / min(known, price) <= PRICE_RATIO
 
 
 def _number_head(key):
@@ -189,10 +199,15 @@ def _loose(products, key, shop, shops, price, best, group):
     game, grade, number, core, variant = key.split("|")
     by_name, by_number, seen = [], [], False
     for p in products:
-        if shops.get(p["jan"], {}).get(shop, key) != key:
-            continue
         for other in p.get("keys", []):
             o_game, o_grade, o_number, o_core, o_variant = other.split("|")
+            # ワンピースは同じ番号の別の版（和柄・金背景など）を店舗ごとにばらばらの書き方で分けているので、
+            # 2番目以降の店舗のカードは、バリエーションが違っても番号がまったく同じ商品があれば追加しない
+            if (game in NUMBER_ONLY_GAMES and shop != SHOP_ORDER[0] and (o_game, o_grade) == (game, grade)
+                    and number == o_number):
+                seen = True
+            if shops.get(p["jan"], {}).get(shop, key) != key:
+                continue  # この店舗が別の書き方で載せている商品は、別のカード
             if (o_game, o_grade, o_variant) != (game, grade, variant) or not _same_number(number, o_number):
                 continue
             # 番号がまったく同じ商品がある（遊戯王の「JP001」のように略した番号は、別のカードでも同じになるので数えない）
@@ -208,7 +223,7 @@ def _loose(products, key, shop, shops, price, best, group):
         if len(candidates) == 1:
             p = candidates[0]
             known = best.get(p["jan"])
-            if known and max(known, price) / max(min(known, price), 1) > PRICE_RATIO:
+            if not _near(price, known):
                 return None, True
             if known or not need_price:
                 return p, True

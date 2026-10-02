@@ -77,7 +77,7 @@ def _variant(name):
     elif re.search(r"ミラー|ホイル", text):
         flags.append("mirror")
     # ワンピースのコミックパラレル・パラレルは、同じ番号の通常のカードとは別のカード
-    if re.search(r"コミパラ|コミックパラレル|Manga", text, re.IGNORECASE):
+    if re.search(r"コミパラ|コミックパラレル|Manga|漫画背景|漫画絵", text, re.IGNORECASE):  # シンソクは「漫画背景/漫画絵」
         flags.append("comic")
     elif "パラレル" in text:
         flags.append("parallel")
