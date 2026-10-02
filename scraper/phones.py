@@ -116,6 +116,9 @@ def _storage_and_ram(text):
     for match in _CAPACITY.finditer(text):
         if match.group(1) == "5" and match.group(2).upper() == "G":
             continue  # 「Galaxy A25 5G」の 5G は通信方式
+        before = text[match.start() - 1:match.start()]
+        if before == "-" or (before.isascii() and before.isalpha()):
+            continue  # 「SC-54G」「SCG37」のような型番の一部
         gb = int(match.group(1)) * (1024 if match.group(2).upper() == "TB" else 1)
         sizes.append((gb, _capacity(match)))
     storage = max((s for s in sizes if s[0] >= 32), default=None)

@@ -20,7 +20,7 @@ from datetime import datetime, timedelta, timezone
 from . import history
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 from .cards import card_key
-from .http import Http
+from .http import INTERVAL, Http
 from .phones import color_part, phone_color, phone_key, without_capacity
 from .shops import SHOPS
 
@@ -133,7 +133,8 @@ def main():
 
 def fetch_shop(shop):
     try:
-        offers = shop.fetch(Http())
+        # robots.txt でアクセス間隔（Crawl-delay）を指定している店舗は、その間隔にする
+        offers = shop.fetch(Http(getattr(shop, "INTERVAL", INTERVAL)))
     except Exception as e:  # 1店舗の失敗で全体を止めない
         return shop, None, f"{type(e).__name__}: {e}"
     if not offers:

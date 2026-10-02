@@ -14,7 +14,8 @@ RETRIES = 2
 
 
 class Http:
-    def __init__(self):
+    def __init__(self, interval=INTERVAL):
+        self.interval = interval
         self.session = requests.Session()
         self.session.headers.update({
             "User-Agent": USER_AGENT,
@@ -30,7 +31,7 @@ class Http:
 
     def request(self, method, url, **kwargs):
         for attempt in range(RETRIES + 1):
-            wait = self._last + INTERVAL - time.monotonic()
+            wait = self._last + self.interval - time.monotonic()
             if wait > 0:
                 time.sleep(wait)
             try:
