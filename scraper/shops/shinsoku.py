@@ -1,6 +1,8 @@
-"""シンソク（PSA 鑑定品だけ）。
+"""シンソク（PSA 鑑定品と、トレカの未開封BOX）。
 
 宅配買取の「簡単カート買取」（/yuso-kaitori）が読んでいる API（/api/items?postal_only=true&type=PSA&brand=…）を使う。
+BOX は type=BOX で、名前は「強化拡張パック「ポケモンカード151」(SV2a)」のような形なので、「」の中をセット名として
+カタログの "names" と突き合わせる（「」がない古いBOXは名前全体）。
 1回に limit 件ずつ、page=0 から順に、has_more が false になるまで読む。
 1件に name（「ロイヤルマスク(SR仕様)」）・rarity・modelno（カード番号）・tags（「PSA10」など）・
 postal_purchase_price_s / _a / _am（状態ごとの郵送買取価格。s が最も状態のよいときの価格）・image_url_public がある。
@@ -8,6 +10,7 @@ postal_purchase_price_s / _a / _am（状態ごとの郵送買取価格。s が�
 """
 import re
 
+from ..cards import card_key
 from ..psa import psa_key
 
 ID = "shinsoku"
@@ -26,24 +29,40 @@ MAX_PAGES = 50
 
 
 def fetch(http):
-    return fetch_psa(http)
+    return fetch_psa(http) + fetch_box(http)
 
 
 def fetch_psa(http):
     """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
+    return [o for brand, game in BRANDS for o in map(lambda item: _offer(item, game), _items(http, "PSA", brand)) if o]
+
+
+def fetch_box(http):
+    """トレカの未開封BOXの出品。"""
     offers = []
-    for brand, game in BRANDS:
-        for page in range(MAX_PAGES):
-            params = {"postal_only": "true", "sort": "price_desc", "type": "PSA", "brand": brand,
-                      "page": page, "limit": LIMIT}
-            data = http.get(API_URL, params=params).json()["data"]
-            for item in data.get("items") or []:
-                offer = _offer(item, game)
-                if offer:
-                    offers.append(offer)
-            if not data.get("has_more"):
-                break
+    for brand, _ in BRANDS:
+        for item in _items(http, "BOX", brand):
+            price = item.get("postal_purchase_price_s")
+            name = item.get("name") or ""
+            if price and item.get("is_postal_buy_target"):
+                offers.append({"jan": None, "key": card_key(box_set_name(name)), "name": name, "price": int(price),
+                               "url": LIST_URL})
     return offers
+
+
+def box_set_name(name):
+    """「強化拡張パック「ポケモンカード151」(SV2a)」→「ポケモンカード151」。「」『』がなければ名前のまま。"""
+    m = re.search(r"[「『｢]([^」』｣]+)[」』｣]", name)
+    return m.group(1) if m else name
+
+
+def _items(http, kind, brand):
+    for page in range(MAX_PAGES):
+        params = {"postal_only": "true", "sort": "price_desc", "type": kind, "brand": brand, "page": page, "limit": LIMIT}
+        data = http.get(API_URL, params=params).json()["data"]
+        yield from data.get("items") or []
+        if not data.get("has_more"):
+            break
 
 
 def _offer(item, game):
