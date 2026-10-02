@@ -8,8 +8,9 @@
 - カタログにない高額商品は reports/unmatched.json に書き出す（新しい本体の登録漏れに気づくため）
 - 商品画像は scraper.images が作った catalog/images.json から載せる
 - 日ごとの価格の記録（data/history/）も更新する（scraper.history を参照）
-- スマホ（iPhone・Pixel）は「機種＋容量」（scraper.phones.phone_key）と色で突き合わせる。店舗の色の書き方は
-  scraper.phones.phone_color で公式の色名にそろえる。色の区別がない店舗の価格は、全色に当てはめる
+- スマホ（iPhone・Android）は「機種＋容量（Android はキャリアも）」（scraper.phones.phone_key）と色で突き合わせる。
+  店舗の色の書き方は scraper.phones.phone_color で公式の色名にそろえる。色の区別がない店舗の価格は、全色に当てはめる。
+  容量を書かない店舗の商品は、その機種（とキャリア）の容量が1種類だけなら、その容量の商品に当てはめる
 - JAN を載せていない店舗のトレカは、カタログの "names"（セット名）と商品名（scraper.cards.card_key）で突き合わせる
 """
 import sys
@@ -20,7 +21,7 @@ from . import history
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 from .cards import card_key
 from .http import Http
-from .phones import color_part, phone_color, phone_key
+from .phones import color_part, phone_color, phone_key, without_capacity
 from .shops import SHOPS
 
 OUTPUT = ROOT / "public" / "data" / "prices.json"
@@ -30,8 +31,8 @@ JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
-# 機種＋容量＋色で突き合わせるスマホのシリーズ（シリーズIDの頭）
-PHONE_SERIES = ("iphone", "pixel")
+# 機種＋容量＋色で突き合わせるスマホのジャンル
+PHONE_CATEGORIES = ("iphone", "android")
 INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names"}
 
 
@@ -42,11 +43,18 @@ def main():
     # 同じ商品が別のJAN（新旧のJANなど）で載っていることがあるので、"aliases" のJANも同じ商品として扱う
     owner = {jan: p["jan"] for p in catalog["products"] for jan in [p["jan"], *p.get("aliases", [])]}
     # スマホ: {"iPhone 17 Pro 256GB": {"シルバー": JAN, ...}}
+    phone_series = {s["id"] for s in catalog["series"] if s["category"] in PHONE_CATEGORIES}
     by_color = {}
     for p in catalog["products"]:
-        if p["series"].startswith(PHONE_SERIES):
+        if p["series"] in phone_series:
             key = phone_key(p["name"])
             by_color.setdefault(key, {})[phone_color(key, color_part(p["name"]))] = p["jan"]
+    # 容量を書かない店舗用: {"Galaxy A25 docomo": {色: JAN}}（容量が1種類だけの機種のみ）
+    capacities = {}
+    for key in by_color:
+        capacities.setdefault(without_capacity(key), []).append(key)
+    by_color.update({short: by_color[keys[0]] for short, keys in capacities.items()
+                     if len(keys) == 1 and short != keys[0]})
     by_key = {card_key(name): p["jan"] for p in catalog["products"] for name in p.get("names", [])}
     by_key.pop(None, None)  # 名前から読み取れなかった商品が、互いに一致しないように
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
@@ -67,7 +75,7 @@ def main():
             for offer in offers:
                 jan = offer["jan"]
                 targets = _phone_targets(offer, by_color.get(offer.get("key")))
-                if targets is None:
+                if not targets:  # スマホでない商品と、色を読み取れなかったスマホ（JANがあればJANで探す）
                     target = owner.get(jan) or by_key.get(offer.get("key"))
                     targets = {target: offer["price"]} if target else {}
                 for target, price in targets.items():

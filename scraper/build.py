@@ -131,7 +131,7 @@ def list_page(site, *, category=None, series=None):
         path, active = category["href"], (category["id"], None)
         title = f"{name}の新品買取価格比較【{n}店舗】｜{t.SITE_NAME}"
         heading = f"{name}の新品買取価格を{n}店舗で比較"
-        lead = f"{names}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        lead = f"{name}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
         description = (f"{names}の新品買取価格を{n}店舗で比較。"
                        "いちばん高く売れるお店と、定価との差額がひと目でわかります。15分ごとに自動更新。")
     else:

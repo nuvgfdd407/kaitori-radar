@@ -39,10 +39,11 @@ YAHOO_CREDIT = """<!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
         <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->"""
 
 
-# iPhone は機種＋容量＋色ごとに載せている（scraper.iphone を参照）
-IPHONE_NOTE = (
-    "iPhone・PixelはSIMフリー版の新品未開封の価格を、色ごとに載せています。"
-    "色を区別していない店舗の価格は、すべての色に同じ価格を表示しています。"
+# スマホは機種＋容量（Android はキャリアも）＋色ごとに載せている（scraper.phones を参照）
+PHONE_NOTE = (
+    "スマホは新品未開封の価格を、色ごとに載せています。iPhone・PixelはSIMフリー版、"
+    "Galaxy・Xperia・AQUOSはSIMフリー版とキャリア版（docomo・au・SoftBank・楽天モバイル・Y!mobile）を別々に載せています"
+    "（UQ mobile版はau版に含めています）。色を区別していない店舗の価格は、すべての色に同じ価格を表示しています。"
 )
 
 
@@ -158,8 +159,8 @@ def _notes(site):
       <ul>
         <li>各店舗の公式サイトに掲載されている、新品（未開封）の買取価格を自動で集めています。</li>
         <li>実際の買取価格は、申込の時点で各店舗が決めます。お申込みの前に、必ず各店舗のページで最新の価格と条件をご確認ください。</li>
-        <li>定価は、メーカー希望小売価格またはメーカー公式ストアの販売価格（税込）です。販売終了した商品は、販売していたときの最後の価格です。限定版など、定価を決めにくい商品は「—」と表示しています。</li>
-        <li>{IPHONE_NOTE}</li>
+        <li>定価は、メーカー希望小売価格またはメーカー公式ストアの販売価格（税込）です。販売終了した商品は、販売していたときの最後の価格です。限定版など、定価を決めにくい商品は「—」と表示しています。スマホのキャリア版は、各キャリアのオンラインショップの販売価格（割引なし）です。</li>
+        <li>{PHONE_NOTE}</li>
         <li>トレカ（ポケモンカード・ワンピースカード・遊戯王・フュージョンワールド）は、シュリンク付き・未開封のBOX（ポケモンカードは特別なセットも）の買取価格です。</li>
         <li>発売前の商品は、買取価格が仮のことが多いため、差益は表示していません。</li>
         <li>価格の確認は10:00〜21:00のあいだ15分ごとに行っています。価格をクリックすると、その店舗の商品ページが開きます。</li>
@@ -204,17 +205,21 @@ READINGS = [
     ("iPhone", ["アイフォン", "アイフォーン"]), ("Pro", ["プロ"]), ("Max", ["マックス"]), ("Plus", ["プラス"]),
     ("Air", ["エアー"]), ("Duo", ["デュオ"]),
     ("Pixel", ["ピクセル"]), ("Fold", ["フォールド"]), ("XL", ["エックスエル"]),
+    ("Galaxy", ["ギャラクシー"]), ("Flip", ["フリップ"]), ("Xperia", ["エクスペリア"]), ("AQUOS", ["アクオス"]),
+    ("sense", ["センス"]), ("wish", ["ウィッシュ"]), ("SIM", ["シム"]), ("docomo", ["ドコモ"]),
+    ("au", ["エーユー"]), ("SoftBank", ["ソフトバンク"]), ("Y!mobile", ["ワイモバイル"]),
     ("Xbox", ["エックスボックス"]), ("Series", ["シリーズ"]), ("Steam", ["スチーム"]), ("Deck", ["デッキ"]),
     ("Machine", ["マシン"]), ("Frame", ["フレーム"]), ("Controller", ["コントローラー"]),
     ("ROG", ["ログ", "アールオージー"]), ("Ally", ["アライ"]), ("Legion", ["レギオン"]), ("Go", ["ゴー"]),
     ("Meta", ["メタ"]), ("Quest", ["クエスト"]), ("PICO", ["ピコ"]), ("Ultra", ["ウルトラ"]),
     ("Pokémon", ["ポケモン"]), ("BOX", ["ボックス"]),
 ]
+# ジャンルの呼び方（検索用）
+CATEGORY_ALIASES = {"android": "アンドロイド", "tcg": "トレーディングカード"}
 # シリーズの呼び方（検索用）
 SERIES_ALIASES = {
     "pokemon": "ポケカ", "onepiece": "ワンピ ワンピカ", "ps5": "プレステ5 PS5",
-    "pixel11": "Google グーグル アンドロイド", "pixel10": "Google グーグル アンドロイド",
-    "pixel9": "Google グーグル アンドロイド",
+    "pixel11": "Google グーグル", "pixel10": "Google グーグル", "pixel9": "Google グーグル",
     "yugioh": "ユウギオウ 遊戯王OCG", "fusionworld": "ドラゴンボール ドラゴンボールスーパーカードゲーム FW",
 }
 
@@ -229,8 +234,8 @@ def search_text(p):
                           flags=re.IGNORECASE)
         if text != p["name"] and text not in readings:
             readings.append(text)
-    parts = [p["name"], p.get("model"), p.get("series_name"), p["category"]["name"], *readings,
-             SERIES_ALIASES.get(p["series"])]
+    parts = [p["name"], p.get("model"), p.get("series_name"), p["category"]["name"],
+             CATEGORY_ALIASES.get(p["category"]["id"]), *readings, SERIES_ALIASES.get(p["series"])]
     return " ".join(part for part in parts if part)
 
 
@@ -355,8 +360,8 @@ def item_content(site, p, series, siblings, shops):
         )
     else:
         summary = "現在、この商品の新品買取価格を掲載している店舗はありません。"
-    if is_iphone(series):
-        summary += IPHONE_NOTE
+    if is_phone(p):
+        summary += PHONE_NOTE
 
     facts = [("最高買取", f'<span class="col-best">{yen(p["best"])}</span>' if p["best"] else "—")]
     facts.append(("定価", yen(p["msrp"]) if p.get("msrp") else "—"))
@@ -402,8 +407,8 @@ def item_content(site, p, series, siblings, shops):
     <p><a href="/{series["id"]}/">{esc(series["name"])}の新品買取価格を一覧で比較する</a></p>"""
 
 
-def is_iphone(series):
-    return series["id"].startswith("iphone")
+def is_phone(p):
+    return p["category"]["id"] in ("iphone", "android")
 
 
 def item_breadcrumbs(series, p):

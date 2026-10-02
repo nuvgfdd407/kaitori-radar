@@ -1,7 +1,8 @@
 # 買取レーダー
 
 Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
-iPhone 18・17・16シリーズ（SIMフリー版）、ポケモンカード・ワンピースカードの未開封BOXの
+iPhone 18・17・16シリーズ（SIMフリー版）、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
+ポケモンカード・ワンピースカードなどの未開封BOXの
 **新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
 
 - 対象店舗: 買取ホムラ・買取商店・海峡通信・買取一丁目・買取当番・買取ルデヤ・買取wiki（7店舗）
@@ -63,7 +64,7 @@ dist/ を Cloudflare Pages に公開
 | `catalog/products.json` | 対象商品の一覧（JAN・シリーズ・表示名・型番・定価）と、ジャンル・シリーズの分け方。**手で管理する** |
 | `catalog/images.json` | 商品画像のURL（`scraper.images` が自動で作る） |
 | `scraper/shops/*.py` | 店舗ごとの取得処理 |
-| `scraper/phones.py` | スマホ（iPhone・Pixel）の商品名から「機種＋容量」と色を読み取る（突き合わせ用） |
+| `scraper/phones.py` | スマホ（iPhone・Pixel・Galaxy・Xperia・AQUOS）の商品名から「機種＋容量（＋キャリア）」と色を読み取る（突き合わせ用） |
 | `scraper/cards.py` | トレカの商品名からセット名を取り出す（JAN を載せていない店舗との突き合わせ用） |
 | `scraper/update.py` | 全店舗の取得と `prices.json` の書き出し |
 | `scraper/images.py` | Yahoo!ショッピングからの商品画像の取得 |
@@ -126,6 +127,25 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - 買取商店はキャリア版（docomo・au など）も別の価格で載せているので、SIMフリーの行だけを使う
 - 買取一丁目は Pixel のカテゴリが細かいので、商品名の検索（「Pixel」）でまとめて取る
 
+### Galaxy・Xperia・AQUOS
+
+- SIMフリー版と**キャリア版（docomo・au・SoftBank・楽天モバイル・Y!mobile）を別の商品**として載せる。
+  UQ mobile 版は au 版と同じ機種なので au 版として扱う
+- 1行＝機種＋容量＋キャリア＋色（例: `Galaxy S26 Ultra 256GB docomo版 ブラック`）。突き合わせのキーは
+  `Galaxy S26 Ultra 256GB docomo`（`scraper/phones.py` の `android_key`）。キャリアは店舗のカテゴリでわかるときは
+  それを使い、わからないときは商品名（「docomo版」や SC-53G のようなキャリアごとの型番）から読む
+- 同じ容量でメモリ違いがある機種（Xperia 1 VIII・1 VII の 512GB）は「512GB（メモリ16GB）」のように区別する（`_RAM_VARIANTS`）
+- 容量を書かない店舗の商品は、その機種・キャリアの容量が1種類だけなら、その容量の商品に当てはめる
+- 扱う機種は `phones.py` の `COLORS` に載っている機種だけ（古い機種は取らない）。色は各メーカーの公式の書き方
+- キャリア版は JAN がわからないものが多いので、その商品の `jan` には `galaxy-s26-ultra-256gb-docomo-2`
+  （機種-容量-キャリア-色の番号）のような仮のIDを入れている（URL などの識別にだけ使い、店舗とは名前で突き合わせる）
+- 定価は、SIMフリー版はメーカー公式ストアの価格、キャリア版は各キャリアのオンラインショップの価格（割引なし）。
+  販売が終わったものは発売時の価格。わからないものは `null`
+- どの店舗も買い取っていない組み合わせ（キャリア版の折りたたみなど）は載せていない。買い取りが始まると
+  `reports/unmatched.json` に出てくるので、そのときに足す
+- 店舗ごとの取り方: ホムラ・ルデヤ（SIMフリーのみ）は Galaxy・Xperia・AQUOS のカテゴリ、買取商店・海峡通信・買取一丁目は
+  SIMフリー・キャリアごとのカテゴリから、対象の機種だけを取る（買取当番・買取wiki は Pixel 以外の Android を扱っていない）
+
 ### トレカ（ポケモンカード・ワンピースカード・遊戯王・ドラゴンボール フュージョンワールド）
 
 - 対象はシュリンク付き・未開封の BOX と、ポケモンカードの特別な BOX・セット（スペシャルBOX、ポケモンセンターセットなど）。
@@ -153,6 +173,8 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - 見た目をそろえるため、**メーカー公式サイトの本体画像**を使う。カタログの商品に
   `"image_url": "<公式の画像のURL>"`（と、載っているページの `"image_page"`）を書く
   - iPhone は Apple Store の購入ページの色ごとの画像、ゲーム機は各メーカーの公式サイトの画像
+  - Galaxy は Samsung、Xperia はソニー、AQUOS はシャープ（COCORO STORE など）の色ごとの画像。
+    キャリア版は同じ色の SIMフリー版の画像を使う（`image_from`）
   - Nintendo Switch / Switch 2 と PlayStation は、セット違いなどを見分けやすいようにパッケージ（箱）の画像
     （公式に箱の画像がない PlayStation の一部は Yahoo!ショッピングの箱の画像。箱の画像がどこにもない限定版などは本体の画像）
   - トレカは公式サイトに BOX の画像がほとんどない（パックの画像だけ）ので、Yahoo!ショッピングの BOX の画像を使う

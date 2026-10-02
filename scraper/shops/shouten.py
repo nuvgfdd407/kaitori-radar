@@ -4,6 +4,8 @@
 表にはJANがないので、ページに埋め込まれた構造化データ（JSON-LD）の gtin13 から、
 商品ページのURLを手がかりにJANを引く。価格は表の「新品買取」の列を使う。
 iPhone は色ごとに「iPhone 17 Pro 256GB シルバー … SIMフリー」のような名前で載っている。
+Android は SIMフリー・キャリアごとの表（「Galaxy S26 Ultra SC-53G 12G+256G docomo [ブラック]」のように色ごと）から、
+Galaxy・Xperia・AQUOS の行を使う。
 """
 import json
 import re
@@ -11,7 +13,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from ..phones import phone_key, one_color
+from ..phones import android_key, one_color, phone_key
 from ..text import find_jan, parse_yen
 
 ID = "shouten"
@@ -29,6 +31,10 @@ IPHONE_PAGES = [f"https://www.kaitorishouten-co.jp/category/1/{i}"
 PIXEL_PAGES = [f"https://www.kaitorishouten-co.jp/model/google-pixel-{m}"
                for m in ("11", "11-pro", "11-pro-xl", "11-pro-fold", "10a")]
 
+# Android の SIMフリー / docomo / au / UQモバイル（au 版と同じ機種） / SoftBank / Y!mobile / 楽天モバイル の表
+ANDROID_PAGES = [(f"https://www.kaitorishouten-co.jp/category/1/{i}", carrier) for i, carrier in (
+    (262, "SIMフリー"), (261, "docomo"), (260, "au"), (418, "au"), (259, "SoftBank"), (258, "Y!mobile"), (419, "楽天モバイル"))]
+
 
 def fetch(http):
     offers = []
@@ -42,6 +48,12 @@ def fetch(http):
         for o in _read_table(http, page):
             if "SIMフリー" in o["name"]:
                 key = phone_key(o["name"])
+                offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
+    for page, carrier in ANDROID_PAGES:
+        for o in _read_table(http, page):
+            key = android_key(o["name"], carrier)
+            # 「セット付き」は付属品込みの別の買取なので使わない
+            if key and not o["name"].startswith("セット付き"):
                 offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
     return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
 

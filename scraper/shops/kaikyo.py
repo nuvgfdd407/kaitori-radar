@@ -8,6 +8,7 @@ POST で取得する（画面上のページ送りと同じ）。商品ごとの
 iPhone はJANがなく、「iPhone 17 Pro 256GB」「simfree未開封」のように機種＋容量と状態で載っている。
 色による減額は備考に「シルバー -32000 / グレイシャー、ブラック -8000」のように書かれていて、
 表示価格はいちばん高い色の価格（備考に出てこない色は表示価格のまま）。
+Android は携帯買取（1）> SIMフリー・キャリアごとのカテゴリにあり、色ごとに載っている。「新品」の価格が未開封品の価格。
 ポケモンカード・遊戯王はおもちゃ買取（3）> ポケモン トレーディングカード（04）・遊戯王トレーディングカード（07）にあり、
 JAN が載っている。
 """
@@ -16,7 +17,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 
-from ..phones import one_color, phone_color, phone_colors, phone_key
+from ..phones import android_key, one_color, phone_color, phone_colors, phone_key
 from ..text import find_jan, parse_yen
 
 ID = "kaikyo"
@@ -34,6 +35,8 @@ IPHONE_CATEGORIES = ["40", "39", "37", "36", "35", "34", "38", "32", "31", "30",
 # 携帯買取（1）> Google Pixel（13）> 11 / 11 Pro / 11 Pro XL / 11 Pro Fold / 10a / 10 / 10 Pro / 10 Pro XL /
 # 10 Pro Fold / 9a / 9 / 9 Pro / 9 Pro XL
 PIXEL_CATEGORIES = ["14", "15", "16", "17", "13", "09", "10", "11", "12", "04", "05", "06", "07"]
+# 携帯買取（1）> SIMフリー / Docomo / AU（UQ版も同額） / SoftBank / Y!mobile（メーカーの区別なしで全部を取る）
+ANDROID_CATEGORIES = [("02", "SIMフリー"), ("03", "docomo"), ("04", "au"), ("05", "SoftBank"), ("07", "Y!mobile")]
 # おもちゃ買取（3）> ポケモン トレーディングカード / 遊戯王トレーディングカード
 CARD_CATEGORIES = ["04", "07"]
 
@@ -66,6 +69,13 @@ def fetch(http):
             if "SIMフリー" in name:
                 key = phone_key(name)
                 offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
+                               "colors": one_color(key, name, price)})
+    for bid, carrier in ANDROID_CATEGORIES:
+        for card, name, price, url in _read_category(http, "1", bid):
+            key = android_key(name, carrier)
+            if key:
+                jan = find_jan(_text(card.select_one("small.text-muted")))
+                offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
                                "colors": one_color(key, name, price)})
     for bid in CARD_CATEGORIES:
         for card, name, price, url in _read_category(http, "3", bid):

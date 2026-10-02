@@ -6,10 +6,13 @@
 （商品データの price は買取価格ではないので使わない）
 iPhone・Pixel は携帯用の API にあり、JANのない「iPhone 17 Pro 256GB」のような機種＋容量の商品で、
 「未開封」の価格に色ごとの増減（varPrice）が付く。いちばん高い色の価格を使う。
+Android も同じ API にあり、SIMフリー・キャリアごとのカテゴリに機種＋容量の商品で載っている。
+価格の選択肢の名前は「新品未開封」「未開封」「docomo版 未開封」「銀色シール未開封」「新品」などいろいろで、
+SIMフリーの商品に「楽天版 未開封」（楽天モバイル版の価格）が付いていることもある。
 """
 import re
 
-from ..phones import phone_color, phone_key
+from ..phones import android_key, phone_color, phone_key
 
 ID = "ichome"
 NAME = "買取一丁目"
@@ -27,6 +30,9 @@ IPHONE_API = "https://www.1-chome.com/api/keitai/listPage"
 IPHONE_CATEGORIES = ["3mMfFdssdWf0cUTv", "FOwhVgpORbuy43jx", "sqwDCccRt4Woon0R"]
 # Google Pixel は機種ごとのカテゴリが多いので、商品名の検索でまとめて取る
 PIXEL_KEYWORD = "Pixel"
+# Android の SIMフリー / AU&UQ / Docomo / Softbank / Y!mobile / 楽天モバイル
+ANDROID_CATEGORIES = [("WkCcKCxwC6NInC5c", "SIMフリー"), ("GsGv92VhqBU8Mvuj", "au"), ("eUuVCbUWMuHBlQ6p", "docomo"),
+                      ("3Hrb86KrMNz86mzg", "SoftBank"), ("T0hAdlufks5mS1ez", "Y!mobile"), ("vYZ5NQzgQ1sIaXO4", "楽天モバイル")]
 PAGE_SIZE = 100
 
 
@@ -58,6 +64,25 @@ def fetch(http):
                 "colors": colors,
                 "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
             })
+    for category, carrier in ANDROID_CATEGORIES:
+        for item in _read_category(http, IPHONE_API, category):
+            name = (item.get("title") or "").strip()
+            for detail_carrier, detail in _android_details(item, carrier):
+                key = android_key(name, detail_carrier)
+                colors = _color_prices(item, key, detail)
+                if not key or (item.get("keitaiColorOptions") and not colors):
+                    continue
+                offer = {
+                    "jan": None,
+                    "key": key,
+                    "name": name,
+                    "price": max(colors.values()) if colors else detail["kbDetailPrice"],
+                    "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
+                }
+                # 色の選択肢がない商品は、どの色でも同じ価格（"colors" を付けない）
+                if colors:
+                    offer["colors"] = colors
+                offers.append(offer)
     return offers
 
 
@@ -97,6 +122,32 @@ def _unopened_prices(item, key):
     detail = next((d for d in item.get("goodsKbDetails") or [] if d.get("kbDetailName") == "未開封"), None)
     if not detail or not detail.get("kbDetailPrice"):
         return None, {}
+    colors = _color_prices(item, key, detail)
+    return (max(colors.values()) if colors else detail["kbDetailPrice"]), colors
+
+
+def _android_details(item, carrier):
+    """Android の商品の、新品未開封の価格の選択肢を（キャリア, 選択肢）で返す。
+
+    「未開封」と書かれた選択肢を使い、なければ「新品」「国内版」だけの選択肢を使う（開封品・mineo版などは使わない）。
+    """
+    if not re.search("新品|国内版", item.get("kbName") or ""):
+        return []
+    details = [d for d in item.get("goodsKbDetails") or [] if d.get("kbDetailPrice")]
+    unopened = [d for d in details if "未開封" in (d.get("kbDetailName") or "")]
+    if not unopened:
+        unopened = [d for d in details if (d.get("kbDetailName") or "").strip() in ("新品", "国内版")]
+    result = []
+    for detail in unopened:
+        label = detail.get("kbDetailName") or ""
+        if "mineo" in label.lower():
+            continue
+        result.append(("楽天モバイル" if "楽天" in label else carrier, detail))
+    return result
+
+
+def _color_prices(item, key, detail):
+    """選択肢の価格に色ごとの増減（varPrice）を足した {色: 価格}。"""
     base = detail["kbDetailPrice"]
     colors = {}
     for option in item.get("keitaiColorOptions") or []:
@@ -105,4 +156,4 @@ def _unopened_prices(item, key):
         color = phone_color(key, option.get("color"))
         if color:
             colors[color] = max(colors.get(color, 0), base + change)
-    return (max(colors.values()) if colors else base), colors
+    return colors

@@ -5,13 +5,15 @@
 各商品の「追加」ボタンに商品IDと価格が埋め込まれていて、JANはカード内に表示されている。
 iPhone は色ごとに「【未開封】iPhone 17 Pro 256GB orange」のような名前で載っている。
 トレカは JAN が載っていないので、「【BOX】ストームエメラルダ」のような名前のセット名で突き合わせる。
+Android（18）は「【未開封】Galaxy A25 5G SC-53F docomo版 [ブルー]」のように色・キャリアごとに載っていて、
+「【開封】」「【中古】」の付いた行は新品未開封ではないので使わない。
 """
 import re
 
 from bs4 import BeautifulSoup
 
 from ..cards import card_key
-from ..phones import phone_key, one_color
+from ..phones import android_key, one_color, phone_key
 from ..text import find_jan
 
 ID = "homura"
@@ -29,6 +31,9 @@ IPHONE_SUBS = [194, 193, 192, 96, 97, 95, 155, 173, 100, 101, 98, 99, 156]
 PIXEL_CATEGORY = 9
 # Pixel 10 / 10 Pro / 10 Pro XL / 10a / 9 / 9 Pro / 9 Pro Fold / 9 Pro XL / 9a（新品だけのカテゴリ）
 PIXEL_SUBS = [78, 79, 80, 184, 81, 82, 83, 84, 85]
+ANDROID_CATEGORY = 18
+# Galaxy / AQUOS / Xperia
+ANDROID_SUBS = [158, 161, 163]
 CARD_CATEGORY = 14
 # ポケモンカード（シュリンク有りのBOX・スペシャルセット） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
 CARD_SUBS = [128, 130, 132, 159, 171]
@@ -51,6 +56,12 @@ def fetch(http):
             key = phone_key(name)
             offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
                            "colors": one_color(key, name, price)})
+    for sub in ANDROID_SUBS:
+        for name, jan, price, url in _read_list(http, ANDROID_CATEGORY, sub):
+            key = android_key(name)
+            if key and not re.search(r"【(開封|中古)", name):
+                offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
+                               "colors": one_color(key, name, price)})
     for sub in CARD_SUBS:
         for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
             offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})
