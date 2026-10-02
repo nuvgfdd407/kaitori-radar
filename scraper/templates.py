@@ -53,7 +53,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
     """全ページ共通の外枠。
 
     site は build.py が用意する辞書（shops・series・products・updated など）。
-    active はシリーズの切り替えで強調するもの（"all" またはシリーズID）。
+    active は切り替えボタンで強調するもの（(ジャンルID または "all", シリーズID または None)）。
     noindex は検索結果に出さないページ（比較リストなど、人ごとに中身が違うページ）。
     """
     url = SITE_URL + path
@@ -100,7 +100,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
   <main class="inner">
 {_alerts(site)}
     <div class="controls">
-      <nav class="chips" aria-label="シリーズ">{_series_nav(site, active)}</nav>
+      {_nav(site, active, path)}
       {controls}
     </div>
 {content}
@@ -120,11 +120,23 @@ def page(site, *, path, title, description, active, content, controls="", breadc
 """
 
 
-def _series_nav(site, active):
-    items = [("all", "すべて", "/")] + [(s["id"], s["name"], f"/{s['id']}/") for s in site["series"]]
+def _nav(site, active, path):
+    """上の段はジャンル、下の段は選んでいるジャンルの中のシリーズ（シリーズが2つ以上あるときだけ）。"""
+    category_id, series_id = active or (None, None)
+    top = [("all", "すべて", "/")] + [(c["id"], c["name"], c["href"]) for c in site["categories"]]
+    html = f'<nav class="chips" aria-label="ジャンル">{_chips(top, category_id, path)}</nav>'
+    category = next((c for c in site["categories"] if c["id"] == category_id), None)
+    if category and category["own_page"]:
+        sub = [(s["id"], s["name"], f"/{s['id']}/") for s in category["series"]]
+        html += f'<nav class="chips chips--sub" aria-label="シリーズ">{_chips(sub, series_id, path)}</nav>'
+    return f'<div class="nav">{html}</div>'
+
+
+def _chips(items, active, path):
     links = []
     for key, name, href in items:
-        current = ' aria-current="page"' if key == active else ""
+        # 商品ページなど、今いるページの上の階層にあたるボタンは aria-current="true"
+        current = f' aria-current="{"page" if href == path else "true"}"' if key == active else ""
         links.append(f'<a class="chip" href="{href}"{current}>{esc(name)}</a>')
     return "".join(links)
 
@@ -199,7 +211,8 @@ READINGS = [
 # シリーズの呼び方（検索用）
 SERIES_ALIASES = {
     "pokemon": "ポケカ", "onepiece": "ワンピ ワンピカ", "ps5": "プレステ5 PS5",
-    "pixel11": "Google グーグル", "pixel10": "Google グーグル", "pixel9": "Google グーグル",
+    "pixel11": "Google グーグル アンドロイド", "pixel10": "Google グーグル アンドロイド",
+    "pixel9": "Google グーグル アンドロイド",
     "yugioh": "ユウギオウ 遊戯王OCG", "fusionworld": "ドラゴンボール ドラゴンボールスーパーカードゲーム FW",
 }
 
@@ -214,7 +227,8 @@ def search_text(p):
                           flags=re.IGNORECASE)
         if text != p["name"] and text not in readings:
             readings.append(text)
-    parts = [p["name"], p.get("model"), p.get("series_name"), *readings, SERIES_ALIASES.get(p["series"])]
+    parts = [p["name"], p.get("model"), p.get("series_name"), p["category"]["name"], *readings,
+             SERIES_ALIASES.get(p["series"])]
     return " ".join(part for part in parts if part)
 
 
@@ -391,7 +405,11 @@ def is_iphone(series):
 
 
 def item_breadcrumbs(series, p):
-    return [(SITE_NAME, "/"), (series["name"], f"/{series['id']}/"), (p["name"], f"/item/{p['jan']}/")]
+    category = p["category"]
+    crumbs = [(SITE_NAME, "/")]
+    if category["own_page"]:
+        crumbs.append((category.get("title", category["name"]), category["href"]))
+    return crumbs + [(series["name"], f"/{series['id']}/"), (p["name"], f"/item/{p['jan']}/")]
 
 
 # ---- 価格の推移（商品ページ） ---------------------------------------------------

@@ -145,6 +145,7 @@ a { color: var(--brand); }
   gap: 10px 16px;
   margin-bottom: 8px;
 }
+.nav { flex: 1 1 100%; display: grid; gap: 8px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   border: 1px solid var(--line);
@@ -156,11 +157,19 @@ a { color: var(--brand); }
   text-decoration: none;
 }
 .chip:hover { border-color: var(--brand); }
-.chip[aria-current="page"] {
+.chip[aria-current] {
   background: var(--brand);
   border-color: var(--brand);
   color: var(--brand-contrast);
   font-weight: 600;
+}
+/* 下の段（ジャンルの中のシリーズ）は、上の段より控えめにする */
+.chips--sub { padding-left: 10px; border-left: 3px solid var(--brand); }
+.chips--sub .chip { padding: 3px 10px; font-size: 12px; background: transparent; }
+.chips--sub .chip[aria-current] {
+  background: var(--surface);
+  border-color: var(--brand);
+  color: var(--brand);
 }
 .search { display: none; flex: 1 1 220px; max-width: 360px; }
 .js .search { display: block; }

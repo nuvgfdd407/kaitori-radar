@@ -91,8 +91,8 @@ def main():
             prices[jan][shop.ID] = offer
         shops.append(entry)
 
+    # ジャンル・シリーズの分け方はカタログから直接読む（scraper.build）ので、ここには入れない
     data = {
-        "series": catalog["series"],
         "shops": shops,
         "products": [
             {

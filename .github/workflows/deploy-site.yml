@@ -1,6 +1,6 @@
 name: サイトの公開
 
-# 画面のファイル（public/ の中）やページのひな形を変えてプッシュしたときに、
+# 画面のファイル（public/ の中）やページのひな形、カタログ（ジャンル・シリーズの分け方など）を変えてプッシュしたときに、
 # サイトを組み立て直して Cloudflare Pages に公開する。
 # 価格の自動更新による公開は「買取価格の更新」の中で行っている。
 on:
@@ -12,6 +12,7 @@ on:
       - "scraper/templates.py"
       - "scraper/common.py"
       - "scraper/history.py"
+      - "catalog/products.json"
       - ".github/workflows/deploy-site.yml"
   workflow_dispatch:
 

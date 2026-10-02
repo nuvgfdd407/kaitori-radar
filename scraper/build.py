@@ -4,7 +4,9 @@
 
 - public/ の中身（CSS・JavaScript・画像・価格データなど）をそのままコピーし、
   public/data/prices.json からHTMLのページとサイトマップを作る
-- 作るページ: トップページ、機種別ページ（/switch2/ など）、商品ページ（/item/<JAN>/）
+- 作るページ: トップページ、ジャンル別ページ（/nintendo/ など）、機種別ページ（/switch2/ など）、
+  商品ページ（/item/<JAN>/）
+- ジャンル・シリーズの分け方は catalog/products.json から読む
 - dist/ は毎回作り直す生成物なので、Git には入れない
 """
 import hashlib
@@ -14,7 +16,7 @@ from datetime import date, datetime, timedelta, timezone
 
 from . import history
 from . import templates as t
-from .common import PRICES, ROOT, SITE_URL, load_json
+from .common import CATALOG, PRICES, ROOT, SITE_URL, load_json
 
 PUBLIC = ROOT / "public"
 DIST = ROOT / "dist"
@@ -24,14 +26,15 @@ JST = timezone(timedelta(hours=9))
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     data = load_json(PRICES)
-    site = prepare(data)
+    site = prepare(data, load_json(CATALOG))
 
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(PUBLIC, DIST)
 
-    pages = [("/", list_page(site, None))]
-    pages += [(f"/{s['id']}/", list_page(site, s)) for s in site["series"]]
+    pages = [("/", list_page(site))]
+    pages += [(c["href"], list_page(site, category=c)) for c in site["categories"] if c["own_page"]]
+    pages += [(f"/{s['id']}/", list_page(site, series=s)) for s in site["series"]]
     pages += [(f"/item/{p['jan']}/", item_page(site, p)) for p in site["products"]]
     # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
     private_pages = [("/cart/", cart_page(site))]
@@ -43,9 +46,21 @@ def main():
     print(f"{len(pages) + len(private_pages)}ページを dist/ に作りました")
 
 
-def prepare(data):
+def prepare(data, catalog):
     """テンプレートで使う値（最高値・差益・日時の表示など）を計算しておく。"""
     today = datetime.now(JST).date().isoformat()
+    series = {s["id"]: s for s in catalog["series"]}
+    categories = []
+    for c in catalog["categories"]:
+        members = [s for s in catalog["series"] if s["category"] == c["id"]]
+        # シリーズが1つだけのジャンル（Xbox）は、ジャンルのページを作らずシリーズのページを使う
+        own_page = len(members) > 1
+        categories.append({**c, "series": members, "own_page": own_page,
+                           "href": f"/{c['id']}/" if own_page else f"/{members[0]['id']}/"})
+    category_of = {s["id"]: c for c in categories for s in c["series"]}
+    # 価格データより後にカタログでシリーズを付け替えても、すぐに反映されるようにする
+    series_of = {p["jan"]: p["series"] for p in catalog["products"]}
+    data["products"] = [p for p in data["products"] if series_of.get(p["jan"]) in series]
     records = history.load(date.fromisoformat(today), t.HISTORY_DAYS)
     shops = data["shops"]
     for shop in shops:
@@ -55,7 +70,9 @@ def prepare(data):
         prices = [(s, p["prices"][s["id"]]["price"]) for s in shops if s["id"] in p["prices"]]
         best = max((price for _, price in prices), default=None)
         p["index"] = index
-        p["series_name"] = next((s["name"] for s in data["series"] if s["id"] == p["series"]), "")
+        p["series"] = series_of[p["jan"]]
+        p["series_name"] = series[p["series"]]["name"]
+        p["category"] = category_of[p["series"]]
         p["best"] = best
         p["best_shops"] = [s for s, price in prices if price == best]
         # 発売前の買取価格は仮のことが多いので、差益は出さない
@@ -73,7 +90,8 @@ def prepare(data):
         p["change"] = best - before[-1] if best and before else None
     return {
         "shops": shops,
-        "series": data["series"],
+        "categories": categories,
+        "series": catalog["series"],
         "products": data["products"],
         "updated": format_time(data["updated_at"]),
         "css": versioned("style.css"),
@@ -87,26 +105,13 @@ def versioned(name):
     return f"/{name}?v={digest}"
 
 
-def list_page(site, series):
-    """トップページ（series が None）と機種別ページ。"""
-    if series is None:
-        products = site["products"]
-        shops = site["shops"]
-        n = len(shops)
-        path, active = "/", "all"
-        title = f"{t.SITE_NAME}｜Switch 2・iPhone・ポケカなどの新品買取価格を比較"
-        heading = f"ゲーム機・スマホ・トレカの新品買取価格を{n}店舗で比較"
-        description = (
-            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deckなどのゲーム機、iPhone・Google Pixel、"
-            "ポケモンカード・ワンピースカードの未開封BOXの買取価格を買取店ごとに比較。"
-            "いちばん高く売れるお店と、定価との差額がひと目でわかります。"
-        )
-        lead = f"ゲーム機・スマホ・トレカ、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
-    else:
+def list_page(site, *, category=None, series=None):
+    """トップページ（どちらも None）と、ジャンル別のページ、機種別のページ。"""
+    if series:
         products = [p for p in site["products"] if p["series"] == series["id"]]
-        shops = series_shops(site, series)
+        shops = shops_for(site, products)
         n = len(shops)
-        path, active = f"/{series['id']}/", series["id"]
+        path, active = f"/{series['id']}/", (category_of(site, series)["id"], series["id"])
         title = f"{series['name']}の新品買取価格比較【{n}店舗】｜{t.SITE_NAME}"
         heading = f"{series['name']}の新品買取価格を{n}店舗で比較"
         lead = f"{series['name']}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
@@ -116,6 +121,32 @@ def list_page(site, series):
         description = f"{series['name']}の新品買取価格を{n}店舗で比較。" + (
             f"{top['name']}は最高{t.yen(top['best'])}（{t.best_shop_names(top, full=True)}）。" if top else ""
         ) + "15分ごとに自動更新。"
+    elif category:
+        ids = [s["id"] for s in category["series"]]
+        products = [p for p in site["products"] if p["series"] in ids]
+        shops = shops_for(site, products)
+        n = len(shops)
+        name = category.get("title", category["name"])
+        names = "・".join(s["name"] for s in category["series"])
+        path, active = category["href"], (category["id"], None)
+        title = f"{name}の新品買取価格比較【{n}店舗】｜{t.SITE_NAME}"
+        heading = f"{name}の新品買取価格を{n}店舗で比較"
+        lead = f"{names}の{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        description = (f"{names}の新品買取価格を{n}店舗で比較。"
+                       "いちばん高く売れるお店と、定価との差額がひと目でわかります。15分ごとに自動更新。")
+    else:
+        products = site["products"]
+        shops = site["shops"]
+        n = len(shops)
+        path, active = "/", ("all", None)
+        title = f"{t.SITE_NAME}｜Switch 2・iPhone・ポケカなどの新品買取価格を比較"
+        heading = f"ゲーム機・スマホ・トレカの新品買取価格を{n}店舗で比較"
+        description = (
+            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deckなどのゲーム機、iPhone・Google Pixel、"
+            "ポケモンカード・ワンピースカードの未開封BOXの買取価格を買取店ごとに比較。"
+            "いちばん高く売れるお店と、定価との差額がひと目でわかります。"
+        )
+        lead = f"ゲーム機・スマホ・トレカ、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
 
     content = f"""    <h1 class="page-title">{t.esc(heading)}</h1>
     <p class="lead">{t.esc(lead)}</p>
@@ -126,9 +157,12 @@ def list_page(site, series):
                   content=content, controls=t.SEARCH_CONTROL + t.SORT_CONTROL)
 
 
-def series_shops(site, series):
-    """そのシリーズの商品を1つでも扱っている店舗（iPhone を扱わない店舗などは、表や店舗数から外す）。"""
-    products = [p for p in site["products"] if p["series"] == series["id"]]
+def category_of(site, series):
+    return next(c for c in site["categories"] if c["id"] == series["category"])
+
+
+def shops_for(site, products):
+    """その商品を1つでも扱っている店舗（iPhone を扱わない店舗などは、表や店舗数から外す）。"""
     shops = [s for s in site["shops"] if any(s["id"] in p["prices"] for p in products)]
     return shops or site["shops"]
 
@@ -136,7 +170,7 @@ def series_shops(site, series):
 def item_page(site, p):
     series = next(s for s in site["series"] if s["id"] == p["series"])
     siblings = [q for q in site["products"] if q["series"] == p["series"]]
-    shops = series_shops(site, series)
+    shops = shops_for(site, siblings)
     n = len(shops)
     if p["best"]:
         best = f"最高{t.yen(p['best'])}（{t.best_shop_names(p, full=True)}）"
@@ -145,7 +179,7 @@ def item_page(site, p):
     else:
         title = f"{p['name']}の買取価格比較｜{t.SITE_NAME}"
         description = f"{p['name']}の新品買取価格を{n}店舗で比較しています。"
-    return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=series["id"],
+    return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=(p["category"]["id"], series["id"]),
                   content=t.item_content(site, p, series, siblings, shops),
                   breadcrumbs=t.item_breadcrumbs(series, p))
 
