@@ -3,7 +3,8 @@
 価格一覧（/price/index.php?ci=<キャリア・ジャンル>&mi=<メーカー・機種>）の表に、商品名・買取価格が載っている。
 1ページ50件で、続きは &page=N。ゲーム機・トレカは商品名の中に JAN が書かれている（2つ書かれていることもある）。
 iPhone は「iPhone 18 Pro 256GB【APPLEストア版】」「…【docomo/au/SoftBank/楽天版】」のように機種＋容量ごとで、
-色による価格の違いはない（APPLEストア版の新品価格は、Apple Store の購入時の書類がある場合の価格）。
+色による価格の違いはない。APPLEストア版の新品価格は、Apple Store で買ったことがわかる書類がある場合の価格なので、
+その条件を "note" として価格と一緒に載せる。
 Android は SIMフリー・キャリアごとの一覧から、Galaxy・Xperia・AQUOS・Pixel を取る。
 """
 import re
@@ -37,6 +38,7 @@ ANDROID_MAKERS = [
     (5, "Y!mobile", [441, 56, 186]),
 ]
 MAX_PAGES = 10
+APPLE_STORE_NOTE = "Apple Storeで購入した証明が必要"
 _JAN = re.compile(r"(?<!\d)\d{13}(?!\d)")
 
 
@@ -49,7 +51,10 @@ def fetch(http):
         for name, price, url in _read_list(http, ci, mi):
             key = phone_key(name)
             if key and phone_colors(key):
-                offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url})
+                offer = {"jan": None, "key": key, "name": name, "price": price, "url": url}
+                if "APPLEストア版" in name:
+                    offer["note"] = APPLE_STORE_NOTE
+                offers.append(offer)
     for ci, carrier, makers in ANDROID_MAKERS:
         for mi in makers:
             for name, price, url in _read_list(http, ci, mi):

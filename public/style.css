@@ -264,6 +264,7 @@ a { color: var(--brand); }
 }
 .item[open] .chevron::before { transform: translateY(2px) rotate(-135deg); }
 .item-shops { padding: 4px 12px 12px 66px; background: var(--surface-2); }
+.shop-note { display: block; font-size: 11px; font-weight: 400; color: var(--muted); }
 .shop-prices { list-style: none; margin: 0; padding: 0; max-width: 440px; }
 .shop-prices li {
   display: grid;

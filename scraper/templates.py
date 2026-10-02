@@ -311,7 +311,7 @@ def _shop_prices(p, shops):
         title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         classes = " ".join(c for c in ["is-best" if best else "", "is-stale" if not shop["ok"] else ""] if c)
         items.append(
-            f'<li class="{classes}"><span class="shop-name">{esc(shop["name"])}</span>'
+            f'<li class="{classes}"><span class="shop-name">{esc(shop["name"])}{_offer_note(offer)}</span>'
             f'<span class="shop-price">{_link(offer.get("url"), yen(offer["price"]), title)}</span>'
             f'<span class="shop-diff">{diff}</span></li>'
         )
@@ -321,6 +321,11 @@ def _shop_prices(p, shops):
         f'<div class="item-shops"><ul class="shop-prices">{"".join(items)}</ul>'
         f'<a class="item-more" href="/item/{p["jan"]}/">価格の推移・商品の詳細 →</a></div>'
     )
+
+
+def _offer_note(offer):
+    """店舗の買取条件の注記（例: Apple Store の購入証明が必要）。"""
+    return f'<small class="shop-note">※{esc(offer["note"])}</small>' if offer.get("note") else ""
 
 
 def _profit_cell(p):
@@ -346,7 +351,7 @@ def item_content(site, p, series, siblings, shops):
         classes = " ".join(c for c in ["is-best" if diff == 0 else "", "is-stale" if not shop["ok"] else ""] if c)
         title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         rows.append(
-            f'<tr class="{classes}"><th scope="row">{esc(shop["name"])}</th>'
+            f'<tr class="{classes}"><th scope="row">{esc(shop["name"])}{_offer_note(offer)}</th>'
             f'<td class="num price">{_link(offer.get("url"), yen(offer["price"]), title)}</td>'
             f'<td class="num diff">{diff_label}</td></tr>'
         )
@@ -569,7 +574,10 @@ def signed_pct(ratio):
 
 
 def best_shop_names(p, full=False):
-    return "・".join(s["name"] if full else s["short"] for s in p["best_shops"])
+    """最高値の店舗名。一覧の略称では、買取に条件がある店舗（Apple Store の購入証明が必要など）に「※」を付ける。"""
+    if full:
+        return "・".join(s["name"] for s in p["best_shops"])
+    return "・".join(s["short"] + ("※" if p["prices"][s["id"]].get("note") else "") for s in p["best_shops"])
 
 
 def thumb(p, large=False):

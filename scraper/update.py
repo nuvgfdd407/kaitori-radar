@@ -82,7 +82,9 @@ def main():
                     # 同じ商品が複数回（ページ内の重複・別のJAN）載っていたら、高い方を使う
                     current = found.get(target)
                     if current is None or price > current["price"]:
-                        found[target] = {"price": price, "url": offer["url"]}
+                        # 店舗の条件（「Apple Store の購入証明が必要」など）があれば、価格と一緒に載せる
+                        found[target] = {"price": price, "url": offer["url"],
+                                         **({"note": offer["note"]} if offer.get("note") else {})}
                 if not targets and jan not in ignored and offer["price"] >= REPORT_MIN_PRICE:
                     unmatched.append({"shop": shop.NAME, **offer})
             if not found:
