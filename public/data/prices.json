@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T14:39:29+09:00",
+  "updated_at": "2026-10-02T14:54:08+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-02T14:54:08+09:00"
     },
     {
       "id": "ichome",
@@ -4322,7 +4323,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "wiki": {
-          "price": 257000,
+          "price": 255000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-burgundy"
         },
         "morimori": {
@@ -4379,7 +4380,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7392"
         },
         "wiki": {
-          "price": 235000,
+          "price": 236000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-black"
         },
         "morimori": {
@@ -4493,7 +4494,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7391"
         },
         "wiki": {
-          "price": 231000,
+          "price": 230000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-silver"
         },
         "morimori": {
