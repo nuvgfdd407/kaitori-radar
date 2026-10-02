@@ -8,8 +8,10 @@
   ただし、同じ店舗が別々に載せている商品（ナミと「ナミ SP」など）は、別のカードなのでまとめない
 - すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
-- 画像は、トレカラウンジに載っているカードはトレカラウンジのカード画像（どのカードも同じ撮り方でそろっている）。
-  ほかの店舗だけのカードは画像なし
+- 画像は、トレカラウンジ → 買取ホムラ → 森森買取 の順に、載っている店舗のカード画像を使う（IMAGE_SHOPS）。
+  森森買取は一覧に画像がないので、画像のないカードだけ商品ページを見にいく。
+  森森買取の画像には PSA のケースごと写したものもあり、"image_crop": "slab" を付けてカードの部分だけ切り抜く
+  （scraper.images）。上の店舗に載ったら、その店舗の画像に替える
 - 並び順は、ゲームごとに、すでにある商品は今のまま、新しい商品はその後ろに最高値の高い順で足す
   （毎日自動で動かすので、変化がなければファイルを書き換えない）
 """
@@ -29,6 +31,8 @@ SERIES = {
 }
 # 名前を付けるときに優先する店舗（トレカラウンジは名前・レアリティ・番号が別々に載っていて読みやすい）
 SHOP_ORDER = ["lounge", "homura", "morimori"]
+# 画像を使う店舗（先のものほど優先）
+IMAGE_SHOPS = {"lounge": lounge.NAME, "homura": homura.NAME, "morimori": morimori.NAME}
 
 
 def main():
@@ -41,7 +45,17 @@ def main():
 
     catalog = load_json(CATALOG)
     before = json.dumps(catalog, ensure_ascii=False)
-    added = merge(catalog, offers)
+    added, lookups = merge(catalog, offers)
+    if lookups:
+        print(f"森森買取の商品ページで画像を探します（{len(lookups)}件）")
+    for product, url in lookups:
+        try:
+            image = morimori.psa_image(jobs[2][2], url)
+        except Exception as e:  # noqa: BLE001 - 画像が取れなくてもカタログの更新は続ける
+            print(f"{product['name']}: 画像を取得できませんでした（{e}）", file=sys.stderr)
+            continue
+        if image:
+            _set_image(product, image, url, "morimori")
     changed = json.dumps(catalog, ensure_ascii=False) != before
     if changed:
         write_catalog(catalog)
@@ -60,6 +74,7 @@ def merge(catalog, offers):
     by_key = {key: p for p in products for key in p.get("keys", [])}
     shops = {}  # 商品 → {店舗: その店舗での書き方}
     best = {}
+    images = {}  # 商品 → 画像を使う店舗の（店舗, 出品）
     added = 0
     offers = sorted(offers, key=lambda o: SHOP_ORDER.index(o["shop"]))
     for o in offers:
@@ -73,11 +88,22 @@ def merge(catalog, offers):
             added += 1
         if key not in product["keys"]:
             product["keys"].append(key)
-        if o["shop"] == "lounge" and o["psa"].get("image") and not product.get("image_url"):
-            product.update({"image_url": o["psa"]["image"], "image_page": o["psa"]["page"], "image_source": "トレカラウンジ"})
+        if _image_rank(o["shop"]) < _image_rank(images.get(product["jan"], (None,))[0]):
+            images[product["jan"]] = (o["shop"], o)
         shops.setdefault(product["jan"], {}).setdefault(o["shop"], key)
         by_key[key] = product
         best[product["jan"]] = max(best.get(product["jan"], 0), o["price"] or 0)
+    lookups = []  # 森森買取の商品ページで画像を探す（商品, 商品ページのURL）
+    by_name = {v: k for k, v in IMAGE_SHOPS.items()}
+    for p in products:
+        shop, o = images.get(p["jan"], (None, None))
+        current = by_name.get(p.get("image_source")) if p.get("image_url") else None
+        if shop is None or _image_rank(shop) >= _image_rank(current):
+            continue
+        if shop == "morimori":
+            lookups.append((p, o["url"]))
+        elif o["psa"].get("image"):
+            _set_image(p, o["psa"]["image"], o["psa"]["page"], shop)
     order = [s["id"] for s in SERIES.values()]
     products.sort(key=lambda p: (order.index(p["series"]) if p["series"] in order else 99, p["jan"] not in position,
                                  position.get(p["jan"], 0), -best.get(p["jan"], 0)))
@@ -86,7 +112,18 @@ def merge(catalog, offers):
     tcg = {s["id"] for s in catalog["series"] if s["category"] == "tcg" and s["id"] not in psa_ids}
     i = max((n for n, p in enumerate(others) if p["series"] in tcg), default=len(others) - 1) + 1
     catalog["products"] = others[:i] + products + others[i:]
-    return added
+    return added, lookups
+
+
+def _image_rank(shop):
+    return list(IMAGE_SHOPS).index(shop) if shop in IMAGE_SHOPS else len(IMAGE_SHOPS)
+
+
+def _set_image(product, url, page, shop):
+    product.update({"image_url": url, "image_page": page, "image_source": IMAGE_SHOPS[shop]})
+    product.pop("image_crop", None)
+    if shop == "morimori":
+        product["image_crop"] = "slab"
 
 
 def _parts(key):

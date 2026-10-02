@@ -9,7 +9,7 @@ JAN は、先頭が0のもの（Steam Deck など）を、0を省いた12桁で�
 iPad・Apple Watch も同じ一覧で、色ごと（Watch はバンドごと）に JAN と型番が載っている。
 AirPods は専用のカテゴリがないので、ヘッドホン・イヤホンの一覧から「AirPods」の行だけを使う。
 トレカの一覧には PSA 鑑定品（「ポケモンカード PSA10 リーリエ SR 119/114」、仮のJAN付き）も載っていて、
-カード名・番号・点数で突き合わせる。
+カード名・番号・点数で突き合わせる。鑑定品の画像は一覧になく、商品ページ（psa_image）にだけある。
 robots.txt に Crawl-delay: 5 があるので、アクセスは5秒ずつ空ける。
 """
 import re
@@ -65,6 +65,14 @@ def fetch(http):
 def fetch_psa(http):
     """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
     return [o for category in CARD_GAMES for o in _psa_offers(_read_list(http, category), category)]
+
+
+def psa_image(http, url):
+    """PSA 鑑定品の商品ページにある画像の URL（なければ None）。
+    カード単体の画像のほか、PSA のケースごと写した画像もある（scraper.images で切り抜く）。"""
+    soup = BeautifulSoup(http.get(url).content, "html.parser")
+    img = soup.select_one('img[data-src*="/files/"]')
+    return urljoin(URL, img["data-src"]) if img else None
 
 
 def _psa_offers(rows, category):

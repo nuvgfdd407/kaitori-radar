@@ -9,8 +9,10 @@ Android（18）は「【未開封】Galaxy A25 5G SC-53F docomo版 [ブルー]�
 「【開封】」「【中古】」の付いた行は新品未開封ではないので使わない。
 iPad・Apple Watch・AirPods はその他（16）にあり、JAN と型番が載っている（AirPods はイヤホンの中にある）。
 PSA 鑑定品（21）はポケモンカードの PSA10 だけで、「PSA10 ブラッキーVMAX SA 095/069」のような名前で載っている。
+鑑定品の画像は、カード単体の画像（PSA のケースは写っていない）。
 """
 import re
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -84,18 +86,19 @@ def fetch(http):
 def fetch_psa(http):
     """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
     offers = []
-    for name, jan, price, url in _read_list(http, PSA_CATEGORY, PSA_SUB):
+    for name, jan, price, url, image in _read_list(http, PSA_CATEGORY, PSA_SUB, with_image=True):
         parsed = parse_name(name)
         key = psa_key("pokemon", parsed[0], parsed[1], parsed[3]) if parsed else None
         if key:
             offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
                            "psa": {"game": "pokemon", "grade": parsed[0], "name": parsed[1], "rarity": parsed[2],
-                                   "number": parsed[3]}})
+                                   "number": parsed[3], "image": image, "page": url}})
     return offers
 
 
-def _read_list(http, category, sub):
-    """（商品名, JAN, 価格, 商品ページのURL）を順に返す。"""
+def _read_list(http, category, sub, with_image=False):
+    """（商品名, JAN, 価格, 商品ページのURL）を順に返す。with_image なら、最後に商品の画像の URL も付ける
+    （PSA 鑑定品の画像はカード単体の画像）。"""
     for page in range(1, MAX_PAGES + 1):
         params = {
             "q[product_sub_category_id_eq]": sub,
@@ -110,12 +113,16 @@ def _read_list(http, category, sub):
             card = button.find_parent(lambda tag: tag.find("h5") is not None)
             if card is None:
                 continue
-            yield (
+            row = (
                 card.find("h5").get_text(strip=True),
                 find_jan(card.get_text(" ")),
                 int(button["data-product-price"]),
                 f"{URL}products/{button['data-product-id']}",
             )
+            if with_image:
+                img = card.parent.find("img")  # 画像はカード名の欄の隣にある
+                row += (urljoin(URL, img.get("data-src") or img["src"]) if img and (img.get("data-src") or img.get("src")) else None,)
+            yield row
         if not buttons or not _has_page(soup, page + 1):
             break
 

@@ -2,6 +2,7 @@
 
 商品に "image_url"（メーカー公式サイトの本体画像のURL）があれば、その画像を使う。
 メーカー以外の画像（PSA 鑑定品のトレカラウンジの画像など）は、"image_source" に出典の名前を書く。
+"image_crop": "slab" の商品は、PSA のケースごと写した画像なら、カードの部分だけ切り抜く（SLAB_CARD）。
 ないときだけ、Yahoo!ショッピングの商品検索APIで JAN から探す。
 
     python -m scraper.images                        # 画像がまだない商品などの画像を探す
@@ -37,6 +38,10 @@ IMAGE_DIR = ROOT / "public" / "images"
 LARGE_URL = "https://item-shopping.c.yimg.jp/i/l/{code}"  # 600px の画像（i/g/ は 146px）
 IMAGE_SIZE = 240   # 保存する画像の一辺（商品ページの大きい画像の2倍）
 IMAGE_FILL = 0.86  # 商品が正方形に占める大きさ
+# PSA のケースごと写した画像（縦横比が SLAB_RATIO より細長い）でカードが写っている範囲（左・上・右・下の割合）。
+# 森森買取の画像（800×1350 など）で、ケースの絵・実物の写真のどちらもこの範囲に収まる
+SLAB_CARD = (0.1, 0.268, 0.9, 0.924)
+SLAB_RATIO = 0.65
 IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
 RESULTS = 20     # 1商品あたりに見る出品の数
 RETRY_WAITS = [15, 30, 60]  # 秒。アクセス過多（HTTP 429）と言われたときに待ってやり直す
@@ -133,10 +138,11 @@ def official_image(session, product, old):
     image = {"src": url, "url": product.get("image_page") or "", "origin": url,
              **({"source": product["image_source"]} if product.get("image_source") else {})}
     same = bool(old) and old.get("origin") == url and (IMAGE_DIR / f"{product['jan']}.jpg").exists()
-    return image if save(session, product["jan"], image, refresh=not same) else None
+    return image if save(session, product["jan"], image, refresh=not same,
+                         slab=product.get("image_crop") == "slab") else None
 
 
-def save(session, jan, image, refresh=False):
+def save(session, jan, image, refresh=False, slab=False):
     """画像を整えて public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
     path = IMAGE_DIR / f"{jan}.jpg"
     if refresh or not path.exists():
@@ -146,7 +152,7 @@ def save(session, jan, image, refresh=False):
         if data is None:
             return False
         IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(normalize(data))
+        path.write_bytes(normalize(data, slab=slab))
     image["src"] = f"/images/{jan}.jpg"
     return True
 
@@ -198,9 +204,13 @@ def _product_box(mask):
     return (region[0] + inner[0], region[1] + inner[1], region[0] + inner[2], region[1] + inner[3]) if inner else None
 
 
-def normalize(data):
-    """余白を切り取り、白い正方形の中央に同じ大きさで置いた JPEG にする。"""
+def normalize(data, slab=False):
+    """余白を切り取り、白い正方形の中央に同じ大きさで置いた JPEG にする。
+    slab なら、PSA のケースごと写した画像からカードの部分だけ切り抜く。"""
     image = Image.open(io.BytesIO(data))
+    if slab and image.width / image.height < SLAB_RATIO:
+        w, h = image.size
+        image = image.crop(tuple(round(v * (w if n % 2 == 0 else h)) for n, v in enumerate(SLAB_CARD)))
     # 背景が透明な画像（公式サイトの PNG など）は、白い背景に載せる
     if image.mode in ("RGBA", "LA", "P"):
         image = image.convert("RGBA")
