@@ -38,6 +38,7 @@ def main():
     pages += [(c["href"], list_page(site, category=c)) for c in site["categories"] if c["own_page"]]
     pages += [(f"/{s['id']}/", list_page(site, series=s)) for s in site["series"]]
     pages += [(f"/item/{p['jan']}/", item_page(site, p)) for p in site["products"]]
+    pages += [("/ranking/", ranking_page(site))]
     # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
     private_pages = [("/cart/", cart_page(site))]
     for path, html in pages + private_pages:
@@ -91,6 +92,11 @@ def prepare(data, catalog):
         # 前日比: 今日より前で最後に記録がある日の最高値と比べる
         before = [max(prices.values()) for day, prices in p["history"] if day < today and prices]
         p["change"] = best - before[-1] if best and before else None
+        # 値動きランキング用: 前日と今の両方に価格がある店舗だけで比べた最高値（店舗を足した日に順位が乱れないように）
+        last = next(((day, prices) for day, prices in reversed(p["history"]) if day < today and prices), None)
+        now = {s["id"]: price for s, price in prices}
+        common = [sid for sid in now if last and sid in last[1]]
+        p["move"] = (last[0], max(last[1][sid] for sid in common), max(now[sid] for sid in common)) if common else None
     # PSA 鑑定品はカタログの順が追加した順なので、標準の並びは最高値の高い順にする（買取が止まっているものは最後）
     psa = iter(sorted((p for p in data["products"] if p["series"].startswith("psa-")), key=lambda p: -(p["best"] or 0)))
     data["products"] = [next(psa) if p["series"].startswith("psa-") else p for p in data["products"]]
@@ -210,6 +216,25 @@ def item_page(site, p):
     return t.page(site, path=f"/item/{p['jan']}/", title=title, description=description, active=(p["category"]["id"], series["id"]),
                   content=t.item_content(site, p, series, siblings, shops),
                   breadcrumbs=t.item_breadcrumbs(series, p))
+
+
+RANKING_SIZE = t.RANKING_SHOWN
+RANKING_MIN_PRICE = 3000  # 前日の最高値がこれより安い商品は、少しの変動で率が大きく出るので外す
+
+
+def ranking_page(site):
+    """前日と比べて、最高値が大きく上がった・下がった商品（率の大きい順）。"""
+    moves = [(p, before, now) for p in site["products"] if p.get("move")
+             for _, before, now in [p["move"]] if before >= RANKING_MIN_PRICE and now != before]
+    ups = sorted((m for m in moves if m[2] > m[1]), key=lambda m: -m[2] / m[1])[:RANKING_SIZE]
+    downs = sorted((m for m in moves if m[2] < m[1]), key=lambda m: m[2] / m[1])[:RANKING_SIZE]
+    days = sorted({p["move"][0] for p in site["products"] if p.get("move")})
+    since = f"{int(days[-1][5:7])}/{int(days[-1][8:])}" if days else "前日"
+    title = f"買取価格の値上がり・値下がりランキング｜{t.SITE_NAME}"
+    description = (f"ゲーム機・スマホ・トレカ・PSA鑑定品の買取価格が、前日（{since}）から大きく上がった商品・下がった商品のランキング。"
+                   f"{site['updated']}時点。")
+    return t.page(site, path="/ranking/", title=title, description=description, active=("ranking", None),
+                  content=t.ranking_content(site, ups, downs, since, RANKING_MIN_PRICE))
 
 
 def cart_page(site):

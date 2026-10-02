@@ -640,3 +640,17 @@ body:has(#cart-bar) { padding-bottom: 72px; }
   font-weight: 400;
 }
 .result-price { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+/* 値動きランキング */
+.ranking .rank {
+  flex: none;
+  width: 1.8em;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.ranking .result-price small { display: inline; }
+.ranking .move { display: block; font-size: 13px; }
+.ranking .move.up { color: var(--pos); }
+.ranking .move.down { color: var(--neg); }

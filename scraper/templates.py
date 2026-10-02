@@ -126,7 +126,8 @@ def page(site, *, path, title, description, active, content, controls="", breadc
 def _nav(site, active, path):
     """上の段はジャンル、下の段は選んでいるジャンルの中のシリーズ（シリーズが2つ以上あるときだけ）。"""
     category_id, series_id = active or (None, None)
-    top = [("all", "すべて", "/")] + [(c["id"], c["name"], c["href"]) for c in site["categories"]]
+    top = ([("all", "すべて", "/")] + [(c["id"], c["name"], c["href"]) for c in site["categories"]]
+           + [("ranking", "値動きランキング", "/ranking/")])
     html = f'<nav class="chips" aria-label="ジャンル">{_chips(top, category_id, path)}</nav>'
     category = next((c for c in site["categories"] if c["id"] == category_id), None)
     if category and category["own_page"]:
@@ -571,6 +572,34 @@ def add_button(p, label=False):
         f'<button type="button" class="{size}" data-add="{p["jan"]}" aria-pressed="false"'
         f' aria-label="{esc(p["name"])}を比較リストに追加"><span class="add-icon" aria-hidden="true"></span>{text}</button>'
     )
+
+
+RANKING_SHOWN = 30
+
+
+def ranking_content(site, ups, downs, since, min_price):
+    """値動きランキングのページ。ups・downs は（商品, 前日の最高値, 今の最高値）の並び。"""
+    def items(moves):
+        if not moves:
+            return '<p class="empty">前日から最高値が変わった商品は、まだありません（店舗の価格は主に10時ごろから更新されます）。</p>'
+        rows = "".join(
+            f'<li><a class="result" href="/item/{esc(p["jan"])}/"><span class="rank">{n}</span>'
+            + (f'<img src="{esc(p["image"]["src"])}" alt="" width="44" height="44" loading="lazy" decoding="async">'
+               if str((p.get("image") or {}).get("src", "")).startswith("/images/")
+               else '<span class="thumb-empty" aria-hidden="true"></span>')
+            + f'<span class="result-name">{esc(p["name"])}<small>{esc(p["series_name"])}</small></span>'
+            f'<span class="result-price">{yen(now)}<small>{yen(before)} → </small>'
+            f'<span class="move {"up" if now > before else "down"}">{signed_yen(now - before)}（{signed_pct(now / before)}）</span>'
+            f'</span></a></li>'
+            for n, (p, before, now) in enumerate(moves, 1))
+        return f'<ol class="search-results ranking">{rows}</ol>'
+    return f"""    <h1 class="page-title">買取価格の値上がり・値下がりランキング</h1>
+    <p class="lead">前日（{esc(since)}）の最高値と比べて、買取価格が大きく上がった商品・下がった商品です（{esc(site["updated"])}時点）。
+      前日と今の両方に価格がある店舗だけで比べ、変化の率が大きい順にそれぞれ最大{RANKING_SHOWN}件並べています。前日の最高値が{yen(min_price)}未満の商品は除いています。</p>
+    <h2 class="section-title">値上がり</h2>
+    {items(ups)}
+    <h2 class="section-title">値下がり</h2>
+    {items(downs)}"""
 
 
 def cart_content():
