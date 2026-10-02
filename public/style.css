@@ -451,16 +451,43 @@ a.product:hover { text-decoration: underline; }
   right: 16px;
   bottom: 16px;
   z-index: 10;
-  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
   border-radius: 999px;
   background: var(--brand);
   color: var(--brand-contrast);
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgb(16 24 40 / 20%);
+  box-shadow: 0 4px 12px rgb(16 24 40 / 25%);
 }
-.cart-bar strong { font-size: 16px; }
+.cart-bar:hover { filter: brightness(1.08); }
+/* 右下のボタンが一番下の行やフッターに重ならないように */
+body:has(#cart-bar) { padding-bottom: 72px; }
+.cart-badge {
+  min-width: 22px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--brand-contrast);
+  color: var(--brand);
+  font-size: 13px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.cart-bar--bump { animation: cart-bump .4s ease; }
+@keyframes cart-bump {
+  30% { transform: scale(1.15); }
+  60% { transform: scale(.95); }
+}
+@media (prefers-reduced-motion: reduce) { .cart-bar--bump { animation: none; } }
+/* スマホでは文字を出さず、丸いアイコンだけにする */
+@media (max-width: 480px) {
+  .cart-bar { padding: 14px; }
+  .cart-bar-label { display: none; }
+  .cart-badge { position: absolute; top: -4px; right: -4px; }
+}
 
 .cart-table .qty { white-space: nowrap; }
 .qty-btn {

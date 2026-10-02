@@ -181,6 +181,10 @@ async function showPage(path, { push, focus }) {
 
 const CART_KEY = 'kaitori-radar:cart';
 const CART_TTL = 24 * 60 * 60 * 1000;
+// 右下の比較リストのボタンのアイコン（カート）
+const CART_ICON = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" '
+  + 'd="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.6 3H21l-2 8H7.4L4.4 2H1v2h3.4l'
+  + '2.9 13H19v-2H8.6l-.4-2H20l2.6-10H6.2L5.6 2Z"/></svg>';
 const MAX_QTY = 99;
 
 let cart = loadCart();   // { JAN: 数量 }
@@ -270,11 +274,11 @@ function updateCartUi() {
   renderCartPage();
 }
 
-// 画面下の「比較リストを見る」
+// 画面の右下にいつも出しておく比較リストのボタン（カートのアイコンと、入っている数）
 function renderCartBar() {
   const count = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
   let bar = $('cart-bar');
-  if (!count || cartRoot) {
+  if (cartRoot) {
     if (bar) bar.remove();
     return;
   }
@@ -285,7 +289,19 @@ function renderCartBar() {
     bar.href = '/cart/';
     document.body.appendChild(bar);
   }
-  bar.innerHTML = `比較リスト <strong>${count}</strong>点を見る →`;
+  const previous = Number(bar.dataset.count || 0);
+  bar.dataset.count = String(count);
+  bar.setAttribute('aria-label', count ? `比較リスト（${count}点）を見る` : '比較リスト（空）');
+  bar.title = count ? '比較リストを見る' : '「＋」で商品を追加すると、どの店舗に売ると一番高いかを比較できます';
+  bar.innerHTML = `${CART_ICON}<span class="cart-bar-label">比較リスト</span>`
+    + (count ? `<span class="cart-badge">${count}</span>` : '');
+  // 追加したときに、ボタンを少し弾ませて場所を知らせる
+  if (bar.dataset.ready && count > previous) {
+    bar.classList.remove('cart-bar--bump');
+    void bar.offsetWidth;
+    bar.classList.add('cart-bar--bump');
+  }
+  bar.dataset.ready = '1';
 }
 
 function renderCartPage() {
