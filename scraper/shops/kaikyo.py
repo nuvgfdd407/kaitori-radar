@@ -16,7 +16,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_color, iphone_colors, iphone_key
+from ..phones import one_color, phone_color, phone_colors, phone_key
 from ..text import find_jan, parse_yen
 
 ID = "kaikyo"
@@ -31,6 +31,9 @@ CATEGORIES = ["11", "01", "02", "03", "04", "07", "09"]
 # 携帯買取（1）> iPhone（01）> 18 Pro Max / 18 Pro / 17 Pro Max / 17 Pro / Air / 17 / 17e /
 # 16 Pro Max / 16 Pro / 16 / 16e / 16 Plus
 IPHONE_CATEGORIES = ["40", "39", "37", "36", "35", "34", "38", "32", "31", "30", "33", "29"]
+# 携帯買取（1）> Google Pixel（13）> 11 / 11 Pro / 11 Pro XL / 11 Pro Fold / 10a / 10 / 10 Pro / 10 Pro XL /
+# 10 Pro Fold / 9a / 9 / 9 Pro / 9 Pro XL
+PIXEL_CATEGORIES = ["14", "15", "16", "17", "13", "09", "10", "11", "12", "04", "05", "06", "07"]
 # おもちゃ買取（3）> ポケモン トレーディングカード / 遊戯王トレーディングカード
 CARD_CATEGORIES = ["04", "07"]
 
@@ -51,11 +54,19 @@ def fetch(http):
         for card, name, price, url in _read_category(http, "1", "01", mid):
             # 状態は「simfree未開封」「simfree開封」のように書かれている
             if "未開封" in name:
-                key = iphone_key(name)
+                key = phone_key(name)
                 labels = [t.get_text(" ", strip=True) for t in card.select('label[data-toggle="tooltip"]')]
                 remark = labels[2] if len(labels) > 2 else ""
                 offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
                                "colors": _color_prices(key, price, remark)})
+    for mid in PIXEL_CATEGORIES:
+        for card, name, price, url in _read_category(http, "1", "13", mid):
+            # 「Google Pixel 10 Pro 256GB SIMフリー Jade」のように色ごと。価格は未開封品の価格
+            # （備考に「キャリア版simロック解除同額」「開封済み -5,000」などと書かれている）
+            if "SIMフリー" in name:
+                key = phone_key(name)
+                offers.append({"jan": None, "key": key, "name": name, "price": price, "url": url,
+                               "colors": one_color(key, name, price)})
     for bid in CARD_CATEGORIES:
         for card, name, price, url in _read_category(http, "3", bid):
             # 状態は3つ目の表示に「シュリンク付き、新品未開封」のように書かれている
@@ -69,14 +80,14 @@ def fetch(http):
 
 def _color_prices(key, price, remark):
     """備考の色ごとの減額から {色: 価格} を作る。"""
-    colors = dict.fromkeys(iphone_colors(key), price)
+    colors = dict.fromkeys(phone_colors(key), price)
     pending = []
     for token in re.findall(r"[-−]\s*\d+|[^\s/、,・\-−\d]+", unicodedata.normalize("NFKC", remark)):
         if token[0] in "-−":
             for color in pending:
                 colors[color] = price - int(token[1:].strip())
             pending = []
-        elif color := iphone_color(key, token):
+        elif color := phone_color(key, token):
             pending.append(color)
     return colors
 

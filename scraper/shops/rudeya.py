@@ -6,7 +6,7 @@ iPhone は色ごとに「iPhone 17 Pro 256GB ブラック … 未開封 SIMフ�
 """
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_key, one_color
+from ..phones import phone_key, one_color
 from ..text import find_jan, parse_yen
 
 ID = "rudeya"
@@ -17,6 +17,8 @@ URL = "https://kaitori-rudeya.com/"
 # Nintendo Switch 2 / Nintendo Switch / PlayStation5 / Xbox / PlayStation Portal / Steam / ASUS ROG /
 # Meta Quest / PlayStation VR / PICO 4 / Legion Go
 PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 3, 159, 55, 136, 42, 120, 121, 160)]
+# Google（Pixel）
+PIXEL_PAGES = ["https://kaitori-rudeya.com/category/detail/172"]
 # ポケモンカード / ワンピースカード / 遊戯王 / ドラゴンボールカード（カートンは対象外）
 CARD_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (114, 224, 116, 225)]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / Air / 17 / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max / 16e
@@ -30,10 +32,10 @@ def fetch(http):
         offers += _read_page(http, page)
     for page in CARD_PAGES:
         offers += [o for o in _read_page(http, page) if "カートン" not in o["name"]]
-    for page in IPHONE_PAGES:
+    for page in IPHONE_PAGES + PIXEL_PAGES:
         for o in _read_page(http, page):
-            if "未開封" in o["name"]:
-                key = iphone_key(o["name"])
+            if "未開封" in o["name"] and ("iPhone" in o["name"] or "SIMフリー" in o["name"]):
+                key = phone_key(o["name"])
                 offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"])})
     return [o for o in offers if o["jan"] and o["price"]]
 

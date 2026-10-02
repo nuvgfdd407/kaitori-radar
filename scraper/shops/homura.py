@@ -11,7 +11,7 @@ import re
 from bs4 import BeautifulSoup
 
 from ..cards import card_key
-from ..iphone import iphone_key, one_color
+from ..phones import phone_key, one_color
 from ..text import find_jan
 
 ID = "homura"
@@ -26,6 +26,9 @@ IPHONE_CATEGORY = 10
 GAME_SUBS = [124, 122, 126, 121, 127]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / 17 / Air / 17e / 16 Pro / 16 Pro Max / 16 / 16 Plus / 16e
 IPHONE_SUBS = [194, 193, 192, 96, 97, 95, 155, 173, 100, 101, 98, 99, 156]
+PIXEL_CATEGORY = 9
+# Pixel 10 / 10 Pro / 10 Pro XL / 10a / 9 / 9 Pro / 9 Pro Fold / 9 Pro XL / 9a（新品だけのカテゴリ）
+PIXEL_SUBS = [78, 79, 80, 184, 81, 82, 83, 84, 85]
 CARD_CATEGORY = 14
 # ポケモンカード（シュリンク有りのBOX・スペシャルセット） / ワンピース 未開封BOX / 遊戯王 未開封BOX / ドラゴンボールBOX
 CARD_SUBS = [128, 130, 132, 159, 171]
@@ -40,9 +43,14 @@ def fetch(http):
     for sub in IPHONE_SUBS:
         for name, jan, price, url in _read_list(http, IPHONE_CATEGORY, sub):
             if "未開封" in name:
-                key = iphone_key(name)
+                key = phone_key(name)
                 offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
                                "colors": one_color(key, name, price)})
+    for sub in PIXEL_SUBS:
+        for name, jan, price, url in _read_list(http, PIXEL_CATEGORY, sub):
+            key = phone_key(name)
+            offers.append({"jan": jan, "key": key, "name": name, "price": price, "url": url,
+                           "colors": one_color(key, name, price)})
     for sub in CARD_SUBS:
         for name, jan, price, url in _read_list(http, CARD_CATEGORY, sub):
             offers.append({"jan": jan, "key": card_key(name), "name": name, "price": price, "url": url})

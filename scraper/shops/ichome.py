@@ -4,12 +4,12 @@
 【ゲーム】の中に本体だけのカテゴリがあるので、そこだけを取得する。
 価格は goodsKbDetails の中にあり、「来店」（来店時の加算）ではない方の価格を使う。
 （商品データの price は買取価格ではないので使わない）
-iPhone は携帯用の API にあり、JANのない「iPhone 17 Pro 256GB」のような機種＋容量の商品で、
+iPhone・Pixel は携帯用の API にあり、JANのない「iPhone 17 Pro 256GB」のような機種＋容量の商品で、
 「未開封」の価格に色ごとの増減（varPrice）が付く。いちばん高い色の価格を使う。
 """
 import re
 
-from ..iphone import iphone_color, iphone_key
+from ..phones import phone_color, phone_key
 
 ID = "ichome"
 NAME = "買取一丁目"
@@ -25,6 +25,8 @@ CATEGORIES = [
 IPHONE_API = "https://www.1-chome.com/api/keitai/listPage"
 # iPhone 18シリーズ / 17シリーズ / 16シリーズ
 IPHONE_CATEGORIES = ["3mMfFdssdWf0cUTv", "FOwhVgpORbuy43jx", "sqwDCccRt4Woon0R"]
+# Google Pixel は機種ごとのカテゴリが多いので、商品名の検索でまとめて取る
+PIXEL_KEYWORD = "Pixel"
 PAGE_SIZE = 100
 
 
@@ -41,27 +43,29 @@ def fetch(http):
                     # サイトの共有リンクと同じ形の商品ページ
                     "url": f"{URL}wineDetail/{item['goodsId']}/{item['allGoodsKbId']}",
                 })
-    for category in IPHONE_CATEGORIES:
-        for item in _read_category(http, IPHONE_API, category):
-            name = (item.get("title") or "").strip()
-            key = iphone_key(name)
-            price, colors = _unopened_prices(item, key)
-            if price:
-                offers.append({
-                    "jan": None,
-                    "key": key,
-                    "name": name,
-                    "price": price,
-                    "colors": colors,
-                    "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
-                })
+    phones = [item for category in IPHONE_CATEGORIES for item in _read_category(http, IPHONE_API, category)]
+    phones += list(_read_category(http, IPHONE_API, keyword=PIXEL_KEYWORD))
+    for item in phones:
+        name = (item.get("title") or "").strip()
+        key = phone_key(name)
+        price, colors = _unopened_prices(item, key)
+        if price and key:  # 「Pixel」の検索には Pixel Watch なども出てくるので、スマホだけにする
+            offers.append({
+                "jan": None,
+                "key": key,
+                "name": name,
+                "price": price,
+                "colors": colors,
+                "url": f"{URL}productDetail/{item['goodsId']}/{item['allGoodsKbId']}",
+            })
     return offers
 
 
-def _read_category(http, api, category):
+def _read_category(http, api, category=None, keyword=None):
+    query = {"cateCode": category} if category else {"keyword": keyword}
     page = 1
     while True:
-        body = http.get(api, params={"cateCode": category, "page": page, "size": PAGE_SIZE}).json()
+        body = http.get(api, params={**query, "page": page, "size": PAGE_SIZE}).json()
         if body.get("code") != 200:
             raise RuntimeError(f"API のエラー: {body.get('msg')}")
         data = body["data"]
@@ -98,7 +102,7 @@ def _unopened_prices(item, key):
     for option in item.get("keitaiColorOptions") or []:
         change = next((rel.get("varPrice") or 0 for rel in option.get("keitaiKbDetailColorRels") or []
                        if rel.get("keitaiKbDetailId") == detail.get("allGoodsKbDetailId")), 0)
-        color = iphone_color(key, option.get("color"))
+        color = phone_color(key, option.get("color"))
         if color:
             colors[color] = max(colors.get(color, 0), base + change)
     return (max(colors.values()) if colors else base), colors

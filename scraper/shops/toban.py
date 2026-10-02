@@ -13,7 +13,7 @@ import html
 from urllib.parse import unquote
 
 from ..cards import card_key
-from ..iphone import iphone_color, iphone_key
+from ..phones import phone_color, phone_key
 
 ID = "toban"
 NAME = "買取当番"
@@ -23,8 +23,8 @@ URL = "https://tobansyoji.co.jp/"
 API = "https://tobansyoji.co.jp/wp-json/wc/store/v1/products"
 # Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox / Meta Quest / Steam Deck / ASUS ROG / PS5 周辺機器
 CATEGORIES = [184, 185, 186, 187, 188, 189, 190, 239]
-# iPhone 18 / 17 / 16
-IPHONE_CATEGORIES = [306, 207, 208]
+# iPhone 18 / 17 / 16 / Google（Pixel）
+IPHONE_CATEGORIES = [306, 207, 208, 263]
 # ポケモンカード / ワンピース
 CARD_CATEGORIES = [172, 174]
 SHRINK = "BOXシュリンクあり"
@@ -40,11 +40,11 @@ def fetch(http):
         items = list(_read_category(http, category))
         colors = _variation_prices(http, [item for item, _ in items])
         for item, name in items:
-            key = iphone_key(name)
+            key = phone_key(name)
             offer = {"jan": None, "key": key, "name": name, "price": _price(item, "max"), "url": item["permalink"]}
             # 色の選択肢がない商品は、どの色でも同じ価格（"colors" を付けない）
             if item["type"] == "variable":
-                offer["colors"] = {c: price for text, price in colors.get(item["id"], []) if (c := iphone_color(key, text))}
+                offer["colors"] = {c: price for text, price in colors.get(item["id"], []) if (c := phone_color(key, text))}
             offers.append(offer)
     for category in CARD_CATEGORIES:
         for item, name in _read_category(http, category):

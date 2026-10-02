@@ -8,8 +8,8 @@
 - カタログにない高額商品は reports/unmatched.json に書き出す（新しい本体の登録漏れに気づくため）
 - 商品画像は scraper.images が作った catalog/images.json から載せる
 - 日ごとの価格の記録（data/history/）も更新する（scraper.history を参照）
-- iPhone は「機種＋容量」（scraper.iphone.iphone_key）と色で突き合わせる。店舗の色の書き方は
-  scraper.iphone.iphone_color で公式の日本語名にそろえる。色の区別がない店舗の価格は、全色に当てはめる
+- スマホ（iPhone・Pixel）は「機種＋容量」（scraper.phones.phone_key）と色で突き合わせる。店舗の色の書き方は
+  scraper.phones.phone_color で公式の色名にそろえる。色の区別がない店舗の価格は、全色に当てはめる
 - JAN を載せていない店舗のトレカは、カタログの "names"（セット名）と商品名（scraper.cards.card_key）で突き合わせる
 """
 import sys
@@ -20,7 +20,7 @@ from . import history
 from .common import CATALOG, IMAGES, ROOT, load_json, set_github_output, warn, write_json
 from .cards import card_key
 from .http import Http
-from .iphone import color_part, iphone_color, iphone_key
+from .phones import color_part, phone_color, phone_key
 from .shops import SHOPS
 
 OUTPUT = ROOT / "public" / "data" / "prices.json"
@@ -30,6 +30,8 @@ JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
 REPORT_MIN_PRICE = 20000
 # カタログの項目のうち、公開するデータには載せないもの（画像選びの設定、別のJAN、突き合わせ用の名前）
+# 機種＋容量＋色で突き合わせるスマホのシリーズ（シリーズIDの頭）
+PHONE_SERIES = ("iphone", "pixel")
 INTERNAL_KEYS = {"image_item", "image_from", "image_url", "image_page", "aliases", "names"}
 
 
@@ -39,12 +41,12 @@ def main():
     images = load_json(IMAGES) if IMAGES.exists() else {}
     # 同じ商品が別のJAN（新旧のJANなど）で載っていることがあるので、"aliases" のJANも同じ商品として扱う
     owner = {jan: p["jan"] for p in catalog["products"] for jan in [p["jan"], *p.get("aliases", [])]}
-    # iPhone: {"iPhone 17 Pro 256GB": {"シルバー": JAN, ...}}
+    # スマホ: {"iPhone 17 Pro 256GB": {"シルバー": JAN, ...}}
     by_color = {}
     for p in catalog["products"]:
-        if p["series"].startswith("iphone"):
-            key = iphone_key(p["name"])
-            by_color.setdefault(key, {})[iphone_color(key, color_part(p["name"]))] = p["jan"]
+        if p["series"].startswith(PHONE_SERIES):
+            key = phone_key(p["name"])
+            by_color.setdefault(key, {})[phone_color(key, color_part(p["name"]))] = p["jan"]
     by_key = {card_key(name): p["jan"] for p in catalog["products"] for name in p.get("names", [])}
     by_key.pop(None, None)  # 名前から読み取れなかった商品が、互いに一致しないように
     ignored = {p["jan"] for p in catalog.get("ignore", [])}
@@ -64,7 +66,7 @@ def main():
         if offers:
             for offer in offers:
                 jan = offer["jan"]
-                targets = _iphone_targets(offer, by_color.get(offer.get("key")))
+                targets = _phone_targets(offer, by_color.get(offer.get("key")))
                 if targets is None:
                     target = owner.get(jan) or by_key.get(offer.get("key"))
                     targets = {target: offer["price"]} if target else {}
@@ -131,8 +133,8 @@ def fetch_shop(shop):
     return shop, offers, None
 
 
-def _iphone_targets(offer, colors):
-    """iPhone の出品を、色ごとの商品の {JAN: 価格} にする。iPhone でなければ None。
+def _phone_targets(offer, colors):
+    """スマホの出品を、色ごとの商品の {JAN: 価格} にする。スマホでなければ None。
 
     colors はその機種＋容量の {色: JAN}。出品の "colors" は {色: 価格} で、
     "colors" がない出品（色の区別がない店舗）は全色に同じ価格を当てはめる。

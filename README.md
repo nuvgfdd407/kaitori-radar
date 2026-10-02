@@ -54,7 +54,7 @@ dist/ を Cloudflare Pages に公開
 | `catalog/products.json` | 対象商品の一覧（JAN・シリーズ・表示名・型番・定価）。**手で管理する** |
 | `catalog/images.json` | 商品画像のURL（`scraper.images` が自動で作る） |
 | `scraper/shops/*.py` | 店舗ごとの取得処理 |
-| `scraper/iphone.py` | iPhone の商品名から「機種＋容量」を読み取る（突き合わせ用） |
+| `scraper/phones.py` | スマホ（iPhone・Pixel）の商品名から「機種＋容量」と色を読み取る（突き合わせ用） |
 | `scraper/cards.py` | トレカの商品名からセット名を取り出す（JAN を載せていない店舗との突き合わせ用） |
 | `scraper/update.py` | 全店舗の取得と `prices.json` の書き出し |
 | `scraper/images.py` | Yahoo!ショッピングからの商品画像の取得 |
@@ -100,15 +100,22 @@ python -m http.server 8765 --directory dist
 ### iPhone
 
 iPhone は店舗によって色ごとに別の商品として載っていたり、JAN がなかったりするので、
-**機種＋容量**（`scraper/iphone.py` の `iphone_key`。例: `iPhone 17 Pro 256GB`）と**色**で突き合わせる。
+**機種＋容量**（`scraper/phones.py` の `phone_key`。例: `iPhone 17 Pro 256GB`）と**色**で突き合わせる。
 
 - 1行＝機種＋容量＋色（例: `iPhone 17 Pro 256GB シルバー`）。`jan` はその色の JAN
 - 色の名前は店舗ごとに書き方が違うので（orange／コズミックオレンジ／橙 など）、
-  `scraper/iphone.py` の `COLORS` で公式の日本語名にそろえる。新しい機種が出たら `COLORS` にも色を追加する
+  `scraper/phones.py` の `COLORS` で公式の日本語名にそろえる。新しい機種が出たら `COLORS` にも色を追加する
 - 色を区別していない店舗（同じ価格でどの色も買い取る商品）の価格は、全色に当てはめる
 - 対象は SIMフリー版の新品未開封だけ（「開封済未使用」などの価格は使わない）
 - カタログの iPhone は、シリーズIDを `iphone` で始める
 - 新しい機種が出たら、各店舗モジュールの iPhone のカテゴリ（`IPHONE_SUBS` など）にも追加する
+
+### Google Pixel
+
+- iPhone と同じく、機種＋容量＋色（例: `Pixel 10 Pro 256GB Obsidian`）の SIMフリー版の新品未開封。色は Google の英語の名前
+- Pixel 11・10（10a を含む）・9（9a を含む）シリーズ。JAN がわかる組み合わせだけ（Pixel 9 Pro XL などは JAN がわからず入れていない）
+- 買取商店はキャリア版（docomo・au など）も別の価格で載せているので、SIMフリーの行だけを使う
+- 買取一丁目は Pixel のカテゴリが細かいので、商品名の検索（「Pixel」）でまとめて取る
 
 ### トレカ（ポケモンカード・ワンピースカード・遊戯王・ドラゴンボール フュージョンワールド）
 
@@ -168,7 +175,7 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 
 1. `scraper/shops/` に店舗のモジュールを作る（`ID`・`NAME`・`SHORT`・`URL` と `fetch(http)`）
    - `fetch` は `{"jan", "name", "price", "url"}` のリストを返す。**新品・買取中の商品だけ**にする
-   - iPhone は `"key": iphone_key(name)` も付ける（JAN がなければ `"jan": None`）
+   - スマホは `"key": phone_key(name)` と色ごとの価格 `"colors"` も付ける（JAN がなければ `"jan": None`）
    - アクセスは必ず引数の `http.get()` を使う（アクセス間隔と再試行を共通で管理している）
 2. `scraper/shops/__init__.py` の `SHOPS` に追加する（並び順が表の列の順になる）
 

@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from ..iphone import iphone_key, one_color
+from ..phones import phone_key, one_color
 from ..text import find_jan, parse_yen
 
 ID = "shouten"
@@ -25,6 +25,9 @@ PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (703, 281, 
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 / Air / 17 Pro / 17 Pro Max / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max
 IPHONE_PAGES = [f"https://www.kaitorishouten-co.jp/category/1/{i}"
                 for i in (748, 746, 747, 708, 709, 710, 711, 725, 687, 688, 689, 690)]
+# Google Pixel（機種ごとのページ。キャリア版も載っているので SIMフリーの行だけを使う）
+PIXEL_PAGES = [f"https://www.kaitorishouten-co.jp/model/google-pixel-{m}"
+               for m in ("11", "11-pro", "11-pro-xl", "11-pro-fold", "10a")]
 
 
 def fetch(http):
@@ -33,8 +36,13 @@ def fetch(http):
         offers += [o for o in _read_table(http, page) if o["jan"]]
     for page in IPHONE_PAGES:
         for o in _read_table(http, page):
-            key = iphone_key(o["name"])
+            key = phone_key(o["name"])
             offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
+    for page in PIXEL_PAGES:
+        for o in _read_table(http, page):
+            if "SIMフリー" in o["name"]:
+                key = phone_key(o["name"])
+                offers.append({**o, "key": key, "colors": one_color(key, o["name"], o["price"] or 0)})
     return [o for o in offers if (o["jan"] or o.get("key")) and o["price"]]
 
 

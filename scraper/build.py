@@ -95,13 +95,13 @@ def list_page(site, series):
         n = len(shops)
         path, active = "/", "all"
         title = f"{t.SITE_NAME}｜Switch 2・iPhone・ポケカなどの新品買取価格を比較"
-        heading = f"ゲーム機・iPhone・トレカの新品買取価格を{n}店舗で比較"
+        heading = f"ゲーム機・スマホ・トレカの新品買取価格を{n}店舗で比較"
         description = (
-            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deckなどのゲーム機、iPhone 18・17・16シリーズ、"
+            "Nintendo Switch 2・PlayStation 5・Xbox・Steam Deckなどのゲーム機、iPhone・Google Pixel、"
             "ポケモンカード・ワンピースカードの未開封BOXの買取価格を買取店ごとに比較。"
             "いちばん高く売れるお店と、定価との差額がひと目でわかります。"
         )
-        lead = f"ゲーム機・iPhone・トレカ、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
+        lead = f"ゲーム機・スマホ・トレカ、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
     else:
         products = [p for p in site["products"] if p["series"] == series["id"]]
         shops = series_shops(site, series)
