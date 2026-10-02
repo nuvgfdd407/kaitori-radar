@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T19:56:58+09:00",
+  "updated_at": "2026-10-02T20:26:18+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-02T20:26:18+09:00"
     },
     {
       "id": "ichome",
