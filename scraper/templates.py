@@ -253,30 +253,47 @@ SORT_CONTROL = """<label class="sort">
       </label>"""
 
 
-def price_table(site, products, shops, *, grouped):
+def price_table(site, products, shops, *, grouped, limit=None, scope=None):
     """一覧（定価・最高買取・差益だけを並べ、タップで店舗ごとの価格を開く）。
 
     店舗が増えても横に広がらないように、店舗ごとの価格は行を開いたときだけ出す。
     行は <details> なので、JavaScript がなくても開ける。並び替えと絞り込みは app.js。
+    limit があれば、シリーズごとに先頭の limit 件だけを出し（トップページなどを軽くするため）、
+    シリーズのページへのリンクを付ける。そのときの検索は、app.js が全商品の索引（data/search.json）から探す。
+    scope は、検索する範囲のシリーズ（ジャンルのページ）。
     """
     head = ('<div class="list-head" aria-hidden="true"><span>商品名</span><span class="num">定価</span>'
             '<span class="num">最高買取</span><span class="num">差益</span><span></span></div>')
+    partial = False
     if grouped:
         groups = []
         for series in site["series"]:
             items = [p for p in products if p["series"] == series["id"]]
             if items:
+                shown = _preview(items, limit) if limit else items
+                more = (f'<a class="more-link" href="/{series["id"]}/">{esc(series["name"])}の全{len(items)}商品を見る →</a>'
+                        if len(shown) < len(items) else "")
+                partial = partial or bool(more)
                 groups.append(
                     f'<section class="list-group"><h2 class="group-title"><a href="/{series["id"]}/">'
-                    f'{esc(series["name"])}</a></h2><div class="rows">{"".join(_row(p, shops) for p in items)}</div></section>'
+                    f'{esc(series["name"])}</a></h2><div class="rows">{"".join(_row(p, shops) for p in shown)}</div>'
+                    f'{more}</section>'
                 )
         body = "".join(groups)
     else:
         body = f'<div class="rows">{"".join(_row(p, shops) for p in products)}</div>'
-    return f"""    <div class="price-list">
+    attrs = (" data-partial" + (f' data-scope="{esc(" ".join(scope))}"' if scope else "")) if partial else ""
+    return f"""    <div class="price-list"{attrs}>
       {head}
       {body}
     </div>"""
+
+
+def _preview(items, limit):
+    """シリーズの先頭に出す商品。PSA 鑑定品はカタログの順が追加した順なので、最高値の高いものを出す。"""
+    if items[0]["series"].startswith("psa-"):
+        items = sorted(items, key=lambda p: -(p["best"] or 0))
+    return items[:limit]
 
 
 def _row(p, shops):

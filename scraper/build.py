@@ -10,6 +10,7 @@
 - dist/ は毎回作り直す生成物なので、Git には入れない
 """
 import hashlib
+import json
 import shutil
 import sys
 from datetime import date, datetime, timedelta, timezone
@@ -20,6 +21,7 @@ from .common import CATALOG, PRICES, ROOT, SITE_URL, load_json
 
 PUBLIC = ROOT / "public"
 DIST = ROOT / "dist"
+PREVIEW = 10  # トップページとジャンルのページで、シリーズごとに出す商品の数（全部出すと重いので）
 JST = timezone(timedelta(hours=9))
 
 
@@ -43,6 +45,7 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html, encoding="utf-8")
     write_sitemap([path for path, _ in pages], data["updated_at"])
+    write_search_index(site)
     print(f"{len(pages) + len(private_pages)}ページを dist/ に作りました")
 
 
@@ -110,7 +113,7 @@ def list_page(site, *, category=None, series=None):
     if series:
         products = [p for p in site["products"] if p["series"] == series["id"]]
         shops = shops_for(site, products)
-        n = len(shops)
+        n = shop_count(shops)
         path, active = f"/{series['id']}/", (category_of(site, series)["id"], series["id"])
         word = t.price_word(series["id"])
         title = f"{series['name']}の{word}比較【{n}店舗】｜{t.SITE_NAME}"
@@ -127,7 +130,7 @@ def list_page(site, *, category=None, series=None):
         ids = [s["id"] for s in category["series"]]
         products = [p for p in site["products"] if p["series"] in ids]
         shops = shops_for(site, products)
-        n = len(shops)
+        n = shop_count(shops)
         name = category.get("title", category["name"])
         names = "・".join(s["name"] for s in category["series"])
         path, active = category["href"], (category["id"], None)
@@ -139,7 +142,7 @@ def list_page(site, *, category=None, series=None):
     else:
         products = site["products"]
         shops = site["shops"]
-        n = len(shops)
+        n = shop_count(shops)
         path, active = "/", ("all", None)
         title = f"{t.SITE_NAME}｜Switch 2・iPhone・ポケカなどの新品買取価格を比較"
         heading = f"ゲーム機・スマホ・トレカの新品買取価格を{n}店舗で比較"
@@ -153,10 +156,28 @@ def list_page(site, *, category=None, series=None):
     content = f"""    <h1 class="page-title">{t.esc(heading)}</h1>
     <p class="lead">{t.esc(lead)}</p>
     <p class="count" data-total="{len(products)}">{len(products)}商品</p>
-{t.price_table(site, products, shops, grouped=series is None)}
+{t.price_table(site, products, shops, grouped=series is None, limit=None if series else PREVIEW,
+                scope=[s["id"] for s in category["series"]] if category else None)}
+    <ul class="search-results" id="search-results" hidden></ul>
     <p class="no-results" hidden>条件に合う商品はありません。</p>"""
     return t.page(site, path=path, title=title, description=description, active=active,
                   content=content, controls=t.SEARCH_CONTROL + t.SORT_CONTROL)
+
+
+def write_search_index(site):
+    """トップページなどの検索用の、全商品の索引（data/search.json）。
+    一覧には各シリーズの先頭しか出していないので、検索欄に入力したときに app.js が読み込む。"""
+    names = {s["id"]: s["name"] for s in site["series"]}
+    items = [{"j": p["jan"], "n": p["name"], "g": p["series"], "gn": names.get(p["series"], ""),
+              "s": t.search_text(p), "b": p["best"], "h": t.best_shop_names(p) if p["best"] else "",
+              "i": (p.get("image") or {}).get("src", "") if str((p.get("image") or {}).get("src", "")).startswith("/images/") else ""}
+             for p in site["products"]]
+    (DIST / "data" / "search.json").write_text(json.dumps(items, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
+def shop_count(shops):
+    """店舗の数。郵送と店頭で別々に載せている店舗（「トレカバンク(郵送)」「トレカバンク(店頭)」）は1店と数える。"""
+    return len({s["name"].split("(")[0] for s in shops})
 
 
 def category_of(site, series):
@@ -173,7 +194,7 @@ def item_page(site, p):
     series = next(s for s in site["series"] if s["id"] == p["series"])
     siblings = [q for q in site["products"] if q["series"] == p["series"]]
     shops = shops_for(site, siblings)
-    n = len(shops)
+    n = shop_count(shops)
     if p["best"]:
         best = f"最高{t.yen(p['best'])}（{t.best_shop_names(p, full=True)}）"
         title = f"{p['name']}の買取価格比較｜{best}｜{t.SITE_NAME}"

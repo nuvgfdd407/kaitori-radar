@@ -39,6 +39,12 @@ if (searchInput) {
 
 function filterRows() {
   const words = searchInput.value.normalize('NFKC').split(/\s+/).map(fold).filter(Boolean);
+  // トップページ・ジャンルのページは各シリーズの先頭しか出していないので、全商品の索引から探す
+  const partial = document.querySelector('.price-list[data-partial]');
+  if (partial) {
+    searchAll(words, partial);
+    return;
+  }
   let shown = 0;
   document.querySelectorAll('.price-list .item').forEach((row) => {
     if (!searchTexts.has(row)) searchTexts.set(row, fold(row.dataset.search || ''));
@@ -57,6 +63,66 @@ function filterRows() {
   }
   const noResults = document.querySelector('.no-results');
   if (noResults) noResults.hidden = shown > 0;
+}
+
+// ---- 全商品からの検索（トップページ・ジャンルのページ） ------------------------------
+// 索引（data/search.json）は、検索欄に入力したときに初めて読み込む。結果は最大 MAX_RESULTS 件まで出す。
+
+const MAX_RESULTS = 100;
+let searchIndex = null;  // Promise
+
+function loadSearchIndex() {
+  if (!searchIndex) {
+    searchIndex = fetch('/data/search.json')
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((items) => items.map((it) => ({ ...it, f: fold(it.s) })))
+      .catch((e) => {
+        searchIndex = null;
+        throw e;
+      });
+  }
+  return searchIndex;
+}
+
+async function searchAll(words, list) {
+  const box = $('search-results');
+  const count = document.querySelector('.count');
+  const noResults = document.querySelector('.no-results');
+  const total = count ? count.dataset.total : '';
+  if (!words.length) {
+    list.hidden = false;
+    if (box) box.hidden = true;
+    if (count) count.textContent = `${total}商品`;
+    if (noResults) noResults.hidden = true;
+    return;
+  }
+  const query = searchInput.value;
+  let items;
+  try {
+    items = await loadSearchIndex();
+  } catch (e) {
+    if (count) count.textContent = '検索の準備ができませんでした。時間をおいてもう一度お試しください。';
+    return;
+  }
+  if (searchInput.value !== query || !box) return;  // 読み込み中に入力が変わった
+  const scope = list.dataset.scope ? list.dataset.scope.split(' ') : null;
+  const hits = items.filter((it) => (!scope || scope.includes(it.g)) && words.every((w) => it.f.includes(w)));
+  list.hidden = true;
+  box.hidden = false;
+  box.innerHTML = hits.slice(0, MAX_RESULTS).map((it) => `<li><a class="result" href="/item/${encodeURIComponent(it.j)}/">`
+    + (it.i ? `<img src="${esc(it.i)}" alt="" width="44" height="44" loading="lazy" decoding="async">`
+      : '<span class="thumb-empty" aria-hidden="true"></span>')
+    + `<span class="result-name">${esc(it.n)}<small>${esc(it.gn)}</small></span>`
+    + `<span class="result-price">${it.b ? yen(it.b) : '—'}<small>${esc(it.h)}</small></span></a></li>`).join('');
+  if (count) {
+    count.textContent = hits.length > MAX_RESULTS
+      ? `${total}商品中 ${hits.length}件（先頭の${MAX_RESULTS}件を表示。言葉を足すと絞り込めます）`
+      : `${total}商品中 ${hits.length}件`;
+  }
+  if (noResults) noResults.hidden = hits.length > 0;
 }
 
 // ---- 表の並び替え ---------------------------------------------------------------
@@ -107,7 +173,7 @@ function compareRows(a, b, key) {
 // 次のページのものに入れ替える（URLは変わるので、戻る・共有・検索エンジンはふつうのページと同じ）。
 // ボタンに指やマウスが乗った時点で先に読み込んでおく。読み込めないときは、ふつうにページを開く。
 
-const SWAP_LINKS = '.nav a, .group-title a';
+const SWAP_LINKS = '.nav a, .group-title a, .more-link';
 const pageCache = new Map();  // URL → 読み込み中または読み込んだ HTML（Promise）
 
 if (searchInput) {

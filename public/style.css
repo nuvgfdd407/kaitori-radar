@@ -590,3 +590,53 @@ body:has(#cart-bar) { padding-bottom: 72px; }
   .page-title { font-size: 18px; }
   .item-summary { gap: 12px; }
 }
+
+/* トップページ・ジャンルのページの、シリーズの全商品へのリンク */
+.more-link {
+  display: block;
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  color: var(--brand);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+}
+.more-link:hover { text-decoration: underline; }
+
+/* 全商品からの検索結果（トップページ・ジャンルのページ） */
+.search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.search-results li + li { border-top: 1px solid var(--line); }
+.result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+.result:hover { background: var(--tag-bg); }
+.result img, .result .thumb-empty {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #fff;
+}
+.result-name { flex: 1; min-width: 0; font-weight: 600; }
+.result-name small, .result-price small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+.result-price { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 600; }
