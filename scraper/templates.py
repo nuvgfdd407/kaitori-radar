@@ -601,7 +601,7 @@ def thumb(p, large=False):
     url = image.get("url")
     if not _is_http(url):
         return f'<span class="{size}">{img}</span>'
-    source = "メーカー公式サイト" if image.get("origin") else "Yahoo!ショッピング"
+    source = image.get("source") or ("メーカー公式サイト" if image.get("origin") else "Yahoo!ショッピング")
     title = f"画像の出典: {source}" + (f'（{image["seller"]}）' if image.get("seller") and not image.get("origin") else "")
     return (
         f'<a class="{size}" href="{esc(url)}" target="_blank" rel="noopener" title="{esc(title)}"'

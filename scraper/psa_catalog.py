@@ -8,6 +8,8 @@
   ただし、同じ店舗が別々に載せている商品（ナミと「ナミ SP」など）は、別のカードなのでまとめない
 - すでにある商品は ID（URL）と名前を変えず、店舗の書き方（"keys"）を足すだけ。新しいカードは商品を追加する
 - 店舗の一覧から消えたカードも、商品は残す（価格は「取扱なし」になる）
+- 画像は、トレカラウンジに載っているカードはトレカラウンジのカード画像（どのカードも同じ撮り方でそろっている）。
+  ほかの店舗だけのカードは画像なし
 - 並び順は、ゲームごとに、すでにある商品は今のまま、新しい商品はその後ろに最高値の高い順で足す
   （毎日自動で動かすので、変化がなければファイルを書き換えない）
 """
@@ -71,6 +73,8 @@ def merge(catalog, offers):
             added += 1
         if key not in product["keys"]:
             product["keys"].append(key)
+        if o["shop"] == "lounge" and o["psa"].get("image") and not product.get("image_url"):
+            product.update({"image_url": o["psa"]["image"], "image_page": o["psa"]["page"], "image_source": "トレカラウンジ"})
         shops.setdefault(product["jan"], {}).setdefault(o["shop"], key)
         by_key[key] = product
         best[product["jan"]] = max(best.get(product["jan"], 0), o["price"] or 0)

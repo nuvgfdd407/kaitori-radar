@@ -75,4 +75,5 @@ def _display(item, grade):
 def _info(item, game, grade):
     """カタログを作るときに使う、カードの情報。"""
     return {"game": game, "grade": grade, "name": item.get("productName"), "rarity": item.get("rarity") or None,
-            "number": item.get("modelNumber"), "set": item.get("seriesCode") or None}
+            "number": item.get("modelNumber"), "set": item.get("seriesCode") or None,
+            "image": item.get("imageUrl"), "page": f"{URL}product/{item['publicId']}"}
