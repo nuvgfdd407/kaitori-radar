@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T14:09:29+09:00",
+  "updated_at": "2026-10-02T14:24:28+09:00",
   "shops": [
     {
       "id": "homura",
@@ -62,7 +62,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-02T14:24:28+09:00"
     },
     {
       "id": "guest",
@@ -93,7 +94,7 @@
       },
       "prices": {
         "homura": {
-          "price": 54000,
+          "price": 53800,
           "url": "https://kaitori-homura.com/products/5148"
         },
         "shouten": {
@@ -4287,7 +4288,7 @@
       },
       "prices": {
         "homura": {
-          "price": 234000,
+          "price": 229000,
           "url": "https://kaitori-homura.com/products/7265"
         },
         "shouten": {
@@ -4340,7 +4341,7 @@
       },
       "prices": {
         "homura": {
-          "price": 230000,
+          "price": 225000,
           "url": "https://kaitori-homura.com/products/7281"
         },
         "shouten": {
@@ -4393,7 +4394,7 @@
       },
       "prices": {
         "homura": {
-          "price": 230000,
+          "price": 225000,
           "url": "https://kaitori-homura.com/products/7271"
         },
         "shouten": {
@@ -7513,7 +7514,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6696"
         },
         "morimori": {
-          "price": 102000,
+          "price": 105000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318764"
         },
         "keitaigod": {
@@ -7558,7 +7559,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6697"
         },
         "morimori": {
-          "price": 102000,
+          "price": 105000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318763"
         },
         "keitaigod": {
@@ -7603,7 +7604,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6698"
         },
         "morimori": {
-          "price": 100500,
+          "price": 105000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318765"
         },
         "keitaigod": {
@@ -7648,7 +7649,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6699"
         },
         "morimori": {
-          "price": 115000,
+          "price": 117000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318767"
         },
         "keitaigod": {
@@ -7697,7 +7698,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6700"
         },
         "morimori": {
-          "price": 115000,
+          "price": 117000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318766"
         },
         "keitaigod": {
@@ -7746,7 +7747,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6701"
         },
         "morimori": {
-          "price": 114000,
+          "price": 117000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318768"
         },
         "keitaigod": {
@@ -13021,7 +13022,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6909"
         },
         "morimori": {
-          "price": 65000,
+          "price": 66000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/331562"
         },
         "keitaigod": {
