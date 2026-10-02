@@ -270,7 +270,7 @@ def price_table(site, products, shops, *, grouped, limit=None, scope=None):
         for series in site["series"]:
             items = [p for p in products if p["series"] == series["id"]]
             if items:
-                shown = _preview(items, limit) if limit else items
+                shown = items[:limit] if limit else items
                 more = (f'<a class="more-link" href="/{series["id"]}/">{esc(series["name"])}の全{len(items)}商品を見る →</a>'
                         if len(shown) < len(items) else "")
                 partial = partial or bool(more)
@@ -287,13 +287,6 @@ def price_table(site, products, shops, *, grouped, limit=None, scope=None):
       {head}
       {body}
     </div>"""
-
-
-def _preview(items, limit):
-    """シリーズの先頭に出す商品。PSA 鑑定品はカタログの順が追加した順なので、最高値の高いものを出す。"""
-    if items[0]["series"].startswith("psa-"):
-        items = sorted(items, key=lambda p: -(p["best"] or 0))
-    return items[:limit]
 
 
 def _row(p, shops):

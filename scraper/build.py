@@ -91,6 +91,11 @@ def prepare(data, catalog):
         # 前日比: 今日より前で最後に記録がある日の最高値と比べる
         before = [max(prices.values()) for day, prices in p["history"] if day < today and prices]
         p["change"] = best - before[-1] if best and before else None
+    # PSA 鑑定品はカタログの順が追加した順なので、標準の並びは最高値の高い順にする（買取が止まっているものは最後）
+    psa = iter(sorted((p for p in data["products"] if p["series"].startswith("psa-")), key=lambda p: -(p["best"] or 0)))
+    data["products"] = [next(psa) if p["series"].startswith("psa-") else p for p in data["products"]]
+    for index, p in enumerate(data["products"]):
+        p["index"] = index
     return {
         "shops": shops,
         "categories": categories,
