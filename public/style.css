@@ -654,3 +654,18 @@ body:has(#cart-bar) { padding-bottom: 72px; }
 .ranking .move { display: block; font-size: 13px; }
 .ranking .move.up { color: var(--pos); }
 .ranking .move.down { color: var(--neg); }
+
+/* トップページの、今日の値上がり上位 */
+.teaser {
+  margin: 0 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.teaser h2 { margin: 0; padding: 10px 12px 4px; font-size: 14px; }
+.teaser ol { margin: 0; padding: 0 12px 6px 32px; }
+.teaser li { padding: 3px 0; font-size: 14px; }
+.teaser li a { color: var(--text); }
+.teaser .move { margin-left: 8px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.teaser .move.up { color: var(--pos); }

@@ -35,7 +35,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from .common import CATALOG, load_json, write_catalog
 from .http import INTERVAL, Http
-from .shops import birth, birth_store, club, golden, homura, lounge, morimori, shinsoku, torecabank, torecabank_store
+from .shops import birth, birth_store, club, golden, homura, lounge, morimori, shinsoku, toban, torecabank, torecabank_store
 
 SERIES = {
     "pokemon": {"id": "psa-pokemon", "name": "PSA鑑定品（ポケモンカード）", "category": "tcg"},
@@ -43,10 +43,11 @@ SERIES = {
     "yugioh": {"id": "psa-yugioh", "name": "PSA鑑定品（遊戯王）", "category": "tcg"},
 }
 # 名前を付けるときに優先する店舗（トレカラウンジは名前・レアリティ・番号が別々に載っていて読みやすい）
-SHOP_ORDER = ["lounge", "homura", "morimori", "shinsoku", "torecabank", "torecabank_store", "club", "birth", "birth_store",
-              "golden"]
+SHOP_ORDER = ["lounge", "homura", "morimori", "shinsoku", "torecabank", "torecabank_store", "club", "toban", "birth",
+              "birth_store", "golden"]
 SHOPS = {"lounge": lounge, "homura": homura, "morimori": morimori, "shinsoku": shinsoku, "torecabank": torecabank,
-         "torecabank_store": torecabank_store, "club": club, "birth": birth, "birth_store": birth_store, "golden": golden}
+         "torecabank_store": torecabank_store, "club": club, "toban": toban, "birth": birth, "birth_store": birth_store,
+         "golden": golden}
 # カタログにないカードでも商品を追加しない店舗（番号が略してあり、ほかの店舗のカードと突き合わせられなくなる）
 NO_NEW = {"golden"}
 # 名前を見ずに番号だけで突き合わせてよいゲーム（番号に収録弾が入っている）
@@ -107,7 +108,7 @@ def merge(catalog, offers):
     # 店舗ごとの、同じ番号・バリエーションのカードの名前
     same_number = {}
     for o in offers:
-        same_number.setdefault((o["shop"], *_number_head(o["key"])), []).append(o["key"].split("|")[3])
+        same_number.setdefault((o["shop"], *_number_head(o["key"])), set()).add(o["key"].split("|")[3])  # 同じ行が2回載っていても1枚
     for o in offers:
         key = o["key"]
         product = by_key.get(key) or _similar(products, key, o["shop"], shops, o["price"], best)

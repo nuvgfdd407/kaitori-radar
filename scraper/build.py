@@ -164,8 +164,11 @@ def list_page(site, *, category=None, series=None):
         )
         lead = f"ゲーム機・スマホ・トレカ、{len(products)}商品の新品（未開封）買取価格を、{n}店舗の最新の価格で比較しています。"
 
+    # トップページだけ、値動きランキングの上位を少し見せる
+    teaser = t.movers_teaser(movers(site)[0][:3]) if not (series or category) else ""
     content = f"""    <h1 class="page-title">{t.esc(heading)}</h1>
     <p class="lead">{t.esc(lead)}</p>
+{teaser}
     <p class="count" data-total="{len(products)}">{len(products)}商品</p>
 {t.price_table(site, products, shops, grouped=series is None, limit=None if series else PREVIEW,
                 scope=[s["id"] for s in category["series"]] if category else None)}
@@ -222,12 +225,18 @@ RANKING_SIZE = t.RANKING_SHOWN
 RANKING_MIN_PRICE = 3000  # 前日の最高値がこれより安い商品は、少しの変動で率が大きく出るので外す
 
 
-def ranking_page(site):
-    """前日と比べて、最高値が大きく上がった・下がった商品（率の大きい順）。"""
+def movers(site):
+    """前日と比べて、最高値が上がった・下がった商品（率の大きい順）。（商品, 前日の最高値, 今の最高値）の並び。"""
     moves = [(p, before, now) for p in site["products"] if p.get("move")
              for _, before, now in [p["move"]] if before >= RANKING_MIN_PRICE and now != before]
     ups = sorted((m for m in moves if m[2] > m[1]), key=lambda m: -m[2] / m[1])[:RANKING_SIZE]
     downs = sorted((m for m in moves if m[2] < m[1]), key=lambda m: m[2] / m[1])[:RANKING_SIZE]
+    return ups, downs
+
+
+def ranking_page(site):
+    """前日と比べて、最高値が大きく上がった・下がった商品（率の大きい順）。"""
+    ups, downs = movers(site)
     days = sorted({p["move"][0] for p in site["products"] if p.get("move")})
     since = f"{int(days[-1][5:7])}/{int(days[-1][8:])}" if days else "前日"
     title = f"買取価格の値上がり・値下がりランキング｜{t.SITE_NAME}"

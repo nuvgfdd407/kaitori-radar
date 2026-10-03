@@ -11,6 +11,7 @@ BOX の価格になる。「BOXシュリンクなし」もある商品だけは�
 Apple Watch・AirPods は JAN か型番が載っている（iPad は JAN も型番もないので使わない）。
 AirPods は「保証未開始」「保証開始済」の選択肢があり、高い方（保証未開始）が未開封の価格。
 同じ商品が2回載っていて片方の価格が桁違い（入力ミス）のことがあるので、同じ商品は安い方を使う。
+PSA 鑑定品（ポケモンカードの PSA10）は「PSA10 リーリエ SR 119/114」のような名前で、郵送買取のみ。
 """
 import html
 from urllib.parse import unquote
@@ -18,6 +19,7 @@ from urllib.parse import unquote
 from ..apple import apple_offer
 from ..cards import card_key
 from ..phones import phone_color, phone_key
+from ..psa import parse_name, psa_key
 
 ID = "toban"
 NAME = "買取当番"
@@ -33,6 +35,7 @@ IPHONE_CATEGORIES = [306, 207, 208, 263]
 CARD_CATEGORIES = [172, 174]
 # Apple Watch / Apple Watch GPS+Cellular / AirPods / AirPods Max
 APPLE_CATEGORIES = [168, 169, 165, 166]
+PSA_CATEGORY = 279
 SHRINK = "BOXシュリンクあり"
 NO_SHRINK = "BOXシュリンクなし"
 
@@ -66,7 +69,23 @@ def fetch(http):
             if same and (same not in apple or offer["price"] < apple[same]["price"]):
                 apple[same] = offer
     offers += apple.values()
+    offers += fetch_psa(http)
     return [o for o in offers if o["price"] > 0]
+
+
+def fetch_psa(http):
+    """PSA 鑑定品の出品（scraper.psa_catalog でも使う）。"""
+    offers = []
+    for item, name in _read_category(http, PSA_CATEGORY):
+        parsed = parse_name(name)
+        key = psa_key("pokemon", parsed[0], parsed[1], parsed[3]) if parsed else None
+        price = _price(item, "max")
+        if key and price:
+            image = (item.get("images") or [{}])[0].get("src")
+            offers.append({"jan": None, "key": key, "name": name, "price": price, "url": item["permalink"], "mode": "郵送",
+                           "psa": {"game": "pokemon", "grade": parsed[0], "name": parsed[1], "rarity": parsed[2],
+                                   "number": parsed[3], "image": image, "page": item["permalink"]}})
+    return offers
 
 
 def _read_category(http, category):

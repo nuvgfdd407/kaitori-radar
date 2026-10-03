@@ -577,6 +577,18 @@ def add_button(p, label=False):
 RANKING_SHOWN = 30
 
 
+def movers_teaser(ups):
+    """トップページの、今日の値上がり上位（値動きランキングへの入り口）。値上がりがなければ出さない。"""
+    if not ups:
+        return ""
+    items = "".join(
+        f'<li><a href="/item/{esc(p["jan"])}/">{esc(p["name"])}</a>'
+        f'<span class="move up">{signed_pct(now / before)}</span></li>'
+        for p, before, now in ups)
+    return (f'    <section class="teaser" aria-labelledby="teaser-title"><h2 id="teaser-title">今日の値上がり</h2>'
+            f'<ol>{items}</ol><a class="more-link" href="/ranking/">値動きランキングを見る →</a></section>')
+
+
 def ranking_content(site, ups, downs, since, min_price):
     """値動きランキングのページ。ups・downs は（商品, 前日の最高値, 今の最高値）の並び。"""
     def items(moves):
