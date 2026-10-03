@@ -42,7 +42,7 @@ def main():
     pages += [(f"/ranking/{c['id']}/", ranking_page(site, c)) for c in site["categories"]]
     pages += [("/request/", t.page(site, path="/request/", title=f"買取店・ジャンルのリクエスト｜{t.SITE_NAME}",
                                    description="買取レーダーに載せてほしい買取店や、追加してほしいジャンル・商品のリクエストを受け付けています。",
-                                   active=None, content=t.request_content()))]
+                                   active=("request", None), content=t.request_content()))]
     # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
     private_pages = [("/cart/", cart_page(site))]
     for path, html in pages + private_pages:

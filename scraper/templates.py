@@ -128,7 +128,7 @@ def _nav(site, active, path):
     """上の段はジャンル、下の段は選んでいるジャンルの中のシリーズ（シリーズが2つ以上あるときだけ）。"""
     category_id, series_id = active or (None, None)
     top = ([("all", "すべて", "/")] + [(c["id"], c["name"], c["href"]) for c in site["categories"]]
-           + [("ranking", "値動きランキング", "/ranking/")])
+           + [("ranking", "値動きランキング", "/ranking/"), ("request", "＋ リクエスト", "/request/")])
     html = f'<nav class="chips" aria-label="ジャンル">{_chips(top, category_id, path)}</nav>'
     category = next((c for c in site["categories"] if c["id"] == category_id), None)
     if category and category["own_page"]:
