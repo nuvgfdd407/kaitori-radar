@@ -683,3 +683,12 @@ body:has(#cart-bar) { padding-bottom: 72px; }
   background: #fff;
 }
 .request-fallback, .request-link { font-size: 13px; color: var(--muted); }
+
+/* 運営者情報・プライバシーポリシー */
+.doc { max-width: 760px; line-height: 1.8; }
+.doc h2 { font-size: 16px; margin: 24px 0 6px; }
+.doc p { margin: 0 0 10px; }
+.info-table { border-collapse: collapse; margin: 8px 0 16px; }
+.info-table th, .info-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.info-table th { white-space: nowrap; color: var(--muted); font-weight: 600; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }

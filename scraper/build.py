@@ -40,6 +40,11 @@ def main():
     pages += [(f"/item/{p['jan']}/", item_page(site, p)) for p in site["products"]]
     pages += [("/ranking/", ranking_page(site))]
     pages += [(f"/ranking/{c['id']}/", ranking_page(site, c)) for c in site["categories"]]
+    pages += [("/about/", t.page(site, path="/about/", title=f"運営者情報・お問い合わせ｜{t.SITE_NAME}",
+                                 description=f"{t.SITE_NAME}の運営者情報とお問い合わせ先。", active=None, content=t.about_content())),
+              ("/privacy/", t.page(site, path="/privacy/", title=f"プライバシーポリシー・免責事項｜{t.SITE_NAME}",
+                                   description=f"{t.SITE_NAME}のプライバシーポリシー（広告・Cookie）と免責事項。", active=None,
+                                   content=t.privacy_content()))]
     pages += [("/request/", t.page(site, path="/request/", title=f"買取店・ジャンルのリクエスト｜{t.SITE_NAME}",
                                    description="買取レーダーに載せてほしい買取店や、追加してほしいジャンル・商品のリクエストを受け付けています。",
                                    active=("request", None), content=t.request_content()))]

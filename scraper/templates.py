@@ -115,7 +115,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
       <p class="yahoo-credit">
         {YAHOO_CREDIT}
       </p>
-      <p><a href="/request/">買取店・ジャンルのリクエスト</a></p>
+      <p class="footer-links"><a href="/about/">運営者情報・お問い合わせ</a><a href="/privacy/">プライバシーポリシー</a><a href="/request/">買取店・ジャンルのリクエスト</a></p>
       <p>© {SITE_NAME}</p>
     </div>
   </footer>
@@ -616,6 +616,54 @@ def ranking_content(site, ups, downs, since, min_price, name="", active="all", p
     {items(ups)}
     <h2 class="section-title">値下がり</h2>
     {items(downs)}"""
+
+
+OPERATOR = "買取レーダー運営事務局"
+CONTACT_EMAIL = "nuvgfdd407@gmail.com"
+
+
+def about_content():
+    """運営者情報・お問い合わせのページ。"""
+    return f"""    <h1 class="page-title">運営者情報・お問い合わせ</h1>
+    <div class="doc">
+      <table class="info-table">
+        <tr><th scope="row">サイト名</th><td>{SITE_NAME}（{esc(SITE_URL)}）</td></tr>
+        <tr><th scope="row">運営者</th><td>{OPERATOR}</td></tr>
+        <tr><th scope="row">お問い合わせ</th><td><a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></td></tr>
+      </table>
+      <h2>このサイトについて</h2>
+      <p>{SITE_NAME}は、ゲーム機・スマホ・タブレット・トレーディングカード・PSA鑑定品などの買取価格を、買取店ごとに比較できるサイトです。
+        各買取店の公式サイトに掲載されている価格を自動で集め、10:00〜21:00のあいだ15分ごとに更新しています。</p>
+      <p>掲載している買取店とは提携関係にありません。実際の買取価格や条件は、必ず各買取店のページでご確認ください。</p>
+      <h2>お問い合わせ</h2>
+      <p>サイトへのご意見・不具合のご報告は、上のメールアドレスか<a href="/request/">リクエストのページ</a>からお送りください。</p>
+      <p>買取店の運営者さまで、掲載内容の修正や掲載の停止をご希望の場合は、上のメールアドレスまでご連絡ください。確認のうえ速やかに対応します。</p>
+    </div>"""
+
+
+def privacy_content():
+    """プライバシーポリシー（広告の Cookie の説明を含む）と免責事項。"""
+    return f"""    <h1 class="page-title">プライバシーポリシー・免責事項</h1>
+    <div class="doc">
+      <h2>広告について</h2>
+      <p>当サイトでは、第三者配信の広告サービス（Google アドセンス）を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するために、
+        当サイトや他のサイトへのアクセスに関する情報（Cookie）を使用することがあります。Cookie には、氏名・住所・メールアドレス・電話番号などの
+        個人を特定する情報は含まれません。</p>
+      <p>Google が広告で Cookie を使用する方法については<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener">Google のポリシーと規約</a>を、
+        パーソナライズ広告を無効にする方法については<a href="https://myadcenter.google.com/" target="_blank" rel="noopener">マイ アド センター</a>をご覧ください。</p>
+      <h2>お客さまのブラウザに保存する情報</h2>
+      <p>比較リストに追加した商品や、一覧の並び順の設定は、お使いのブラウザの中（localStorage）にだけ保存し、当サイトのサーバーには送信しません。
+        比較リストは最後に変更してから1日で自動的に消えます。</p>
+      <h2>リクエスト・お問い合わせで取得する情報</h2>
+      <p>リクエストのフォーム（Google フォーム）やメールでお送りいただいた内容は、サイトの改善と、お問い合わせへの返信のためだけに使用し、
+        法令にもとづく場合を除いて第三者に提供しません。フォームでは名前やメールアドレスはお聞きしていません。</p>
+      <h2>免責事項</h2>
+      <p>掲載している買取価格は、各買取店の公式サイトから自動で集めたもので、正確さや最新であることを保証するものではありません。
+        実際の買取価格は、申込の時点で各買取店が決めます。当サイトの情報を利用したことで生じた損害について、当サイトは責任を負いかねます。</p>
+      <p>商品画像の著作権・肖像権などは、それぞれの権利者に帰属します。掲載に問題がある場合は、<a href="/about/">運営者情報</a>のメールアドレスまでご連絡ください。</p>
+      <h2>改定</h2>
+      <p>このポリシーは、必要に応じて予告なく改定することがあります。</p>
+    </div>"""
 
 
 # リクエストのフォーム（Google フォーム。回答は運営の Google アカウントのスプレッドシートに貯まる）
