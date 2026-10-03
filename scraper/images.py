@@ -3,6 +3,7 @@
 商品に "image_url"（メーカー公式サイトの本体画像のURL）があれば、その画像を使う。
 メーカー以外の画像（PSA 鑑定品のトレカラウンジの画像など）は、"image_source" に出典の名前を書く。
 "image_crop": "slab" の商品は、PSA のケースごと写した画像なら、カードの部分だけ切り抜く（SLAB_CARD）。
+"image_crop": "right" の商品は、画像の右半分だけを使う（バンダイの商品画像は、左に1パック・右に BOX が並んでいる）。
 ないときだけ、Yahoo!ショッピングの商品検索APIで JAN から探す。
 
     python -m scraper.images                        # 画像がまだない商品などの画像を探す
@@ -139,11 +140,10 @@ def official_image(session, product, old):
     image = {"src": url, "url": product.get("image_page") or "", "origin": url,
              **({"source": product["image_source"]} if product.get("image_source") else {})}
     same = bool(old) and old.get("origin") == url and (IMAGE_DIR / f"{product['jan']}.jpg").exists()
-    return image if save(session, product["jan"], image, refresh=not same,
-                         slab=product.get("image_crop") == "slab") else None
+    return image if save(session, product["jan"], image, refresh=not same, crop=product.get("image_crop")) else None
 
 
-def save(session, jan, image, refresh=False, slab=False):
+def save(session, jan, image, refresh=False, crop=None):
     """画像を整えて public/images/<JAN>.jpg に保存し、image["src"] をそのパスにする。保存できなければ False。"""
     path = IMAGE_DIR / f"{jan}.jpg"
     if refresh or not path.exists():
@@ -153,7 +153,7 @@ def save(session, jan, image, refresh=False, slab=False):
         if data is None:
             return False
         IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(normalize(data, slab=slab))
+        path.write_bytes(normalize(data, crop=crop))
     image["src"] = f"/images/{jan}.jpg"
     return True
 
@@ -208,13 +208,15 @@ def _product_box(mask):
     return (region[0] + inner[0], region[1] + inner[1], region[0] + inner[2], region[1] + inner[3]) if inner else None
 
 
-def normalize(data, slab=False):
+def normalize(data, crop=None):
     """余白を切り取り、白い正方形の中央に同じ大きさで置いた JPEG にする。
-    slab なら、PSA のケースごと写した画像からカードの部分だけ切り抜く。"""
+    crop が "slab" なら PSA のケースごと写した画像からカードの部分だけ、"right" なら画像の右半分だけを使う。"""
     image = Image.open(io.BytesIO(data))
-    if slab and image.width / image.height < SLAB_RATIO:
-        w, h = image.size
+    w, h = image.size
+    if crop == "slab" and w / h < SLAB_RATIO:
         image = image.crop(tuple(round(v * (w if n % 2 == 0 else h)) for n, v in enumerate(SLAB_CARD)))
+    elif crop == "right":
+        image = image.crop((w // 2, 0, w, h))
     # 背景が透明な画像（公式サイトの PNG など）は、白い背景に載せる
     if image.mode in ("RGBA", "LA", "P"):
         image = image.convert("RGBA")
