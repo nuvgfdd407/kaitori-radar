@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T14:56:53+09:00",
+  "updated_at": "2026-10-03T15:11:38+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T15:11:38+09:00"
     },
     {
       "id": "ichome",
@@ -62,7 +63,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T15:11:38+09:00"
     },
     {
       "id": "guest",
@@ -7186,7 +7188,7 @@
       },
       "prices": {
         "homura": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://kaitori-homura.com/products/3199"
         },
         "shouten": {
@@ -7198,7 +7200,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -7244,7 +7246,7 @@
       },
       "prices": {
         "homura": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://kaitori-homura.com/products/3198"
         },
         "shouten": {
@@ -7256,7 +7258,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -7302,7 +7304,7 @@
       },
       "prices": {
         "homura": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://kaitori-homura.com/products/3200"
         },
         "shouten": {
@@ -7314,7 +7316,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -7360,7 +7362,7 @@
       },
       "prices": {
         "homura": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://kaitori-homura.com/products/3201"
         },
         "shouten": {
@@ -7372,7 +7374,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -7418,7 +7420,7 @@
       },
       "prices": {
         "homura": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://kaitori-homura.com/products/3202"
         },
         "shouten": {
@@ -7430,7 +7432,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138000,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -30245,6 +30247,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-black-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 59000,
+          "url": "https://kaitori-homura.com/products/7316"
+        },
         "shouten": {
           "price": 59000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27189"
@@ -30282,6 +30288,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-darkbronze-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 59000,
+          "url": "https://kaitori-homura.com/products/7318"
+        },
         "shouten": {
           "price": 59000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27185"
@@ -30319,6 +30329,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-lightgold-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 59000,
+          "url": "https://kaitori-homura.com/products/7315"
+        },
         "shouten": {
           "price": 59000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27191"
@@ -30356,6 +30370,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-spacegray-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 59000,
+          "url": "https://kaitori-homura.com/products/7317"
+        },
         "shouten": {
           "price": 59000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27187"
@@ -30529,6 +30547,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-46-aluminum-black-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 65000,
+          "url": "https://kaitori-homura.com/products/7324"
+        },
         "shouten": {
           "price": 65000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27180"
@@ -30570,6 +30592,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-46-aluminum-darkbronze-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 65000,
+          "url": "https://kaitori-homura.com/products/7326"
+        },
         "shouten": {
           "price": 65000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27176"
@@ -30607,6 +30633,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-46-aluminum-lightgold-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 65000,
+          "url": "https://kaitori-homura.com/products/7323"
+        },
         "shouten": {
           "price": 65000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27182"
@@ -30644,6 +30674,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-46-aluminum-spacegray-nc-s12_VW_PF?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 65000,
+          "url": "https://kaitori-homura.com/products/7325"
+        },
         "shouten": {
           "price": 65000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27178"
@@ -31709,7 +31743,7 @@
       "prices": {
         "homura": {
           "price": 33000,
-          "url": "https://kaitori-homura.com/products/7327"
+          "url": "https://kaitori-homura.com/products/7328"
         },
         "shouten": {
           "price": 33000,
@@ -56398,6 +56432,10 @@
           "price": 2250000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 2300000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 2220000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/208-XY-P/"
@@ -60206,10 +60244,6 @@
           "price": 200000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 215000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 220000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -62404,6 +62438,10 @@
         "shinsoku": {
           "price": 89000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 97000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 94000,
@@ -76060,10 +76098,6 @@
           "price": 7700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 8900,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 7100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -83086,12 +83120,7 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1790954878_cadfb3fd9c3931996c69.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 5800,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-a01cae223f",
@@ -83148,10 +83177,6 @@
         "torecabank": {
           "price": 4800,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 4800,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
