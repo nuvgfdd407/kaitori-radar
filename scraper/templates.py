@@ -115,6 +115,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
       <p class="yahoo-credit">
         {YAHOO_CREDIT}
       </p>
+      <p><a href="/request/">買取店・ジャンルのリクエスト</a></p>
       <p>© {SITE_NAME}</p>
     </div>
   </footer>
@@ -169,6 +170,7 @@ def _notes(site):
         <li>商品画像は、メーカー公式サイト・Yahoo!ショッピングの出品・買取店（PSA鑑定品）の画像です。画像をクリックすると、出典のページが開きます。</li>
       </ul>
       <p class="sources">出典: {sources}</p>
+      <p class="request-link">載せてほしい買取店やジャンルがあれば、<a href="/request/">リクエスト</a>から教えてください。</p>
     </section>"""
 
 
@@ -614,6 +616,19 @@ def ranking_content(site, ups, downs, since, min_price, name="", active="all", p
     {items(ups)}
     <h2 class="section-title">値下がり</h2>
     {items(downs)}"""
+
+
+# リクエストのフォーム（Google フォーム。回答は運営の Google アカウントのスプレッドシートに貯まる）
+REQUEST_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSe3Wg-4HXTUrvwbelR1LE0wpHVEnRYHW4bjM8yRwTfJDxi0mQ/viewform"
+
+
+def request_content():
+    """リクエストのページ。Google フォームを埋め込む（読み込めないとき用に、フォームへのリンクも置く）。"""
+    return f"""    <h1 class="page-title">買取店・ジャンルのリクエスト</h1>
+    <p class="lead">買取レーダーに載せてほしい買取店や、追加してほしいジャンル・商品を教えてください。すべて任意で、名前やメールアドレスは不要です。
+      いただいたリクエストは追加を検討する参考にします（すべてに対応できるとは限りません）。</p>
+    <iframe class="request-form" src="{REQUEST_FORM}?embedded=true" title="リクエストのフォーム" loading="lazy">読み込んでいます…</iframe>
+    <p class="request-fallback">フォームが表示されないときは、<a href="{REQUEST_FORM}" target="_blank" rel="noopener">こちらから開いて</a>ください。</p>"""
 
 
 def cart_content():

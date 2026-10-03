@@ -672,3 +672,14 @@ body:has(#cart-bar) { padding-bottom: 72px; }
 
 /* 値動きランキングの、見出しの下のジャンルの絞り込み */
 .ranking-genres { margin: 4px 0 12px; }
+
+/* リクエストのページ（Google フォームの埋め込み） */
+.request-form {
+  display: block;
+  width: 100%;
+  height: 1150px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+.request-fallback, .request-link { font-size: 13px; color: var(--muted); }
