@@ -83,6 +83,8 @@ def page(site, *, path, title, description, active, content, controls="", breadc
   <link rel="icon" href="{FAVICON}">
   <link rel="stylesheet" href="{site["css"]}">
   <script src="{site["js"]}" defer></script>{structured}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}"
+     crossorigin="anonymous"></script>
 </head>
 <body{body_attr}>
   <header class="site-header">
@@ -618,6 +620,8 @@ def ranking_content(site, ups, downs, since, min_price, name="", active="all", p
     {items(downs)}"""
 
 
+# Google AdSense のサイト運営者ID（公開される値。public/ads.txt にも同じIDを書く）
+ADSENSE_CLIENT = "ca-pub-5057487349099167"
 OPERATOR = "買取レーダー運営事務局"
 CONTACT_EMAIL = "kaitoriradar.support@gmail.com"
 

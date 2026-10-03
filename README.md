@@ -43,6 +43,7 @@ dist/ を Cloudflare Pages に公開
 | `/about/`・`/privacy/` | 運営者情報・お問い合わせ（運営者「買取レーダー運営事務局」、連絡先 kaitoriradar.support@gmail.com）と、プライバシーポリシー（広告の Cookie の説明）・免責事項。AdSense の審査に必要 |
 | `/request/` | 買取店・ジャンルのリクエスト（Google フォームを埋め込む。回答は運営の Google アカウント（nuvgfdd407）のスプレッドシート「買取レーダー リクエスト（回答）」に貯まる） |
 | `/cart/` | 比較リスト（検索結果に出さない。サイトマップにも載せない） |
+| `/ads.txt` | Google AdSense の販売者の宣言（サイト運営者ID ca-pub-5057487349099167。全ページの <head> に AdSense のコードも入れている） |
 | `/sitemap.xml` | 上のすべてのページの一覧（組み立てるときに自動で作る） |
 
 一覧の上の切り替えボタンは2段で、上の段がジャンル（すべて・Nintendo・PlayStation・Xbox・Apple・Android・トレカ・その他）、
