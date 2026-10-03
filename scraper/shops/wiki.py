@@ -28,6 +28,9 @@ PHONE_URL = "https://iphonekaitori.tokyo/"
 # iPhone / Google（Pixel） / SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
 PHONE_LISTS = ["series/iphone", "brand/google", "brand/samsung", "brand/sony", "brand/sharp"]
 APPLE_URL = "https://kadenkaitori.tokyo/"
+# Mac は PC 用の別サイト（同じ作りの一覧）
+MAC_URL = "https://pckaitori.tokyo/"
+MAC_PATHS = ["category/mac-note-pc", "category/mac-desktop-pc"]
 MAX_PAGES = 20
 
 
@@ -42,7 +45,10 @@ def fetch(http):
             # 古い機種や、扱っていない機種は取らない
             if key and phone_colors(key):
                 offers.append({**o, "key": key, "colors": one_color(key, name, o["price"])})
-    for o in _read_list(http, APPLE_URL, "brand/apple"):
+    apple = list(_read_list(http, APPLE_URL, "brand/apple"))
+    for path in MAC_PATHS:
+        apple += _read_list(http, MAC_URL, path)
+    for o in apple:
         offers.append(apple_offer(o["name"], o["price"], o["url"], jan=o["jan"]))
     return [o for o in offers if o["price"]]
 

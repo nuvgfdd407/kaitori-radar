@@ -25,7 +25,7 @@ PIXEL_PAGES = ["https://kaitori-rudeya.com/category/detail/172"]
 # SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
 ANDROID_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (249, 248, 247)]
 # iPad / Apple Watch Series 12 / Series 11 / SE 3 / Ultra 3 / Ultra 4 / AirPods / AirPods Pro / AirPods Max
-APPLE_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (5, 71, 72, 73, 256, 222, 223, 244, 259, 4, 74, 33)]
+APPLE_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (5, 71, 72, 73, 256, 222, 223, 244, 259, 4, 74, 33, 8, 9)]  # 8: Mac book, 9: Macデスクトップ
 # ポケモンカード / ワンピースカード / 遊戯王 / ドラゴンボールカード（カートンは対象外）
 CARD_PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (114, 224, 116, 225)]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / Air / 17 / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max / 16e

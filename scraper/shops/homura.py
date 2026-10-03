@@ -74,7 +74,7 @@ def fetch(http):
                                "colors": one_color(key, name, price)})
     for category, sub in APPLE_SUBS:
         for name, jan, price, url in _read_list(http, category, sub):
-            if sub != 140 or "AirPods" in name:
+            if sub != 140 or "AirPods" in name or "Mac" in name:  # 140 はイヤホンなどだが、AirPods と MacBook も入っている
                 offers.append(apple_offer(name, price, url, jan=jan))
     offers += fetch_psa(http)
     for sub in CARD_SUBS:

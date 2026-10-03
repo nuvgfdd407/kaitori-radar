@@ -38,7 +38,7 @@ ANDROID_PAGES = [(f"https://www.kaitorishouten-co.jp/category/1/{i}", carrier) f
     (262, "SIMフリー"), (261, "docomo"), (260, "au"), (418, "au"), (259, "SoftBank"), (258, "Y!mobile"), (419, "楽天モバイル"))]
 
 # iPad（Wi-Fi） / Apple Watch（GPS） / Apple Watch（GPS + Cellular） / AirPods / AirPods Max
-APPLE_PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (278, 274, 489, 277, 571)]
+APPLE_PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (278, 274, 489, 277, 571, 276, 468)]  # 276: MacBook, 468: Mac mini
 # iPad（Cellular）: Pro M5 / Pro M4 / Air M4 / Air M3 / mini（A17 Pro） / iPad（A16）
 APPLE_PAGES += [f"https://www.kaitorishouten-co.jp/category/1/{i}" for i in (745, 684, 726, 700, 696, 699)]
 

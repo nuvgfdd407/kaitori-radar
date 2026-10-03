@@ -34,7 +34,7 @@ IPHONE_CATEGORIES = [306, 207, 208, 263]
 # ポケモンカード / ワンピース
 CARD_CATEGORIES = [172, 174]
 # Apple Watch / Apple Watch GPS+Cellular / AirPods / AirPods Max
-APPLE_CATEGORIES = [168, 169, 165, 166]
+APPLE_CATEGORIES = [168, 169, 165, 166, 170]  # 170: MacBook（型番・JAN は商品説明にある）
 PSA_CATEGORY = 279
 SHRINK = "BOXシュリンクあり"
 NO_SHRINK = "BOXシュリンクなし"
@@ -64,7 +64,8 @@ def fetch(http):
     apple = {}
     for category in APPLE_CATEGORIES:
         for item, name in _read_category(http, category):
-            offer = apple_offer(name, _price(item, "max"), item["permalink"], jan=item["sku"].strip() or None)
+            offer = apple_offer(name, _price(item, "max"), item["permalink"], jan=item["sku"].strip() or None,
+                                text=html.unescape(item.get("description") or "") if category == 170 else "")
             same = offer["jan"] or tuple(offer["codes"])
             if same and (same not in apple or offer["price"] < apple[same]["price"]):
                 apple[same] = offer

@@ -1,7 +1,7 @@
 # 買取レーダー
 
 Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
-iPhone 18・17・16シリーズ（SIMフリー版）、iPad・Apple Watch・AirPods、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
+iPhone 18・17・16シリーズ（SIMフリー版）、iPad・Mac・Apple Watch・AirPods、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
 ポケモンカード・ワンピースカードなどの未開封BOXの
 **新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
 
@@ -155,12 +155,16 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - 買取wiki のスマホは、同じ買取wiki のスマホ用のサイト（iphonekaitori.tokyo）から取る（ゲーム機は gamekaitori.jp）
 - 色の区別がない店舗（ケータイゴッドなど）しか買い取っていない組み合わせも、その機種・キャリアの仕様にある色なら載せる
 
-### iPad・Apple Watch・AirPods
+### iPad・Mac・Apple Watch・AirPods
 
 - iPad: Pro（M5・M4）・Air（M4・M3）・iPad（A16）・iPad mini（A17 Pro）。
   販売が終わった旧モデル（Pro 11インチ 第3・4世代、12.9インチ 第5・6世代、Air（M2）・第5世代、iPad 第9・10世代、
   iPad mini 第6世代）も、店舗が買い取っている色・容量だけ載せる。1行＝サイズ・チップ・容量・Wi-Fi/Cellular・
   （Pro の Nano-textureガラス）・色（例: `iPad Pro 11インチ（M5）256GB Wi-Fi スペースブラック`）。`jan` はその JAN
+- Mac: MacBook Neo・MacBook Air（M2〜M5）・MacBook Pro（M2〜M5）・iMac（M3・M4）・Mac mini（M2〜M6）・Mac Studio（M2〜M5）の
+  標準構成（CTO は対象外）。1行＝機種・チップ（コア数）・メモリ・SSD・色。店舗が買い取っている型番だけ載せる。
+  取っている店舗: 森森・ルデヤ・ケータイゴッド・一丁目・商店・wiki（PC 用の別サイト pckaitori.tokyo）・海峡通信・ホムラ・当番（Neo だけ。型番は商品説明）。
+  森森の 1,000円の行（Mac Studio など）は仮の価格なので読まない
 - Apple Watch: Series 12・11、Ultra 4・3、SE 3（旧モデルは Series 10・8、Ultra 2、SE 第2世代も）。1行＝シリーズ・ケースサイズ・GPS/GPS + Cellular・ケースの色と素材
   （例: `Apple Watch Series 12 46mm GPS ブラックアルミニウム`）。バンドは区別しない。`jan` は仮のID
 - AirPods: Pro 3・Pro 2・AirPods 5（ワイヤレス充電ケース付きも）・AirPods 4（ノイズキャンセリング搭載も）・AirPods Max 2・Max（USB-C）。

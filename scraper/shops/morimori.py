@@ -36,11 +36,12 @@ IPHONE_CATEGORIES = ["0301"]
 # Android: SAMSUNG / Google Pixel / SONY Xperia / AQUOS
 ANDROID_CATEGORIES = ["0304012", "0304001", "0304002", "0304003"]
 # iPad Pro / iPad Air / iPad / iPad mini / Apple Watch / ヘッドホン・イヤホン（AirPods）
-APPLE_CATEGORIES = ["0401001", "0401002", "0401003", "0401004", "0303001", "0602001"]
+APPLE_CATEGORIES = ["0401001", "0401002", "0401003", "0401004", "0303001", "0602001", "0204", "0202"]  # 0204: Macbook, 0202: Mac
 # トレカ: ポケモンカード / 遊戯王 / ワンピース / ドラゴンボール
 CARD_CATEGORIES = ["2401", "2402", "2403", "2404"]
 CARD_GAMES = {"2401": "pokemon", "2402": "yugioh", "2403": "onepiece"}
 MAX_PAGES = 10
+PLACEHOLDER_PRICE = 1000
 
 
 def fetch(http):
@@ -101,6 +102,8 @@ def _read_list(http, category):
             # 列: カテゴリ×3・商品タイプ・商品名・JAN・通常買取価格・預かり買取価格・即フリ買取価格
             if len(cells) < 7 or link is None or cells[3].get_text(strip=True) != "新品":
                 continue
+            if (parse_yen(cells[6].get_text()) or 0) <= PLACEHOLDER_PRICE:
+                continue  # 1,000円などの仮の価格（Mac Studio など、買取価格が決まっていない商品）
             offers.append({
                 "jan": _jan(cells[5].get_text()),
                 "name": " ".join(link.get_text().split()),

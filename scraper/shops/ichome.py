@@ -39,6 +39,8 @@ ANDROID_CATEGORIES = [("WkCcKCxwC6NInC5c", "SIMフリー"), ("GsGv92VhqBU8Mvuj",
 # iPad / Apple Watch（携帯用の API）、AirPods / AirPods Max（家電用の API）
 APPLE_KEITAI_CATEGORIES = ["df7CCyzC7GlrzAMt", "CS6O5bYC0Ezu2Zj9"]
 APPLE_GOODS_CATEGORIES = ["P2GdGa4Qo46DdnXO", "lWMiNtQABsWADyJY"]
+# Mac（MacBook Air・Pro・Studio）/ iMac / Mac mini（アクセサリと同じカテゴリなので「Mac」の行だけ使う）
+MAC_CATEGORIES = ["20030007", "20367797", "20399103"]
 PAGE_SIZE = 100
 
 
@@ -73,8 +75,10 @@ def fetch(http):
     for category in APPLE_KEITAI_CATEGORIES:
         for item in _read_category(http, IPHONE_API, category):
             offers += _apple_offers(item)
-    for category in APPLE_GOODS_CATEGORIES:
+    for category in APPLE_GOODS_CATEGORIES + MAC_CATEGORIES:
         for item in _read_category(http, API, category):
+            if category == "20399103" and "Mac" not in (item.get("title") or ""):
+                continue
             price = _new_price(item)
             if price:
                 offers.append(apple_offer((item.get("title") or "").strip(), price,
