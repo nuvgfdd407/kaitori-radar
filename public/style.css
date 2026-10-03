@@ -669,3 +669,6 @@ body:has(#cart-bar) { padding-bottom: 72px; }
 .teaser li a { color: var(--text); }
 .teaser .move { margin-left: 8px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .teaser .move.up { color: var(--pos); }
+
+/* 値動きランキングの、見出しの下のジャンルの絞り込み */
+.ranking-genres { margin: 4px 0 12px; }

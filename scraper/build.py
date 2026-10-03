@@ -250,7 +250,8 @@ def ranking_page(site, category=None):
                    f"{site['updated']}時点。")
     return t.page(site, path=path, title=title, description=description,
                   active=("ranking", category["id"] if category else "all"),
-                  content=t.ranking_content(site, ups, downs, since, RANKING_MIN_PRICE, name))
+                  content=t.ranking_content(site, ups, downs, since, RANKING_MIN_PRICE, category["name"] if category else "",
+                                            category["id"] if category else "all", path))
 
 
 def cart_page(site):
