@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T14:11:38+09:00",
+  "updated_at": "2026-10-03T14:26:39+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T14:26:39+09:00"
     },
     {
       "id": "ichome",
@@ -7210,7 +7211,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6271"
         },
         "wiki": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-256GB-lavender"
         },
         "morimori": {
@@ -7268,7 +7269,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6272"
         },
         "wiki": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-256GB-sage"
         },
         "morimori": {
@@ -7326,7 +7327,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6270"
         },
         "wiki": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-256GB-mistblue"
         },
         "morimori": {
@@ -7384,7 +7385,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6269"
         },
         "wiki": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-256GB-white"
         },
         "morimori": {
@@ -7442,7 +7443,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6268"
         },
         "wiki": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-256GB-Black"
         },
         "morimori": {
@@ -7500,7 +7501,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6276"
         },
         "wiki": {
-          "price": 162000,
+          "price": 158000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-512GB-lavender"
         },
         "morimori": {
@@ -7558,7 +7559,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6277"
         },
         "wiki": {
-          "price": 162000,
+          "price": 158000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-512GB-sage"
         },
         "morimori": {
@@ -7616,7 +7617,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6275"
         },
         "wiki": {
-          "price": 162000,
+          "price": 158000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-512GB-mistblue"
         },
         "morimori": {
@@ -7674,7 +7675,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6274"
         },
         "wiki": {
-          "price": 162000,
+          "price": 158000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-512GB-white"
         },
         "morimori": {
@@ -7732,7 +7733,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6273"
         },
         "wiki": {
-          "price": 162000,
+          "price": 158000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17-512GB-black"
         },
         "morimori": {
@@ -31933,7 +31934,7 @@
         },
         "morimori": {
           "price": 37000,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303737"
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303739"
         },
         "keitaigod": {
           "price": 38500,
@@ -35877,7 +35878,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/Google-Pixel-10a-128GB-Fog-SIM-0840353949812"
         },
         "morimori": {
-          "price": 65800,
+          "price": 67000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/331563"
         },
         "keitaigod": {
@@ -54407,12 +54408,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026268/20251210/1765355607556-916e7fbb073c4a59.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 360000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-35b15d7e1f",
@@ -54425,7 +54421,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400001582/20251210/1765355651880-bfa18c20e7a0b30f.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 360000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-36f60f62c9",
@@ -57845,10 +57846,6 @@
         "shinsoku": {
           "price": 730000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 830000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 830000,
@@ -62615,10 +62612,6 @@
         "lounge": {
           "price": 89000,
           "url": "https://kaitori.toreca-lounge.com/product/51UivcOFu4b0S9f9MX0rnA"
-        },
-        "torecabank": {
-          "price": 93000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 95000,
@@ -67830,10 +67823,6 @@
         "shinsoku": {
           "price": 25500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 24600,
@@ -73591,10 +73580,6 @@
         "shinsoku": {
           "price": 10300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 12500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 12000,
@@ -80064,10 +80049,6 @@
         "shinsoku": {
           "price": 144000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 165000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 170000,
