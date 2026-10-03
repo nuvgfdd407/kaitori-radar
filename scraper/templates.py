@@ -619,7 +619,7 @@ def ranking_content(site, ups, downs, since, min_price, name="", active="all", p
 
 
 OPERATOR = "買取レーダー運営事務局"
-CONTACT_EMAIL = "nuvgfdd407@gmail.com"
+CONTACT_EMAIL = "kaitoriradar.support@gmail.com"
 
 
 def about_content():
