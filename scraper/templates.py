@@ -130,7 +130,11 @@ def _nav(site, active, path):
            + [("ranking", "値動きランキング", "/ranking/")])
     html = f'<nav class="chips" aria-label="ジャンル">{_chips(top, category_id, path)}</nav>'
     category = next((c for c in site["categories"] if c["id"] == category_id), None)
-    if category and category["own_page"]:
+    if category_id == "ranking":
+        # 値動きランキングは、下の段でジャンルを選べる
+        sub = [("all", "すべて", "/ranking/")] + [(c["id"], c["name"], f"/ranking/{c['id']}/") for c in site["categories"]]
+        html += f'<nav class="chips chips--sub" aria-label="ジャンル">{_chips(sub, series_id, path)}</nav>'
+    elif category and category["own_page"]:
         sub = [(s["id"], s["name"], f"/{s['id']}/") for s in category["series"]]
         html += f'<nav class="chips chips--sub" aria-label="シリーズ">{_chips(sub, series_id, path)}</nav>'
     return f'<div class="nav">{html}</div>'
@@ -589,7 +593,7 @@ def movers_teaser(ups):
             f'<ol>{items}</ol><a class="more-link" href="/ranking/">値動きランキングを見る →</a></section>')
 
 
-def ranking_content(site, ups, downs, since, min_price):
+def ranking_content(site, ups, downs, since, min_price, name=""):
     """値動きランキングのページ。ups・downs は（商品, 前日の最高値, 今の最高値）の並び。"""
     def items(moves):
         if not moves:
@@ -605,7 +609,7 @@ def ranking_content(site, ups, downs, since, min_price):
             f'</span></a></li>'
             for n, (p, before, now) in enumerate(moves, 1))
         return f'<ol class="search-results ranking">{rows}</ol>'
-    return f"""    <h1 class="page-title">買取価格の値上がり・値下がりランキング</h1>
+    return f"""    <h1 class="page-title">{esc(name + "の" if name else "")}買取価格の値上がり・値下がりランキング</h1>
     <p class="lead">前日（{esc(since)}）の最高値と比べて、買取価格が大きく上がった商品・下がった商品です（{esc(site["updated"])}時点）。
       前日と今の両方に価格がある店舗だけで比べ、変化の率が大きい順にそれぞれ最大{RANKING_SHOWN}件並べています。前日の最高値が{yen(min_price)}未満の商品は除いています。</p>
     <h2 class="section-title">値上がり</h2>

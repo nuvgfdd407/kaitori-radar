@@ -39,6 +39,7 @@ def main():
     pages += [(f"/{s['id']}/", list_page(site, series=s)) for s in site["series"]]
     pages += [(f"/item/{p['jan']}/", item_page(site, p)) for p in site["products"]]
     pages += [("/ranking/", ranking_page(site))]
+    pages += [(f"/ranking/{c['id']}/", ranking_page(site, c)) for c in site["categories"]]
     # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
     private_pages = [("/cart/", cart_page(site))]
     for path, html in pages + private_pages:
@@ -225,25 +226,31 @@ RANKING_SIZE = t.RANKING_SHOWN
 RANKING_MIN_PRICE = 3000  # 前日の最高値がこれより安い商品は、少しの変動で率が大きく出るので外す
 
 
-def movers(site):
-    """前日と比べて、最高値が上がった・下がった商品（率の大きい順）。（商品, 前日の最高値, 今の最高値）の並び。"""
+def movers(site, category=None):
+    """前日と比べて、最高値が上がった・下がった商品（率の大きい順）。（商品, 前日の最高値, 今の最高値）の並び。
+    category があれば、そのジャンルの商品だけ。"""
     moves = [(p, before, now) for p in site["products"] if p.get("move")
+             and (category is None or p["category"]["id"] == category["id"])
              for _, before, now in [p["move"]] if before >= RANKING_MIN_PRICE and now != before]
     ups = sorted((m for m in moves if m[2] > m[1]), key=lambda m: -m[2] / m[1])[:RANKING_SIZE]
     downs = sorted((m for m in moves if m[2] < m[1]), key=lambda m: m[2] / m[1])[:RANKING_SIZE]
     return ups, downs
 
 
-def ranking_page(site):
-    """前日と比べて、最高値が大きく上がった・下がった商品（率の大きい順）。"""
-    ups, downs = movers(site)
+def ranking_page(site, category=None):
+    """前日と比べて、最高値が大きく上がった・下がった商品（率の大きい順）。category があればそのジャンルだけ。"""
+    ups, downs = movers(site, category)
     days = sorted({p["move"][0] for p in site["products"] if p.get("move")})
     since = f"{int(days[-1][5:7])}/{int(days[-1][8:])}" if days else "前日"
-    title = f"買取価格の値上がり・値下がりランキング｜{t.SITE_NAME}"
-    description = (f"ゲーム機・スマホ・トレカ・PSA鑑定品の買取価格が、前日（{since}）から大きく上がった商品・下がった商品のランキング。"
+    name = category.get("title", category["name"]) if category else ""
+    path = f"/ranking/{category['id']}/" if category else "/ranking/"
+    title = f"{name + 'の' if name else ''}買取価格の値上がり・値下がりランキング｜{t.SITE_NAME}"
+    target = name or "ゲーム機・スマホ・トレカ・PSA鑑定品"
+    description = (f"{target}の買取価格が、前日（{since}）から大きく上がった商品・下がった商品のランキング。"
                    f"{site['updated']}時点。")
-    return t.page(site, path="/ranking/", title=title, description=description, active=("ranking", None),
-                  content=t.ranking_content(site, ups, downs, since, RANKING_MIN_PRICE))
+    return t.page(site, path=path, title=title, description=description,
+                  active=("ranking", category["id"] if category else "all"),
+                  content=t.ranking_content(site, ups, downs, since, RANKING_MIN_PRICE, name))
 
 
 def cart_page(site):
