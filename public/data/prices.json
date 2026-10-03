@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T15:56:49+09:00",
+  "updated_at": "2026-10-03T16:11:48+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T16:11:48+09:00"
     },
     {
       "id": "ichome",
@@ -4036,7 +4037,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344294"
         },
         "keitaigod": {
-          "price": 200000,
+          "price": 190000,
           "url": "https://keitai-god.com/price/model.php?moid=5394",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4094,7 +4095,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344302"
         },
         "keitaigod": {
-          "price": 200000,
+          "price": 190000,
           "url": "https://keitai-god.com/price/model.php?moid=5394",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4152,7 +4153,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344298"
         },
         "keitaigod": {
-          "price": 200000,
+          "price": 190000,
           "url": "https://keitai-god.com/price/model.php?moid=5394",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4210,7 +4211,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344306"
         },
         "keitaigod": {
-          "price": 200000,
+          "price": 190000,
           "url": "https://keitai-god.com/price/model.php?moid=5394",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4268,7 +4269,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344295"
         },
         "keitaigod": {
-          "price": 230000,
+          "price": 220000,
           "url": "https://keitai-god.com/price/model.php?moid=5393",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4322,7 +4323,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344303"
         },
         "keitaigod": {
-          "price": 230000,
+          "price": 220000,
           "url": "https://keitai-god.com/price/model.php?moid=5393",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4380,7 +4381,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344299"
         },
         "keitaigod": {
-          "price": 230000,
+          "price": 220000,
           "url": "https://keitai-god.com/price/model.php?moid=5393",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -4438,7 +4439,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344307"
         },
         "keitaigod": {
-          "price": 230000,
+          "price": 220000,
           "url": "https://keitai-god.com/price/model.php?moid=5393",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -8494,7 +8495,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318764"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 108000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -8544,7 +8545,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318763"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 108000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -8594,7 +8595,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318765"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 108000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -76861,10 +76862,6 @@
           "price": 8100,
           "url": "https://kaitori.toreca-lounge.com/product/5UTTwNxsW6dKduxobeJAYD"
         },
-        "torecabank_store": {
-          "price": 8800,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 7000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -82675,10 +82672,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -83340,6 +83333,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 5500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 5500,
           "url": "https://store.torecabank.com/kaitori_list"
