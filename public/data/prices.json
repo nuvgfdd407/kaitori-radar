@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T16:41:49+09:00",
+  "updated_at": "2026-10-03T16:56:44+09:00",
   "shops": [
     {
       "id": "homura",
@@ -62,7 +62,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T16:56:44+09:00"
     },
     {
       "id": "guest",
@@ -60825,6 +60826,10 @@
           "price": 146000,
           "url": "https://kaitori.toreca-lounge.com/product/1wY83Afu2E1fUuC8aeVMWG"
         },
+        "shinsoku": {
+          "price": 139000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
         "torecabank": {
           "price": 150000,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -71657,10 +71662,6 @@
         "shinsoku": {
           "price": 13100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 15000,
@@ -82663,10 +82664,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
