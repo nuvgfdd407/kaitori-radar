@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T20:11:45+09:00",
+  "updated_at": "2026-10-03T20:26:46+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-03T20:26:46+09:00"
     },
     {
       "id": "rudeya",
