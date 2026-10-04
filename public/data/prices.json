@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T10:11:58+09:00",
+  "updated_at": "2026-10-04T10:26:49+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-04T10:26:49+09:00"
     },
     {
       "id": "ichome",
@@ -34,7 +35,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-04T10:26:49+09:00"
     },
     {
       "id": "rudeya",
@@ -1113,7 +1115,7 @@
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-Lite--4902370542929"
         },
         "morimori": {
-          "price": 25600,
+          "price": 25500,
           "url": "https://www.morimori-kaitori.jp/category/0104001/product/279"
         },
         "guest": {
@@ -2878,7 +2880,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4756"
         },
         "wiki": {
-          "price": 105500,
+          "price": 106000,
           "url": "https://gamekaitori.jp/purchase/Xbox-Series-X-1TB----EP2-00708-4549576247038"
         },
         "morimori": {
@@ -4041,7 +4043,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 215000,
+          "price": 212000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -4095,7 +4097,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 203000,
+          "price": 200000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -4149,7 +4151,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 203000,
+          "price": 200000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -4203,7 +4205,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 200000,
+          "price": 197000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -4868,7 +4870,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "wiki": {
-          "price": 248000,
+          "price": 247000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-burgundy"
         },
         "morimori": {
@@ -4885,7 +4887,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 250000,
+          "price": 248000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -5084,7 +5086,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7398"
         },
         "wiki": {
-          "price": 285000,
+          "price": 281000,
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-512GB-burgundy"
         },
         "morimori": {
@@ -5101,7 +5103,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 285000,
+          "price": 282000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -62838,10 +62840,6 @@
           "price": 83000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 97000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 100000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -74344,6 +74342,10 @@
         "shinsoku": {
           "price": 10400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 12000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
