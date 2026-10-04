@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T19:57:15+09:00",
+  "updated_at": "2026-10-04T20:12:13+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-04T20:12:13+09:00"
     },
     {
       "id": "ichome",
@@ -52227,10 +52228,6 @@
         "toban": {
           "price": 340000,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90sm9%e3%80%91%e3%82%bf%e3%83%83%e3%82%b0%e3%83%9c%e3%83%ab%e3%83%88/"
-        },
-        "shinsoku": {
-          "price": 360000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -69764,10 +69761,6 @@
           "price": 19500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 23000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 24000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -71129,10 +71122,6 @@
         "shinsoku": {
           "price": 15500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 19000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 19000,
@@ -72508,10 +72497,6 @@
         "torecabank": {
           "price": 16000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 16000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -74702,10 +74687,6 @@
         "shinsoku": {
           "price": 9000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
@@ -83222,10 +83203,6 @@
         "torecabank": {
           "price": 10000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
