@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T20:42:19+09:00",
+  "updated_at": "2026-10-04T20:57:17+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-04T20:57:17+09:00"
     },
     {
       "id": "ichome",
@@ -62,7 +63,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-04T20:57:17+09:00"
     },
     {
       "id": "guest",
@@ -64469,6 +64471,10 @@
           "price": 57500,
           "url": "https://kaitori.toreca-lounge.com/product/4Inysk2V21Cq6SAa2cpwL2"
         },
+        "shinsoku": {
+          "price": 55000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
         "torecabank": {
           "price": 61000,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -64963,10 +64969,6 @@
         "lounge": {
           "price": 59000,
           "url": "https://kaitori.toreca-lounge.com/product/2ospAyhed0Zck4baAiLjHr"
-        },
-        "shinsoku": {
-          "price": 55000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
           "price": 60000,
@@ -72238,10 +72240,6 @@
         "shinsoku": {
           "price": 15500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 14000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 14500,
