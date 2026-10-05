@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T18:12:25+09:00",
+  "updated_at": "2026-10-05T18:27:22+09:00",
   "shops": [
     {
       "id": "homura",
@@ -62,7 +62,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-05T18:27:22+09:00"
     },
     {
       "id": "guest",
@@ -4033,7 +4034,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 208000,
+          "price": 207000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -4091,7 +4092,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 192000,
+          "price": 191000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -4149,7 +4150,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 192000,
+          "price": 191000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -4207,7 +4208,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 188000,
+          "price": 187000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -4924,7 +4925,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 238000,
+          "price": 235000,
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "wiki": {
@@ -4941,11 +4942,11 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 240000,
+          "price": 235000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 241000,
+          "price": 236000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -4999,7 +5000,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 215000,
+          "price": 210000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -5057,7 +5058,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 215000,
+          "price": 210000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -5115,7 +5116,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 215000,
+          "price": 210000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -5637,7 +5638,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 430000,
+          "price": 415000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -5691,7 +5692,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 420000,
+          "price": 405000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -5745,7 +5746,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 420000,
+          "price": 405000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -5799,7 +5800,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 420000,
+          "price": 405000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -12122,7 +12123,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5606"
         },
         "morimori": {
-          "price": 95000,
+          "price": 103200,
           "url": "https://www.morimori-kaitori.jp/category/0301062/product/288260"
         },
         "keitaigod": {
@@ -67941,6 +67942,10 @@
           "price": 31000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
+        "club": {
+          "price": 28000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/105-078-SV1V-B/"
+        },
         "birth": {
           "price": 26100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -70649,10 +70654,6 @@
           "price": 19000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 22000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 18300,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -70700,10 +70701,6 @@
         "torecabank": {
           "price": 22000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 23000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 22000,
@@ -74554,6 +74551,10 @@
         "torecabank_store": {
           "price": 13000,
           "url": "https://store.torecabank.com/kaitori_list"
+        },
+        "club": {
+          "price": 12000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/255-184-S8B-B/"
         },
         "birth": {
           "price": 9700,
