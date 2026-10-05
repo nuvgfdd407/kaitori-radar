@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T19:27:24+09:00",
+  "updated_at": "2026-10-05T19:42:13+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-05T19:42:13+09:00"
     },
     {
       "id": "ichome",
@@ -5396,7 +5397,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-1TB-burgundy"
         },
         "morimori": {
-          "price": 343000,
+          "price": 337000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344312"
         },
         "keitaigod": {
@@ -57630,10 +57631,6 @@
           "price": 770000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 880000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 800000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/187-S-P/"
@@ -68363,10 +68360,6 @@
           "price": 25000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 28000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 27000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/073-069-S6A-B/"
@@ -69639,10 +69632,6 @@
         "torecabank": {
           "price": 23000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 23500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 19600,
@@ -76980,6 +76969,10 @@
           "price": 7000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 8500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -81044,10 +81037,6 @@
         "torecabank": {
           "price": 19000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 19500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 15800,
