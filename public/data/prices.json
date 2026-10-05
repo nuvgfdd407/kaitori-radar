@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T19:57:21+09:00",
+  "updated_at": "2026-10-05T20:12:17+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-10-05T19:57:21+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -83763,10 +83762,6 @@
         "torecabank": {
           "price": 4000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 4500,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
