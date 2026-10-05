@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T16:57:20+09:00",
+  "updated_at": "2026-10-05T17:12:24+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-05T17:12:24+09:00"
     },
     {
       "id": "rudeya",
@@ -1775,7 +1776,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 192300,
+          "price": 192700,
           "url": "https://www.1-chome.com/wineDetail/6122/6122"
         },
         "toban": {
@@ -4248,7 +4249,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 238000,
+          "price": 240000,
           "url": "https://kaitori-rudeya.com/product/item/7415"
         },
         "wiki": {
@@ -4360,7 +4361,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 223000,
+          "price": 228000,
           "url": "https://kaitori-rudeya.com/product/item/7414"
         },
         "wiki": {
@@ -4924,7 +4925,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 240000,
+          "price": 238000,
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "wiki": {
@@ -5156,7 +5157,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
-          "price": 270000,
+          "price": 271000,
           "url": "https://kaitori-rudeya.com/product/item/7398"
         },
         "wiki": {
@@ -56182,7 +56183,7 @@
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 4600000,
+          "price": 4650000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
@@ -58250,10 +58251,6 @@
           "price": 400000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 470000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 470000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -59378,11 +59375,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 272900,
+          "price": 265800,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         },
         "birth_store": {
-          "price": 292900,
+          "price": 285800,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         }
       }
@@ -64390,10 +64387,6 @@
         "shinsoku": {
           "price": 60000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 68000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 57800,
