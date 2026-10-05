@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T19:42:13+09:00",
+  "updated_at": "2026-10-05T19:57:21+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-05T19:42:13+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -35,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-05T19:57:21+09:00"
     },
     {
       "id": "rudeya",
@@ -68359,6 +68359,10 @@
         "shinsoku": {
           "price": 25000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 28000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 27000,
