@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T17:12:24+09:00",
+  "updated_at": "2026-10-05T17:27:15+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-05T17:27:15+09:00"
     },
     {
       "id": "ichome",
@@ -34,8 +35,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-10-05T17:12:24+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -4917,11 +4917,11 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 238000,
+          "price": 235000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
-          "price": 237000,
+          "price": 235000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
@@ -4975,7 +4975,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 220000,
+          "price": 217000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -5033,7 +5033,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 220000,
+          "price": 217000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -5091,7 +5091,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 220000,
+          "price": 217000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -5153,7 +5153,7 @@
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
-          "price": 272000,
+          "price": 267000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
@@ -5211,7 +5211,7 @@
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
-          "price": 257000,
+          "price": 254000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
@@ -5269,7 +5269,7 @@
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
-          "price": 257000,
+          "price": 254000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
@@ -5327,7 +5327,7 @@
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
-          "price": 257000,
+          "price": 254000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
@@ -56523,10 +56523,6 @@
           "price": 2300000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 2550000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 2350000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/296-XY-P/"
@@ -58250,6 +58246,10 @@
         "shinsoku": {
           "price": 400000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 470000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 470000,
@@ -84913,10 +84913,6 @@
         "lounge": {
           "price": 4600,
           "url": "https://kaitori.toreca-lounge.com/product/2MVdgXM6TbxXYXuJWgXYyP"
-        },
-        "torecabank": {
-          "price": 5000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 5000,
