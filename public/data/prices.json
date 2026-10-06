@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T18:12:28+09:00",
+  "updated_at": "2026-10-06T18:27:25+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-06T18:27:25+09:00"
     },
     {
       "id": "ichome",
@@ -1662,7 +1663,7 @@
       },
       "prices": {
         "homura": {
-          "price": 51000,
+          "price": 50800,
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
@@ -31817,15 +31818,15 @@
         },
         "rudeya": {
           "price": 33100,
-          "url": "https://kaitori-rudeya.com/product/item/6241"
+          "url": "https://kaitori-rudeya.com/product/item/7497"
         },
         "wiki": {
           "price": 33800,
           "url": "https://kadenkaitori.tokyo/purchase/Apple-Watch-SE-3-GPS-40mm-MJKY4J-A--S-M"
         },
         "morimori": {
-          "price": 31500,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303733"
+          "price": 33000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/344604"
         },
         "keitaigod": {
           "price": 34000,
@@ -31866,7 +31867,7 @@
         },
         "rudeya": {
           "price": 33100,
-          "url": "https://kaitori-rudeya.com/product/item/6243"
+          "url": "https://kaitori-rudeya.com/product/item/7499"
         },
         "wiki": {
           "price": 33800,
@@ -31988,8 +31989,8 @@
           "url": "https://kadenkaitori.tokyo/purchase/Apple-Watch-SE-3-GPS-44mm-MEHN4J-A-[-S-M]"
         },
         "morimori": {
-          "price": 35000,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303739"
+          "price": 37000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/344608"
         },
         "keitaigod": {
           "price": 38500,
@@ -32037,7 +32038,7 @@
           "url": "https://kadenkaitori.tokyo/purchase/Apple-Watch-SE-3-GPS-44mm-MEHG4J-A-[-S-M]"
         },
         "morimori": {
-          "price": 35000,
+          "price": 37000,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/344607"
         },
         "keitaigod": {
@@ -62642,6 +62643,10 @@
           "price": 89500,
           "url": "https://kaitori.toreca-lounge.com/product/3QRiZdC8lM5dJg0uYs30KR"
         },
+        "shinsoku": {
+          "price": 84000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
         "torecabank": {
           "price": 94500,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -62894,10 +62899,6 @@
         "shinsoku": {
           "price": 82000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 90000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 90000,
@@ -68374,6 +68375,10 @@
           "price": 23000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 29000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 29000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -69398,10 +69403,6 @@
         "shinsoku": {
           "price": 24000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 29000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 29000,
@@ -73110,10 +73111,6 @@
           "price": 12400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 14000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -73279,6 +73276,10 @@
         "shinsoku": {
           "price": 11200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 13000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 14000,
@@ -73944,6 +73945,10 @@
         "source": "買取ホムラ"
       },
       "prices": {
+        "torecabank": {
+          "price": 13000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 13000,
           "url": "https://store.torecabank.com/kaitori_list"
