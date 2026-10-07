@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T15:57:31+09:00",
+  "updated_at": "2026-10-07T16:11:27+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,7 +55,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-07T16:11:27+09:00"
     },
     {
       "id": "keitaigod",
@@ -57232,6 +57233,10 @@
           "price": 1100000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 1200000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 1050000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/066-060-SM1M-B/"
@@ -64773,10 +64778,6 @@
         "lounge": {
           "price": 61000,
           "url": "https://kaitori.toreca-lounge.com/product/07DgVG6hLvf5GdJ7OOtbNN"
-        },
-        "shinsoku": {
-          "price": 58000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
           "price": 65500,
@@ -77229,10 +77230,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank": {
-          "price": 9000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 9000,
           "url": "https://store.torecabank.com/kaitori_list"
