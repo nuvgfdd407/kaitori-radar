@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T18:11:25+09:00",
+  "updated_at": "2026-10-07T18:27:35+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,8 +55,7 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": false,
-      "failing_since": "2026-10-07T18:11:25+09:00"
+      "ok": true
     },
     {
       "id": "keitaigod",
@@ -1200,7 +1199,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/4704"
         },
         "kaikyo": {
-          "price": 25600,
+          "price": 25700,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/01"
         },
         "ichome": {
@@ -3845,7 +3844,7 @@
       },
       "prices": {
         "homura": {
-          "price": 47100,
+          "price": 46500,
           "url": "https://kaitori-homura.com/products/5090"
         },
         "shouten": {
@@ -3899,7 +3898,7 @@
       },
       "prices": {
         "homura": {
-          "price": 47600,
+          "price": 47000,
           "url": "https://kaitori-homura.com/products/5089"
         },
         "shouten": {
@@ -33711,7 +33710,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
-          "price": 104000,
+          "price": 105000,
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
@@ -33756,7 +33755,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
-          "price": 103000,
+          "price": 104000,
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
@@ -33801,7 +33800,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
-          "price": 104000,
+          "price": 105000,
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
@@ -33846,7 +33845,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
-          "price": 104000,
+          "price": 105000,
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
@@ -65007,6 +65006,10 @@
           "price": 57000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 62500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 64000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/068-049-SM11B-B/"
@@ -68894,10 +68897,6 @@
           "price": 25500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 28000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/107-095-SM12-B/"
@@ -69040,6 +69039,10 @@
         "shinsoku": {
           "price": 25100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 26000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 27000,
@@ -78870,6 +78873,10 @@
           "price": 7000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 8000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 5500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/197-SV-P/"
@@ -81219,6 +81226,10 @@
         "shinsoku": {
           "price": 100000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 98500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 100000,
