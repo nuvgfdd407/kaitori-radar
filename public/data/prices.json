@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T17:57:25+09:00",
+  "updated_at": "2026-10-07T18:11:25+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,7 +55,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-07T18:11:25+09:00"
     },
     {
       "id": "keitaigod",
@@ -157,7 +158,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/23170"
         },
         "kaikyo": {
-          "price": 52500,
+          "price": 52200,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/11"
         },
         "ichome": {
@@ -1933,7 +1934,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26297"
         },
         "kaikyo": {
-          "price": 55000,
+          "price": 55500,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -4949,7 +4950,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 245000,
+          "price": 246000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -7246,7 +7247,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299604"
         },
         "keitaigod": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://keitai-god.com/price/model.php?moid=4714",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -7304,7 +7305,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299603"
         },
         "keitaigod": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://keitai-god.com/price/model.php?moid=4714",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -7362,7 +7363,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299602"
         },
         "keitaigod": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://keitai-god.com/price/model.php?moid=4714",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -7420,7 +7421,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299601"
         },
         "keitaigod": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://keitai-god.com/price/model.php?moid=4714",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -7478,7 +7479,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299600"
         },
         "keitaigod": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://keitai-god.com/price/model.php?moid=4714",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -8522,7 +8523,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318764"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 112000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -8572,7 +8573,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318763"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 112000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -8622,7 +8623,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318765"
         },
         "keitaigod": {
-          "price": 110000,
+          "price": 112000,
           "url": "https://keitai-god.com/price/model.php?moid=4812",
           "note": "Apple Storeで購入した証明が必要"
         }
@@ -32757,7 +32758,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27046"
         },
         "kaikyo": {
-          "price": 19500,
+          "price": 19000,
           "url": "https://www.mobile-ichiban.com/Prod/2/02/01"
         },
         "ichome": {
@@ -54473,12 +54474,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026261/20260412/1775991370867-db6562b93bbb1e31.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 360000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-746ceb68d6",
@@ -54491,12 +54487,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026268/20251210/1765355607556-916e7fbb073c4a59.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 360000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-35b15d7e1f",
@@ -54509,7 +54500,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400001582/20251210/1765355651880-bfa18c20e7a0b30f.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 360000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-36f60f62c9",
@@ -65011,10 +65007,6 @@
           "price": 57000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 62500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 64000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/068-049-SM11B-B/"
@@ -68499,6 +68491,10 @@
           "price": 33300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 39000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 39000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -69044,10 +69040,6 @@
         "shinsoku": {
           "price": 25100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 26000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 27000,
@@ -78878,10 +78870,6 @@
           "price": 7000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 5500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/197-SV-P/"
@@ -81231,10 +81219,6 @@
         "shinsoku": {
           "price": 100000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 98500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 100000,
