@@ -143,7 +143,7 @@ def main():
         changed = True
 
     unmatched = sorted(_unique(unmatched), key=lambda o: (o["shop"], -o["price"]))
-    if not UNMATCHED.exists() or load_json(UNMATCHED) != unmatched:
+    if _load_report(UNMATCHED) != unmatched:
         write_json(UNMATCHED, unmatched)
     if unmatched:
         print(f"カタログにない2万円以上の商品が {len(unmatched)}件あります（reports/unmatched.json）")
@@ -153,10 +153,18 @@ def main():
         sys.exit("すべての店舗で取得に失敗しました")
 
 
+def _load_report(path):
+    """reports/ のファイル。ない・壊れている（Git の競合の印が残ったなど）ときは None（上書きして直す）。"""
+    try:
+        return load_json(path)
+    except (FileNotFoundError, ValueError):
+        return None
+
+
 def _record_errors(errors, now):
     """今回の失敗を reports/fetch_errors.json に足す（古いものは消す）。書き換えたら True。"""
     cutoff = (datetime.fromisoformat(now) - timedelta(days=ERROR_DAYS)).isoformat()
-    log = [e for e in (load_json(FETCH_ERRORS) if FETCH_ERRORS.exists() else []) if e["time"] >= cutoff]
+    log = [e for e in _load_report(FETCH_ERRORS) or [] if e["time"] >= cutoff]
     write_json(FETCH_ERRORS, log + errors)
     return True
 
