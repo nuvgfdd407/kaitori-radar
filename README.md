@@ -82,6 +82,7 @@ dist/ を Cloudflare Pages に公開
 | `dist/` | 組み立てたサイト（生成物なので Git には入れない） |
 | `data/history/` | 日ごとの店舗別の価格の記録（`scraper/history.py`。商品ページのグラフに使う） |
 | `reports/unmatched.json` | カタログにない2万円以上の商品（新しい本体の登録漏れチェック用。公開はしない） |
+| `reports/fetch_errors.json` | 店舗の価格の取得に失敗した記録（日時・店舗・エラーの内容。最近30日分。原因を調べるため） |
 | `.github/workflows/update-prices.yml` | 15分ごとの価格の更新 |
 | `.github/workflows/update-images.yml` | 1日1回の画像の更新 |
 | `trigger/` | 決まった時刻に価格と画像の更新を始めさせる Cloudflare Worker |

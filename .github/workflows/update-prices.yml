@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/prices.json reports/unmatched.json data/history
+          git add public/data/prices.json reports/unmatched.json reports/fetch_errors.json data/history
           git commit -m "買取価格を更新"
           git pull --rebase   # 実行中に手元からのプッシュなどがあっても、その上に積む
           git push

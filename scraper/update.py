@@ -28,6 +28,9 @@ from .shops import SHOPS
 
 OUTPUT = ROOT / "public" / "data" / "prices.json"
 UNMATCHED = ROOT / "reports" / "unmatched.json"
+# 取得に失敗した記録（いつ・どの店舗で・どんなエラーか）。原因を調べるために、最近 ERROR_DAYS 日分を残す
+FETCH_ERRORS = ROOT / "reports" / "fetch_errors.json"
+ERROR_DAYS = 30
 
 JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
@@ -73,6 +76,7 @@ def main():
     prices = {p["jan"]: {} for p in catalog["products"]}
     shops = []
     unmatched = []
+    errors = []  # 今回の取得の失敗
     for shop, offers, error in results:
         found = {}
         if offers:
@@ -105,6 +109,7 @@ def main():
                  "ok": error is None}
         if error:
             warn(f"{shop.NAME}: {error}")
+            errors.append({"time": now, "shop": shop.NAME, "error": error})
             entry["failing_since"] = prev_shops.get(shop.ID, {}).get("failing_since") or now
             found = {jan: p[shop.ID] for jan, p in prev_prices.items() if jan in prices and shop.ID in p}
         else:
@@ -134,6 +139,9 @@ def main():
         changed = True
         print("価格の記録（data/history/）を更新しました")
 
+    if errors and _record_errors(errors, now):
+        changed = True
+
     unmatched = sorted(_unique(unmatched), key=lambda o: (o["shop"], -o["price"]))
     if not UNMATCHED.exists() or load_json(UNMATCHED) != unmatched:
         write_json(UNMATCHED, unmatched)
@@ -143,6 +151,14 @@ def main():
     set_github_output("changed", "true" if changed else "false")
     if not any(s["ok"] for s in shops):
         sys.exit("すべての店舗で取得に失敗しました")
+
+
+def _record_errors(errors, now):
+    """今回の失敗を reports/fetch_errors.json に足す（古いものは消す）。書き換えたら True。"""
+    cutoff = (datetime.fromisoformat(now) - timedelta(days=ERROR_DAYS)).isoformat()
+    log = [e for e in (load_json(FETCH_ERRORS) if FETCH_ERRORS.exists() else []) if e["time"] >= cutoff]
+    write_json(FETCH_ERRORS, log + errors)
+    return True
 
 
 def fetch_shop(shop):
