@@ -30,7 +30,7 @@ INTERVAL = 5.0
 
 LIST_URL = "https://www.morimori-kaitori.jp/category/price-list/"
 # Switch本体 / PS5本体 / Xbox Series X本体 / Xbox Series S本体 / Steam Deck / Steam Machine / Meta Quest
-GAME_CATEGORIES = ["0104001", "0101001", "0108001", "0113001", "0115001", "0116001", "0114"]
+GAME_CATEGORIES = ["0104001", "0101001", "0108001", "0113001", "0115001", "0116001", "0114", "0104003"]  # 0104003: Switch周辺機器
 # iPhone（全機種。新しい機種から順に載っている）
 IPHONE_CATEGORIES = ["0301"]
 # Android: SAMSUNG / Google Pixel / SONY Xperia / AQUOS

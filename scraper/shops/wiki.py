@@ -23,7 +23,7 @@ NAME = "買取wiki"
 SHORT = "買取wiki"
 URL = "https://gamekaitori.jp/"
 
-BRANDS = ["nintendo", "sony", "microsoft", "Oculus"]
+BRANDS = ["nintendo", "sony", "microsoft", "Oculus", "no-brand"]  # no-brand: Switch 2 の microSD Express カードなど
 PHONE_URL = "https://iphonekaitori.tokyo/"
 # iPhone / Google（Pixel） / SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
 PHONE_LISTS = ["series/iphone", "brand/google", "brand/samsung", "brand/sony", "brand/sharp"]
