@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T12:18:10+09:00",
+  "updated_at": "2026-10-08T12:27:56+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-08T12:27:56+09:00"
     },
     {
       "id": "rudeya",
@@ -4420,7 +4421,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 229000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1653/2315"
         },
         "toban": {
@@ -4478,7 +4479,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 229000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1653/2315"
         },
         "toban": {
@@ -4536,7 +4537,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 220000,
+          "price": 224000,
           "url": "https://www.1-chome.com/productDetail/1653/2315"
         },
         "toban": {
@@ -5058,7 +5059,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-burgundy"
         },
         "morimori": {
-          "price": 246500,
+          "price": 246000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344310"
         },
         "keitaigod": {
@@ -31751,7 +31752,7 @@
       "prices": {
         "homura": {
           "price": 33000,
-          "url": "https://kaitori-homura.com/products/7327"
+          "url": "https://kaitori-homura.com/products/7329"
         },
         "shouten": {
           "price": 33000,
@@ -33684,7 +33685,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 107200,
+          "price": 107700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33729,7 +33730,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 107200,
+          "price": 107700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33774,7 +33775,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 107200,
+          "price": 107700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33819,7 +33820,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 107200,
+          "price": 107700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33864,7 +33865,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 121200,
+          "price": 121700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33909,7 +33910,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 121200,
+          "price": 121700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33954,7 +33955,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 121200,
+          "price": 121700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -33999,7 +34000,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 121200,
+          "price": 121700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34441,7 +34442,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5374"
         },
         "guest": {
-          "price": 145700,
+          "price": 146200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34486,7 +34487,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5374"
         },
         "guest": {
-          "price": 145700,
+          "price": 146200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34531,7 +34532,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5374"
         },
         "guest": {
-          "price": 143700,
+          "price": 144200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34576,7 +34577,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5374"
         },
         "guest": {
-          "price": 146700,
+          "price": 147200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34621,7 +34622,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5375"
         },
         "guest": {
-          "price": 174900,
+          "price": 175200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34666,7 +34667,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5375"
         },
         "guest": {
-          "price": 174900,
+          "price": 175200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34711,7 +34712,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5375"
         },
         "guest": {
-          "price": 174900,
+          "price": 175200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34756,7 +34757,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5375"
         },
         "guest": {
-          "price": 174900,
+          "price": 175200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34797,7 +34798,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344287"
         },
         "guest": {
-          "price": 205200,
+          "price": 214200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35510,7 +35511,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4683"
         },
         "guest": {
-          "price": 148500,
+          "price": 140500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35551,7 +35552,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4683"
         },
         "guest": {
-          "price": 148500,
+          "price": 140500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35592,7 +35593,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4683"
         },
         "guest": {
-          "price": 150500,
+          "price": 142500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35633,7 +35634,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4683"
         },
         "guest": {
-          "price": 148500,
+          "price": 140500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35838,7 +35839,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 72200,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35891,7 +35892,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 72200,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35944,7 +35945,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 72200,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -35997,7 +35998,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 72200,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -36050,7 +36051,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 86200,
+          "price": 86700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -36103,7 +36104,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 86200,
+          "price": 86700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -36156,7 +36157,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 86200,
+          "price": 86700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -36209,7 +36210,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 86200,
+          "price": 86700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -36238,7 +36239,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 86200,
+          "price": 86700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -43583,7 +43584,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4661"
         },
         "guest": {
-          "price": 42000,
+          "price": 42600,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -43617,7 +43618,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4661"
         },
         "guest": {
-          "price": 42000,
+          "price": 42600,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -43651,7 +43652,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4661"
         },
         "guest": {
-          "price": 42000,
+          "price": 42600,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -43681,7 +43682,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4661"
         },
         "guest": {
-          "price": 42000,
+          "price": 42600,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -50559,7 +50560,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6435"
         },
         "morimori": {
-          "price": 9700,
+          "price": 9800,
           "url": "https://www.morimori-kaitori.jp/category/2401001/product/196804"
         },
         "keitaigod": {
@@ -50649,7 +50650,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6436"
         },
         "morimori": {
-          "price": 10000,
+          "price": 10200,
           "url": "https://www.morimori-kaitori.jp/category/2401001/product/190761"
         },
         "keitaigod": {
@@ -50735,7 +50736,7 @@
           "url": "https://kaitori-rudeya.com/product/item/3790"
         },
         "morimori": {
-          "price": 13600,
+          "price": 13800,
           "url": "https://www.morimori-kaitori.jp/category/2401001/product/187733"
         },
         "keitaigod": {
@@ -67527,6 +67528,10 @@
           "price": 40200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 40000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 40000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/101-078-SV1S-B/"
@@ -72296,10 +72301,6 @@
           "price": 16600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 18500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 17000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/080-070-S6K-B/"
@@ -73132,6 +73133,10 @@
         "torecabank": {
           "price": 16000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 16000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 15000,
@@ -75764,10 +75769,6 @@
           "price": 10900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 11000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/242-SV-P/"
@@ -76920,6 +76921,10 @@
           "price": 7400,
           "url": "https://kaitori.toreca-lounge.com/product/1ZouBb0tlWkdFO7IMzBtsK"
         },
+        "torecabank": {
+          "price": 9500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76985,10 +76990,6 @@
         "shinsoku": {
           "price": 8600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 8900,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 7800,
@@ -77725,6 +77726,10 @@
           "price": 8300,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 8600,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 11500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/115-100-SV9-B/"
@@ -77912,10 +77917,6 @@
         "torecabank": {
           "price": 9000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 9000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 10000,
@@ -79040,10 +79041,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank_store": {
-          "price": 9000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 9000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/331-190-SV4A-B/"
@@ -79375,10 +79372,6 @@
         "torecabank": {
           "price": 9000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 9000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 5600,
@@ -80467,10 +80460,6 @@
         "torecabank": {
           "price": 4800,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 5000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 5000,
@@ -81660,6 +81649,10 @@
           "price": 880000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 880000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 750000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/024-020-SC-B/"
@@ -82500,10 +82493,6 @@
         "torecabank": {
           "price": 9000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 9500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 13000,
@@ -85073,10 +85062,6 @@
         "source": "トレカクラブ"
       },
       "prices": {
-        "torecabank": {
-          "price": 40000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 42000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -85134,6 +85119,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 9500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -86520,12 +86509,7 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1788880552_0b72413e81d981670278.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 63000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-20110d7dc8",
