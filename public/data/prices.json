@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T20:21:10+09:00",
+  "updated_at": "2026-10-08T20:28:16+09:00",
   "shops": [
     {
       "id": "homura",
@@ -48,7 +48,8 @@
       "name": "買取wiki",
       "short": "買取wiki",
       "url": "https://gamekaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-08T20:28:16+09:00"
     },
     {
       "id": "morimori",
@@ -71052,10 +71053,6 @@
           "price": 36700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 40000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 40000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -74755,6 +74752,10 @@
           "price": 17700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 21000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -75058,6 +75059,10 @@
           "price": 19000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 20500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -75149,6 +75154,10 @@
         "shinsoku": {
           "price": 19700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 20500,
@@ -92711,7 +92720,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 38700,
+          "price": 38300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -92873,7 +92882,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 26600,
+          "price": 27100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -93035,7 +93044,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 15300,
+          "price": 15900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
