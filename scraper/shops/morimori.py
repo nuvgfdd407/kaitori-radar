@@ -30,7 +30,8 @@ INTERVAL = 5.0
 
 LIST_URL = "https://www.morimori-kaitori.jp/category/price-list/"
 # Switch本体 / PS5本体 / Xbox Series X本体 / Xbox Series S本体 / Steam Deck / Steam Machine / Meta Quest
-GAME_CATEGORIES = ["0104001", "0101001", "0108001", "0113001", "0115001", "0116001", "0114", "0104003"]  # 0104003: Switch周辺機器
+GAME_CATEGORIES = ["0104001", "0101001", "0108001", "0113001", "0115001", "0116001", "0114", "0104003",
+                   "0505", "0509", "0503"]  # 0104003: Switch周辺機器、0505: その他カメラ（チェキ）、0509: カメラフィルム（写ルンです）、0503: ビデオカメラ（DJI・Insta360）
 # iPhone（全機種。新しい機種から順に載っている）
 IPHONE_CATEGORIES = ["0301"]
 # Android: SAMSUNG / Google Pixel / SONY Xperia / AQUOS
@@ -102,6 +103,8 @@ def _read_list(http, category):
             # 列: カテゴリ×3・商品タイプ・商品名・JAN・通常買取価格・預かり買取価格・即フリ買取価格
             if len(cells) < 7 or link is None or cells[3].get_text(strip=True) != "新品":
                 continue
+            if "買取中止" in link.get_text():
+                continue  # 「【買取中止】」の付いた行は、今は買い取っていない
             if (parse_yen(cells[6].get_text()) or 0) <= PLACEHOLDER_PRICE:
                 continue  # 1,000円などの仮の価格（Mac Studio など、買取価格が決まっていない商品）
             offers.append({

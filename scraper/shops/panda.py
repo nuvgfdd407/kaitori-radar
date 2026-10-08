@@ -18,7 +18,7 @@ SHORT = "PANDA"
 URL = "https://panda-kaitori.co.jp/"
 
 # ゲーム機（ソフト・周辺機器も同じ一覧に載っている） / iPhone / スマートフォン
-CATEGORIES = ["game", "iphone", "smart-phone"]
+CATEGORIES = ["game", "iphone", "smart-phone", "instax-camera"]  # instax-camera: チェキ・写ルンです
 MAX_PAGES = 20
 MIN_PRICE = 100
 

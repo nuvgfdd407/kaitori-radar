@@ -31,6 +31,9 @@ APPLE_URL = "https://kadenkaitori.tokyo/"
 # Mac は PC 用の別サイト（同じ作りの一覧）
 MAC_URL = "https://pckaitori.tokyo/"
 MAC_PATHS = ["category/mac-note-pc", "category/mac-desktop-pc"]
+# カメラは別サイト（同じ作りの一覧）: チェキ・写ルンです / アクションカメラ（GoPro・DJI・Insta360）
+CAMERA_URL = "https://camerakaitori.tokyo/"
+CAMERA_PATHS = ["category/insant-camera", "category/video-camera"]
 MAX_PAGES = 20
 
 
@@ -38,6 +41,8 @@ def fetch(http):
     offers = []
     for brand in BRANDS:
         offers += [o for o in _read_list(http, URL, f"brand/{brand}") if o["jan"]]
+    for path in CAMERA_PATHS:
+        offers += [o for o in _read_list(http, CAMERA_URL, path) if o["jan"]]
     for path in PHONE_LISTS:
         for o in _read_list(http, PHONE_URL, path):
             name = o["name"]

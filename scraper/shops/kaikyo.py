@@ -31,6 +31,8 @@ BASE = "https://www.mobile-ichiban.com"
 # 家電買取（2）> ゲーム（01）> Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox Series /
 # Meta Quest / Steam Deck / ASUS
 CATEGORIES = ["11", "01", "02", "03", "04", "07", "09"]
+# 家電買取（2）> カメラ（09。チェキ・写ルンです）/ ビデオカメラ（14。GoPro・DJI・Insta360）
+CAMERA_CATEGORIES = ["09", "14"]
 # 携帯買取（1）> iPhone（01）> 18 Pro Max / 18 Pro / 17 Pro Max / 17 Pro / Air / 17 / 17e /
 # 16 Pro Max / 16 Pro / 16 / 16e / 16 Plus
 IPHONE_CATEGORIES = ["40", "39", "37", "36", "35", "34", "38", "32", "31", "30", "33", "29"]
@@ -52,8 +54,8 @@ CARD_CATEGORIES = ["04", "07"]
 def fetch(http):
     offers = []
     aliases = []
-    for mid in CATEGORIES:
-        for card, name, price, url in _read_category(http, "2", "01", mid):
+    for bid, mid in [("01", m) for m in CATEGORIES] + [(b, None) for b in CAMERA_CATEGORIES]:
+        for card, name, price, url in _read_category(http, "2", bid, mid):
             jan = find_jan(_text(card.select_one("small.text-muted")))
             if not jan:
                 continue

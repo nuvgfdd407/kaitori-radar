@@ -25,7 +25,8 @@ URL = "https://www.kaitorishouten-co.jp/"
 
 # Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox / VR / Steam Deck / ASUS ROG / ゲーム周辺機器 /
 # ポケモンカード / ONE PIECEカード
-PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (703, 281, 280, 279, 587, 602, 639, 637, 739, 740)]
+PAGES = [f"https://www.kaitorishouten-co.jp/category/2/{i}" for i in (703, 281, 280, 279, 587, 602, 639, 637, 739, 740,
+                                                                   529, 694)]  # 529: インスタントカメラ, 694: インスタントフィルム（写ルンです）
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 / Air / 17 Pro / 17 Pro Max / 17e / 16 / 16 Plus / 16 Pro / 16 Pro Max
 IPHONE_PAGES = [f"https://www.kaitorishouten-co.jp/category/1/{i}"
                 for i in (748, 746, 747, 708, 709, 710, 711, 725, 687, 688, 689, 690)]

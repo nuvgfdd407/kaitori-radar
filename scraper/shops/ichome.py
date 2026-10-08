@@ -15,6 +15,7 @@ AirPods は家電用の API にあり、JAN が付いている。
 import re
 
 from ..apple import apple_codes, apple_offer
+from ..common import warn
 from ..phones import android_key, phone_color, phone_key
 
 ID = "ichome"
@@ -27,6 +28,8 @@ API = "https://www.1-chome.com/api/goods/listPage"
 CATEGORIES = [
     "bBNHyqptq0nqvbcg", "KKXBEAyI9PC2HMjU", "NE0hGv3ube9UbM3H", "axsZ6sOue6IQhfht",
     "Hi6VUvS3BHzS9kvL", "Y3pbA65dEt2seG0B", "20304465", "20464007",
+    # カメラ: チェキ / フィルム・写ルンです / DJI / GoPro / Insta360
+    "20279112", "20985614", "elcGBnJ6RviUaheK", "MEhRJnKLDwGVqGjf", "3UaXvMKKbSmGVfok",
 ]
 IPHONE_API = "https://www.1-chome.com/api/keitai/listPage"
 # iPhone 18シリーズ / 17シリーズ / 16シリーズ
@@ -47,7 +50,7 @@ PAGE_SIZE = 100
 def fetch(http):
     offers = []
     for category in CATEGORIES:
-        for item in _read_category(http, API, category):
+        for item in _read_category(http, API, category, skip_errors=True):
             price = _new_price(item)
             if item.get("jan") and price:
                 offers.append({
@@ -105,12 +108,16 @@ def fetch(http):
     return offers
 
 
-def _read_category(http, api, category=None, keyword=None):
+def _read_category(http, api, category=None, keyword=None, skip_errors=False):
+    """skip_errors なら、API がエラーを返したカテゴリは飛ばす（1つのカテゴリのエラーで店舗全体が取れなくならないように）。"""
     query = {"cateCode": category} if category else {"keyword": keyword}
     page = 1
     while True:
         body = http.get(api, params={**query, "page": page, "size": PAGE_SIZE}).json()
         if body.get("code") != 200:
+            if skip_errors:
+                warn(f"買取一丁目: カテゴリ {category} を読めませんでした（API のエラー: {body.get('msg')}）")
+                return
             raise RuntimeError(f"API のエラー: {body.get('msg')}")
         data = body["data"]
         for item in data.get("content") or []:
