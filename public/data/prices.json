@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T12:28:13+09:00",
+  "updated_at": "2026-10-09T12:43:20+09:00",
   "shops": [
     {
       "id": "homura",
@@ -35,7 +35,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-09T12:43:20+09:00"
     },
     {
       "id": "rudeya",
@@ -7077,7 +7078,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-256GB-burgundy"
         },
         "morimori": {
-          "price": 209000,
+          "price": 210000,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344294"
         },
         "keitaigod": {
@@ -7985,7 +7986,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-18-Pro-Max-256GB-burgundy"
         },
         "morimori": {
-          "price": 242000,
+          "price": 240000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344310"
         },
         "keitaigod": {
@@ -8189,7 +8190,7 @@
       },
       "prices": {
         "homura": {
-          "price": 276000,
+          "price": 277000,
           "url": "https://kaitori-homura.com/products/7290"
         },
         "shouten": {
@@ -38753,7 +38754,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/13"
         },
         "ichome": {
-          "price": 69000,
+          "price": 70000,
           "url": "https://www.1-chome.com/productDetail/1478/2117"
         },
         "toban": {
@@ -38806,7 +38807,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/13"
         },
         "ichome": {
-          "price": 69000,
+          "price": 70000,
           "url": "https://www.1-chome.com/productDetail/1478/2117"
         },
         "toban": {
@@ -38859,7 +38860,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/13"
         },
         "ichome": {
-          "price": 69000,
+          "price": 70000,
           "url": "https://www.1-chome.com/productDetail/1478/2117"
         },
         "toban": {
@@ -38912,7 +38913,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/13/13"
         },
         "ichome": {
-          "price": 69000,
+          "price": 70000,
           "url": "https://www.1-chome.com/productDetail/1478/2117"
         },
         "toban": {
@@ -67095,6 +67096,10 @@
           "price": 87000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 88000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 90000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -69172,10 +69177,6 @@
           "price": 59000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 66500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 65000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/189-S-P/"
@@ -70417,6 +70418,10 @@
         "shinsoku": {
           "price": 37600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 40000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 38000,
@@ -71883,6 +71888,10 @@
           "price": 36700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 39000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 39000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -72568,10 +72577,6 @@
           "price": 29300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 30000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/052-049-SVG-B/"
@@ -73022,6 +73027,10 @@
         "shinsoku": {
           "price": 29100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 34000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 34000,
@@ -73704,10 +73713,6 @@
         "shinsoku": {
           "price": 25800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 28000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 27000,
@@ -74818,10 +74823,6 @@
         "shinsoku": {
           "price": 33900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 32500,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -75110,10 +75111,6 @@
         "shinsoku": {
           "price": 25800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 29000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 16300,
@@ -75504,10 +75501,6 @@
         "torecabank": {
           "price": 17000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 17000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 16000,
@@ -76070,6 +76063,10 @@
         "shinsoku": {
           "price": 13100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 15500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 15500,
@@ -77923,10 +77920,6 @@
           "price": 13300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 13000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/205-187-SV8A-B/"
@@ -79152,6 +79145,10 @@
           "price": 11000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 12000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 10000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/001-SV-P/"
@@ -79731,10 +79728,6 @@
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 10000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/187-184-S8B-B/"
@@ -79778,10 +79771,6 @@
         "shinsoku": {
           "price": 10600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
@@ -80654,6 +80643,10 @@
         "shinsoku": {
           "price": 8600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11000,
@@ -82643,10 +82636,6 @@
         "torecabank": {
           "price": 10000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 6300,
@@ -86211,10 +86200,6 @@
           "price": 8000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 9000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 5600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -88750,6 +88735,10 @@
         "shinsoku": {
           "price": 17700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 22000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 22000,
