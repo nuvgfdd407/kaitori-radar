@@ -368,5 +368,15 @@
     "time": "2026-10-09T18:13:17+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-09T18:28:21+09:00",
+    "shop": "海峡通信",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x7f6a742ec910>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-09T18:28:21+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
   }
 ]
