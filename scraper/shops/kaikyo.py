@@ -1,6 +1,6 @@
 """海峡通信（モバイル一番）。
 
-カテゴリページは1ページ20件。2ページ目以降は、ページ内の検索フォームの値を付けて
+カテゴリページは1ページ20件。2ページ目以降は、ページ送りに書かれた URL に、ページ内の検索フォームの値を付けて
 POST で取得する（画面上のページ送りと同じ）。商品ごとのページはない（カートに入れる方式）。
 商品カードの「新品」の価格を使う。表示価格は郵送の価格で、「来店+200」は来店時の加算。
 備考に「JAN:xxxx同額」とあるときは、そのJANの商品も同じ価格で買い取るという意味なので、
@@ -127,10 +127,14 @@ def _read_category(http, kid, bid, mid=None):
     if form is None or pager is None:
         return
     data = {i["name"]: i.get("value", "") for i in form.select("input[name]")}
+    # 2ページ目以降の URL は、ページ送りに書かれた形（data-urlformat）の __id__ をページ番号にしたもの
+    # （「fromPager」という、ページを開くごとに変わる値が付いていて、自分で組み立てると 404 になる）
+    url_format = pager.get("data-urlformat")
+    if not url_format:
+        return
     for page in range(2, int(pager["data-pagecount"]) + 1):
         res = http.post(
-            f"{BASE}/G01_ProdutShow/Index/{page}",
-            params={"kid": kid, "bid": bid, **({"mid": mid} if mid else {})},
+            BASE + url_format.replace("__id__", str(page)),
             data=data,
             headers={"X-Requested-With": "XMLHttpRequest", "Referer": page_url},
         )
