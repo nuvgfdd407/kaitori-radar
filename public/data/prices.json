@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T19:13:13+09:00",
+  "updated_at": "2026-10-09T19:28:11+09:00",
   "shops": [
     {
       "id": "homura",
@@ -64,8 +64,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-09T19:13:13+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -70391,6 +70390,10 @@
           "price": 37600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 40000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 37500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/081-069-S6A-B/"
@@ -89412,6 +89415,10 @@
         "lounge": {
           "price": 11500,
           "url": "https://kaitori.toreca-lounge.com/product/7drRiMH9ErBUCTpTImfIPd"
+        },
+        "torecabank": {
+          "price": 11500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
