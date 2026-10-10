@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T16:13:16+09:00",
+  "updated_at": "2026-10-10T16:28:14+09:00",
   "shops": [
     {
       "id": "homura",
@@ -119,14 +119,16 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-10T16:28:14+09:00"
     },
     {
       "id": "birth_store",
       "name": "トレカバース(店頭)",
       "short": "バース(店頭)",
       "url": "https://www.torecabirth.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-10T16:28:14+09:00"
     },
     {
       "id": "golden",
@@ -15111,7 +15113,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4771"
         },
         "guest": {
-          "price": 168700,
+          "price": 169300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15157,7 +15159,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4771"
         },
         "guest": {
-          "price": 168700,
+          "price": 169300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15355,7 +15357,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4769"
         },
         "guest": {
-          "price": 221200,
+          "price": 221100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15377,7 +15379,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4769"
         },
         "guest": {
-          "price": 221200,
+          "price": 221100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15399,7 +15401,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4767"
         },
         "guest": {
-          "price": 221200,
+          "price": 218100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15421,7 +15423,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4767"
         },
         "guest": {
-          "price": 221200,
+          "price": 218100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15531,7 +15533,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4768"
         },
         "guest": {
-          "price": 268200,
+          "price": 268300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15553,7 +15555,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4768"
         },
         "guest": {
-          "price": 268200,
+          "price": 268300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15575,7 +15577,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4766"
         },
         "guest": {
-          "price": 268200,
+          "price": 256600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15597,7 +15599,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4766"
         },
         "guest": {
-          "price": 268200,
+          "price": 256600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15727,7 +15729,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4754"
         },
         "guest": {
-          "price": 202200,
+          "price": 202600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15769,7 +15771,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4754"
         },
         "guest": {
-          "price": 202200,
+          "price": 202600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15859,7 +15861,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4755"
         },
         "guest": {
-          "price": 223200,
+          "price": 223300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15901,7 +15903,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4755"
         },
         "guest": {
-          "price": 223200,
+          "price": 223300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15967,7 +15969,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4756"
         },
         "guest": {
-          "price": 267200,
+          "price": 267100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -15989,7 +15991,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4756"
         },
         "guest": {
-          "price": 267200,
+          "price": 267100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16011,7 +16013,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4758"
         },
         "guest": {
-          "price": 267200,
+          "price": 257100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16033,7 +16035,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4758"
         },
         "guest": {
-          "price": 267200,
+          "price": 257100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16147,7 +16149,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4757"
         },
         "guest": {
-          "price": 283200,
+          "price": 285600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16169,7 +16171,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4757"
         },
         "guest": {
-          "price": 283200,
+          "price": 285600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16191,7 +16193,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4759"
         },
         "guest": {
-          "price": 283200,
+          "price": 296100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -16213,7 +16215,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4759"
         },
         "guest": {
-          "price": 283200,
+          "price": 296100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19351,7 +19353,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4816"
         },
         "guest": {
-          "price": 136600,
+          "price": 137300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19393,7 +19395,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4816"
         },
         "guest": {
-          "price": 136600,
+          "price": 137300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19435,7 +19437,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4816"
         },
         "guest": {
-          "price": 136600,
+          "price": 137300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19477,7 +19479,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4816"
         },
         "guest": {
-          "price": 136600,
+          "price": 137300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19623,7 +19625,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4817"
         },
         "guest": {
-          "price": 151600,
+          "price": 151700,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19665,7 +19667,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4817"
         },
         "guest": {
-          "price": 151600,
+          "price": 151700,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19871,7 +19873,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4818"
         },
         "guest": {
-          "price": 164100,
+          "price": 167100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19897,7 +19899,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4818"
         },
         "guest": {
-          "price": 164100,
+          "price": 167100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19923,7 +19925,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4818"
         },
         "guest": {
-          "price": 164100,
+          "price": 167100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -19949,7 +19951,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4818"
         },
         "guest": {
-          "price": 164100,
+          "price": 167100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20079,7 +20081,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4819"
         },
         "guest": {
-          "price": 185100,
+          "price": 189300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20105,7 +20107,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4819"
         },
         "guest": {
-          "price": 185100,
+          "price": 189300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20131,7 +20133,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4819"
         },
         "guest": {
-          "price": 185100,
+          "price": 189300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20157,7 +20159,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4819"
         },
         "guest": {
-          "price": 185100,
+          "price": 189300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20307,7 +20309,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4576"
         },
         "guest": {
-          "price": 76300,
+          "price": 77800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20353,7 +20355,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4576"
         },
         "guest": {
-          "price": 76300,
+          "price": 77800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20399,7 +20401,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4576"
         },
         "guest": {
-          "price": 76300,
+          "price": 77800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20445,7 +20447,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4576"
         },
         "guest": {
-          "price": 76300,
+          "price": 77800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20843,7 +20845,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4578"
         },
         "guest": {
-          "price": 110100,
+          "price": 108100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20877,7 +20879,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4578"
         },
         "guest": {
-          "price": 110100,
+          "price": 108100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20911,7 +20913,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4578"
         },
         "guest": {
-          "price": 110100,
+          "price": 108100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -20945,7 +20947,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4578"
         },
         "guest": {
-          "price": 110100,
+          "price": 108100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21063,7 +21065,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4579"
         },
         "guest": {
-          "price": 146000,
+          "price": 125100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21089,7 +21091,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4579"
         },
         "guest": {
-          "price": 146000,
+          "price": 125100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21115,7 +21117,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4579"
         },
         "guest": {
-          "price": 146000,
+          "price": 125100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21141,7 +21143,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4579"
         },
         "guest": {
-          "price": 146000,
+          "price": 125100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21275,7 +21277,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4580"
         },
         "guest": {
-          "price": 94300,
+          "price": 95100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21321,7 +21323,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4580"
         },
         "guest": {
-          "price": 94300,
+          "price": 95100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21367,7 +21369,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4580"
         },
         "guest": {
-          "price": 94300,
+          "price": 95100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21413,7 +21415,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4580"
         },
         "guest": {
-          "price": 94300,
+          "price": 95100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21685,7 +21687,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4581"
         },
         "guest": {
-          "price": 151600,
+          "price": 151700,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21799,7 +21801,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4582"
         },
         "guest": {
-          "price": 135100,
+          "price": 135600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21825,7 +21827,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4582"
         },
         "guest": {
-          "price": 135100,
+          "price": 135600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21851,7 +21853,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4582"
         },
         "guest": {
-          "price": 135100,
+          "price": 135600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21881,7 +21883,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4582"
         },
         "guest": {
-          "price": 135100,
+          "price": 135600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -21995,7 +21997,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4583"
         },
         "guest": {
-          "price": 150100,
+          "price": 142100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -22021,7 +22023,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4583"
         },
         "guest": {
-          "price": 150100,
+          "price": 142100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -22047,7 +22049,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4583"
         },
         "guest": {
-          "price": 150100,
+          "price": 142100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -22073,7 +22075,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4583"
         },
         "guest": {
-          "price": 150100,
+          "price": 142100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24043,7 +24045,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4573"
         },
         "guest": {
-          "price": 64100,
+          "price": 65500,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24089,7 +24091,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4573"
         },
         "guest": {
-          "price": 64100,
+          "price": 65500,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24135,7 +24137,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4573"
         },
         "guest": {
-          "price": 64100,
+          "price": 65500,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24181,7 +24183,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4573"
         },
         "guest": {
-          "price": 63100,
+          "price": 64500,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24331,7 +24333,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4574"
         },
         "guest": {
-          "price": 78400,
+          "price": 79800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24377,7 +24379,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4574"
         },
         "guest": {
-          "price": 78400,
+          "price": 79800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24423,7 +24425,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4574"
         },
         "guest": {
-          "price": 78400,
+          "price": 79800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24469,7 +24471,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4574"
         },
         "guest": {
-          "price": 78400,
+          "price": 79800,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24603,7 +24605,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4575"
         },
         "guest": {
-          "price": 89600,
+          "price": 90300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24649,7 +24651,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4575"
         },
         "guest": {
-          "price": 89600,
+          "price": 90300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24695,7 +24697,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4575"
         },
         "guest": {
-          "price": 89600,
+          "price": 90300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24741,7 +24743,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4575"
         },
         "guest": {
-          "price": 89600,
+          "price": 90300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24875,7 +24877,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4512"
         },
         "guest": {
-          "price": 77200,
+          "price": 79600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24921,7 +24923,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4512"
         },
         "guest": {
-          "price": 77200,
+          "price": 79600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -24967,7 +24969,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4512"
         },
         "guest": {
-          "price": 77200,
+          "price": 79600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25013,7 +25015,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4512"
         },
         "guest": {
-          "price": 77200,
+          "price": 79600,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25163,7 +25165,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4513"
         },
         "guest": {
-          "price": 85200,
+          "price": 93300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25209,7 +25211,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4513"
         },
         "guest": {
-          "price": 85200,
+          "price": 93300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25255,7 +25257,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4513"
         },
         "guest": {
-          "price": 85200,
+          "price": 93300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25301,7 +25303,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4513"
         },
         "guest": {
-          "price": 85200,
+          "price": 93300,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25451,7 +25453,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4514"
         },
         "guest": {
-          "price": 97200,
+          "price": 97100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25497,7 +25499,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4514"
         },
         "guest": {
-          "price": 97200,
+          "price": 97100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25543,7 +25545,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4514"
         },
         "guest": {
-          "price": 97200,
+          "price": 97100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -25589,7 +25591,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4514"
         },
         "guest": {
-          "price": 97200,
+          "price": 97100,
           "url": "https://www.guestmobile.jp/%e3%82%bf%e3%83%96%e3%83%ac%e3%83%83%e3%83%88%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -60739,10 +60741,6 @@
           "price": 700000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 780000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 780000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/095-069-S6A-B/"
@@ -61511,10 +61509,6 @@
         "shinsoku": {
           "price": 475000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 540000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 520000,
@@ -64192,10 +64186,6 @@
         "shinsoku": {
           "price": 137000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 180000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 180000,
@@ -73655,10 +73645,6 @@
           "price": 22200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 24000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 24000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -78844,10 +78830,6 @@
         "shinsoku": {
           "price": 13200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 14500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 13200,
@@ -86165,6 +86147,10 @@
         "shinsoku": {
           "price": 70000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 76000,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -88383,10 +88369,6 @@
         "lounge": {
           "price": 4500,
           "url": "https://kaitori.toreca-lounge.com/product/2MVdgXM6TbxXYXuJWgXYyP"
-        },
-        "torecabank_store": {
-          "price": 4800,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -89284,10 +89266,6 @@
         "lounge": {
           "price": 6000,
           "url": "https://kaitori.toreca-lounge.com/product/3Fef4MRpeidIUeEs07DpnV"
-        },
-        "torecabank": {
-          "price": 7000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 7000,
