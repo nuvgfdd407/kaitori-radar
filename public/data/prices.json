@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T16:28:12+09:00",
+  "updated_at": "2026-10-11T16:43:12+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-11T16:43:12+09:00"
     },
     {
       "id": "ichome",
@@ -67387,10 +67388,6 @@
           "price": 81000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 100000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 82400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -70512,6 +70509,10 @@
         "shinsoku": {
           "price": 36500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 39000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 39000,
@@ -74864,6 +74865,10 @@
           "price": 16500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 19000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 19000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -78000,10 +78005,6 @@
           "price": 11200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 12500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 11000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/223-187-SV8A-B/"
@@ -80093,6 +80094,10 @@
         "torecabank": {
           "price": 9000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 9000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 7500,
