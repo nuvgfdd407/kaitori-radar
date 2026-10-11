@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T10:13:17+09:00",
+  "updated_at": "2026-10-11T10:28:16+09:00",
   "shops": [
     {
       "id": "homura",
@@ -63,7 +63,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-11T10:28:16+09:00"
     },
     {
       "id": "guest",
@@ -627,7 +628,7 @@
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-EL-[]-4902370548495"
         },
         "morimori": {
-          "price": 44200,
+          "price": 44100,
           "url": "https://www.morimori-kaitori.jp/category/0104001/product/68109"
         },
         "keitaigod": {
@@ -684,7 +685,7 @@
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-EL-[]-4902370548501"
         },
         "morimori": {
-          "price": 48200,
+          "price": 47900,
           "url": "https://www.morimori-kaitori.jp/category/0104001/product/68110"
         },
         "keitaigod": {
@@ -1751,7 +1752,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5--CFI-2000B01-4948872415910-"
         },
         "morimori": {
-          "price": 103800,
+          "price": 104000,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189441"
         },
         "keitaigod": {
@@ -1859,7 +1860,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-5--PlayStation5-Pro-CFI-7100B01-2025-4948872417075"
         },
         "morimori": {
-          "price": 196500,
+          "price": 196800,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/307430"
         },
         "guest": {
@@ -1914,7 +1915,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-5--PlayStation5-Pro-CFI-7000B01-4948872416320"
         },
         "morimori": {
-          "price": 196500,
+          "price": 196800,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/278515"
         },
         "guest": {
@@ -1964,7 +1965,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5---CFIJ-10018-4948872016940-"
         },
         "morimori": {
-          "price": 119000,
+          "price": 119700,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189442"
         },
         "keitaigod": {
@@ -2022,7 +2023,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5---CFIJ-10019-4948872016957-"
         },
         "morimori": {
-          "price": 104500,
+          "price": 105000,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189443"
         },
         "guest": {
@@ -2917,7 +2918,7 @@
           "url": "https://gamekaitori.jp/purchase/-Xbox-Series-X-4549576161617"
         },
         "morimori": {
-          "price": 118500,
+          "price": 119000,
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/1098"
         }
       }
@@ -2951,7 +2952,7 @@
           "url": "https://gamekaitori.jp/purchase/Microsoft--Xbox-Series-X-1TB--EP2-63835-Xbox-Elite---4549576275383"
         },
         "morimori": {
-          "price": 118500,
+          "price": 119000,
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/318746"
         },
         "panda": {
@@ -3001,7 +3002,7 @@
           "url": "https://gamekaitori.jp/purchase/Xbox-Series-X-1TB----EP2-00708-4549576247038"
         },
         "morimori": {
-          "price": 108000,
+          "price": 108300,
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/268434"
         },
         "panda": {
@@ -3147,7 +3148,7 @@
           "url": "https://gamekaitori.jp/purchase/-Xbox-Series-S-4549576167718"
         },
         "morimori": {
-          "price": 79200,
+          "price": 79500,
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/1099"
         },
         "panda": {
@@ -60041,10 +60042,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "torecabank": {
-          "price": 1120000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 1180000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -60189,6 +60186,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 915000,
+          "url": "https://kaitori-homura.com/products/5903",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 930000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a9%e3%83%86%e3%82%a3%e3%82%a2%e3%82%b9%ef%bc%86%e3%83%a9%e3%83%86%e3%82%a3%e3%82%aa%e3%82%b9gxsa-105-095/",
@@ -61055,7 +61057,7 @@
       },
       "prices": {
         "homura": {
-          "price": 446000,
+          "price": 457000,
           "url": "https://kaitori-homura.com/products/5972",
           "mode": "郵送"
         },
@@ -61140,11 +61142,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 592000,
-          "url": "https://kaitori-homura.com/products/6211",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 590000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-175-xy-p/",
@@ -61362,7 +61359,7 @@
       },
       "prices": {
         "homura": {
-          "price": 544500,
+          "price": 540000,
           "url": "https://kaitori-homura.com/products/6433",
           "mode": "郵送"
         },
@@ -61459,7 +61456,7 @@
       },
       "prices": {
         "homura": {
-          "price": 379000,
+          "price": 429500,
           "url": "https://kaitori-homura.com/products/6897",
           "mode": "郵送"
         },
@@ -61542,11 +61539,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 484500,
-          "url": "https://kaitori-homura.com/products/6128",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 470000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%a4%e3%83%bc%ef%bc%86%e3%82%b5%e3%83%b3%e3%83%80%e3%83%bc%ef%bc%86%e3%83%95%e3%83%aa%e3%83%bc%e3%82%b6%e3%83%bcgxsa-060-054/",
@@ -61877,7 +61869,7 @@
       },
       "prices": {
         "homura": {
-          "price": 507500,
+          "price": 508500,
           "url": "https://kaitori-homura.com/products/5976",
           "mode": "郵送"
         },
@@ -62435,7 +62427,7 @@
       },
       "prices": {
         "homura": {
-          "price": 285000,
+          "price": 292500,
           "url": "https://kaitori-homura.com/products/6607",
           "mode": "郵送"
         },
@@ -62526,11 +62518,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 335500,
-          "url": "https://kaitori-homura.com/products/6426",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 350000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b2%e3%83%b3%e3%82%ac%e3%83%bcvmaxsa-020-019/",
@@ -62761,7 +62748,7 @@
       },
       "prices": {
         "homura": {
-          "price": 366000,
+          "price": 356500,
           "url": "https://kaitori-homura.com/products/5935",
           "mode": "郵送"
         },
@@ -62912,7 +62899,7 @@
       },
       "prices": {
         "homura": {
-          "price": 287500,
+          "price": 284000,
           "url": "https://kaitori-homura.com/products/6146",
           "mode": "郵送"
         },
@@ -62995,7 +62982,7 @@
       },
       "prices": {
         "homura": {
-          "price": 276000,
+          "price": 283000,
           "url": "https://kaitori-homura.com/products/6526",
           "mode": "郵送"
         },
@@ -63074,7 +63061,7 @@
       },
       "prices": {
         "homura": {
-          "price": 237000,
+          "price": 264000,
           "url": "https://kaitori-homura.com/products/5855",
           "mode": "郵送"
         },
@@ -63121,11 +63108,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 281500,
-          "url": "https://kaitori-homura.com/products/5821",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 285000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%82%b7%e3%83%a9%e3%83%a0%ef%bc%86%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3gxsa-097-095/",
@@ -63213,11 +63195,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 264500,
-          "url": "https://kaitori-homura.com/products/5993",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 267000,
           "url": "https://kaitori.toreca-lounge.com/product/1iIssT5IwMqZZpc6VlCqQL"
@@ -63314,7 +63291,7 @@
       },
       "prices": {
         "homura": {
-          "price": 274000,
+          "price": 292500,
           "url": "https://kaitori-homura.com/products/6406",
           "mode": "郵送"
         },
@@ -63401,7 +63378,7 @@
       },
       "prices": {
         "homura": {
-          "price": 320000,
+          "price": 301500,
           "url": "https://kaitori-homura.com/products/6090",
           "mode": "郵送"
         },
@@ -63489,7 +63466,7 @@
       },
       "prices": {
         "homura": {
-          "price": 263000,
+          "price": 241500,
           "url": "https://kaitori-homura.com/products/5835",
           "mode": "郵送"
         },
@@ -63795,6 +63772,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 173500,
+          "url": "https://kaitori-homura.com/products/5910",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 173000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a8%e3%82%b3%e3%83%8f%e3%83%9e%e3%81%ae%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-282-sm-p/",
@@ -63842,11 +63824,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 228000,
-          "url": "https://kaitori-homura.com/products/5838",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 225000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ab%e3%82%b6%e3%83%9f%e3%83%bc%e3%83%8d-055-050/",
@@ -64082,11 +64059,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 171000,
-          "url": "https://kaitori-homura.com/products/5813",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 171000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%83%83%e3%83%89%e3%81%ae%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6%e3%80%90p%e3%80%91-270-sm-p/",
@@ -64224,7 +64196,7 @@
       },
       "prices": {
         "homura": {
-          "price": 159000,
+          "price": 160000,
           "url": "https://kaitori-homura.com/products/6437",
           "mode": "郵送"
         },
@@ -64493,7 +64465,7 @@
       },
       "prices": {
         "homura": {
-          "price": 175500,
+          "price": 4000,
           "url": "https://kaitori-homura.com/products/5839",
           "mode": "郵送"
         },
@@ -64553,11 +64525,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 186500,
-          "url": "https://kaitori-homura.com/products/5817",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 205000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%83%83%e3%82%af%e3%82%a6%e3%82%b6vsa-076-067/",
@@ -64809,11 +64776,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 132000,
-          "url": "https://kaitori-homura.com/products/6514",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 133000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%8a%e8%8c%b6%e4%bc%9a%e3%81%94%e3%81%a3%e3%81%93%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-325-sm-p/",
@@ -64957,7 +64919,7 @@
       },
       "prices": {
         "homura": {
-          "price": 169000,
+          "price": 177500,
           "url": "https://kaitori-homura.com/products/6532",
           "mode": "郵送"
         },
@@ -65013,11 +64975,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 137000,
-          "url": "https://kaitori-homura.com/products/6736",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 145000,
           "url": "https://kaitori.toreca-lounge.com/product/1XgjVD3YEJmrOxpmUHM93f"
@@ -65071,11 +65028,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 113000,
-          "url": "https://kaitori-homura.com/products/6347",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 142000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%ad%e3%83%8a-070-066/",
@@ -65132,11 +65084,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 121000,
-          "url": "https://kaitori-homura.com/products/5953",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 122000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%b5%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%88ex-092-063/",
@@ -65306,11 +65253,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 127500,
-          "url": "https://kaitori-homura.com/products/6738",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 140000,
           "url": "https://kaitori.toreca-lounge.com/product/3EFVu11YSFYs65d6MNlqyX"
@@ -65345,11 +65287,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 130500,
-          "url": "https://kaitori-homura.com/products/6553",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 133000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4gxsa-188-173/",
@@ -65523,11 +65460,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 124000,
-          "url": "https://kaitori-homura.com/products/5934",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 128000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3xex-110-080/",
@@ -65676,10 +65608,6 @@
           "price": 99000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 105000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 105000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -65711,7 +65639,7 @@
       },
       "prices": {
         "homura": {
-          "price": 127500,
+          "price": 126500,
           "url": "https://kaitori-homura.com/products/6071",
           "mode": "郵送"
         },
@@ -65768,7 +65696,7 @@
       },
       "prices": {
         "homura": {
-          "price": 103500,
+          "price": 109000,
           "url": "https://kaitori-homura.com/products/5868",
           "mode": "郵送"
         },
@@ -65825,7 +65753,7 @@
       },
       "prices": {
         "homura": {
-          "price": 123000,
+          "price": 122000,
           "url": "https://kaitori-homura.com/products/5987",
           "mode": "郵送"
         },
@@ -66034,7 +65962,7 @@
       },
       "prices": {
         "homura": {
-          "price": 86500,
+          "price": 100000,
           "url": "https://kaitori-homura.com/products/6242",
           "mode": "郵送"
         },
@@ -66271,6 +66199,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 130500,
+          "url": "https://kaitori-homura.com/products/6445",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 133000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b0%e3%83%ac%e3%82%a4%e3%82%b7%e3%82%a2vmaxsa-091-069/",
@@ -66589,11 +66522,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 86500,
-          "url": "https://kaitori-homura.com/products/6026",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 87000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%82%aa-055-050/",
@@ -66667,11 +66595,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 82000,
-          "url": "https://kaitori-homura.com/products/6156",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 91000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6vmax-114-100/",
@@ -66728,6 +66651,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 98000,
+          "url": "https://kaitori-homura.com/products/5862",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 97000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3ex%e3%80%90sar%e3%80%91-201-165/",
@@ -66814,6 +66742,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 86000,
+          "url": "https://kaitori-homura.com/products/5872",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 87000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b325th-001-025/",
@@ -66867,7 +66800,7 @@
       },
       "prices": {
         "homura": {
-          "price": 90500,
+          "price": 88500,
           "url": "https://kaitori-homura.com/products/6172",
           "mode": "郵送"
         },
@@ -66911,11 +66844,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 86500,
-          "url": "https://kaitori-homura.com/products/5800",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 87000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e5%9b%a3%e3%81%ae%e3%83%9f%e3%83%a5%e3%82%a6%e3%83%84%e3%83%bcex-125-098/",
@@ -66973,7 +66901,7 @@
       },
       "prices": {
         "homura": {
-          "price": 93500,
+          "price": 91500,
           "url": "https://kaitori-homura.com/products/6186",
           "mode": "郵送"
         },
@@ -67029,11 +66957,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 86000,
-          "url": "https://kaitori-homura.com/products/6194",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 80000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-323-s-p/",
@@ -67180,7 +67103,7 @@
       },
       "prices": {
         "homura": {
-          "price": 80500,
+          "price": 82000,
           "url": "https://kaitori-homura.com/products/6015",
           "mode": "郵送"
         },
@@ -67288,7 +67211,7 @@
       },
       "prices": {
         "homura": {
-          "price": 77000,
+          "price": 82000,
           "url": "https://kaitori-homura.com/products/6080",
           "mode": "郵送"
         },
@@ -67348,11 +67271,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 86000,
-          "url": "https://kaitori-homura.com/products/6417",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 87000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%93%e3%81%8f%e3%81%b0%e3%83%90%e3%83%89%e3%83%ac%e3%83%83%e3%82%af%e3%82%b9vmaxsa-086-070/",
@@ -67449,7 +67367,7 @@
       },
       "prices": {
         "homura": {
-          "price": 68500,
+          "price": 73000,
           "url": "https://kaitori-homura.com/products/5965",
           "mode": "郵送"
         },
@@ -67501,6 +67419,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 77000,
+          "url": "https://kaitori-homura.com/products/6173",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 77000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6exsr%e4%bb%95%e6%a7%98-001-030/",
@@ -67549,11 +67472,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 77000,
-          "url": "https://kaitori-homura.com/products/6609",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 79000,
           "url": "https://tobansyoji.co.jp/product/psa10-_%e3%81%ae%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a625th-007-025/",
@@ -67643,11 +67561,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 77500,
-          "url": "https://kaitori-homura.com/products/6141",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 79000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%83%83%e3%83%94-381-sm-p/",
@@ -67813,7 +67726,7 @@
       },
       "prices": {
         "homura": {
-          "price": 90500,
+          "price": 86500,
           "url": "https://kaitori-homura.com/products/6702",
           "mode": "郵送"
         },
@@ -67861,7 +67774,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61000,
+          "price": 60500,
           "url": "https://kaitori-homura.com/products/6323",
           "mode": "郵送"
         },
@@ -67913,6 +67826,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 64500,
+          "url": "https://kaitori-homura.com/products/6249",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 66000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%8a%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%a2-096-071/",
@@ -67970,7 +67888,7 @@
       },
       "prices": {
         "homura": {
-          "price": 66500,
+          "price": 66000,
           "url": "https://kaitori-homura.com/products/5879",
           "mode": "郵送"
         },
@@ -68026,7 +67944,7 @@
       },
       "prices": {
         "homura": {
-          "price": 68000,
+          "price": 68500,
           "url": "https://kaitori-homura.com/products/5964",
           "mode": "郵送"
         },
@@ -68081,11 +67999,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 64000,
-          "url": "https://kaitori-homura.com/products/6229",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 64000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%af%e3%81%8f%e3%81%b0%e3%83%90%e3%83%89%e3%83%ac%e3%83%83%e3%82%af%e3%82%b9vmaxsa-085-070/",
@@ -68129,11 +68042,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 71000,
-          "url": "https://kaitori-homura.com/products/5863",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 69000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3ex-134-108/",
@@ -68274,11 +68182,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 69000,
-          "url": "https://kaitori-homura.com/products/6661",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 68000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e6%b5%b7%e3%81%a7%e9%81%8a%e3%81%b6%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-392-sm-p/",
@@ -68375,11 +68278,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 63000,
-          "url": "https://kaitori-homura.com/products/6550",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 61000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%84%e3%81%a1%e3%81%92%e3%81%8d%e3%82%a6%e3%83%bc%e3%83%a9%e3%82%aa%e3%82%b9vmaxsa-085-070/",
@@ -68429,7 +68327,7 @@
       },
       "prices": {
         "homura": {
-          "price": 64500,
+          "price": 64000,
           "url": "https://kaitori-homura.com/products/6496",
           "mode": "郵送"
         },
@@ -68480,6 +68378,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 64000,
+          "url": "https://kaitori-homura.com/products/5955",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 64000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%b2%e3%83%b3%e3%82%ac%e3%83%bcex-240-193/",
@@ -68572,6 +68475,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 63000,
+          "url": "https://kaitori-homura.com/products/5988",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 67000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6ex-205-165/",
@@ -68624,7 +68532,7 @@
       },
       "prices": {
         "homura": {
-          "price": 63000,
+          "price": 60500,
           "url": "https://kaitori-homura.com/products/5991",
           "mode": "郵送"
         },
@@ -68672,7 +68580,7 @@
       },
       "prices": {
         "homura": {
-          "price": 56000,
+          "price": 55500,
           "url": "https://kaitori-homura.com/products/6072",
           "mode": "郵送"
         },
@@ -68728,11 +68636,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 63000,
-          "url": "https://kaitori-homura.com/products/6159",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 59000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6vmaxrrr%e4%bb%95%e6%a7%98-123-s-p/",
@@ -68829,11 +68732,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 61000,
-          "url": "https://kaitori-homura.com/products/6535",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 61000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a8%e3%83%bc%e3%83%95%e3%82%a3vmaxsa-189-s-p/",
@@ -69037,7 +68935,7 @@
       },
       "prices": {
         "homura": {
-          "price": 54000,
+          "price": 54500,
           "url": "https://kaitori-homura.com/products/6268",
           "mode": "郵送"
         },
@@ -69093,11 +68991,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 50000,
-          "url": "https://kaitori-homura.com/products/5852",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 50000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3vsa-103-100/",
@@ -69151,7 +69044,7 @@
       },
       "prices": {
         "homura": {
-          "price": 59000,
+          "price": 58500,
           "url": "https://kaitori-homura.com/products/5861",
           "mode": "郵送"
         },
@@ -69237,11 +69130,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 50000,
-          "url": "https://kaitori-homura.com/products/6343",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 52000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%ad%e3%83%8a%e3%81%ae%e3%82%ac%e3%83%96%e3%83%aa%e3%82%a2%e3%82%b9ex-087-063/",
@@ -69294,11 +69182,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 49000,
-          "url": "https://kaitori-homura.com/products/5786",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 47000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e5%90%8d%e6%8e%a2%e5%81%b5%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-098-sv-p/",
@@ -69351,11 +69234,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 58000,
-          "url": "https://kaitori-homura.com/products/5880",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 59000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%aa%e3%82%a8%e3%81%ae%e6%b1%ba%e5%bf%83-091-063/",
@@ -69400,11 +69278,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 53500,
-          "url": "https://kaitori-homura.com/products/6441",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 53000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b2%e3%83%83%e3%82%b3%e3%82%a6%e3%82%acex%e3%80%90sar%e3%80%91-090-066/",
@@ -69450,7 +69323,7 @@
       },
       "prices": {
         "homura": {
-          "price": 48000,
+          "price": 54000,
           "url": "https://kaitori-homura.com/products/6737",
           "mode": "郵送"
         },
@@ -69529,7 +69402,7 @@
       },
       "prices": {
         "homura": {
-          "price": 54500,
+          "price": 56000,
           "url": "https://kaitori-homura.com/products/6189",
           "mode": "郵送"
         },
@@ -69630,7 +69503,7 @@
       },
       "prices": {
         "homura": {
-          "price": 47000,
+          "price": 48000,
           "url": "https://kaitori-homura.com/products/6370",
           "mode": "郵送"
         },
@@ -69665,7 +69538,7 @@
       },
       "prices": {
         "homura": {
-          "price": 49500,
+          "price": 49000,
           "url": "https://kaitori-homura.com/products/6434",
           "mode": "郵送"
         },
@@ -69708,11 +69581,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 42500,
-          "url": "https://kaitori-homura.com/products/6162",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 44000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6v-104-100/",
@@ -69766,7 +69634,7 @@
       },
       "prices": {
         "homura": {
-          "price": 39000,
+          "price": 40000,
           "url": "https://kaitori-homura.com/products/6538",
           "mode": "郵送"
         },
@@ -69866,6 +69734,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 44000,
+          "url": "https://kaitori-homura.com/products/6463",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 45000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%ae%e3%83%a9%e3%83%86%e3%82%a3%e3%83%8avstar-261-172/",
@@ -69910,11 +69783,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 47500,
-          "url": "https://kaitori-homura.com/products/6088",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 47000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%96%e3%83%a9%e3%83%83%e3%82%ad%e3%83%bc%e2%98%8625th-012-025/",
@@ -69963,6 +69831,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 42000,
+          "url": "https://kaitori-homura.com/products/6206",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 42000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6yu-nagaba-208-s-p/",
@@ -70016,7 +69889,7 @@
       },
       "prices": {
         "homura": {
-          "price": 37500,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/6537",
           "mode": "郵送"
         },
@@ -70065,7 +69938,7 @@
       },
       "prices": {
         "homura": {
-          "price": 37000,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/5928",
           "mode": "郵送"
         },
@@ -70144,7 +70017,7 @@
       },
       "prices": {
         "homura": {
-          "price": 39000,
+          "price": 40000,
           "url": "https://kaitori-homura.com/products/6237",
           "mode": "郵送"
         },
@@ -70200,11 +70073,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 40500,
-          "url": "https://kaitori-homura.com/products/6062",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 40000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%82%b1%e3%83%a2%e3%83%b3%e3%82%bb%e3%83%b3%e3%82%bf%e3%83%bc%e3%81%ae%e3%81%8a%e5%a7%89%e3%81%95%e3%82%93sr%e4%bb%95%e6%a7%98-069-s-p/",
@@ -70293,7 +70161,7 @@
       },
       "prices": {
         "homura": {
-          "price": 40000,
+          "price": 40500,
           "url": "https://kaitori-homura.com/products/6403",
           "mode": "郵送"
         },
@@ -70349,11 +70217,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 32500,
-          "url": "https://kaitori-homura.com/products/6326",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 33000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%9f%e3%83%bcv-083-067/",
@@ -70407,7 +70270,7 @@
       },
       "prices": {
         "homura": {
-          "price": 31000,
+          "price": 31500,
           "url": "https://kaitori-homura.com/products/6425",
           "mode": "郵送"
         },
@@ -70502,7 +70365,7 @@
       },
       "prices": {
         "homura": {
-          "price": 35500,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/6157",
           "mode": "郵送"
         },
@@ -70605,7 +70468,7 @@
       },
       "prices": {
         "homura": {
-          "price": 32000,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/6297",
           "mode": "郵送"
         },
@@ -70692,7 +70555,7 @@
       },
       "prices": {
         "homura": {
-          "price": 39000,
+          "price": 38000,
           "url": "https://kaitori-homura.com/products/6140",
           "mode": "郵送"
         },
@@ -70739,11 +70602,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 36500,
-          "url": "https://kaitori-homura.com/products/5984",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 37000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6vsa-106-100/",
@@ -70886,7 +70744,7 @@
       },
       "prices": {
         "homura": {
-          "price": 35500,
+          "price": 36000,
           "url": "https://kaitori-homura.com/products/6447",
           "mode": "郵送"
         },
@@ -70939,7 +70797,7 @@
       },
       "prices": {
         "homura": {
-          "price": 38000,
+          "price": 39000,
           "url": "https://kaitori-homura.com/products/5902",
           "mode": "郵送"
         },
@@ -71025,11 +70883,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 32500,
-          "url": "https://kaitori-homura.com/products/5834",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 36000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ab%e3%83%81%e3%82%a2%e3%81%ae%e3%82%a2%e3%83%94%e3%83%bc%e3%83%ab-091-064/",
@@ -71138,11 +70991,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 32000,
-          "url": "https://kaitori-homura.com/products/5995",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 33000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a2%e3%82%b6-105-078/",
@@ -71242,11 +71090,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 35500,
-          "url": "https://kaitori-homura.com/products/6132",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 38000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%92%e3%83%93%e3%82%ad%e3%81%ae%e3%83%9b%e3%82%a6%e3%82%aa%e3%82%a6ex-086-063/",
@@ -71295,7 +71138,7 @@
       },
       "prices": {
         "homura": {
-          "price": 32500,
+          "price": 31000,
           "url": "https://kaitori-homura.com/products/6168",
           "mode": "郵送"
         },
@@ -71391,7 +71234,7 @@
       },
       "prices": {
         "homura": {
-          "price": 29500,
+          "price": 32000,
           "url": "https://kaitori-homura.com/products/5881",
           "mode": "郵送"
         },
@@ -71407,6 +71250,10 @@
         "shinsoku": {
           "price": 31800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 36000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 36000,
@@ -71538,7 +71385,7 @@
       },
       "prices": {
         "homura": {
-          "price": 32000,
+          "price": 32500,
           "url": "https://kaitori-homura.com/products/6164",
           "mode": "郵送"
         },
@@ -71590,7 +71437,7 @@
       },
       "prices": {
         "homura": {
-          "price": 24500,
+          "price": 31000,
           "url": "https://kaitori-homura.com/products/6121",
           "mode": "郵送"
         },
@@ -71686,7 +71533,7 @@
       },
       "prices": {
         "homura": {
-          "price": 23500,
+          "price": 26500,
           "url": "https://kaitori-homura.com/products/6304",
           "mode": "郵送"
         },
@@ -71729,11 +71576,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 26000,
-          "url": "https://kaitori-homura.com/products/6569",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 27000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a2%e3%83%ab%e3%82%bb%e3%82%a6%e3%82%b9vstar-262-172/",
@@ -71786,11 +71628,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 32000,
-          "url": "https://kaitori-homura.com/products/6317",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 32000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%82%af%e3%83%ad%e3%83%a0ex-169-086/",
@@ -71878,7 +71715,7 @@
       },
       "prices": {
         "homura": {
-          "price": 28500,
+          "price": 30000,
           "url": "https://kaitori-homura.com/products/6402",
           "mode": "郵送"
         },
@@ -71930,7 +71767,7 @@
       },
       "prices": {
         "homura": {
-          "price": 24500,
+          "price": 28500,
           "url": "https://kaitori-homura.com/products/6345",
           "mode": "郵送"
         },
@@ -71982,7 +71819,7 @@
       },
       "prices": {
         "homura": {
-          "price": 28000,
+          "price": 29000,
           "url": "https://kaitori-homura.com/products/6011",
           "mode": "郵送"
         },
@@ -72056,7 +71893,7 @@
       },
       "prices": {
         "homura": {
-          "price": 41000,
+          "price": 39000,
           "url": "https://kaitori-homura.com/products/6155",
           "mode": "郵送"
         },
@@ -72107,11 +71944,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 30000,
-          "url": "https://kaitori-homura.com/products/6316",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 29000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%83%8b%e3%82%ac%e3%83%a1ar%e4%bb%95%e6%a7%98-052-049/",
@@ -72207,7 +72039,7 @@
       },
       "prices": {
         "homura": {
-          "price": 25500,
+          "price": 26000,
           "url": "https://kaitori-homura.com/products/6645",
           "mode": "郵送"
         },
@@ -72251,7 +72083,7 @@
       },
       "prices": {
         "homura": {
-          "price": 28000,
+          "price": 28500,
           "url": "https://kaitori-homura.com/products/6014",
           "mode": "郵送"
         },
@@ -72335,7 +72167,7 @@
       },
       "prices": {
         "homura": {
-          "price": 24000,
+          "price": 25000,
           "url": "https://kaitori-homura.com/products/5978",
           "mode": "郵送"
         },
@@ -72383,7 +72215,7 @@
       },
       "prices": {
         "homura": {
-          "price": 25000,
+          "price": 26500,
           "url": "https://kaitori-homura.com/products/5840",
           "mode": "郵送"
         },
@@ -72548,7 +72380,7 @@
       },
       "prices": {
         "homura": {
-          "price": 29000,
+          "price": 29500,
           "url": "https://kaitori-homura.com/products/5816",
           "mode": "郵送"
         },
@@ -72599,11 +72431,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 28000,
-          "url": "https://kaitori-homura.com/products/6017",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 30000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%a3-140-s-p/",
@@ -72839,7 +72666,7 @@
       },
       "prices": {
         "homura": {
-          "price": 28500,
+          "price": 30500,
           "url": "https://kaitori-homura.com/products/5814",
           "mode": "郵送"
         },
@@ -72976,11 +72803,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 23500,
-          "url": "https://kaitori-homura.com/products/6165",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 25000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6v-415-414/",
@@ -73081,7 +72903,7 @@
       },
       "prices": {
         "homura": {
-          "price": 20500,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/6448",
           "mode": "郵送"
         },
@@ -73167,6 +72989,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 26500,
+          "url": "https://kaitori-homura.com/products/6096",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 27000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%95%e3%82%b7%e3%82%ae%e3%83%90%e3%83%8aex-200-165/",
@@ -73211,7 +73038,7 @@
       },
       "prices": {
         "homura": {
-          "price": 24500,
+          "price": 25500,
           "url": "https://kaitori-homura.com/products/6240",
           "mode": "郵送"
         },
@@ -73289,11 +73116,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 21500,
-          "url": "https://kaitori-homura.com/products/6541",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 24000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a8%e3%83%bc%e3%83%95%e3%82%a3yu-nagaba-066-sv-p/",
@@ -73439,7 +73261,7 @@
       },
       "prices": {
         "homura": {
-          "price": 20500,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/5968",
           "mode": "郵送"
         },
@@ -73479,7 +73301,7 @@
       },
       "prices": {
         "homura": {
-          "price": 29000,
+          "price": 30000,
           "url": "https://kaitori-homura.com/products/6224",
           "mode": "郵送"
         },
@@ -73530,11 +73352,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 26000,
-          "url": "https://kaitori-homura.com/products/6395",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 26000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b5%e3%82%b6%e3%83%ac%e3%80%90sar%e3%80%91-092-066/",
@@ -73648,6 +73465,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 21500,
+          "url": "https://kaitori-homura.com/products/6152",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 22000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%b2%e3%81%8b%e3%82%8b%e3%82%b3%e3%82%a4%e3%82%ad%e3%83%b3%e3%82%b025th-010-025/",
@@ -73706,7 +73528,7 @@
       },
       "prices": {
         "homura": {
-          "price": 21500,
+          "price": 22000,
           "url": "https://kaitori-homura.com/products/5896",
           "mode": "郵送"
         },
@@ -73824,7 +73646,7 @@
       },
       "prices": {
         "homura": {
-          "price": 25000,
+          "price": 26000,
           "url": "https://kaitori-homura.com/products/6167",
           "mode": "郵送"
         },
@@ -73915,7 +73737,7 @@
       },
       "prices": {
         "homura": {
-          "price": 22000,
+          "price": 21500,
           "url": "https://kaitori-homura.com/products/6531",
           "mode": "郵送"
         },
@@ -73970,6 +73792,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 21000,
+          "url": "https://kaitori-homura.com/products/6519",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 21000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%aa%e3%83%aa%e3%82%b8%e3%83%b3%e3%83%87%e3%82%a3%e3%82%a2%e3%83%ab%e3%82%acvstar-260-172/",
@@ -74088,11 +73915,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 20500,
-          "url": "https://kaitori-homura.com/products/6644",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 21000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%aa%e3%83%aa%e3%82%b8%e3%83%b3%e3%83%91%e3%83%ab%e3%82%ad%e3%82%a2vstar-259-172/",
@@ -74137,7 +73959,7 @@
       },
       "prices": {
         "homura": {
-          "price": 19000,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/6412",
           "mode": "郵送"
         },
@@ -74460,7 +74282,7 @@
       },
       "prices": {
         "homura": {
-          "price": 21000,
+          "price": 21500,
           "url": "https://kaitori-homura.com/products/6187",
           "mode": "郵送"
         },
@@ -74507,11 +74329,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 17000,
-          "url": "https://kaitori-homura.com/products/6021",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 17000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%84%e3%83%90%e3%81%ae%e7%a2%ba%e4%bf%a1-097-071/",
@@ -74548,7 +74365,7 @@
       },
       "prices": {
         "homura": {
-          "price": 26000,
+          "price": 25500,
           "url": "https://kaitori-homura.com/products/6599",
           "mode": "郵送"
         },
@@ -74591,11 +74408,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 19500,
-          "url": "https://kaitori-homura.com/products/5952",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 20000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%b5%e3%83%bc%e3%83%8a%e3%82%a4%e3%83%88ex-087-063/",
@@ -74740,7 +74552,7 @@
       },
       "prices": {
         "homura": {
-          "price": 19000,
+          "price": 18500,
           "url": "https://kaitori-homura.com/products/6081",
           "mode": "郵送"
         },
@@ -74792,7 +74604,7 @@
       },
       "prices": {
         "homura": {
-          "price": 27000,
+          "price": 26000,
           "url": "https://kaitori-homura.com/products/6183",
           "mode": "郵送"
         },
@@ -74989,11 +74801,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 20000,
-          "url": "https://kaitori-homura.com/products/6497",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 21000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%ab%e3%83%88%e3%83%ac%e3%82%a2-080-070/",
@@ -75200,7 +75007,7 @@
       },
       "prices": {
         "homura": {
-          "price": 18000,
+          "price": 21500,
           "url": "https://kaitori-homura.com/products/6484",
           "mode": "郵送"
         },
@@ -75248,7 +75055,7 @@
       },
       "prices": {
         "homura": {
-          "price": 19000,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/5996",
           "mode": "郵送"
         },
@@ -75299,6 +75106,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 16500,
+          "url": "https://kaitori-homura.com/products/5966",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 17000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%ad%e3%82%ab%e3%83%ad%e3%82%b9ex-131-106/",
@@ -75339,7 +75151,7 @@
       },
       "prices": {
         "homura": {
-          "price": 21500,
+          "price": 21000,
           "url": "https://kaitori-homura.com/products/6205",
           "mode": "郵送"
         },
@@ -75511,11 +75323,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 13000,
-          "url": "https://kaitori-homura.com/products/5994",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 14000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a2%e3%82%b6-100-078/",
@@ -75564,7 +75371,7 @@
       },
       "prices": {
         "homura": {
-          "price": 15000,
+          "price": 16000,
           "url": "https://kaitori-homura.com/products/6518",
           "mode": "郵送"
         },
@@ -75716,11 +75523,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 16000,
-          "url": "https://kaitori-homura.com/products/6307",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 16000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bb%e3%83%ac%e3%83%8a-081-068/",
@@ -75774,7 +75576,7 @@
       },
       "prices": {
         "homura": {
-          "price": 14000,
+          "price": 13500,
           "url": "https://kaitori-homura.com/products/5941",
           "mode": "郵送"
         },
@@ -75917,6 +75719,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 14500,
+          "url": "https://kaitori-homura.com/products/5895",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 15000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%95%e3%82%a3%e3%82%a2ex-200-187/",
@@ -75960,6 +75767,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 14000,
+          "url": "https://kaitori-homura.com/products/5851",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 15000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3v-211-172/",
@@ -76061,7 +75873,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://kaitori-homura.com/products/6539",
           "mode": "郵送"
         },
@@ -76183,11 +75995,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 13500,
-          "url": "https://kaitori-homura.com/products/6247",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 14000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%8a%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%a2-091-071/",
@@ -76354,7 +76161,7 @@
       },
       "prices": {
         "homura": {
-          "price": 14000,
+          "price": 15500,
           "url": "https://kaitori-homura.com/products/6098",
           "mode": "郵送"
         },
@@ -76402,7 +76209,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16000,
+          "price": 19000,
           "url": "https://kaitori-homura.com/products/5833",
           "mode": "郵送"
         },
@@ -76453,6 +76260,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 19000,
+          "url": "https://kaitori-homura.com/products/6289",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 18000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bf%e3%83%ad-131-102/",
@@ -76631,7 +76443,7 @@
       },
       "prices": {
         "homura": {
-          "price": 17500,
+          "price": 18000,
           "url": "https://kaitori-homura.com/products/6321",
           "mode": "郵送"
         },
@@ -76683,7 +76495,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12500,
+          "price": 12000,
           "url": "https://kaitori-homura.com/products/5808",
           "mode": "郵送"
         },
@@ -76735,7 +76547,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12500,
+          "price": 13000,
           "url": "https://kaitori-homura.com/products/6138",
           "mode": "郵送"
         },
@@ -76882,11 +76694,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 11500,
-          "url": "https://kaitori-homura.com/products/6551",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 11200,
           "url": "https://kaitori.toreca-lounge.com/product/57ZOPA5mtDdANycUQI3QC0"
@@ -76917,11 +76724,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 16000,
-          "url": "https://kaitori-homura.com/products/6699",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 17000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%aa%e3%82%a8%e3%81%ae%e6%b1%ba%e5%bf%83-086-063/",
@@ -76965,11 +76767,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 12000,
-          "url": "https://kaitori-homura.com/products/6380",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 12000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b5%e3%83%8a-077-067/",
@@ -77040,7 +76837,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 13500,
           "url": "https://kaitori-homura.com/products/6640",
           "mode": "郵送"
         },
@@ -77129,7 +76926,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12500,
+          "price": 12000,
           "url": "https://kaitori-homura.com/products/6192",
           "mode": "郵送"
         },
@@ -77177,7 +76974,7 @@
       },
       "prices": {
         "homura": {
-          "price": 11000,
+          "price": 10500,
           "url": "https://kaitori-homura.com/products/6250",
           "mode": "郵送"
         },
@@ -77228,11 +77025,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 11500,
-          "url": "https://kaitori-homura.com/products/6438",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 12000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b2%e3%83%b3%e3%82%ac%e3%83%bc-074-071/",
@@ -77308,7 +77100,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 12500,
           "url": "https://kaitori-homura.com/products/6358",
           "mode": "郵送"
         },
@@ -77351,11 +77143,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10500,
-          "url": "https://kaitori-homura.com/products/6283",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 11000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%81%e3%83%ab%e3%82%bf%e3%83%aa%e3%82%b9ex-090-066/",
@@ -77574,7 +77361,7 @@
       },
       "prices": {
         "homura": {
-          "price": 11000,
+          "price": 10500,
           "url": "https://kaitori-homura.com/products/6293",
           "mode": "郵送"
         },
@@ -77696,7 +77483,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://kaitori-homura.com/products/5912",
           "mode": "郵送"
         },
@@ -77748,7 +77535,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10500,
+          "price": 11500,
           "url": "https://kaitori-homura.com/products/6530",
           "mode": "郵送"
         },
@@ -77869,11 +77656,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10500,
-          "url": "https://kaitori-homura.com/products/6324",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 10900,
           "url": "https://kaitori.toreca-lounge.com/product/6DGFTTx2G07FMx8VYbk17g"
@@ -77900,11 +77682,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 13500,
-          "url": "https://kaitori-homura.com/products/6340",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 14000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%ad%e3%83%8a%e3%81%ae%e8%a6%87%e6%b0%97-114-100/",
@@ -78148,11 +77925,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10500,
-          "url": "https://kaitori-homura.com/products/6511",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 10000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%ab%e3%82%a4-077-067/",
@@ -78224,7 +77996,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12000,
+          "price": 11500,
           "url": "https://kaitori-homura.com/products/6251",
           "mode": "郵送"
         },
@@ -78267,6 +78039,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 10000,
+          "url": "https://kaitori-homura.com/products/6444",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 11000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b0%e3%83%ac%e3%82%a4%e3%82%b7%e3%82%a2vstar-217-172/",
@@ -78314,6 +78091,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 11500,
+          "url": "https://kaitori-homura.com/products/6373",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 12000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b5%e3%83%b3%e3%83%80%e3%83%bc%e3%82%b9ex-209-187/",
@@ -78520,11 +78302,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10000,
-          "url": "https://kaitori-homura.com/products/5943",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 10000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%83%95%e3%82%b7%e3%82%ae%e3%83%90%e3%83%8aex-087-063/",
@@ -78599,6 +78376,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 10500,
+          "url": "https://kaitori-homura.com/products/6562",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 11000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4%e3%80%90ar%e3%80%91-078-066/",
@@ -78647,7 +78429,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10500,
+          "price": 10000,
           "url": "https://kaitori-homura.com/products/6594",
           "mode": "郵送"
         },
@@ -78904,7 +78686,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 13500,
           "url": "https://kaitori-homura.com/products/5962",
           "mode": "郵送"
         },
@@ -78943,11 +78725,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10000,
-          "url": "https://kaitori-homura.com/products/6593",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 10000,
           "url": "https://tobansyoji.co.jp/product/psa10-n%e3%81%ae%e3%82%be%e3%83%ad%e3%82%a2%e3%83%bc%e3%82%afex-242-193/",
@@ -78987,11 +78764,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 10000,
-          "url": "https://kaitori-homura.com/products/5979",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 10000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6%e3%83%84%e3%83%bc-183-165/",
@@ -79039,11 +78811,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 9000,
-          "url": "https://kaitori-homura.com/products/5871",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 9300,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3-187-184/",
@@ -79091,6 +78858,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 10500,
+          "url": "https://kaitori-homura.com/products/5889",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 11000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%95%e3%82%a3%e3%82%a2vstar-210-172/",
@@ -79352,7 +79124,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8000,
+          "price": 7500,
           "url": "https://kaitori-homura.com/products/6512",
           "mode": "郵送"
         },
@@ -79404,7 +79176,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9500,
+          "price": 10500,
           "url": "https://kaitori-homura.com/products/5906",
           "mode": "郵送"
         },
@@ -79448,7 +79220,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 8500,
           "url": "https://kaitori-homura.com/products/6546",
           "mode": "郵送"
         },
@@ -79540,7 +79312,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8500,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6363",
           "mode": "郵送"
         },
@@ -79604,11 +79376,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 8000,
-          "url": "https://kaitori-homura.com/products/5958",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 8000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%ac%e3%83%ab%e3%83%bc%e3%83%a9ex-089-063/",
@@ -79720,7 +79487,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6320",
           "mode": "郵送"
         },
@@ -79763,7 +79530,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9500,
+          "price": 10500,
           "url": "https://kaitori-homura.com/products/6158",
           "mode": "郵送"
         },
@@ -79935,7 +79702,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8500,
+          "price": 9000,
           "url": "https://kaitori-homura.com/products/6500",
           "mode": "郵送"
         },
@@ -79983,7 +79750,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6000,
+          "price": 5500,
           "url": "https://kaitori-homura.com/products/6134",
           "mode": "郵送"
         },
@@ -80021,13 +79788,7 @@
         "origin": "https://kaitori-homura.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDU0NTgsInB1ciI6ImJsb2JfaWQifX0=--2b5c7b8437a480f6bfb9ed8ed9ca1f82d052fc5b/PDIS5OPHV0A8.jpg",
         "source": "買取ホムラ"
       },
-      "prices": {
-        "homura": {
-          "price": 9500,
-          "url": "https://kaitori-homura.com/products/6216",
-          "mode": "郵送"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-b4faf533de",
@@ -80042,7 +79803,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 7500,
           "url": "https://kaitori-homura.com/products/6104",
           "mode": "郵送"
         },
@@ -80112,7 +79873,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7500,
+          "price": 7000,
           "url": "https://kaitori-homura.com/products/6108",
           "mode": "郵送"
         },
@@ -80263,7 +80024,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6773",
           "mode": "郵送"
         },
@@ -80381,7 +80142,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8500,
+          "price": 8000,
           "url": "https://kaitori-homura.com/products/6812",
           "mode": "郵送"
         },
@@ -80416,7 +80177,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8000,
+          "price": 9000,
           "url": "https://kaitori-homura.com/products/6482",
           "mode": "郵送"
         },
@@ -80464,7 +80225,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 8500,
           "url": "https://kaitori-homura.com/products/6486",
           "mode": "郵送"
         },
@@ -80541,6 +80302,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 6500,
+          "url": "https://kaitori-homura.com/products/6362",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 6800,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%a3%e3%83%af%e3%83%bc%e3%82%ba-189-184/",
@@ -80581,7 +80347,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9500,
+          "price": 9000,
           "url": "https://kaitori-homura.com/products/5986",
           "mode": "郵送"
         },
@@ -80612,7 +80378,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 7500,
           "url": "https://kaitori-homura.com/products/6643",
           "mode": "郵送"
         },
@@ -80656,7 +80422,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8000,
+          "price": 8500,
           "url": "https://kaitori-homura.com/products/6259",
           "mode": "郵送"
         },
@@ -80707,11 +80473,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 7000,
-          "url": "https://kaitori-homura.com/products/6144",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 8300,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%92%e3%82%b9%e3%82%a4%e3%81%ae%e4%bb%b2%e9%96%93%e3%81%9f%e3%81%a1-249-172/",
@@ -80917,7 +80678,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6300",
           "mode": "郵送"
         },
@@ -80955,11 +80716,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 7500,
-          "url": "https://kaitori-homura.com/products/6010",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 7600,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%a3%e3%81%ae%e3%83%a2%e3%83%ab%e3%83%9a%e3%82%b3-020-019/",
@@ -81075,7 +80831,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 9000,
           "url": "https://kaitori-homura.com/products/6277",
           "mode": "郵送"
         },
@@ -81105,11 +80861,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 9000,
-          "url": "https://kaitori-homura.com/products/5963",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 8900,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%a2%e3%83%96%e3%82%bd%e3%83%abex-089-063/",
@@ -81150,7 +80901,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6267",
           "mode": "郵送"
         },
@@ -81193,11 +80944,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 7000,
-          "url": "https://kaitori-homura.com/products/6254",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 7500,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%8a%e3%82%bf%e3%83%8d%e3%81%ae%e6%b4%bb%e6%b0%97-078-067/",
@@ -81289,7 +81035,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6500,
+          "price": 6000,
           "url": "https://kaitori-homura.com/products/6281",
           "mode": "郵送"
         },
@@ -81451,11 +81197,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6000,
-          "url": "https://kaitori-homura.com/products/6074",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 7500,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%95%e3%83%aa%e3%83%bc%e3%82%b6%e3%83%bc-102-100/",
@@ -81637,7 +81378,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 7500,
           "url": "https://kaitori-homura.com/products/6127",
           "mode": "郵送"
         },
@@ -81764,7 +81505,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 7500,
           "url": "https://kaitori-homura.com/products/6376",
           "mode": "郵送"
         },
@@ -81855,7 +81596,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 6500,
           "url": "https://kaitori-homura.com/products/5897",
           "mode": "郵送"
         },
@@ -81982,11 +81723,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6500,
-          "url": "https://kaitori-homura.com/products/6639",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 6500,
           "url": "https://kaitori.toreca-lounge.com/product/4ycuyNrcTbg7gMPWsINDDB"
@@ -82088,7 +81824,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 6500,
           "url": "https://kaitori-homura.com/products/6647",
           "mode": "郵送"
         },
@@ -82221,11 +81957,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6000,
-          "url": "https://kaitori-homura.com/products/6012",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 6100,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%a3%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%ad%e3%83%b3%e3%82%b2ex-243-193/",
@@ -82265,11 +81996,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6500,
-          "url": "https://kaitori-homura.com/products/6420",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 6200,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b4%e3%83%bc%e3%82%b9%e3%83%88-022-021/",
@@ -82340,11 +82066,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 5500,
-          "url": "https://kaitori-homura.com/products/6366",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 5800,
           "url": "https://kaitori.toreca-lounge.com/product/0PfVdKU1w7zG8d12cSqTEV"
@@ -82483,11 +82204,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6000,
-          "url": "https://kaitori-homura.com/products/6342",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 5700,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%ad%e3%83%8a%e3%81%ae%e3%83%ad%e3%82%ba%e3%83%ac%e3%82%a4%e3%83%89-065-063/",
@@ -82553,11 +82269,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 6000,
-          "url": "https://kaitori-homura.com/products/5804",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 6300,
           "url": "https://kaitori.toreca-lounge.com/product/5YEBe0NrrI6mJspD8ClvFw"
@@ -82623,11 +82334,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 5500,
-          "url": "https://kaitori-homura.com/products/6735",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 5400,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%b8%e3%82%ac%e3%83%ab%e3%83%87ex-113-080/",
@@ -82668,7 +82374,7 @@
       },
       "prices": {
         "homura": {
-          "price": 5000,
+          "price": 4500,
           "url": "https://kaitori-homura.com/products/5948",
           "mode": "郵送"
         },
@@ -82730,7 +82436,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6000,
+          "price": 5500,
           "url": "https://kaitori-homura.com/products/6549",
           "mode": "郵送"
         },
@@ -82769,11 +82475,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 5000,
-          "url": "https://kaitori-homura.com/products/6491",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 5300,
           "url": "https://kaitori.toreca-lounge.com/product/3Gm9W09xE1pg3iBXrdW383"
@@ -82869,13 +82570,7 @@
         "origin": "https://kaitori-homura.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDU2NDcsInB1ciI6ImJsb2JfaWQifX0=--cb346b86f24518efd4815a683e4c6521a649dd20/PD8E62UH8C3C.jpg",
         "source": "買取ホムラ"
       },
-      "prices": {
-        "homura": {
-          "price": 5000,
-          "url": "https://kaitori-homura.com/products/6400",
-          "mode": "郵送"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-6efac736a8",
@@ -82921,7 +82616,7 @@
       },
       "prices": {
         "homura": {
-          "price": 4000,
+          "price": 4500,
           "url": "https://kaitori-homura.com/products/6228",
           "mode": "郵送"
         },
@@ -82943,11 +82638,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 5500,
-          "url": "https://kaitori-homura.com/products/6219",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 5900,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a625th-001-028/",
@@ -83049,11 +82739,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4000,
-          "url": "https://kaitori-homura.com/products/6050",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 5300,
           "url": "https://kaitori.toreca-lounge.com/product/6DI6btLAyye9OgxcRjuqhs"
@@ -83114,11 +82799,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 5000,
-          "url": "https://kaitori-homura.com/products/5951",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 5300,
           "url": "https://kaitori.toreca-lounge.com/product/0GptLeYN0Vq6puHDZf7N30"
@@ -83243,11 +82923,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4000,
-          "url": "https://kaitori-homura.com/products/6109",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 4100,
           "url": "https://kaitori.toreca-lounge.com/product/40ShGGn35t8kUUKMzkJCsA"
@@ -83305,11 +82980,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4000,
-          "url": "https://kaitori-homura.com/products/5796",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 4100,
           "url": "https://kaitori.toreca-lounge.com/product/76375cum6CGJfAh41WfJA5"
@@ -83341,11 +83011,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4500,
-          "url": "https://kaitori-homura.com/products/6595",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 4600,
           "url": "https://kaitori.toreca-lounge.com/product/2xcXyz9ISK1y53VqGAJRd9"
@@ -83445,13 +83110,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/SOaRwS18zMXxX0VkuFTHGluQxhzoATxV2uvwkZef.png",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "homura": {
-          "price": 4000,
-          "url": "https://kaitori-homura.com/products/6049",
-          "mode": "郵送"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-c10ae24731",
@@ -83586,11 +83245,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4000,
-          "url": "https://kaitori-homura.com/products/5792",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 4100,
           "url": "https://kaitori.toreca-lounge.com/product/08636hQmEmvDqFBvxkVxq3"
@@ -84048,11 +83702,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 264500,
-          "url": "https://kaitori-homura.com/products/5818",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 267000,
           "url": "https://kaitori.toreca-lounge.com/product/3m09c4oegQWDZPyBVDcRqZ"
@@ -84356,6 +84005,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 26500,
+          "url": "https://kaitori-homura.com/products/6263",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 27000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%88%e3%82%a6%e3%83%9b%e3%82%af%e3%81%ae%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-260-sv-p/",
@@ -84400,7 +84054,7 @@
       },
       "prices": {
         "homura": {
-          "price": 20000,
+          "price": 17000,
           "url": "https://kaitori-homura.com/products/6489",
           "mode": "郵送"
         },
@@ -84431,6 +84085,11 @@
         "source": "買取ホムラ"
       },
       "prices": {
+        "homura": {
+          "price": 20500,
+          "url": "https://kaitori-homura.com/products/6641",
+          "mode": "郵送"
+        },
         "torecabank": {
           "price": 24000,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -84739,6 +84398,11 @@
         "source": "トレカクラブ"
       },
       "prices": {
+        "homura": {
+          "price": 12000,
+          "url": "https://kaitori-homura.com/products/6023",
+          "mode": "郵送"
+        },
         "club": {
           "price": 14000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/096-073-SV1A-B/"
@@ -84862,6 +84526,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 9500,
+          "url": "https://kaitori-homura.com/products/6725",
+          "mode": "郵送"
+        },
         "lounge": {
           "price": 9700,
           "url": "https://kaitori.toreca-lounge.com/product/16ffDkb7NjKfKKv0gbvz1y"
@@ -85100,11 +84769,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 7000,
-          "url": "https://kaitori-homura.com/products/6126",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 7300,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%96%e3%83%bc%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%9e%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%ab%e3%83%9f%e3%83%a9%e3%83%bc-021-187/",
@@ -85331,11 +84995,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 4500,
-          "url": "https://kaitori-homura.com/products/6686",
-          "mode": "郵送"
-        },
         "lounge": {
           "price": 4700,
           "url": "https://kaitori.toreca-lounge.com/product/5RT3gEOaV8lLXYhviXnqVE"
@@ -87610,11 +87269,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "homura": {
-          "price": 18000,
-          "url": "https://kaitori-homura.com/products/6266",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 18000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%88%e3%82%a6%e3%82%b3-173-086/",
@@ -88120,11 +87774,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "homura": {
-          "price": 100000,
-          "url": "https://kaitori-homura.com/products/6874",
-          "mode": "郵送"
-        },
         "toban": {
           "price": 103000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%aa%e3%81%bf%e3%81%ae%e3%82%8a%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-264-xy-p/",
@@ -88776,13 +88425,7 @@
         "origin": "https://kaitori-homura.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDUxODEsInB1ciI6ImJsb2JfaWQifX0=--62b159216948750a79aaf5c96050811c368ef093/PDB4THJAJU5O.jpg",
         "source": "買取ホムラ"
       },
-      "prices": {
-        "homura": {
-          "price": 343000,
-          "url": "https://kaitori-homura.com/products/5944",
-          "mode": "郵送"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-aeb1f76d13",
