@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T20:28:16+09:00",
+  "updated_at": "2026-10-11T20:41:26+09:00",
   "shops": [
     {
       "id": "homura",
@@ -56,7 +56,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-11T20:41:26+09:00"
     },
     {
       "id": "keitaigod",
@@ -70432,6 +70433,10 @@
         "shinsoku": {
           "price": 36500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 39000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 39000,
