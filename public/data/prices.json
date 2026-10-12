@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T15:28:11+09:00",
+  "updated_at": "2026-10-12T15:43:17+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-12T15:43:17+09:00"
     },
     {
       "id": "ichome",
@@ -8060,7 +8061,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 231000,
+          "price": 232000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -8234,7 +8235,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 266000,
+          "price": 267000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -59055,7 +59056,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 5000000,
+          "price": 4800000,
           "url": "https://kaitori.toreca-lounge.com/product/6BJY9Iaqiw1tczjq6QIRqn"
         },
         "shinsoku": {
@@ -59372,7 +59373,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 2460000,
+          "price": 2500000,
           "url": "https://kaitori.toreca-lounge.com/product/7E8dwWECaWdZLiDBHfZhFp"
         },
         "shinsoku": {
@@ -59415,7 +59416,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 2400000,
+          "price": 2450000,
           "url": "https://kaitori.toreca-lounge.com/product/4MspJHPMZnA6xs1kCqCD1q"
         },
         "shinsoku": {
@@ -60288,7 +60289,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 1040000,
+          "price": 1000000,
           "url": "https://kaitori.toreca-lounge.com/product/2SCIwJwPfI4LGsJQaLatDG"
         },
         "shinsoku": {
@@ -60396,7 +60397,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 1070000,
+          "price": 1020000,
           "url": "https://kaitori.toreca-lounge.com/product/1UUEDl3qBXmKVHGH8Waq3v"
         },
         "shinsoku": {
@@ -60686,7 +60687,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 733000,
+          "price": 700000,
           "url": "https://kaitori.toreca-lounge.com/product/1TmUGAwMV3dbGQOQ20OY6g"
         },
         "shinsoku": {
@@ -60734,7 +60735,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 830000,
+          "price": 820000,
           "url": "https://kaitori.toreca-lounge.com/product/2gKfqwNZ92iNaJ8OWRjRIr"
         },
         "shinsoku": {
@@ -61561,7 +61562,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 489000,
+          "price": 495000,
           "url": "https://kaitori.toreca-lounge.com/product/51nVpmmqIqfNHG4Sq3dz9D"
         },
         "shinsoku": {
@@ -63264,7 +63265,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 322000,
+          "price": 310000,
           "url": "https://kaitori.toreca-lounge.com/product/4NRHHcbBdt6ay14kZreVDu"
         },
         "shinsoku": {
@@ -63753,7 +63754,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 226000,
+          "price": 210000,
           "url": "https://kaitori.toreca-lounge.com/product/6kc0uvyniR2iZDbjEBgOmj"
         },
         "shinsoku": {
@@ -65814,7 +65815,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 87000,
+          "price": 85000,
           "url": "https://kaitori.toreca-lounge.com/product/2GSr62ItwycxXx9iXIjlwf"
         },
         "shinsoku": {
@@ -67598,7 +67599,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 67000,
+          "price": 62000,
           "url": "https://kaitori.toreca-lounge.com/product/28rYC7VQezkfeQHcZG4bSj"
         },
         "shinsoku": {
@@ -68146,7 +68147,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 65000,
+          "price": 64000,
           "url": "https://kaitori.toreca-lounge.com/product/5pivMArhc19biKlylcR66k"
         },
         "shinsoku": {
@@ -70018,10 +70019,6 @@
           "price": 40000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 45000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 47000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -70630,6 +70627,10 @@
         "shinsoku": {
           "price": 40500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 45000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 45000,
@@ -73875,7 +73876,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 21200,
+          "price": 20500,
           "url": "https://kaitori.toreca-lounge.com/product/3zYvN8qJrIcxYHq4JYvvcB"
         },
         "shinsoku": {
@@ -77489,7 +77490,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 9900,
+          "price": 8500,
           "url": "https://kaitori.toreca-lounge.com/product/7XQA6g4QzeKVpALdqqdhki"
         },
         "shinsoku": {
@@ -77666,7 +77667,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 13500,
+          "price": 13000,
           "url": "https://kaitori.toreca-lounge.com/product/4AWhxPxfmMSFf3MsjJT4iF"
         },
         "shinsoku": {
@@ -78622,7 +78623,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 10500,
+          "price": 9800,
           "url": "https://kaitori.toreca-lounge.com/product/7jTRdODXL8K6XT2QU9gsOA"
         },
         "shinsoku": {
@@ -79029,8 +79030,12 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 9800,
+          "price": 9400,
           "url": "https://kaitori.toreca-lounge.com/product/7NwtnLYeNPdfPEtNH5LgsU"
+        },
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12500,
@@ -80320,7 +80325,7 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 8200,
+          "price": 7800,
           "url": "https://kaitori.toreca-lounge.com/product/4lSyDU0QVP9Yx83h8vsIgB"
         },
         "torecabank_store": {
@@ -81644,7 +81649,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 6000,
+          "price": 5800,
           "url": "https://kaitori.toreca-lounge.com/product/2w4v0DSfwsAZW1h8obqqv2"
         },
         "birth": {
@@ -84754,7 +84759,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 4500,
+          "price": 4100,
           "url": "https://kaitori.toreca-lounge.com/product/2SuTQeR09NcpXbhLGPKfII"
         },
         "birth": {
@@ -85991,7 +85996,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 12500,
+          "price": 12000,
           "url": "https://kaitori.toreca-lounge.com/product/3XKxW3hoaiJRDqO3gLO72d"
         },
         "shinsoku": {
@@ -86089,7 +86094,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 12500,
+          "price": 11000,
           "url": "https://kaitori.toreca-lounge.com/product/6f9PnL19kJVmGGOqIqKuia"
         },
         "shinsoku": {
@@ -86111,7 +86116,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 10700,
+          "price": 9500,
           "url": "https://kaitori.toreca-lounge.com/product/3CM3WRQ49PG5UBMwYMKIAd"
         },
         "shinsoku": {
@@ -88716,7 +88721,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 4000,
+          "price": 3700,
           "url": "https://kaitori.toreca-lounge.com/product/108QUKtbi3QjWKHb3pzdgO"
         }
       }
@@ -88785,6 +88790,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 20600,
+          "url": "https://kaitori.toreca-lounge.com/product/4b9XayqgPAkP38YTbfccWV"
+        },
         "shinsoku": {
           "price": 21500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -88842,10 +88851,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 17400,
-          "url": "https://kaitori.toreca-lounge.com/product/7AmjXRcSYT241revoenAom"
-        },
         "shinsoku": {
           "price": 6400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -88898,6 +88903,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 156000,
+          "url": "https://kaitori.toreca-lounge.com/product/50whcONlsGhDtdLxpOOpCs"
+        },
         "birth": {
           "price": 166000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -89000,7 +89009,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 19800,
+          "price": 20200,
           "url": "https://kaitori.toreca-lounge.com/product/3JhxC0Q3H4rhxZVwSngeMN"
         },
         "birth": {
@@ -89025,6 +89034,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 18200,
+          "url": "https://kaitori.toreca-lounge.com/product/4mWS6vgvCfNEZM8NYS62Oh"
+        },
         "birth": {
           "price": 19300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -89220,12 +89233,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/yG9KxxtsPg3CQkPZoCrjdrCUa2YaCH9pIPq9axqb.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 17800,
-          "url": "https://kaitori.toreca-lounge.com/product/004JU0enFVi9anu0OsP8iE"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-efc477d50d",
@@ -89355,12 +89363,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/XSfKK9fNt7qDkzfMu5LgIUevTG8dKXoXGSQXuLYG.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 9700,
-          "url": "https://kaitori.toreca-lounge.com/product/52mTdJ6cWy8vucXbVMnekA"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-ea66f6f106",
@@ -89427,8 +89430,8 @@
       },
       "prices": {
         "lounge": {
-          "price": 487000,
-          "url": "https://kaitori.toreca-lounge.com/product/5lXubojOvXgk5b4DpRiSuX"
+          "price": 8500,
+          "url": "https://kaitori.toreca-lounge.com/product/0FJ2KeVnJInxCxhe9cGRBX"
         }
       }
     },
@@ -89518,10 +89521,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 7000,
-          "url": "https://kaitori.toreca-lounge.com/product/6dmD2n5dEH8iO0QRvKVQnw"
-        },
         "birth": {
           "price": 7200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -89857,10 +89856,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 166000,
-          "url": "https://kaitori.toreca-lounge.com/product/2UNRAccHsja9CJu3Sc4Qmp"
-        },
         "shinsoku": {
           "price": 178000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -90343,6 +90338,10 @@
         "source": "トレカバース"
       },
       "prices": {
+        "lounge": {
+          "price": 36300,
+          "url": "https://kaitori.toreca-lounge.com/product/4eLN06zT9rFn5WFqaqwye6"
+        },
         "birth": {
           "price": 38400,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -90529,12 +90528,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/1atskon4ufedS6PhVASVlbl453ukpeP2qfH57tDw.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 21100,
-          "url": "https://kaitori.toreca-lounge.com/product/6Bj8UNFi5QwcJAvACDYiGU"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-fb0472ea50",
@@ -90840,7 +90834,7 @@
       },
       "prices": {
         "lounge": {
-          "price": 14600,
+          "price": 18600,
           "url": "https://kaitori.toreca-lounge.com/product/2aCa3ihan8ZzpOvZwlTDsw"
         }
       }
@@ -91032,10 +91026,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 16200,
-          "url": "https://kaitori.toreca-lounge.com/product/4B0SyaKv7Os1rhuZtyVSu8"
-        },
         "birth": {
           "price": 9200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -92445,12 +92435,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/c8zINWxwfJXFREb8rciCBWOpQa5lrRgVVBiSjVWt.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 6900,
-          "url": "https://kaitori.toreca-lounge.com/product/1Pp0eeeXMBzFh0yjXAz1UV"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-631a59edc5",
@@ -92508,6 +92493,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 35300,
+          "url": "https://kaitori.toreca-lounge.com/product/2EaYAjB1NLyE3iJ3SCDkTv"
+        },
         "birth": {
           "price": 37300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -92592,10 +92581,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 14400,
-          "url": "https://kaitori.toreca-lounge.com/product/1VMTzKGkReHUfRBO1i3ryE"
-        },
         "shinsoku": {
           "price": 14200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -92808,10 +92793,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 32500,
-          "url": "https://kaitori.toreca-lounge.com/product/370uTWKOojZKQBIpeBNCNF"
-        },
         "birth": {
           "price": 166000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -92896,10 +92877,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 17400,
-          "url": "https://kaitori.toreca-lounge.com/product/4G4fSjJFv5IsIypgxvnczr"
-        },
         "birth": {
           "price": 18300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
@@ -92943,12 +92920,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/0W7QrtuFAnW8t6peHyAPcveVYF3mEGGqjXxGPmsM.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 6900,
-          "url": "https://kaitori.toreca-lounge.com/product/4DI9l5Ozzz3RNLY7JYog9y"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-ca83270d36",
