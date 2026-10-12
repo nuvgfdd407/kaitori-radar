@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T14:13:10+09:00",
+  "updated_at": "2026-10-12T14:28:20+09:00",
   "shops": [
     {
       "id": "homura",
@@ -162,7 +162,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/11"
         },
         "ichome": {
-          "price": 52300,
+          "price": 52000,
           "url": "https://www.1-chome.com/wineDetail/7048/7078"
         },
         "toban": {
@@ -59019,6 +59019,10 @@
           "price": 8700000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 9600000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 9000000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/397-SM-P/"
@@ -60688,10 +60692,6 @@
         "shinsoku": {
           "price": 710000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 780000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 730000,
@@ -64124,6 +64124,10 @@
           "price": 205000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 233000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 233000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -64441,10 +64445,6 @@
         "shinsoku": {
           "price": 167000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 189000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 160000,
@@ -65053,10 +65053,6 @@
         "shinsoku": {
           "price": 132000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 139000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 127000,
@@ -67283,6 +67279,10 @@
         "shinsoku": {
           "price": 78000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 88500,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -67563,10 +67563,6 @@
         "shinsoku": {
           "price": 58000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 69500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 62000,
@@ -71663,6 +71659,10 @@
           "price": 29000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 32000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 30000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/419-414-SI-B/"
@@ -72726,10 +72726,6 @@
         "shinsoku": {
           "price": 18900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 21000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 21000,
@@ -74048,10 +74044,6 @@
         "shinsoku": {
           "price": 17800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 21000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 22000,
@@ -79037,10 +79029,6 @@
           "price": 9300,
           "url": "https://kaitori.toreca-lounge.com/product/1ZouBb0tlWkdFO7IMzBtsK"
         },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 10000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -82948,7 +82936,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/SOaRwS18zMXxX0VkuFTHGluQxhzoATxV2uvwkZef.png",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "torecabank_store": {
+          "price": 5500,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-c10ae24731",
@@ -88436,10 +88429,6 @@
           "price": 6000,
           "url": "https://kaitori.toreca-lounge.com/product/3Fef4MRpeidIUeEs07DpnV"
         },
-        "torecabank": {
-          "price": 7000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 7000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -88835,16 +88824,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/nOMCyXM8IQKEPFEbwFIb4wXC9F7Vg1B5gCn2DFkl.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "birth": {
-          "price": 279000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 292000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-d5af6a2ae7",
@@ -88924,11 +88904,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 18300,
+          "price": 256000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 19500,
+          "price": 269000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -88948,6 +88928,14 @@
         "shinsoku": {
           "price": 275000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 217000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 228000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -88988,14 +88976,6 @@
         "shinsoku": {
           "price": 133000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 128000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 136000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -89029,11 +89009,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 20700,
+          "price": 20500,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 22100,
+          "price": 21800,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -89049,7 +89029,16 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/DWkk93K5MbKrIc6GAXk3Htmg5iaSZfFGFxhAvgx9.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 33400,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 35600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-4ea9acedd0",
@@ -89068,11 +89057,11 @@
           "url": "https://kaitori.toreca-lounge.com/product/3JhxC0Q3H4rhxZVwSngeMN"
         },
         "birth": {
-          "price": 20900,
+          "price": 21300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 22300,
+          "price": 22700,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -89166,14 +89155,6 @@
         "shinsoku": {
           "price": 15000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 15300,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 16300,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -89296,14 +89277,6 @@
         "lounge": {
           "price": 17800,
           "url": "https://kaitori.toreca-lounge.com/product/004JU0enFVi9anu0OsP8iE"
-        },
-        "birth": {
-          "price": 11500,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 12300,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -89318,16 +89291,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/vAV7hn0BUFgNgj0cr7m7br8SVy1Nvz4j6rMra0uc.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "birth": {
-          "price": 10200,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 10900,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-bbd81694a3",
@@ -89612,11 +89576,11 @@
           "url": "https://kaitori.toreca-lounge.com/product/6dmD2n5dEH8iO0QRvKVQnw"
         },
         "birth": {
-          "price": 7300,
+          "price": 7200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 7900,
+          "price": 7700,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -89632,16 +89596,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/sQ5rCSdHDAKZc4RoYrFbq5X8WccztQlj4uZKOg5u.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "birth": {
-          "price": 8600,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 9200,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-e82e95571b",
@@ -89915,16 +89870,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/53478ff0-ed6a-4a58-8ae9-f43a47f9aa0f.OP07COMIC.jpg",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 256000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 269000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-c076b3e39a",
@@ -89973,11 +89919,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 176000,
+          "price": 173000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 186000,
+          "price": 183000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -90062,14 +90008,6 @@
         "shinsoku": {
           "price": 128000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 126000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 134000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -90097,7 +90035,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/79c4ebac-290d-452e-aa02-a23121114688.PRB01_59.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 138000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 146000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-032e0e1846",
@@ -90180,14 +90127,6 @@
         "shinsoku": {
           "price": 107000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 102000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 109000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -90246,7 +90185,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/6861a8b5-164b-4ca0-a504-d57f7f299250.OP01para_24.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 80300,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 86000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-4af4e66963",
@@ -90316,7 +90264,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/de6f8d25-f06a-4cc3-9be5-2063f4189a2d.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 53100,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 56600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-19109ea8c7",
@@ -90342,7 +90299,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/b564693a-396f-41a7-ba5e-9e604b8a22fb.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 51500,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 54900,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-22f1eb2e61",
@@ -90486,16 +90452,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/83480aaf-f7b6-4320-84e3-0e704ccdff3a.OP05para6.jpg",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 34700,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 36900,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-c31d26d9ed",
@@ -90508,16 +90465,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/b8867ab1-6295-410e-9e20-6c2bdb608adf.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 34400,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 36600,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-0145c661cb",
@@ -90595,16 +90543,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/4dd1474b-5967-493d-942e-8a91c6dd31c5.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 42700,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 45500,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-fc6aa839aa",
@@ -90647,14 +90586,6 @@
         "lounge": {
           "price": 21100,
           "url": "https://kaitori.toreca-lounge.com/product/6Bj8UNFi5QwcJAvACDYiGU"
-        },
-        "birth": {
-          "price": 22200,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 23700,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -90682,16 +90613,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/8d56c07b-98bb-4f13-8713-cfe139d9614e.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 18800,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 20000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-163db2917a",
@@ -90836,11 +90758,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 17100,
+          "price": 17000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 18300,
+          "price": 18200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -90882,16 +90804,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/878c9faa-d915-4247-aed6-6695f955017c.OP07P12.jpg",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 17000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 18100,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-85a35cfe3f",
@@ -90904,16 +90817,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/8739a64b-befc-469f-b645-c4d5ea874e11.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 15000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 16000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-6b61dd0352",
@@ -90991,14 +90895,6 @@
         "lounge": {
           "price": 14600,
           "url": "https://kaitori.toreca-lounge.com/product/2aCa3ihan8ZzpOvZwlTDsw"
-        },
-        "birth": {
-          "price": 15400,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 16400,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -91059,11 +90955,11 @@
       },
       "prices": {
         "birth": {
-          "price": 10900,
+          "price": 10200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 11600,
+          "price": 10900,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -91081,11 +90977,11 @@
       },
       "prices": {
         "birth": {
-          "price": 11100,
+          "price": 10700,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 11800,
+          "price": 11400,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -91616,11 +91512,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 76100,
+          "price": 82600,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 81400,
+          "price": 88500,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -92369,16 +92265,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/d1fbbf49-8760-4d0c-91ff-17352c5c2a80.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 48800,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 52100,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-ae5290f011",
@@ -92447,11 +92334,11 @@
       },
       "prices": {
         "birth": {
-          "price": 8500,
+          "price": 8200,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 9100,
+          "price": 8800,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -92615,14 +92502,6 @@
         "lounge": {
           "price": 6900,
           "url": "https://kaitori.toreca-lounge.com/product/1Pp0eeeXMBzFh0yjXAz1UV"
-        },
-        "birth": {
-          "price": 7200,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 7700,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -92683,11 +92562,11 @@
       },
       "prices": {
         "birth": {
-          "price": 38600,
+          "price": 37300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 41100,
+          "price": 39700,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
@@ -92950,16 +92829,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/369deada-0e29-42e7-8ef2-7fd18fb92f09.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "birth": {
-          "price": 11100,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 11800,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-05be00a78b",
@@ -93106,11 +92976,11 @@
       },
       "prices": {
         "birth": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
-          "price": 12200,
+          "price": 12300,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
