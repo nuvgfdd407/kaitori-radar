@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T18:28:19+09:00",
+  "updated_at": "2026-10-12T18:43:15+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-12T18:43:15+09:00"
     },
     {
       "id": "ichome",
@@ -63,8 +64,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-12T18:13:15+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -44636,7 +44636,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26769"
         },
         "ichome": {
-          "price": 245000,
+          "price": 236000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         }
       }
@@ -44658,7 +44658,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26768"
         },
         "ichome": {
-          "price": 245000,
+          "price": 236000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         }
       }
@@ -44680,7 +44680,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26767"
         },
         "ichome": {
-          "price": 245000,
+          "price": 236000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         }
       }
@@ -44720,7 +44720,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26772"
         },
         "ichome": {
-          "price": 265000,
+          "price": 251000,
           "url": "https://www.1-chome.com/productDetail/1604/2250"
         }
       }
@@ -44742,7 +44742,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26771"
         },
         "ichome": {
-          "price": 265000,
+          "price": 251000,
           "url": "https://www.1-chome.com/productDetail/1604/2250"
         }
       }
@@ -44844,7 +44844,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26759"
         },
         "ichome": {
-          "price": 223000,
+          "price": 225000,
           "url": "https://www.1-chome.com/productDetail/1600/2246"
         },
         "rudeya": {
@@ -44870,7 +44870,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26758"
         },
         "ichome": {
-          "price": 223000,
+          "price": 225000,
           "url": "https://www.1-chome.com/productDetail/1600/2246"
         },
         "rudeya": {
@@ -44900,7 +44900,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26757"
         },
         "ichome": {
-          "price": 223000,
+          "price": 225000,
           "url": "https://www.1-chome.com/productDetail/1600/2246"
         },
         "rudeya": {
@@ -44948,7 +44948,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26762"
         },
         "ichome": {
-          "price": 240000,
+          "price": 245000,
           "url": "https://www.1-chome.com/productDetail/1601/2247"
         },
         "rudeya": {
@@ -44974,7 +44974,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26761"
         },
         "ichome": {
-          "price": 240000,
+          "price": 245000,
           "url": "https://www.1-chome.com/productDetail/1601/2247"
         },
         "rudeya": {
@@ -45022,7 +45022,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26765"
         },
         "ichome": {
-          "price": 290000,
+          "price": 285000,
           "url": "https://www.1-chome.com/productDetail/1602/2248"
         },
         "rudeya": {
@@ -45048,7 +45048,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26764"
         },
         "ichome": {
-          "price": 290000,
+          "price": 285000,
           "url": "https://www.1-chome.com/productDetail/1602/2248"
         },
         "rudeya": {
@@ -51579,6 +51579,10 @@
           "price": 33000,
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
+        "ichome": {
+          "price": 26000,
+          "url": "https://www.1-chome.com/productDetail/1676/2358"
+        },
         "guest": {
           "price": 37200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -51608,6 +51612,10 @@
         "kaikyo": {
           "price": 33000,
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
+        },
+        "ichome": {
+          "price": 26000,
+          "url": "https://www.1-chome.com/productDetail/1676/2358"
         },
         "wiki": {
           "price": 30000,
@@ -51642,6 +51650,10 @@
         "kaikyo": {
           "price": 33000,
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
+        },
+        "ichome": {
+          "price": 26000,
+          "url": "https://www.1-chome.com/productDetail/1676/2358"
         },
         "guest": {
           "price": 37200,
@@ -51802,7 +51814,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 18500,
+          "price": 23000,
           "url": "https://www.1-chome.com/productDetail/1313/1787"
         },
         "wiki": {
@@ -51844,7 +51856,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 18500,
+          "price": 23000,
           "url": "https://www.1-chome.com/productDetail/1313/1787"
         },
         "wiki": {
@@ -51886,7 +51898,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 18500,
+          "price": 23000,
           "url": "https://www.1-chome.com/productDetail/1313/1787"
         },
         "wiki": {
@@ -51928,7 +51940,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 18500,
+          "price": 23000,
           "url": "https://www.1-chome.com/productDetail/1313/1787"
         },
         "wiki": {
@@ -51970,7 +51982,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 18500,
+          "price": 23000,
           "url": "https://www.1-chome.com/productDetail/1313/1787"
         },
         "wiki": {
@@ -70855,10 +70867,6 @@
           "price": 28200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 30000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/307-190-S4A-B/"
@@ -71241,10 +71249,6 @@
         "torecabank": {
           "price": 41000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 45000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 41000,
@@ -77330,10 +77334,6 @@
           "price": 10700,
           "url": "https://kaitori.toreca-lounge.com/product/6YrTQzkdjmFpNRYL9GSKmh"
         },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -79426,10 +79426,6 @@
           "price": 11500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 10800,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -80401,10 +80397,6 @@
           "price": 7200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 7100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -81167,10 +81159,6 @@
         "shinsoku": {
           "price": 10900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 11200,
@@ -82537,10 +82525,6 @@
           "price": 4000,
           "url": "https://kaitori-homura.com/products/6109",
           "mode": "郵送"
-        },
-        "torecabank": {
-          "price": 6000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 3600,
@@ -84373,10 +84357,6 @@
           "price": 4800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 6000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 4600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -84420,10 +84400,6 @@
         "shinsoku": {
           "price": 4900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 7000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 7000,
