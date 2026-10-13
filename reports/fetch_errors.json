@@ -1403,5 +1403,20 @@
     "time": "2026-10-13T12:28:20+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-13T12:41:31+09:00",
+    "shop": "買取ホムラ",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-10-13T12:41:31+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-13T12:41:31+09:00",
+    "shop": "森森買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x7f8fb8153890>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
   }
 ]
