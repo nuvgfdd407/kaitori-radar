@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T18:13:14+09:00",
+  "updated_at": "2026-10-13T18:28:11+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,8 +21,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-13T17:43:21+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -35689,7 +35688,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27047"
         },
         "kaikyo": {
-          "price": 23000,
+          "price": 22500,
           "url": "https://www.mobile-ichiban.com/Prod/2/02/01"
         },
         "ichome": {
@@ -40899,7 +40898,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26138"
         },
         "ichome": {
-          "price": 155000,
+          "price": 150000,
           "url": "https://www.1-chome.com/productDetail/1471/2110"
         },
         "guest": {
@@ -40925,7 +40924,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26139"
         },
         "ichome": {
-          "price": 155000,
+          "price": 150000,
           "url": "https://www.1-chome.com/productDetail/1471/2110"
         },
         "guest": {
@@ -76521,6 +76520,10 @@
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%95%e3%82%b7%e3%82%ae%e3%83%80%e3%83%8d%e3%83%9e%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%ab%e3%83%9f%e3%83%a9%e3%83%bcsv2a-c-001-165/",
           "mode": "郵送"
         },
+        "torecabank": {
+          "price": 14000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 14000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76777,6 +76780,10 @@
         "shinsoku": {
           "price": 12700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 14000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 14000,
@@ -87404,10 +87411,6 @@
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4gxsm12a-hr-219-173/",
           "mode": "郵送"
         },
-        "torecabank": {
-          "price": 65000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 65000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -87614,10 +87617,6 @@
           "price": 90000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a8%e3%83%bc%e3%83%95%e3%82%a3gxsm1s-hr-068-060/",
           "mode": "郵送"
-        },
-        "torecabank_store": {
-          "price": 100000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
