@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T10:28:17+09:00",
+  "updated_at": "2026-10-13T10:43:14+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,7 +21,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-13T10:43:14+09:00"
     },
     {
       "id": "ichome",
@@ -171,7 +172,7 @@
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%bb%e5%9b%bd%e5%86%85%e5%b0%82%e7%94%a8/"
         },
         "rudeya": {
-          "price": 51000,
+          "price": 50000,
           "url": "https://kaitori-rudeya.com/product/item/5796"
         },
         "wiki": {
@@ -1233,7 +1234,7 @@
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-Lite--4902370542929"
         },
         "morimori": {
-          "price": 25800,
+          "price": 25700,
           "url": "https://www.morimori-kaitori.jp/category/0104001/product/279"
         },
         "guest": {
@@ -1339,7 +1340,7 @@
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-Lite--4902370542943"
         },
         "morimori": {
-          "price": 25700,
+          "price": 25800,
           "url": "https://www.morimori-kaitori.jp/category/0104001/product/280"
         },
         "guest": {
@@ -1744,7 +1745,7 @@
           "url": "https://tobansyoji.co.jp/product/sony-%e6%96%b0%e5%9e%8b%e3%83%97%e3%83%ac%e3%82%a4%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b35%e6%9c%ac%e4%bd%93-ps5-%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e3%83%bb%e3%82%a8%e3%83%87-2/"
         },
         "rudeya": {
-          "price": 103800,
+          "price": 104200,
           "url": "https://kaitori-rudeya.com/product/item/3849"
         },
         "wiki": {
@@ -1786,7 +1787,7 @@
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
-          "price": 51000,
+          "price": 50700,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25239"
         },
         "kaikyo": {
@@ -1852,7 +1853,7 @@
           "url": "https://tobansyoji.co.jp/product/sony-ps5-playstation5-pro-cfi-7100b01-2025%e5%b9%b4%e7%89%88/"
         },
         "rudeya": {
-          "price": 196700,
+          "price": 197000,
           "url": "https://kaitori-rudeya.com/product/item/6511"
         },
         "wiki": {
@@ -1907,7 +1908,7 @@
           "url": "https://tobansyoji.co.jp/product/sony-ps5-pro-playstation5-pro-cfi-7000b01/"
         },
         "rudeya": {
-          "price": 196700,
+          "price": 197000,
           "url": "https://kaitori-rudeya.com/product/item/4845"
         },
         "wiki": {
@@ -1965,7 +1966,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5---CFIJ-10018-4948872016940-"
         },
         "morimori": {
-          "price": 119000,
+          "price": 119800,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189442"
         },
         "keitaigod": {
@@ -1999,7 +2000,7 @@
           "url": "https://kaitori-homura.com/products/5100"
         },
         "shouten": {
-          "price": 105000,
+          "price": 105500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/18664"
         },
         "kaikyo": {
@@ -2023,7 +2024,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5---CFIJ-10019-4948872016957-"
         },
         "morimori": {
-          "price": 105000,
+          "price": 105500,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189443"
         },
         "guest": {
@@ -2049,7 +2050,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 56400,
+          "price": 56600,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26297"
         },
         "kaikyo": {
@@ -2129,7 +2130,7 @@
       },
       "prices": {
         "rudeya": {
-          "price": 103800,
+          "price": 104200,
           "url": "https://kaitori-rudeya.com/product/item/5427"
         },
         "wiki": {
@@ -2319,7 +2320,7 @@
           "url": "https://kaitori-homura.com/products/7338"
         },
         "shouten": {
-          "price": 105200,
+          "price": 105500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26986"
         },
         "kaikyo": {
@@ -2335,7 +2336,7 @@
           "url": "https://tobansyoji.co.jp/product/playstation-5-%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e3%83%bb%e3%82%a8%e3%83%87%e3%82%a3%e3%82%b7%e3%83%a7%e3%83%b3-marvels-wolverine-%e3%83%90%e3%83%88%e3%83%ab%e3%82%a4%e3%82%a8%e3%83%ad%e3%83%bc/"
         },
         "rudeya": {
-          "price": 105000,
+          "price": 105500,
           "url": "https://kaitori-rudeya.com/product/item/7269"
         },
         "wiki": {
@@ -2910,7 +2911,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-x-rrt-00015/"
         },
         "rudeya": {
-          "price": 118700,
+          "price": 119200,
           "url": "https://kaitori-rudeya.com/product/item/550"
         },
         "wiki": {
@@ -2944,7 +2945,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/03"
         },
         "rudeya": {
-          "price": 118700,
+          "price": 119200,
           "url": "https://kaitori-rudeya.com/product/item/6651"
         },
         "wiki": {
@@ -2986,7 +2987,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/03"
         },
         "ichome": {
-          "price": 108300,
+          "price": 108600,
           "url": "https://www.1-chome.com/wineDetail/6021/6021"
         },
         "toban": {
@@ -2994,7 +2995,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-x-1tb-%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab-%e3%82%a8%e3%83%87%e3%82%a3%e3%82%b7%e3%83%a7%e3%83%b3-%e3%83%9b%e3%83%af%e3%82%a4%e3%83%88-ep2-00708/"
         },
         "rudeya": {
-          "price": 108500,
+          "price": 109000,
           "url": "https://kaitori-rudeya.com/product/item/4756"
         },
         "wiki": {
@@ -3044,7 +3045,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-s-1tb-xxu-00015/"
         },
         "rudeya": {
-          "price": 87400,
+          "price": 87900,
           "url": "https://kaitori-rudeya.com/product/item/3642"
         },
         "wiki": {
@@ -3094,7 +3095,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-s-1tb-%e3%83%9b%e3%83%af%e3%82%a4%e3%83%88-ep2-00650/"
         },
         "rudeya": {
-          "price": 87400,
+          "price": 87900,
           "url": "https://kaitori-rudeya.com/product/item/4757"
         },
         "wiki": {
@@ -3140,7 +3141,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-s-512gb-rrs-00015/"
         },
         "rudeya": {
-          "price": 79400,
+          "price": 79700,
           "url": "https://kaitori-rudeya.com/product/item/551"
         },
         "wiki": {
@@ -3186,7 +3187,7 @@
           "url": "https://tobansyoji.co.jp/product/xbox-series-s-512gb-ep2-10065/"
         },
         "rudeya": {
-          "price": 79400,
+          "price": 79700,
           "url": "https://kaitori-rudeya.com/product/item/5425"
         },
         "wiki": {
@@ -6788,11 +6789,11 @@
           "url": "https://kaitori-homura.com/products/5027"
         },
         "shouten": {
-          "price": 64500,
+          "price": 62000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21039"
         },
         "toban": {
-          "price": 64700,
+          "price": 62200,
           "url": "https://tobansyoji.co.jp/product/meta-quest-3s-256gb/"
         },
         "rudeya": {
@@ -6800,7 +6801,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5258"
         },
         "morimori": {
-          "price": 64300,
+          "price": 62000,
           "url": "https://www.morimori-kaitori.jp/category/0114/product/278527"
         },
         "keitaigod": {
@@ -6829,11 +6830,11 @@
           "url": "https://kaitori-homura.com/products/5028"
         },
         "shouten": {
-          "price": 52500,
+          "price": 50500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21038"
         },
         "toban": {
-          "price": 52700,
+          "price": 50700,
           "url": "https://tobansyoji.co.jp/product/meta-quest-3s-128gb/"
         },
         "rudeya": {
@@ -6841,7 +6842,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5257"
         },
         "morimori": {
-          "price": 52500,
+          "price": 50500,
           "url": "https://www.morimori-kaitori.jp/category/0114/product/278526"
         },
         "keitaigod": {
@@ -7995,7 +7996,7 @@
           "url": "https://kaitori-homura.com/products/7265"
         },
         "shouten": {
-          "price": 225000,
+          "price": 229000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27100"
         },
         "kaikyo": {
@@ -8351,7 +8352,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 262000,
+          "price": 263000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -8459,7 +8460,7 @@
           "url": "https://kaitori-homura.com/products/7267"
         },
         "shouten": {
-          "price": 327000,
+          "price": 332000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27108"
         },
         "kaikyo": {
@@ -8467,7 +8468,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 332000,
+          "price": 328000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -8517,7 +8518,7 @@
           "url": "https://kaitori-homura.com/products/7283"
         },
         "shouten": {
-          "price": 327000,
+          "price": 332000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27106"
         },
         "kaikyo": {
@@ -8525,7 +8526,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 332000,
+          "price": 328000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -8575,7 +8576,7 @@
           "url": "https://kaitori-homura.com/products/7274"
         },
         "shouten": {
-          "price": 327000,
+          "price": 328000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27107"
         },
         "kaikyo": {
@@ -8583,7 +8584,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 324000,
+          "price": 328000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -10251,7 +10252,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 139500,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -10309,7 +10310,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 139500,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -10367,7 +10368,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -10425,7 +10426,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 139500,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -10483,7 +10484,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/34"
         },
         "ichome": {
-          "price": 139500,
+          "price": 140000,
           "url": "https://www.1-chome.com/productDetail/1365/1909"
         },
         "toban": {
@@ -11519,7 +11520,7 @@
           "url": "https://kaitori-homura.com/products/5621"
         },
         "shouten": {
-          "price": 105000,
+          "price": 107000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25842"
         },
         "kaikyo": {
@@ -11573,7 +11574,7 @@
           "url": "https://kaitori-homura.com/products/5622"
         },
         "shouten": {
-          "price": 105000,
+          "price": 107000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25841"
         },
         "kaikyo": {
@@ -11627,7 +11628,7 @@
           "url": "https://kaitori-homura.com/products/5623"
         },
         "shouten": {
-          "price": 105000,
+          "price": 107000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25843"
         },
         "kaikyo": {
@@ -13533,7 +13534,7 @@
           "url": "https://kaitori-homura.com/products/3155"
         },
         "shouten": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20850"
         },
         "kaikyo": {
@@ -13591,7 +13592,7 @@
           "url": "https://kaitori-homura.com/products/3156"
         },
         "shouten": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20849"
         },
         "kaikyo": {
@@ -13649,7 +13650,7 @@
           "url": "https://kaitori-homura.com/products/3157"
         },
         "shouten": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20853"
         },
         "kaikyo": {
@@ -13707,7 +13708,7 @@
           "url": "https://kaitori-homura.com/products/3158"
         },
         "shouten": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20851"
         },
         "kaikyo": {
@@ -13765,7 +13766,7 @@
           "url": "https://kaitori-homura.com/products/3159"
         },
         "shouten": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20852"
         },
         "kaikyo": {
@@ -70095,10 +70096,6 @@
           "price": 40900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 42000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 47500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -84492,6 +84489,10 @@
           "price": 44000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a8%e3%83%bc%e3%83%95%e3%82%a3gxsm1-sr-062-060/",
           "mode": "郵送"
+        },
+        "torecabank": {
+          "price": 42000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 45500,
