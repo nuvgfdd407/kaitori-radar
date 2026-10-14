@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:58:36+09:00",
+  "updated_at": "2026-10-14T20:13:36+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,8 +21,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-14T19:58:36+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -11564,7 +11563,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/iPhone-17e-256GB-black"
         },
         "morimori": {
-          "price": 105000,
+          "price": 110000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318764"
         },
         "keitaigod": {
@@ -60717,10 +60716,6 @@
           "price": 750000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 815000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 800000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/101-095-SM9-B/"
@@ -62798,7 +62793,7 @@
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
-          "price": 320000,
+          "price": 280000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/288-SV-P/"
         },
         "birth": {
@@ -79140,6 +79135,10 @@
           "price": 8000,
           "url": "https://kaitori.toreca-lounge.com/product/7bvXCxgkBfr2EEMzZctv6F"
         },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -86623,10 +86622,6 @@
         "source": "トレカクラブ"
       },
       "prices": {
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
