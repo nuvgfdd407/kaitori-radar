@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T16:13:10+09:00",
+  "updated_at": "2026-10-15T16:28:25+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,7 +21,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-15T16:28:25+09:00"
     },
     {
       "id": "ichome",
@@ -37031,7 +37032,7 @@
           "url": "https://www.1-chome.com/productDetail/1607/2253"
         },
         "rudeya": {
-          "price": 143500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/7303"
         },
         "wiki": {
@@ -37076,7 +37077,7 @@
           "url": "https://www.1-chome.com/productDetail/1607/2253"
         },
         "rudeya": {
-          "price": 143500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/7300"
         },
         "wiki": {
@@ -37121,7 +37122,7 @@
           "url": "https://www.1-chome.com/productDetail/1607/2253"
         },
         "rudeya": {
-          "price": 143500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/7302"
         },
         "wiki": {
@@ -37166,7 +37167,7 @@
           "url": "https://www.1-chome.com/productDetail/1607/2253"
         },
         "rudeya": {
-          "price": 143500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/7301"
         },
         "wiki": {
@@ -86920,10 +86921,6 @@
         "source": "トレカクラブ"
       },
       "prices": {
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
