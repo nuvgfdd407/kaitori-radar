@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T10:43:08+09:00",
+  "updated_at": "2026-10-15T10:58:12+09:00",
   "shops": [
     {
       "id": "homura",
@@ -64,7 +64,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-15T10:58:12+09:00"
     },
     {
       "id": "guest",
@@ -78,8 +79,7 @@
       "name": "PANDA買取",
       "short": "PANDA",
       "url": "https://panda-kaitori.co.jp/",
-      "ok": false,
-      "failing_since": "2026-10-15T10:43:08+09:00"
+      "ok": true
     },
     {
       "id": "lounge",
@@ -3302,7 +3302,7 @@
           "url": "https://tobansyoji.co.jp/product/%e5%86%99%e3%83%ab%e3%83%b3%e3%81%a7%e3%81%99%ef%bc%882026%e5%b9%b4%ef%bc%89/"
         },
         "rudeya": {
-          "price": 2530,
+          "price": 2540,
           "url": "https://kaitori-rudeya.com/product/item/5769"
         },
         "wiki": {
@@ -3822,7 +3822,7 @@
           "url": "https://tobansyoji.co.jp/product/instax-mini-13%e3%83%81%e3%82%a7%e3%82%ad-%e3%83%9b%e3%83%af%e3%82%a4%e3%83%88/"
         },
         "rudeya": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://kaitori-rudeya.com/product/item/6835"
         },
         "wiki": {
@@ -3867,7 +3867,7 @@
           "url": "https://tobansyoji.co.jp/product/instax-mini-13%e3%83%81%e3%82%a7%e3%82%ad-%e3%83%94%e3%83%b3%e3%82%af/"
         },
         "rudeya": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://kaitori-rudeya.com/product/item/6834"
         },
         "wiki": {
@@ -3912,7 +3912,7 @@
           "url": "https://tobansyoji.co.jp/product/instax-mini-13%e3%83%81%e3%82%a7%e3%82%ad-%e3%83%96%e3%83%ab%e3%83%bc/"
         },
         "rudeya": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://kaitori-rudeya.com/product/item/6837"
         },
         "wiki": {
@@ -3957,7 +3957,7 @@
           "url": "https://tobansyoji.co.jp/product/instax-mini-13%e3%83%81%e3%82%a7%e3%82%ad-%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%b3/"
         },
         "rudeya": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://kaitori-rudeya.com/product/item/6838"
         },
         "wiki": {
@@ -4002,7 +4002,7 @@
           "url": "https://tobansyoji.co.jp/product/instax-mini-13%e3%83%81%e3%82%a7%e3%82%ad-%e3%83%91%e3%83%bc%e3%83%97%e3%83%ab/"
         },
         "rudeya": {
-          "price": 11400,
+          "price": 11500,
           "url": "https://kaitori-rudeya.com/product/item/6836"
         },
         "wiki": {
@@ -6759,7 +6759,7 @@
           "url": "https://kaitori-homura.com/products/5029"
         },
         "toban": {
-          "price": 91200,
+          "price": 90700,
           "url": "https://tobansyoji.co.jp/product/meta-quest-3-512gb/"
         },
         "rudeya": {
@@ -6854,7 +6854,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/21038"
         },
         "toban": {
-          "price": 50200,
+          "price": 49700,
           "url": "https://tobansyoji.co.jp/product/meta-quest-3s-128gb/"
         },
         "rudeya": {
@@ -7066,7 +7066,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-256gb/"
         },
         "rudeya": {
-          "price": 214500,
+          "price": 215000,
           "url": "https://kaitori-rudeya.com/product/item/7411"
         },
         "wiki": {
@@ -7087,7 +7087,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 213500,
+          "price": 215500,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7124,7 +7124,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-256gb/"
         },
         "rudeya": {
-          "price": 198000,
+          "price": 200000,
           "url": "https://kaitori-rudeya.com/product/item/7409"
         },
         "wiki": {
@@ -7145,7 +7145,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 196500,
+          "price": 201500,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7182,7 +7182,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-256gb/"
         },
         "rudeya": {
-          "price": 198000,
+          "price": 200000,
           "url": "https://kaitori-rudeya.com/product/item/7410"
         },
         "wiki": {
@@ -7203,7 +7203,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 198000,
+          "price": 201000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7240,7 +7240,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-256gb/"
         },
         "rudeya": {
-          "price": 193500,
+          "price": 199000,
           "url": "https://kaitori-rudeya.com/product/item/7408"
         },
         "wiki": {
@@ -7261,7 +7261,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 196000,
+          "price": 199000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7298,7 +7298,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 249500,
+          "price": 250000,
           "url": "https://kaitori-rudeya.com/product/item/7415"
         },
         "wiki": {
@@ -7352,7 +7352,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 239000,
+          "price": 240000,
           "url": "https://kaitori-rudeya.com/product/item/7413"
         },
         "wiki": {
@@ -7373,7 +7373,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 239000,
+          "price": 242000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7410,7 +7410,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 239000,
+          "price": 240000,
           "url": "https://kaitori-rudeya.com/product/item/7414"
         },
         "wiki": {
@@ -7431,7 +7431,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 239000,
+          "price": 242000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7468,7 +7468,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-512gb/"
         },
         "rudeya": {
-          "price": 231000,
+          "price": 233000,
           "url": "https://kaitori-rudeya.com/product/item/7412"
         },
         "wiki": {
@@ -7489,7 +7489,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 230000,
+          "price": 235000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7547,7 +7547,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 310000,
+          "price": 310500,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7584,7 +7584,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-1tb/"
         },
         "rudeya": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://kaitori-rudeya.com/product/item/7417"
         },
         "wiki": {
@@ -7605,7 +7605,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 295000,
+          "price": 297000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7642,7 +7642,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-1tb/"
         },
         "rudeya": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://kaitori-rudeya.com/product/item/7418"
         },
         "wiki": {
@@ -7663,7 +7663,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 295000,
+          "price": 297000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7700,7 +7700,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-1tb/"
         },
         "rudeya": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://kaitori-rudeya.com/product/item/7416"
         },
         "wiki": {
@@ -7721,7 +7721,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -7995,7 +7995,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 247000,
+          "price": 247500,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8053,7 +8053,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 229500,
+          "price": 236000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8090,7 +8090,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 235000,
+          "price": 236000,
           "url": "https://kaitori-rudeya.com/product/item/7393"
         },
         "wiki": {
@@ -8111,7 +8111,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 235000,
+          "price": 236000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8148,7 +8148,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 228000,
+          "price": 229000,
           "url": "https://kaitori-rudeya.com/product/item/7391"
         },
         "wiki": {
@@ -8169,7 +8169,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 227000,
+          "price": 231000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8227,7 +8227,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 285200,
+          "price": 286000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8285,7 +8285,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 271000,
+          "price": 271200,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8322,7 +8322,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
-          "price": 271000,
+          "price": 272000,
           "url": "https://kaitori-rudeya.com/product/item/7397"
         },
         "wiki": {
@@ -8343,7 +8343,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 271000,
+          "price": 272200,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8380,7 +8380,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
-          "price": 266000,
+          "price": 269000,
           "url": "https://kaitori-rudeya.com/product/item/7395"
         },
         "wiki": {
@@ -8401,7 +8401,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 263000,
+          "price": 269500,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8496,7 +8496,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
-          "price": 333000,
+          "price": 335000,
           "url": "https://kaitori-rudeya.com/product/item/7401"
         },
         "wiki": {
@@ -8554,7 +8554,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
-          "price": 333000,
+          "price": 335000,
           "url": "https://kaitori-rudeya.com/product/item/7402"
         },
         "wiki": {
@@ -8612,7 +8612,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
-          "price": 329000,
+          "price": 331000,
           "url": "https://kaitori-rudeya.com/product/item/7399"
         },
         "wiki": {
@@ -9062,7 +9062,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-256gb/"
         },
         "rudeya": {
-          "price": 166000,
+          "price": 167000,
           "url": "https://kaitori-rudeya.com/product/item/6260"
         },
         "wiki": {
@@ -9120,7 +9120,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-256gb/"
         },
         "rudeya": {
-          "price": 172000,
+          "price": 173000,
           "url": "https://kaitori-rudeya.com/product/item/6261"
         },
         "wiki": {
@@ -9700,7 +9700,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-max-256gb/"
         },
         "rudeya": {
-          "price": 187000,
+          "price": 188000,
           "url": "https://kaitori-rudeya.com/product/item/6247"
         },
         "wiki": {
@@ -10860,7 +10860,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-air-256gb/"
         },
         "rudeya": {
-          "price": 132500,
+          "price": 133000,
           "url": "https://kaitori-rudeya.com/product/item/6281"
         },
         "wiki": {
@@ -10918,7 +10918,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-air-256gb/"
         },
         "rudeya": {
-          "price": 134500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/6280"
         },
         "wiki": {
@@ -10976,7 +10976,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-air-256gb/"
         },
         "rudeya": {
-          "price": 134500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/6279"
         },
         "wiki": {
@@ -11034,7 +11034,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-air-256gb/"
         },
         "rudeya": {
-          "price": 134500,
+          "price": 135000,
           "url": "https://kaitori-rudeya.com/product/item/6278"
         },
         "wiki": {
@@ -13280,7 +13280,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-128gb-2/"
         },
         "rudeya": {
-          "price": 112500,
+          "price": 113000,
           "url": "https://kaitori-rudeya.com/product/item/4898"
         },
         "wiki": {
@@ -13338,7 +13338,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-128gb-2/"
         },
         "rudeya": {
-          "price": 112500,
+          "price": 113000,
           "url": "https://kaitori-rudeya.com/product/item/4900"
         },
         "wiki": {
@@ -13396,7 +13396,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-128gb-2/"
         },
         "rudeya": {
-          "price": 112500,
+          "price": 113000,
           "url": "https://kaitori-rudeya.com/product/item/4903"
         },
         "wiki": {
@@ -13454,7 +13454,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-128gb-2/"
         },
         "rudeya": {
-          "price": 112500,
+          "price": 113000,
           "url": "https://kaitori-rudeya.com/product/item/4904"
         },
         "wiki": {
@@ -13512,7 +13512,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-128gb-2/"
         },
         "rudeya": {
-          "price": 112500,
+          "price": 113000,
           "url": "https://kaitori-rudeya.com/product/item/4905"
         },
         "wiki": {
@@ -13570,7 +13570,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-256gb-2/"
         },
         "rudeya": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://kaitori-rudeya.com/product/item/4906"
         },
         "wiki": {
@@ -13628,7 +13628,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-256gb-2/"
         },
         "rudeya": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://kaitori-rudeya.com/product/item/4907"
         },
         "wiki": {
@@ -13686,7 +13686,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-256gb-2/"
         },
         "rudeya": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://kaitori-rudeya.com/product/item/4908"
         },
         "wiki": {
@@ -13744,7 +13744,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-256gb-2/"
         },
         "rudeya": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://kaitori-rudeya.com/product/item/4909"
         },
         "wiki": {
@@ -13802,7 +13802,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-16-pro-256gb-2/"
         },
         "rudeya": {
-          "price": 119000,
+          "price": 117000,
           "url": "https://kaitori-rudeya.com/product/item/4910"
         },
         "wiki": {
@@ -49921,7 +49921,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7177"
         },
         "morimori": {
-          "price": 50400,
+          "price": 49500,
           "url": "https://www.morimori-kaitori.jp/category/0304003/product/306738"
         },
         "keitaigod": {
@@ -52335,7 +52335,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
         },
         "toban": {
-          "price": 26000,
+          "price": 25500,
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%90m6a%e3%80%91-30th-celebration/"
         },
         "rudeya": {
@@ -59028,7 +59028,7 @@
       },
       "prices": {
         "toban": {
-          "price": 4460000,
+          "price": 4900000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%aa%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-294-xy-p/",
           "mode": "郵送"
         },
@@ -59071,7 +59071,7 @@
       },
       "prices": {
         "toban": {
-          "price": 4600000,
+          "price": 4700000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a620th%e3%82%a2%e3%83%8b%e3%83%90%e3%83%bc%e3%82%b5%e3%83%aa%e3%83%bc-279-xy-p/",
           "mode": "郵送"
         },
@@ -59141,7 +59141,7 @@
       },
       "prices": {
         "toban": {
-          "price": 3350000,
+          "price": 3500000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e5%9b%a3%e5%8f%82%e4%b8%8a-278-xy-p/",
           "mode": "郵送"
         },
@@ -59168,7 +59168,7 @@
       },
       "prices": {
         "toban": {
-          "price": 2900000,
+          "price": 3000000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a2%e3%82%bb%e3%83%ad%e3%83%a9sr%e4%bb%95%e6%a7%98-395-sm-p/",
           "mode": "郵送"
         },
@@ -59207,7 +59207,7 @@
       },
       "prices": {
         "toban": {
-          "price": 3360000,
+          "price": 3350000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-207-xy-p/",
           "mode": "郵送"
         },
@@ -59306,7 +59306,7 @@
       },
       "prices": {
         "toban": {
-          "price": 2230000,
+          "price": 2320000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-231-xy-p/",
           "mode": "郵送"
         },
@@ -59431,7 +59431,7 @@
       },
       "prices": {
         "toban": {
-          "price": 2040000,
+          "price": 2110000,
           "url": "https://tobansyoji.co.jp/product/psa10-15th-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-229-bw-p/",
           "mode": "郵送"
         },
@@ -59470,7 +59470,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1910000,
+          "price": 2000000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%aa%e3%82%a8-119-114/",
           "mode": "郵送"
         },
@@ -59522,7 +59522,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1880000,
+          "price": 1870000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-230-xy-p/",
           "mode": "郵送"
         },
@@ -59573,7 +59573,7 @@
       },
       "prices": {
         "toban": {
-          "price": 2010000,
+          "price": 2030000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6%e3%83%a0%e3%83%b3%e3%82%af-288-sm-p/",
           "mode": "郵送"
         },
@@ -59625,7 +59625,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1800000,
+          "price": 2010000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b9%e3%82%ab%e3%83%ab%e5%9b%a3%e3%81%94%e3%81%a3%e3%81%93%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-013-sm-p/",
           "mode": "郵送"
         },
@@ -59737,7 +59737,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1810000,
+          "price": 1850000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%ae%e3%83%a3%e3%83%a9%e3%83%89%e3%82%b9%e3%81%94%e3%81%a3%e3%81%93%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-151-xy-p/",
           "mode": "郵送"
         },
@@ -59846,7 +59846,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1480000,
+          "price": 1460000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a2%e3%82%bb%e3%83%ad%e3%83%a9-056-049/",
           "mode": "郵送"
         },
@@ -59954,7 +59954,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1290000,
+          "price": 1300000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%aa%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-293-xy-p/",
           "mode": "郵送"
         },
@@ -60032,7 +60032,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1100000,
+          "price": 1090000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%83%bc%e3%83%aa%e3%82%a8-066-060/",
           "mode": "郵送"
         },
@@ -60083,12 +60083,17 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "toban": {
+          "price": 1190000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b2%e3%83%b3%e3%82%ac%e3%83%bcex1ed-090-088/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 1190000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
-          "price": 1250000,
+          "price": 1350000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
@@ -60118,7 +60123,7 @@
       },
       "prices": {
         "toban": {
-          "price": 890000,
+          "price": 900000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4%e3%83%a0%e3%83%b3%e3%82%af-287-sm-p/",
           "mode": "郵送"
         },
@@ -60224,7 +60229,7 @@
       },
       "prices": {
         "toban": {
-          "price": 990000,
+          "price": 980000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a9%e3%83%86%e3%82%a3%e3%82%a2%e3%82%b9%ef%bc%86%e3%83%a9%e3%83%86%e3%82%a3%e3%82%aa%e3%82%b9gxsa-105-095/",
           "mode": "郵送"
         },
@@ -60276,7 +60281,7 @@
       },
       "prices": {
         "toban": {
-          "price": 760000,
+          "price": 750000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3gx-058-051/",
           "mode": "郵送"
         },
@@ -60413,7 +60418,7 @@
           "mode": "郵送"
         },
         "toban": {
-          "price": 600000,
+          "price": 630000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%aa%e3%82%ab%e3%83%ab%e3%83%88%e3%83%9e%e3%83%8b%e3%82%a2sr%e4%bb%95%e6%a7%98-181-171/",
           "mode": "郵送"
         },
@@ -60466,6 +60471,11 @@
         "homura": {
           "price": 635500,
           "url": "https://kaitori-homura.com/products/5973",
+          "mode": "郵送"
+        },
+        "toban": {
+          "price": 620000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6%e3%83%84%e3%83%bcgxsr%e4%bb%95%e6%a7%98-082-072/",
           "mode": "郵送"
         },
         "morimori": {
@@ -60536,7 +60546,7 @@
       },
       "prices": {
         "toban": {
-          "price": 780000,
+          "price": 830000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b7%e3%83%a3%e3%83%af%e3%83%bc%e3%82%bavmaxsa%e4%bb%95%e6%a7%98-187-s-p/",
           "mode": "郵送"
         },
@@ -60584,7 +60594,7 @@
       },
       "prices": {
         "toban": {
-          "price": 890000,
+          "price": 860000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3yexmur%e4%bb%95%e6%a7%98-766-742/",
           "mode": "郵送"
         },
@@ -60620,7 +60630,7 @@
       },
       "prices": {
         "toban": {
-          "price": 670000,
+          "price": 680000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%96%e3%83%a9%e3%83%83%e3%82%ad%e3%83%bcvmaxsa-095-069/",
           "mode": "郵送"
         },
@@ -60668,7 +60678,7 @@
       },
       "prices": {
         "toban": {
-          "price": 750000,
+          "price": 810000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6%ef%bc%86%e3%82%bc%e3%82%af%e3%83%ad%e3%83%a0gxsa-101-095/",
           "mode": "郵送"
         },
@@ -60712,7 +60722,7 @@
       },
       "prices": {
         "toban": {
-          "price": 660000,
+          "price": 650000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6sr%e4%bb%95%e6%a7%98-400-sm-p/",
           "mode": "郵送"
         },
@@ -60907,7 +60917,7 @@
       },
       "prices": {
         "toban": {
-          "price": 620000,
+          "price": 630000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-010-032/",
           "mode": "郵送"
         },
@@ -60949,6 +60959,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "toban": {
+          "price": 440000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%82%b0%e3%83%9e%e5%9b%a3%e3%81%ae%e3%82%b0%e3%83%a9%e3%83%bc%e3%83%89%e3%83%b3ex-015-034/",
+          "mode": "郵送"
+        },
         "lounge": {
           "price": 452000,
           "url": "https://kaitori.toreca-lounge.com/product/0A8LUlNqNtxJpzhDJAgMet"
@@ -61053,6 +61068,11 @@
           "url": "https://kaitori-homura.com/products/5972",
           "mode": "郵送"
         },
+        "toban": {
+          "price": 405000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6%e3%83%84%e3%83%bcgxsr%e4%bb%95%e6%a7%98-363-sm-p/",
+          "mode": "郵送"
+        },
         "lounge": {
           "price": 396000,
           "url": "https://kaitori.toreca-lounge.com/product/0cLYrZHXpWEveG4l7SF3yh"
@@ -61084,7 +61104,7 @@
       },
       "prices": {
         "toban": {
-          "price": 350000,
+          "price": 405000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4bs-139-sm-p/",
           "mode": "郵送"
         },
@@ -61162,7 +61182,7 @@
       },
       "prices": {
         "toban": {
-          "price": 640000,
+          "price": 630000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%a2%e3%83%ad%e3%83%bc%e3%83%a9%e3%81%ae%e4%bb%b2%e9%96%93%e3%81%9f%e3%81%a1sr%e4%bb%95%e6%a7%98-401-sm-p/",
           "mode": "郵送"
         },
@@ -61279,7 +61299,7 @@
       },
       "prices": {
         "toban": {
-          "price": 395000,
+          "price": 405000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%82%a4%e3%83%bc%e3%83%96%e3%82%a4ef-140-sm-p/",
           "mode": "郵送"
         },
@@ -61411,6 +61431,11 @@
           "url": "https://kaitori-homura.com/products/6897",
           "mode": "郵送"
         },
+        "toban": {
+          "price": 440000,
+          "url": "https://tobansyoji.co.jp/product/psa10-m%e3%83%ac%e3%83%83%e3%82%af%e3%82%a6%e3%82%b6ex1ed-095-081/",
+          "mode": "郵送"
+        },
         "lounge": {
           "price": 446000,
           "url": "https://kaitori.toreca-lounge.com/product/5ROb5i8QYseu9ImUrDG6Fw"
@@ -61472,7 +61497,7 @@
       },
       "prices": {
         "toban": {
-          "price": 475000,
+          "price": 465000,
           "url": "https://tobansyoji.co.jp/product/psa10-pikachu-with-grey-felt-hat%e3%82%b4%e3%83%83%e3%83%9b%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-085-sv-p/",
           "mode": "郵送"
         },
@@ -61582,7 +61607,7 @@
       },
       "prices": {
         "toban": {
-          "price": 375000,
+          "price": 360000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%b5%e3%83%8a-185-171/",
           "mode": "郵送"
         },
@@ -61695,7 +61720,7 @@
       },
       "prices": {
         "toban": {
-          "price": 640000,
+          "price": 710000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%96%e3%83%bc%e3%82%b9%e3%82%bf%e3%83%bcvmaxsa%e4%bb%95%e6%a7%98-186-s-p/",
           "mode": "郵送"
         },
@@ -61948,7 +61973,7 @@
       },
       "prices": {
         "toban": {
-          "price": 425000,
+          "price": 430000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-038-sm-p/",
           "mode": "郵送"
         },
@@ -62622,7 +62647,7 @@
           "mode": "郵送"
         },
         "toban": {
-          "price": 360000,
+          "price": 355000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3xex-116-080/",
           "mode": "郵送"
         },
@@ -72793,7 +72818,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/77P8Fai0BawUulPGSl1FXc"
         },
         "shinsoku": {
-          "price": 24800,
+          "price": 23900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
@@ -77891,6 +77916,10 @@
           "price": 9800,
           "url": "https://kaitori.toreca-lounge.com/product/7NwtnLYeNPdfPEtNH5LgsU"
         },
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -81810,6 +81839,11 @@
         "source": "トレカクラブ"
       },
       "prices": {
+        "toban": {
+          "price": 5800000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6exsar%e4%bb%95%e6%a7%98-%e4%b8%ad%e5%9b%bd%e8%aa%9e%e7%89%88-003-sv-p/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 5800000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -81868,7 +81902,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1130000,
+          "price": 1110000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6ex1ed-094-087/",
           "mode": "郵送"
         },
@@ -81907,7 +81941,7 @@
       },
       "prices": {
         "toban": {
-          "price": 1100000,
+          "price": 1160000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3ex-276-xy-p/",
           "mode": "郵送"
         },
@@ -81984,6 +82018,11 @@
         "source": "トレカクラブ"
       },
       "prices": {
+        "toban": {
+          "price": 790000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%a5%e3%82%a6ex1ed-024-020/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 790000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -82330,7 +82369,7 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
-          "price": 55000,
+          "price": 60000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
@@ -83487,7 +83526,7 @@
       },
       "prices": {
         "toban": {
-          "price": 420000,
+          "price": 410000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-199-sm-p/",
           "mode": "郵送"
         },
@@ -86180,7 +86219,7 @@
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 10000,
+          "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
         }
       }
@@ -87214,6 +87253,11 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "toban": {
+          "price": 1610000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%82%b7%e3%83%a9%e3%83%a015%e5%91%a8%e5%b9%b4-055-053/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 1610000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -87584,6 +87628,11 @@
         "source": "シンソク"
       },
       "prices": {
+        "toban": {
+          "price": 1510000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%82%af%e3%83%ad%e3%83%a015%e5%91%a8%e5%b9%b4-055-053/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 1510000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -87656,6 +87705,11 @@
         "source": "シンソク"
       },
       "prices": {
+        "toban": {
+          "price": 520000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%82%af%e3%83%ad%e3%83%a0gxsr%e4%bb%95%e6%a7%98-239-sm-p/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 520000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -87674,6 +87728,11 @@
         "source": "シンソク"
       },
       "prices": {
+        "toban": {
+          "price": 520000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%82%b7%e3%83%a9%e3%83%a0ur%e4%bb%95%e6%a7%98-094-093/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 520000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -87692,6 +87751,11 @@
         "source": "シンソク"
       },
       "prices": {
+        "toban": {
+          "price": 520000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%82%af%e3%83%ad%e3%83%a0ur%e4%bb%95%e6%a7%98-095-093/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 520000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -87710,6 +87774,11 @@
         "source": "シンソク"
       },
       "prices": {
+        "toban": {
+          "price": 430000,
+          "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ac%e3%82%b7%e3%83%a9%e3%83%a0-022-020/",
+          "mode": "郵送"
+        },
         "shinsoku": {
           "price": 430000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
