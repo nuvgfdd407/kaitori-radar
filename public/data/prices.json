@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T18:13:10+09:00",
+  "updated_at": "2026-10-15T18:28:19+09:00",
   "shops": [
     {
       "id": "homura",
@@ -35,7 +35,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-15T18:28:19+09:00"
     },
     {
       "id": "rudeya",
@@ -61531,10 +61532,6 @@
           "price": 510000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 560000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 560000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -77836,6 +77833,10 @@
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 10000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/242-193-M2A-B/"
@@ -78111,10 +78112,6 @@
         "shinsoku": {
           "price": 9000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
