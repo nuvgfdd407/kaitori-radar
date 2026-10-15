@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T13:58:09+09:00",
+  "updated_at": "2026-10-15T14:13:11+09:00",
   "shops": [
     {
       "id": "homura",
@@ -64,7 +64,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-15T14:13:11+09:00"
     },
     {
       "id": "guest",
@@ -43096,7 +43097,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/22282"
         },
         "morimori": {
-          "price": 150000,
+          "price": 143000,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/290808"
         }
       }
@@ -46930,7 +46931,7 @@
           "url": "https://www.1-chome.com/productDetail/1231/1494"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/295108"
         },
         "keitaigod": {
@@ -46972,7 +46973,7 @@
           "url": "https://www.1-chome.com/productDetail/1231/1494"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16200,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/295109"
         },
         "keitaigod": {
@@ -47014,7 +47015,7 @@
           "url": "https://www.1-chome.com/productDetail/1231/1494"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16200,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/295110"
         },
         "keitaigod": {
@@ -47056,7 +47057,7 @@
           "url": "https://www.1-chome.com/productDetail/1235/1504"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/303929"
         },
         "keitaigod": {
@@ -47098,7 +47099,7 @@
           "url": "https://www.1-chome.com/productDetail/1235/1504"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/303928"
         },
         "keitaigod": {
@@ -47140,7 +47141,7 @@
           "url": "https://www.1-chome.com/productDetail/1235/1504"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/303927"
         },
         "keitaigod": {
@@ -47276,7 +47277,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/SAMSUNG---Galaxy-A25-5G-SM-A253Z-Y!mobile--4549046149640"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/344231"
         },
         "keitaigod": {
@@ -47356,7 +47357,7 @@
           "url": "https://iphonekaitori.tokyo/purchase/SAMSUNG---Galaxy-A25-5G-SM-A253Z-Y!mobile--4549046149664"
         },
         "morimori": {
-          "price": 16000,
+          "price": 16500,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/307334"
         },
         "keitaigod": {
@@ -57620,7 +57621,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5417"
         },
         "shinsoku": {
-          "price": 10500,
+          "price": 10000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -64623,10 +64624,6 @@
           "price": 138000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 152000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 126000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -68703,10 +68700,6 @@
           "price": 65500,
           "url": "https://kaitori.toreca-lounge.com/product/6QxEsqWYzJ3r71FPXfFtU3"
         },
-        "torecabank_store": {
-          "price": 68500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 60000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/219-150-SM8B-B/"
@@ -69085,10 +69078,6 @@
         "shinsoku": {
           "price": 42800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 46500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 44000,
@@ -71815,10 +71804,6 @@
           "price": 23300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 29000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 24200,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -72876,10 +72861,6 @@
         "shinsoku": {
           "price": 22700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 25000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 23500,
@@ -74060,10 +74041,6 @@
         "shinsoku": {
           "price": 16200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 19000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -75073,6 +75050,10 @@
         "shinsoku": {
           "price": 15200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 17000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 17000,
@@ -76484,10 +76465,6 @@
         "shinsoku": {
           "price": 15500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 21000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 16000,
