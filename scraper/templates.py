@@ -151,7 +151,8 @@ def _chips(items, active, path):
 def _alerts(site):
     return "".join(
         f'    <div class="alert" role="status">⚠ {esc(s["name"])}の価格を取得できていません'
-        f'（{esc(s["failing_label"])}から）。前回取得した価格を表示しています。</div>\n'
+        f'（{esc(s["failing_label"])}から）。'
+        f'{"取得できない期間が長いため、価格は表示していません" if s.get("hidden") else "前回取得した価格を表示しています"}。</div>\n'
         for s in site["shops"] if not s["ok"]
     )
 

@@ -31,6 +31,8 @@ UNMATCHED = ROOT / "reports" / "unmatched.json"
 # 取得に失敗した記録（いつ・どの店舗で・どんなエラーか）。原因を調べるために、最近 ERROR_DAYS 日分を残す
 FETCH_ERRORS = ROOT / "reports" / "fetch_errors.json"
 ERROR_DAYS = 30
+# 取得に失敗している店舗は前回の価格を出し続けるが、これだけ続いたら古すぎるので出さない（取れるようになれば戻る）
+STALE_DAYS = 3
 
 JST = timezone(timedelta(hours=9))
 # カタログにない商品のうち、この金額以上のものは本体の可能性があるので報告する
@@ -111,7 +113,10 @@ def main():
             warn(f"{shop.NAME}: {error}")
             errors.append({"time": now, "shop": shop.NAME, "error": error})
             entry["failing_since"] = prev_shops.get(shop.ID, {}).get("failing_since") or now
-            found = {jan: p[shop.ID] for jan, p in prev_prices.items() if jan in prices and shop.ID in p}
+            stale = datetime.fromisoformat(now) - datetime.fromisoformat(entry["failing_since"]) >= timedelta(days=STALE_DAYS)
+            if stale:
+                entry["hidden"] = True
+            found = {} if stale else {jan: p[shop.ID] for jan, p in prev_prices.items() if jan in prices and shop.ID in p}
         else:
             print(f"[OK] {shop.NAME}: {len(offers)}件を取得、うち対象商品 {len(found)}件")
         for jan, offer in found.items():
