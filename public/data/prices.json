@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T15:28:20+09:00",
+  "updated_at": "2026-10-16T15:43:25+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,8 +21,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-16T15:28:20+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -318,6 +317,10 @@
         "origin": "https://www.nintendo.com/jp/hardware/switch2/lineup/zelda40th/assets/img/modal_img_products_switch2_zelda.png"
       },
       "prices": {
+        "shouten": {
+          "price": 60000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27041"
+        },
         "wiki": {
           "price": 49000,
           "url": "https://gamekaitori.jp/purchase/Nintendo-Switch-2--40---BEE-S-KL6CC-4902370554595"
@@ -1737,11 +1740,11 @@
           "url": "https://kaitori-homura.com/products/5102"
         },
         "shouten": {
-          "price": 104600,
+          "price": 104800,
           "url": "https://www.kaitorishouten-co.jp/products/detail/18613"
         },
         "kaikyo": {
-          "price": 104000,
+          "price": 104800,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -1795,7 +1798,7 @@
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
-          "price": 50500,
+          "price": 51000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25239"
         },
         "kaikyo": {
@@ -1849,11 +1852,11 @@
       },
       "prices": {
         "shouten": {
-          "price": 197700,
+          "price": 197900,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25543"
         },
         "kaikyo": {
-          "price": 197700,
+          "price": 198000,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "toban": {
@@ -1900,11 +1903,11 @@
           "url": "https://kaitori-homura.com/products/5104"
         },
         "shouten": {
-          "price": 197700,
+          "price": 197900,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21060"
         },
         "kaikyo": {
-          "price": 197700,
+          "price": 198000,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -2012,7 +2015,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/18664"
         },
         "kaikyo": {
-          "price": 105500,
+          "price": 106000,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -2058,7 +2061,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 57000,
+          "price": 57200,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26297"
         },
         "kaikyo": {
@@ -2328,7 +2331,7 @@
           "url": "https://kaitori-homura.com/products/7338"
         },
         "shouten": {
-          "price": 105500,
+          "price": 107500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26986"
         },
         "kaikyo": {
@@ -2903,7 +2906,7 @@
           "url": "https://kaitori-homura.com/products/5056"
         },
         "shouten": {
-          "price": 119600,
+          "price": 119800,
           "url": "https://www.kaitorishouten-co.jp/products/detail/4728"
         },
         "kaikyo": {
@@ -2949,7 +2952,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 119600,
+          "price": 119800,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25777"
         },
         "kaikyo": {
@@ -2991,7 +2994,7 @@
           "url": "https://kaitori-homura.com/products/5055"
         },
         "shouten": {
-          "price": 109300,
+          "price": 109500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20715"
         },
         "kaikyo": {
@@ -3041,7 +3044,7 @@
           "url": "https://kaitori-homura.com/products/5053"
         },
         "shouten": {
-          "price": 88300,
+          "price": 88500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/17766"
         },
         "kaikyo": {
@@ -3091,7 +3094,7 @@
           "url": "https://kaitori-homura.com/products/5052"
         },
         "shouten": {
-          "price": 88300,
+          "price": 88500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/20716"
         },
         "kaikyo": {
@@ -3141,7 +3144,7 @@
           "url": "https://kaitori-homura.com/products/5054"
         },
         "shouten": {
-          "price": 80300,
+          "price": 80500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/4729"
         },
         "kaikyo": {
@@ -3187,7 +3190,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 80300,
+          "price": 80500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21394"
         },
         "kaikyo": {
@@ -3286,7 +3289,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 2530,
+          "price": 2540,
           "url": "https://www.kaitorishouten-co.jp/products/detail/23167"
         },
         "kaikyo": {
@@ -6850,7 +6853,7 @@
           "url": "https://kaitori-homura.com/products/5028"
         },
         "shouten": {
-          "price": 49500,
+          "price": 49600,
           "url": "https://www.kaitorishouten-co.jp/products/detail/21038"
         },
         "toban": {
@@ -8866,6 +8869,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 395000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27090"
+        },
         "guest": {
           "price": 435000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8888,6 +8895,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-night-sky-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 395000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27089"
+        },
         "guest": {
           "price": 435000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8910,6 +8921,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 430000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27092"
+        },
         "guest": {
           "price": 222000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8932,6 +8947,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-night-sky-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 430000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27091"
+        },
         "guest": {
           "price": 222000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8954,6 +8973,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 485000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27094"
+        },
         "guest": {
           "price": 246000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8976,6 +8999,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-night-sky-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 485000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27093"
+        },
         "guest": {
           "price": 246000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -8998,6 +9025,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 580000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27096"
+        },
         "guest": {
           "price": 283500,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -9020,6 +9051,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-night-sky-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "shouten": {
+          "price": 580000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/27095"
+        },
         "guest": {
           "price": 283500,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
@@ -9684,7 +9719,7 @@
           "url": "https://kaitori-homura.com/products/3225"
         },
         "shouten": {
-          "price": 189000,
+          "price": 190000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/24662"
         },
         "kaikyo": {
@@ -36660,7 +36695,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 105000,
+          "price": 106000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26833"
         },
         "kaikyo": {
@@ -36705,7 +36740,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 105000,
+          "price": 106000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26830"
         },
         "kaikyo": {
@@ -36750,7 +36785,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 105000,
+          "price": 106000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26831"
         },
         "kaikyo": {
@@ -36795,7 +36830,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 105000,
+          "price": 106000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26832"
         },
         "kaikyo": {
@@ -36840,7 +36875,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 119000,
+          "price": 122000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26837"
         },
         "kaikyo": {
@@ -36885,7 +36920,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 119000,
+          "price": 122000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26834"
         },
         "kaikyo": {
@@ -36930,7 +36965,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 119000,
+          "price": 122000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26835"
         },
         "kaikyo": {
@@ -36975,7 +37010,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 119000,
+          "price": 122000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26836"
         },
         "kaikyo": {
@@ -37200,7 +37235,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 157000,
+          "price": 159000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26845"
         },
         "kaikyo": {
@@ -37245,7 +37280,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 157000,
+          "price": 159000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26842"
         },
         "kaikyo": {
@@ -37290,7 +37325,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 157000,
+          "price": 159000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26844"
         },
         "kaikyo": {
@@ -37335,7 +37370,7 @@
       },
       "prices": {
         "shouten": {
-          "price": 157000,
+          "price": 159000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26843"
         },
         "ichome": {
@@ -52562,7 +52597,7 @@
           "url": "https://kaitori-homura.com/products/3465"
         },
         "shouten": {
-          "price": 12000,
+          "price": 12500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/25365"
         },
         "kaikyo": {
@@ -52656,7 +52691,7 @@
           "url": "https://kaitori-homura.com/products/3463"
         },
         "shouten": {
-          "price": 7500,
+          "price": 8000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/24299"
         },
         "kaikyo": {
@@ -63834,10 +63869,6 @@
           "price": 200000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 200000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 166000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -68889,10 +68920,6 @@
           "price": 56000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 63000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 60000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/054-049-SM11B-B/"
@@ -70385,10 +70412,6 @@
         "shinsoku": {
           "price": 29000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 29100,
@@ -72856,10 +72879,6 @@
           "price": 20700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 24000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 24000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/350-190-SV4A-B/"
@@ -74386,10 +74405,6 @@
           "price": 16700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 20000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 14900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -75524,10 +75539,6 @@
         "shinsoku": {
           "price": 19900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 22000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 20000,
@@ -77116,10 +77127,6 @@
         "shinsoku": {
           "price": 12000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 12500,
@@ -81654,10 +81661,6 @@
           "price": 5900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 6500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 5700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -82744,10 +82747,6 @@
           "price": 174000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 194000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 169000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -83619,6 +83618,10 @@
         "source": "トレカクラブ"
       },
       "prices": {
+        "torecabank_store": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 9000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/086-069-S6A-B/"
@@ -88899,12 +88902,7 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1771203892_66ce9335b9387b602f3c.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 7000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-fa60239c1d",
