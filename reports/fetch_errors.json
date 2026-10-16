@@ -3133,5 +3133,15 @@
     "time": "2026-10-16T17:13:24+09:00",
     "shop": "ケータイゴッド",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x7fa0273eb750>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-16T17:28:35+09:00",
+    "shop": "買取ホムラ",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-10-16T17:28:35+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
   }
 ]
