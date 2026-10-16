@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T10:28:28+09:00",
+  "updated_at": "2026-10-16T10:43:23+09:00",
   "shops": [
     {
       "id": "homura",
@@ -21,7 +21,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-16T10:43:23+09:00"
     },
     {
       "id": "ichome",
@@ -64,7 +65,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-16T10:43:23+09:00"
     },
     {
       "id": "guest",
@@ -2031,7 +2033,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5---CFIJ-10019-4948872016957-"
         },
         "morimori": {
-          "price": 105000,
+          "price": 105600,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/189443"
         },
         "guest": {
@@ -2351,7 +2353,7 @@
           "url": "https://gamekaitori.jp/purchase/PS5-Slim-5--Marvels-Wolverine---CFIJ-10033-4948872850995"
         },
         "morimori": {
-          "price": 105500,
+          "price": 107500,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/344340"
         },
         "panda": {
@@ -8027,7 +8029,7 @@
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
-          "price": 232000,
+          "price": 231000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
@@ -8143,7 +8145,7 @@
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
-          "price": 226000,
+          "price": 225000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
@@ -8201,7 +8203,7 @@
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
-          "price": 283000,
+          "price": 286000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-512gb/"
         },
         "rudeya": {
@@ -8433,7 +8435,7 @@
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
-          "price": 346000,
+          "price": 350000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
@@ -8516,7 +8518,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 336000,
+          "price": 335000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8607,7 +8609,7 @@
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
-          "price": 328000,
+          "price": 327000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
