@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T18:12:52+09:00",
+  "updated_at": "2026-10-17T18:27:43+09:00",
   "shops": [
     {
       "id": "homura",
@@ -64,8 +64,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-17T18:12:52+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -5996,6 +5995,10 @@
         "origin": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1629458/3ed90746c3491034cdf72cbcce93ac0b989d0f4d/header.jpg?t=1789591982"
       },
       "prices": {
+        "homura": {
+          "price": 175000,
+          "url": "https://kaitori-homura.com/products/6980"
+        },
         "shouten": {
           "price": 170000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26681"
@@ -26485,7 +26488,7 @@
       },
       "prices": {
         "homura": {
-          "price": 97800,
+          "price": 98000,
           "url": "https://kaitori-homura.com/products/7114"
         },
         "shouten": {
@@ -26531,7 +26534,7 @@
       },
       "prices": {
         "homura": {
-          "price": 97600,
+          "price": 97800,
           "url": "https://kaitori-homura.com/products/7117"
         },
         "shouten": {
@@ -26543,7 +26546,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/08/01"
         },
         "ichome": {
-          "price": 97600,
+          "price": 97800,
           "url": "https://www.1-chome.com/wineDetail/8522/8554"
         },
         "toban": {
@@ -26577,7 +26580,7 @@
       },
       "prices": {
         "homura": {
-          "price": 97600,
+          "price": 97800,
           "url": "https://kaitori-homura.com/products/7115"
         },
         "shouten": {
@@ -26623,7 +26626,7 @@
       },
       "prices": {
         "homura": {
-          "price": 97600,
+          "price": 98200,
           "url": "https://kaitori-homura.com/products/7116"
         },
         "shouten": {
@@ -26635,7 +26638,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/08/01"
         },
         "ichome": {
-          "price": 97600,
+          "price": 98200,
           "url": "https://www.1-chome.com/wineDetail/8521/8553"
         },
         "toban": {
@@ -26819,7 +26822,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/08/01"
         },
         "ichome": {
-          "price": 112200,
+          "price": 112300,
           "url": "https://www.1-chome.com/wineDetail/8525/8557"
         },
         "toban": {
@@ -69770,6 +69773,10 @@
           "price": 26400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 28000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "birth": {
           "price": 25200,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -71403,6 +71410,10 @@
         "shinsoku": {
           "price": 18900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 20000,
@@ -73441,10 +73452,6 @@
         "shinsoku": {
           "price": 17700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 20000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 17700,
@@ -84286,6 +84293,10 @@
         "shinsoku": {
           "price": 17600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 20000,
