@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:13:15+09:00",
+  "updated_at": "2026-10-17T13:28:14+09:00",
   "shops": [
     {
       "id": "homura",
@@ -4987,7 +4987,7 @@
           "url": "https://www.1-chome.com/wineDetail/9672/9705"
         },
         "rudeya": {
-          "price": 77900,
+          "price": 78000,
           "url": "https://kaitori-rudeya.com/product/item/7090"
         },
         "morimori": {
@@ -5971,7 +5971,7 @@
           "url": "https://tobansyoji.co.jp/product/steam-machine-512gb/"
         },
         "rudeya": {
-          "price": 165000,
+          "price": 160000,
           "url": "https://kaitori-rudeya.com/product/item/7062"
         },
         "morimori": {
@@ -6016,7 +6016,7 @@
           "url": "https://tobansyoji.co.jp/product/steam-machine-512gb-steam-controller/"
         },
         "rudeya": {
-          "price": 175000,
+          "price": 170000,
           "url": "https://kaitori-rudeya.com/product/item/7063"
         },
         "morimori": {
@@ -57482,8 +57482,12 @@
           "price": 4700000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 5100000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
-          "price": 5000000,
+          "price": 5100000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
@@ -58463,10 +58467,6 @@
         "torecabank": {
           "price": 1290000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 1350000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 1320000,
@@ -67777,10 +67777,6 @@
           "price": 43400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 48000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 48000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -69749,6 +69745,10 @@
           "price": 31000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 32500,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 28000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/198-190-S4A-B/"
@@ -71589,10 +71589,6 @@
         "shinsoku": {
           "price": 18900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 20000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 20000,
@@ -76964,6 +76960,10 @@
           "price": 11200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 13000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "birth": {
           "price": 11100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -79414,10 +79414,6 @@
           "price": 7400,
           "url": "https://kaitori.toreca-lounge.com/product/27BKGaNA81TrSBz66EUUwV"
         },
-        "torecabank": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 8500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -79689,6 +79685,10 @@
         "shinsoku": {
           "price": 5200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 6500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 6500,
@@ -80026,6 +80026,10 @@
         "shinsoku": {
           "price": 5800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 7500,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 5600,
@@ -82944,6 +82948,14 @@
         "shinsoku": {
           "price": 139000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 152000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 152000,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -90973,7 +90985,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/17b0eb6c-faa1-4bb5-90c0-2421fe943061.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 132000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 140000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-c21f2fc46b",
@@ -91130,14 +91151,6 @@
         "shinsoku": {
           "price": 38000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 48000,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 51200,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -91333,14 +91346,6 @@
         "shinsoku": {
           "price": 10600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "birth": {
-          "price": 10900,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
-        },
-        "birth_store": {
-          "price": 11600,
-          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -91694,12 +91699,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600017202/20261008/1791400455263-0640de0e9130ef4f.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 8500,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-94f905022a",
