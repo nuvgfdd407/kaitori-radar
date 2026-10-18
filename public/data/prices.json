@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T17:12:37+09:00",
+  "updated_at": "2026-10-18T17:27:42+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-18T16:57:38+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -72091,10 +72090,6 @@
           "price": 20400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 23000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 23000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76443,10 +76438,6 @@
           "price": 9500,
           "url": "https://kaitori.toreca-lounge.com/product/7NwtnLYeNPdfPEtNH5LgsU"
         },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 12000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80574,6 +80565,10 @@
           "price": 1200000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 1300000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 1150000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/094-087-CP6-W-1ED/"
@@ -83580,6 +83575,10 @@
           "price": 10000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 12000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -85269,7 +85268,12 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1790508024_a6e59e68e61d5e9c3eed.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        }
+      }
     },
     {
       "jan": "psa-ca6a6363ac",
@@ -86062,10 +86066,6 @@
         "torecabank": {
           "price": 1650000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 1700000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
