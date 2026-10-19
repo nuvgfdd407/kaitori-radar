@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T19:42:44+09:00",
+  "updated_at": "2026-10-19T19:57:42+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-19T19:42:44+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -66471,10 +66470,6 @@
           "price": 68000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 75000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 70000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/205-172-S12A-B/"
@@ -76625,6 +76620,10 @@
           "price": 9800,
           "url": "https://kaitori.toreca-lounge.com/product/1ZouBb0tlWkdFO7IMzBtsK"
         },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 10000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80925,10 +80924,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "torecabank": {
-          "price": 650000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "birth": {
           "price": 408000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
