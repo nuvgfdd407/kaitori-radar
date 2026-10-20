@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T19:42:38+09:00",
+  "updated_at": "2026-10-20T19:57:36+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-20T19:57:36+09:00"
     },
     {
       "id": "ichome",
@@ -6433,7 +6434,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0114/product/278526"
         },
         "keitaigod": {
-          "price": 49000,
+          "price": 49500,
           "url": "https://keitai-god.com/price/model.php?moid=4518"
         },
         "panda": {
@@ -34658,7 +34659,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7473"
         },
         "morimori": {
-          "price": 19900,
+          "price": 19800,
           "url": "https://www.morimori-kaitori.jp/category/0602001/product/344344"
         },
         "keitaigod": {
@@ -63648,7 +63649,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/3QRiZdC8lM5dJg0uYs30KR"
         },
         "shinsoku": {
-          "price": 109000,
+          "price": 101000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -67477,7 +67478,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/33bCHSTLm0z8b970IQhuPT"
         },
         "shinsoku": {
-          "price": 40100,
+          "price": 36200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -83924,7 +83925,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 17100,
+          "price": 15300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -84452,6 +84453,10 @@
         "source": "トレカクラブ"
       },
       "prices": {
+        "torecabank": {
+          "price": 64500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 55000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/027-036-CP5-B/"
@@ -87240,6 +87245,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 12500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 12500,
           "url": "https://store.torecabank.com/kaitori_list"
