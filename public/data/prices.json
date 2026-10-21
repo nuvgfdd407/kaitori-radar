@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:27:30+09:00",
+  "updated_at": "2026-10-21T20:42:43+09:00",
   "shops": [
     {
       "id": "homura",
@@ -57,8 +57,7 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": false,
-      "failing_since": "2026-10-21T20:27:30+09:00"
+      "ok": true
     },
     {
       "id": "keitaigod",
@@ -61893,14 +61892,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "torecabank": {
-          "price": 210000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 210000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 180000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -70516,6 +70507,10 @@
           "price": 25200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 27000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "birth": {
           "price": 24800,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -72072,10 +72067,6 @@
         "shinsoku": {
           "price": 25600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 27000,
