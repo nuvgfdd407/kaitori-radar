@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T18:12:52+09:00",
+  "updated_at": "2026-10-21T18:27:43+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-21T18:27:43+09:00"
     },
     {
       "id": "ichome",
@@ -64,8 +65,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-21T18:12:52+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -6630,7 +6630,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7411"
         },
         "morimori": {
-          "price": 211000,
+          "price": 210000,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344294"
         },
         "keitaigod": {
@@ -6639,7 +6639,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 211000,
+          "price": 210000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -6684,7 +6684,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7409"
         },
         "morimori": {
-          "price": 198000,
+          "price": 195000,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344302"
         },
         "keitaigod": {
@@ -6693,7 +6693,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 197000,
+          "price": 196000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -6738,7 +6738,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7410"
         },
         "morimori": {
-          "price": 198000,
+          "price": 197000,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344298"
         },
         "keitaigod": {
@@ -6747,7 +6747,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 197000,
+          "price": 196000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -6792,7 +6792,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7408"
         },
         "morimori": {
-          "price": 196000,
+          "price": 193000,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344306"
         },
         "keitaigod": {
@@ -6801,7 +6801,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 195000,
+          "price": 194000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7450,7 +7450,7 @@
       },
       "prices": {
         "homura": {
-          "price": 238000,
+          "price": 237000,
           "url": "https://kaitori-homura.com/products/7289"
         },
         "shouten": {
@@ -7462,11 +7462,11 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 238000,
+          "price": 237000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
-          "price": 241000,
+          "price": 235000,
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
@@ -7483,7 +7483,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 243000,
+          "price": 238000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7516,7 +7516,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 225000,
+          "price": 224000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7537,7 +7537,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 230000,
+          "price": 225000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7570,7 +7570,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 227000,
+          "price": 226000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7591,7 +7591,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 232000,
+          "price": 225000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7624,7 +7624,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 222000,
+          "price": 221000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7645,7 +7645,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 227000,
+          "price": 222000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7678,7 +7678,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 285000,
+          "price": 282000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7699,7 +7699,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 287000,
+          "price": 285000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7732,7 +7732,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 268000,
+          "price": 265000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7744,7 +7744,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7396"
         },
         "morimori": {
-          "price": 265000,
+          "price": 262000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344319"
         },
         "keitaigod": {
@@ -7753,7 +7753,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 268000,
+          "price": 266000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7786,7 +7786,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 269000,
+          "price": 266000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7798,7 +7798,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7397"
         },
         "morimori": {
-          "price": 267000,
+          "price": 264000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344315"
         },
         "keitaigod": {
@@ -7807,7 +7807,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 269000,
+          "price": 266000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -7840,7 +7840,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 266000,
+          "price": 263000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7852,7 +7852,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7395"
         },
         "morimori": {
-          "price": 264000,
+          "price": 261000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344323"
         },
         "keitaigod": {
@@ -7894,7 +7894,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 354000,
+          "price": 351000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -7948,7 +7948,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 336000,
+          "price": 333000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -8002,7 +8002,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 336000,
+          "price": 333000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -8056,7 +8056,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 332000,
+          "price": 329000,
           "url": "https://www.1-chome.com/productDetail/1650/2306"
         },
         "toban": {
@@ -8131,7 +8131,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 399000,
+          "price": 400000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -8181,7 +8181,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 385000,
+          "price": 386000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -8231,7 +8231,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 385000,
+          "price": 386000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -8281,7 +8281,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "guest": {
-          "price": 385000,
+          "price": 386000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34571,7 +34571,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4717"
         },
         "guest": {
-          "price": 31100,
+          "price": 32700,
           "url": "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34665,6 +34665,10 @@
         "keitaigod": {
           "price": 17000,
           "url": "https://keitai-god.com/price/model.php?moid=5396"
+        },
+        "guest": {
+          "price": 19700,
+          "url": "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
     },
@@ -34711,6 +34715,10 @@
         "keitaigod": {
           "price": 20500,
           "url": "https://keitai-god.com/price/model.php?moid=5395"
+        },
+        "guest": {
+          "price": 22700,
+          "url": "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
     },
@@ -34755,7 +34763,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4465"
         },
         "guest": {
-          "price": 15000,
+          "price": 16700,
           "url": "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -34805,7 +34813,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4464"
         },
         "guest": {
-          "price": 18000,
+          "price": 19700,
           "url": "https://www.guestmobile.jp/%e3%82%a4%e3%83%a4%e3%83%9b%e3%83%b3-%e3%83%98%e3%83%83%e3%83%89%e3%83%9b%e3%83%b3-%e3%82%aa%e3%83%bc%e3%83%87%e3%82%a3%e3%82%aa%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -37742,7 +37750,7 @@
       },
       "prices": {
         "homura": {
-          "price": 80000,
+          "price": 82000,
           "url": "https://kaitori-homura.com/products/6635"
         },
         "shouten": {
@@ -37791,7 +37799,7 @@
       },
       "prices": {
         "homura": {
-          "price": 80000,
+          "price": 82000,
           "url": "https://kaitori-homura.com/products/6634"
         },
         "shouten": {
@@ -37840,7 +37848,7 @@
       },
       "prices": {
         "homura": {
-          "price": 80000,
+          "price": 82000,
           "url": "https://kaitori-homura.com/products/6633"
         },
         "shouten": {
@@ -37889,7 +37897,7 @@
       },
       "prices": {
         "homura": {
-          "price": 76000,
+          "price": 78000,
           "url": "https://kaitori-homura.com/products/6636"
         },
         "shouten": {
@@ -38638,7 +38646,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61500,
+          "price": 63000,
           "url": "https://kaitori-homura.com/products/2721"
         },
         "kaikyo": {
@@ -38683,7 +38691,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61500,
+          "price": 63000,
           "url": "https://kaitori-homura.com/products/2720"
         },
         "kaikyo": {
@@ -38728,7 +38736,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61500,
+          "price": 63000,
           "url": "https://kaitori-homura.com/products/2718"
         },
         "kaikyo": {
@@ -38773,7 +38781,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61500,
+          "price": 63000,
           "url": "https://kaitori-homura.com/products/2719"
         },
         "kaikyo": {
@@ -64335,6 +64343,10 @@
           "price": 80000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 90000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "birth": {
           "price": 79700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -69922,6 +69934,10 @@
         "shinsoku": {
           "price": 24300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 27000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 25000,
