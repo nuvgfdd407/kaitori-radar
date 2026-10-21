@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T19:12:37+09:00",
+  "updated_at": "2026-10-21T19:27:42+09:00",
   "shops": [
     {
       "id": "homura",
@@ -64,7 +64,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-21T19:27:42+09:00"
     },
     {
       "id": "guest",
@@ -7689,7 +7690,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7398"
         },
         "morimori": {
-          "price": 282000,
+          "price": 275000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344311"
         },
         "keitaigod": {
@@ -69926,10 +69927,6 @@
           "price": 24300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 25000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/064-SV-P/"
@@ -71725,10 +71722,6 @@
         "torecabank": {
           "price": 30000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 31000,
@@ -75433,7 +75426,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/0v4iIBDgGfhGJvKaQnXeKW"
         },
         "shinsoku": {
-          "price": 10600,
+          "price": 9800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
