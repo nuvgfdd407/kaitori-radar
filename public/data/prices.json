@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T16:12:40+09:00",
+  "updated_at": "2026-10-21T16:27:43+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-21T16:12:40+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -65,7 +64,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-21T16:27:43+09:00"
     },
     {
       "id": "guest",
@@ -1711,7 +1711,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/25239"
         },
         "kaikyo": {
-          "price": 51400,
+          "price": 51600,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -1954,7 +1954,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26297"
         },
         "kaikyo": {
-          "price": 57400,
+          "price": 57500,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -7458,11 +7458,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27097"
         },
         "kaikyo": {
-          "price": 244000,
+          "price": 243000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 243000,
+          "price": 241000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7470,7 +7470,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 243000,
+          "price": 241000,
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "morimori": {
@@ -7512,11 +7512,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27100"
         },
         "kaikyo": {
-          "price": 231000,
+          "price": 230000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 230000,
+          "price": 228000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7524,7 +7524,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 231000,
+          "price": 229000,
           "url": "https://kaitori-rudeya.com/product/item/7392"
         },
         "morimori": {
@@ -7566,11 +7566,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27098"
         },
         "kaikyo": {
-          "price": 233000,
+          "price": 232000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 232000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7578,7 +7578,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 233000,
+          "price": 232000,
           "url": "https://kaitori-rudeya.com/product/item/7393"
         },
         "morimori": {
@@ -7620,11 +7620,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27099"
         },
         "kaikyo": {
-          "price": 228000,
+          "price": 227000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 227000,
+          "price": 225000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -61986,10 +61986,6 @@
           "price": 280000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 280000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 250000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/055-050-SM4A-B/"
@@ -65628,6 +65624,10 @@
         "lounge": {
           "price": 72000,
           "url": "https://kaitori.toreca-lounge.com/product/4pvt6CZixCiwQQsWFbfLiZ"
+        },
+        "shinsoku": {
+          "price": 67000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
           "price": 72000,
@@ -72033,10 +72033,6 @@
           "price": 25600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 27000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -72114,10 +72110,6 @@
         "shinsoku": {
           "price": 23200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 28000,
@@ -74838,7 +74830,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7XQA6g4QzeKVpALdqqdhki"
         },
         "shinsoku": {
-          "price": 10900,
+          "price": 10000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
@@ -76414,10 +76406,6 @@
         "shinsoku": {
           "price": 11400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 13000,
