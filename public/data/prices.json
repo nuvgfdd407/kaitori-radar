@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T19:57:41+09:00",
+  "updated_at": "2026-10-22T20:12:48+09:00",
   "shops": [
     {
       "id": "homura",
@@ -72,8 +72,7 @@
       "name": "ゲストモバイル",
       "short": "ゲスト",
       "url": "https://www.guestmobile.jp/",
-      "ok": false,
-      "failing_since": "2026-10-22T15:42:53+09:00"
+      "ok": true
     },
     {
       "id": "panda",
@@ -60678,6 +60677,10 @@
           "price": 365000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "club": {
+          "price": 340000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/203-XY-P/"
+        },
         "birth": {
           "price": 345000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -61918,6 +61921,10 @@
         "shinsoku": {
           "price": 182000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "club": {
+          "price": 175000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/764-742-MC-B/"
         },
         "birth": {
           "price": 185000,
@@ -63818,6 +63825,10 @@
         "shinsoku": {
           "price": 84000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "club": {
+          "price": 82000,
+          "url": "https://torecaclub.com/pokemon/cards/psa10/059-055-SM9A-B/"
         },
         "birth": {
           "price": 81100,
@@ -82729,10 +82740,6 @@
         "shinsoku": {
           "price": 91000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 91000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 92000,
