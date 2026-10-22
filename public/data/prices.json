@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T19:12:42+09:00",
+  "updated_at": "2026-10-22T19:27:41+09:00",
   "shops": [
     {
       "id": "homura",
@@ -136,8 +136,7 @@
       "name": "ゴールデンホビー(郵送)",
       "short": "ゴールデン(郵送)",
       "url": "https://buy-gh.tokyo/",
-      "ok": false,
-      "failing_since": "2026-10-22T10:12:44+09:00"
+      "ok": true
     }
   ],
   "products": [
@@ -50984,7 +50983,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 12800,
           "url": "https://kaitori-homura.com/products/3465"
         },
         "shouten": {
@@ -70351,10 +70350,6 @@
           "price": 23400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 26500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 27000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -82746,10 +82741,6 @@
         "shinsoku": {
           "price": 91000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 91000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 92000,
