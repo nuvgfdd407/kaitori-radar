@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T18:12:43+09:00",
+  "updated_at": "2026-10-22T18:27:43+09:00",
   "shops": [
     {
       "id": "homura",
@@ -65,8 +65,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-21T19:27:42+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -58898,6 +58897,10 @@
           "price": 610000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 650000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "birth": {
           "price": 572000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -62712,6 +62715,10 @@
           "price": 148000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 165000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 155000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/001-015-S8A-G-B/"
@@ -65609,11 +65616,6 @@
           "url": "https://kaitori-homura.com/products/6323",
           "mode": "郵送"
         },
-        "toban": {
-          "price": 64000,
-          "url": "https://tobansyoji.co.jp/product/psa10-%e3%82%bc%e3%82%a4%e3%83%a6-130-101/",
-          "mode": "郵送"
-        },
         "morimori": {
           "price": 67000,
           "url": "https://www.morimori-kaitori.jp/category/2401009/product/344469",
@@ -67165,6 +67167,10 @@
         "shinsoku": {
           "price": 55000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 62000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 60000,
@@ -86880,7 +86886,7 @@
       },
       "prices": {
         "toban": {
-          "price": 126000,
+          "price": 130000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9f%e3%83%9f%e3%83%83%e3%82%ad%e3%83%a5-198-sm-p/",
           "mode": "郵送"
         },
