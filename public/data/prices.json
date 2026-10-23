@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T15:43:13+09:00",
+  "updated_at": "2026-10-23T15:58:16+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-10-23T15:43:13+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -1166,7 +1165,7 @@
       },
       "prices": {
         "homura": {
-          "price": 26000,
+          "price": 26200,
           "url": "https://kaitori-homura.com/products/5132"
         },
         "shouten": {
@@ -1313,7 +1312,7 @@
       },
       "prices": {
         "homura": {
-          "price": 26000,
+          "price": 26100,
           "url": "https://kaitori-homura.com/products/5135"
         },
         "shouten": {
@@ -1703,7 +1702,7 @@
       },
       "prices": {
         "homura": {
-          "price": 52500,
+          "price": 52900,
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
@@ -7632,7 +7631,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 221000,
+          "price": 222000,
           "url": "https://kaitori-rudeya.com/product/item/7391"
         },
         "morimori": {
@@ -26713,7 +26712,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/25969"
         },
         "kaikyo": {
-          "price": 97000,
+          "price": 98000,
           "url": "https://www.mobile-ichiban.com/Prod/2/08/01"
         },
         "ichome": {
@@ -71467,10 +71466,6 @@
           "price": 23600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 25000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "birth": {
           "price": 22800,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -79196,6 +79191,11 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "homura": {
+          "price": 6000,
+          "url": "https://kaitori-homura.com/products/6012",
+          "mode": "郵送"
+        },
         "toban": {
           "price": 5400,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9e%e3%83%aa%e3%82%a3%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%ad%e3%83%b3%e3%82%b2ex-243-193/",
