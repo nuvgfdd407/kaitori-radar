@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T13:28:24+09:00",
+  "updated_at": "2026-10-23T13:43:16+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-23T13:43:16+09:00"
     },
     {
       "id": "ichome",
@@ -6522,7 +6523,7 @@
       },
       "prices": {
         "homura": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://kaitori-homura.com/products/5089"
         },
         "shouten": {
@@ -7053,7 +7054,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-1tb/"
         },
         "rudeya": {
-          "price": 310000,
+          "price": 310500,
           "url": "https://kaitori-rudeya.com/product/item/7419"
         },
         "morimori": {
@@ -7631,7 +7632,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max/"
         },
         "rudeya": {
-          "price": 221000,
+          "price": 222000,
           "url": "https://kaitori-rudeya.com/product/item/7391"
         },
         "morimori": {
@@ -8297,24 +8298,28 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 410000,
+          "url": "https://kaitori-homura.com/products/7297"
+        },
         "shouten": {
           "price": 440000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27090"
         },
         "toban": {
-          "price": 400000,
+          "price": 390000,
           "url": "https://tobansyoji.co.jp/product/iphone-duo-256gb/"
         },
         "rudeya": {
-          "price": 410000,
+          "price": 400000,
           "url": "https://kaitori-rudeya.com/product/item/7426"
         },
         "morimori": {
-          "price": 410000,
+          "price": 400000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344326"
         },
         "guest": {
-          "price": 450000,
+          "price": 400000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -8340,19 +8345,19 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27089"
         },
         "toban": {
-          "price": 400000,
+          "price": 390000,
           "url": "https://tobansyoji.co.jp/product/iphone-duo-256gb/"
         },
         "rudeya": {
-          "price": 410000,
+          "price": 400000,
           "url": "https://kaitori-rudeya.com/product/item/7427"
         },
         "morimori": {
-          "price": 410000,
+          "price": 400000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344330"
         },
         "guest": {
-          "price": 450000,
+          "price": 400000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -8373,28 +8378,32 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 445000,
+          "url": "https://kaitori-homura.com/products/7298"
+        },
         "shouten": {
           "price": 475000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27092"
         },
         "toban": {
-          "price": 435000,
+          "price": 420000,
           "url": "https://tobansyoji.co.jp/product/iphone-duo-512gb/"
         },
         "rudeya": {
-          "price": 445000,
+          "price": 430000,
           "url": "https://kaitori-rudeya.com/product/item/7428"
         },
         "morimori": {
-          "price": 445000,
+          "price": 430000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344327"
         },
         "guest": {
-          "price": 490000,
+          "price": 435000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 475000,
+          "price": 445000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8416,23 +8425,23 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27091"
         },
         "toban": {
-          "price": 435000,
+          "price": 420000,
           "url": "https://tobansyoji.co.jp/product/iphone-duo-512gb/"
         },
         "rudeya": {
-          "price": 445000,
+          "price": 430000,
           "url": "https://kaitori-rudeya.com/product/item/7429"
         },
         "morimori": {
-          "price": 445000,
+          "price": 430000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344331"
         },
         "guest": {
-          "price": 490000,
+          "price": 435000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 475000,
+          "price": 445000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8449,6 +8458,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 500000,
+          "url": "https://kaitori-homura.com/products/7299"
+        },
         "shouten": {
           "price": 520000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27094"
@@ -8458,19 +8471,19 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-1tb/"
         },
         "rudeya": {
-          "price": 520000,
+          "price": 500000,
           "url": "https://kaitori-rudeya.com/product/item/7430"
         },
         "morimori": {
-          "price": 518000,
+          "price": 500000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344328"
         },
         "guest": {
-          "price": 525000,
+          "price": 500000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 516000,
+          "price": 500000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8496,19 +8509,19 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-1tb/"
         },
         "rudeya": {
-          "price": 520000,
+          "price": 500000,
           "url": "https://kaitori-rudeya.com/product/item/7431"
         },
         "morimori": {
-          "price": 518000,
+          "price": 500000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344332"
         },
         "guest": {
-          "price": 525000,
+          "price": 500000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 516000,
+          "price": 500000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         }
       }
@@ -8525,6 +8538,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 580000,
+          "url": "https://kaitori-homura.com/products/7300"
+        },
         "shouten": {
           "price": 615000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27096"
@@ -8534,15 +8551,15 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-2tb/"
         },
         "rudeya": {
-          "price": 590000,
+          "price": 580000,
           "url": "https://kaitori-rudeya.com/product/item/7432"
         },
         "morimori": {
-          "price": 590000,
+          "price": 580000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344329"
         },
         "guest": {
-          "price": 615000,
+          "price": 580000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -8572,15 +8589,15 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-2tb/"
         },
         "rudeya": {
-          "price": 590000,
+          "price": 580000,
           "url": "https://kaitori-rudeya.com/product/item/7433"
         },
         "morimori": {
-          "price": 590000,
+          "price": 580000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344333"
         },
         "guest": {
-          "price": 615000,
+          "price": 580000,
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
@@ -10947,7 +10964,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6696"
         },
         "morimori": {
-          "price": 110500,
+          "price": 109000,
           "url": "https://www.morimori-kaitori.jp/category/0301067/product/318764"
         },
         "keitaigod": {
@@ -66176,10 +66193,6 @@
           "price": 80000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 89500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 78000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/063-049-SM11B-B/"
@@ -67186,10 +67199,6 @@
         "shinsoku": {
           "price": 57000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 59500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 54900,
@@ -73200,10 +73209,6 @@
           "price": 21000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 22000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 24000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -73627,10 +73632,6 @@
         "shinsoku": {
           "price": 17400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 21500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 19800,
@@ -74217,10 +74218,6 @@
         "shinsoku": {
           "price": 13200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 13300,
@@ -75296,10 +75293,6 @@
           "price": 17000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 19000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 16000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -75728,10 +75721,6 @@
         "shinsoku": {
           "price": 10100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 12500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 11000,
@@ -76238,10 +76227,6 @@
         "shinsoku": {
           "price": 10200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 10000,
@@ -82409,10 +82394,6 @@
           "url": "https://kaitori-homura.com/products/5961",
           "mode": "郵送"
         },
-        "torecabank": {
-          "price": 4000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 4200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -84463,6 +84444,10 @@
         "lounge": {
           "price": 8500,
           "url": "https://kaitori.toreca-lounge.com/product/5DN8LsRvzuzcl6UTFQmTA2"
+        },
+        "torecabank": {
+          "price": 10500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10500,
