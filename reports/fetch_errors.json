@@ -5703,5 +5703,20 @@
     "time": "2026-10-23T10:57:55+09:00",
     "shop": "森森買取",
     "error": "ReadTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "time": "2026-10-23T11:12:59+09:00",
+    "shop": "買取ルデヤ",
+    "error": "HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://kaitori-rudeya.com/category/detail/214"
+  },
+  {
+    "time": "2026-10-23T11:12:59+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-23T11:12:59+09:00",
+    "shop": "森森買取",
+    "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://www.morimori-kaitori.jp/category/price-list/0104001"
   }
 ]
