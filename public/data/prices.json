@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T19:28:28+09:00",
+  "updated_at": "2026-10-24T19:43:30+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-24T19:43:30+09:00"
     },
     {
       "id": "rudeya",
@@ -50890,7 +50891,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5398"
         },
         "shinsoku": {
-          "price": 25500,
+          "price": 25000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -72623,6 +72624,10 @@
           "price": 21500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 23000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 22000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/234-184-S8B-B/"
@@ -74525,7 +74530,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7Wk6hyPYbbVt1Ynqph6xdg"
         },
         "shinsoku": {
-          "price": 13400,
+          "price": 12200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
