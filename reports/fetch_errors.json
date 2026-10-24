@@ -6073,5 +6073,15 @@
     "time": "2026-10-24T15:58:27+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-24T16:13:20+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-24T16:13:20+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "ConnectionError: HTTPSConnectionPool(host='buy-gh.tokyo', port=443): Max retries exceeded with url: /%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html (Caused by NameResolutionError(\"HTTPSConnection(host='buy-gh.tokyo', port=443): Failed to resolve 'buy-gh.tokyo' ([Errno -3] Temporary failure in name resolution)\"))"
   }
 ]
