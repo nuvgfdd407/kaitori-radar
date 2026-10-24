@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T19:43:30+09:00",
+  "updated_at": "2026-10-24T19:58:20+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-10-24T19:43:30+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -1703,7 +1702,7 @@
       },
       "prices": {
         "homura": {
-          "price": 53200,
+          "price": 53000,
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
@@ -60675,6 +60674,10 @@
         "lounge": {
           "price": 324000,
           "url": "https://kaitori.toreca-lounge.com/product/3N0BRjbFz7v0VWQXwfKzqo"
+        },
+        "shinsoku": {
+          "price": 305000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
           "price": 360000,
