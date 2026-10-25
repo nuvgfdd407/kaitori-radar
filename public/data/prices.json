@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T11:43:37+09:00",
+  "updated_at": "2026-10-25T11:58:15+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-25T11:58:15+09:00"
     },
     {
       "id": "ichome",
@@ -6604,6 +6605,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 206000,
+          "url": "https://kaitori-homura.com/products/7285"
+        },
         "shouten": {
           "price": 206000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27113"
@@ -6654,6 +6659,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 196000,
+          "url": "https://kaitori-homura.com/products/7262"
+        },
         "shouten": {
           "price": 196000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27116"
@@ -6704,6 +6713,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 196000,
+          "url": "https://kaitori-homura.com/products/7277"
+        },
         "shouten": {
           "price": 196000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27114"
@@ -6754,6 +6767,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 194000,
+          "url": "https://kaitori-homura.com/products/7268"
+        },
         "shouten": {
           "price": 194000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27115"
@@ -6804,6 +6821,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 241000,
+          "url": "https://kaitori-homura.com/products/7286"
+        },
         "shouten": {
           "price": 241000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27117"
@@ -6850,6 +6871,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 233000,
+          "url": "https://kaitori-homura.com/products/7261"
+        },
         "shouten": {
           "price": 233000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27120"
@@ -6900,6 +6925,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 233000,
+          "url": "https://kaitori-homura.com/products/7278"
+        },
         "shouten": {
           "price": 233000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27118"
@@ -6950,6 +6979,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 229000,
+          "url": "https://kaitori-homura.com/products/7269"
+        },
         "shouten": {
           "price": 229000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27119"
@@ -7000,6 +7033,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 310000,
+          "url": "https://kaitori-homura.com/products/7287"
+        },
         "shouten": {
           "price": 310000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27121"
@@ -7050,6 +7087,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 296000,
+          "url": "https://kaitori-homura.com/products/7263"
+        },
         "shouten": {
           "price": 296000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27124"
@@ -7100,6 +7141,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 296000,
+          "url": "https://kaitori-homura.com/products/7279"
+        },
         "shouten": {
           "price": 296000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27122"
@@ -7150,6 +7195,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 296000,
+          "url": "https://kaitori-homura.com/products/7270"
+        },
         "shouten": {
           "price": 296000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27123"
@@ -7200,6 +7249,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 380000,
+          "url": "https://kaitori-homura.com/products/7288"
+        },
         "shouten": {
           "price": 380000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27125"
@@ -7246,6 +7299,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 370000,
+          "url": "https://kaitori-homura.com/products/7264"
+        },
         "shouten": {
           "price": 370000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27128"
@@ -7292,6 +7349,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 370000,
+          "url": "https://kaitori-homura.com/products/7280"
+        },
         "shouten": {
           "price": 370000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27126"
@@ -7338,6 +7399,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 370000,
+          "url": "https://kaitori-homura.com/products/7276"
+        },
         "shouten": {
           "price": 370000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27127"
@@ -7384,6 +7449,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 236500,
+          "url": "https://kaitori-homura.com/products/7289"
+        },
         "shouten": {
           "price": 236500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27097"
@@ -7434,6 +7503,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 224500,
+          "url": "https://kaitori-homura.com/products/7265"
+        },
         "shouten": {
           "price": 224500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27100"
@@ -7484,6 +7557,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 226000,
+          "url": "https://kaitori-homura.com/products/7281"
+        },
         "shouten": {
           "price": 226000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27098"
@@ -7534,6 +7611,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 222500,
+          "url": "https://kaitori-homura.com/products/7271"
+        },
         "shouten": {
           "price": 222500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27099"
@@ -7584,6 +7665,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 275500,
+          "url": "https://kaitori-homura.com/products/7290"
+        },
         "shouten": {
           "price": 275500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27101"
@@ -7634,6 +7719,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 265500,
+          "url": "https://kaitori-homura.com/products/7266"
+        },
         "shouten": {
           "price": 265500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27104"
@@ -7684,6 +7773,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 266500,
+          "url": "https://kaitori-homura.com/products/7282"
+        },
         "shouten": {
           "price": 266500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27102"
@@ -7734,6 +7827,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 262500,
+          "url": "https://kaitori-homura.com/products/7272"
+        },
         "shouten": {
           "price": 262500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27103"
@@ -7784,6 +7881,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 345500,
+          "url": "https://kaitori-homura.com/products/7291"
+        },
         "shouten": {
           "price": 345500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27105"
@@ -7834,6 +7935,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 334500,
+          "url": "https://kaitori-homura.com/products/7267"
+        },
         "shouten": {
           "price": 334500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27108"
@@ -7884,6 +7989,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 334500,
+          "url": "https://kaitori-homura.com/products/7283"
+        },
         "shouten": {
           "price": 334500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27106"
@@ -7934,6 +8043,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 330500,
+          "url": "https://kaitori-homura.com/products/7274"
+        },
         "shouten": {
           "price": 330500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27107"
@@ -7984,6 +8097,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-burgundy-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 395000,
+          "url": "https://kaitori-homura.com/products/7292"
+        },
         "shouten": {
           "price": 400000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27109"
@@ -8030,6 +8147,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 385000,
+          "url": "https://kaitori-homura.com/products/7275"
+        },
         "shouten": {
           "price": 386000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27112"
@@ -8076,6 +8197,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-glacier-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 385000,
+          "url": "https://kaitori-homura.com/products/7284"
+        },
         "shouten": {
           "price": 386000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27110"
@@ -8122,6 +8247,10 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 385000,
+          "url": "https://kaitori-homura.com/products/7273"
+        },
         "shouten": {
           "price": 386000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27111"
@@ -8169,10 +8298,6 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
-        "homura": {
-          "price": 410000,
-          "url": "https://kaitori-homura.com/products/7297"
-        },
         "shouten": {
           "price": 408000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27090"
@@ -8249,10 +8374,6 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
-        "homura": {
-          "price": 450000,
-          "url": "https://kaitori-homura.com/products/7298"
-        },
         "shouten": {
           "price": 445000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27092"
@@ -8329,10 +8450,6 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
-        "homura": {
-          "price": 508000,
-          "url": "https://kaitori-homura.com/products/7299"
-        },
         "shouten": {
           "price": 500000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27094"
@@ -8409,10 +8526,6 @@
         "origin": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609?wid=940&hei=1112&fmt=png-alpha"
       },
       "prices": {
-        "homura": {
-          "price": 595000,
-          "url": "https://kaitori-homura.com/products/7300"
-        },
         "shouten": {
           "price": 585000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/27096"
@@ -50703,7 +50816,7 @@
       },
       "prices": {
         "homura": {
-          "price": 61500,
+          "price": 61000,
           "url": "https://kaitori-homura.com/products/7260"
         },
         "shouten": {
@@ -50883,7 +50996,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
         },
         "toban": {
-          "price": 9500,
+          "price": 9400,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90s4a%e3%80%91%e3%83%8b%e3%83%b3%e3%82%b8%e3%83%a3%e3%82%b9%e3%83%94%e3%83%8a%e3%83%bc-box/"
         },
         "rudeya": {
@@ -53798,7 +53911,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16500,
+          "price": 16000,
           "url": "https://kaitori-homura.com/products/7255"
         },
         "shouten": {
@@ -57524,6 +57637,10 @@
         "torecabank": {
           "price": 4950000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 5000000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 4430000,
@@ -62111,6 +62228,10 @@
           "price": 225000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 225000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 210000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/093-069-S6A-B/"
@@ -62472,6 +62593,10 @@
         "shinsoku": {
           "price": 175000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 195000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 185000,
@@ -65727,10 +65852,6 @@
           "price": 73000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 83000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 74000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -65775,6 +65896,10 @@
         "lounge": {
           "price": 70000,
           "url": "https://kaitori.toreca-lounge.com/product/4Inysk2V21Cq6SAa2cpwL2"
+        },
+        "shinsoku": {
+          "price": 66000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
           "price": 72000,
@@ -65836,10 +65961,6 @@
         "shinsoku": {
           "price": 61000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 70000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 68000,
@@ -66035,10 +66156,6 @@
         "lounge": {
           "price": 70000,
           "url": "https://kaitori.toreca-lounge.com/product/2gGs31ItlgWn6m4ntrPwKw"
-        },
-        "shinsoku": {
-          "price": 66000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
           "price": 72000,
@@ -67780,10 +67897,6 @@
           "price": 40100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 45500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 44000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/208-S-P/"
@@ -68805,10 +68918,6 @@
         "shinsoku": {
           "price": 29300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 34000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 29900,
@@ -70154,10 +70263,6 @@
           "price": 25200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 26000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 26500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -70475,6 +70580,10 @@
         "shinsoku": {
           "price": 27000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 28500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 30500,
@@ -73137,10 +73246,6 @@
           "price": 20000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 20000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 21000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/071-067-S10P-B/"
@@ -74869,10 +74974,6 @@
         "shinsoku": {
           "price": 17800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 26000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 26000,
@@ -76998,10 +77099,6 @@
         "lounge": {
           "price": 13000,
           "url": "https://kaitori.toreca-lounge.com/product/7NwtnLYeNPdfPEtNH5LgsU"
-        },
-        "torecabank_store": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -80378,10 +80475,6 @@
           "price": 4900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 5700,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 5700,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80468,10 +80561,6 @@
         "lounge": {
           "price": 6500,
           "url": "https://kaitori.toreca-lounge.com/product/6DI6btLAyye9OgxcRjuqhs"
-        },
-        "torecabank": {
-          "price": 6500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 6500,
@@ -81717,6 +81806,10 @@
           "price": 63000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ab%e3%82%ab%e3%83%aa%e3%82%aavsr%e4%bb%95%e6%a7%98-304-s-p/",
           "mode": "郵送"
+        },
+        "shinsoku": {
+          "price": 66000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
           "price": 65100,
@@ -83642,6 +83735,14 @@
         "shinsoku": {
           "price": 71000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 86000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 86000,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -85001,10 +85102,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 6000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 6000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -89225,6 +89322,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 8100,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 8100,
           "url": "https://store.torecabank.com/kaitori_list"
