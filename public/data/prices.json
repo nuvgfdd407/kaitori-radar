@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T18:28:25+09:00",
+  "updated_at": "2026-10-25T18:43:15+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-25T18:43:15+09:00"
     },
     {
       "id": "ichome",
@@ -29014,7 +29015,7 @@
       },
       "prices": {
         "rudeya": {
-          "price": 283900,
+          "price": 245100,
           "url": "https://kaitori-rudeya.com/product/item/5379"
         },
         "morimori": {
@@ -72111,6 +72112,10 @@
           "price": 22200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 26000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 27000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76046,10 +76051,6 @@
         "shinsoku": {
           "price": 10700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
@@ -81307,6 +81308,10 @@
         "shinsoku": {
           "price": 23200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 26000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 26000,
