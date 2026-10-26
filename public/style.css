@@ -692,3 +692,12 @@ body:has(#cart-bar) { padding-bottom: 72px; }
 .info-table th, .info-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 .info-table th { white-space: nowrap; color: var(--muted); font-weight: 600; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+
+/* 買取ガイド */
+.doc-date { color: var(--muted, #666); font-size: .85rem; margin: -.5rem 0 1rem; }
+.doc h3 { font-size: 1rem; margin: 1.25rem 0 .4rem; }
+.doc-back { margin-top: 2rem; }
+.guide-list { list-style: none; padding: 0; }
+.guide-list li { padding: .75rem 0; border-bottom: 1px solid var(--line, #ddd); }
+.guide-list li a { font-weight: 700; }
+.guide-list li p { margin: .25rem 0 0; font-size: .9rem; }

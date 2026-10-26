@@ -117,7 +117,7 @@ def page(site, *, path, title, description, active, content, controls="", breadc
       <p class="yahoo-credit">
         {YAHOO_CREDIT}
       </p>
-      <p class="footer-links"><a href="/about/">運営者情報・お問い合わせ</a><a href="/privacy/">プライバシーポリシー</a><a href="/request/">買取店・ジャンルのリクエスト</a></p>
+      <p class="footer-links"><a href="/guide/">買取ガイド</a><a href="/about/">運営者情報・お問い合わせ</a><a href="/privacy/">プライバシーポリシー</a><a href="/request/">買取店・ジャンルのリクエスト</a></p>
       <p>© {SITE_NAME}</p>
     </div>
   </footer>
@@ -625,6 +625,28 @@ def ranking_content(site, ups, downs, since, min_price, name="", active="all", p
 ADSENSE_CLIENT = "ca-pub-5057487349099167"
 OPERATOR = "買取レーダー運営事務局"
 CONTACT_EMAIL = "kaitoriradar.support@gmail.com"
+
+
+def guide_content(guide):
+    """買取ガイドの記事。"""
+    return f"""    <h1 class="page-title">{esc(guide["title"])}</h1>
+    <p class="doc-date">{esc(guide["published"].replace("-", "/"))} 公開</p>
+    <div class="doc">
+{guide["body"]}
+      <p class="doc-back"><a href="/guide/">買取ガイドの一覧へ</a></p>
+    </div>"""
+
+
+def guide_index(guides):
+    """買取ガイドの記事の一覧。"""
+    items = "".join(f'        <li><a href="/guide/{g["slug"]}/">{esc(g["title"])}</a><p>{esc(g["description"])}</p></li>\n'
+                    for g in guides)
+    return f"""    <h1 class="page-title">買取ガイド</h1>
+    <div class="doc">
+      <p>新品・未開封のゲーム機・スマホ・トレカを、少しでも高く・安心して売るための情報をまとめています。</p>
+      <ul class="guide-list">
+{items}      </ul>
+    </div>"""
 
 
 def about_content():

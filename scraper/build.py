@@ -48,6 +48,7 @@ def main():
     pages += [("/request/", t.page(site, path="/request/", title=f"買取店・ジャンルのリクエスト｜{t.SITE_NAME}",
                                    description="買取レーダーに載せてほしい買取店や、追加してほしいジャンル・商品のリクエストを受け付けています。",
                                    active=("request", None), content=t.request_content()))]
+    pages += guide_pages(site)
     # 比較リストは人によって中身が違うので、検索結果に出さずサイトマップにも載せない
     private_pages = [("/cart/", cart_page(site))]
     for path, html in pages + private_pages:
@@ -266,6 +267,28 @@ def cart_page(site):
     return t.page(site, path="/cart/", title=f"比較リスト｜{t.SITE_NAME}",
                   description="選んだ商品を、どの買取店に売ると一番高くなるかを計算します。",
                   active=None, content=t.cart_content(), noindex=True, page_id="cart")
+
+
+GUIDES = ROOT / "content" / "guides"
+
+
+def guide_pages(site):
+    """content/guides/*.html の買取ガイドの記事と、その一覧のページ。
+    記事のファイルの先頭は {"title", "description", "published"} の JSON を入れた HTML のコメント。"""
+    guides = []
+    for path in sorted(GUIDES.glob("*.html")):
+        text = path.read_text(encoding="utf-8")
+        head, body = text.split("-->", 1)
+        meta = json.loads(head.split("<!--", 1)[1])
+        guides.append({**meta, "slug": path.stem, "body": body.replace("{SITE_NAME}", t.SITE_NAME)})
+    guides.sort(key=lambda g: g["published"], reverse=True)
+    pages = [(f"/guide/{g['slug']}/", t.page(site, path=f"/guide/{g['slug']}/", title=f"{g['title']}｜{t.SITE_NAME}",
+                                             description=g["description"], active=None, content=t.guide_content(g)))
+             for g in guides]
+    pages.append(("/guide/", t.page(site, path="/guide/", title=f"買取ガイド｜{t.SITE_NAME}",
+                                    description="新品のゲーム機・スマホ・トレカを高く売るための買取ガイド。",
+                                    active=None, content=t.guide_index(guides))))
+    return pages
 
 
 def write_sitemap(paths, updated_at):
