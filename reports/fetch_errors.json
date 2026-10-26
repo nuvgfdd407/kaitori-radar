@@ -6468,5 +6468,45 @@
     "time": "2026-10-26T11:58:26+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "買取当番",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "買取wiki",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "森森買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x7fbd3c581950>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "ゲストモバイル",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.guestmobile.jp', port=443): Max retries exceeded with url: /iphone%E8%B2%B7%E5%8F%96%E4%BE%A1%E6%A0%BC/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.guestmobile.jp', port=443) at 0x7fbd3c583890>, 'Connection to www.guestmobile.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "PANDA買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='panda-kaitori.co.jp', port=443): Max retries exceeded with url: /?cpro=game (Caused by ConnectTimeoutError(<HTTPSConnection(host='panda-kaitori.co.jp', port=443) at 0x7fbd3c583750>, 'Connection to panda-kaitori.co.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "トレカバンク",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='store.torecabank.com', port=443): Max retries exceeded with url: /mail_buy_list (Caused by ConnectTimeoutError(<HTTPSConnection(host='store.torecabank.com', port=443) at 0x7fbd3c583610>, 'Connection to store.torecabank.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "トレカバンク",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='store.torecabank.com', port=443): Max retries exceeded with url: /kaitori_list (Caused by ConnectTimeoutError(<HTTPSConnection(host='store.torecabank.com', port=443) at 0x7fbd3d64f750>, 'Connection to store.torecabank.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-26T12:12:55+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='buy-gh.tokyo', port=443): Max retries exceeded with url: /%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='buy-gh.tokyo', port=443) at 0x7fbd3c5802d0>, 'Connection to buy-gh.tokyo timed out. (connect timeout=30)'))"
   }
 ]

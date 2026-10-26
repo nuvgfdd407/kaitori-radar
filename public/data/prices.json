@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:58:26+09:00",
+  "updated_at": "2026-10-26T12:12:55+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "rudeya",
@@ -57,7 +58,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "keitaigod",
@@ -71,14 +73,16 @@
       "name": "ゲストモバイル",
       "short": "ゲスト",
       "url": "https://www.guestmobile.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "panda",
       "name": "PANDA買取",
       "short": "PANDA",
       "url": "https://panda-kaitori.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "lounge",
@@ -99,14 +103,16 @@
       "name": "トレカバンク(郵送)",
       "short": "バンク(郵送)",
       "url": "https://store.torecabank.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "torecabank_store",
       "name": "トレカバンク(店頭)",
       "short": "バンク(店頭)",
       "url": "https://store.torecabank.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     },
     {
       "id": "club",
@@ -134,7 +140,8 @@
       "name": "ゴールデンホビー(郵送)",
       "short": "ゴールデン(郵送)",
       "url": "https://buy-gh.tokyo/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-26T12:12:55+09:00"
     }
   ],
   "products": [
@@ -6621,7 +6628,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 206000,
+          "price": 203000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -6675,7 +6682,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 196000,
+          "price": 190000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -6729,7 +6736,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 196000,
+          "price": 193000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -6783,7 +6790,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/39"
         },
         "ichome": {
-          "price": 194000,
+          "price": 188000,
           "url": "https://www.1-chome.com/productDetail/1652/2312"
         },
         "toban": {
@@ -7453,7 +7460,7 @@
       },
       "prices": {
         "homura": {
-          "price": 239000,
+          "price": 239500,
           "url": "https://kaitori-homura.com/products/7289"
         },
         "shouten": {
@@ -7461,11 +7468,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27097"
         },
         "kaikyo": {
-          "price": 239000,
+          "price": 239500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 239000,
+          "price": 239500,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7507,7 +7514,7 @@
       },
       "prices": {
         "homura": {
-          "price": 224000,
+          "price": 227000,
           "url": "https://kaitori-homura.com/products/7265"
         },
         "shouten": {
@@ -7515,11 +7522,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27100"
         },
         "kaikyo": {
-          "price": 224000,
+          "price": 226500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 224000,
+          "price": 227000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7561,7 +7568,7 @@
       },
       "prices": {
         "homura": {
-          "price": 233000,
+          "price": 233500,
           "url": "https://kaitori-homura.com/products/7281"
         },
         "shouten": {
@@ -7569,11 +7576,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27098"
         },
         "kaikyo": {
-          "price": 233000,
+          "price": 233500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 233000,
+          "price": 233500,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7615,7 +7622,7 @@
       },
       "prices": {
         "homura": {
-          "price": 223000,
+          "price": 224000,
           "url": "https://kaitori-homura.com/products/7271"
         },
         "shouten": {
@@ -7623,11 +7630,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27099"
         },
         "kaikyo": {
-          "price": 223000,
+          "price": 224500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 223000,
+          "price": 224000,
           "url": "https://www.1-chome.com/productDetail/1648/2300"
         },
         "toban": {
@@ -7669,7 +7676,7 @@
       },
       "prices": {
         "homura": {
-          "price": 276500,
+          "price": 277000,
           "url": "https://kaitori-homura.com/products/7290"
         },
         "shouten": {
@@ -7677,11 +7684,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27101"
         },
         "kaikyo": {
-          "price": 276500,
+          "price": 277000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 276500,
+          "price": 277000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7723,7 +7730,7 @@
       },
       "prices": {
         "homura": {
-          "price": 266500,
+          "price": 267000,
           "url": "https://kaitori-homura.com/products/7266"
         },
         "shouten": {
@@ -7731,11 +7738,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27104"
         },
         "kaikyo": {
-          "price": 266500,
+          "price": 267000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 266500,
+          "price": 267000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7777,7 +7784,7 @@
       },
       "prices": {
         "homura": {
-          "price": 267500,
+          "price": 268000,
           "url": "https://kaitori-homura.com/products/7282"
         },
         "shouten": {
@@ -7785,11 +7792,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27102"
         },
         "kaikyo": {
-          "price": 266500,
+          "price": 268000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 267500,
+          "price": 268000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7831,7 +7838,7 @@
       },
       "prices": {
         "homura": {
-          "price": 263500,
+          "price": 264000,
           "url": "https://kaitori-homura.com/products/7272"
         },
         "shouten": {
@@ -7839,11 +7846,11 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27103"
         },
         "kaikyo": {
-          "price": 263500,
+          "price": 264000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
-          "price": 263500,
+          "price": 264000,
           "url": "https://www.1-chome.com/productDetail/1649/2303"
         },
         "toban": {
@@ -7893,7 +7900,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27105"
         },
         "kaikyo": {
-          "price": 346000,
+          "price": 346500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
@@ -7947,7 +7954,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27108"
         },
         "kaikyo": {
-          "price": 335000,
+          "price": 335500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
@@ -8001,7 +8008,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27106"
         },
         "kaikyo": {
-          "price": 335000,
+          "price": 335500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
@@ -8055,7 +8062,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27107"
         },
         "kaikyo": {
-          "price": 331000,
+          "price": 331500,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/40"
         },
         "ichome": {
@@ -8302,7 +8309,7 @@
       },
       "prices": {
         "homura": {
-          "price": 418000,
+          "price": 418500,
           "url": "https://kaitori-homura.com/products/7297"
         },
         "shouten": {
@@ -8382,7 +8389,7 @@
       },
       "prices": {
         "homura": {
-          "price": 457000,
+          "price": 457500,
           "url": "https://kaitori-homura.com/products/7298"
         },
         "shouten": {
@@ -8462,7 +8469,7 @@
       },
       "prices": {
         "homura": {
-          "price": 514000,
+          "price": 514500,
           "url": "https://kaitori-homura.com/products/7299"
         },
         "shouten": {
@@ -8542,7 +8549,7 @@
       },
       "prices": {
         "homura": {
-          "price": 600000,
+          "price": 601000,
           "url": "https://kaitori-homura.com/products/7300"
         },
         "shouten": {
