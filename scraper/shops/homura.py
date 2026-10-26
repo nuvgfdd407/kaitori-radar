@@ -31,8 +31,8 @@ URL = "https://kaitori-homura.com/"
 API_URL = "https://api.kaitori-homura.com/api/v1/"
 GAME_CATEGORY = 13
 IPHONE_CATEGORY = 10
-# Switch（Switch 2 を含む） / PlayStation / Xbox / Meta Quest / その他（Steam Deck など）
-GAME_SUBS = [124, 122, 126, 121, 127]
+# Switch（Switch 2 を含む） / PlayStation / Xbox / Meta Quest / その他（Steam Deck など） / Switch ソフト（Switch 2 を含む）
+GAME_SUBS = [124, 122, 126, 121, 127, 125]
 # iPhone Duo / 18 Pro / 18 Pro Max / 17 Pro / 17 Pro Max / 17 / Air / 17e / 16 Pro / 16 Pro Max / 16 / 16 Plus / 16e
 IPHONE_SUBS = [194, 193, 192, 96, 97, 95, 155, 173, 100, 101, 98, 99, 156]
 PIXEL_CATEGORY = 9

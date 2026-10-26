@@ -30,7 +30,7 @@ URL = "https://www.mobile-ichiban.com/"
 BASE = "https://www.mobile-ichiban.com"
 # 家電買取（2）> ゲーム（01）> Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox Series /
 # Meta Quest / Steam Deck / ASUS
-CATEGORIES = ["11", "01", "02", "03", "04", "07", "09"]
+CATEGORIES = ["11", "01", "02", "03", "04", "07", "09", "12", "05"]  # 12: Switch 2 ソフト, 05: Switch ソフト
 # 家電買取（2）> カメラ（09。チェキ・写ルンです）/ ビデオカメラ（14。GoPro・DJI・Insta360）
 CAMERA_CATEGORIES = ["09", "14"]
 # 携帯買取（1）> iPhone（01）> 18 Pro Max / 18 Pro / 17 Pro Max / 17 Pro / Air / 17 / 17e /

@@ -21,6 +21,8 @@ URL = "https://kaitori-rudeya.com/"
 # Meta Quest / PlayStation VR / PICO 4 / Legion Go
 PAGES = [f"https://kaitori-rudeya.com/category/detail/{i}" for i in (214, 1, 2, 3, 159, 55, 136, 42, 120, 121, 160,
                                                                   131, 12)]  # 131: チェキ・写ルンです, 12: ビデオカメラ（DJI・Insta360）
+# ゲームソフト（PS5 のソフトも載っているので、Switch のソフトだけ使う）
+SOFT_PAGES = ["https://kaitori-rudeya.com/category/detail/32"]
 # Google（Pixel）
 PIXEL_PAGES = ["https://kaitori-rudeya.com/category/detail/172"]
 # SAMSUNG（Galaxy） / SONY（Xperia） / SHARP（AQUOS）
@@ -38,6 +40,8 @@ def fetch(http):
     offers = []
     for page in PAGES:
         offers += _read_page(http, page)
+    for page in SOFT_PAGES:
+        offers += [o for o in _read_page(http, page) if "Switch" in o["name"]]
     for page in CARD_PAGES:
         offers += [o for o in _read_page(http, page) if "カートン" not in o["name"]]
     for page in IPHONE_PAGES + PIXEL_PAGES:

@@ -30,6 +30,8 @@ CATEGORIES = [
     "Hi6VUvS3BHzS9kvL", "Y3pbA65dEt2seG0B", "20304465", "20464007",
     # カメラ: チェキ / フィルム・写ルンです / DJI / GoPro / Insta360
     "20279112", "20985614", "elcGBnJ6RviUaheK", "MEhRJnKLDwGVqGjf", "3UaXvMKKbSmGVfok",
+    # Switch ソフト / Switch 2 ソフト
+    "3TntOKilrrqZvgub", "kOcGGK98IQsXffwp",
 ]
 IPHONE_API = "https://www.1-chome.com/api/keitai/listPage"
 # iPhone 18シリーズ / 17シリーズ / 16シリーズ

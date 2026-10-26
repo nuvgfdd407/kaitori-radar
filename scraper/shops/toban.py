@@ -28,7 +28,7 @@ URL = "https://tobansyoji.co.jp/"
 
 API = "https://tobansyoji.co.jp/wp-json/wc/store/v1/products"
 # Nintendo Switch 2 / Nintendo Switch / PlayStation / Xbox / Meta Quest / Steam Deck / ASUS ROG / PS5 周辺機器
-CATEGORIES = [184, 185, 186, 187, 188, 189, 190, 239, 243]  # 243: カメラ本体・周辺機器（チェキ・写ルンです）
+CATEGORIES = [184, 185, 186, 187, 188, 189, 190, 239, 243, 191, 192]  # 243: カメラ本体・周辺機器（チェキ・写ルンです）、191・192: Switch 2・Switch ソフト
 # iPhone 18 / 17 / 16 / Google（Pixel）
 IPHONE_CATEGORIES = [306, 207, 208, 263]
 # ポケモンカード / ワンピース
