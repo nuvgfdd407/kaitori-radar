@@ -233,8 +233,13 @@ SERIES_ALIASES = {
 }
 
 
+def _jans(p):
+    """箱のバーコードの JAN コード（PSA 鑑定品の仮の番号は除く）。"""
+    return [jan for jan in [p["jan"], *p.get("aliases", [])] if jan.isdigit()]
+
+
 def search_text(p):
-    """一覧の行の検索用の文字（商品名・型番・シリーズ名と、英語の名前の読み）。"""
+    """一覧の行の検索用の文字（商品名・型番・シリーズ名と、英語の名前の読み、JAN コード）。"""
     readings = []
     for i in range(2):
         text = p["name"]
@@ -244,7 +249,8 @@ def search_text(p):
         if text != p["name"] and text not in readings:
             readings.append(text)
     parts = [p["name"], p.get("model"), p.get("series_name"), p["category"]["name"],
-             CATEGORY_ALIASES.get(p["category"]["id"]), *readings, SERIES_ALIASES.get(p["series"])]
+             CATEGORY_ALIASES.get(p["category"]["id"]), *readings, SERIES_ALIASES.get(p["series"]),
+             *_jans(p)]
     return " ".join(part for part in parts if part)
 
 
