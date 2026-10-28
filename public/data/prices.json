@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T20:43:45+09:00",
+  "updated_at": "2026-10-28T20:58:37+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-28T20:58:37+09:00"
     },
     {
       "id": "ichome",
@@ -55,7 +56,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-28T20:58:37+09:00"
     },
     {
       "id": "guest",
@@ -65452,10 +65454,6 @@
           "price": 66000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 75000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 76000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -68971,10 +68969,6 @@
         "shinsoku": {
           "price": 32900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 35000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 35000,
@@ -74959,10 +74953,6 @@
           "price": 9200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76638,6 +76628,10 @@
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 10000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -77138,10 +77132,6 @@
         "shinsoku": {
           "price": 8200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
@@ -77750,10 +77740,6 @@
         "lounge": {
           "price": 9800,
           "url": "https://kaitori.toreca-lounge.com/product/0U7v5jBBaLXtoANERZdOFB"
-        },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
@@ -78475,10 +78461,6 @@
         "shinsoku": {
           "price": 8900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 8900,
@@ -81068,6 +81050,10 @@
           "price": 23600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 28000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 26000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/084-067-S9A-B/"
@@ -83613,12 +83599,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/CR_P_SV2DP_32.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-5ba5597e9f",
@@ -84113,6 +84094,10 @@
         "lounge": {
           "price": 33000,
           "url": "https://kaitori.toreca-lounge.com/product/1AMEfVNTlgJXKQj43VoMJc"
+        },
+        "torecabank": {
+          "price": 35000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         }
       }
     },
