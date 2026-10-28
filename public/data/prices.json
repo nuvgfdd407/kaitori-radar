@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T19:28:37+09:00",
+  "updated_at": "2026-10-28T19:43:36+09:00",
   "shops": [
     {
       "id": "homura",
@@ -74022,6 +74022,10 @@
           "price": 9000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 10500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 10500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76685,6 +76689,10 @@
         "shinsoku": {
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
@@ -83365,6 +83373,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 35000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 35000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -83681,7 +83693,12 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/CR_P_SV2DP_32.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        }
+      }
     },
     {
       "jan": "psa-5ba5597e9f",
