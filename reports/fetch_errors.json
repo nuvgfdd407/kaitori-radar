@@ -6983,5 +6983,10 @@
     "time": "2026-10-29T12:46:01+09:00",
     "shop": "ケータイゴッド",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x7bac60babc50>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-29T13:42:18+09:00",
+    "shop": "森森買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x7cb0363165d0>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
   }
 ]
