@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:58:11+09:00",
+  "updated_at": "2026-10-30T16:13:07+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,8 +55,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-30T15:58:11+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -198,7 +197,7 @@
       },
       "prices": {
         "homura": {
-          "price": 83000,
+          "price": 83100,
           "url": "https://kaitori-homura.com/products/5145"
         },
         "shouten": {
@@ -8319,7 +8318,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-256gb/"
         },
         "rudeya": {
-          "price": 367000,
+          "price": 367500,
           "url": "https://kaitori-rudeya.com/product/item/7426"
         },
         "morimori": {
@@ -8366,7 +8365,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-256gb/"
         },
         "rudeya": {
-          "price": 372000,
+          "price": 372500,
           "url": "https://kaitori-rudeya.com/product/item/7427"
         },
         "morimori": {
@@ -9196,7 +9195,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-max-256gb/"
         },
         "rudeya": {
-          "price": 186000,
+          "price": 185000,
           "url": "https://kaitori-rudeya.com/product/item/6248"
         },
         "morimori": {
@@ -9250,7 +9249,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-max-256gb/"
         },
         "rudeya": {
-          "price": 186000,
+          "price": 185000,
           "url": "https://kaitori-rudeya.com/product/item/6249"
         },
         "morimori": {
@@ -9304,7 +9303,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-17-pro-max-256gb/"
         },
         "rudeya": {
-          "price": 191500,
+          "price": 191000,
           "url": "https://kaitori-rudeya.com/product/item/6247"
         },
         "morimori": {
@@ -50748,10 +50747,6 @@
           "price": 6500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26540"
         },
-        "kaikyo": {
-          "price": 8000,
-          "url": "https://www.mobile-ichiban.com/Prod/3/04"
-        },
         "toban": {
           "price": 7000,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90m5%e3%80%91%e3%82%a2%e3%83%93%e3%82%b9%e3%82%a2%e3%82%a4/"
@@ -66423,10 +66418,6 @@
           "price": 65000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 67500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 69000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/205-165-SV2A-B/"
@@ -76425,10 +76416,6 @@
           "price": 9900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 12000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/183-165-SV2A-B/"
@@ -81359,6 +81346,10 @@
         "torecabank": {
           "price": 550000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 550000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 428000,
@@ -104940,7 +104931,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/12"
         },
         "ichome": {
-          "price": 4500,
+          "price": 4700,
           "url": "https://www.1-chome.com/wineDetail/10862/10898"
         }
       }
