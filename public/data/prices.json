@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:43:07+09:00",
+  "updated_at": "2026-10-30T15:58:11+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-10-30T15:43:07+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -56,7 +55,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-30T15:58:11+09:00"
     },
     {
       "id": "guest",
@@ -218,7 +218,7 @@
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-%e5%a4%9a%e8%a8%80%e8%aa%9e%e7%89%88/"
         },
         "rudeya": {
-          "price": 82900,
+          "price": 83000,
           "url": "https://kaitori-rudeya.com/product/item/5797"
         },
         "morimori": {
@@ -63721,6 +63721,10 @@
           "price": 150000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 161000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 155000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/196-173-SM12A-B/"
@@ -81355,10 +81359,6 @@
         "torecabank": {
           "price": 550000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 550000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 428000,
@@ -104940,7 +104940,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/12"
         },
         "ichome": {
-          "price": 4800,
+          "price": 4500,
           "url": "https://www.1-chome.com/wineDetail/10862/10898"
         }
       }

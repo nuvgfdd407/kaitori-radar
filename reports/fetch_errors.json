@@ -7028,5 +7028,15 @@
     "time": "2026-10-30T15:43:07+09:00",
     "shop": "トレカクラブ",
     "error": "HTTPError: 404 Client Error: Not Found for url: https://torecaclub.com/pokemon/psa10/?page=4"
+  },
+  {
+    "time": "2026-10-30T15:58:11+09:00",
+    "shop": "ケータイゴッド",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x706ae6d61590>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-30T15:58:11+09:00",
+    "shop": "トレカクラブ",
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://torecaclub.com/pokemon/psa10/?page=4"
   }
 ]
