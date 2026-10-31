@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T14:43:16+09:00",
+  "updated_at": "2026-10-31T14:58:17+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,8 +55,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-10-31T14:43:16+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -58536,10 +58535,6 @@
           "price": 1000000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 1030000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 980000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/105-095-SM9-B/"
@@ -63734,10 +63729,6 @@
           "price": 115000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "club": {
-          "price": 120000,
-          "url": "https://torecaclub.com/pokemon/cards/psa10/347-190-SV4A-B/"
-        },
         "birth": {
           "price": 111000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -63862,10 +63853,6 @@
         "torecabank": {
           "price": 138000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 140000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 122000,
@@ -66040,10 +66027,6 @@
           "price": 63000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 70000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 62100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -66498,6 +66481,10 @@
         "shinsoku": {
           "price": 63000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 70000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 63200,
@@ -73189,10 +73176,6 @@
           "price": 17400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 20500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 19000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/081-068-S11A-B/"
@@ -75177,10 +75160,6 @@
         "torecabank": {
           "price": 11000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -75977,10 +75956,6 @@
           "price": 10000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 11000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/078-066-SV5A-B/"
@@ -76681,10 +76656,6 @@
         "torecabank": {
           "price": 10000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 15000,
@@ -102016,7 +101987,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4715"
         },
         "morimori": {
-          "price": 5250,
+          "price": 5200,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/218152"
         },
         "panda": {
@@ -102062,7 +102033,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6728"
         },
         "morimori": {
-          "price": 5200,
+          "price": 5050,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/329094"
         },
         "panda": {
@@ -102603,7 +102574,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1546"
         },
         "morimori": {
-          "price": 5500,
+          "price": 5450,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/1950"
         },
         "panda": {
@@ -103451,7 +103422,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6304"
         },
         "morimori": {
-          "price": 5700,
+          "price": 5650,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/303333"
         }
       }
