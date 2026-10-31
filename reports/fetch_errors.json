@@ -7118,5 +7118,10 @@
     "time": "2026-10-31T17:58:55+09:00",
     "shop": "海峡通信",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x73c17025f390>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-10-31T19:14:05+09:00",
+    "shop": "ケータイゴッド",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x7621a55cb250>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
   }
 ]
