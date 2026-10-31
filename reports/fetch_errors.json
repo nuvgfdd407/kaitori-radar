@@ -7113,5 +7113,10 @@
     "time": "2026-10-31T16:58:03+09:00",
     "shop": "森森買取",
     "error": "ConnectionError: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by NewConnectionError(\"HTTPSConnection(host='www.morimori-kaitori.jp', port=443): Failed to establish a new connection: [Errno 113] No route to host\"))"
+  },
+  {
+    "time": "2026-10-31T17:58:55+09:00",
+    "shop": "海峡通信",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x73c17025f390>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
   }
 ]

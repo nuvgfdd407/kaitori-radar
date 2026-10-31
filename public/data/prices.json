@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T17:44:01+09:00",
+  "updated_at": "2026-10-31T17:58:55+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-10-31T17:58:55+09:00"
     },
     {
       "id": "ichome",
@@ -34629,7 +34630,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7473"
         },
         "morimori": {
-          "price": 19700,
+          "price": 19500,
           "url": "https://www.morimori-kaitori.jp/category/0602001/product/344344"
         },
         "keitaigod": {
@@ -42947,7 +42948,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26769"
         },
         "ichome": {
-          "price": 236000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         },
         "morimori": {
@@ -42973,7 +42974,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26768"
         },
         "ichome": {
-          "price": 236000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         },
         "morimori": {
@@ -42999,7 +43000,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26767"
         },
         "ichome": {
-          "price": 236000,
+          "price": 230000,
           "url": "https://www.1-chome.com/productDetail/1603/2249"
         },
         "morimori": {
@@ -81923,10 +81924,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank": {
-          "price": 20000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 20000,
           "url": "https://store.torecabank.com/kaitori_list"
