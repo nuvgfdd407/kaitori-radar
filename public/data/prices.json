@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T18:28:52+09:00",
+  "updated_at": "2026-11-01T18:44:10+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-01T18:28:52+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -43256,7 +43255,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7400"
         },
         "morimori": {
-          "price": 215000,
+          "price": 207000,
           "url": "https://www.morimori-kaitori.jp/category/0304012/product/349551"
         }
       }
@@ -71408,10 +71407,6 @@
           "price": 21100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 22000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 23000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -72920,10 +72915,6 @@
         "shinsoku": {
           "price": 19800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 22000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 23000,
@@ -86461,6 +86452,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 22000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 23000,
           "url": "https://store.torecabank.com/kaitori_list"
