@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T10:14:00+09:00",
+  "updated_at": "2026-11-01T10:29:09+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-01T10:29:09+09:00"
     },
     {
       "id": "ichome",
@@ -6649,7 +6650,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 203500,
+          "price": 203000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -6895,7 +6896,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 231000,
+          "price": 230000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -6945,7 +6946,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 231000,
+          "price": 230000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -6995,7 +6996,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 228000,
+          "price": 226000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=2"
         }
       }
@@ -63024,7 +63025,7 @@
       },
       "prices": {
         "homura": {
-          "price": 151500,
+          "price": 153500,
           "url": "https://kaitori-homura.com/products/6347",
           "mode": "郵送"
         },
@@ -63856,6 +63857,10 @@
         "shinsoku": {
           "price": 128000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 135000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 140000,
@@ -65352,7 +65357,7 @@
       },
       "prices": {
         "homura": {
-          "price": 73500,
+          "price": 72500,
           "url": "https://kaitori-homura.com/products/6609",
           "mode": "郵送"
         },
@@ -65393,7 +65398,7 @@
       },
       "prices": {
         "homura": {
-          "price": 66500,
+          "price": 66000,
           "url": "https://kaitori-homura.com/products/6086",
           "mode": "郵送"
         },
@@ -65794,7 +65799,7 @@
       },
       "prices": {
         "homura": {
-          "price": 70000,
+          "price": 69500,
           "url": "https://kaitori-homura.com/products/5964",
           "mode": "郵送"
         },
@@ -66388,7 +66393,7 @@
       },
       "prices": {
         "homura": {
-          "price": 58500,
+          "price": 62000,
           "url": "https://kaitori-homura.com/products/5991",
           "mode": "郵送"
         },
@@ -66440,7 +66445,7 @@
       },
       "prices": {
         "homura": {
-          "price": 67000,
+          "price": 67500,
           "url": "https://kaitori-homura.com/products/6072",
           "mode": "郵送"
         },
@@ -66777,7 +66782,7 @@
       },
       "prices": {
         "homura": {
-          "price": 71500,
+          "price": 69000,
           "url": "https://kaitori-homura.com/products/6268",
           "mode": "郵送"
         },
@@ -66826,7 +66831,7 @@
       },
       "prices": {
         "homura": {
-          "price": 44000,
+          "price": 48500,
           "url": "https://kaitori-homura.com/products/5852",
           "mode": "郵送"
         },
@@ -66961,7 +66966,7 @@
       },
       "prices": {
         "homura": {
-          "price": 56500,
+          "price": 58500,
           "url": "https://kaitori-homura.com/products/6343",
           "mode": "郵送"
         },
@@ -67122,7 +67127,7 @@
       },
       "prices": {
         "homura": {
-          "price": 52500,
+          "price": 53000,
           "url": "https://kaitori-homura.com/products/6441",
           "mode": "郵送"
         },
@@ -67357,7 +67362,7 @@
       },
       "prices": {
         "homura": {
-          "price": 44000,
+          "price": 43000,
           "url": "https://kaitori-homura.com/products/6370",
           "mode": "郵送"
         },
@@ -67400,7 +67405,7 @@
       },
       "prices": {
         "homura": {
-          "price": 52000,
+          "price": 55000,
           "url": "https://kaitori-homura.com/products/6434",
           "mode": "郵送"
         },
@@ -67440,7 +67445,7 @@
       },
       "prices": {
         "homura": {
-          "price": 41500,
+          "price": 41000,
           "url": "https://kaitori-homura.com/products/6162",
           "mode": "郵送"
         },
@@ -67497,7 +67502,7 @@
       },
       "prices": {
         "homura": {
-          "price": 55000,
+          "price": 54500,
           "url": "https://kaitori-homura.com/products/6538",
           "mode": "郵送"
         },
@@ -67537,7 +67542,7 @@
       },
       "prices": {
         "homura": {
-          "price": 43000,
+          "price": 42500,
           "url": "https://kaitori-homura.com/products/6346",
           "mode": "郵送"
         },
@@ -67647,7 +67652,7 @@
       },
       "prices": {
         "homura": {
-          "price": 44500,
+          "price": 45000,
           "url": "https://kaitori-homura.com/products/6088",
           "mode": "郵送"
         },
@@ -67801,7 +67806,7 @@
       },
       "prices": {
         "homura": {
-          "price": 36500,
+          "price": 35500,
           "url": "https://kaitori-homura.com/products/5928",
           "mode": "郵送"
         },
@@ -68090,7 +68095,7 @@
       },
       "prices": {
         "homura": {
-          "price": 45500,
+          "price": 44500,
           "url": "https://kaitori-homura.com/products/6326",
           "mode": "郵送"
         },
@@ -68186,7 +68191,7 @@
       },
       "prices": {
         "homura": {
-          "price": 44500,
+          "price": 45500,
           "url": "https://kaitori-homura.com/products/6685",
           "mode": "郵送"
         },
@@ -68341,7 +68346,7 @@
       },
       "prices": {
         "homura": {
-          "price": 39500,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/6297",
           "mode": "郵送"
         },
@@ -68511,7 +68516,7 @@
       },
       "prices": {
         "homura": {
-          "price": 36500,
+          "price": 38000,
           "url": "https://kaitori-homura.com/products/5847",
           "mode": "郵送"
         },
@@ -69069,7 +69074,7 @@
       },
       "prices": {
         "homura": {
-          "price": 33000,
+          "price": 36500,
           "url": "https://kaitori-homura.com/products/5881",
           "mode": "郵送"
         },
@@ -69125,7 +69130,7 @@
       },
       "prices": {
         "homura": {
-          "price": 39500,
+          "price": 42000,
           "url": "https://kaitori-homura.com/products/6357",
           "mode": "郵送"
         },
@@ -69622,7 +69627,7 @@
       },
       "prices": {
         "homura": {
-          "price": 25000,
+          "price": 32000,
           "url": "https://kaitori-homura.com/products/6011",
           "mode": "郵送"
         },
@@ -70197,7 +70202,7 @@
       },
       "prices": {
         "homura": {
-          "price": 29000,
+          "price": 28500,
           "url": "https://kaitori-homura.com/products/6017",
           "mode": "郵送"
         },
@@ -70638,7 +70643,7 @@
       },
       "prices": {
         "homura": {
-          "price": 34500,
+          "price": 40500,
           "url": "https://kaitori-homura.com/products/6448",
           "mode": "郵送"
         },
@@ -71185,7 +71190,7 @@
       },
       "prices": {
         "homura": {
-          "price": 22500,
+          "price": 22000,
           "url": "https://kaitori-homura.com/products/6152",
           "mode": "郵送"
         },
@@ -71450,7 +71455,7 @@
       },
       "prices": {
         "homura": {
-          "price": 21000,
+          "price": 22000,
           "url": "https://kaitori-homura.com/products/6531",
           "mode": "郵送"
         },
@@ -72130,7 +72135,7 @@
       },
       "prices": {
         "homura": {
-          "price": 20500,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/5952",
           "mode": "郵送"
         },
@@ -72221,7 +72226,7 @@
       },
       "prices": {
         "homura": {
-          "price": 27000,
+          "price": 26500,
           "url": "https://kaitori-homura.com/products/5998",
           "mode": "郵送"
         },
@@ -72273,7 +72278,7 @@
       },
       "prices": {
         "homura": {
-          "price": 23000,
+          "price": 22500,
           "url": "https://kaitori-homura.com/products/6081",
           "mode": "郵送"
         },
@@ -72633,7 +72638,7 @@
       },
       "prices": {
         "homura": {
-          "price": 19000,
+          "price": 21000,
           "url": "https://kaitori-homura.com/products/5826",
           "mode": "郵送"
         },
@@ -73092,7 +73097,7 @@
       },
       "prices": {
         "homura": {
-          "price": 17500,
+          "price": 18000,
           "url": "https://kaitori-homura.com/products/6518",
           "mode": "郵送"
         },
@@ -73610,7 +73615,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6185",
           "mode": "郵送"
         },
@@ -73676,7 +73681,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16500,
+          "price": 16000,
           "url": "https://kaitori-homura.com/products/6247",
           "mode": "郵送"
         },
@@ -73767,7 +73772,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13500,
+          "price": 14000,
           "url": "https://kaitori-homura.com/products/6450",
           "mode": "郵送"
         },
@@ -74104,7 +74109,7 @@
       },
       "prices": {
         "homura": {
-          "price": 18000,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/6321",
           "mode": "郵送"
         },
@@ -74556,7 +74561,7 @@
       },
       "prices": {
         "homura": {
-          "price": 11500,
+          "price": 12500,
           "url": "https://kaitori-homura.com/products/6192",
           "mode": "郵送"
         },
@@ -74926,7 +74931,7 @@
       },
       "prices": {
         "homura": {
-          "price": 15000,
+          "price": 15500,
           "url": "https://kaitori-homura.com/products/6198",
           "mode": "郵送"
         },
@@ -75129,7 +75134,7 @@
       },
       "prices": {
         "homura": {
-          "price": 14500,
+          "price": 17000,
           "url": "https://kaitori-homura.com/products/6530",
           "mode": "郵送"
         },
@@ -75550,7 +75555,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 12500,
           "url": "https://kaitori-homura.com/products/6338",
           "mode": "郵送"
         },
@@ -75590,7 +75595,7 @@
       },
       "prices": {
         "homura": {
-          "price": 11000,
+          "price": 10500,
           "url": "https://kaitori-homura.com/products/6251",
           "mode": "郵送"
         },
@@ -75861,7 +75866,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9500,
+          "price": 11500,
           "url": "https://kaitori-homura.com/products/6217",
           "mode": "郵送"
         },
@@ -77102,7 +77107,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10500,
+          "price": 10000,
           "url": "https://kaitori-homura.com/products/5967",
           "mode": "郵送"
         },
@@ -77260,7 +77265,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 9500,
           "url": "https://kaitori-homura.com/products/6134",
           "mode": "郵送"
         },
@@ -77354,7 +77359,7 @@
       },
       "prices": {
         "homura": {
-          "price": 11500,
+          "price": 12500,
           "url": "https://kaitori-homura.com/products/6574",
           "mode": "郵送"
         },
@@ -78325,7 +78330,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7500,
+          "price": 7000,
           "url": "https://kaitori-homura.com/products/5963",
           "mode": "郵送"
         },
@@ -78454,10 +78459,6 @@
         "shinsoku": {
           "price": 6700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8000,
@@ -79074,7 +79075,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9000,
+          "price": 8500,
           "url": "https://kaitori-homura.com/products/6214",
           "mode": "郵送"
         },
@@ -79505,7 +79506,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6000,
+          "price": 5500,
           "url": "https://kaitori-homura.com/products/6613",
           "mode": "郵送"
         },
@@ -81734,7 +81735,7 @@
       },
       "prices": {
         "homura": {
-          "price": 16000,
+          "price": 15500,
           "url": "https://kaitori-homura.com/products/5859",
           "mode": "郵送"
         },
@@ -81929,7 +81930,7 @@
       },
       "prices": {
         "homura": {
-          "price": 13000,
+          "price": 13500,
           "url": "https://kaitori-homura.com/products/6478",
           "mode": "郵送"
         },
@@ -82402,7 +82403,7 @@
       },
       "prices": {
         "homura": {
-          "price": 4500,
+          "price": 4000,
           "url": "https://kaitori-homura.com/products/5961",
           "mode": "郵送"
         },
@@ -84614,7 +84615,7 @@
       },
       "prices": {
         "homura": {
-          "price": 10500,
+          "price": 10000,
           "url": "https://kaitori-homura.com/products/6945",
           "mode": "郵送"
         },
@@ -86688,7 +86689,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7500,
+          "price": 7000,
           "url": "https://kaitori-homura.com/products/6260",
           "mode": "郵送"
         },
@@ -86729,7 +86730,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6000,
+          "price": 6500,
           "url": "https://kaitori-homura.com/products/6960",
           "mode": "郵送"
         }
@@ -87757,7 +87758,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8000,
+          "price": 7000,
           "url": "https://kaitori-homura.com/products/6946",
           "mode": "郵送"
         }
