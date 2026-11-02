@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T15:59:00+09:00",
+  "updated_at": "2026-11-02T16:14:05+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,8 +55,7 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": false,
-      "failing_since": "2026-11-02T15:59:00+09:00"
+      "ok": true
     },
     {
       "id": "guest",
@@ -592,7 +591,7 @@
       },
       "prices": {
         "homura": {
-          "price": 43500,
+          "price": 43000,
           "url": "https://kaitori-homura.com/products/5144"
         },
         "shouten": {
@@ -57508,10 +57507,6 @@
           "price": 3300000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 3500000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 3550000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/207-XY-P/"
@@ -59000,6 +58995,10 @@
         "lounge": {
           "price": 620000,
           "url": "https://kaitori.toreca-lounge.com/product/6axQSX0z3eEv0zHusM2mXY"
+        },
+        "shinsoku": {
+          "price": 620000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
           "price": 700000,
@@ -63525,10 +63524,6 @@
         "torecabank": {
           "price": 118000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 118000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -66280,10 +66275,6 @@
           "price": 59600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 66000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 64000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/144-S-P/"
@@ -68027,6 +68018,10 @@
           "price": 56300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 63000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 63000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/118-081-M5-B/"
@@ -69283,10 +69278,6 @@
           "price": 36000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 41000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 41000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -69660,10 +69651,6 @@
         "torecabank": {
           "price": 34000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 35000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 34000,
@@ -72569,6 +72556,10 @@
           "price": 17000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 21000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 21000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -73327,10 +73318,6 @@
         "shinsoku": {
           "price": 17400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 23000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 19000,
@@ -76626,6 +76613,10 @@
         "shinsoku": {
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 10000,
