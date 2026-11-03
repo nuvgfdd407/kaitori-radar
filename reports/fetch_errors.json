@@ -7223,5 +7223,10 @@
     "time": "2026-11-03T19:13:34+09:00",
     "shop": "海峡通信",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x73a748ec82d0>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-03T20:13:37+09:00",
+    "shop": "買取当番",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   }
 ]
