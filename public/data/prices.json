@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T19:13:46+09:00",
+  "updated_at": "2026-11-04T19:43:46+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-04T19:43:46+09:00"
     },
     {
       "id": "rudeya",
@@ -4313,7 +4314,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/09"
         },
         "ichome": {
-          "price": 23000,
+          "price": 22500,
           "url": "https://www.1-chome.com/wineDetail/10540/10576"
         },
         "rudeya": {
@@ -10950,7 +10951,7 @@
       },
       "prices": {
         "homura": {
-          "price": 111000,
+          "price": 110000,
           "url": "https://kaitori-homura.com/products/5621"
         },
         "shouten": {
@@ -10962,7 +10963,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/38"
         },
         "ichome": {
-          "price": 111000,
+          "price": 110000,
           "url": "https://www.1-chome.com/productDetail/1444/2073"
         },
         "toban": {
@@ -11000,7 +11001,7 @@
       },
       "prices": {
         "homura": {
-          "price": 111000,
+          "price": 110000,
           "url": "https://kaitori-homura.com/products/5622"
         },
         "shouten": {
@@ -11012,7 +11013,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/38"
         },
         "ichome": {
-          "price": 111000,
+          "price": 110000,
           "url": "https://www.1-chome.com/productDetail/1444/2073"
         },
         "toban": {
@@ -11050,7 +11051,7 @@
       },
       "prices": {
         "homura": {
-          "price": 109500,
+          "price": 108500,
           "url": "https://kaitori-homura.com/products/5623"
         },
         "shouten": {
@@ -11062,7 +11063,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/01/38"
         },
         "ichome": {
-          "price": 109500,
+          "price": 108500,
           "url": "https://www.1-chome.com/productDetail/1444/2073"
         },
         "toban": {
@@ -61569,10 +61570,6 @@
           "price": 295000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 330000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 320000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/061-055-SM9A-B/"
@@ -62089,10 +62086,6 @@
         "torecabank": {
           "price": 262000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 280000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 260000,
@@ -66770,10 +66763,6 @@
           "price": 64400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 75000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 70000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/189-S-P/"
@@ -67067,10 +67056,6 @@
         "shinsoku": {
           "price": 61000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 67000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 58900,
@@ -74719,6 +74704,10 @@
           "price": 15000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 16000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 14000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/205-187-SV8A-B/"
@@ -74848,10 +74837,6 @@
         "shinsoku": {
           "price": 9700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11000,
@@ -75209,6 +75194,10 @@
         "shinsoku": {
           "price": 10200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 11000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         }
       }
     },
@@ -75461,10 +75450,6 @@
         "shinsoku": {
           "price": 17500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 19500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 21000,
@@ -76005,10 +75990,6 @@
         "shinsoku": {
           "price": 10200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 13000,
@@ -77591,10 +77572,6 @@
         "lounge": {
           "price": 8600,
           "url": "https://kaitori.toreca-lounge.com/product/6TYSyDNEzBw1D2X6hJNxdy"
-        },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11500,
@@ -79428,10 +79405,6 @@
         "torecabank": {
           "price": 6000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 5700,
@@ -106064,7 +106037,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6542"
         },
         "morimori": {
-          "price": 2600,
+          "price": 2800,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/306828"
         }
       }
