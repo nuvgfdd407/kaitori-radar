@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T10:13:47+09:00",
+  "updated_at": "2026-11-05T10:27:50+09:00",
   "shops": [
     {
       "id": "homura",
@@ -48,7 +48,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-05T10:27:50+09:00"
     },
     {
       "id": "keitaigod",
@@ -37744,10 +37745,6 @@
           "price": 40000,
           "url": "https://kaitori-homura.com/products/2717"
         },
-        "kaikyo": {
-          "price": 82000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
-        },
         "morimori": {
           "price": 81500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265628"
@@ -37776,10 +37773,6 @@
         "homura": {
           "price": 40000,
           "url": "https://kaitori-homura.com/products/2716"
-        },
-        "kaikyo": {
-          "price": 82000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
         },
         "morimori": {
           "price": 81500,
@@ -37810,10 +37803,6 @@
           "price": 40000,
           "url": "https://kaitori-homura.com/products/2714"
         },
-        "kaikyo": {
-          "price": 78500,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
-        },
         "morimori": {
           "price": 80000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265625"
@@ -37842,10 +37831,6 @@
         "homura": {
           "price": 40000,
           "url": "https://kaitori-homura.com/products/2715"
-        },
-        "kaikyo": {
-          "price": 80500,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
         },
         "morimori": {
           "price": 81500,
@@ -37876,10 +37861,6 @@
           "price": 80000,
           "url": "https://kaitori-homura.com/products/2713"
         },
-        "kaikyo": {
-          "price": 95000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
-        },
         "morimori": {
           "price": 91700,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265631"
@@ -37908,10 +37889,6 @@
         "homura": {
           "price": 80000,
           "url": "https://kaitori-homura.com/products/2712"
-        },
-        "kaikyo": {
-          "price": 95000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
         },
         "morimori": {
           "price": 91700,
@@ -37942,10 +37919,6 @@
           "price": 80000,
           "url": "https://kaitori-homura.com/products/2711"
         },
-        "kaikyo": {
-          "price": 95000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/05"
-        },
         "morimori": {
           "price": 91700,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265629"
@@ -37974,10 +37947,6 @@
         "homura": {
           "price": 95000,
           "url": "https://kaitori-homura.com/products/2710"
-        },
-        "kaikyo": {
-          "price": 103000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
         },
         "morimori": {
           "price": 104000,
@@ -38008,10 +37977,6 @@
           "price": 95000,
           "url": "https://kaitori-homura.com/products/2709"
         },
-        "kaikyo": {
-          "price": 103000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 104000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265632"
@@ -38037,10 +38002,6 @@
         "origin": "https://lh3.googleusercontent.com/cF-N4RTZquL10BeOaqYyPFQ35NHwtUM8lSi57_8dSyxAQnyMd_8lt_ynxT5c_oZLu8S3iS2hITGrVBKCE1SgveAxfbUqvombpbo=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 116000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 118000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265638"
@@ -38066,10 +38027,6 @@
         "origin": "https://lh3.googleusercontent.com/Nwi7lWAnyrc_xe_f5XCjINmVgQZkgK27i5XDzttFPP6oPpRXnNO0SJDu45BpJn--Th1PnayOlLSuYaL_M1DliEz9QUq1kkeqIdE8=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 116000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 118000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265637"
@@ -38095,10 +38052,6 @@
         "origin": "https://lh3.googleusercontent.com/3KWOYsqoQP2foFWIbsUhSZ2MWPUtPwhHLA0L6uB_YePFphUY66B14e6Yk3-suYiKt8jYxV1f7Mo0sB4Nj-yVnQZWrOMbJqr2b5E8=s3000-w3000-e365-rw-v0-nu"
       },
       "prices": {
-        "kaikyo": {
-          "price": 116000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 118000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265636"
@@ -38124,10 +38077,6 @@
         "origin": "https://lh3.googleusercontent.com/HgLtE8Jb9HO_1Qi5akajtB84VXsMIX3yA4CgLOwJWM2RKNekdeL6jugnBh0D_-VXnqugEU-D5nimjP-zcI4uMy7bpTxIn3ogNQ=s3000-w3000-e365-rw-v0-nu"
       },
       "prices": {
-        "kaikyo": {
-          "price": 116000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 118000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265635"
@@ -38153,10 +38102,6 @@
         "origin": "https://lh3.googleusercontent.com/cF-N4RTZquL10BeOaqYyPFQ35NHwtUM8lSi57_8dSyxAQnyMd_8lt_ynxT5c_oZLu8S3iS2hITGrVBKCE1SgveAxfbUqvombpbo=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 125500,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 126000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265640"
@@ -38178,10 +38123,6 @@
         "origin": "https://lh3.googleusercontent.com/Nwi7lWAnyrc_xe_f5XCjINmVgQZkgK27i5XDzttFPP6oPpRXnNO0SJDu45BpJn--Th1PnayOlLSuYaL_M1DliEz9QUq1kkeqIdE8=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 125500,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/06"
-        },
         "morimori": {
           "price": 126000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/295079"
@@ -38203,10 +38144,6 @@
         "origin": "https://lh3.googleusercontent.com/cF-N4RTZquL10BeOaqYyPFQ35NHwtUM8lSi57_8dSyxAQnyMd_8lt_ynxT5c_oZLu8S3iS2hITGrVBKCE1SgveAxfbUqvombpbo=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 105000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 107000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265642"
@@ -38232,10 +38169,6 @@
         "origin": "https://lh3.googleusercontent.com/Nwi7lWAnyrc_xe_f5XCjINmVgQZkgK27i5XDzttFPP6oPpRXnNO0SJDu45BpJn--Th1PnayOlLSuYaL_M1DliEz9QUq1kkeqIdE8=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 105000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 107000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265641"
@@ -38261,10 +38194,6 @@
         "origin": "https://lh3.googleusercontent.com/cF-N4RTZquL10BeOaqYyPFQ35NHwtUM8lSi57_8dSyxAQnyMd_8lt_ynxT5c_oZLu8S3iS2hITGrVBKCE1SgveAxfbUqvombpbo=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 121000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 121500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/268448"
@@ -38286,10 +38215,6 @@
         "origin": "https://lh3.googleusercontent.com/Nwi7lWAnyrc_xe_f5XCjINmVgQZkgK27i5XDzttFPP6oPpRXnNO0SJDu45BpJn--Th1PnayOlLSuYaL_M1DliEz9QUq1kkeqIdE8=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 121000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 121500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265645"
@@ -38311,10 +38236,6 @@
         "origin": "https://lh3.googleusercontent.com/3KWOYsqoQP2foFWIbsUhSZ2MWPUtPwhHLA0L6uB_YePFphUY66B14e6Yk3-suYiKt8jYxV1f7Mo0sB4Nj-yVnQZWrOMbJqr2b5E8=s3000-w3000-e365-rw-v0-nu"
       },
       "prices": {
-        "kaikyo": {
-          "price": 121000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 121500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265644"
@@ -38336,10 +38257,6 @@
         "origin": "https://lh3.googleusercontent.com/HgLtE8Jb9HO_1Qi5akajtB84VXsMIX3yA4CgLOwJWM2RKNekdeL6jugnBh0D_-VXnqugEU-D5nimjP-zcI4uMy7bpTxIn3ogNQ=s3000-w3000-e365-rw-v0-nu"
       },
       "prices": {
-        "kaikyo": {
-          "price": 121000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 121500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265643"
@@ -38361,10 +38278,6 @@
         "origin": "https://lh3.googleusercontent.com/cF-N4RTZquL10BeOaqYyPFQ35NHwtUM8lSi57_8dSyxAQnyMd_8lt_ynxT5c_oZLu8S3iS2hITGrVBKCE1SgveAxfbUqvombpbo=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 132000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "keitaigod": {
           "price": 120000,
           "url": "https://keitai-god.com/price/model.php?moid=4407"
@@ -38386,10 +38299,6 @@
         "origin": "https://lh3.googleusercontent.com/Nwi7lWAnyrc_xe_f5XCjINmVgQZkgK27i5XDzttFPP6oPpRXnNO0SJDu45BpJn--Th1PnayOlLSuYaL_M1DliEz9QUq1kkeqIdE8=s0-rp"
       },
       "prices": {
-        "kaikyo": {
-          "price": 132000,
-          "url": "https://www.mobile-ichiban.com/Prod/1/13/07"
-        },
         "morimori": {
           "price": 132500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/265648"
@@ -50562,7 +50471,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27144"
         },
         "toban": {
-          "price": 52500,
+          "price": 49500,
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%8030th-celebration-futuristic-box-copy/"
         },
         "rudeya": {
@@ -53685,7 +53594,7 @@
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%8030th-celebration-%e3%83%97%e3%83%ac%e3%83%9f%e3%82%a2%e3%83%a0%e3%83%87%e3%83%83%e3%82%ad%e3%82%bb%e3%83%83%e3%83%88-%e3%82%a8%e3%83%bc%e3%83%95%e3%82%a3/"
         },
         "rudeya": {
-          "price": 13000,
+          "price": 10000,
           "url": "https://kaitori-rudeya.com/product/item/7374"
         },
         "morimori": {
@@ -58511,7 +58420,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/2SCIwJwPfI4LGsJQaLatDG"
         },
         "shinsoku": {
-          "price": 900000,
+          "price": 915000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
@@ -64779,6 +64688,10 @@
         "shinsoku": {
           "price": 75900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 84000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 86000,
@@ -75191,10 +75104,6 @@
           "price": 13100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 15000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -77710,10 +77619,6 @@
         "lounge": {
           "price": 80000,
           "url": "https://kaitori.toreca-lounge.com/product/7bvXCxgkBfr2EEMzZctv6F"
-        },
-        "torecabank": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8500,
@@ -83948,6 +83853,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 16000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -86034,10 +85943,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 15000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -104896,7 +104801,7 @@
           "url": "https://www.1-chome.com/wineDetail/11284/11320"
         },
         "rudeya": {
-          "price": 7500,
+          "price": 7400,
           "url": "https://kaitori-rudeya.com/product/item/7370"
         },
         "morimori": {
@@ -104904,7 +104809,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/349686"
         },
         "panda": {
-          "price": 7700,
+          "price": 7300,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         }
       }
