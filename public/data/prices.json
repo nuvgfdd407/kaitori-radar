@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:27:30+09:00",
+  "updated_at": "2026-11-06T20:43:15+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-06T20:43:15+09:00"
     },
     {
       "id": "ichome",
@@ -48,8 +49,7 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": false,
-      "failing_since": "2026-11-06T20:27:30+09:00"
+      "ok": true
     },
     {
       "id": "keitaigod",
@@ -77274,10 +77274,6 @@
           "price": 9300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 10500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 10000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/020-M-P/"
@@ -80673,10 +80669,6 @@
           "price": 5300,
           "url": "https://kaitori.toreca-lounge.com/product/1JhhlYnaSkNe63zXYn2xgm"
         },
-        "torecabank_store": {
-          "price": 6000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 5000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -80702,10 +80694,6 @@
         "lounge": {
           "price": 6200,
           "url": "https://kaitori.toreca-lounge.com/product/1kKXDVPHwupg1E6J7QdaOd"
-        },
-        "torecabank": {
-          "price": 6200,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 6200,
@@ -81149,10 +81137,6 @@
         "lounge": {
           "price": 4100,
           "url": "https://kaitori.toreca-lounge.com/product/3z8H6frdpaCk8z1uen8Zr5"
-        },
-        "torecabank_store": {
-          "price": 5000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -82705,6 +82689,10 @@
         "source": "買取ホムラ"
       },
       "prices": {
+        "torecabank": {
+          "price": 12500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 13000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -87284,12 +87272,7 @@
         "origin": "https://storage.googleapis.com/card-image-hashed-url/cards/7cab2da0bcb424d55cf7a8bd23647899.png?v=1785607770158776",
         "source": "トレカクラブ"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 5800,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-795dc9a409",
@@ -87616,12 +87599,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1756978860_6975d21836b5bbabf856.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 6000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-5c09073c61",
