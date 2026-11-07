@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T20:13:15+09:00",
+  "updated_at": "2026-11-07T20:28:10+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-07T20:28:10+09:00"
     },
     {
       "id": "ichome",
@@ -68679,10 +68680,6 @@
           "price": 45000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 49000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 52000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/117-080-M3-B/"
@@ -69523,10 +69520,6 @@
         "shinsoku": {
           "price": 43200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 47000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "birth": {
           "price": 45000,
@@ -77361,6 +77354,10 @@
         "lounge": {
           "price": 8200,
           "url": "https://kaitori.toreca-lounge.com/product/6CEnibRgMMOvJgTBuTuc14"
+        },
+        "torecabank": {
+          "price": 8400,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8400,
@@ -92613,7 +92610,12 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1791451406_4ef8501589ae85579e5f.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 19500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        }
+      }
     },
     {
       "jan": "psa-a20aff7444",
