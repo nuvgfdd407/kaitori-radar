@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:28:11+09:00",
+  "updated_at": "2026-11-07T10:42:21+09:00",
   "shops": [
     {
       "id": "homura",
@@ -48,7 +48,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-07T10:42:21+09:00"
     },
     {
       "id": "keitaigod",
@@ -178,7 +179,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 51800,
+          "price": 52100,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
         }
       }
@@ -333,7 +334,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 56700,
+          "price": 57500,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         }
       }
@@ -627,7 +628,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 42500,
+          "price": 42300,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
         }
       }
@@ -1212,7 +1213,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 26500,
+          "price": 26600,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=10"
         }
       }
@@ -1310,7 +1311,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 26200,
+          "price": 26500,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=10"
         }
       }
@@ -1359,7 +1360,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 26500,
+          "price": 27200,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=10"
         }
       }
@@ -2803,7 +2804,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/318746"
         },
         "panda": {
-          "price": 122500,
+          "price": 124200,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=2"
         }
       }
@@ -2849,7 +2850,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0108001/product/268434"
         },
         "panda": {
-          "price": 113200,
+          "price": 112300,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=7"
         }
       }
@@ -6325,7 +6326,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0114/product/187742"
         },
         "panda": {
-          "price": 92000,
+          "price": 92300,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         }
       }
@@ -34329,7 +34330,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/02/01"
         },
         "ichome": {
-          "price": 33300,
+          "price": 33500,
           "url": "https://www.1-chome.com/wineDetail/7470/7500"
         },
         "toban": {
@@ -55826,7 +55827,7 @@
           "url": "https://tobansyoji.co.jp/product/%e3%80%90op-17%e3%80%91one-piece-cg-%e3%83%96%e3%83%bc%e3%82%b9%e3%82%bf%e3%83%bc-%e4%b8%96%e7%95%8c%e6%9c%80%e5%bc%b7%e3%81%ae%e6%88%a6%e5%a3%ab/"
         },
         "rudeya": {
-          "price": 9400,
+          "price": 9000,
           "url": "https://kaitori-rudeya.com/product/item/7267"
         },
         "morimori": {
@@ -67685,10 +67686,6 @@
           "price": 43200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 47000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 47000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -68519,6 +68516,10 @@
         "shinsoku": {
           "price": 41200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 47000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 47000,
@@ -84647,7 +84648,7 @@
       },
       "prices": {
         "torecabank_store": {
-          "price": 8500,
+          "price": 10000,
           "url": "https://store.torecabank.com/kaitori_list"
         }
       }
@@ -103534,7 +103535,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/294600"
         },
         "panda": {
-          "price": 7500,
+          "price": 7550,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=4"
         }
       }
@@ -103671,7 +103672,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/294605"
         },
         "panda": {
-          "price": 6700,
+          "price": 6750,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=3"
         }
       }
@@ -105020,7 +105021,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/160438"
         },
         "panda": {
-          "price": 2900,
+          "price": 3050,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=10"
         }
       }
@@ -106075,7 +106076,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/349686"
         },
         "panda": {
-          "price": 7250,
+          "price": 7280,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         }
       }
