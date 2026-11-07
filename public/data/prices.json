@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T20:28:10+09:00",
+  "updated_at": "2026-11-07T20:43:12+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-11-07T20:28:10+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -71443,10 +71442,6 @@
           "price": 18200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 19500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 19500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -92164,10 +92159,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 52000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 60000,
           "url": "https://store.torecabank.com/kaitori_list"
