@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T18:28:50+09:00",
+  "updated_at": "2026-11-08T18:43:50+09:00",
   "shops": [
     {
       "id": "homura",
@@ -8285,7 +8285,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7426"
         },
         "morimori": {
-          "price": 366000,
+          "price": 368000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344326"
         },
         "keitaigod": {
@@ -8332,7 +8332,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7427"
         },
         "morimori": {
-          "price": 369000,
+          "price": 371000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344330"
         },
         "keitaigod": {
@@ -8477,7 +8477,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7430"
         },
         "morimori": {
-          "price": 498000,
+          "price": 501000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344328"
         },
         "keitaigod": {
@@ -8524,7 +8524,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7431"
         },
         "morimori": {
-          "price": 498000,
+          "price": 501000,
           "url": "https://www.morimori-kaitori.jp/category/0301071/product/344332"
         },
         "keitaigod": {
@@ -55625,7 +55625,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026232/20251210/1765359853900-4b7ebbff491d23bd.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-326a28b0d4",
@@ -55656,7 +55661,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026254/20251210/1765355673834-14ad277b3cf0ebb5.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-b2ae93e78a",
@@ -72813,10 +72823,6 @@
         "shinsoku": {
           "price": 20700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 23000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 23000,
@@ -104490,7 +104496,7 @@
       },
       "prices": {
         "homura": {
-          "price": 5200,
+          "price": 5300,
           "url": "https://kaitori-homura.com/products/10627"
         },
         "shouten": {
