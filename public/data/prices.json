@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T16:13:50+09:00",
+  "updated_at": "2026-11-08T16:28:47+09:00",
   "shops": [
     {
       "id": "homura",
@@ -1733,7 +1733,7 @@
           "url": "https://tobansyoji.co.jp/product/sony-%e3%83%97%e3%83%ac%e3%82%a4%e3%82%b9%e3%83%86%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b35-%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e3%83%bb%e3%82%a8%e3%83%87%e3%82%a3%e3%82%b7%e3%83%a7%e3%83%b3-%e6%97%a5/"
         },
         "rudeya": {
-          "price": 50500,
+          "price": 50000,
           "url": "https://kaitori-rudeya.com/product/item/6453"
         },
         "morimori": {
@@ -37452,7 +37452,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 73200,
+          "price": 71100,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -37501,7 +37501,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 73200,
+          "price": 71100,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -37550,7 +37550,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 73200,
+          "price": 70600,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -37599,7 +37599,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4879"
         },
         "guest": {
-          "price": 73200,
+          "price": 71100,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         }
       }
@@ -55656,7 +55656,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026254/20251210/1765355673834-14ad277b3cf0ebb5.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-b2ae93e78a",
@@ -65014,10 +65019,6 @@
           "price": 113000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 125000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 125000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -72702,6 +72703,10 @@
           "price": 19400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 21500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 20000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/014-025-S8A-P-B/"
@@ -72837,6 +72842,10 @@
         "shinsoku": {
           "price": 20700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 23000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 23000,
@@ -87644,10 +87653,6 @@
         "lounge": {
           "price": 11200,
           "url": "https://kaitori.toreca-lounge.com/product/3x0BpZwfJNIbeVr7IluL7X"
-        },
-        "torecabank": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11500,
@@ -104338,7 +104343,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6667"
         },
         "morimori": {
-          "price": 6650,
+          "price": 6600,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/318762"
         },
         "panda": {
