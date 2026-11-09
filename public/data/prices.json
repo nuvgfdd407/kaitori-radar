@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T12:58:49+09:00",
+  "updated_at": "2026-11-09T13:13:47+09:00",
   "shops": [
     {
       "id": "homura",
@@ -386,7 +386,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/11"
         },
         "ichome": {
-          "price": 58800,
+          "price": 58700,
           "url": "https://www.1-chome.com/wineDetail/7049/7079"
         },
         "toban": {
@@ -8320,7 +8320,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27089"
         },
         "ichome": {
-          "price": 368000,
+          "price": 372500,
           "url": "https://www.1-chome.com/productDetail/1656/2324"
         },
         "toban": {
@@ -8414,7 +8414,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27091"
         },
         "ichome": {
-          "price": 418000,
+          "price": 426000,
           "url": "https://www.1-chome.com/productDetail/1657/2327"
         },
         "toban": {
@@ -8465,7 +8465,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27094"
         },
         "ichome": {
-          "price": 498000,
+          "price": 501000,
           "url": "https://www.1-chome.com/productDetail/1658/2330"
         },
         "toban": {
@@ -8512,7 +8512,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27093"
         },
         "ichome": {
-          "price": 498000,
+          "price": 501000,
           "url": "https://www.1-chome.com/productDetail/1658/2330"
         },
         "toban": {
@@ -8563,7 +8563,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27096"
         },
         "ichome": {
-          "price": 604000,
+          "price": 604500,
           "url": "https://www.1-chome.com/productDetail/1659/2333"
         },
         "toban": {
@@ -8610,7 +8610,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27095"
         },
         "ichome": {
-          "price": 604000,
+          "price": 604500,
           "url": "https://www.1-chome.com/productDetail/1659/2333"
         },
         "toban": {
@@ -56915,7 +56915,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12900,
+          "price": 12400,
           "url": "https://kaitori-homura.com/products/5612"
         },
         "kaikyo": {
@@ -58104,10 +58104,6 @@
         "shinsoku": {
           "price": 1910000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 2110000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 2000000,
@@ -61946,6 +61942,10 @@
           "price": 270000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 275000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 260000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/192-173-SM12A-B/"
@@ -65292,6 +65292,10 @@
           "price": 96500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 110000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 100000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/125-098-SV10-B/"
@@ -65963,6 +65967,10 @@
         "torecabank": {
           "price": 115000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 122000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 100000,
@@ -74164,10 +74172,6 @@
           "price": 16000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 19000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 17000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/211-187-SV8A-B/"
@@ -78113,7 +78117,12 @@
         "origin": "https://kaitori-homura.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDUxMTksInB1ciI6ImJsb2JfaWQifX0=--b0106e5dda24f3b8fed3e80d2eeb6cea52d9d395/PDY6AFXZQS88.jpg",
         "source": "買取ホムラ"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 12000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        }
+      }
     },
     {
       "jan": "psa-bfcd19c458",
