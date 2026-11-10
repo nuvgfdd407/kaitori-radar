@@ -1,30 +1,5 @@
 [
   {
-    "time": "2026-10-10T20:13:12+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-10T20:28:12+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-10T20:43:19+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-10T20:58:09+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-11T10:13:17+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-11T10:28:16+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
@@ -6583,5 +6558,10 @@
     "time": "2026-11-09T20:13:00+09:00",
     "shop": "森森買取",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x79a6a064d450>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-10T10:13:54+09:00",
+    "shop": "海峡通信",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x780ee4672350>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
   }
 ]
