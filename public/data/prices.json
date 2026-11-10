@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:28:50+09:00",
+  "updated_at": "2026-11-10T18:43:55+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-10T18:28:50+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -72851,6 +72850,10 @@
           "price": 18800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 20000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 20000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -76917,10 +76920,6 @@
           "price": 11400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 13500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "birth": {
           "price": 11300,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -80626,10 +80625,6 @@
         "lounge": {
           "price": 10800,
           "url": "https://kaitori.toreca-lounge.com/product/1LJrD6c76r8XLBRaYDgRMT"
-        },
-        "torecabank": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11000,
@@ -85078,6 +85073,10 @@
         "shinsoku": {
           "price": 34500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 40000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 42000,
@@ -90315,10 +90314,6 @@
         "lounge": {
           "price": 6700,
           "url": "https://kaitori.toreca-lounge.com/product/4D3sAOMhSvXYDCstNZ1dcU"
-        },
-        "torecabank": {
-          "price": 6800,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 6800,
