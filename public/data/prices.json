@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T19:13:53+09:00",
+  "updated_at": "2026-11-11T19:28:49+09:00",
   "shops": [
     {
       "id": "homura",
@@ -84376,12 +84376,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1788880495_bfdd8fc3b83c65b1a007.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 83000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-63ad7f704e",
@@ -93183,6 +93178,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 130000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 130000,
           "url": "https://store.torecabank.com/kaitori_list"
