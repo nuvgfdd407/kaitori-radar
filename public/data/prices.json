@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T18:13:48+09:00",
+  "updated_at": "2026-11-11T18:28:52+09:00",
   "shops": [
     {
       "id": "homura",
@@ -5015,7 +5015,7 @@
           "url": "https://www.1-chome.com/wineDetail/10447/10480"
         },
         "morimori": {
-          "price": 84000,
+          "price": 88000,
           "url": "https://www.morimori-kaitori.jp/category/0503002/product/339096"
         }
       }
@@ -55693,7 +55693,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400000624/20251210/1765355616059-ac4ff1b31896674a.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-e16c898d03",
@@ -55724,12 +55729,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -72905,7 +72905,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/4RgRby2KYWBpzDuvCKGpaC"
         },
         "shinsoku": {
-          "price": 26300,
+          "price": 27300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -85956,6 +85956,10 @@
           "price": 132000,
           "url": "https://www.morimori-kaitori.jp/category/2401009/product/350904",
           "mode": "郵送"
+        },
+        "shinsoku": {
+          "price": 140000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -107177,7 +107181,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1602"
         },
         "morimori": {
-          "price": 9600,
+          "price": 9700,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/72053"
         }
       }
@@ -107343,7 +107347,7 @@
           "url": "https://kaitori-rudeya.com/product/item/773"
         },
         "morimori": {
-          "price": 4200,
+          "price": 4300,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/300"
         },
         "panda": {
@@ -108167,7 +108171,7 @@
           "url": "https://kaitori-rudeya.com/product/item/3411"
         },
         "morimori": {
-          "price": 3900,
+          "price": 3800,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/878"
         },
         "panda": {
@@ -108223,7 +108227,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4226"
         },
         "morimori": {
-          "price": 3700,
+          "price": 3800,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/149807"
         }
       }
