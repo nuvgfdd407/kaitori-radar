@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T19:58:50+09:00",
+  "updated_at": "2026-11-12T20:13:49+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55689,7 +55689,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -87182,7 +87187,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 234000,
+          "price": 225000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
