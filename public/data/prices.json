@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T20:43:53+09:00",
+  "updated_at": "2026-11-12T20:58:58+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,8 +20,7 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": false,
-      "failing_since": "2026-11-12T20:43:53+09:00"
+      "ok": true
     },
     {
       "id": "ichome",
@@ -78288,10 +78287,6 @@
           "price": 8000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 8700,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 8700,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -78878,6 +78873,10 @@
         "shinsoku": {
           "price": 11400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 15500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 12500,
@@ -85299,10 +85298,6 @@
         "shinsoku": {
           "price": 99000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 110000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 110000,
@@ -106948,10 +106943,6 @@
         "code": "joshin_4902370554359-54-73632"
       },
       "prices": {
-        "homura": {
-          "price": 4800,
-          "url": "https://kaitori-homura.com/products/6887"
-        },
         "shouten": {
           "price": 4800,
           "url": "https://www.kaitorishouten-co.jp/products/detail/26484"
