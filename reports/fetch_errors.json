@@ -1,15 +1,5 @@
 [
   {
-    "time": "2026-10-13T18:28:11+09:00",
-    "shop": "買取ホムラ",
-    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
-  },
-  {
-    "time": "2026-10-13T18:28:11+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-13T18:43:14+09:00",
     "shop": "買取ホムラ",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
@@ -5891,6 +5881,16 @@
   },
   {
     "time": "2026-11-12T18:13:50+09:00",
+    "shop": "トレカクラブ",
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://torecaclub.com/pokemon/psa10/?page=5"
+  },
+  {
+    "time": "2026-11-12T18:28:32+09:00",
+    "shop": "森森買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x777594ba96d0>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-12T18:28:32+09:00",
     "shop": "トレカクラブ",
     "error": "HTTPError: 404 Client Error: Not Found for url: https://torecaclub.com/pokemon/psa10/?page=5"
   }

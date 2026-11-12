@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T18:13:50+09:00",
+  "updated_at": "2026-11-12T18:28:32+09:00",
   "shops": [
     {
       "id": "homura",
@@ -48,7 +48,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-12T18:28:32+09:00"
     },
     {
       "id": "keitaigod",
