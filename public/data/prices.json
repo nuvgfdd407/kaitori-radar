@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T17:43:53+09:00",
+  "updated_at": "2026-11-13T17:58:51+09:00",
   "shops": [
     {
       "id": "homura",
@@ -69290,6 +69290,10 @@
           "price": 36900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 42000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 43000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80475,10 +80479,6 @@
         "shinsoku": {
           "price": 9100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 9600,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
@@ -106208,12 +106208,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600000410/20260207/1770422310912-24956efa1651977a.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 1900000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-722c0a7237",
@@ -106226,12 +106221,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2500003207/20260317/1773683912368-faa47f1256043415.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 1850000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-f66504f8c9",
@@ -106244,12 +106234,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600000411/20260207/1770422311132-33da7e50d791e71b.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 1550000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-ca5736e8a5",
@@ -109709,7 +109694,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5944"
         },
         "morimori": {
-          "price": 2200,
+          "price": 2500,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/294661"
         },
         "panda": {
