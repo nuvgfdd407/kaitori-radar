@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T19:13:56+09:00",
+  "updated_at": "2026-11-13T19:28:52+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,7 +55,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-13T19:28:52+09:00"
     },
     {
       "id": "guest",
@@ -34517,7 +34518,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7473"
         },
         "morimori": {
-          "price": 17800,
+          "price": 18000,
           "url": "https://www.morimori-kaitori.jp/category/0602001/product/344344"
         },
         "keitaigod": {
@@ -74904,10 +74905,6 @@
           "price": 14400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 16000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 16000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80400,10 +80397,6 @@
           "price": 8100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 9500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "birth": {
           "price": 8400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -80709,10 +80702,6 @@
         "shinsoku": {
           "price": 8700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 9600,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 9600,
@@ -94914,10 +94903,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 31000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 31500,
           "url": "https://store.torecabank.com/kaitori_list"
