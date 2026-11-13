@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T18:13:51+09:00",
+  "updated_at": "2026-11-13T18:29:02+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-13T18:29:02+09:00"
     },
     {
       "id": "ichome",
@@ -3982,7 +3983,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5348"
         },
         "morimori": {
-          "price": 38300,
+          "price": 38500,
           "url": "https://www.morimori-kaitori.jp/category/0509/product/281604"
         }
       }
@@ -9158,7 +9159,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6248"
         },
         "morimori": {
-          "price": 184800,
+          "price": 184900,
           "url": "https://www.morimori-kaitori.jp/category/0301066/product/299654"
         },
         "keitaigod": {
@@ -10346,7 +10347,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6281"
         },
         "morimori": {
-          "price": 131000,
+          "price": 131500,
           "url": "https://www.morimori-kaitori.jp/category/0301064/product/299613"
         },
         "keitaigod": {
@@ -10546,7 +10547,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6285"
         },
         "morimori": {
-          "price": 137000,
+          "price": 138000,
           "url": "https://www.morimori-kaitori.jp/category/0301064/product/299617"
         },
         "keitaigod": {
@@ -10596,7 +10597,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6284"
         },
         "morimori": {
-          "price": 141000,
+          "price": 142000,
           "url": "https://www.morimori-kaitori.jp/category/0301064/product/299616"
         },
         "keitaigod": {
@@ -10746,7 +10747,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6289"
         },
         "morimori": {
-          "price": 148000,
+          "price": 149000,
           "url": "https://www.morimori-kaitori.jp/category/0301064/product/299621"
         },
         "keitaigod": {
@@ -28581,7 +28582,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5693"
         },
         "morimori": {
-          "price": 686300,
+          "price": 690500,
           "url": "https://www.morimori-kaitori.jp/category/0202/product/288349"
         }
       }
@@ -58183,6 +58184,10 @@
           "url": "https://www.morimori-kaitori.jp/category/2401009/product/344349",
           "mode": "郵送"
         },
+        "lounge": {
+          "price": 1600000,
+          "url": "https://kaitori.toreca-lounge.com/product/1IIqpK0Q8EcLozqcMalkct"
+        },
         "shinsoku": {
           "price": 1550000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
@@ -65469,8 +65474,8 @@
           "mode": "郵送"
         },
         "lounge": {
-          "price": 87500,
-          "url": "https://kaitori.toreca-lounge.com/product/5eIgeVGIJG7ChIpvetHWKa"
+          "price": 94000,
+          "url": "https://kaitori.toreca-lounge.com/product/3gmW6DJLOnoob9dbZVKTif"
         },
         "shinsoku": {
           "price": 87300,
@@ -67031,10 +67036,6 @@
           "price": 52100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 56000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 58000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -68494,10 +68495,6 @@
         "shinsoku": {
           "price": 35000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 42000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 42000,
@@ -80480,10 +80477,6 @@
           "price": 9100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 9600,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 10000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -80715,6 +80708,10 @@
         "shinsoku": {
           "price": 8700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 9600,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 9600,
@@ -85459,10 +85456,6 @@
           "price": 111000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 135000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 135000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -86051,6 +86044,10 @@
           "price": 34000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a2%e3%82%af%e3%83%ad%e3%83%bc%ef%bc%86%e3%82%a2%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%8a%e3%83%83%e3%82%b7%e3%83%bcgxsa-056-054/",
           "mode": "郵送"
+        },
+        "lounge": {
+          "price": 36100,
+          "url": "https://kaitori.toreca-lounge.com/product/4z7H4syfHOlUS0gGOQhF80"
         },
         "shinsoku": {
           "price": 35600,
@@ -88532,7 +88529,12 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1770461991_c8011fd6a4635c02fe2e.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "lounge": {
+          "price": 6200,
+          "url": "https://kaitori.toreca-lounge.com/product/6MvEGhthetJlqsZeXR4ygi"
+        }
+      }
     },
     {
       "jan": "psa-5bb9429af3",
@@ -91738,7 +91740,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300021792/20261025/1792882954140-9728823703070060.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "lounge": {
+          "price": 106000,
+          "url": "https://kaitori.toreca-lounge.com/product/6n3o86vP5OPULbH2P11WhH"
+        }
+      }
     },
     {
       "jan": "psa-f618ab715c",
@@ -92432,6 +92439,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 92000,
+          "url": "https://kaitori.toreca-lounge.com/product/0LEzzywOJn2SxjpS1GpB5r"
+        },
         "torecabank_store": {
           "price": 110000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -109753,7 +109764,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1803"
         },
         "morimori": {
-          "price": 2300,
+          "price": 2400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/154057"
         }
       }
