@@ -1,35 +1,5 @@
 [
   {
-    "time": "2026-10-17T12:58:17+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-17T13:13:15+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-17T13:28:14+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-17T13:43:17+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-17T13:43:17+09:00",
-    "shop": "ケータイゴッド",
-    "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x7f6869091310>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
-  },
-  {
-    "time": "2026-10-17T13:58:11+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-17T14:13:11+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
@@ -4373,5 +4343,10 @@
     "time": "2026-11-16T12:57:59+09:00",
     "shop": "森森買取",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x727d97dac410>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-16T13:58:15+09:00",
+    "shop": "海峡通信",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x7532a7ccfb10>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
   }
 ]
