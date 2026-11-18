@@ -5,8 +5,8 @@ fetch は {"jan", "name", "price", "url"} の辞書のリストを返す（新�
 店舗を増やすときは、モジュールを作ってここに追加する。並び順は比較表の列の順になる。
 買取wiki（wiki.py）は、2026-10-08 から GitHub Actions からのアクセスを拒否されるようになったので外している。
 """
-from . import (birth, birth_store, club, golden, guest, homura, ichome, kaikyo, keitaigod, lounge, morimori, panda, rudeya, shinsoku,
-               shouten, toban, torecabank, torecabank_store)
+from . import (amemoba, birth, birth_store, club, golden, guest, homura, ichome, kaikyo, keitaigod, lounge, morimori, panda, quick,
+               rakuen, rudeya, shinsoku, shouten, toban, torecabank, torecabank_store)
 
-SHOPS = [homura, shouten, kaikyo, ichome, toban, rudeya, morimori, keitaigod, guest, panda, lounge, shinsoku,
+SHOPS = [homura, shouten, kaikyo, ichome, toban, rudeya, morimori, keitaigod, guest, panda, rakuen, quick, amemoba, lounge, shinsoku,
          torecabank, torecabank_store, club, birth, birth_store, golden]
