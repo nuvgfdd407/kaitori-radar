@@ -18,7 +18,11 @@ WordPress のサイトで、ジャンルごとの買取価格表のページ（/
   PS5 デジタル・エディションは製造時期（「26年9月以前製造 47,500円 26年10月以降製造 45,000円」）で価格が分かれているので、
   高い方を使い、価格の欄をそのまま "note" にする
 - AirPods: 機種ごとの見出し（「AirPods Pro 3 MFHP4J/A」）に型番があり、その下の表に「新品未開封(保証未開始)」の価格がある
-iPad は型番も JAN も載っていないので使わない。Apple Pencil などの周辺機器はカタログにないので取らない。
+- iPad（/p-637/）: 型番も JAN もないので、見出し（「iPad Air 13インチ 第8世代 M4 2026」）と行の容量・ガラスの種類
+  （「512GB標準ガラス」）でカタログの iPad と突き合わせる（scraper.apple.ipad_offer）。「Wi-Fi版(未開封)」の列だけを使い、
+  全色同じ価格（「106,000円 灰-500円」のように色ごとの減額があれば、その色だけ減額）。Cellular の列は
+  「キャリア版(▲未開封)」だけで Apple 版の価格がないので使わない
+Apple Pencil などの周辺機器はカタログにないので取らない。
 """
 import re
 import unicodedata
@@ -27,7 +31,7 @@ from datetime import datetime, timedelta, timezone
 
 from bs4 import BeautifulSoup
 
-from ..apple import apple_offer
+from ..apple import apple_offer, ipad_offer
 from ..phones import phone_color, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -38,6 +42,7 @@ URL = "https://mobax-ohsu.com/"
 
 IPHONE_PAGE = URL + "p-561/"
 AIRPODS_PAGE = URL + "p-662/"
+IPAD_PAGE = URL + "p-637/"
 # Nintendo Switch / PlayStation / Xbox / その他のゲーム機（Steam Deck・Meta Quest・ROG Xbox Ally）
 GAME_PAGES = [URL + f"p-{n}/" for n in (3297, 3305, 3307, 3309)]
 APPLE_STORE_NOTE = "Apple Storeで購入した証明が必要"
@@ -54,7 +59,7 @@ _JAN = re.compile(r"(?<!\d)(\d{12,13})(?!\d)")
 
 
 def fetch(http):
-    return _iphone_offers(http) + _airpods_offers(http) + _game_offers(http)
+    return _iphone_offers(http) + _ipad_offers(http) + _airpods_offers(http) + _game_offers(http)
 
 
 def _iphone_offers(http):
@@ -97,6 +102,22 @@ def _color(key, mark):
         if found := phone_color(key, alias):
             return found
     return None
+
+
+def _ipad_offers(http):
+    offers = []
+    for heading, rows in _tables(http, IPAD_PAGE):
+        if len(rows[0]) < 2 or not rows[0][1].startswith("Wi-Fi版"):
+            continue
+        for row in rows[1:]:
+            base = _PRICE.match(row[1]) if len(row) > 1 else None
+            if base:
+                price = parse_yen(base.group(1))
+                deductions = {mark: price - parse_yen(amount) for mark, amount in _DEDUCTION.findall(row[1])}
+                offer = ipad_offer(f"{heading} {row[0]}", price, IPAD_PAGE, False, deductions)
+                if offer:
+                    offers.append(offer)
+    return offers
 
 
 def _airpods_offers(http):

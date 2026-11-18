@@ -9,9 +9,11 @@ WordPress（TablePress）のサイトで、買取価格のページ（/kaitori_p
   Apple Store で買った証明があれば SIMフリー版も同じ価格という条件なので "note" にする
   （証明がなければ判定△の行の価格になる）。色の欄の「青・黒・白-10,000」「ｵﾚﾝｼﾞ-5,500・ﾌﾞﾙｰ-1,000」は
   色（漢字1文字やカタカナ）ごとの減額なので、全色の価格にする
-- iPad: 「Wi-Fi版・Cellular版 未開封」の行を使い、投稿の下の「[JANコード]」に書かれた JAN（Wi-Fi 版の全色）に
-  同じ価格を当てはめる。JAN のない投稿（iPad Pro M5・iPad Air M4・iPad mini8 など）は突き合わせられない。
-  色の欄に「黄-2000」のような減額がある行は、どの JAN がその色かわからないので使わない
+- iPad: 「Wi-Fi版・Cellular版 未開封」の行（Wi-Fi 版と Apple 版の Cellular 版が同じ価格）を使う。投稿の名前
+  （「13iPad Air8 M4【1TB】」「iPad mini8 [512GB]」）でカタログの iPad の Wi-Fi 版と Cellular 版の全色と突き合わせ
+  （scraper.apple.ipad_offer）、投稿の下の「[JANコード]」に書かれた JAN（Wi-Fi 版の全色）にも同じ価格を当てはめる。
+  色の欄の「黄-2000」「イエロー-1000」は色ごとの減額（この行は JAN ではどれがその色かわからないので、名前だけで突き合わせる）。
+  「Cellular版 未開封 判定△」の行（ネットワーク利用制限が△）は使わない
 - AirPods: 「型番 / カラー / 価格」の表で、行ごとの型番で突き合わせる
 - Pixel: 「[Google]-ストア版 or キャリア版判定〇のみ」の表の「ｽﾄｱ版価格」（SIMフリー）を使う。
   備考の「Fog-1000」「ブルー-3000」は色ごとの減額
@@ -26,7 +28,7 @@ import unicodedata
 
 from bs4 import BeautifulSoup
 
-from ..apple import apple_offer
+from ..apple import apple_offer, ipad_offer
 from ..phones import android_key, phone_color, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -93,10 +95,17 @@ def _iphone_offers(name, rows, url):
 
 def _ipad_offers(name, rows, jans, url):
     row = next((r for r in rows if "未開封" in r[0] and "判定" not in r[0]), None)
-    if not row or row[1] != "全色" or not parse_yen(row[2]):
-        return []  # 色ごとの減額がある行は、どの JAN がその色かわからない
-    offer = apple_offer(name, parse_yen(row[2]), url, text=jans)
-    return [offer] if offer["codes"] else []
+    price = parse_yen(row[2]) if row and len(row) >= 3 else None
+    if not price:
+        return []
+    deductions = {} if row[1] == "全色" else {c: price - parse_yen(a) for c, a in _DEDUCTION.findall(row[1])}
+    if row[1] != "全色" and not deductions:
+        return []
+    offers = [o for o in (ipad_offer(name, price, url, cellular, deductions) for cellular in (False, True)) if o]
+    if not deductions:  # 色ごとの減額がある行は、どの JAN がその色かわからない
+        offer = apple_offer(name, price, url, text=jans)
+        offers += [offer] if offer["codes"] else []
+    return offers
 
 
 def _android_offers(rows, url):

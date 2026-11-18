@@ -180,6 +180,9 @@ iPhone は店舗によって色ごとに別の商品として載っていたり�
 - 突き合わせは JAN と Apple の型番（`scraper/apple.py`）。カタログの `"aliases"` に、その商品の型番と、
   Apple Watch はバンド違いの JAN・型番をすべて書いてある。店舗の出品には `"codes": {型番: 価格}` を付ける
   （ケータイゴッドのように1行に全色の型番が書かれていれば、その全部に同じ価格を当てはめる）
+- 型番も JAN も書かない店舗（カウモバイル・モバックス・ジェーシカ・OnMyPlan・クイック・アメモバ・ダイワン）の iPad は、
+  名前の機種・世代かチップ（「第8世代」「M4」）・画面の大きさ・容量・Wi-Fi/Cellular・Nano-texture と色で、
+  カタログの iPad を探す（`scraper.apple.ipad_offer`）。Cellular 版は Apple 版の価格だけを使い、キャリア版の価格は使わない
 - 定価は Apple Store の今の価格（販売が終わったものは最後の価格）。JAN は Apple が公表していないので、
   複数の店舗の載せている JAN の多数決で決めた（旧モデルで JAN がわからないものは仮のID）
 - 画像は Apple Store の色ごとの画像（Apple Watch はケースだけの画像）

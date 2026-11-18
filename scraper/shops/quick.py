@@ -8,13 +8,15 @@ JAN は載っていない。価格は「未使用品買取価格」（新品・�
 - Galaxy・Xperia・AQUOS: キャリアの欄（「docomo版SIMフリー」「au版」「UQmobile版」など）を android_key に渡す。
   同じ名前で価格の違う行（メモリ違いなど）は android_key が None を返すか、先に出た行だけを使う
 - Mac・Apple Watch: 機種名に型番（「MDVN4J/A」など）が書かれている。型番のない行は使わない
-- iPad: 型番が書かれていないので使わない
+- iPad: 型番が書かれていないので、「iPad Air 11インチ 第8世代 11インチ 1TB」のような名前と、キャリアの欄の
+  「Wi-Fiモデル」「国内版SIMフリー Wi-Fi+Cellular」でカタログの iPad と突き合わせる（scraper.apple.ipad_offer。
+  色の区別はない）。キャリア版の行は使わない
 """
 import re
 
 from bs4 import BeautifulSoup
 
-from ..apple import apple_offer
+from ..apple import apple_offer, ipad_offer
 from ..phones import android_key, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -25,6 +27,7 @@ URL = "https://keitaikoukakaitori.com/"
 
 IPHONE_PAGES = [URL + "price/smartphone/iphone/", URL + "price/smartphone/google-pixel/"]
 ANDROID_PAGES = [URL + "price/smartphone/" + p + "/" for p in ("galaxy", "xperia", "aquos")]
+IPAD_PAGE = URL + "price/tablet/ipad/"
 APPLE_PAGES = [URL + "price/pc/" + p + "/" for p in ("macbook", "mac", "imac")] + [URL + "price/wearable/apple-watch/"]
 # キャリアの欄の書き方 → android_key のキャリア名。UQ mobile 版は au 版として扱う（scraper.phones と同じ）
 _CARRIERS = [("国内版", "SIMフリー"), ("docomo", "docomo"), ("au", "au"), ("UQ", "au"), ("SoftBank", "SoftBank"),
@@ -55,6 +58,11 @@ def fetch(http):
         for _, name, price in _read_rows(http, page):
             offer = apple_offer(name, price, page)
             if offer["codes"]:
+                add(offer, tuple(offer["codes"]))
+    for carrier, name, price in _read_rows(http, IPAD_PAGE):
+        if carrier.startswith("Wi-Fi") or carrier.startswith("国内版SIMフリー"):
+            offer = ipad_offer(name, price, IPAD_PAGE, not carrier.startswith("Wi-Fi"))
+            if offer:
                 add(offer, tuple(offer["codes"]))
     return offers
 

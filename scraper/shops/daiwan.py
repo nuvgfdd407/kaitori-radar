@@ -16,7 +16,11 @@
   M4 の MacBook Air などは、同じ型番でメモリ・SSD・GPU の違う行（カスタマイズモデル）が並んでいるので、
   カタログのその型番の商品名とメモリ・SSD（名前に書かれていれば GPU のコア数も）が同じ行だけを使う。
   標準の構成の行がない型番（M4 の MacBook Air 15インチの多く）は使わない
-iPad・Apple Watch は型番・JAN・色（バンド）が書かれていないので使わない。ゲーム機などは扱っていない。
+- iPad（/product/tablet/ipad）: 「iPad Air 第8世代(M4) 13インチ 1TB 国内版SIMフリー(A3462)」のような名前で
+  カタログの iPad と突き合わせる（scraper.apple.ipad_offer）。「国内版Wi-Fi」と「国内版SIMフリー」（Apple 版の
+  Wi-Fi + Cellular）の行だけを使う。色ごとの減額は iPhone と同じく商品ページの JSON から読む
+  （カタログにある iPad の行の機種ごとに1ページ）
+Apple Watch は型番・JAN・バンドが書かれていないので使わない。ゲーム機などは扱っていない。
 """
 import json
 import re
@@ -24,7 +28,7 @@ from datetime import date, timedelta
 
 from bs4 import BeautifulSoup
 
-from ..apple import apple_codes, apple_offer
+from ..apple import apple_codes, apple_offer, ipad_offer
 from ..common import CATALOG, load_json
 from ..phones import android_key, phone_color, phone_colors, phone_key
 from ..text import parse_yen
@@ -38,6 +42,7 @@ IPHONE_PAGE = URL + "product/sumaho/iphone"
 PIXEL_PAGE = URL + "product/sumaho/pixel"
 ANDROID_PAGES = [URL + "product/sumaho/" + p for p in ("galaxy", "xperia", "aquos")]
 MAC_PAGE = URL + "product/pc/mac"
+IPAD_PAGE = URL + "product/tablet/ipad"
 MAX_AGE = timedelta(days=30)
 # キャリアの欄 → android_key のキャリア名（UQ mobile 版は au 版として扱う。ここにない MVNO 版は使わない）
 _CARRIERS = {"docomo": "docomo", "au": "au", "UQmobile": "au", "SoftBank": "SoftBank", "Rakuten": "楽天モバイル",
@@ -68,6 +73,14 @@ def fetch(http):
             key = android_key(name, _CARRIERS[carrier]) if carrier in _CARRIERS else None
             if key:
                 offers.append({"jan": None, "key": key, "name": name, "price": price, "url": link})
+    ipads = [(name, price, link, carrier == "SIMフリー") for carrier, name, price, link in _read_rows(http, IPAD_PAGE)
+             if carrier in ("SIMフリー", "Wi-Fi") and "国内版" in name and ipad_offer(name, price, link, carrier == "SIMフリー")]
+    differences = _color_differences(http, [link for _, _, link, _ in ipads])
+    for name, price, link, cellular in ipads:
+        colors = {color: price + d for color, d in differences.get(_ITEM_ID.search(link)[1], {}).items()}
+        offer = ipad_offer(name, price, link, cellular, colors)
+        if offer:
+            offers.append(offer)
     specs = _mac_specs()
     for _, name, price, link in _read_rows(http, MAC_PAGE):
         offer = apple_offer(name, price, link)

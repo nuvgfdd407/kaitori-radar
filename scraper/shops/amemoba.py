@@ -8,13 +8,18 @@
 - iPhone・Pixel: 国内版SIMフリーの行だけを使う（キャリア版は別の価格だが、カタログでは同じ商品なので）。
   色ごとの価格は機種ごとのページから読む（扱っている機種のページだけ開く）
 - Galaxy・Xperia・AQUOS: キャリアごとの行を、そのキャリアの商品として使う（色の区別なし）
-iPad・ゲーム機などのページもあるが、JAN も Apple の型番も載っていないので使わない。
+- iPad: 型番も JAN もないので、「iPad Air 11インチ 第8世代 M4チップ Wi-Fi + Cellular 128GB」のような名前で
+  カタログの iPad と突き合わせる（scraper.apple.ipad_offer）。「Wi-Fi」と「SIMフリー」（Apple 版の Wi-Fi + Cellular）の
+  行だけを使い、キャリア版の行は使わない（iPhone と同じ）。色ごとの価格は iPhone と同じく機種ごとのページから読む
+  （Nano-texture は別のページ）。カタログにある iPad の行のページだけ開く
+ゲーム機などのページもあるが、JAN も型番も載っていないので使わない。
 """
 import json
 import re
 
 from bs4 import BeautifulSoup
 
+from ..apple import ipad_offer
 from ..phones import android_key, phone_color, phone_colors, phone_key
 from ..text import parse_yen
 
@@ -25,6 +30,7 @@ URL = "https://amemoba.com/"
 
 IPHONE_PAGES = [URL + "smartphone/iphone/", URL + "smartphone/google-pixel/"]
 ANDROID_PAGES = [URL + "smartphone/galaxy/", URL + "smartphone/xperia/", URL + "smartphone/aquos/"]
+IPAD_PAGE = URL + "tablet/ipad/"
 # 表のキャリア（data-carrier）→ phones.py のキャリア名
 _CARRIERS = {"SIMフリー": "SIMフリー", "docomo": "docomo", "au": "au", "SoftBank": "SoftBank",
              "楽天モバイル": "楽天モバイル", "rakuten": "楽天モバイル", "Y!mobile": "Y!mobile"}
@@ -48,6 +54,18 @@ def fetch(http):
             key = android_key(name, _CARRIERS.get(carrier))
             if key and _CARRIERS.get(carrier):
                 offers.append({"jan": None, "key": key, "name": name, "price": price, "url": link})
+    for carrier, name, price, link in _read_rows(http, IPAD_PAGE):
+        cellular = carrier == "SIMフリー"
+        if carrier not in ("SIMフリー", "Wi-Fi") or not price or not ipad_offer(name, price, link, cellular):
+            continue
+        if link not in pages:
+            pages[link] = _detail_prices(http, link)
+        capacity = re.search(r"\d+[GT]B", name)
+        colors = {color: p for (volume, color), p in pages[link].items() if capacity and volume == capacity[0] and p}
+        # 色ごとの価格が読めればその色だけ、読めなければ一覧の価格を全色に当てはめる（色名が読めない行は使わない）
+        offer = ipad_offer(name, None if colors else price, link, cellular, colors)
+        if offer:
+            offers.append(offer)
     return [o for o in offers if o["price"]]
 
 

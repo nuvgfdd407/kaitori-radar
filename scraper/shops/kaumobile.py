@@ -17,14 +17,18 @@
 - SIMフリー（Pixel・Xperia・AQUOS）: 「Google Pixel 11 Pro 256GB SIMフリー… JAN:…」のような行。機種＋容量（色が
   書かれていればその色）とキャリアで突き合わせ、機種を読めない行（キャリアの書かれていない Xperia など）は JAN で突き合わせる
 - Galaxy: 機種ごとの表に「国内版SIMフリー 256GB」「SC-53G 256GB 制限○」のような行がある。「制限△」の行は使わない
-iPad は世代・容量・色だけで型番も JAN も載っていないので使わない。デジカメ・DJI・Insta360 なども JAN がないので取らない。
+- iPad: 型番も JAN もないので、枠の見出し（「iPad Air 13インチ 第8世代(2026)」）と行の「1TB Nano-texture スターライト」で
+  カタログの iPad と突き合わせる（scraper.apple.ipad_offer）。表の「WiFi 保証未」の列が Wi-Fi 版の価格。
+  Wi-Fi + Cellular 版は「キャリア 保証未」と「SIMフリー 保証未」の列があり、SIMフリーの価格は Apple 版の購入証明が
+  要るので、SIMフリーの方が高いときだけその価格にして、条件を "note" にする
+デジカメ・DJI・Insta360 なども JAN がないので取らない。
 """
 import re
 from datetime import date, timedelta
 
 from bs4 import BeautifulSoup
 
-from ..apple import apple_offer
+from ..apple import apple_offer, ipad_offer
 from ..phones import android_key, one_color, phone_color, phone_key
 from ..text import parse_yen
 
@@ -38,6 +42,9 @@ APPLE_PAGES = ["mac", "applewatch", "airpods"]
 JAN_PAGES = ["game", "game-soft", "instant-camera", "vr", "wearablecamera"]
 MAX_AGE = timedelta(days=30)
 PS5_NOTE = "正規販売店の購入証明書が必要"
+IPAD_NOTE = "Apple版の購入証明が必要"
+# iPad の表の新品の列（Wi-Fi 版 / キャリアの Cellular 版 / Apple 版の Cellular 版）
+_IPAD_COLUMNS = ("WiFi 保証未", "キャリア 保証未", "SIMフリー 保証未")
 WATCH_NOTE = "ネットワーク利用制限が「－」なら購入証明が必要"
 # 表の新品の列の見出し
 _NEW_COLUMNS = {"新品", "未開封新品", "金額", "日本版 保証未"}
@@ -51,7 +58,7 @@ _PS5 = re.compile(r"PlayStation ?5|PlayStation Portal")
 
 
 def fetch(http):
-    offers = _iphone(http) + _galaxy(http) + _simfree(http)
+    offers = _iphone(http) + _galaxy(http) + _simfree(http) + _ipad(http)
     for page in APPLE_PAGES:
         offers += _apple(http, page)
     for page in JAN_PAGES:
@@ -69,6 +76,30 @@ def _iphone(http):
                 phones.setdefault(key, {})[color] = price
     return [{"jan": None, "key": key, "name": key, "price": max(colors.values()), "url": PAGE.format("iphone"),
              "colors": colors} for key, colors in phones.items()]
+
+
+def _ipad(http):
+    offers = []
+    for heading, block in _blocks(http, "ipad"):
+        columns = None
+        for tr in block.select("tr"):
+            cells = [_text(c) for c in tr.find_all(["th", "td"])]
+            if tr.th:
+                if all(c in cells for c in _IPAD_COLUMNS):
+                    columns = [cells.index(c) for c in _IPAD_COLUMNS]
+                continue
+            if not columns or len(cells) <= max(columns) or " " not in cells[0]:
+                continue
+            spec, color = cells[0].rsplit(" ", 1)  # 「512GB Nano-texture」「スターライト」
+            wifi, carrier, simfree = (parse_yen(cells[i]) for i in columns)
+            name = f"{heading} {spec}"
+            offers += [o for o in [ipad_offer(name, None, PAGE.format("ipad"), False, {color: wifi})] if o]
+            cellular = ipad_offer(name, None, PAGE.format("ipad"), True, {color: max(carrier or 0, simfree or 0)})
+            if cellular:
+                if (simfree or 0) > (carrier or 0):
+                    cellular["note"] = IPAD_NOTE
+                offers.append(cellular)
+    return offers
 
 
 def _color(key, label):
