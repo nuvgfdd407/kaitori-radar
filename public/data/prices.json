@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T20:43:36+09:00",
+  "updated_at": "2026-11-18T20:58:36+09:00",
   "shops": [
     {
       "id": "homura",
@@ -153,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-18T20:43:36+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -123876,6 +123875,10 @@
           "price": 12700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 14000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 14000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -129624,6 +129627,10 @@
           "price": 7500,
           "url": "https://kaitori.toreca-lounge.com/product/4inT9cgstWJ0Rn36Mhh5B0"
         },
+        "torecabank": {
+          "price": 7800,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 7800,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -132523,10 +132530,6 @@
         "shinsoku": {
           "price": 142000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 176000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 176000,
@@ -135720,6 +135723,10 @@
         "shinsoku": {
           "price": 12500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 14000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 13000,
