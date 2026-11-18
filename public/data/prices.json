@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T14:13:28+09:00",
+  "updated_at": "2026-11-18T14:28:31+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-18T14:28:31+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-18T14:28:31+09:00"
     },
     {
       "id": "quick",
@@ -10620,7 +10622,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6251"
         },
         "morimori": {
-          "price": 211000,
+          "price": 210000,
           "url": "https://www.morimori-kaitori.jp/category/0301066/product/299655"
         },
         "keitaigod": {
@@ -10686,7 +10688,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6252"
         },
         "morimori": {
-          "price": 210000,
+          "price": 209200,
           "url": "https://www.morimori-kaitori.jp/category/0301066/product/299650"
         },
         "keitaigod": {
@@ -11346,7 +11348,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6270"
         },
         "morimori": {
-          "price": 138000,
+          "price": 136500,
           "url": "https://www.morimori-kaitori.jp/category/0301063/product/299602"
         },
         "keitaigod": {
@@ -64361,12 +64363,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400000624/20251210/1765355616059-ac4ff1b31896674a.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-e16c898d03",
@@ -68792,10 +68789,6 @@
           "price": 431000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 431000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 390000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -71926,6 +71919,10 @@
         "lounge": {
           "price": 219000,
           "url": "https://kaitori.toreca-lounge.com/product/0WCJu0aUeeHqhhRGAKj57U"
+        },
+        "shinsoku": {
+          "price": 225000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
           "price": 230000,
@@ -75074,10 +75071,6 @@
         "torecabank": {
           "price": 77000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 80000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 76000,
@@ -118446,7 +118439,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4605"
         },
         "morimori": {
-          "price": 3300,
+          "price": 3400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/203738"
         },
         "panda": {
@@ -118590,7 +118583,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7023"
         },
         "morimori": {
-          "price": 4850,
+          "price": 5000,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/343462"
         }
       }
@@ -118654,7 +118647,7 @@
           "url": "https://kaitori-rudeya.com/product/item/773"
         },
         "morimori": {
-          "price": 4200,
+          "price": 4100,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/300"
         },
         "panda": {
@@ -119962,7 +119955,7 @@
           "url": "https://www.1-chome.com/wineDetail/10862/10898"
         },
         "morimori": {
-          "price": 3700,
+          "price": 4300,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/343510"
         }
       }
