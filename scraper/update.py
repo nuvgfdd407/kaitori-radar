@@ -3,6 +3,8 @@
     python -m scraper.update
 
 - 店舗ごとに並行して取得する。失敗した店舗は前回の価格を残し、取得エラーとして記録する
+- 決まった時間だけ価格を出している店舗（モジュールに HOURS = (開始の時, 終了の時) がある。買取マッチョは14時〜24時）は、
+  時間外には取りにいかず、価格を載せない（エラーにはしない）
 - 価格や取得状況が前回と同じなら prices.json は書き換えない
   （GitHub Actions で変化があったときだけコミットするため）
 - カタログにない高額商品は reports/unmatched.json に書き出す（新しい本体の登録漏れに気づくため）
@@ -175,6 +177,9 @@ def _record_errors(errors, now):
 
 
 def fetch_shop(shop):
+    hours = getattr(shop, "HOURS", None)
+    if hours and not hours[0] <= datetime.now(JST).hour < hours[1]:
+        return shop, [], None  # 価格を出していない時間
     try:
         # robots.txt でアクセス間隔（Crawl-delay）を指定している店舗は、その間隔にする
         offers = shop.fetch(Http(getattr(shop, "INTERVAL", INTERVAL)))

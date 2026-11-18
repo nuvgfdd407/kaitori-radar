@@ -35,7 +35,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 from .common import CATALOG, load_json, write_catalog
 from .http import INTERVAL, Http
-from .shops import birth, birth_store, club, golden, homura, lounge, morimori, shinsoku, toban, torecabank, torecabank_store
+from .shops import (birth, birth_store, bluerocket, club, golden, homura, lounge, macho, mafia, morimori, shinsoku, toban,
+                    torecabank, torecabank_store)
 
 SERIES = {
     "pokemon": {"id": "psa-pokemon", "name": "PSA鑑定品（ポケモンカード）", "category": "tcg"},
@@ -44,10 +45,10 @@ SERIES = {
 }
 # 名前を付けるときに優先する店舗（トレカラウンジは名前・レアリティ・番号が別々に載っていて読みやすい）
 SHOP_ORDER = ["lounge", "homura", "morimori", "shinsoku", "torecabank", "torecabank_store", "club", "toban", "birth",
-              "birth_store", "golden"]
+              "birth_store", "golden", "bluerocket", "mafia", "macho"]
 SHOPS = {"lounge": lounge, "homura": homura, "morimori": morimori, "shinsoku": shinsoku, "torecabank": torecabank,
          "torecabank_store": torecabank_store, "club": club, "toban": toban, "birth": birth, "birth_store": birth_store,
-         "golden": golden}
+         "golden": golden, "bluerocket": bluerocket, "mafia": mafia, "macho": macho}
 # カタログにないカードでも商品を追加しない店舗（番号が略してあり、ほかの店舗のカードと突き合わせられなくなる）
 NO_NEW = {"golden"}
 # 名前を見ずに番号だけで突き合わせてよいゲーム（番号に収録弾が入っている）
@@ -56,7 +57,7 @@ PRICE_RATIO = 2
 # 画像を使う店舗（先のものほど優先。カード単体の画像の店舗が先で、PSA のケースごと写した画像の店舗（SLAB_SHOPS）は後）
 IMAGE_SHOPS = {name: SHOPS[name].NAME
                for name in ["lounge", "homura", "club", "birth", "birth_store", "torecabank", "torecabank_store", "golden",
-                            "shinsoku", "morimori"]}
+                            "bluerocket", "mafia", "macho", "shinsoku", "morimori"]}
 SLAB_SHOPS = {"shinsoku", "morimori"}
 
 
