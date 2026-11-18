@@ -1,10 +1,5 @@
 [
   {
-    "time": "2026-10-19T20:42:41+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-19T20:57:43+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
@@ -4226,6 +4221,16 @@
   },
   {
     "time": "2026-11-18T20:28:31+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-18T20:43:36+09:00",
+    "shop": "ハチ買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='hachiden.com', port=443): Max retries exceeded with url: /api/public/banner (Caused by ConnectTimeoutError(<HTTPSConnection(host='hachiden.com', port=443) at 0x73fecd9ebd90>, 'Connection to hachiden.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-18T20:43:36+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
