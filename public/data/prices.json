@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T13:43:30+09:00",
+  "updated_at": "2026-11-18T13:58:32+09:00",
   "shops": [
     {
       "id": "homura",
@@ -9483,7 +9483,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-512gb/"
         },
         "rudeya": {
-          "price": 401000,
+          "price": 401500,
           "url": "https://kaitori-rudeya.com/product/item/7428"
         },
         "morimori": {
@@ -9534,7 +9534,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-duo-512gb/"
         },
         "rudeya": {
-          "price": 401000,
+          "price": 401500,
           "url": "https://kaitori-rudeya.com/product/item/7429"
         },
         "morimori": {
@@ -9691,7 +9691,7 @@
       },
       "prices": {
         "homura": {
-          "price": 580000,
+          "price": 575000,
           "url": "https://kaitori-homura.com/products/7300"
         },
         "shouten": {
@@ -60417,7 +60417,7 @@
           "url": "https://tobansyoji.co.jp/product/%e3%80%90sv4a%e3%80%91%e3%82%b7%e3%83%a3%e3%82%a4%e3%83%8b%e3%83%bc%e3%83%88%e3%83%ac%e3%82%b8%e3%83%a3%e3%83%bcex/"
         },
         "rudeya": {
-          "price": 16000,
+          "price": 15000,
           "url": "https://kaitori-rudeya.com/product/item/6316"
         },
         "morimori": {
@@ -64348,7 +64348,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026232/20251210/1765359853900-4b7ebbff491d23bd.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-326a28b0d4",
@@ -64392,12 +64397,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -66384,10 +66384,6 @@
         "shinsoku": {
           "price": 2460000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 2590000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 2590000,
@@ -74113,10 +74109,6 @@
         "shinsoku": {
           "price": 89500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 103000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 94000,
@@ -95326,6 +95318,10 @@
         "torecabank": {
           "price": 5000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 5500,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
