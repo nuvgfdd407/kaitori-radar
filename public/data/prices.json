@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T12:13:28+09:00",
+  "updated_at": "2026-11-19T12:28:37+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-19T12:28:37+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-19T12:28:37+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-19T12:28:37+09:00"
     },
     {
       "id": "guild",
@@ -593,7 +596,7 @@
           "url": "https://game.sakumoba.jp/nintendo/switch2/nintendo-switch-2-bee-s-kb6pe/"
         },
         "kaumobile": {
-          "price": 52800,
+          "price": 53300,
           "url": "https://kaumobile.jp/category/game/"
         },
         "aboutec": {
@@ -1232,7 +1235,7 @@
           "url": "https://game.sakumoba.jp/nintendo/switch/nintendo-switch-oled/"
         },
         "kaumobile": {
-          "price": 40300,
+          "price": 40500,
           "url": "https://kaumobile.jp/category/game/"
         },
         "aboutec": {
@@ -1759,7 +1762,7 @@
           "url": "https://game.sakumoba.jp/nintendo/switch/nintendo-switch-had-s-kabah/"
         },
         "kaumobile": {
-          "price": 37500,
+          "price": 37800,
           "url": "https://kaumobile.jp/category/game/"
         },
         "aboutec": {
@@ -2269,7 +2272,7 @@
           "url": "https://game.sakumoba.jp/nintendo/switch-lite/nintendo-switch-lite-hdh-s-gazaa/"
         },
         "kaumobile": {
-          "price": 25800,
+          "price": 25900,
           "url": "https://kaumobile.jp/category/game/"
         },
         "aboutec": {
@@ -2465,7 +2468,7 @@
           "url": "https://game.sakumoba.jp/nintendo/switch-lite/nintendo-switch-lite-hdh-s-bazaa/"
         },
         "kaumobile": {
-          "price": 25800,
+          "price": 25900,
           "url": "https://kaumobile.jp/category/game/"
         },
         "aboutec": {
@@ -3373,7 +3376,7 @@
           "url": "https://game.sakumoba.jp/playstation/playstation5-pro/playstation-5-pro-cfi-7100b01/"
         },
         "kaumobile": {
-          "price": 206700,
+          "price": 208700,
           "url": "https://kaumobile.jp/category/game/",
           "note": "正規販売店の購入証明書が必要"
         },
@@ -3457,7 +3460,7 @@
           "url": "https://game.sakumoba.jp/playstation/playstation5-pro/playstation5-pro-cfi-7000b01/"
         },
         "kaumobile": {
-          "price": 206700,
+          "price": 208700,
           "url": "https://kaumobile.jp/category/game/",
           "note": "正規販売店の購入証明書が必要"
         },
@@ -3734,7 +3737,7 @@
           "url": "https://game.sakumoba.jp/playstation/playstation5/playstation5-cfij-10032/"
         },
         "kaumobile": {
-          "price": 56600,
+          "price": 56000,
           "url": "https://kaumobile.jp/category/game/",
           "note": "正規販売店の購入証明書が必要"
         },
@@ -5089,6 +5092,10 @@
           "price": 51000,
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
+        "dragon": {
+          "price": 49000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
         "aboutec": {
           "price": 46500,
           "url": "https://www.aboutec.jp/purchase/?pid=1792722545-384385"
@@ -5156,7 +5163,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=258&cat3=&page=1"
         },
         "kaumobile": {
-          "price": 119500,
+          "price": 119800,
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
@@ -5280,7 +5287,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=258&cat3=&page=1"
         },
         "kaumobile": {
-          "price": 108000,
+          "price": 108200,
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
@@ -7179,7 +7186,7 @@
           "url": "https://www.keitairakuen.com/product/xbox-elite-%e3%83%af%e3%82%a4%e3%83%a4%e3%83%ac%e3%82%b9-%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc-%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba-2-%e3%83%96%e3%83%a9%e3%83%83%e3%82%af/"
         },
         "kaumobile": {
-          "price": 18200,
+          "price": 18300,
           "url": "https://kaumobile.jp/category/game/"
         },
         "mirai": {
@@ -7410,6 +7417,33 @@
         "kaumobile": {
           "price": 20500,
           "url": "https://kaumobile.jp/category/game/"
+        }
+      }
+    },
+    {
+      "jan": "4549576159607",
+      "series": "xbox-controller",
+      "name": "Xbox ワイヤレス ヘッドセット",
+      "model": "TLL-00003",
+      "msrp": 10978,
+      "image": {
+        "src": "/images/4549576159607.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/asakusa-mach/4549576159607.html",
+        "seller": "浅草マッハ",
+        "code": "asakusa-mach_4549576159607"
+      },
+      "prices": {
+        "shouten": {
+          "price": 5500,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/9174"
+        },
+        "rudeya": {
+          "price": 5000,
+          "url": "https://kaitori-rudeya.com/product/item/1193"
+        },
+        "mirai": {
+          "price": 5500,
+          "url": "https://kaitori-mirai.com/xbox-%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9-%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-7"
         }
       }
     },
@@ -11450,7 +11484,7 @@
           "url": "https://game.sakumoba.jp/steam-deck/valve-steam-deck-oled/steam-deck-oled-zen2/"
         },
         "kaumobile": {
-          "price": 135500,
+          "price": 135800,
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
@@ -11527,7 +11561,7 @@
           "url": "https://game.sakumoba.jp/steam-deck/valve-steam-deck-oled/steam-deck-oled-zen2/"
         },
         "kaumobile": {
-          "price": 161600,
+          "price": 161800,
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
@@ -11744,7 +11778,7 @@
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "kaumobile": {
-          "price": 173000,
+          "price": 178000,
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
@@ -11908,7 +11942,7 @@
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=2"
         },
         "kaumobile": {
-          "price": 20200,
+          "price": 20300,
           "url": "https://kaumobile.jp/category/game/"
         },
         "mirai": {
@@ -12563,7 +12597,7 @@
           "url": "https://game.sakumoba.jp/playstation/playstation5/sony-playstation5-cfij-17000/"
         },
         "kaumobile": {
-          "price": 44300,
+          "price": 44500,
           "url": "https://kaumobile.jp/category/vr/"
         },
         "kaden": {
@@ -12649,7 +12683,7 @@
           "url": "https://game.sakumoba.jp/playstation/playstation5/sony-playstation5-cfij-17001/"
         },
         "kaumobile": {
-          "price": 44300,
+          "price": 44500,
           "url": "https://kaumobile.jp/category/vr/"
         },
         "kaden": {
@@ -12708,7 +12742,7 @@
           "url": "https://kaitori-rudeya.com/product/item/553"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "kaumobile": {
@@ -12763,7 +12797,7 @@
           "url": "https://kaitori-rudeya.com/product/item/775"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "kaumobile": {
@@ -12818,7 +12852,7 @@
           "url": "https://kaitori-rudeya.com/product/item/776"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "kaumobile": {
@@ -12873,7 +12907,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1216"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "kaumobile": {
@@ -12928,7 +12962,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1217"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "rakuen": {
@@ -12987,7 +13021,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1218"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "rakuen": {
@@ -13046,7 +13080,7 @@
           "url": "https://kaitori-rudeya.com/product/item/2199"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=9"
         },
         "rakuen": {
@@ -13420,7 +13454,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5253"
         },
         "panda": {
-          "price": 8700,
+          "price": 8400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=7"
         },
         "rakuen": {
@@ -15109,6 +15143,51 @@
       }
     },
     {
+      "jan": "4948872417938",
+      "series": "ps5-controller",
+      "name": "DualSense Edge ワイヤレスコントローラー（新型）ミッドナイト ブラック",
+      "model": "CFI-ZCP2J01",
+      "msrp": 34980,
+      "image": {
+        "src": "/images/4948872417938.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/joshin/4948872417938-54-62526.html",
+        "seller": "Joshin web",
+        "code": "joshin_4948872417938-54-62526"
+      },
+      "prices": {
+        "shouten": {
+          "price": 26000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/26981"
+        },
+        "rudeya": {
+          "price": 26000,
+          "url": "https://kaitori-rudeya.com/product/item/7372"
+        }
+      }
+    },
+    {
+      "jan": "4948872417969",
+      "series": "ps5-controller",
+      "name": "DualSense Edge ワイヤレスコントローラー（新型）",
+      "model": "CFI-ZCP2J",
+      "msrp": 34980,
+      "image": {
+        "src": "/images/4948872417969.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/dualsense-edge-wireless-controller/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?fmt=png-alpha"
+      },
+      "prices": {
+        "shouten": {
+          "price": 26000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/26982"
+        },
+        "rudeya": {
+          "price": 26000,
+          "url": "https://kaitori-rudeya.com/product/item/7371"
+        }
+      }
+    },
+    {
       "jan": "4948872416504",
       "series": "ps5-controller",
       "name": "DualSense Edge ワイヤレスコントローラー 30周年アニバーサリー リミテッドエディション",
@@ -15152,6 +15231,398 @@
         "mirai": {
           "price": 40000,
           "url": "https://kaitori-mirai.com/dualsense-edge-%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC-30%E5%91%A8%E5%B9%B4%E3%82%A2%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AA%E3%83%BC-%E3%83%AA%E3%83%9F%E3%83%86%E3%83%83%E3%83%89%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3-cfi-zcp1j30"
+        }
+      }
+    },
+    {
+      "jan": "4948872416030",
+      "series": "ps5-controller",
+      "name": "PS5 ディスクドライブ",
+      "model": "CFI-ZDD1J",
+      "msrp": 11980,
+      "image": {
+        "src": "/images/4948872416030.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/disc-drive-image-block-01-en-22nov23?fmt=png-alpha"
+      },
+      "prices": {
+        "homura": {
+          "price": 8500,
+          "url": "https://kaitori-homura.com/products/5088"
+        },
+        "kaikyo": {
+          "price": 9000,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "ichome": {
+          "price": 8500,
+          "url": "https://www.1-chome.com/wineDetail/5526/5526"
+        },
+        "rudeya": {
+          "price": 9000,
+          "url": "https://kaitori-rudeya.com/product/item/5251"
+        },
+        "keitaigod": {
+          "price": 9000,
+          "url": "https://keitai-god.com/price/model.php?moid=4867"
+        },
+        "guest": {
+          "price": 9000,
+          "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
+        },
+        "panda": {
+          "price": 8500,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
+        },
+        "dragon": {
+          "price": 7000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 8000,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "kaden": {
+          "price": 8700,
+          "url": "https://www.kaden-ichiba.com/item/detail/Z3DRIU75GO"
+        },
+        "mirai": {
+          "price": 8500,
+          "url": "https://kaitori-mirai.com/ps5-%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96slim%E3%83%A2%E3%83%87%E3%83%AB%E7%94%A8-cfi-zdd1j"
+        },
+        "tojo": {
+          "price": 8500,
+          "url": "https://kaitoritojo.jp/products/cmpv852vr00va01r48d49c0x8"
+        },
+        "guild": {
+          "price": 8500,
+          "url": "https://kaitoriguild.co.jp/catalog?q=4948872416030"
+        },
+        "mobax": {
+          "price": 7000,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        },
+        "jcka": {
+          "price": 9200,
+          "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-sony-2/"
+        },
+        "base": {
+          "price": 9100,
+          "url": "https://kaitori-base.com/?p=67"
+        }
+      }
+    },
+    {
+      "jan": "4948872415064",
+      "series": "ps5-controller",
+      "name": "DualSense 充電スタンド",
+      "model": "CFI-ZDS1J",
+      "msrp": 3980,
+      "image": {
+        "src": "/images/4948872415064.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-charging-station-image-block-02-en-22nov23?fmt=png-alpha"
+      },
+      "prices": {
+        "homura": {
+          "price": 2500,
+          "url": "https://kaitori-homura.com/products/5061"
+        },
+        "shouten": {
+          "price": 3000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/9650"
+        },
+        "kaikyo": {
+          "price": 2800,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 2500,
+          "url": "https://kaitori-rudeya.com/product/item/554"
+        },
+        "kaumobile": {
+          "price": 2000,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "kaden": {
+          "price": 2900,
+          "url": "https://www.kaden-ichiba.com/item/detail/Z3KQCZLPVP"
+        },
+        "mirai": {
+          "price": 2900,
+          "url": "https://kaitori-mirai.com/ps5-dualsense%E5%85%85%E9%9B%BB%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89-cfi-zds1j-7"
+        },
+        "mobax": {
+          "price": 1800,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872415125",
+      "series": "ps5-controller",
+      "name": "PULSE 3D ワイヤレスヘッドセット",
+      "model": "CFI-ZWH1J",
+      "msrp": 12980,
+      "image": {
+        "src": "/images/4948872415125.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/pulse-3d-wireless-headset/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-product-thumbnail-01-en-14sep21?fmt=png-alpha"
+      },
+      "prices": {
+        "kaikyo": {
+          "price": 9500,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 9500,
+          "url": "https://kaitori-rudeya.com/product/item/558"
+        },
+        "dragon": {
+          "price": 8000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 8500,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "mirai": {
+          "price": 9500,
+          "url": "https://kaitori-mirai.com/ps5-pulse-3d-%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88-cfi-zwh1j"
+        },
+        "mobax": {
+          "price": 8500,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872415248",
+      "series": "ps5-controller",
+      "name": "PULSE 3D ワイヤレスヘッドセット ミッドナイト ブラック",
+      "model": "CFI-ZWH1J01",
+      "msrp": 12980,
+      "image": {
+        "src": "/images/4948872415248.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/noahshoping/4948872415248.html",
+        "seller": "ノア商社Yahoo!店",
+        "code": "noahshoping_4948872415248"
+      },
+      "prices": {
+        "kaikyo": {
+          "price": 9500,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 9500,
+          "url": "https://kaitori-rudeya.com/product/item/1224"
+        },
+        "dragon": {
+          "price": 8000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 8500,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "mirai": {
+          "price": 9500,
+          "url": "https://kaitori-mirai.com/ps5-pulse-3d-%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%83%96%E3%83%A9%E3%83%83%E3%82%AFcfi-zwh1j01"
+        },
+        "mobax": {
+          "price": 8500,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872415804",
+      "series": "ps5-controller",
+      "name": "PULSE 3D ワイヤレスヘッドセット グレー カモフラージュ",
+      "model": "CFI-ZWH1J06",
+      "msrp": 12980,
+      "image": {
+        "src": "/images/4948872415804.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/famicom-plaza/986202212.html",
+        "seller": "ファミコンプラザ本店",
+        "code": "famicom-plaza_986202212"
+      },
+      "prices": {
+        "kaikyo": {
+          "price": 9500,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 9500,
+          "url": "https://kaitori-rudeya.com/product/item/1820"
+        },
+        "dragon": {
+          "price": 8000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 8500,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "mirai": {
+          "price": 9500,
+          "url": "https://kaitori-mirai.com/ps5-pulse-3d-%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%82%B0%E3%83%AC%E3%83%BC-cfi-zwh1j06"
+        },
+        "mobax": {
+          "price": 8500,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872416207",
+      "series": "ps5-controller",
+      "name": "PULSE Elite ワイヤレスヘッドセット",
+      "model": "CFI-ZWH2J",
+      "msrp": 22980,
+      "image": {
+        "src": "/images/4948872416207.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/pulse-elite-wireless-headset/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?fmt=png-alpha"
+      },
+      "prices": {
+        "shouten": {
+          "price": 14200,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/17697"
+        },
+        "kaikyo": {
+          "price": 13000,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 13000,
+          "url": "https://kaitori-rudeya.com/product/item/4430"
+        },
+        "dragon": {
+          "price": 13000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 12000,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "mobax": {
+          "price": 11000,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872416610",
+      "series": "ps5-controller",
+      "name": "PULSE Elite ワイヤレスヘッドセット ミッドナイト ブラック",
+      "model": "CFI-ZWH2J01",
+      "msrp": 22980,
+      "image": {
+        "src": "/images/4948872416610.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/joshin/4948872416610-54-62526.html",
+        "seller": "Joshin web",
+        "code": "joshin_4948872416610-54-62526"
+      },
+      "prices": {
+        "shouten": {
+          "price": 10100,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/22142"
+        },
+        "kaikyo": {
+          "price": 10000,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 10100,
+          "url": "https://kaitori-rudeya.com/product/item/5513"
+        },
+        "dragon": {
+          "price": 9000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        },
+        "kaumobile": {
+          "price": 9000,
+          "url": "https://kaumobile.jp/category/game/"
+        }
+      }
+    },
+    {
+      "jan": "4948872415088",
+      "series": "ps5-controller",
+      "name": "PS5 メディアリモコン",
+      "model": "CFI-ZMR1J",
+      "msrp": 3980,
+      "image": {
+        "src": "/images/4948872415088.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/media-remote/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/media-remote-product-thumbnail-01-en-14sep21?fmt=png-alpha"
+      },
+      "prices": {
+        "kaikyo": {
+          "price": 1500,
+          "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
+        },
+        "rudeya": {
+          "price": 1900,
+          "url": "https://kaitori-rudeya.com/product/item/557"
+        },
+        "kaumobile": {
+          "price": 1000,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "kaden": {
+          "price": 1900,
+          "url": "https://www.kaden-ichiba.com/item/detail/Z3DN0UPPLM"
+        },
+        "mobax": {
+          "price": 500,
+          "url": "https://mobax-ohsu.com/p-3305/"
+        }
+      }
+    },
+    {
+      "jan": "4948872416245",
+      "series": "ps5-controller",
+      "name": "PULSE Explore ワイヤレスイヤホン",
+      "model": "CFI-ZWE1J",
+      "msrp": 22980,
+      "image": {
+        "src": "/images/4948872416245.jpg",
+        "url": "https://www.playstation.com/ja-jp/accessories/pulse-explore-wireless-earbuds/",
+        "origin": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Explore-earbuds-thumbnail-01-en-12sep23?fmt=png-alpha"
+      },
+      "prices": {
+        "rudeya": {
+          "price": 20000,
+          "url": "https://kaitori-rudeya.com/product/item/3949"
+        },
+        "dragon": {
+          "price": 18000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
+        }
+      }
+    },
+    {
+      "jan": "4948872416641",
+      "series": "ps5-controller",
+      "name": "PULSE Explore ワイヤレスイヤホン ミッドナイト ブラック",
+      "model": "CFI-ZWE1J01",
+      "msrp": 22980,
+      "image": {
+        "src": "/images/4948872416641.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/joshin/4948872416641-54-62526.html",
+        "seller": "Joshin web",
+        "code": "joshin_4948872416641-54-62526"
+      },
+      "prices": {
+        "rudeya": {
+          "price": 16000,
+          "url": "https://kaitori-rudeya.com/product/item/5512"
+        },
+        "dragon": {
+          "price": 16000,
+          "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=257&cat3=&page=2"
         }
       }
     },
@@ -15291,7 +15762,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 204000,
+          "price": 205000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15420,7 +15891,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 202500,
+          "price": 203500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15549,7 +16020,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 202500,
+          "price": 203500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15678,7 +16149,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 201000,
+          "price": 202000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15803,7 +16274,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 237500,
+          "price": 238000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15845,7 +16316,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 241000,
+          "price": 241500,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-512gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -15932,7 +16403,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 237500,
+          "price": 238000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -15974,7 +16445,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 241000,
+          "price": 241500,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-512gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16061,7 +16532,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro/apple-store-iphone18-pro-simfree/"
         },
         "kaumobile": {
-          "price": 237500,
+          "price": 238000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -16103,7 +16574,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 241000,
+          "price": 241500,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-512gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16232,7 +16703,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 235000,
+          "price": 235500,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-512gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16494,7 +16965,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-1tb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16627,7 +17098,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-1tb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16760,7 +17231,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 295000,
+          "price": 296000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-1tb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16839,7 +17310,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 361000,
+          "price": 360000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18-pro/apple-iphone18-pro-simfree/"
         },
         "dragon": {
@@ -16964,7 +17435,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 361000,
+          "price": 350000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18-pro/apple-iphone18-pro-simfree/"
         },
         "dragon": {
@@ -17089,7 +17560,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 361000,
+          "price": 350000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18-pro/apple-iphone18-pro-simfree/"
         },
         "dragon": {
@@ -17214,7 +17685,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 361000,
+          "price": 350000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18-pro/apple-iphone18-pro-simfree/"
         },
         "dragon": {
@@ -17839,7 +18310,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 246000,
+          "price": 245000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "sakumoba": {
@@ -17847,7 +18318,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "kaumobile": {
-          "price": 258500,
+          "price": 259000,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -17955,7 +18426,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 246000,
+          "price": 245000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "sakumoba": {
@@ -17963,7 +18434,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "kaumobile": {
-          "price": 258500,
+          "price": 259500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -18071,7 +18542,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 246000,
+          "price": 245000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "sakumoba": {
@@ -18079,7 +18550,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "kaumobile": {
-          "price": 258500,
+          "price": 260500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -18187,7 +18658,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 246000,
+          "price": 245000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "sakumoba": {
@@ -18319,7 +18790,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone18-pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "kaumobile": {
-          "price": 326000,
+          "price": 325500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -18795,7 +19266,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 380000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "dragon": {
@@ -18924,7 +19395,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 380000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "dragon": {
@@ -19053,7 +19524,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 380000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "dragon": {
@@ -19182,7 +19653,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 380000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-18pro-max/apple-store-iphone18-pro-max-simfree/"
         },
         "dragon": {
@@ -19320,7 +19791,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 355500,
+          "price": 353500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19434,7 +19905,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 355500,
+          "price": 353500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19536,7 +20007,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 376000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -19548,7 +20019,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 395500,
+          "price": 389500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19650,7 +20121,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 381000,
+          "price": 376000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -19662,7 +20133,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 395500,
+          "price": 390500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19709,7 +20180,7 @@
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
-          "price": 395000,
+          "price": 396000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -19768,7 +20239,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 460000,
+          "price": 450000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -19780,7 +20251,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 469500,
+          "price": 463500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19881,7 +20352,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 460000,
+          "price": 450000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -19893,7 +20364,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 469500,
+          "price": 463500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -19998,7 +20469,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 560000,
+          "price": 550000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -20010,7 +20481,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 568500,
+          "price": 562500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -20107,7 +20578,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 560000,
+          "price": 550000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-duo/apple-store-iphone-duo-simfree/"
         },
         "dragon": {
@@ -20119,7 +20590,7 @@
           "url": "https://sakumoba.jp/smartphone/iphone/iphone-duo/apple-store-iphone-duo/"
         },
         "kaumobile": {
-          "price": 568500,
+          "price": 562500,
           "url": "https://kaumobile.jp/category/iphone/"
         },
         "aboutec": {
@@ -20352,7 +20823,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 171000,
+          "price": 172000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17-pro/apple-iphone17-pro-simfree/"
         },
         "sakumoba": {
@@ -20477,7 +20948,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 171000,
+          "price": 172000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17-pro/apple-iphone17-pro-simfree/"
         },
         "sakumoba": {
@@ -21088,7 +21559,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 200000,
+          "price": 199000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17-pro/apple-iphone17-pro-simfree/"
         },
         "sakumoba": {
@@ -22760,7 +23231,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 131000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17/apple-store-iphone17-simfree/"
         },
         "sakumoba": {
@@ -22875,7 +23346,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 131000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17/apple-store-iphone17-simfree/"
         },
         "sakumoba": {
@@ -22990,7 +23461,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 131000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17/apple-store-iphone17-simfree/"
         },
         "sakumoba": {
@@ -23105,7 +23576,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 131000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17/apple-store-iphone17-simfree/"
         },
         "sakumoba": {
@@ -23220,7 +23691,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 131000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-17/apple-store-iphone17-simfree/"
         },
         "sakumoba": {
@@ -23736,7 +24207,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 158200,
+          "price": 166200,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90512gb%e3%80%91/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -24507,7 +24978,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 136000,
+          "price": 138000,
           "url": "https://amemoba.com/smartphone/iphone/iphoneair/apple-store-iphone-air-simfree/"
         },
         "sakumoba": {
@@ -24623,7 +25094,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 136000,
+          "price": 138000,
           "url": "https://amemoba.com/smartphone/iphone/iphoneair/apple-store-iphone-air-simfree/"
         },
         "sakumoba": {
@@ -24739,7 +25210,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 136000,
+          "price": 138000,
           "url": "https://amemoba.com/smartphone/iphone/iphoneair/apple-store-iphone-air-simfree/"
         },
         "sakumoba": {
@@ -26381,7 +26852,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 153000,
+          "price": 154000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-16-pro/apple-store-iphone16-pro-simfree/"
         },
         "sakumoba": {
@@ -26476,7 +26947,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 153000,
+          "price": 154000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-16-pro/apple-store-iphone16-pro-simfree/"
         },
         "sakumoba": {
@@ -26571,7 +27042,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 153000,
+          "price": 154000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-16-pro/apple-store-iphone16-pro-simfree/"
         },
         "sakumoba": {
@@ -26666,7 +27137,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
-          "price": 153000,
+          "price": 154000,
           "url": "https://amemoba.com/smartphone/iphone/iphone-16-pro/apple-store-iphone16-pro-simfree/"
         },
         "sakumoba": {
@@ -39486,7 +39957,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 100000,
+          "price": 100500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -39588,7 +40059,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 100000,
+          "price": 100500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -39690,7 +40161,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 100000,
+          "price": 100500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -39792,7 +40263,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 100000,
+          "price": 100500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -40110,7 +40581,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 113500,
+          "price": 114000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -40212,7 +40683,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 113500,
+          "price": 114000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -40314,7 +40785,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 113500,
+          "price": 114000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -40416,7 +40887,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air8-m4-11inch/wifi-ipad-air8-m4-11inch/"
         },
         "kaumobile": {
-          "price": 113500,
+          "price": 114000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -57616,7 +58087,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 118000,
+          "price": 119000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -57682,7 +58153,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 118000,
+          "price": 119000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -57880,7 +58351,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 145500,
+          "price": 147000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -57942,7 +58413,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 145500,
+          "price": 147000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -106994,7 +107465,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 7800,
+          "price": 8000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -107256,7 +107727,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 7700,
+          "price": 7800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -107345,7 +107816,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 11300,
+          "price": 11500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -108184,7 +108655,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 10000,
+          "price": 10200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -108445,7 +108916,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 15000,
+          "price": 15200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -108533,7 +109004,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 11100,
+          "price": 11200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -108778,7 +109249,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 11800,
+          "price": 12000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -108862,7 +109333,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 11500,
+          "price": 11600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -109190,7 +109661,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 9600,
+          "price": 9800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -109274,7 +109745,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 14200,
+          "price": 14500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -109447,7 +109918,7 @@
           "url": "https://www.masai-tcg.com/products/item-4bd7281724"
         },
         "mafia": {
-          "price": 47000,
+          "price": 47500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -109527,12 +109998,12 @@
           "url": "https://www.masai-tcg.com/products/item-2093740c72"
         },
         "mafia": {
-          "price": 10600,
+          "price": 10700,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 10200,
+          "price": 10400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -109603,12 +110074,12 @@
           "url": "https://www.masai-tcg.com/products/item-f97689914d"
         },
         "mafia": {
-          "price": 9800,
+          "price": 10000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 10100,
+          "price": 10400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -109754,7 +110225,7 @@
           "url": "https://www.masai-tcg.com/products/item-14b81bf18d"
         },
         "mafia": {
-          "price": 13000,
+          "price": 13800,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -109834,7 +110305,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 10400,
+          "price": 10500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -110115,7 +110586,7 @@
           "url": "https://www.masai-tcg.com/products/item-d87b60427f"
         },
         "mafia": {
-          "price": 48000,
+          "price": 47000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -116271,7 +116742,7 @@
       },
       "prices": {
         "homura": {
-          "price": 9100,
+          "price": 9600,
           "url": "https://kaitori-homura.com/products/6968"
         },
         "rudeya": {
@@ -118709,7 +119180,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/6m0tEQjAxs46C54iLGMCjy"
         },
         "torecabank": {
-          "price": 560000,
+          "price": 570000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -120545,10 +121016,6 @@
           "price": 310000,
           "url": "https://kaitori.toreca-lounge.com/product/5StoA7MaQLsLLr1glHxsDv"
         },
-        "shinsoku": {
-          "price": 298000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
         "torecabank": {
           "price": 319000,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -120754,10 +121221,6 @@
         "shinsoku": {
           "price": 264000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 280000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 295000,
@@ -121071,11 +121534,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
-          "price": 259000,
+          "price": 263000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 260000,
+          "price": 263000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
@@ -121490,6 +121953,14 @@
         "shinsoku": {
           "price": 295000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 300000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 300000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 292000,
@@ -122296,11 +122767,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
-          "price": 152000,
+          "price": 167000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 152000,
+          "price": 167000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
@@ -122988,6 +123459,14 @@
         "shinsoku": {
           "price": 141000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 160000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 160000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 140000,
@@ -125181,10 +125660,6 @@
         "shinsoku": {
           "price": 100000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 114000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 105000,
@@ -127566,7 +128041,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/6n85qjgaVy9cesJKItBW8H"
         },
         "shinsoku": {
-          "price": 48000,
+          "price": 46000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
@@ -127880,10 +128355,6 @@
         "shinsoku": {
           "price": 48600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 55000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 55000,
@@ -129727,10 +130198,6 @@
           "price": 38000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 38000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 38000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/126-100-SV9-B/"
@@ -131247,10 +131714,6 @@
           "price": 23900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 26000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 26000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -132192,10 +132655,6 @@
         "shinsoku": {
           "price": 23000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 25000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 25000,
@@ -134287,6 +134746,10 @@
         "shinsoku": {
           "price": 14400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 17000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 17000,
@@ -138696,7 +139159,7 @@
           "mode": "郵送"
         },
         "shinsoku": {
-          "price": 20000,
+          "price": 19000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank_store": {
@@ -142904,7 +143367,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/6DI6btLAyye9OgxcRjuqhs"
         },
         "torecabank": {
-          "price": 7700,
+          "price": 8000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -146158,7 +146621,7 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
-          "price": 325000,
+          "price": 330000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -147169,11 +147632,11 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
-          "price": 44000,
+          "price": 45000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 44000,
+          "price": 45000,
           "url": "https://store.torecabank.com/kaitori_list"
         }
       }
@@ -149056,7 +149519,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7drRiMH9ErBUCTpTImfIPd"
         },
         "torecabank": {
-          "price": 15000,
+          "price": 16000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -149870,7 +150333,7 @@
       },
       "prices": {
         "torecabank": {
-          "price": 360000,
+          "price": 370000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -150747,6 +151210,10 @@
           "price": 9100,
           "url": "https://kaitori.toreca-lounge.com/product/65ozwcSDizE1UcEIi9ppMO"
         },
+        "torecabank": {
+          "price": 9400,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9400,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -151171,6 +151638,14 @@
         "shinsoku": {
           "price": 190000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 220000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 220000,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -151363,10 +151838,6 @@
           "price": 4000,
           "url": "https://bluerocket-tcg.com/products/483",
           "mode": "郵送"
-        },
-        "torecabank_store": {
-          "price": 5100,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -154965,7 +155436,7 @@
       },
       "prices": {
         "torecabank": {
-          "price": 8800,
+          "price": 9000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -156041,7 +156512,7 @@
       },
       "prices": {
         "torecabank": {
-          "price": 31000,
+          "price": 32000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -156334,7 +156805,7 @@
       },
       "prices": {
         "torecabank": {
-          "price": 60000,
+          "price": 62000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
@@ -157016,7 +157487,16 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1789704587_ace54d4a77d432b9296f.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 95000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 95000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-60a26de4f8",
@@ -157663,12 +158143,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/THGRO8kdXWOWUiGAuM14eAKFt7HoMRFeFWQH0G4u.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 192000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-0cf5d38707",
@@ -157785,7 +158260,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/wnTPzdaXTNHLAGxgyIIBRxyW41YUFdk6aoSfH8Rf.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 28000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-23c5329eaa",
@@ -157804,7 +158284,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/0yEDySFenylQ1MeChDpKBU"
         },
         "shinsoku": {
-          "price": 8800,
+          "price": 26400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
@@ -158197,6 +158677,10 @@
         "lounge": {
           "price": 9500,
           "url": "https://kaitori.toreca-lounge.com/product/7f5g3Z06Q8aUTgEI8Mkq8P"
+        },
+        "shinsoku": {
+          "price": 8800,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -159172,7 +159656,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/8yKE4rQ5gYfvssutot8N7VPErjWi0qF6eLRlV9r1.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 20200,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-aa04167585",
@@ -160703,7 +161192,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/jNlOr7U6pnChJOCTaxVAdFW9RykXsykZIefe7HL6.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 36000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-ced2d67704",
@@ -160850,7 +161344,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2600000543/20260918/1789672971057-b93df3e4fee0680e.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 6400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-0cd4dce0af",
@@ -160964,7 +161463,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/Lqj33X997EmEq0CM65sfbNUPnBqiF2WmpU91Vibw.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 11400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-a6f0d94185",
@@ -161094,7 +161598,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2400003510/20260827/1787771728538-dabd285cd1a49ba9.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 10200,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-7371d0ae60",
@@ -161142,7 +161651,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/S14fifHjNr1XP1KtcXEVjKJ0OSbxktQaxp8qpUdQ.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 13600,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-6a424649f6",
@@ -161170,7 +161684,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 7600,
+          "price": 7500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -161212,12 +161726,7 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/6198ec56-9b33-46ba-a56d-5e7f914f7a6e.png",
         "source": "トレカバース"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 88000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-976d1539a4",
@@ -161230,7 +161739,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600012793/20260806/1785961805464-2c89cd1b17f89a90.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 26400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-bd6e6d3d91",
@@ -161300,7 +161814,12 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/369deada-0e29-42e7-8ef2-7fd18fb92f09.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 6700,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-05be00a78b",
@@ -161361,7 +161880,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/FgkHvYDgW6Cjj823Cz5DwK1cdS755AGc68RJvlw2.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 21400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-8c4e9ab4ba",
@@ -161374,7 +161898,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2300025512/20260827/1787775535612-0e487f3a32bf9d88.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 21500,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-086d7d7801",
@@ -161444,7 +161973,12 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/108af433-5586-4584-a13c-7cae6a81e3d1.20231105_f85283.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 10800,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-acbe8d3acf",
@@ -161490,7 +162024,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 14000,
+          "price": 14100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -161523,6 +162057,10 @@
         "lounge": {
           "price": 21100,
           "url": "https://kaitori.toreca-lounge.com/product/3dZi7tBUoJTsiQcEH32H1y"
+        },
+        "shinsoku": {
+          "price": 17500,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -161610,6 +162148,10 @@
         "lounge": {
           "price": 6400,
           "url": "https://kaitori.toreca-lounge.com/product/5nZ72DvyDbKxg5UdoGTbJQ"
+        },
+        "shinsoku": {
+          "price": 6400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -161637,7 +162179,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2400001886/20260823/1787429018171-b01d517e9d93a5b2.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 6000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-f8b2c096e5",
@@ -161650,12 +162197,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2500000400/20260116/1768528530985-5aa97897b260b10c.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 19600,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-91bc161a59",
@@ -161729,6 +162271,10 @@
         "lounge": {
           "price": 14600,
           "url": "https://kaitori.toreca-lounge.com/product/0wVngbM0FEW6ZULFs7i5zw"
+        },
+        "shinsoku": {
+          "price": 14400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -161823,12 +162369,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600019407/20261104/1793726762848-eb6cd4f90dac5125.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 184000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-cc8f61a7eb",
@@ -161867,7 +162408,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAO2600005482/20260618/1781735556326-8786555cd80aedd5.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 6400,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-71a3a77dda",
@@ -161882,7 +162428,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 6000,
+          "price": 6800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -161898,7 +162444,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAX2600009850/20260630/1782766844781-a4dc7efb87671c57.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 8000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "psa-d3353c13db",
@@ -161913,7 +162464,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 14600,
+          "price": 14700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -172826,7 +173377,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=260&cat3=&page=1"
         },
         "kaumobile": {
-          "price": 4700,
+          "price": 4800,
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "pocket": {
@@ -173245,7 +173796,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=260&cat3=&page=1"
         },
         "kaumobile": {
-          "price": 6900,
+          "price": 6700,
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "pocket": {
@@ -175073,7 +175624,7 @@
       },
       "prices": {
         "homura": {
-          "price": 12800,
+          "price": 13000,
           "url": "https://kaitori-homura.com/products/10843"
         },
         "shouten": {
@@ -175129,7 +175680,7 @@
           "url": "https://kaitoritojo.jp/products/cmvsz4lna02ig01qyy9p3wnqj"
         },
         "guild": {
-          "price": 12800,
+          "price": 13000,
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370554564"
         },
         "jcka": {
@@ -176427,6 +176978,217 @@
         "mobax": {
           "price": 10000,
           "url": "https://mobax-ohsu.com/p-3297/"
+        }
+      }
+    },
+    {
+      "jan": "4902370552911",
+      "series": "switch-controller",
+      "name": "Nintendo Switch 2 ドックセット",
+      "model": "BEE-A-CASAA",
+      "msrp": 14980,
+      "image": {
+        "src": "/images/4902370552911.jpg",
+        "url": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html",
+        "origin": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/dockSet_switcher_img01.png"
+      },
+      "prices": {
+        "shouten": {
+          "price": 11100,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/23176"
+        },
+        "rudeya": {
+          "price": 9000,
+          "url": "https://kaitori-rudeya.com/product/item/5933"
+        },
+        "morimori": {
+          "price": 10600,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294704"
+        },
+        "panda": {
+          "price": 11000,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=2"
+        },
+        "kaumobile": {
+          "price": 10200,
+          "url": "https://kaumobile.jp/category/game/"
+        },
+        "mirai": {
+          "price": 11000,
+          "url": "https://kaitori-mirai.com/nintendo-switch-2-%E3%83%89%E3%83%83%E3%82%AF%E3%82%BB%E3%83%83%E3%83%88"
+        }
+      }
+    },
+    {
+      "jan": "4902370552607",
+      "series": "switch-controller",
+      "name": "Nintendo Switch 2 ACアダプター",
+      "model": "BEE-A-ASSKA",
+      "msrp": 3980,
+      "image": {
+        "src": "/images/4902370552607.jpg",
+        "url": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html",
+        "origin": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/ac-adaptor_switcher_img01.png"
+      },
+      "prices": {
+        "shouten": {
+          "price": 3100,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/24129"
+        },
+        "rudeya": {
+          "price": 3000,
+          "url": "https://kaitori-rudeya.com/product/item/5992"
+        },
+        "morimori": {
+          "price": 2700,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294708"
+        },
+        "panda": {
+          "price": 2800,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=3"
+        },
+        "mirai": {
+          "price": 2800,
+          "url": "https://kaitori-mirai.com/nintendo-switch-2-ac%E3%82%A2%E3%83%80%E3%83%97%E3%82%BF%E3%83%BC"
+        }
+      }
+    },
+    {
+      "jan": "4902370552829",
+      "series": "switch-controller",
+      "name": "Joy-Con 2 充電グリップ",
+      "model": "BEE-A-ESSKA",
+      "msrp": 3980,
+      "image": {
+        "src": "/images/4902370552829.jpg",
+        "url": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html",
+        "origin": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/joyCon-grip_switcher_img01.png"
+      },
+      "prices": {
+        "shouten": {
+          "price": 3000,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/23174"
+        },
+        "rudeya": {
+          "price": 2300,
+          "url": "https://kaitori-rudeya.com/product/item/5886"
+        },
+        "morimori": {
+          "price": 2700,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294702"
+        },
+        "panda": {
+          "price": 3200,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=3"
+        },
+        "mirai": {
+          "price": 3000,
+          "url": "https://kaitori-mirai.com/nintendo-switch-joy-con-2-%E5%85%85%E9%9B%BB%E3%82%B0%E3%83%AA%E3%83%83%E3%83%97"
+        }
+      }
+    },
+    {
+      "jan": "4902370552621",
+      "series": "switch-controller",
+      "name": "Joy-Con 2 ハンドル 2個セット",
+      "model": "BEE-A-BU2AA",
+      "msrp": 2480,
+      "image": {
+        "src": "/images/4902370552621.jpg",
+        "url": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html",
+        "origin": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/joyCon-handle_switcher_img01.png"
+      },
+      "prices": {
+        "shouten": {
+          "price": 1200,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/23175"
+        },
+        "rudeya": {
+          "price": 1200,
+          "url": "https://kaitori-rudeya.com/product/item/5934"
+        },
+        "morimori": {
+          "price": 1200,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294703"
+        }
+      }
+    },
+    {
+      "jan": "4902370552782",
+      "series": "switch-controller",
+      "name": "Nintendo Switch 2 カメラ",
+      "model": "BEE-A-CNSKA",
+      "msrp": 5980,
+      "image": {
+        "src": "/images/4902370552782.jpg",
+        "url": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html",
+        "origin": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/camera_switcher_img01.png"
+      },
+      "prices": {
+        "rudeya": {
+          "price": 2000,
+          "url": "https://kaitori-rudeya.com/product/item/5930"
+        },
+        "morimori": {
+          "price": 1800,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294705"
+        },
+        "panda": {
+          "price": 2000,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
+        }
+      }
+    },
+    {
+      "jan": "4961818028876",
+      "series": "switch-controller",
+      "name": "太鼓の達人専用コントローラー 太鼓とバチ for Nintendo Switch",
+      "model": "NSW-079",
+      "msrp": 7678,
+      "image": {
+        "src": "/images/4961818028876.jpg",
+        "url": "https://store.shopping.yahoo.co.jp/joshin/4961818028876-54-62525.html",
+        "seller": "Joshin web",
+        "code": "joshin_4961818028876-54-62525"
+      },
+      "prices": {
+        "shouten": {
+          "price": 5500,
+          "url": "https://www.kaitorishouten-co.jp/products/detail/13444"
+        },
+        "rudeya": {
+          "price": 5000,
+          "url": "https://kaitori-rudeya.com/product/item/4980"
+        },
+        "morimori": {
+          "price": 5100,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/70210"
+        }
+      }
+    },
+    {
+      "jan": "4961818039032",
+      "series": "switch-controller",
+      "name": "USBカメラ パックンフラワー for Nintendo Switch 2",
+      "model": "NSX-001",
+      "msrp": 4980,
+      "image": {
+        "src": "/images/4961818039032.jpg",
+        "url": "https://hori.jp/products/nsx/nsx-001/",
+        "origin": "https://hori.jp/image/2025/04/d11215fa8b063dcc22e42ccf8b4c93d1.jpg"
+      },
+      "prices": {
+        "rudeya": {
+          "price": 2000,
+          "url": "https://kaitori-rudeya.com/product/item/5935"
+        },
+        "morimori": {
+          "price": 1800,
+          "url": "https://www.morimori-kaitori.jp/category/0104003/product/294715"
+        },
+        "panda": {
+          "price": 2500,
+          "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
         }
       }
     },
