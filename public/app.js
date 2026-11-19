@@ -14,11 +14,11 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 const safeUrl = (u) => (/^https?:\/\//.test(u || '') ? u : null);
 // 取得できていない店舗の価格が、何日前に取れたものか（日本時間の日付で数える。build.py の age_label と同じ）
 const jstDay = (d) => Math.floor((d.getTime() + 9 * 3600e3) / 864e5);
-const ageLabel = (shop) => {
-  const days = jstDay(new Date()) - jstDay(new Date(shop.failing_since));
-  return days > 0 ? `${days}日前` : '今日';
+// 取れなくなったのが今日なら表記は出さない（1日前から出す）
+const staleTag = (shop) => {
+  const days = shop.ok || !shop.failing_since ? 0 : jstDay(new Date()) - jstDay(new Date(shop.failing_since));
+  return days > 0 ? `<span class="tag">${days}日前の価格</span>` : '';
 };
-const staleTag = (shop) => (shop.ok || !shop.failing_since ? '' : `<span class="tag">${ageLabel(shop)}の価格</span>`);
 
 // ---- 切れた画像の差し替え -------------------------------------------------------
 

@@ -346,12 +346,12 @@ def shop_label(shop, offer=None, short=False):
 
 
 def _price_title(shop):
-    return f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（{shop["age_label"]}に取得した価格）'
+    return f'{shop["name"]}で見る' if shop["ok"] or not shop["age_label"] else f'{shop["name"]}（{shop["age_label"]}に取得した価格）'
 
 
 def _age(shop):
-    """取得できていない店舗の価格の横に出す、いつの価格か（「2日前」）。"""
-    return "" if shop["ok"] else f'<small class="price-age">{esc(shop["age_label"])}</small>'
+    """取得できていない店舗の価格の横に出す、いつの価格か（「2日前」）。取れなくなったのが今日なら出さない。"""
+    return "" if shop["ok"] or not shop["age_label"] else f'<small class="price-age">{esc(shop["age_label"])}</small>'
 
 
 def _offer_note(offer):

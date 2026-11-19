@@ -303,9 +303,9 @@ def write_sitemap(paths, updated_at):
 
 
 def age_label(iso, today):
-    """その時刻の日付が今日から何日前か（「今日」「1日前」）。"""
+    """その時刻の日付が今日から何日前か（「1日前」）。今日なら空（表記は1日前から出す）。"""
     days = (date.fromisoformat(today) - datetime.fromisoformat(iso).astimezone(JST).date()).days
-    return f"{days}日前" if days > 0 else "今日"
+    return f"{days}日前" if days > 0 else ""
 
 
 def format_time(iso):
