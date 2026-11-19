@@ -132,7 +132,7 @@ a { color: var(--brand); }
 .breadcrumb { font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
 .breadcrumb a { color: var(--muted); }
 
-/* お知らせ（取得エラーなど） */
+/* お知らせ（比較リストの注意など） */
 .alert {
   background: var(--warn-bg);
   border: 1px solid var(--warn-line);
@@ -286,6 +286,8 @@ a { color: var(--brand); }
 .shop-price a:hover { text-decoration: underline; }
 .shop-prices .is-best .shop-price a { color: var(--best-text); font-weight: 700; }
 .shop-prices .is-stale .shop-price a { color: var(--muted); font-style: italic; }
+/* 取得できていない店舗の価格の横の「2日前」 */
+.price-age { margin-left: 4px; font-size: 11px; font-weight: 400; color: var(--muted); white-space: nowrap; }
 .shop-diff { text-align: right; color: var(--muted); font-size: 12px; }
 .item-more { display: inline-block; margin: 6px 0 0 8px; font-size: 13px; }
 

@@ -12,6 +12,13 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 }[c]));
 // 店舗サイトなどから取ってきたURLなので、http(s) 以外は使わない
 const safeUrl = (u) => (/^https?:\/\//.test(u || '') ? u : null);
+// 取得できていない店舗の価格が、何日前に取れたものか（日本時間の日付で数える。build.py の age_label と同じ）
+const jstDay = (d) => Math.floor((d.getTime() + 9 * 3600e3) / 864e5);
+const ageLabel = (shop) => {
+  const days = jstDay(new Date()) - jstDay(new Date(shop.failing_since));
+  return days > 0 ? `${days}日前` : '今日';
+};
+const staleTag = (shop) => (shop.ok || !shop.failing_since ? '' : `<span class="tag">${ageLabel(shop)}の価格</span>`);
 
 // ---- 切れた画像の差し替え -------------------------------------------------------
 
@@ -456,7 +463,7 @@ function renderPlan({ plan, bestTotal, unsellable, byShop }) {
         const label = `${esc(it.p.name)} × ${it.qty}`;
         const url = safeUrl(it.url);
         const name = url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>` : label;
-        const stale = g.shop.ok ? '' : '<span class="tag">前回取得時の価格</span>';
+        const stale = staleTag(g.shop);
         return `<li>${name}<span>${yen(it.price * it.qty)}${stale}</span></li>`;
       }).join('')}</ul>
     </div>`).join('');
@@ -476,7 +483,7 @@ function renderByShop({ byShop }, itemCount) {
       ? `<span class="tag">${s.missing.length}点は取扱なし</span>`
       : '<span class="tag">全商品OK</span>';
     const best = i === 0 && top !== null ? ' class="is-best"' : '';
-    const stale = s.shop.ok ? '' : '<span class="tag">前回取得時の価格</span>';
+    const stale = staleTag(s.shop);
     return `<tr${best}><th scope="row">${esc(s.shop.name)} ${note}${stale}</th>
       <td class="num price">${s.total ? yen(s.total) : '—'}</td>
       <td class="num diff">${top !== null && !s.missing.length && i > 0 ? '−' + yen(top - s.total) : ''}</td></tr>`;

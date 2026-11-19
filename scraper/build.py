@@ -79,7 +79,8 @@ def prepare(data, catalog):
     shops = data["shops"]
     for shop in shops:
         if not shop["ok"]:
-            shop["failing_label"] = format_time(shop["failing_since"])
+            # 取得できなくなった店舗の価格は、最後に取れた日の価格なので、価格の横に「2日前」のように出す
+            shop["age_label"] = age_label(shop["failing_since"], today)
     for index, p in enumerate(data["products"]):
         prices = [(s, p["prices"][s["id"]]["price"]) for s in shops if s["id"] in p["prices"]]
         best = max((price for _, price in prices), default=None)
@@ -299,6 +300,12 @@ def write_sitemap(paths, updated_at):
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n",
         encoding="utf-8",
     )
+
+
+def age_label(iso, today):
+    """その時刻の日付が今日から何日前か（「今日」「1日前」）。"""
+    days = (date.fromisoformat(today) - datetime.fromisoformat(iso).astimezone(JST).date()).days
+    return f"{days}日前" if days > 0 else "今日"
 
 
 def format_time(iso):

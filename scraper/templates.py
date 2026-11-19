@@ -101,7 +101,6 @@ def page(site, *, path, title, description, active, content, controls="", breadc
   </header>
 
   <main class="inner">
-{_alerts(site)}
     <div class="controls">
       {_nav(site, active, path)}
       {controls}
@@ -146,15 +145,6 @@ def _chips(items, active, path):
         current = f' aria-current="{"page" if href == path else "true"}"' if key == active else ""
         links.append(f'<a class="chip" href="{href}"{current}>{esc(name)}</a>')
     return "".join(links)
-
-
-def _alerts(site):
-    return "".join(
-        f'    <div class="alert" role="status">⚠ {esc(s["name"])}の価格を取得できていません'
-        f'（{esc(s["failing_label"])}から）。'
-        f'{"取得できない期間が長いため、価格は表示していません" if s.get("hidden") else "前回取得した価格を表示しています"}。</div>\n'
-        for s in site["shops"] if not s["ok"]
-    )
 
 
 def _notes(site):
@@ -333,11 +323,10 @@ def _shop_prices(p, shops):
     for shop, offer in offers:
         best = offer["price"] == p["best"]
         diff = "最高値" if best else signed_yen(offer["price"] - p["best"])
-        title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         classes = " ".join(c for c in ["is-best" if best else "", "is-stale" if not shop["ok"] else ""] if c)
         items.append(
             f'<li class="{classes}"><span class="shop-name">{esc(shop_label(shop, offer))}{_offer_note(offer)}</span>'
-            f'<span class="shop-price">{_link(offer.get("url"), yen(offer["price"]), title)}</span>'
+            f'<span class="shop-price">{_link(offer.get("url"), yen(offer["price"]), _price_title(shop))}{_age(shop)}</span>'
             f'<span class="shop-diff">{diff}</span></li>'
         )
     if not items:
@@ -354,6 +343,15 @@ def shop_label(shop, offer=None, short=False):
     name = shop["short" if short else "name"]
     mode = (offer or {}).get("mode")
     return f"{name}({mode})" if mode and not name.endswith(")") else name
+
+
+def _price_title(shop):
+    return f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（{shop["age_label"]}に取得した価格）'
+
+
+def _age(shop):
+    """取得できていない店舗の価格の横に出す、いつの価格か（「2日前」）。"""
+    return "" if shop["ok"] else f'<small class="price-age">{esc(shop["age_label"])}</small>'
 
 
 def _offer_note(offer):
@@ -383,10 +381,9 @@ def item_content(site, p, series, siblings, shops):
         diff = offer["price"] - p["best"]
         diff_label = "最高値" if diff == 0 else signed_yen(diff)
         classes = " ".join(c for c in ["is-best" if diff == 0 else "", "is-stale" if not shop["ok"] else ""] if c)
-        title = f'{shop["name"]}で見る' if shop["ok"] else f'{shop["name"]}（前回取得時の価格）'
         rows.append(
             f'<tr class="{classes}"><th scope="row">{esc(shop_label(shop, offer))}{_offer_note(offer)}</th>'
-            f'<td class="num price">{_link(offer.get("url"), yen(offer["price"]), title)}</td>'
+            f'<td class="num price">{_link(offer.get("url"), yen(offer["price"]), _price_title(shop))}{_age(shop)}</td>'
             f'<td class="num diff">{diff_label}</td></tr>'
         )
     for shop in missing:
