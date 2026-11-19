@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T16:43:22+09:00",
+  "updated_at": "2026-11-19T16:58:23+09:00",
   "shops": [
     {
       "id": "homura",
@@ -316,7 +316,8 @@
       "short": "ゴールデン(郵送)",
       "url": "https://buy-gh.tokyo/",
       "ok": false,
-      "failing_since": "2026-11-16T16:58:14+09:00"
+      "failing_since": "2026-11-16T16:58:14+09:00",
+      "hidden": true
     }
   ],
   "products": [
@@ -3236,7 +3237,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 50500,
+          "price": 50300,
           "url": "https://www.1-chome.com/wineDetail/7825/7855"
         },
         "toban": {
@@ -3394,7 +3395,7 @@
           "url": "https://kaitoritojo.jp/products/cmr8xr4mi00m001mfsompfjs4"
         },
         "guild": {
-          "price": 210700,
+          "price": 211200,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872417075"
         },
         "mobax": {
@@ -7175,7 +7176,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/11013"
         },
         "kaikyo": {
-          "price": 19300,
+          "price": 19400,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/03"
         },
         "rudeya": {
@@ -18174,7 +18175,7 @@
       },
       "prices": {
         "homura": {
-          "price": 226000,
+          "price": 225000,
           "url": "https://kaitori-homura.com/products/7265"
         },
         "shouten": {
@@ -18424,7 +18425,7 @@
       },
       "prices": {
         "homura": {
-          "price": 226000,
+          "price": 224000,
           "url": "https://kaitori-homura.com/products/7271"
         },
         "shouten": {
@@ -20797,6 +20798,10 @@
         "base": {
           "price": 572000,
           "url": "https://kaitori-base.com/?p=9907"
+        },
+        "mobilemix": {
+          "price": 570000,
+          "url": "https://mobile-mix.jp/?category=7"
         }
       }
     },
@@ -20906,6 +20911,10 @@
         "base": {
           "price": 572000,
           "url": "https://kaitori-base.com/?p=9907"
+        },
+        "mobilemix": {
+          "price": 570000,
+          "url": "https://mobile-mix.jp/?category=7"
         }
       }
     },
@@ -71996,7 +72005,7 @@
         },
         "kaden": {
           "price": 53500,
-          "url": "https://www.kaden-ichiba.com/item/detail/Z3IEO1VALM"
+          "url": "https://www.kaden-ichiba.com/item/detail/Z3VZ4AKDLA"
         }
       }
     },
@@ -75891,7 +75900,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26833"
         },
         "kaikyo": {
-          "price": 107000,
+          "price": 105000,
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
@@ -75980,7 +75989,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26830"
         },
         "kaikyo": {
-          "price": 107000,
+          "price": 105000,
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
@@ -76069,7 +76078,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26831"
         },
         "kaikyo": {
-          "price": 107000,
+          "price": 105000,
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
@@ -76158,7 +76167,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26832"
         },
         "kaikyo": {
-          "price": 107000,
+          "price": 105000,
           "url": "https://www.mobile-ichiban.com/Prod/1/13/14"
         },
         "ichome": {
@@ -76667,7 +76676,7 @@
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e5%85%a8%e3%82%ad%e3%83%a3%e3%83%aa%e3%82%a2google/"
         },
         "base": {
-          "price": 141000,
+          "price": 139000,
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
@@ -76756,7 +76765,7 @@
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e5%85%a8%e3%82%ad%e3%83%a3%e3%83%aa%e3%82%a2google/"
         },
         "base": {
-          "price": 141000,
+          "price": 139000,
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
@@ -76845,7 +76854,7 @@
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e5%85%a8%e3%82%ad%e3%83%a3%e3%83%aa%e3%82%a2google/"
         },
         "base": {
-          "price": 141000,
+          "price": 139000,
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
@@ -76934,7 +76943,7 @@
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e5%85%a8%e3%82%ad%e3%83%a3%e3%83%aa%e3%82%a2google/"
         },
         "base": {
-          "price": 141000,
+          "price": 139000,
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
@@ -115508,7 +115517,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026232/20251210/1765359853900-4b7ebbff491d23bd.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-326a28b0d4",
@@ -115557,12 +115571,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -118393,10 +118402,6 @@
         "birth_store": {
           "price": 3000000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 2900000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -118441,10 +118446,6 @@
         "birth_store": {
           "price": 3000000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 2500000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -118493,10 +118494,6 @@
         "birth_store": {
           "price": 2550000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 2250000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -118541,10 +118538,6 @@
         "birth_store": {
           "price": 2550000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 2250000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -118721,10 +118714,6 @@
         "birth_store": {
           "price": 2200000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 1950000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -118769,10 +118758,6 @@
         "birth_store": {
           "price": 2300000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 1900000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119029,10 +119014,6 @@
         "birth_store": {
           "price": 1560000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 1330000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119218,10 +119199,6 @@
         "birth_store": {
           "price": 1210000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 1020000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119407,10 +119384,6 @@
         "birth_store": {
           "price": 950000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 880000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119508,10 +119481,6 @@
         "birth_store": {
           "price": 892000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 840000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119588,10 +119557,6 @@
         "birth_store": {
           "price": 735000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 630000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119744,10 +119709,6 @@
         "shinsoku": {
           "price": 870000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "golden": {
-          "price": 800000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -119807,10 +119768,6 @@
         "birth_store": {
           "price": 708000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 645000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -120429,10 +120386,6 @@
         "birth_store": {
           "price": 577000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 540000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -120720,10 +120673,6 @@
         "birth_store": {
           "price": 352000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 415000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -120894,10 +120843,6 @@
         "birth_store": {
           "price": 390000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 380000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -121162,10 +121107,6 @@
         "birth_store": {
           "price": 447000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 440000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -121613,6 +121554,10 @@
           "price": 301000,
           "url": "https://kaitori.toreca-lounge.com/product/2A4XZ31qSK7QD9myfasvmO"
         },
+        "shinsoku": {
+          "price": 298000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
         "club": {
           "price": 320000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/005-SM-P/"
@@ -121792,10 +121737,6 @@
         "birth_store": {
           "price": 453000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 400000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -122255,10 +122196,6 @@
           "price": 264000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 280000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 280000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/288-SV-P/"
@@ -122679,10 +122616,6 @@
         "birth_store": {
           "price": 269000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 245000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -122916,10 +122849,6 @@
         "birth_store": {
           "price": 242000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 240000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -122969,10 +122898,6 @@
         "birth_store": {
           "price": 247000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 225000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123021,10 +122946,6 @@
         "birth_store": {
           "price": 292000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 220000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123074,10 +122995,6 @@
         "birth_store": {
           "price": 167000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 140000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123211,10 +123128,6 @@
         "birth_store": {
           "price": 171000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 168000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123321,10 +123234,6 @@
         "birth_store": {
           "price": 246000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 220000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123379,10 +123288,6 @@
         "birth_store": {
           "price": 218000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 200000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123432,10 +123337,6 @@
         "birth_store": {
           "price": 204000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 190000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -123796,10 +123697,6 @@
         "birth_store": {
           "price": 189000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 180000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -124049,10 +123946,6 @@
         "birth_store": {
           "price": 191000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 170000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -124305,7 +124198,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7aZKWDxDuc5KlU53xJz2QC"
         },
         "shinsoku": {
-          "price": 177000,
+          "price": 173000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -124323,10 +124216,6 @@
         "birth_store": {
           "price": 182000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 175000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -124381,10 +124270,6 @@
         "birth_store": {
           "price": 164000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 145000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -124673,10 +124558,6 @@
         "birth_store": {
           "price": 155000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 145000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -125145,10 +125026,6 @@
         "birth_store": {
           "price": 107000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 100000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -125266,10 +125143,6 @@
         "birth_store": {
           "price": 96500,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 98000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -125478,10 +125351,6 @@
         "birth_store": {
           "price": 110000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 110000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -125863,10 +125732,6 @@
         "birth_store": {
           "price": 109000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 92000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126032,10 +125897,6 @@
         "birth_store": {
           "price": 135000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 121000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126103,10 +125964,6 @@
         "birth_store": {
           "price": 98100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 92000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126405,10 +126262,6 @@
         "birth_store": {
           "price": 137000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 100000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126504,10 +126357,6 @@
         "birth_store": {
           "price": 122000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 100000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126566,10 +126415,6 @@
         "birth_store": {
           "price": 94000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 92000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126710,10 +126555,6 @@
         "club": {
           "price": 94000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/132-M-P/"
-        },
-        "golden": {
-          "price": 75000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126768,10 +126609,6 @@
         "birth_store": {
           "price": 88600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 88000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126884,10 +126721,6 @@
         "birth_store": {
           "price": 96500,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 83000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -126942,10 +126775,6 @@
         "birth_store": {
           "price": 109000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 92000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127061,10 +126890,6 @@
         "birth_store": {
           "price": 100000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 90000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127092,10 +126917,6 @@
         "shinsoku": {
           "price": 130000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 160000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 129000,
@@ -127162,10 +126983,6 @@
         "birth_store": {
           "price": 99900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 83000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127215,10 +127032,6 @@
         "birth_store": {
           "price": 114000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 91000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127483,10 +127296,6 @@
         "birth_store": {
           "price": 65100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 61000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127537,10 +127346,6 @@
         "birth_store": {
           "price": 104000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 90000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127605,10 +127410,6 @@
         "birth_store": {
           "price": 79200,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 68000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127698,10 +127499,6 @@
         "birth_store": {
           "price": 62000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 58000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127751,10 +127548,6 @@
         "birth_store": {
           "price": 72700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 65000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127804,10 +127597,6 @@
         "birth_store": {
           "price": 70700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 61000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127860,6 +127649,10 @@
           "price": 77000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 80000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 76000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/068-049-SM11B-B/"
@@ -127871,10 +127664,6 @@
         "birth_store": {
           "price": 76100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 65000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -127928,10 +127717,6 @@
         "birth_store": {
           "price": 73600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 66000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -128000,10 +127785,6 @@
         "birth_store": {
           "price": 79400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 71000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -128064,10 +127845,6 @@
         "birth_store": {
           "price": 63000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 62000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -128527,10 +128304,6 @@
         "birth_store": {
           "price": 65700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 60000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -128585,10 +128358,6 @@
         "birth_store": {
           "price": 59100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 57000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -129440,10 +129209,6 @@
         "birth_store": {
           "price": 49900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 47000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -130321,10 +130086,6 @@
         "birth_store": {
           "price": 35600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 35000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -130427,10 +130188,6 @@
         "birth_store": {
           "price": 60900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 52000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -130467,10 +130224,6 @@
         "club": {
           "price": 54000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/118-081-M5-B/"
-        },
-        "golden": {
-          "price": 50000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -130838,10 +130591,6 @@
         "birth_store": {
           "price": 57900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 47000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -130939,10 +130688,6 @@
         "birth_store": {
           "price": 75600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 65000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -131383,10 +131128,6 @@
         "birth_store": {
           "price": 41400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 40000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -131499,10 +131240,6 @@
         "birth_store": {
           "price": 41900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 38000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -131748,10 +131485,6 @@
         "birth_store": {
           "price": 36400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 32000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -132451,10 +132184,6 @@
         "birth_store": {
           "price": 32900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 28000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -132739,10 +132468,6 @@
         "birth_store": {
           "price": 27900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 26000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -133512,10 +133237,6 @@
         "birth_store": {
           "price": 21200,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 21000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -134190,10 +133911,6 @@
         "birth_store": {
           "price": 29000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 25000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -134559,10 +134276,6 @@
         "birth_store": {
           "price": 21400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 20000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -134720,10 +134433,6 @@
         "birth_store": {
           "price": 23000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 20000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -135060,6 +134769,10 @@
           "price": 17100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 18500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 18500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -135259,10 +134972,6 @@
         "birth_store": {
           "price": 39600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 22500,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -136828,10 +136537,6 @@
         "birth_store": {
           "price": 19100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 18000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -137389,10 +137094,6 @@
         "birth_store": {
           "price": 12500,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 14000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -137432,10 +137133,6 @@
         "birth_store": {
           "price": 16900,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 15000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -137701,10 +137398,6 @@
         "birth_store": {
           "price": 25200,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 23000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -138067,10 +137760,6 @@
         "birth_store": {
           "price": 18600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 15000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -138278,10 +137967,6 @@
         "birth_store": {
           "price": 16700,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 16000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -138628,10 +138313,6 @@
         "shinsoku": {
           "price": 12700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 13500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 13500,
@@ -139163,10 +138844,6 @@
         "birth_store": {
           "price": 15100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 14000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -139603,10 +139280,6 @@
         "birth_store": {
           "price": 16400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 14500,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -139714,10 +139387,6 @@
         "birth_store": {
           "price": 13600,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 11000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -141378,10 +141047,6 @@
         "birth_store": {
           "price": 11500,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
-        },
-        "golden": {
-          "price": 10000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -145867,10 +145532,6 @@
           "price": 4400,
           "url": "https://kaitori.toreca-lounge.com/product/0rHB1JHTdslhW8EGkfQ3zQ"
         },
-        "torecabank": {
-          "price": 4300,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 4300,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -147534,10 +147195,6 @@
         "club": {
           "price": 55000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/100-094-SM6-B/"
-        },
-        "golden": {
-          "price": 45000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -148836,6 +148493,10 @@
           "price": 4500,
           "url": "https://kaitori.toreca-lounge.com/product/5uDxub8n65PUOIbCo5qEVB"
         },
+        "torecabank": {
+          "price": 4300,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 4300,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -149322,10 +148983,6 @@
         "club": {
           "price": 230000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/063-059-BW6-R-1ED/"
-        },
-        "golden": {
-          "price": 150000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -149500,6 +149157,10 @@
           "price": 160000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%aa%e3%82%b6%e3%83%bc%e3%83%89%e3%83%b3-011-087/",
           "mode": "郵送"
+        },
+        "shinsoku": {
+          "price": 167000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -150192,10 +149853,6 @@
         "club": {
           "price": 38000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/077-070-S1A-B/"
-        },
-        "golden": {
-          "price": 33000,
-          "url": "https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
         }
       }
     },
@@ -151735,10 +151392,6 @@
         "source": "トレカクラブ"
       },
       "prices": {
-        "shinsoku": {
-          "price": 167000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
         "torecabank": {
           "price": 180000,
           "url": "https://store.torecabank.com/mail_buy_list"
@@ -155175,6 +154828,10 @@
         "lounge": {
           "price": 15300,
           "url": "https://kaitori.toreca-lounge.com/product/2S5C3NUcb12TzfOdgegvEG"
+        },
+        "torecabank": {
+          "price": 16000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 16000,
@@ -160118,12 +159775,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1789704587_ace54d4a77d432b9296f.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 95000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-60a26de4f8",
@@ -165219,7 +164871,16 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/71UnrOkeidk2rqEXWwzmAoLSzAagOsdXcrUceeG8.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 381000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 381000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-f0a4daabcd",
@@ -165263,7 +164924,16 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/4Dwk0FMww1Awy1juhRgq0Fkf9xNsGvzmQCKK4OcW.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 274000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 274000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-ffb39e8d18",
@@ -165319,6 +164989,14 @@
         "shinsoku": {
           "price": 244000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 276000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 276000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -165341,6 +165019,14 @@
         "shinsoku": {
           "price": 835000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 910000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 910000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -165363,6 +165049,14 @@
         "shinsoku": {
           "price": 106000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 115000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 115000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -165620,6 +165314,14 @@
         "lounge": {
           "price": 18000,
           "url": "https://kaitori.toreca-lounge.com/product/004JU0enFVi9anu0OsP8iE"
+        },
+        "birth": {
+          "price": 17600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 17600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -165870,7 +165572,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/87fe5315-64c7-4f29-a91a-2e937823d94b.20231207_0676a1.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 2000000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 2000000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-c73b9efc83",
@@ -166010,7 +165721,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/5dcd5339-e276-498c-9595-69625d2d0ef9.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 357000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 357000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-fffc51076c",
@@ -166023,7 +165743,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/2f0257c8-2a8f-49c0-846b-793828367d58.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 328000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 328000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-4f7aa782aa",
@@ -166188,6 +165917,14 @@
         "shinsoku": {
           "price": 166000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 184000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 184000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -166215,7 +165952,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/e85cbce9-7194-4950-a579-9b64c8cb0fe2.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 170000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 170000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-4a1414bf99",
@@ -166315,7 +166061,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/ec1afed2-f836-41d3-aa24-4225c70f691e.S__100294677_0_0.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 105000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 105000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-6d304c03aa",
@@ -166350,7 +166105,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/5c447d71-4fe5-48e1-9837-21bd0fa18a23.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 91800,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 91800,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-7e01ba1d12",
@@ -166429,7 +166193,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/fbf108c5-0395-492f-a39e-7af05dbabdb2.S__100294672_0_0.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 61600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 61600,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-6aafd845ba",
@@ -167449,6 +167222,14 @@
         "shinsoku": {
           "price": 183000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 200000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 200000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -167507,6 +167288,14 @@
         "shinsoku": {
           "price": 125000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 133000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 133000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -168281,6 +168070,14 @@
         "shinsoku": {
           "price": 23300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 885000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 885000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -168352,7 +168149,16 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/IUQE1Cqk0f6HXccBFayB2c24u1bW57LVoQWA2SQy.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 105000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 105000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-27cb01efb3",
@@ -168457,7 +168263,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/b95d1128-3a43-4625-a61a-eb665ae3dd0d.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 202000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 202000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-1d8249ba84",
@@ -168470,7 +168285,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/494e170c-cce2-48d0-bfd5-a3d4a1c260a3.png",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 230000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 230000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-79cce0e6ce",
@@ -168607,7 +168431,7 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 137000,
+          "price": 136000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
@@ -168923,7 +168747,7 @@
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
-          "price": 147000,
+          "price": 138000,
           "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         },
         "birth_store": {
@@ -169137,6 +168961,14 @@
         "shinsoku": {
           "price": 17500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "birth": {
+          "price": 19700,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 19700,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
         }
       }
     },
@@ -169393,7 +169225,16 @@
         "origin": "https://fexadnveyuqduiujewrc.supabase.co/storage/v1/object/public/cards/621359c3-62b5-4854-a0e3-a6c001eef1a8.20231102_8c4792.jpg",
         "source": "トレカバース"
       },
-      "prices": {}
+      "prices": {
+        "birth": {
+          "price": 855000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        },
+        "birth_store": {
+          "price": 855000,
+          "url": "https://www.torecabirth.jp/page/onepiece_purchase"
+        }
+      }
     },
     {
       "jan": "psa-ef7831d641",
@@ -180731,7 +180572,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/179693"
         },
         "rakuen": {
-          "price": 3600,
+          "price": 3200,
           "url": "https://www.keitairakuen.com/product/nintendo-switch-%e8%b6%85%e3%81%8a%e3%81%a9%e3%82%8b-%e3%83%a1%e3%82%a4%e3%83%89-%e3%82%a4%e3%83%b3-%e3%83%af%e3%83%aa%e3%82%aa/"
         },
         "kaumobile": {
