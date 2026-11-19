@@ -1,8 +1,8 @@
 {
   "categories": [
-    { "id": "nintendo", "name": "Nintendo", "title": "Nintendo Switch 2・Switch（本体・ソフト・コントローラー）" },
-    { "id": "playstation", "name": "PlayStation", "title": "PlayStation 5・PS VR2・コントローラー" },
-    { "id": "xbox", "name": "Xbox", "title": "Xbox Series X|S・コントローラー" },
+    { "id": "nintendo", "name": "Nintendo", "title": "Nintendo Switch 2・Switch（本体・ソフト・コントローラー・周辺機器）" },
+    { "id": "playstation", "name": "PlayStation", "title": "PlayStation 5・PS VR2・コントローラー・周辺機器" },
+    { "id": "xbox", "name": "Xbox", "title": "Xbox Series X|S・コントローラー・周辺機器" },
     { "id": "apple", "name": "Apple", "title": "iPhone・iPad・Mac・Apple Watch・AirPods" },
     { "id": "android", "name": "Android", "title": "Androidスマホ" },
     { "id": "tcg", "name": "トレカ" },
@@ -14,12 +14,12 @@
     { "id": "switch", "name": "Nintendo Switch", "category": "nintendo" },
     { "id": "switch2-soft", "name": "Switch 2 ソフト", "category": "nintendo" },
     { "id": "switch-soft", "name": "Switch ソフト", "category": "nintendo" },
-    { "id": "switch-controller", "name": "Switch・Switch 2 コントローラー", "category": "nintendo" },
+    { "id": "switch-controller", "name": "Switch・Switch 2 コントローラー・周辺機器", "category": "nintendo" },
     { "id": "ps5", "name": "PlayStation 5", "category": "playstation" },
     { "id": "psvr2", "name": "PlayStation VR2", "category": "playstation" },
-    { "id": "ps5-controller", "name": "PS5 コントローラー", "category": "playstation" },
+    { "id": "ps5-controller", "name": "PS5 コントローラー・周辺機器", "category": "playstation" },
     { "id": "xbox-series", "name": "Xbox Series X|S", "category": "xbox" },
-    { "id": "xbox-controller", "name": "Xbox コントローラー", "category": "xbox" },
+    { "id": "xbox-controller", "name": "Xbox コントローラー・周辺機器", "category": "xbox" },
     { "id": "iphone18", "name": "iPhone 18シリーズ", "category": "apple" },
     { "id": "iphone17", "name": "iPhone 17シリーズ", "category": "apple" },
     { "id": "iphone16", "name": "iPhone 16シリーズ", "category": "apple" },
@@ -188,6 +188,7 @@
     { "jan": "4549576206837", "series": "xbox-controller", "name": "Xbox Elite ワイヤレス コントローラー シリーズ 2 Core（レッド）", "model": "RFZ-00015", "msrp": 16478 },
     { "jan": "4549576206844", "series": "xbox-controller", "name": "Xbox Elite ワイヤレス コントローラー シリーズ 2 Core（ブルー）", "model": "RFZ-00019", "msrp": 16478 },
     { "jan": "4549576167893", "series": "xbox-controller", "name": "Xbox Elite ワイヤレス コントローラー シリーズ 2 Halo Infinite リミテッド エディション", "msrp": 21978 },
+    { "jan": "4549576159607", "series": "xbox-controller", "name": "Xbox ワイヤレス ヘッドセット", "model": "TLL-00003", "msrp": 10978 },
 
     { "jan": "4547410550955", "series": "instax", "name": "写ルンです シンプルエース 27枚撮り（2025年版）", "msrp": 2990, "image_url": "https://asset.fujifilm.com/www/jp/files/2025-05/719eb6daab785bdc5ed75d7bb5202554/thumb_utsurundesu_01.png", "image_page": "https://www.fujifilm.com/jp/ja/consumer/films/utsurundesu/standard" },
     { "jan": "4547410369137", "series": "instax", "name": "写ルンです シンプルエース 27枚撮り（従来パッケージ）", "msrp": null, "image_url": "https://asset.fujifilm.com/www/jp/files/2025-05/719eb6daab785bdc5ed75d7bb5202554/thumb_utsurundesu_01.png", "image_page": "https://www.fujifilm.com/jp/ja/consumer/films/utsurundesu/standard" },
@@ -362,7 +363,19 @@
     { "jan": "4948872851091", "series": "ps5-controller", "name": "DualSense ワイヤレスコントローラー “LISA” リミテッドエディション", "msrp": 12480 },
     { "jan": "4948872415712", "series": "ps5-controller", "name": "DualSense Edge ワイヤレスコントローラー", "model": "CFI-ZCP1J", "msrp": 34980 },
     { "jan": "4948872416603", "series": "ps5-controller", "name": "DualSense Edge ワイヤレスコントローラー ミッドナイト ブラック", "model": "CFI-ZCP1J01", "msrp": 34980 },
+    { "jan": "4948872417938", "series": "ps5-controller", "name": "DualSense Edge ワイヤレスコントローラー（新型）ミッドナイト ブラック", "model": "CFI-ZCP2J01", "msrp": 34980 },
+    { "jan": "4948872417969", "series": "ps5-controller", "name": "DualSense Edge ワイヤレスコントローラー（新型）", "model": "CFI-ZCP2J", "msrp": 34980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/dualsense-edge-wireless-controller/" },
     { "jan": "4948872416504", "series": "ps5-controller", "name": "DualSense Edge ワイヤレスコントローラー 30周年アニバーサリー リミテッドエディション", "model": "CFI-ZCP1J30", "msrp": 37980 },
+    { "jan": "4948872416030", "series": "ps5-controller", "name": "PS5 ディスクドライブ", "model": "CFI-ZDD1J", "msrp": 11980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/disc-drive-image-block-01-en-22nov23?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/" },
+    { "jan": "4948872415064", "series": "ps5-controller", "name": "DualSense 充電スタンド", "model": "CFI-ZDS1J", "msrp": 3980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-charging-station-image-block-02-en-22nov23?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/" },
+    { "jan": "4948872415125", "series": "ps5-controller", "name": "PULSE 3D ワイヤレスヘッドセット", "model": "CFI-ZWH1J", "msrp": 12980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-product-thumbnail-01-en-14sep21?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/pulse-3d-wireless-headset/" },
+    { "jan": "4948872415248", "series": "ps5-controller", "name": "PULSE 3D ワイヤレスヘッドセット ミッドナイト ブラック", "model": "CFI-ZWH1J01", "msrp": 12980 },
+    { "jan": "4948872415804", "series": "ps5-controller", "name": "PULSE 3D ワイヤレスヘッドセット グレー カモフラージュ", "model": "CFI-ZWH1J06", "msrp": 12980 },
+    { "jan": "4948872416207", "series": "ps5-controller", "name": "PULSE Elite ワイヤレスヘッドセット", "model": "CFI-ZWH2J", "msrp": 22980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/pulse-elite-wireless-headset/" },
+    { "jan": "4948872416610", "series": "ps5-controller", "name": "PULSE Elite ワイヤレスヘッドセット ミッドナイト ブラック", "model": "CFI-ZWH2J01", "msrp": 22980 },
+    { "jan": "4948872415088", "series": "ps5-controller", "name": "PS5 メディアリモコン", "model": "CFI-ZMR1J", "msrp": 3980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/media-remote-product-thumbnail-01-en-14sep21?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/media-remote/" },
+    { "jan": "4948872416245", "series": "ps5-controller", "name": "PULSE Explore ワイヤレスイヤホン", "model": "CFI-ZWE1J", "msrp": 22980, "image_url": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Explore-earbuds-thumbnail-01-en-12sep23?fmt=png-alpha", "image_page": "https://www.playstation.com/ja-jp/accessories/pulse-explore-wireless-earbuds/", "aliases": ["4948872416900"] },
+    { "jan": "4948872416641", "series": "ps5-controller", "name": "PULSE Explore ワイヤレスイヤホン ミッドナイト ブラック", "model": "CFI-ZWE1J01", "msrp": 22980 },
 
     { "jan": "6970214573901", "series": "vr", "name": "PICO 4 Ultra 256GB", "msrp": 104900, "image_url": "https://lf16-statics.picovr.com/obj/pico-fe-sg/official-website/static/image/device_1.0554e4b3a9.png", "image_page": "https://www.picoxr.com/jp/products/pico4-ultra" },
     { "jan": "6970214571532", "series": "vr", "name": "PICO 4 256GB", "model": "A8110A8220", "msrp": 59400, "image_url": "https://lf16-statics.picovr.com/obj/pico-fe-sg/official-website/static/image/pico4_highlight_helmet.046adb3791.png", "image_page": "https://www.picoxr.com/jp/products/pico4" },
@@ -4309,6 +4322,13 @@
     { "jan": "4902370540987", "series": "switch-controller", "name": "スーパー マリオパーティ 4人で遊べる Joy-Conセット（ネオンピンク/ネオンイエロー）", "msrp": 10978 },
     { "jan": "4902370546927", "series": "switch-controller", "name": "スプラトゥーン2 すぐに遊べる Proコントローラーセット", "msrp": 14256 },
     { "jan": "4902370551679", "series": "switch-controller", "name": "スーパー マリオパーティ 4人で遊べる Joy-Conセット（パステルパープル/パステルグリーン）", "msrp": 10978 },
+    { "jan": "4902370552911", "series": "switch-controller", "name": "Nintendo Switch 2 ドックセット", "model": "BEE-A-CASAA", "msrp": 14980, "image_url": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/dockSet_switcher_img01.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html" },
+    { "jan": "4902370552607", "series": "switch-controller", "name": "Nintendo Switch 2 ACアダプター", "model": "BEE-A-ASSKA", "msrp": 3980, "image_url": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/ac-adaptor_switcher_img01.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html" },
+    { "jan": "4902370552829", "series": "switch-controller", "name": "Joy-Con 2 充電グリップ", "model": "BEE-A-ESSKA", "msrp": 3980, "image_url": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/joyCon-grip_switcher_img01.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html" },
+    { "jan": "4902370552621", "series": "switch-controller", "name": "Joy-Con 2 ハンドル 2個セット", "model": "BEE-A-BU2AA", "msrp": 2480, "image_url": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/joyCon-handle_switcher_img01.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html" },
+    { "jan": "4902370552782", "series": "switch-controller", "name": "Nintendo Switch 2 カメラ", "model": "BEE-A-CNSKA", "msrp": 5980, "image_url": "https://www.nintendo.com/jp/hardware/switch2/accessories/assets/img/top/camera_switcher_img01.png", "image_page": "https://www.nintendo.com/jp/hardware/switch2/accessories/index.html" },
+    { "jan": "4961818028876", "series": "switch-controller", "name": "太鼓の達人専用コントローラー 太鼓とバチ for Nintendo Switch", "model": "NSW-079", "msrp": 7678 },
+    { "jan": "4961818039032", "series": "switch-controller", "name": "USBカメラ パックンフラワー for Nintendo Switch 2", "model": "NSX-001", "msrp": 4980, "image_url": "https://hori.jp/image/2025/04/d11215fa8b063dcc22e42ccf8b4c93d1.jpg", "image_page": "https://hori.jp/products/nsx/nsx-001/" },
 
     { "jan": "4548736141308", "series": "digicam", "name": "SONY FDR-AX45A ブラック", "model": "FDR-AX45A", "image_url": "https://www.sony.jp/products/picture/fdr-ax45a.jpg", "image_page": "https://www.sony.jp/handycam/products/FDR-AX45A/" },
     { "jan": "4548736141315", "series": "digicam", "name": "SONY FDR-AX45A ブロンズブラウン", "model": "FDR-AX45A", "image_url": "https://www.sony.jp/products/picture/fdr-ax45a.jpg", "image_page": "https://www.sony.jp/handycam/products/FDR-AX45A/" },
@@ -4345,12 +4365,7 @@
   "ignore": [
     { "jan": "4582769982255", "note": "ドラゴンボールスーパーダイバーズ（フュージョンワールドとは別のゲーム）" },
     { "jan": "4582770079296", "note": "ドラゴンボールスーパーダイバーズ（フュージョンワールドとは別のゲーム）" },
-    { "jan": "4948872416900", "note": "PULSE Explore" },
     { "jan": "0815820022480", "note": "Oculus Quest 2（旧世代のため対象外）" },
-    { "jan": "4948872414647", "note": "PlayStation 4（旧世代のため対象外）" },
-    { "jan": "4948872417938", "note": "DualSense Edge 新型 ミッドナイト ブラック" },
-    { "jan": "4948872417969", "note": "DualSense Edge 新型" },
-    { "jan": "4948872416245", "note": "PULSE Explore" },
-    { "jan": "4948872416641", "note": "PULSE Explore ミッドナイト ブラック" }
+    { "jan": "4948872414647", "note": "PlayStation 4（旧世代のため対象外）" }
   ]
 }
