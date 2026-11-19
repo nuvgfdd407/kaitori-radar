@@ -1,6 +1,6 @@
 # 買取レーダー
 
-Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S・Steam Deck などのゲーミングPC・VRヘッドセットと、
+Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S（本体とコントローラー）・Steam Deck などのゲーミングPC・VRヘッドセットと、
 iPhone 18・17・16シリーズ（SIMフリー版）、iPad・Mac・Apple Watch・AirPods、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
 ポケモンカード・ワンピースカードなどの未開封BOXの
 **新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
@@ -107,7 +107,8 @@ python -m http.server 8765 --directory dist
 
 1. `reports/unmatched.json` に、カタログにない高額商品が出ていないか確認する
 2. 本体なら `catalog/products.json` の `products` に追加する（並び順が表の標準の並びになる）
-3. 本体でないもの（コントローラーなど）は `ignore` に追加すると、以後は報告されなくなる
+3. 載せないもの（充電スタンドなどの周辺機器、旧世代の本体など）は `ignore` に追加すると、以後は報告されなくなる
+   （ゲーム機のコントローラーは載せる。シリーズは switch-controller・ps5-controller・xbox-controller、Steam Controller は gaming-pc）
 
 同じ商品が店舗によって別のJAN（新旧のJANなど）で載っているときは、`"aliases": ["<別のJAN>"]` を書くと同じ商品として扱う
 （同じ店舗に両方あるときは高い方の価格を使う）。

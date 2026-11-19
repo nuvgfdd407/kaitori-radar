@@ -67,7 +67,7 @@ def prepare(data, catalog):
     categories = []
     for c in catalog["categories"]:
         members = [s for s in catalog["series"] if s["category"] == c["id"]]
-        # シリーズが1つだけのジャンル（Xbox）は、ジャンルのページを作らずシリーズのページを使う
+        # シリーズが1つだけのジャンルは、ジャンルのページを作らずシリーズのページを使う
         own_page = len(members) > 1
         categories.append({**c, "series": members, "own_page": own_page,
                            "href": f"/{c['id']}/" if own_page else f"/{members[0]['id']}/"})
