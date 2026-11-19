@@ -1,6 +1,6 @@
 # 買取レーダー
 
-Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S（本体・コントローラー・周辺機器）・Steam Deck などのゲーミングPC・VRヘッドセットと、
+Nintendo Switch 2・Nintendo Switch・PlayStation 5・Xbox Series X|S（本体・コントローラー・周辺機器）・Steam Deck などのゲーミングPC・VRヘッドセット、ホビー（Alarmo・Pokémon GO Plus +・たまごっちなど）と、
 iPhone 18・17・16シリーズ（SIMフリー版）、iPad・Mac・Apple Watch・AirPods、Androidスマホ（Google Pixel・Galaxy・Xperia・AQUOS）、
 ポケモンカード・ワンピースカードなどの未開封BOXの
 **新品（未開封）買取価格**を、買取店ごとに比較するサイトです。
