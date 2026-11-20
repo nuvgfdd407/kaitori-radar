@@ -1,15 +1,5 @@
 [
   {
-    "time": "2026-10-21T20:57:38+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-21T20:57:38+09:00",
-    "shop": "ケータイゴッド",
-    "error": "HTTPError: 404 Client Error: Not Found for url: https://keitai-god.com/price/index.php?ci=8&mi=181"
-  },
-  {
     "time": "2026-10-22T10:12:44+09:00",
     "shop": "買取ルデヤ",
     "error": "ConnectTimeout: HTTPSConnectionPool(host='kaitori-rudeya.com', port=443): Max retries exceeded with url: /category/detail/214 (Caused by ConnectTimeoutError(<HTTPSConnection(host='kaitori-rudeya.com', port=443) at 0x7f2d9128a210>, 'Connection to kaitori-rudeya.com timed out. (connect timeout=30)'))"
@@ -4641,6 +4631,16 @@
   },
   {
     "time": "2026-11-20T20:44:22+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-20T20:59:23+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-20T20:59:23+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
