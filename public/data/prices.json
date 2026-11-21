@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T16:29:10+09:00",
+  "updated_at": "2026-11-21T16:44:00+09:00",
   "shops": [
     {
       "id": "homura",
@@ -10608,7 +10608,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503002/product/183516"
         },
         "kaden": {
-          "price": 37300,
+          "price": 37400,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3RNADISON"
         }
       }
@@ -10633,7 +10633,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503/product/152745"
         },
         "kaden": {
-          "price": 23900,
+          "price": 24000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JLEYL85B",
           "note": "正規代理店の購入証明が必要"
         }
@@ -107394,7 +107394,7 @@
       },
       "prices": {
         "homura": {
-          "price": 18000,
+          "price": 17800,
           "url": "https://kaitori-homura.com/products/7237"
         },
         "shouten": {
@@ -107439,7 +107439,7 @@
           "url": "https://kaitori-base.com/?p=9534"
         },
         "bluerocket": {
-          "price": 18000,
+          "price": 17800,
           "url": "https://bluerocket-tcg.com/products/1274",
           "mode": "郵送"
         },
@@ -113911,10 +113911,6 @@
         "rudeya": {
           "price": 1800,
           "url": "https://kaitori-rudeya.com/product/item/7262"
-        },
-        "masai": {
-          "price": 1500,
-          "url": "https://www.masai-tcg.com/products/mega-ex-ex"
         }
       }
     },
@@ -115287,7 +115283,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400000624/20251210/1765355616059-ac4ff1b31896674a.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-e16c898d03",
@@ -115318,12 +115319,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -118407,10 +118403,6 @@
           "price": 2000000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 2320000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 2350000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/119-114-SM4%2B-B/"
@@ -119639,10 +119631,6 @@
         "lounge": {
           "price": 645000,
           "url": "https://kaitori.toreca-lounge.com/product/6axQSX0z3eEv0zHusM2mXY"
-        },
-        "shinsoku": {
-          "price": 650000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
           "price": 650000,
@@ -123946,7 +123934,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7aZKWDxDuc5KlU53xJz2QC"
         },
         "shinsoku": {
-          "price": 167000,
+          "price": 163000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -125840,10 +125828,6 @@
         "shinsoku": {
           "price": 88700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 96000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 85000,
@@ -129402,10 +129386,6 @@
         "shinsoku": {
           "price": 41200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 44000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 44000,
@@ -136582,10 +136562,6 @@
           "price": 18500,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 19000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 18000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/099-073-SV1A-B/"
@@ -139380,6 +139356,10 @@
         "shinsoku": {
           "price": 10900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 12000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 12000,
@@ -154002,10 +153982,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 32000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 35000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -180511,7 +180487,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503/product/157012"
         },
         "kaden": {
-          "price": 68000,
+          "price": 68100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z388RKZ62N"
         }
       }
@@ -180574,7 +180550,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503004/product/180528"
         },
         "kaden": {
-          "price": 53400,
+          "price": 53500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3EWXRO0NM"
         }
       }
@@ -180763,7 +180739,7 @@
           "url": "https://tobansyoji.co.jp/product/powershot-sx740-hs%e3%80%80%e3%83%96%e3%83%a9%e3%83%83%e3%82%af/"
         },
         "rakuen": {
-          "price": 80000,
+          "price": 79500,
           "url": "https://www.keitairakuen.com/product/new-product-24/"
         },
         "kaden": {
@@ -180796,7 +180772,7 @@
           "url": "https://tobansyoji.co.jp/product/powershot-sx740-hs%e3%80%80%e3%82%b7%e3%83%ab%e3%83%90%e3%83%bc/"
         },
         "rakuen": {
-          "price": 72500,
+          "price": 71000,
           "url": "https://www.keitairakuen.com/product/new-product-23/"
         },
         "kaden": {
