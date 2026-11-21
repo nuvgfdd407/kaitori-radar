@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T11:14:19+09:00",
+  "updated_at": "2026-11-21T11:29:12+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,7 +55,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-21T11:29:12+09:00"
     },
     {
       "id": "guest",
@@ -167,7 +168,8 @@
       "name": "モバックス名古屋大須店",
       "short": "モバックス",
       "url": "https://mobax-ohsu.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-21T11:29:12+09:00"
     },
     {
       "id": "somurie",
@@ -181,7 +183,8 @@
       "name": "リンクサス買取",
       "short": "リンクサス",
       "url": "https://linx-as.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-21T11:29:12+09:00"
     },
     {
       "id": "daiwan",
@@ -202,7 +205,8 @@
       "name": "ジェーシカモバイル",
       "short": "JCKA",
       "url": "https://www.jcka-mobile.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-21T11:29:12+09:00"
     },
     {
       "id": "base",
@@ -394,7 +398,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1747112278-927022"
         },
         "pocket": {
-          "price": 52000,
+          "price": 52500,
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
@@ -794,7 +798,7 @@
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-%e3%83%9e%e3%83%aa%e3%82%aa%e3%82%ab%e3%83%bc%e3%83%88-%e3%83%af%e3%83%bc%e3%83%ab%e3%83%89%e3%82%bb%e3%83%83%e3%83%88-%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%bb%e5%9b%bd%e5%86%85%e5%b0%82/"
         },
         "rudeya": {
-          "price": 58500,
+          "price": 58800,
           "url": "https://kaitori-rudeya.com/product/item/5798"
         },
         "morimori": {
@@ -998,7 +1002,7 @@
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-sandisk-micro-sd-express-256gb-sd%e3%82%ab%e3%83%bc%e3%83%89/"
         },
         "rudeya": {
-          "price": 7550,
+          "price": 7600,
           "url": "https://kaitori-rudeya.com/product/item/5941"
         },
         "morimori": {
@@ -3233,7 +3237,7 @@
       },
       "prices": {
         "homura": {
-          "price": 49500,
+          "price": 49200,
           "url": "https://kaitori-homura.com/products/5458"
         },
         "shouten": {
@@ -3309,7 +3313,7 @@
           "note": "2026年10月以降製造モデル減額対象"
         },
         "guild": {
-          "price": 49500,
+          "price": 49200,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872417419",
           "note": "2026年10月以降製造モデル減額対象"
         },
@@ -3358,7 +3362,7 @@
           "url": "https://tobansyoji.co.jp/product/sony-ps5-playstation5-pro-cfi-7100b01-2025%e5%b9%b4%e7%89%88/"
         },
         "rudeya": {
-          "price": 213000,
+          "price": 213200,
           "url": "https://kaitori-rudeya.com/product/item/6511"
         },
         "morimori": {
@@ -4090,7 +4094,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FGXIO2LE"
         },
         "mirai": {
-          "price": 116000,
+          "price": 118800,
           "url": "https://kaitori-mirai.com/ps5%E6%9C%AC%E4%BD%93ghost-of-yotei-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AA%E3%83%9F%E3%83%86%E3%83%83%E3%83%89%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3-cfij-10029"
         },
         "tojo": {
@@ -5371,7 +5375,7 @@
       },
       "prices": {
         "homura": {
-          "price": 89000,
+          "price": 88500,
           "url": "https://kaitori-homura.com/products/5053"
         },
         "shouten": {
@@ -5427,7 +5431,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv89hsn00vm01r4vza2qk7t"
         },
         "guild": {
-          "price": 89000,
+          "price": 88500,
           "url": "https://kaitoriguild.co.jp/catalog?q=4549576215563"
         },
         "mobax": {
@@ -5453,7 +5457,7 @@
       },
       "prices": {
         "homura": {
-          "price": 89000,
+          "price": 88500,
           "url": "https://kaitori-homura.com/products/5052"
         },
         "shouten": {
@@ -5509,7 +5513,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv89hsv00vn01r4focazvzt"
         },
         "guild": {
-          "price": 89000,
+          "price": 88500,
           "url": "https://kaitoriguild.co.jp/catalog?q=4549576246994"
         },
         "mobax": {
@@ -7521,7 +7525,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5769"
         },
         "morimori": {
-          "price": 2500,
+          "price": 2610,
           "url": "https://www.morimori-kaitori.jp/category/0509/product/291335"
         },
         "guest": {
@@ -11964,7 +11968,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "mirai": {
-          "price": 21200,
+          "price": 20500,
           "url": "https://kaitori-mirai.com/steam-controller-%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC"
         },
         "tojo": {
@@ -12084,7 +12088,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 86900,
+          "price": 87700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3C7ECQOPK"
         },
         "mobax": {
@@ -12269,7 +12273,7 @@
       },
       "prices": {
         "homura": {
-          "price": 92500,
+          "price": 92600,
           "url": "https://kaitori-homura.com/products/5029"
         },
         "toban": {
@@ -12313,7 +12317,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7s4oj00t501r4ldrii3yd"
         },
         "guild": {
-          "price": 92500,
+          "price": 92600,
           "url": "https://kaitoriguild.co.jp/catalog?q=0815820024170"
         },
         "mobax": {
@@ -12379,7 +12383,7 @@
       },
       "prices": {
         "homura": {
-          "price": 62400,
+          "price": 62500,
           "url": "https://kaitori-homura.com/products/5027"
         },
         "shouten": {
@@ -12431,7 +12435,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7s4ox00t701r4empzg9gq"
         },
         "guild": {
-          "price": 62400,
+          "price": 62500,
           "url": "https://kaitoriguild.co.jp/catalog?q=0815820025290"
         },
         "mobax": {
@@ -12739,10 +12743,6 @@
         "code": "bakuyasuearth_4948872414975"
       },
       "prices": {
-        "homura": {
-          "price": 8400,
-          "url": "https://kaitori-homura.com/products/5086"
-        },
         "shouten": {
           "price": 8500,
           "url": "https://www.kaitorishouten-co.jp/products/detail/4769"
@@ -15280,6 +15280,10 @@
         "origin": "https://gmedia.playstation.com/is/image/SIEPDC/disc-drive-image-block-01-en-22nov23?fmt=png-alpha"
       },
       "prices": {
+        "homura": {
+          "price": 9000,
+          "url": "https://kaitori-homura.com/products/5088"
+        },
         "shouten": {
           "price": 9000,
           "url": "https://www.kaitorishouten-co.jp/products/detail/18988"
@@ -16236,7 +16240,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 207500,
+          "price": 208000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -16476,7 +16480,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 205000,
+          "price": 205500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -16717,7 +16721,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 242000,
+          "price": 242500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -16842,7 +16846,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 242500,
+          "price": 243000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -16967,7 +16971,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 237500,
+          "price": 238000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17092,7 +17096,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 303500,
+          "price": 303000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17221,7 +17225,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 296500,
+          "price": 297000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17350,7 +17354,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 296500,
+          "price": 297000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17479,7 +17483,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 296500,
+          "price": 297000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17608,7 +17612,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 377000,
+          "price": 377500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17729,7 +17733,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 367000,
+          "price": 367500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17850,7 +17854,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 367000,
+          "price": 367500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -17971,7 +17975,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 367000,
+          "price": 367500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -18946,7 +18950,7 @@
           "url": "https://tobansyoji.co.jp/product/iphone-18-pro-max-1tb/"
         },
         "rudeya": {
-          "price": 328000,
+          "price": 327000,
           "url": "https://kaitori-rudeya.com/product/item/7403"
         },
         "morimori": {
@@ -19472,7 +19476,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 401500,
+          "price": 402500,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -19597,7 +19601,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 392500,
+          "price": 393000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -19722,7 +19726,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 392500,
+          "price": 393000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -19847,7 +19851,7 @@
           "url": "https://mobax-ohsu.com/p-561/"
         },
         "somurie": {
-          "price": 392500,
+          "price": 393000,
           "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
@@ -20492,6 +20496,10 @@
           "price": 453000,
           "url": "https://kaitoriguild.co.jp/catalog?q=4549995732894",
           "note": "郵送は翌日午前着のみ"
+        },
+        "somurie": {
+          "price": 466000,
+          "url": "https://somurie-kaitori.com/products?category=1&subcategory=59"
         },
         "linxas": {
           "price": 405500,
@@ -75653,7 +75661,7 @@
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
-          "price": 106000,
+          "price": 105000,
           "url": "https://kaitori-rudeya.com/product/item/7290"
         },
         "morimori": {
@@ -75738,7 +75746,7 @@
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
-          "price": 106000,
+          "price": 105000,
           "url": "https://kaitori-rudeya.com/product/item/7287"
         },
         "morimori": {
@@ -75823,7 +75831,7 @@
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
-          "price": 106000,
+          "price": 105000,
           "url": "https://kaitori-rudeya.com/product/item/7288"
         },
         "morimori": {
@@ -75908,7 +75916,7 @@
           "url": "https://www.1-chome.com/productDetail/1613/2259"
         },
         "rudeya": {
-          "price": 106000,
+          "price": 105000,
           "url": "https://kaitori-rudeya.com/product/item/7289"
         },
         "morimori": {
@@ -77082,7 +77090,7 @@
           "url": "https://www.1-chome.com/productDetail/1610/2256"
         },
         "rudeya": {
-          "price": 145000,
+          "price": 144000,
           "url": "https://kaitori-rudeya.com/product/item/7312"
         },
         "morimori": {
@@ -77167,7 +77175,7 @@
           "url": "https://www.1-chome.com/productDetail/1610/2256"
         },
         "rudeya": {
-          "price": 145000,
+          "price": 144000,
           "url": "https://kaitori-rudeya.com/product/item/7309"
         },
         "morimori": {
@@ -77252,7 +77260,7 @@
           "url": "https://www.1-chome.com/productDetail/1610/2256"
         },
         "rudeya": {
-          "price": 145000,
+          "price": 144000,
           "url": "https://kaitori-rudeya.com/product/item/7311"
         },
         "morimori": {
@@ -77337,7 +77345,7 @@
           "url": "https://www.1-chome.com/productDetail/1610/2256"
         },
         "rudeya": {
-          "price": 145000,
+          "price": 144000,
           "url": "https://kaitori-rudeya.com/product/item/7310"
         },
         "morimori": {
@@ -102633,7 +102641,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61000,
+          "price": 61500,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -102715,7 +102723,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61500,
+          "price": 62000,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -102797,7 +102805,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61500,
+          "price": 62000,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -102879,7 +102887,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61500,
+          "price": 62000,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -102961,7 +102969,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61500,
+          "price": 62000,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -103043,7 +103051,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/1/02"
         },
         "ichome": {
-          "price": 61500,
+          "price": 62000,
           "url": "https://www.1-chome.com/productDetail/1420/2022"
         },
         "rudeya": {
@@ -107321,7 +107329,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7373"
         },
         "morimori": {
-          "price": 18800,
+          "price": 17800,
           "url": "https://www.morimori-kaitori.jp/category/2401/product/344337"
         },
         "keitaigod": {
@@ -107346,7 +107354,7 @@
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329462424"
         },
         "base": {
-          "price": 18700,
+          "price": 18000,
           "url": "https://kaitori-base.com/?p=9534"
         },
         "bluerocket": {
@@ -107404,7 +107412,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7186"
         },
         "morimori": {
-          "price": 8100,
+          "price": 8200,
           "url": "https://www.morimori-kaitori.jp/category/2401/product/344245"
         },
         "keitaigod": {
@@ -107683,7 +107691,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 7500,
+          "price": 7600,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329432274"
         },
         "base": {
@@ -107772,7 +107780,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 11600,
+          "price": 11800,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329431932"
         },
         "base": {
@@ -107861,7 +107869,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 17200,
+          "price": 17400,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329431529"
         },
         "base": {
@@ -107950,7 +107958,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 7800,
+          "price": 7900,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329431161"
         },
         "base": {
@@ -108039,7 +108047,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 7100,
+          "price": 7200,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329431185"
         },
         "base": {
@@ -108084,7 +108092,7 @@
       },
       "prices": {
         "homura": {
-          "price": 22000,
+          "price": 26000,
           "url": "https://kaitori-homura.com/products/3459"
         },
         "shouten": {
@@ -108092,7 +108100,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/23993"
         },
         "toban": {
-          "price": 25700,
+          "price": 21700,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90sv11b-d%e3%80%91%e6%8b%a1%e5%bc%b5%e3%83%91%e3%83%83%e3%82%af%e3%83%87%e3%83%a9%e3%83%83%e3%82%af%e3%82%b9-%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e3%83%9c%e3%83%ab%e3%83%88/"
         },
         "rudeya": {
@@ -108239,7 +108247,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
         },
         "toban": {
-          "price": 22700,
+          "price": 22900,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90sv11b%e3%80%91%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e3%83%9c%e3%83%ab%e3%83%88/"
         },
         "rudeya": {
@@ -108611,7 +108619,7 @@
           "note": "正規代理店の購入証明が必要"
         },
         "guild": {
-          "price": 10000,
+          "price": 10100,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329362649"
         },
         "base": {
@@ -108695,7 +108703,7 @@
           "note": "正規代理店の購入証明が必要"
         },
         "guild": {
-          "price": 16500,
+          "price": 16800,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329362342"
         },
         "somurie": {
@@ -109289,7 +109297,7 @@
           "note": "正規代理店の購入証明が必要"
         },
         "guild": {
-          "price": 11200,
+          "price": 11300,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329394831"
         },
         "base": {
@@ -109373,7 +109381,7 @@
           "note": "正規代理店の購入証明が必要"
         },
         "guild": {
-          "price": 10300,
+          "price": 10400,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329394848"
         },
         "base": {
@@ -109453,7 +109461,7 @@
           "note": "正規代理店の購入証明が必要"
         },
         "guild": {
-          "price": 14800,
+          "price": 14700,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329394824"
         },
         "somurie": {
@@ -109879,7 +109887,7 @@
           "note": "LINE予約と購入履歴・レシートの提示が必要"
         },
         "guild": {
-          "price": 47700,
+          "price": 48200,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329346038"
         },
         "base": {
@@ -110319,7 +110327,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
         },
         "toban": {
-          "price": 26700,
+          "price": 27000,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90s12a%e3%80%91vsatar%e3%83%a6%e3%83%8b%e3%83%90%e3%83%bc%e3%82%b9/"
         },
         "rudeya": {
@@ -110399,7 +110407,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
         },
         "toban": {
-          "price": 20200,
+          "price": 20400,
           "url": "https://tobansyoji.co.jp/product/%e3%80%90s12%e3%80%91%e3%83%91%e3%83%a9%e3%83%80%e3%82%a4%e3%83%a0%e3%83%88%e3%83%aa%e3%82%ac%e3%83%bc/"
         },
         "morimori": {
@@ -111284,7 +111292,7 @@
           "url": "https://kaitori-homura.com/products/3415"
         },
         "toban": {
-          "price": 18200,
+          "price": 19200,
           "url": "https://tobansyoji.co.jp/product/%e7%99%bd%e9%8a%80%e3%81%ae%e3%83%a9%e3%83%b3%e3%82%b9/"
         },
         "keitaigod": {
@@ -112522,7 +112530,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XWDWNK0J"
         },
         "guild": {
-          "price": 13300,
+          "price": 13400,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329462189"
         },
         "hokusai": {
@@ -115802,7 +115810,7 @@
           "url": "https://www.morimori-kaitori.jp/category/2403/product/331580"
         },
         "guild": {
-          "price": 15400,
+          "price": 15500,
           "url": "https://kaitoriguild.co.jp/catalog?q=4582769796838"
         },
         "base": {
@@ -116020,7 +116028,7 @@
           "url": "https://www.masai-tcg.com/products/op11"
         },
         "shinsoku": {
-          "price": 11300,
+          "price": 11200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -117161,7 +117169,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6412"
         },
         "kaden": {
-          "price": 23900,
+          "price": 25000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3EYDHD4MJ"
         }
       }
@@ -118836,6 +118844,10 @@
         "shinsoku": {
           "price": 580000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 650000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 603000,
@@ -120978,7 +120990,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 465000,
+          "price": 467000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -122039,7 +122051,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 26000,
+          "price": 265000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -122088,7 +122100,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 270000,
+          "price": 232000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -122398,7 +122410,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 260000,
+          "price": 265000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -122744,7 +122756,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 161000,
+          "price": 158000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -123512,7 +123524,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 183000,
+          "price": 200000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -123649,7 +123661,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 173000,
+          "price": 147000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -123929,7 +123941,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 145000,
+          "price": 150000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -124195,7 +124207,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 97500,
+          "price": 98000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -124293,7 +124305,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 143000,
+          "price": 107000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -124394,7 +124406,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 108000,
+          "price": 118000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -124543,7 +124555,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 130000,
+          "price": 135000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -124797,7 +124809,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 110000,
+          "price": 115000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -125831,7 +125843,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 100000,
+          "price": 92000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -126090,7 +126102,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 90000,
+          "price": 96000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -126408,7 +126420,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 87000,
+          "price": 88000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -126505,7 +126517,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 75000,
+          "price": 71000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -126680,7 +126692,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 75000,
+          "price": 67000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -127242,7 +127254,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 60500,
+          "price": 61500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -127301,7 +127313,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 60000,
+          "price": 61000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -127360,7 +127372,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 69500,
+          "price": 70000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -128033,7 +128045,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 51000,
+          "price": 42000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -128507,7 +128519,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 55500,
+          "price": 52000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -129042,7 +129054,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 42500,
+          "price": 43500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -129138,7 +129150,7 @@
           "mode": "郵送"
         },
         "toban": {
-          "price": 43000,
+          "price": 41000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%a1%e3%82%ac%e3%82%b8%e3%82%ac%e3%83%ab%e3%83%87ex-117-080/",
           "mode": "郵送"
         },
@@ -129254,7 +129266,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 58000,
+          "price": 60000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -129624,7 +129636,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 47000,
+          "price": 48500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -129797,7 +129809,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 45000,
+          "price": 46000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -129846,7 +129858,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 39000,
+          "price": 40000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -130107,7 +130119,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 35000,
+          "price": 36000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -130164,7 +130176,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 43500,
+          "price": 45000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -130288,10 +130300,6 @@
         "torecabank": {
           "price": 53000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 55000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 50000,
@@ -130579,7 +130587,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 45000,
+          "price": 38000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -130675,7 +130683,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 41000,
+          "price": 35000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -130728,7 +130736,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 32500,
+          "price": 29000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -131903,7 +131911,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 28500,
+          "price": 29500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -132212,7 +132220,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 30000,
+          "price": 25000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -132263,10 +132271,6 @@
         "shinsoku": {
           "price": 23900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 24400,
@@ -132657,7 +132661,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 20000,
+          "price": 23000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -132745,7 +132749,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 27500,
+          "price": 25000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -133734,7 +133738,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 19500,
+          "price": 18000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -133889,10 +133893,6 @@
         "shinsoku": {
           "price": 21400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 24000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 22500,
@@ -134940,7 +134940,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 15000,
+          "price": 13000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -135116,7 +135116,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 15000,
+          "price": 15500,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -135401,7 +135401,7 @@
           "mode": "郵送"
         },
         "toban": {
-          "price": 20000,
+          "price": 18000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%ad%e3%82%b1%e3%83%83%e3%83%88%e5%9b%a3%e3%81%ae%e3%82%af%e3%83%ad%e3%83%90%e3%83%83%e3%83%88ex-127-098/",
           "mode": "郵送"
         },
@@ -135415,7 +135415,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/77gQ15FPN2E0EzuNQSiNfi"
         },
         "shinsoku": {
-          "price": 21300,
+          "price": 19600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -135502,7 +135502,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 16500,
+          "price": 16000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -135680,7 +135680,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 18500,
+          "price": 14000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -136337,7 +136337,7 @@
           "mode": "郵送"
         },
         "mafia": {
-          "price": 15500,
+          "price": 13000,
           "url": "https://torecamafia.online/",
           "mode": "郵送"
         },
@@ -148611,6 +148611,10 @@
           "price": 588500,
           "url": "https://www.morimori-kaitori.jp/category/2401009/product/350864",
           "mode": "郵送"
+        },
+        "shinsoku": {
+          "price": 650000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
     },
@@ -151894,6 +151898,10 @@
         "torecabank": {
           "price": 32000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 35000,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -152614,10 +152622,6 @@
         "torecabank": {
           "price": 47000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 47000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -169972,7 +169976,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7000,
+          "price": 7050,
           "url": "https://kaitori-homura.com/products/5022"
         },
         "shouten": {
@@ -170045,7 +170049,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6900,
+          "price": 6950,
           "url": "https://kaitori-homura.com/products/5620"
         },
         "shouten": {
@@ -170197,7 +170201,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6500,
+          "price": 6600,
           "url": "https://kaitori-homura.com/products/5020"
         },
         "shouten": {
@@ -170271,7 +170275,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6900,
+          "price": 6950,
           "url": "https://kaitori-homura.com/products/5023"
         },
         "shouten": {
@@ -170546,7 +170550,7 @@
       },
       "prices": {
         "homura": {
-          "price": 4900,
+          "price": 4950,
           "url": "https://kaitori-homura.com/products/6887"
         },
         "shouten": {
@@ -175326,7 +175330,7 @@
           "url": "https://www.1-chome.com/wineDetail/7051/7081"
         },
         "toban": {
-          "price": 8400,
+          "price": 8600,
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-pro%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%a9%e3%83%bc/"
         },
         "rudeya": {
@@ -175479,7 +175483,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104003/product/350686"
         },
         "panda": {
-          "price": 13100,
+          "price": 12800,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "rakuen": {

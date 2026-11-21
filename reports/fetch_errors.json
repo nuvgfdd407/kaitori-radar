@@ -1,30 +1,5 @@
 [
   {
-    "time": "2026-10-22T11:27:44+09:00",
-    "shop": "海峡通信",
-    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mobile-ichiban.com', port=443): Max retries exceeded with url: /Prod/2/01/11 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mobile-ichiban.com', port=443) at 0x7fec70ac34d0>, 'Connection to www.mobile-ichiban.com timed out. (connect timeout=30)'))"
-  },
-  {
-    "time": "2026-10-22T11:27:44+09:00",
-    "shop": "買取ルデヤ",
-    "error": "HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://kaitori-rudeya.com/category/detail/214"
-  },
-  {
-    "time": "2026-10-22T11:27:44+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-22T11:27:44+09:00",
-    "shop": "ケータイゴッド",
-    "error": "HTTPError: 404 Client Error: Not Found for url: https://keitai-god.com/price/index.php?ci=8&mi=181"
-  },
-  {
-    "time": "2026-10-22T11:27:44+09:00",
-    "shop": "ゴールデンホビー",
-    "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://buy-gh.tokyo/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%89PSA10.html"
-  },
-  {
     "time": "2026-10-22T11:42:41+09:00",
     "shop": "買取ルデヤ",
     "error": "HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://kaitori-rudeya.com/category/detail/214"
@@ -4566,6 +4541,36 @@
   },
   {
     "time": "2026-11-21T11:14:19+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
+    "shop": "ケータイゴッド",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='keitai-god.com', port=443): Max retries exceeded with url: /price/index.php?ci=8&mi=181 (Caused by ConnectTimeoutError(<HTTPSConnection(host='keitai-god.com', port=443) at 0x74e048911450>, 'Connection to keitai-god.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
+    "shop": "モバックス名古屋大須店",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='mobax-ohsu.com', port=443): Max retries exceeded with url: /p-561/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='mobax-ohsu.com', port=443) at 0x74e048911310>, 'Connection to mobax-ohsu.com timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
+    "shop": "リンクサス買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='linx-as.co.jp', port=443): Max retries exceeded with url: /services/brand/iphone (Caused by ConnectTimeoutError(<HTTPSConnection(host='linx-as.co.jp', port=443) at 0x74e048911810>, 'Connection to linx-as.co.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
+    "shop": "ジェーシカモバイル",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.jcka-mobile.co.jp', port=443): Max retries exceeded with url: /kaitori_price/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jcka-mobile.co.jp', port=443) at 0x74e0489116d0>, 'Connection to www.jcka-mobile.co.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-21T11:29:12+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
