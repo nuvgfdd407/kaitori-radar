@@ -4163,5 +4163,20 @@
     "time": "2026-11-22T12:59:02+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-22T13:12:55+09:00",
+    "shop": "森森買取",
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.morimori-kaitori.jp', port=443): Max retries exceeded with url: /category/price-list/0104001 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morimori-kaitori.jp', port=443) at 0x7fa5206c34d0>, 'Connection to www.morimori-kaitori.jp timed out. (connect timeout=30)'))"
+  },
+  {
+    "time": "2026-11-22T13:12:55+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-22T13:12:55+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
 ]
