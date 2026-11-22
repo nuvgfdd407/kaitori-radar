@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T15:58:59+09:00",
+  "updated_at": "2026-11-22T16:14:05+09:00",
   "shops": [
     {
       "id": "homura",
@@ -5065,7 +5065,7 @@
           "note": "正規販売店の購入証明書が必要"
         },
         "kaden": {
-          "price": 36100,
+          "price": 35700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z35MMPAVBL"
         },
         "mirai": {
@@ -115129,7 +115129,12 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2400000624/20251210/1765355616059-ac4ff1b31896674a.png",
         "source": "シンソク"
       },
-      "prices": {}
+      "prices": {
+        "shinsoku": {
+          "price": 400000,
+          "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        }
+      }
     },
     {
       "jan": "pokemon-box-e16c898d03",
@@ -115160,12 +115165,7 @@
         "origin": "https://storage.googleapis.com/shinsoku-tcg-public/items/IAP2300026255/20251210/1765355501357-a4c1adf62a767467.png",
         "source": "シンソク"
       },
-      "prices": {
-        "shinsoku": {
-          "price": 400000,
-          "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "pokemon-box-d7bdc9577e",
@@ -117650,10 +117650,6 @@
           "price": 9100000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 9800000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 9800000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -118276,10 +118272,6 @@
         "shinsoku": {
           "price": 2140000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 2300000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 2250000,
@@ -125191,7 +125183,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 101000,
+          "price": 100000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV11B+174%2F086&grade=psa10",
           "mode": "郵送"
         },
@@ -128502,10 +128494,6 @@
           "price": 45000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 45500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 44000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/098-SV-P/"
@@ -128608,6 +128596,10 @@
         "shinsoku": {
           "price": 52200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 56000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 56000,
@@ -136628,10 +136620,6 @@
           "price": 14100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 15000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -138697,7 +138685,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 9600,
+          "price": 10000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV2a+183%2F165&grade=psa10",
           "mode": "郵送"
         },
@@ -138808,10 +138796,6 @@
         "torecabank": {
           "price": 11500,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 11000,
@@ -138964,7 +138948,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 10800,
+          "price": 10600,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV8a+125%2F187&grade=psa10",
           "mode": "郵送"
         },
@@ -139075,6 +139059,10 @@
         "shinsoku": {
           "price": 13100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 15000,
@@ -139438,6 +139426,10 @@
         "lounge": {
           "price": 7900,
           "url": "https://kaitori.toreca-lounge.com/product/29MFZpqYTxGIk6n1UcLEAW"
+        },
+        "torecabank": {
+          "price": 8400,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8400,
@@ -139853,7 +139845,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 6300,
+          "price": 6100,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV2a+167%2F165&grade=psa10",
           "mode": "郵送"
         },
@@ -140719,6 +140711,10 @@
         "lounge": {
           "price": 11600,
           "url": "https://kaitori.toreca-lounge.com/product/5UTTwNxsW6dKduxobeJAYD"
+        },
+        "torecabank_store": {
+          "price": 12500,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 9000,
@@ -142676,7 +142672,7 @@
       },
       "prices": {
         "macho": {
-          "price": 6600,
+          "price": 6900,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8a-P+018%2F025&grade=psa10",
           "mode": "郵送"
         },
@@ -144919,6 +144915,10 @@
           "price": 13500,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV2a+004%2F165&grade=psa10",
           "mode": "郵送"
+        },
+        "torecabank": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 15500,
@@ -153942,12 +153942,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1790739240_0107aace2cd4ba5bf4b7.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 36000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-4a2549d3f3",
@@ -153999,12 +153994,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1791093497_745dc425b6222ecbf47c.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 33500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-746fe58320",
@@ -156525,7 +156515,7 @@
       },
       "prices": {
         "torecabank_store": {
-          "price": 201000,
+          "price": 13000,
           "url": "https://store.torecabank.com/kaitori_list"
         }
       }
@@ -173069,7 +173059,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7024"
         },
         "morimori": {
-          "price": 7900,
+          "price": 7800,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/343418"
         },
         "panda": {
@@ -178688,7 +178678,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104003/product/350686"
         },
         "panda": {
-          "price": 12500,
+          "price": 12300,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "rakuen": {
