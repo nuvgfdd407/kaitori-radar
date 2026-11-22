@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T20:13:59+09:00",
+  "updated_at": "2026-11-22T20:28:59+09:00",
   "shops": [
     {
       "id": "homura",
@@ -107893,7 +107893,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 11700,
+          "price": 11500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UHIHGDIW",
           "note": "正規代理店の購入証明が必要"
         },
@@ -108320,7 +108320,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 20700,
+          "price": 20800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3DOEN0T1M",
           "note": "正規代理店の購入証明が必要"
         },
@@ -108747,7 +108747,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 10100,
+          "price": 10000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UZOH65IC",
           "note": "正規代理店の購入証明が必要"
         },
@@ -109258,7 +109258,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 11400,
+          "price": 11200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3QFTJOXPA",
           "note": "正規代理店の購入証明が必要"
         },
@@ -111202,7 +111202,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=3971"
         },
         "kaden": {
-          "price": 22800,
+          "price": 23900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WII0G0SN",
           "note": "正規代理店の購入証明が必要"
         },
@@ -111300,7 +111300,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=3980"
         },
         "kaden": {
-          "price": 56900,
+          "price": 59700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3RQYALNLM",
           "note": "正規代理店の購入証明が必要"
         },
@@ -111350,7 +111350,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=3945"
         },
         "kaden": {
-          "price": 56900,
+          "price": 59700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z35SGCB4IP",
           "note": "正規代理店の購入証明が必要"
         },
@@ -117498,7 +117498,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6761"
         },
         "kaden": {
-          "price": 6100,
+          "price": 5800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ZPPEYMCV"
         },
         "macho": {
@@ -136599,6 +136599,10 @@
           "price": 14100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 15000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -142932,10 +142936,6 @@
         "lounge": {
           "price": 7200,
           "url": "https://kaitori.toreca-lounge.com/product/6DI6btLAyye9OgxcRjuqhs"
-        },
-        "torecabank": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8000,
@@ -150464,7 +150464,12 @@
         "origin": "https://d1a0jozt44u693.cloudfront.net/k697asb5321o359w4mp108dpuxb8",
         "source": "買取ホムラ"
       },
-      "prices": {}
+      "prices": {
+        "torecabank": {
+          "price": 8000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        }
+      }
     },
     {
       "jan": "psa-2c8f5a35a7",
@@ -154815,12 +154820,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1784696316_0fa0e0e238fc588477d3.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank": {
-          "price": 138000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-4e11166001",
