@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T16:28:31+09:00",
+  "updated_at": "2026-11-23T16:43:31+09:00",
   "shops": [
     {
       "id": "homura",
@@ -302,7 +302,8 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-23T16:43:31+09:00"
     },
     {
       "id": "birth_store",
@@ -423,7 +424,7 @@
           "url": "https://linx-as.co.jp/services/game/nintendoswitch"
         },
         "jcka": {
-          "price": 53700,
+          "price": 54000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-nintendo/"
         },
         "base": {
@@ -4993,7 +4994,7 @@
           "note": "正規販売店の購入証明書が必要"
         },
         "kaden": {
-          "price": 33700,
+          "price": 33900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3QGSM7YRL"
         },
         "mirai": {
@@ -20039,7 +20040,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 352000,
+          "price": 350000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone16pro-128gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -20145,7 +20146,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 354000,
+          "price": 352000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone16pro-128gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -40870,7 +40871,7 @@
       },
       "prices": {
         "homura": {
-          "price": 117500,
+          "price": 118100,
           "url": "https://kaitori-homura.com/products/5679"
         },
         "shouten": {
@@ -40972,7 +40973,7 @@
       },
       "prices": {
         "homura": {
-          "price": 117500,
+          "price": 118100,
           "url": "https://kaitori-homura.com/products/5678"
         },
         "shouten": {
@@ -41074,7 +41075,7 @@
       },
       "prices": {
         "homura": {
-          "price": 117500,
+          "price": 118100,
           "url": "https://kaitori-homura.com/products/5681"
         },
         "shouten": {
@@ -41176,7 +41177,7 @@
       },
       "prices": {
         "homura": {
-          "price": 117500,
+          "price": 118100,
           "url": "https://kaitori-homura.com/products/5680"
         },
         "shouten": {
@@ -107582,7 +107583,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 8000,
+          "price": 7800,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=package&code=M6",
           "mode": "郵送"
         },
@@ -119350,6 +119351,10 @@
           "price": 645000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 720000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 700000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/101-095-SM9-B/"
@@ -120841,10 +120846,6 @@
           "price": 350000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 360000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 330000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/026-032-CP3-B/"
@@ -121320,10 +121321,6 @@
         "shinsoku": {
           "price": 372000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 412000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 400000,
@@ -123507,10 +123504,6 @@
         "shinsoku": {
           "price": 206000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 232000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 220000,
@@ -135627,6 +135620,10 @@
           "price": 12500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 13500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 13500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -144845,10 +144842,6 @@
         "torecabank": {
           "price": 8000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 8000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -163104,7 +163097,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 105000,
+          "price": 98000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
@@ -178205,7 +178198,7 @@
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370554564"
         },
         "jcka": {
-          "price": 12500,
+          "price": 11500,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-nintendo/"
         }
       }
