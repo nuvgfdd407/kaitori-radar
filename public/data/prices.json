@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T14:43:28+09:00",
+  "updated_at": "2026-11-23T14:58:31+09:00",
   "shops": [
     {
       "id": "homura",
@@ -302,16 +302,14 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": false,
-      "failing_since": "2026-11-23T14:43:28+09:00"
+      "ok": true
     },
     {
       "id": "birth_store",
       "name": "トレカバース(店頭)",
       "short": "バース(店頭)",
       "url": "https://www.torecabirth.jp/",
-      "ok": false,
-      "failing_since": "2026-11-23T14:43:28+09:00"
+      "ok": true
     },
     {
       "id": "golden",
@@ -585,7 +583,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 53500,
+          "price": 53700,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "rakuen": {
@@ -696,7 +694,7 @@
           "url": "https://www.keitairakuen.com/product/nintendo-switch-2%ef%bc%88%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%bb%e5%9b%bd%e5%86%85%e5%b0%82%e7%94%a8%ef%bc%89%e3%82%bc%e3%83%ab%e3%83%80%e3%81%ae%e4%bc%9d%e8%aa%ac-40%e5%91%a8%e5%b9%b4-%e3%82%a2/"
         },
         "dragon": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=256&cat3=&page=1"
         },
         "kaumobile": {
@@ -853,7 +851,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7yt3p00tt01r4s1n11kqn"
         },
         "guild": {
-          "price": 59000,
+          "price": 57000,
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370553031"
         },
         "mobax": {
@@ -14710,7 +14708,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7547"
         },
         "panda": {
-          "price": 13200,
+          "price": 13100,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "guild": {
@@ -14753,7 +14751,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7548"
         },
         "panda": {
-          "price": 13100,
+          "price": 13200,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "guild": {
@@ -78145,7 +78143,7 @@
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e5%85%a8%e3%82%ad%e3%83%a3%e3%83%aa%e3%82%a2google/"
         },
         "base": {
-          "price": 233000,
+          "price": 228000,
           "url": "https://kaitori-base.com/?p=9907"
         },
         "mobilemix": {
@@ -113036,11 +113034,6 @@
           "price": 10200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=set&code=ALC-G116",
           "mode": "郵送"
-        },
-        "mafia": {
-          "price": 11000,
-          "url": "https://torecamafia.online/",
-          "mode": "郵送"
         }
       }
     },
@@ -118717,10 +118710,6 @@
           "price": 1110000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 1250000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 1250000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -121292,10 +121281,6 @@
           "price": 423000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 475000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 475000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -122475,10 +122460,6 @@
         "shinsoku": {
           "price": 290000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 315000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 307000,
@@ -127364,10 +127345,6 @@
         "shinsoku": {
           "price": 65700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 76000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 70000,
@@ -135073,10 +135050,6 @@
         "shinsoku": {
           "price": 13100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 16000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 14500,
@@ -144258,10 +144231,6 @@
         "shinsoku": {
           "price": 158000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 175000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 175000,
@@ -180049,7 +180018,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5517"
         },
         "morimori": {
-          "price": 89900,
+          "price": 89100,
           "url": "https://www.morimori-kaitori.jp/category/0503004/product/282297"
         },
         "aboutec": {
