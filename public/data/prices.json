@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T13:43:34+09:00",
+  "updated_at": "2026-11-23T13:58:38+09:00",
   "shops": [
     {
       "id": "homura",
@@ -302,8 +302,7 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": false,
-      "failing_since": "2026-11-23T13:28:33+09:00"
+      "ok": true
     },
     {
       "id": "birth_store",
@@ -651,7 +650,7 @@
       },
       "prices": {
         "homura": {
-          "price": 55800,
+          "price": 56000,
           "url": "https://kaitori-homura.com/products/7305"
         },
         "shouten": {
@@ -723,7 +722,7 @@
           "url": "https://kaitoritojo.jp/products/cmvsykmr502id01qyirve2nl0"
         },
         "guild": {
-          "price": 55800,
+          "price": 56000,
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370554595"
         },
         "mobax": {
@@ -3452,7 +3451,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 214700,
+          "price": 215200,
           "url": "https://www.1-chome.com/wineDetail/6122/6122"
         },
         "toban": {
@@ -3721,7 +3720,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 58200,
+          "price": 58000,
           "url": "https://www.1-chome.com/wineDetail/8508/8539"
         },
         "toban": {
@@ -104485,7 +104484,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4530"
         },
         "guest": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -104576,7 +104575,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4530"
         },
         "guest": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -104667,7 +104666,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4530"
         },
         "guest": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -104758,7 +104757,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4530"
         },
         "guest": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -104849,7 +104848,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4530"
         },
         "guest": {
-          "price": 47300,
+          "price": 47200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -124665,7 +124664,7 @@
       },
       "prices": {
         "toban": {
-          "price": 100000,
+          "price": 99000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-206-xy-p/",
           "mode": "郵送"
         },
@@ -133814,10 +133813,6 @@
           "price": 16000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 17000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 14500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/100-078-SV1V-B/"
@@ -140522,6 +140517,10 @@
           "price": 5600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 6500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 6500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -143015,10 +143014,6 @@
         "torecabank": {
           "price": 13000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 13500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 13000,
@@ -146056,7 +146051,7 @@
       },
       "prices": {
         "toban": {
-          "price": 760000,
+          "price": 770000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%9d%e3%83%b3%e3%83%81%e3%83%a7%e3%82%92%e7%9d%80%e3%81%9f%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-275-xy-p/",
           "mode": "郵送"
         },
@@ -146088,7 +146083,7 @@
       },
       "prices": {
         "toban": {
-          "price": 690000,
+          "price": 700000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%81%82%e3%81%a3%e3%81%9f%e3%81%8b%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-095-xy-p/",
           "mode": "郵送"
         },
@@ -146347,7 +146342,7 @@
       },
       "prices": {
         "toban": {
-          "price": 175000,
+          "price": 185000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6-001-xy-p/",
           "mode": "郵送"
         },
@@ -146481,7 +146476,7 @@
       },
       "prices": {
         "toban": {
-          "price": 98000,
+          "price": 96000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%94%e3%82%ab%e3%83%81%e3%83%a5%e3%82%a6m-012-022/",
           "mode": "郵送"
         },
@@ -176183,7 +176178,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104003/product/350686"
         },
         "panda": {
-          "price": 12300,
+          "price": 12200,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "rakuen": {
@@ -178356,7 +178351,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1683947721-943028"
         },
         "kaden": {
-          "price": 45900,
+          "price": 46000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3PG7UWLBG"
         }
       }
