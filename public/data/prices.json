@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T16:58:33+09:00",
+  "updated_at": "2026-11-23T17:13:35+09:00",
   "shops": [
     {
       "id": "homura",
@@ -302,7 +302,8 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-23T17:13:35+09:00"
     },
     {
       "id": "birth_store",
@@ -344,7 +345,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/23170"
         },
         "kaikyo": {
-          "price": 52900,
+          "price": 53000,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/11"
         },
         "ichome": {
@@ -3053,7 +3054,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/18612"
         },
         "kaikyo": {
-          "price": 118200,
+          "price": 118400,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -3148,7 +3149,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/18613"
         },
         "kaikyo": {
-          "price": 108000,
+          "price": 108200,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -111435,10 +111436,6 @@
           "url": "https://bluerocket-tcg.com/products/33",
           "mode": "郵送"
         },
-        "masai": {
-          "price": 22500,
-          "url": "https://www.masai-tcg.com/products/item-293b90f41c"
-        },
         "mafia": {
           "price": 22000,
           "url": "https://torecamafia.online/",
@@ -112992,10 +112989,6 @@
         "origin": "https://www.pokemon-card.com/products/2025/images/special-box_fukuoka.jpg"
       },
       "prices": {
-        "homura": {
-          "price": 10000,
-          "url": "https://kaitori-homura.com/products/3325"
-        },
         "kaikyo": {
           "price": 9800,
           "url": "https://www.mobile-ichiban.com/Prod/3/04"
@@ -116928,7 +116921,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7669"
         },
         "guild": {
-          "price": 9000,
+          "price": 8800,
           "url": "https://kaitoriguild.co.jp/catalog?q=4582770059229"
         },
         "masai": {
@@ -125030,7 +125023,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/51UivcOFu4b0S9f9MX0rnA"
         },
         "shinsoku": {
-          "price": 108000,
+          "price": 104000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
@@ -135968,10 +135961,6 @@
           "price": 27000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 28000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "birth": {
           "price": 23100,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
@@ -139885,6 +139874,10 @@
         "lounge": {
           "price": 9800,
           "url": "https://kaitori.toreca-lounge.com/product/0oFxudKCEaTHDbtHLnf1nn"
+        },
+        "torecabank": {
+          "price": 10000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 10000,
@@ -173149,7 +173142,7 @@
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "kaden": {
-          "price": 5300,
+          "price": 5200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JUYQ7WEB"
         },
         "mirai": {
