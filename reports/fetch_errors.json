@@ -1,10 +1,5 @@
 [
   {
-    "time": "2026-10-24T13:28:26+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-24T13:43:17+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
@@ -4411,6 +4406,26 @@
   },
   {
     "time": "2026-11-23T13:13:27+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-23T13:28:33+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-23T13:28:33+09:00",
+    "shop": "トレカバース",
+    "error": "ReadTimeout: HTTPSConnectionPool(host='doc-0k-9o-sheets.googleusercontent.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "time": "2026-11-23T13:28:33+09:00",
+    "shop": "トレカバース",
+    "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://doc-0k-9o-sheets.googleusercontent.com/pub/3ropqptqom1b57lc45egbob1oo/70b4f1at5haj9dtb4dtc8s8bmo/1795407845000/104546897424804183296/*/e@2PACX-1vQO2mQ2puvWMG_Jahwc_2gB5Puz0I-ZXrJSCT6BDEoJidoKYpjpFhnDyOWWk-DETcITZAdZSvv5RNrr?gid=844084145&single=true&output=csv"
+  },
+  {
+    "time": "2026-11-23T13:28:33+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
