@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T17:58:30+09:00",
+  "updated_at": "2026-11-23T18:13:46+09:00",
   "shops": [
     {
       "id": "homura",
@@ -302,7 +302,8 @@
       "name": "トレカバース(郵送)",
       "short": "バース(郵送)",
       "url": "https://www.torecabirth.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-23T18:13:46+09:00"
     },
     {
       "id": "birth_store",
@@ -3362,6 +3363,10 @@
           "price": 215200,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
+        "ichome": {
+          "price": 215200,
+          "url": "https://www.1-chome.com/wineDetail/6122/6122"
+        },
         "toban": {
           "price": 207000,
           "url": "https://tobansyoji.co.jp/product/sony-ps5-playstation5-pro-cfi-7100b01-2025%e5%b9%b4%e7%89%88/"
@@ -3449,10 +3454,6 @@
         "kaikyo": {
           "price": 215200,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
-        },
-        "ichome": {
-          "price": 215200,
-          "url": "https://www.1-chome.com/wineDetail/6122/6122"
         },
         "toban": {
           "price": 207000,
@@ -14755,7 +14756,7 @@
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "guild": {
-          "price": 13200,
+          "price": 13100,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872417501"
         }
       }
@@ -58547,7 +58548,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation/"
         },
         "kaumobile": {
-          "price": 141500,
+          "price": 142000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -58613,7 +58614,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation/"
         },
         "kaumobile": {
-          "price": 141500,
+          "price": 142000,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -58679,7 +58680,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 144000,
+          "price": 144500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -58741,7 +58742,7 @@
           "url": "https://sakumoba.jp/tablet/ipad/ipad-mini/ipad-mini8/ipad-mini8-wifi-generation-nano-texture/"
         },
         "kaumobile": {
-          "price": 144000,
+          "price": 144500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
         "aboutec": {
@@ -120833,6 +120834,10 @@
           "price": 350000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 360000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 330000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/026-032-CP3-B/"
@@ -121709,7 +121714,7 @@
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         },
         "birth_store": {
-          "price": 256000,
+          "price": 253000,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         }
       }
@@ -140321,6 +140326,10 @@
           "price": 12100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 13000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 13500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -140565,10 +140574,6 @@
         "shinsoku": {
           "price": 8000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 8800,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 8800,
@@ -142355,6 +142360,10 @@
           "price": 5100,
           "url": "https://kaitori.toreca-lounge.com/product/6JKBFsnnu3maSDbIKZtdxb"
         },
+        "torecabank": {
+          "price": 5200,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 5200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -142471,10 +142480,6 @@
         "lounge": {
           "price": 5100,
           "url": "https://kaitori.toreca-lounge.com/product/1JhhlYnaSkNe63zXYn2xgm"
-        },
-        "torecabank": {
-          "price": 5200,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 5200,
@@ -143148,10 +143153,6 @@
         "shinsoku": {
           "price": 5000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 5200,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 5200,
@@ -145305,7 +145306,7 @@
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         },
         "birth_store": {
-          "price": 4500,
+          "price": 4400,
           "url": "https://www.torecabirth.jp/page/pk_purchase"
         }
       }
@@ -154166,10 +154167,6 @@
         "lounge": {
           "price": 12400,
           "url": "https://kaitori.toreca-lounge.com/product/7QHEYkkGJYcHWSTLDAQwlt"
-        },
-        "torecabank": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 13000,
@@ -178101,7 +178098,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0104003/product/350686"
         },
         "panda": {
-          "price": 12100,
+          "price": 12000,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "rakuen": {
