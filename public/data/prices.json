@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T15:43:42+09:00",
+  "updated_at": "2026-11-24T15:58:35+09:00",
   "shops": [
     {
       "id": "homura",
@@ -153,7 +153,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-24T15:58:35+09:00"
     },
     {
       "id": "guild",
@@ -408,7 +409,7 @@
           "url": "https://kaitori-mirai.com/switch-2-%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%E5%B0%82%E7%94%A8%E7%89%88"
         },
         "tojo": {
-          "price": 53700,
+          "price": 53800,
           "url": "https://kaitoritojo.jp/products/cmpv7yt3i00ts01r410jg3yvk"
         },
         "guild": {
@@ -424,7 +425,7 @@
           "url": "https://linx-as.co.jp/services/game/nintendoswitch"
         },
         "jcka": {
-          "price": 53900,
+          "price": 53800,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-nintendo/"
         },
         "base": {
@@ -510,7 +511,7 @@
           "url": "https://kaitori-mirai.com/switch-2-%E5%A4%9A%E8%A8%80%E8%AA%9E%E7%89%88"
         },
         "tojo": {
-          "price": 83300,
+          "price": 82500,
           "url": "https://kaitoritojo.jp/products/cmpv7yt3v00tu01r4i8kle00j"
         },
         "guild": {
@@ -1282,7 +1283,7 @@
           "note": "2025年以降の製造品のみ"
         },
         "guild": {
-          "price": 41700,
+          "price": 42200,
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370548495",
           "note": "2026年以降の製造品のみ"
         },
@@ -2411,7 +2412,7 @@
           "url": "https://kaitori-mirai.com/switch-lite-%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC-7"
         },
         "tojo": {
-          "price": 27600,
+          "price": 27700,
           "url": "https://kaitoritojo.jp/products/cmpv7yt1200tf01r4mxr3siak"
         },
         "guild": {
@@ -2701,7 +2702,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ABPS8M8N"
         },
         "tojo": {
-          "price": 27600,
+          "price": 27700,
           "url": "https://kaitoritojo.jp/products/cmpv7yt1f00th01r44kpfz27c"
         },
         "guild": {
@@ -3107,7 +3108,7 @@
           "url": "https://kaitori-mirai.com/%E6%96%B0%E5%9E%8B%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B35%E6%9C%AC%E4%BD%93slim%E3%83%A2%E3%83%87%E3%83%AB-cfi-2000a01-7"
         },
         "tojo": {
-          "price": 118700,
+          "price": 118900,
           "url": "https://kaitoritojo.jp/products/cmpv852os00uc01r4n7olv90s"
         },
         "guild": {
@@ -3319,12 +3320,12 @@
           "note": "2026年10月以降製造モデル -2000"
         },
         "tojo": {
-          "price": 49500,
+          "price": 49700,
           "url": "https://kaitoritojo.jp/products/cmpv852wp00vf01r4az3jel3h",
           "note": "2026年10月以降製造モデル減額対象"
         },
         "guild": {
-          "price": 49500,
+          "price": 49700,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872417419",
           "note": "2026年10月以降製造モデル減額対象"
         },
@@ -3418,7 +3419,7 @@
           "url": "https://kaitori-mirai.com/ps5%E6%9C%AC%E4%BD%93slim-%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3-cfi-2000b01-copy"
         },
         "tojo": {
-          "price": 215200,
+          "price": 216000,
           "url": "https://kaitoritojo.jp/products/cmr8xr4mi00m001mfsompfjs4"
         },
         "hachi": {
@@ -3498,7 +3499,7 @@
           "url": "https://kaitori-mirai.com/ps5%E6%9C%AC%E4%BD%93slim-%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3-cfi-2000b01-copy"
         },
         "tojo": {
-          "price": 215200,
+          "price": 215700,
           "url": "https://kaitoritojo.jp/products/cmpv852q000ui01r4enax2urz"
         },
         "guild": {
@@ -4113,7 +4114,7 @@
           "url": "https://kaitori-mirai.com/ps5%E6%9C%AC%E4%BD%93ghost-of-yotei-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AA%E3%83%9F%E3%83%86%E3%83%83%E3%83%89%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3-cfij-10029"
         },
         "tojo": {
-          "price": 118700,
+          "price": 118900,
           "url": "https://kaitoritojo.jp/products/cmpv852vy00vb01r41gepc5jp"
         },
         "mobax": {
@@ -11469,7 +11470,7 @@
           "url": "https://kaitori-mirai.com/steam-deck-%E6%9C%89%E6%A9%9Fel-512gb-7"
         },
         "tojo": {
-          "price": 139600,
+          "price": 139800,
           "url": "https://kaitoritojo.jp/products/cmrepabfs001i01qub2pne03f"
         },
         "guild": {
@@ -11546,7 +11547,7 @@
           "url": "https://kaitori-mirai.com/steam-deck-%E6%9C%89%E6%A9%9Fel-1tb-7"
         },
         "tojo": {
-          "price": 165600,
+          "price": 165800,
           "url": "https://kaitoritojo.jp/products/cmrepfb3o001o01qussmkoezh"
         },
         "guild": {
@@ -11600,7 +11601,7 @@
           "url": "https://kaitori-mirai.com/steam-deck-%E6%9C%89%E6%A9%9Fel-1tb-white-%E9%99%90%E5%AE%9A%E7%89%88"
         },
         "tojo": {
-          "price": 165600,
+          "price": 165800,
           "url": "https://kaitoritojo.jp/products/cmpv89hqz00vg01r4nox6zfgb"
         }
       }
@@ -11923,7 +11924,7 @@
           "url": "https://kaitori-mirai.com/steam-controller-%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC"
         },
         "tojo": {
-          "price": 21000,
+          "price": 21100,
           "url": "https://kaitoritojo.jp/products/cmqen3ynr002801mm8rti16eg"
         },
         "mobax": {
@@ -12264,7 +12265,7 @@
           "url": "https://kaitori-mirai.com/meta-quest-3-512gb-7"
         },
         "tojo": {
-          "price": 92500,
+          "price": 92300,
           "url": "https://kaitoritojo.jp/products/cmpv7s4oj00t501r4ldrii3yd"
         },
         "guild": {
@@ -12378,7 +12379,7 @@
           "url": "https://kaitori-mirai.com/meta-quest-3s-256gb"
         },
         "tojo": {
-          "price": 62400,
+          "price": 62300,
           "url": "https://kaitoritojo.jp/products/cmpv7s4ox00t701r4empzg9gq"
         },
         "guild": {
@@ -113016,11 +113017,6 @@
           "price": 10800,
           "url": "https://bluerocket-tcg.com/products/129",
           "mode": "郵送"
-        },
-        "mafia": {
-          "price": 12000,
-          "url": "https://torecamafia.online/",
-          "mode": "郵送"
         }
       }
     },
@@ -113073,11 +113069,6 @@
         "bluerocket": {
           "price": 10500,
           "url": "https://bluerocket-tcg.com/products/131",
-          "mode": "郵送"
-        },
-        "mafia": {
-          "price": 11000,
-          "url": "https://torecamafia.online/",
           "mode": "郵送"
         }
       }
@@ -117777,10 +117768,6 @@
           "price": 3160000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 3480000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 3180000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/207-XY-P/"
@@ -118602,10 +118589,6 @@
           "price": 1090000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 1260000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 1280000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/066-060-SM1M-B/"
@@ -118856,7 +118839,7 @@
           "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
-          "price": 950000,
+          "price": 970000,
           "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
@@ -119525,10 +119508,6 @@
         "shinsoku": {
           "price": 545000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 591000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 580000,
@@ -136009,6 +135988,10 @@
           "price": 14100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "club": {
           "price": 15000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/125-100-SV9-B/"
@@ -137044,10 +137027,6 @@
         "shinsoku": {
           "price": 13200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 15000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 15000,
@@ -139034,10 +139013,6 @@
         "shinsoku": {
           "price": 12000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 13000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 13000,
@@ -141482,6 +141457,10 @@
         "shinsoku": {
           "price": 6200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 7000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 7500,
@@ -147991,12 +147970,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1789981951_da4b4eadd6f1e1bbaa05.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 10000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-8270db318e",
@@ -151503,6 +151477,10 @@
         "torecabank": {
           "price": 9200,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 9200,
+          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -168031,6 +168009,10 @@
         "source": "トレカラウンジ"
       },
       "prices": {
+        "lounge": {
+          "price": 11000,
+          "url": "https://kaitori.toreca-lounge.com/product/68wrt3ThCPpEvhkEAcOq9V"
+        },
         "birth": {
           "price": 714,
           "url": "https://www.torecabirth.jp/page/yg_purchase"
@@ -170404,7 +170386,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/mWRGqgxDdYy3Sj5EYa968yWGZAjAh9AJF7isHx3B.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "lounge": {
+          "price": 14200,
+          "url": "https://kaitori.toreca-lounge.com/product/36U763Nt4iJE0ULR7EuXyt"
+        }
+      }
     },
     {
       "jan": "psa-2f8e7e04cf",
@@ -170687,7 +170674,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/HqycrPTiFSTOsgnGRnPObKaAIsuRkJqEtD4PxsKR.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "lounge": {
+          "price": 17300,
+          "url": "https://kaitori.toreca-lounge.com/product/5LLHGznlgYG459wcoYsBsC"
+        }
+      }
     },
     {
       "jan": "psa-faf3d55101",
@@ -170962,7 +170954,7 @@
       },
       "prices": {
         "homura": {
-          "price": 7050,
+          "price": 7000,
           "url": "https://kaitori-homura.com/products/5022"
         },
         "shouten": {
