@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T14:58:34+09:00",
+  "updated_at": "2026-11-25T15:13:31+09:00",
   "shops": [
     {
       "id": "homura",
@@ -20,7 +20,8 @@
       "name": "海峡通信",
       "short": "海峡",
       "url": "https://www.mobile-ichiban.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-25T15:13:31+09:00"
     },
     {
       "id": "ichome",
@@ -153,7 +154,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-25T15:13:31+09:00"
     },
     {
       "id": "guild",
@@ -356,7 +358,7 @@
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-2-%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%83%bb%e5%9b%bd%e5%86%85%e5%b0%82%e7%94%a8/"
         },
         "rudeya": {
-          "price": 53000,
+          "price": 53500,
           "url": "https://kaitori-rudeya.com/product/item/5796"
         },
         "morimori": {
@@ -400,7 +402,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 54300,
+          "price": 54200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3CBESS2RW"
         },
         "mirai": {
@@ -9240,7 +9242,7 @@
           "url": "https://www.1-chome.com/wineDetail/5724/5724"
         },
         "rudeya": {
-          "price": 22100,
+          "price": 22000,
           "url": "https://kaitori-rudeya.com/product/item/4513"
         },
         "morimori": {
@@ -9309,7 +9311,7 @@
           "url": "https://www.1-chome.com/wineDetail/10540/10576"
         },
         "rudeya": {
-          "price": 22200,
+          "price": 22000,
           "url": "https://kaitori-rudeya.com/product/item/7251"
         },
         "morimori": {
@@ -16150,7 +16152,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-256gb-4/"
         },
         "quick": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -16204,7 +16206,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 207500,
+          "price": 208000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-256gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16217,7 +16219,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 210500,
+          "price": 211000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16279,7 +16281,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-256gb-4/"
         },
         "quick": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -16333,7 +16335,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 207500,
+          "price": 208000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-256gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16346,7 +16348,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16408,7 +16410,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-256gb-4/"
         },
         "quick": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -16462,7 +16464,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-256gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16475,7 +16477,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16537,7 +16539,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-256gb-4/"
         },
         "quick": {
-          "price": 206500,
+          "price": 208000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -16591,7 +16593,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 203500,
+          "price": 204000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone18pro-256gb/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -16604,7 +16606,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 204500,
+          "price": 205000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16729,7 +16731,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 245000,
+          "price": 245500,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16858,7 +16860,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 245000,
+          "price": 245500,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -16987,7 +16989,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 245000,
+          "price": 245500,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -17116,7 +17118,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p187"
         },
         "mobilemix": {
-          "price": 237500,
+          "price": 238500,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -17174,7 +17176,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-1tb/"
         },
         "quick": {
-          "price": 298000,
+          "price": 300000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -17307,7 +17309,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-1tb/"
         },
         "quick": {
-          "price": 298000,
+          "price": 300000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -17440,7 +17442,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-1tb/"
         },
         "quick": {
-          "price": 298000,
+          "price": 300000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -17573,7 +17575,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-pro-1tb/"
         },
         "quick": {
-          "price": 298000,
+          "price": 300000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18210,7 +18212,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-256gb/"
         },
         "quick": {
-          "price": 224000,
+          "price": 226500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18277,7 +18279,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 229000,
+          "price": 229500,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -18339,7 +18341,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-256gb/"
         },
         "quick": {
-          "price": 224000,
+          "price": 226500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18402,7 +18404,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 226500,
+          "price": 227000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -18464,7 +18466,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-256gb/"
         },
         "quick": {
-          "price": 224000,
+          "price": 226500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18527,7 +18529,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 226500,
+          "price": 227000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -18589,7 +18591,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-256gb/"
         },
         "quick": {
-          "price": 224000,
+          "price": 226500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18710,7 +18712,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-512gb/"
         },
         "quick": {
-          "price": 259000,
+          "price": 259500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18768,7 +18770,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 259000,
+          "price": 260000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -18826,7 +18828,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-512gb/"
         },
         "quick": {
-          "price": 259000,
+          "price": 259500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -18884,7 +18886,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 261500,
+          "price": 262000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -18942,7 +18944,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-512gb/"
         },
         "quick": {
-          "price": 259000,
+          "price": 259500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -19000,7 +19002,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 261500,
+          "price": 262000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -19058,7 +19060,7 @@
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-512gb/"
         },
         "quick": {
-          "price": 259000,
+          "price": 259500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -19116,7 +19118,7 @@
           "url": "https://onmyplan.jp/price/?cid=1&pid=p188"
         },
         "mobilemix": {
-          "price": 260500,
+          "price": 261000,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -20234,7 +20236,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "mobilemix": {
-          "price": 352000,
+          "price": 33100,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -20340,7 +20342,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "mobilemix": {
-          "price": 354000,
+          "price": 35100,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -20446,7 +20448,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "mobilemix": {
-          "price": 392000,
+          "price": 392100,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -20552,7 +20554,7 @@
           "note": "Apple Storeで購入した証明が必要"
         },
         "mobilemix": {
-          "price": 395000,
+          "price": 395100,
           "url": "https://mobile-mix.jp/?category=7"
         }
       }
@@ -21070,7 +21072,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-256gb/"
         },
         "quick": {
-          "price": 172000,
+          "price": 174000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -21195,7 +21197,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-256gb/"
         },
         "quick": {
-          "price": 172000,
+          "price": 174000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -21320,7 +21322,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-256gb/"
         },
         "quick": {
-          "price": 172000,
+          "price": 174000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -21445,7 +21447,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-512gb/"
         },
         "quick": {
-          "price": 200000,
+          "price": 200500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -21570,7 +21572,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-512gb/"
         },
         "quick": {
-          "price": 200000,
+          "price": 200500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -21695,7 +21697,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-512gb/"
         },
         "quick": {
-          "price": 200000,
+          "price": 200500,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22168,7 +22170,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-256gb/"
         },
         "quick": {
-          "price": 188000,
+          "price": 189000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22288,7 +22290,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-256gb/"
         },
         "quick": {
-          "price": 188000,
+          "price": 189000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22408,7 +22410,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-256gb/"
         },
         "quick": {
-          "price": 188000,
+          "price": 189000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22528,7 +22530,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-512gb/"
         },
         "quick": {
-          "price": 213000,
+          "price": 215000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22648,7 +22650,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-512gb/"
         },
         "quick": {
-          "price": 213000,
+          "price": 215000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -22768,7 +22770,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-pro-max-512gb/"
         },
         "quick": {
-          "price": 213000,
+          "price": 215000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -23613,7 +23615,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-256gb/"
         },
         "quick": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -23733,7 +23735,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-256gb/"
         },
         "quick": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -23853,7 +23855,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-256gb/"
         },
         "quick": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -23973,7 +23975,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-256gb/"
         },
         "quick": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24093,7 +24095,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-256gb/"
         },
         "quick": {
-          "price": 138500,
+          "price": 139000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24213,7 +24215,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-512gb/"
         },
         "quick": {
-          "price": 147000,
+          "price": 148000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24333,7 +24335,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-512gb/"
         },
         "quick": {
-          "price": 147000,
+          "price": 148000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24453,7 +24455,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-512gb/"
         },
         "quick": {
-          "price": 147000,
+          "price": 148000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24573,7 +24575,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-512gb/"
         },
         "quick": {
-          "price": 147000,
+          "price": 148000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -24693,7 +24695,7 @@
           "url": "https://www.keitairakuen.com/product/iphone17-512gb/"
         },
         "quick": {
-          "price": 147000,
+          "price": 148000,
           "url": "https://keitaikoukakaitori.com/price/smartphone/iphone/"
         },
         "amemoba": {
@@ -29739,7 +29741,7 @@
           "url": "https://shiroromu.jp/item/iPhone16?id=7268"
         },
         "star": {
-          "price": 117000,
+          "price": 119000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
@@ -29851,7 +29853,7 @@
           "url": "https://shiroromu.jp/item/iPhone16?id=7268"
         },
         "star": {
-          "price": 117000,
+          "price": 119000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
@@ -29963,7 +29965,7 @@
           "url": "https://shiroromu.jp/item/iPhone16?id=7268"
         },
         "star": {
-          "price": 117000,
+          "price": 119000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
@@ -30075,7 +30077,7 @@
           "url": "https://shiroromu.jp/item/iPhone16?id=7268"
         },
         "star": {
-          "price": 117000,
+          "price": 119000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
@@ -107975,7 +107977,7 @@
           "url": "https://kaitori-mirai.com/mega-%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A0%E3%82%A8%E3%83%A1%E3%83%A9%E3%83%AB%E3%83%80-box"
         },
         "guild": {
-          "price": 7500,
+          "price": 7300,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329462233"
         },
         "base": {
@@ -107993,7 +107995,7 @@
           "mode": "郵送"
         },
         "masai": {
-          "price": 7800,
+          "price": 7600,
           "url": "https://www.masai-tcg.com/products/m6"
         },
         "mafia": {
@@ -121174,6 +121176,10 @@
           "price": 341000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 380000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 365000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/007-032-CP3-P-1ED/"
@@ -125976,7 +125982,7 @@
       },
       "prices": {
         "toban": {
-          "price": 135000,
+          "price": 125000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%90%e3%82%b7%e3%83%a3%e3%83%bc%e3%83%a2vmaxsa-086-070/",
           "mode": "郵送"
         },
@@ -125995,7 +126001,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/1XJaJGWTJRUHJRxYUKFfXz"
         },
         "shinsoku": {
-          "price": 141000,
+          "price": 132000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -126764,10 +126770,6 @@
           "price": 100000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 100000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 98000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/085-069-S6A-B/"
@@ -126816,10 +126818,6 @@
         "shinsoku": {
           "price": 106000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 113000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 100000,
@@ -130296,10 +130294,6 @@
         "shinsoku": {
           "price": 32800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 35000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 36000,
@@ -134137,7 +134131,7 @@
       },
       "prices": {
         "toban": {
-          "price": 31000,
+          "price": 30000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%99%e3%83%ab%e3%81%ae%e3%81%be%e3%81%94%e3%81%93%e3%82%8d-097-071/",
           "mode": "郵送"
         },
@@ -134146,7 +134140,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/2VEv96QtjphWXqIAgYiNeW"
         },
         "shinsoku": {
-          "price": 32200,
+          "price": 30700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -134769,6 +134763,10 @@
         "torecabank": {
           "price": 20000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 21000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 21000,
@@ -136030,7 +136028,7 @@
       },
       "prices": {
         "toban": {
-          "price": 16000,
+          "price": 14000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%92%e3%82%ac%e3%83%8a%e3%81%ae%e6%b1%ba%e6%84%8f-079-067/",
           "mode": "郵送"
         },
@@ -136039,7 +136037,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/7baCRb6QEnWm7uaSNvpjrU"
         },
         "shinsoku": {
-          "price": 16500,
+          "price": 15000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "birth": {
@@ -141981,10 +141979,6 @@
           "price": 7000,
           "url": "https://kaitori.toreca-lounge.com/product/4inT9cgstWJ0Rn36Mhh5B0"
         },
-        "torecabank": {
-          "price": 7300,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 7600,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -142272,6 +142266,10 @@
         "shinsoku": {
           "price": 5600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 6100,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 5500,
@@ -142809,6 +142807,10 @@
         "lounge": {
           "price": 5100,
           "url": "https://kaitori.toreca-lounge.com/product/1JhhlYnaSkNe63zXYn2xgm"
+        },
+        "torecabank": {
+          "price": 5200,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 5200,
@@ -144759,10 +144761,6 @@
           "price": 29000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 30000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 28000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/245-184-S8B-B/"
@@ -145178,10 +145176,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 10000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/086-069-S6A-B/"
@@ -146803,10 +146797,6 @@
         "shinsoku": {
           "price": 49900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 60000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
@@ -154865,7 +154855,7 @@
       },
       "prices": {
         "torecabank_store": {
-          "price": 7300,
+          "price": 23000,
           "url": "https://store.torecabank.com/kaitori_list"
         }
       }
@@ -155660,7 +155650,12 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1789608292_0b6d8a6952ead2f63767.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank_store": {
+          "price": 144000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-5097d3ee9b",
@@ -156112,10 +156107,6 @@
         "lounge": {
           "price": 7500,
           "url": "https://kaitori.toreca-lounge.com/product/2V19oOq02ItiRyPePe8Q2p"
-        },
-        "torecabank": {
-          "price": 7500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 7800,
@@ -157091,7 +157082,12 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1793619429_55711f4a116542364df5.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank_store": {
+          "price": 200000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-3240bdbabd",
@@ -158065,12 +158061,7 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1793766597_859413eb455de0f00e12.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 37500,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-599addc290",
@@ -173715,7 +173706,7 @@
           "url": "https://tobansyoji.co.jp/product/%e3%83%9e%e3%83%aa%e3%82%aa%e3%82%ab%e3%83%bc%e3%83%888-%e3%83%87%e3%83%a9%e3%83%83%e3%82%af%e3%82%b9/"
         },
         "rudeya": {
-          "price": 4800,
+          "price": 4900,
           "url": "https://kaitori-rudeya.com/product/item/340"
         },
         "morimori": {
@@ -175600,7 +175591,7 @@
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "kaden": {
-          "price": 5100,
+          "price": 4700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FNAONWP5"
         },
         "mirai": {
@@ -180236,7 +180227,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 60100,
+          "price": 58600,
           "url": "https://www.morimori-kaitori.jp/category/0503003/product/68547"
         },
         "kaden": {
@@ -180257,7 +180248,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 47600,
+          "price": 46500,
           "url": "https://www.morimori-kaitori.jp/category/0503003/product/1783"
         },
         "kaden": {
@@ -180282,7 +180273,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/14"
         },
         "rudeya": {
-          "price": 90100,
+          "price": 89100,
           "url": "https://kaitori-rudeya.com/product/item/5517"
         },
         "morimori": {
