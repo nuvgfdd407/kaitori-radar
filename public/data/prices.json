@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T20:28:31+09:00",
+  "updated_at": "2026-11-25T20:43:33+09:00",
   "shops": [
     {
       "id": "homura",
@@ -62,7 +62,8 @@
       "name": "ゲストモバイル",
       "short": "ゲスト",
       "url": "https://www.guestmobile.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-25T20:43:33+09:00"
     },
     {
       "id": "panda",
@@ -69551,7 +69552,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 112500,
+          "price": 115100,
           "url": "https://www.morimori-kaitori.jp/category/0204002/product/176769"
         },
         "keitaigod": {
@@ -80698,7 +80699,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6910"
         },
         "morimori": {
-          "price": 84000,
+          "price": 82000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/331576"
         },
         "keitaigod": {
@@ -124242,6 +124243,10 @@
           "price": 126000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 140000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 135000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/092-063-M1S-B/"
@@ -160672,10 +160677,6 @@
         "source": "トレカバンク"
       },
       "prices": {
-        "torecabank": {
-          "price": 4800,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 4800,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -174438,7 +174439,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1600"
         },
         "morimori": {
-          "price": 4300,
+          "price": 4400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/142004"
         },
         "panda": {
