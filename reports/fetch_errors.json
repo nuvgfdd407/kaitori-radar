@@ -1,15 +1,5 @@
 [
   {
-    "time": "2026-10-26T16:43:38+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
-    "time": "2026-10-26T16:58:20+09:00",
-    "shop": "買取wiki",
-    "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
-  },
-  {
     "time": "2026-10-26T17:13:11+09:00",
     "shop": "買取wiki",
     "error": "HTTPError: 403 Client Error: Forbidden for url: https://gamekaitori.jp/brand/nintendo/"
@@ -5181,6 +5171,21 @@
   },
   {
     "time": "2026-11-25T16:43:37+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-25T16:58:25+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-25T16:58:25+09:00",
+    "shop": "トレカマフィア",
+    "error": "ValueError: invalid literal for int() with base 10: '.'"
+  },
+  {
+    "time": "2026-11-25T16:58:25+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
