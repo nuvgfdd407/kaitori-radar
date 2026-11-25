@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T17:13:33+09:00",
+  "updated_at": "2026-11-25T17:28:22+09:00",
   "shops": [
     {
       "id": "homura",
@@ -181,7 +181,8 @@
       "name": "リンクサス買取",
       "short": "リンクサス",
       "url": "https://linx-as.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-25T17:28:22+09:00"
     },
     {
       "id": "daiwan",
@@ -372,7 +373,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 54000,
+          "price": 54300,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
         },
         "rakuen": {
@@ -3442,7 +3443,7 @@
           "url": "https://somurie-kaitori.com/products?category=7&subcategory=52"
         },
         "jcka": {
-          "price": 218500,
+          "price": 220000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-sony-2/"
         }
       }
@@ -3522,7 +3523,7 @@
           "url": "https://linx-as.co.jp/services/game/playstation"
         },
         "jcka": {
-          "price": 213500,
+          "price": 215000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-sony-2/"
         },
         "base": {
@@ -14838,7 +14839,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27044"
         },
         "kaikyo": {
-          "price": 14000,
+          "price": 14100,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "toban": {
@@ -14889,7 +14890,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27045"
         },
         "kaikyo": {
-          "price": 14000,
+          "price": 14100,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "toban": {
@@ -21195,7 +21196,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 174500,
+          "price": 180000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=4"
         },
         "rakuen": {
@@ -21320,7 +21321,7 @@
           "url": "https://www.guestmobile.jp/iphone%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "panda": {
-          "price": 176800,
+          "price": 179000,
           "url": "https://panda-kaitori.co.jp/?cpro=iphone&nowpage=4"
         },
         "rakuen": {
@@ -78055,7 +78056,7 @@
           "url": "https://pocketmall.jp/kaitori8/"
         },
         "kaden": {
-          "price": 170000,
+          "price": 171500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z31IPKHYED"
         },
         "hachi": {
@@ -110960,7 +110961,7 @@
       },
       "prices": {
         "homura": {
-          "price": 20100,
+          "price": 20000,
           "url": "https://kaitori-homura.com/products/3433"
         },
         "kaikyo": {
@@ -110985,11 +110986,11 @@
           "note": "正規代理店の購入証明が必要"
         },
         "base": {
-          "price": 20400,
+          "price": 20000,
           "url": "https://kaitori-base.com/?p=9534"
         },
         "bluerocket": {
-          "price": 20100,
+          "price": 20000,
           "url": "https://bluerocket-tcg.com/products/50",
           "mode": "郵送"
         },
@@ -113150,6 +113151,10 @@
         "guild": {
           "price": 10500,
           "url": "https://kaitoriguild.co.jp/catalog?q=4521329462189"
+        },
+        "somurie": {
+          "price": 11500,
+          "url": "https://somurie-kaitori.com/products?category=2&subcategory=13"
         },
         "macho": {
           "price": 11400,
@@ -134450,10 +134455,6 @@
           "price": 26600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 29500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 28000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/058-049-SM11B-B/"
@@ -137962,6 +137963,10 @@
           "price": 11300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 14000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 15000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -139352,6 +139357,10 @@
         "shinsoku": {
           "price": 10600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 12000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 11000,
@@ -141431,10 +141440,6 @@
         "shinsoku": {
           "price": 10300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 11000,
@@ -165904,10 +165909,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 59500,
-          "url": "https://kaitori.toreca-lounge.com/product/6tvGFgMZdsUIAf2LZOKHoC"
-        },
         "birth": {
           "price": 29000,
           "url": "https://www.torecabirth.jp/page/yg_purchase"
@@ -167452,10 +167453,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 119000,
-          "url": "https://kaitori.toreca-lounge.com/product/2TskYbumrfh0WZhzRPsA6h"
-        },
         "birth": {
           "price": 69000,
           "url": "https://www.torecabirth.jp/page/yg_purchase"
@@ -170135,10 +170132,6 @@
         "source": "トレカラウンジ"
       },
       "prices": {
-        "lounge": {
-          "price": 11000,
-          "url": "https://kaitori.toreca-lounge.com/product/68wrt3ThCPpEvhkEAcOq9V"
-        },
         "birth": {
           "price": 714,
           "url": "https://www.torecabirth.jp/page/yg_purchase"
@@ -172381,12 +172374,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/WOitEzGumncXjinofwWOiF6nuDFojbD81K2tXGqV.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 340000,
-          "url": "https://kaitori.toreca-lounge.com/product/1Vr9Xq8M1cAHJ31KQFj6jG"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-669f2570d6",
@@ -172512,12 +172500,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/mWRGqgxDdYy3Sj5EYa968yWGZAjAh9AJF7isHx3B.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 14200,
-          "url": "https://kaitori.toreca-lounge.com/product/36U763Nt4iJE0ULR7EuXyt"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-2f8e7e04cf",
@@ -172800,12 +172783,7 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/HqycrPTiFSTOsgnGRnPObKaAIsuRkJqEtD4PxsKR.jpg",
         "source": "トレカラウンジ"
       },
-      "prices": {
-        "lounge": {
-          "price": 17300,
-          "url": "https://kaitori.toreca-lounge.com/product/5LLHGznlgYG459wcoYsBsC"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-faf3d55101",
