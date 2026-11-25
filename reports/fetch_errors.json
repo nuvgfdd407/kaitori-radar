@@ -5343,5 +5343,20 @@
     "time": "2026-11-25T20:43:33+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-25T20:58:32+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-25T20:58:32+09:00",
+    "shop": "トレカマフィア",
+    "error": "ValueError: invalid literal for int() with base 10: '.'"
+  },
+  {
+    "time": "2026-11-25T20:58:32+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
 ]
