@@ -12793,6 +12793,23 @@
   {
     "shop": "トレカバンク",
     "jan": null,
+    "key": "pokemon|PSA10|FP-001|孫悟空|",
+    "name": "PSA10 孫悟空 FP-001",
+    "price": 1050000,
+    "url": "https://store.torecabank.com/kaitori_list",
+    "psa": {
+      "game": "pokemon",
+      "grade": "PSA10",
+      "name": "孫悟空",
+      "rarity": null,
+      "number": "FP-001",
+      "image": "https://store.torecabank.com/uploads/product_master/1793337349_bff372e8b901ee31f4d6.png",
+      "page": "https://store.torecabank.com/kaitori_list"
+    }
+  },
+  {
+    "shop": "トレカバンク",
+    "jan": null,
     "key": "pokemon|PSA10|YGOPR-JP001|光の創造神ホルアクティウルトラ|",
     "name": "PSA10 光の創造神ホルアクティ ウルトラ YGOPR-JP001",
     "price": 990000,
@@ -12855,23 +12872,6 @@
       "rarity": "PROMO",
       "number": "112/PCG-P",
       "image": "https://store.torecabank.com/uploads/product_master/1795574735_9d7fc539ca63b161b43b.jpg",
-      "page": "https://store.torecabank.com/kaitori_list"
-    }
-  },
-  {
-    "shop": "トレカバンク",
-    "jan": null,
-    "key": "pokemon|PSA10|W139-P02EX|ウォーターパークの女王ウィルヘルミナ+|",
-    "name": "PSA10 ウォーターパークの女王 ウィルヘルミナ PR+ BRD/W139-P02EX",
-    "price": 544000,
-    "url": "https://store.torecabank.com/kaitori_list",
-    "psa": {
-      "game": "pokemon",
-      "grade": "PSA10",
-      "name": "ウォーターパークの女王 ウィルヘルミナ",
-      "rarity": "PR+",
-      "number": "BRD/W139-P02EX",
-      "image": "https://store.torecabank.com/uploads/product_master/1795574535_01a378dbea100660e785.png",
       "page": "https://store.torecabank.com/kaitori_list"
     }
   },
@@ -13875,23 +13875,6 @@
       "rarity": "クォーターセンチュリーシークレット",
       "number": "QCCP-JP001",
       "image": "https://store.torecabank.com/uploads/product_master/1784280636_65b42eabb4d7e87d1a42.jpg",
-      "page": "https://store.torecabank.com/kaitori_list"
-    }
-  },
-  {
-    "shop": "トレカバンク",
-    "jan": null,
-    "key": "pokemon|PSA10|007/036|ビクティニ|1ED",
-    "name": "PSA10 ビクティニ:1ED[CP5] - 007/036",
-    "price": 67000,
-    "url": "https://store.torecabank.com/kaitori_list",
-    "psa": {
-      "game": "pokemon",
-      "grade": "PSA10",
-      "name": "ビクティニ:1ED[CP5]",
-      "rarity": null,
-      "number": "007/036",
-      "image": "https://store.torecabank.com/uploads/product_master/1765871929_a0517509ac6003aea7b8.jpg",
       "page": "https://store.torecabank.com/kaitori_list"
     }
   },
@@ -19334,17 +19317,17 @@
   },
   {
     "shop": "家電市場",
+    "jan": "4549212303647",
+    "name": "RICOH WG-7 [レッド]",
+    "price": 44100,
+    "url": "https://www.kaden-ichiba.com/item/detail/Z3TGQFR8RC"
+  },
+  {
+    "shop": "家電市場",
     "jan": "4948872311724",
     "name": "プレイステーション4 Pro FINAL FANTASY VII REMAKE Pack CUHJ-10036 [1TB]",
     "price": 44000,
     "url": "https://www.kaden-ichiba.com/item/detail/Z3TR1NBIB1"
-  },
-  {
-    "shop": "家電市場",
-    "jan": "4549212303647",
-    "name": "RICOH WG-7 [レッド]",
-    "price": 44000,
-    "url": "https://www.kaden-ichiba.com/item/detail/Z3TGQFR8RC"
   },
   {
     "shop": "家電市場",
@@ -21922,6 +21905,17 @@
     "name": "Panasonic ヘアードライヤー ナノケア  ULTIMATE EH-NC80-T（オーセンティックブラウン）",
     "price": 65000,
     "url": "https://www.keitairakuen.com/product/panasonic-%e3%83%98%e3%82%a2%e3%83%bc%e3%83%89%e3%83%a9%e3%82%a4%e3%83%a4%e3%83%bc-%e3%83%8a%e3%83%8e%e3%82%b1%e3%82%a2-ultimate-eh-nc80-t%ef%bc%88%e3%82%aa%e3%83%bc%e3%82%bb%e3%83%b3%e3%83%86/"
+  },
+  {
+    "shop": "携帯楽園",
+    "jan": null,
+    "key": "AQUOS sense11 128GB 楽天モバイル",
+    "name": "AQUOS sense11 SH-M37 8G+128G 楽天モバイル [ゴールド]",
+    "price": 64000,
+    "url": "https://www.keitairakuen.com/product/aquos-sense11-sh-m37-8g128g-%e6%a5%bd%e5%a4%a9%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab-%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%89/",
+    "colors": {
+      "ゴールド": 64000
+    }
   },
   {
     "shop": "携帯楽園",
