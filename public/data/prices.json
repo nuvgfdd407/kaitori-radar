@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T20:13:24+09:00",
+  "updated_at": "2026-11-26T20:27:24+09:00",
   "shops": [
     {
       "id": "homura",
@@ -48,7 +48,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-26T20:27:24+09:00"
     },
     {
       "id": "keitaigod",
@@ -3280,7 +3281,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/303985"
         },
         "keitaigod": {
-          "price": 49500,
+          "price": 50500,
           "url": "https://keitai-god.com/price/model.php?moid=4782"
         },
         "guest": {
@@ -5142,7 +5143,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/350642"
         },
         "keitaigod": {
-          "price": 49500,
+          "price": 50500,
           "url": "https://keitai-god.com/price/model.php?moid=4782"
         },
         "guest": {
@@ -11835,7 +11836,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 179500,
+          "price": 180500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3MFOOYD5M"
         },
         "tojo": {
@@ -59338,7 +59339,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-435883"
         },
         "kaden": {
-          "price": 326500,
+          "price": 326600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3SOADKKDZ"
         }
       }
@@ -60722,7 +60723,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-007208"
         },
         "kaden": {
-          "price": 185400,
+          "price": 186900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3N2XA2QF7"
         },
         "hachi": {
@@ -60789,7 +60790,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-012554"
         },
         "kaden": {
-          "price": 185400,
+          "price": 186900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3NH0GESEC"
         },
         "hachi": {
@@ -60856,7 +60857,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-009752"
         },
         "kaden": {
-          "price": 185400,
+          "price": 187200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ETC6E7GV"
         },
         "hachi": {
@@ -60923,7 +60924,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-014733"
         },
         "kaden": {
-          "price": 185400,
+          "price": 186900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z38NW18HUG"
         },
         "hachi": {
@@ -61584,7 +61585,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763360-039403"
         },
         "kaden": {
-          "price": 210200,
+          "price": 215700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UHGAK394"
         },
         "hachi": {
@@ -62202,7 +62203,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1760679354-268861"
         },
         "kaden": {
-          "price": 201300,
+          "price": 201800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z30DT6BA3K"
         }
       }
@@ -62260,7 +62261,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1760679354-266474"
         },
         "kaden": {
-          "price": 201300,
+          "price": 201800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3VOH2ZFVC"
         }
       }
@@ -62700,7 +62701,7 @@
           "url": "https://kaumobile.jp/category/mac/"
         },
         "kaden": {
-          "price": 135500,
+          "price": 135800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3VSYUUBHU"
         },
         "linxas": {
@@ -62840,7 +62841,7 @@
           "url": "https://kaumobile.jp/category/mac/"
         },
         "kaden": {
-          "price": 135200,
+          "price": 135500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3PQTN4ZWX"
         },
         "linxas": {
@@ -63112,7 +63113,7 @@
           "url": "https://kaumobile.jp/category/mac/"
         },
         "kaden": {
-          "price": 150200,
+          "price": 150600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z33R45LJUQ"
         },
         "linxas": {
@@ -113057,7 +113058,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 10000,
+          "price": 9500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XWDWNK0J"
         },
         "guild": {
@@ -132719,10 +132720,6 @@
         "shinsoku": {
           "price": 23800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 26500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 26500,
