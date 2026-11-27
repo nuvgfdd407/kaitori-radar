@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T13:28:33+09:00",
+  "updated_at": "2026-11-27T13:43:34+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-27T13:13:40+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -77,8 +76,7 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": false,
-      "failing_since": "2026-11-27T13:13:40+09:00"
+      "ok": true
     },
     {
       "id": "quick",
@@ -155,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-27T13:13:40+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -1761,7 +1758,7 @@
           "url": "https://www.1-chome.com/wineDetail/4567/4567"
         },
         "toban": {
-          "price": 40000,
+          "price": 39400,
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-%e6%96%b0%e5%9e%8b-%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e5%bc%b7%e5%8c%96%e7%89%88-%e3%83%8d%e3%82%aa%e3%83%b3%e3%83%96%e3%83%ab%e3%83%bc-r-%e3%83%8d%e3%82%aa%e3%83%b3/"
         },
         "rudeya": {
@@ -1863,7 +1860,7 @@
           "url": "https://www.1-chome.com/wineDetail/5020/5020"
         },
         "toban": {
-          "price": 40700,
+          "price": 39900,
           "url": "https://tobansyoji.co.jp/product/nintendo-switch-%e6%96%b0%e5%9e%8b-%e3%83%90%e3%83%83%e3%83%86%e3%83%aa%e3%83%bc%e5%bc%b7%e5%8c%96%e7%89%88-%e3%82%b0%e3%83%ac%e3%83%bc/"
         },
         "rudeya": {
@@ -3444,7 +3441,7 @@
           "url": "https://somurie-kaitori.com/products?category=7&subcategory=52"
         },
         "jcka": {
-          "price": 225000,
+          "price": 228000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-sony-2/"
         }
       }
@@ -3524,7 +3521,7 @@
           "url": "https://linx-as.co.jp/services/game/playstation"
         },
         "jcka": {
-          "price": 220000,
+          "price": 228000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/%e3%82%b2%e3%83%bc%e3%83%a0%e6%a9%9f-sony-2/"
         },
         "base": {
@@ -16696,10 +16693,6 @@
           "price": 240000,
           "url": "https://mobax-ohsu.com/p-561/"
         },
-        "somurie": {
-          "price": 244500,
-          "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
-        },
         "linxas": {
           "price": 221500,
           "url": "https://linx-as.co.jp/services/brand/iphone"
@@ -18204,7 +18197,7 @@
           "url": "https://panda-kaitori.co.jp/?cpro=iphone"
         },
         "rakuen": {
-          "price": 226000,
+          "price": 227000,
           "url": "https://www.keitairakuen.com/product/iphone-18-promax-256gb/"
         },
         "quick": {
@@ -75989,7 +75982,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 103700,
+          "price": 105200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76078,7 +76071,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 103700,
+          "price": 105200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76167,7 +76160,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5370"
         },
         "guest": {
-          "price": 103200,
+          "price": 103700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76345,7 +76338,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 122700,
+          "price": 123400,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76434,7 +76427,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 122700,
+          "price": 123400,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76523,7 +76516,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 120700,
+          "price": 121400,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76612,7 +76605,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5371"
         },
         "guest": {
-          "price": 120700,
+          "price": 121400,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76701,7 +76694,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5372"
         },
         "guest": {
-          "price": 134100,
+          "price": 134500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76790,7 +76783,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5372"
         },
         "guest": {
-          "price": 134100,
+          "price": 134500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76879,7 +76872,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5372"
         },
         "guest": {
-          "price": 134100,
+          "price": 134500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -76968,7 +76961,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5372"
         },
         "guest": {
-          "price": 134100,
+          "price": 134500,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -77057,7 +77050,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5373"
         },
         "guest": {
-          "price": 153800,
+          "price": 154200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -77146,7 +77139,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5373"
         },
         "guest": {
-          "price": 153800,
+          "price": 154200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -77235,7 +77228,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5373"
         },
         "guest": {
-          "price": 153800,
+          "price": 154200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -77324,7 +77317,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5373"
         },
         "guest": {
-          "price": 153800,
+          "price": 154200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -77409,7 +77402,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344278"
         },
         "guest": {
-          "price": 186700,
+          "price": 187900,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -78190,7 +78183,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344287"
         },
         "guest": {
-          "price": 210200,
+          "price": 200200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -78255,7 +78248,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344289"
         },
         "guest": {
-          "price": 209900,
+          "price": 204200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -78332,7 +78325,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344288"
         },
         "guest": {
-          "price": 210900,
+          "price": 205200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -78409,7 +78402,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/344290"
         },
         "guest": {
-          "price": 228400,
+          "price": 225200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -80605,7 +80598,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 94200,
+          "price": 94700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -80700,7 +80693,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 94200,
+          "price": 94700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -80795,7 +80788,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 94200,
+          "price": 94700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -80890,7 +80883,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 94200,
+          "price": 94700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -80961,7 +80954,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4880"
         },
         "guest": {
-          "price": 94200,
+          "price": 94700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -101559,7 +101552,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4650"
         },
         "guest": {
-          "price": 72800,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -101625,7 +101618,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4650"
         },
         "guest": {
-          "price": 72800,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -101691,7 +101684,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4650"
         },
         "guest": {
-          "price": 72800,
+          "price": 73200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "rakuen": {
@@ -101757,7 +101750,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4651"
         },
         "guest": {
-          "price": 76300,
+          "price": 76700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -101823,7 +101816,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4651"
         },
         "guest": {
-          "price": 76300,
+          "price": 76700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -101889,7 +101882,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4651"
         },
         "guest": {
-          "price": 76300,
+          "price": 76700,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -102969,7 +102962,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -103051,7 +103044,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -103133,7 +103126,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -103215,7 +103208,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -103297,7 +103290,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -103379,7 +103372,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=4784"
         },
         "guest": {
-          "price": 53200,
+          "price": 54200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "quick": {
@@ -108250,7 +108243,7 @@
           "mode": "郵送"
         },
         "masai": {
-          "price": 6800,
+          "price": 6600,
           "url": "https://www.masai-tcg.com/products/m6"
         },
         "mafia": {
@@ -114115,7 +114108,7 @@
           "url": "https://kaitori-homura.com/products/7780"
         },
         "toban": {
-          "price": 13500,
+          "price": 13000,
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%80%e3%83%9d%e3%82%b1%e3%83%a2%e3%83%b3%e3%82%ab%e3%83%bc%e3%83%89%e3%82%b2%e3%83%bc%e3%83%a0mega%e3%80%8c30th-celebration-%e3%82%ab%e3%83%bc%e3%83%89/"
         },
         "rudeya": {
@@ -123144,7 +123137,7 @@
       },
       "prices": {
         "toban": {
-          "price": 195000,
+          "price": 185000,
           "url": "https://tobansyoji.co.jp/product/psa10-%e3%83%8b%e3%83%b3%e3%83%95%e3%82%a3%e3%82%a2vmaxsa-093-069/",
           "mode": "郵送"
         },
@@ -124325,10 +124318,6 @@
         "shinsoku": {
           "price": 131000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 160000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 145000,
@@ -126418,10 +126407,6 @@
           "price": 82500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 100000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 95000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/068-060-S1H-B/"
@@ -126513,10 +126498,6 @@
         "torecabank": {
           "price": 100000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 100000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 96000,
@@ -128280,10 +128261,6 @@
           "price": 54700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 62000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 58000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/103-100-S9-B/"
@@ -129071,10 +129048,6 @@
         "shinsoku": {
           "price": 37900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 42000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 39000,
@@ -129929,10 +129902,6 @@
         "torecabank": {
           "price": 39500,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 39500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 38000,
@@ -131112,10 +131081,6 @@
         "torecabank": {
           "price": 28000,
           "url": "https://store.torecabank.com/mail_buy_list"
-        },
-        "torecabank_store": {
-          "price": 31000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 26500,
