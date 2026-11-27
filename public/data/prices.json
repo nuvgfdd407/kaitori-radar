@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T10:13:17+09:00",
+  "updated_at": "2026-11-27T10:28:28+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T10:28:28+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T10:28:28+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T10:28:28+09:00"
     },
     {
       "id": "guild",
@@ -407,7 +410,7 @@
           "url": "https://kaitori-mirai.com/switch-2-%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%E5%B0%82%E7%94%A8%E7%89%88"
         },
         "tojo": {
-          "price": 54000,
+          "price": 54300,
           "url": "https://kaitoritojo.jp/products/cmpv7yt3i00ts01r410jg3yvk"
         },
         "guild": {
@@ -1754,7 +1757,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/01"
         },
         "ichome": {
-          "price": 39300,
+          "price": 40800,
           "url": "https://www.1-chome.com/wineDetail/4567/4567"
         },
         "toban": {
@@ -1798,7 +1801,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 39300,
+          "price": 40800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XFXQIJWW"
         },
         "mirai": {
@@ -1856,7 +1859,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/01"
         },
         "ichome": {
-          "price": 40500,
+          "price": 41000,
           "url": "https://www.1-chome.com/wineDetail/5020/5020"
         },
         "toban": {
@@ -2316,7 +2319,7 @@
           "url": "https://kaitori-mirai.com/switch-lite%E3%82%B0%E3%83%AC%E3%83%BC-7"
         },
         "tojo": {
-          "price": 27900,
+          "price": 28100,
           "url": "https://kaitoritojo.jp/products/cmpv7yt0w00te01r48mx5rpi0"
         },
         "guild": {
@@ -2504,7 +2507,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 28200,
+          "price": 28100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WTBDNSZZ"
         },
         "mirai": {
@@ -2512,7 +2515,7 @@
           "url": "https://kaitori-mirai.com/switch-lite-%E3%82%BF%E3%83%BC%E3%82%B3%E3%82%A4%E3%82%BA-7"
         },
         "tojo": {
-          "price": 27900,
+          "price": 28100,
           "url": "https://kaitoritojo.jp/products/cmpv7yt1900tg01r43vosabvg"
         },
         "guild": {
@@ -3275,7 +3278,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6453"
         },
         "morimori": {
-          "price": 48500,
+          "price": 48400,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/303985"
         },
         "keitaigod": {
@@ -3800,7 +3803,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 101500,
+          "price": 102000,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/283265"
         },
         "guest": {
@@ -9751,7 +9754,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/09"
         },
         "ichome": {
-          "price": 18800,
+          "price": 18600,
           "url": "https://www.1-chome.com/wineDetail/5802/5802"
         },
         "toban": {
@@ -9820,7 +9823,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/09"
         },
         "ichome": {
-          "price": 18800,
+          "price": 18600,
           "url": "https://www.1-chome.com/wineDetail/5803/5803"
         },
         "toban": {
@@ -9889,7 +9892,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/09"
         },
         "ichome": {
-          "price": 18800,
+          "price": 18600,
           "url": "https://www.1-chome.com/wineDetail/5804/5804"
         },
         "toban": {
@@ -12303,7 +12306,7 @@
       },
       "prices": {
         "homura": {
-          "price": 92000,
+          "price": 92300,
           "url": "https://kaitori-homura.com/products/5029"
         },
         "toban": {
@@ -12347,7 +12350,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7s4oj00t501r4ldrii3yd"
         },
         "guild": {
-          "price": 92000,
+          "price": 92300,
           "url": "https://kaitoriguild.co.jp/catalog?q=0815820024170"
         },
         "mobax": {
@@ -12413,7 +12416,7 @@
       },
       "prices": {
         "homura": {
-          "price": 62000,
+          "price": 62300,
           "url": "https://kaitori-homura.com/products/5027"
         },
         "shouten": {
@@ -12453,7 +12456,7 @@
           "url": "https://kaumobile.jp/category/vr/"
         },
         "kaden": {
-          "price": 62200,
+          "price": 62300,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3V6OJQ9EW"
         },
         "mirai": {
@@ -12465,7 +12468,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7s4ox00t701r4empzg9gq"
         },
         "guild": {
-          "price": 62000,
+          "price": 62300,
           "url": "https://kaitoriguild.co.jp/catalog?q=0815820025290"
         },
         "mobax": {
@@ -12617,7 +12620,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 46500,
+          "price": 46700,
           "url": "https://www.1-chome.com/wineDetail/4713/4713"
         },
         "toban": {
@@ -12711,7 +12714,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 46500,
+          "price": 46700,
           "url": "https://www.1-chome.com/wineDetail/4714/4714"
         },
         "toban": {
@@ -15955,7 +15958,7 @@
           "url": "https://kaitori-homura.com/products/6896"
         },
         "kaden": {
-          "price": 4300,
+          "price": 4500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3R0W1OSN5"
         }
       }
@@ -19209,7 +19212,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 330000,
+          "price": 329000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z32IJQI4NL"
         },
         "guild": {
@@ -19329,7 +19332,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 330000,
+          "price": 329000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3DBVWUNC1"
         },
         "guild": {
@@ -20937,7 +20940,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 176200,
+          "price": 178000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3AMLKA8BU"
         },
         "mobax": {
@@ -21062,7 +21065,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 178200,
+          "price": 179000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JMFTOT5N"
         },
         "mobax": {
@@ -21187,7 +21190,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 178200,
+          "price": 179000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FABB3SYT"
         },
         "mobax": {
@@ -21312,7 +21315,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 198000,
+          "price": 202000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3QD8WSTIY"
         },
         "mobax": {
@@ -21437,7 +21440,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 200000,
+          "price": 202000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3TPVQPHE6"
         },
         "mobax": {
@@ -21562,7 +21565,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 204500,
+          "price": 205000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3RDHTWINB"
         },
         "mobax": {
@@ -22155,7 +22158,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 185500,
+          "price": 183500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WJLVBWLP"
         },
         "mobax": {
@@ -22395,7 +22398,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 210000,
+          "price": 211000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3KPQBBBSI"
         },
         "mobax": {
@@ -23119,7 +23122,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 283000,
+          "price": 278000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3U2ZMGNFJ"
         },
         "mobax": {
@@ -23239,7 +23242,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 283000,
+          "price": 278000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3608HRQBW"
         },
         "mobax": {
@@ -23359,7 +23362,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 283000,
+          "price": 278000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3OY4CBBYK"
         },
         "mobax": {
@@ -23475,7 +23478,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 140000,
+          "price": 141000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3E2PRGKVS"
         },
         "mobax": {
@@ -23590,7 +23593,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 140000,
+          "price": 141000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z32M1TYKFU"
         },
         "mobax": {
@@ -23705,7 +23708,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 140000,
+          "price": 141000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FO2QBGDQ"
         },
         "mobax": {
@@ -23820,7 +23823,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 140000,
+          "price": 141000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XJMDGX22"
         },
         "mobax": {
@@ -23935,7 +23938,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 140000,
+          "price": 141000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UPKZPMIF"
         },
         "mobax": {
@@ -24050,7 +24053,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 157000,
+          "price": 155500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FXFJGOVX"
         },
         "mobax": {
@@ -24170,7 +24173,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 157000,
+          "price": 155500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3C9CMFQZF"
         },
         "mobax": {
@@ -24290,7 +24293,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 157000,
+          "price": 155500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3DJCMTAOV"
         },
         "mobax": {
@@ -24410,7 +24413,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 157000,
+          "price": 155500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3AHIBYGG9"
         },
         "mobax": {
@@ -24530,7 +24533,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 157000,
+          "price": 155500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z38IOB6SQK"
         },
         "mobax": {
@@ -25122,7 +25125,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1757736500-727984"
         },
         "kaden": {
-          "price": 140000,
+          "price": 138000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3IPXE0MP1"
         },
         "hachi": {
@@ -26078,7 +26081,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 111500,
+          "price": 114000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3KXRLQRIW"
         },
         "mobax": {
@@ -26195,7 +26198,7 @@
           "url": "https://pocketmall.jp/kaitori1/"
         },
         "kaden": {
-          "price": 112000,
+          "price": 113000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z35KUMKUHV"
         },
         "mobax": {
@@ -26308,7 +26311,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1772763359-839475"
         },
         "kaden": {
-          "price": 112000,
+          "price": 111000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3YUNZCOL4"
         },
         "mobax": {
@@ -74148,7 +74151,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/02/01"
         },
         "ichome": {
-          "price": 33500,
+          "price": 33000,
           "url": "https://www.1-chome.com/wineDetail/7470/7500"
         },
         "toban": {
@@ -83031,7 +83034,7 @@
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-ultra/simfree-galaxy-s26-ultra-sm-s948q/"
         },
         "kaden": {
-          "price": 163500,
+          "price": 160500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3J9LNUTEQ"
         },
         "linxas": {
@@ -83093,7 +83096,7 @@
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-ultra/simfree-galaxy-s26-ultra-sm-s948q/"
         },
         "kaden": {
-          "price": 163500,
+          "price": 160500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XLIYZWZH"
         },
         "linxas": {
@@ -83151,7 +83154,7 @@
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-ultra/simfree-galaxy-s26-ultra-sm-s948q/"
         },
         "kaden": {
-          "price": 163500,
+          "price": 160500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3IXXZLM1J"
         },
         "linxas": {
@@ -83209,7 +83212,7 @@
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-ultra/simfree-galaxy-s26-ultra-sm-s948q/"
         },
         "kaden": {
-          "price": 163500,
+          "price": 160500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3Q6LB1HVI"
         },
         "linxas": {
@@ -110242,7 +110245,7 @@
           "url": "https://tobansyoji.co.jp/product/%e3%80%90sv2a%e3%80%91151/"
         },
         "rudeya": {
-          "price": 36500,
+          "price": 35000,
           "url": "https://kaitori-rudeya.com/product/item/3673"
         },
         "morimori": {
@@ -116742,7 +116745,7 @@
           "url": "https://tobansyoji.co.jp/product/%e3%80%90op-05%e3%80%91%e6%96%b0%e6%99%82%e4%bb%a3%e3%81%ae%e4%b8%bb%e5%bd%b9/"
         },
         "rudeya": {
-          "price": 35000,
+          "price": 33000,
           "url": "https://kaitori-rudeya.com/product/item/6523"
         },
         "morimori": {
@@ -127726,6 +127729,10 @@
         "shinsoku": {
           "price": 55900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 58000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 60000,
@@ -139639,10 +139646,6 @@
         "shinsoku": {
           "price": 10900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11500,
@@ -169980,7 +169983,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3SGQ2HUAP"
         },
         "mirai": {
-          "price": 5800,
+          "price": 5000,
           "url": "https://kaitori-mirai.com/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC%E3%83%86%E3%82%A3%E3%82%A2%E3%83%BC%E3%82%BA-%E3%82%AA%E3%83%96-%E3%82%B6-%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0"
         }
       }
@@ -170045,7 +170048,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JUYQ7WEB"
         },
         "mirai": {
-          "price": 5400,
+          "price": 4800,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC-%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%9C%E3%83%AA%E3%83%BC"
         },
         "tojo": {
@@ -170317,7 +170320,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WWPNEMI9"
         },
         "mirai": {
-          "price": 4900,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA-%E3%82%AA%E3%83%87%E3%83%83%E3%82%BB%E3%82%A4-7"
         },
         "tojo": {
@@ -170383,7 +170386,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UMCY95JP"
         },
         "mirai": {
-          "price": 4900,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%83%AB%E3%82%A4%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B33"
         },
         "tojo": {
@@ -170518,7 +170521,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3Z0EAXGWG"
         },
         "mirai": {
-          "price": 4700,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC-%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AC%E3%83%83%E3%83%88"
         }
       }
@@ -170583,7 +170586,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3NREO4XOO"
         },
         "mirai": {
-          "price": 4800,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA-%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC-7"
         },
         "tojo": {
@@ -170908,7 +170911,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FUSMQ54N"
         },
         "mirai": {
-          "price": 5600,
+          "price": 5000,
           "url": "https://kaitori-mirai.com/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC-%E3%83%96%E3%83%AC%E3%82%B9-%E3%82%AA%E3%83%96-%E3%82%B6-%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89"
         }
       }
@@ -171118,7 +171121,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ZTSKE6OX"
         },
         "mirai": {
-          "price": 4800,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%82%BC%E3%83%8E%E3%83%96%E3%83%AC%E3%82%A4%E3%83%89%E3%82%AF%E3%83%AD%E3%82%B9-%E3%83%87%E3%82%A3%E3%83%95%E3%82%A3%E3%83%8B%E3%83%86%E3%82%A3%E3%83%96%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3"
         }
       }
@@ -171171,7 +171174,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UONZSPQH"
         },
         "mirai": {
-          "price": 4700,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA-7"
         }
       }
@@ -171294,7 +171297,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XOIXDNKF"
         },
         "mirai": {
-          "price": 4700,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC-%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88"
         },
         "tojo": {
@@ -171360,7 +171363,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3EPCX5DZK"
         },
         "mirai": {
-          "price": 4700,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/pokemon-legends-%E3%82%A2%E3%83%AB%E3%82%BB%E3%82%A6%E3%82%B9"
         }
       }
@@ -171421,7 +171424,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3AK1SRXIQ"
         },
         "mirai": {
-          "price": 4700,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E6%98%9F%E3%81%AE%E3%82%AB%E3%83%BC%E3%83%93%E3%82%A3-%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%90%E3%83%AA%E3%83%BC"
         }
       }
@@ -171843,7 +171846,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WVRGMZUV"
         },
         "mirai": {
-          "price": 6000,
+          "price": 5000,
           "url": "https://kaitori-mirai.com/%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%95%E3%82%A3%E3%83%83%E3%83%88-%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC"
         }
       }
@@ -172096,7 +172099,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/24786"
         },
         "kaikyo": {
-          "price": 4800,
+          "price": 4500,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/05"
         },
         "ichome": {
@@ -172124,7 +172127,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FNAONWP5"
         },
         "mirai": {
-          "price": 5000,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%BC-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%BC-2-switch"
         },
         "tojo": {
@@ -172248,7 +172251,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3YGH4ZTVL"
         },
         "mirai": {
-          "price": 5000,
+          "price": 4000,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3-7"
         }
       }
@@ -173334,7 +173337,7 @@
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "mirai": {
-          "price": 6300,
+          "price": 5300,
           "url": "https://kaitori-mirai.com/switch-%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC-%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AC%E3%83%83%E3%83%88%E3%82%BC%E3%83%AD%E3%81%AE%E7%A7%98%E5%AE%9D"
         }
       }
@@ -174600,7 +174603,7 @@
       },
       "prices": {
         "rudeya": {
-          "price": 4850,
+          "price": 3300,
           "url": "https://kaitori-rudeya.com/product/item/6542"
         },
         "morimori": {
@@ -176370,7 +176373,7 @@
           "url": "https://www.kaden-ichiba.com/item/detail/Z3IBRL67UU"
         },
         "mirai": {
-          "price": 11000,
+          "price": 8500,
           "url": "https://kaitori-mirai.com/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC-%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3-4%E4%BA%BA%E3%81%A7%E9%81%8A%E3%81%B9%E3%82%8B-joy-con%E3%82%BB%E3%83%83%E3%83%88-7"
         },
         "mobax": {
