@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T17:43:34+09:00",
+  "updated_at": "2026-11-27T17:57:30+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T17:57:30+09:00"
     },
     {
       "id": "rudeya",
@@ -48,7 +49,8 @@
       "name": "森森買取",
       "short": "森森",
       "url": "https://www.morimori-kaitori.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T17:57:30+09:00"
     },
     {
       "id": "keitaigod",
@@ -76,7 +78,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T17:57:30+09:00"
     },
     {
       "id": "quick",
@@ -3066,7 +3069,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 120200,
+          "price": 120300,
           "url": "https://www.1-chome.com/wineDetail/5401/5401"
         },
         "rudeya": {
@@ -3161,7 +3164,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 110500,
+          "price": 110700,
           "url": "https://www.1-chome.com/wineDetail/5402/5402"
         },
         "toban": {
@@ -3373,7 +3376,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 226700,
+          "price": 227700,
           "url": "https://www.1-chome.com/wineDetail/6122/6122"
         },
         "toban": {
@@ -4152,7 +4155,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
-          "price": 110500,
+          "price": 110900,
           "url": "https://www.1-chome.com/wineDetail/10350/10383"
         },
         "toban": {
@@ -5220,7 +5223,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/03"
         },
         "ichome": {
-          "price": 123300,
+          "price": 123500,
           "url": "https://www.1-chome.com/wineDetail/1191/1191"
         },
         "toban": {
@@ -5344,7 +5347,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/01/03"
         },
         "ichome": {
-          "price": 112800,
+          "price": 113000,
           "url": "https://www.1-chome.com/wineDetail/6021/6021"
         },
         "toban": {
@@ -5376,7 +5379,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 112500,
+          "price": 113100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3HBNQXNTG"
         },
         "mirai": {
@@ -12614,7 +12617,7 @@
       },
       "prices": {
         "homura": {
-          "price": 46700,
+          "price": 46800,
           "url": "https://kaitori-homura.com/products/5090"
         },
         "shouten": {
@@ -12682,7 +12685,7 @@
           "url": "https://hachiden.com/product.html?id=48"
         },
         "guild": {
-          "price": 46700,
+          "price": 46800,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872016490"
         },
         "mobax": {
@@ -12708,7 +12711,7 @@
       },
       "prices": {
         "homura": {
-          "price": 46700,
+          "price": 46800,
           "url": "https://kaitori-homura.com/products/5089"
         },
         "shouten": {
@@ -12764,7 +12767,7 @@
           "url": "https://kaitori-mirai.com/playstation-vr2-horizon-call-of-the-mountain-%E5%90%8C%E6%A2%B1%E7%89%88-cfij-17001-7"
         },
         "guild": {
-          "price": 46700,
+          "price": 46800,
           "url": "https://kaitoriguild.co.jp/catalog?q=4948872016612"
         },
         "mobax": {
@@ -18290,7 +18293,7 @@
       },
       "prices": {
         "homura": {
-          "price": 225000,
+          "price": 224000,
           "url": "https://kaitori-homura.com/products/7265"
         },
         "shouten": {
@@ -18415,7 +18418,7 @@
       },
       "prices": {
         "homura": {
-          "price": 225000,
+          "price": 224000,
           "url": "https://kaitori-homura.com/products/7281"
         },
         "shouten": {
@@ -18540,7 +18543,7 @@
       },
       "prices": {
         "homura": {
-          "price": 224000,
+          "price": 223000,
           "url": "https://kaitori-homura.com/products/7271"
         },
         "shouten": {
@@ -116328,7 +116331,7 @@
           "note": "国内生産分以外は買取不可または減額の場合あり"
         },
         "macho": {
-          "price": 8300,
+          "price": 8000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=onepiece&type=package&code=OP-16",
           "mode": "郵送"
         },
@@ -118500,6 +118503,10 @@
           "price": 5345000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
+        "torecabank_store": {
+          "price": 5510000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 5000000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/294-XY-P/"
@@ -119099,6 +119106,10 @@
         "torecabank": {
           "price": 2289000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 2360000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 2300000,
@@ -128492,10 +128503,6 @@
         "shinsoku": {
           "price": 51300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 60000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 56000,
@@ -138499,10 +138506,6 @@
           "price": 10600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 11500,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 11500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -139684,6 +139687,10 @@
           "price": 9800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 11500,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 11500,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -140777,10 +140784,6 @@
         "shinsoku": {
           "price": 7900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 8700,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 8000,
@@ -144288,7 +144291,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/5XczZnas308XIwe4GWyq0f"
         },
         "shinsoku": {
-          "price": 825000,
+          "price": 810000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -144583,10 +144586,6 @@
         "shinsoku": {
           "price": 147000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 160000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 163000,
@@ -154353,12 +154352,7 @@
         "origin": "https://img.torecabank.dev/uploads/product_master/1791171957_37f9b5a906025b89f17d.jpg",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 76000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-987ef5f585",
@@ -178147,7 +178141,7 @@
       },
       "prices": {
         "rudeya": {
-          "price": 3000,
+          "price": 3300,
           "url": "https://kaitori-rudeya.com/product/item/6542"
         },
         "morimori": {
@@ -180983,7 +180977,7 @@
           "url": "https://tobansyoji.co.jp/product/ricoh-wg-80-%e3%82%aa%e3%83%ac%e3%83%b3%e3%82%b8/"
         },
         "kaden": {
-          "price": 36100,
+          "price": 34700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3IRWWNUK3"
         }
       }
