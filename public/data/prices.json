@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T12:58:33+09:00",
+  "updated_at": "2026-11-27T13:13:40+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:13:40+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:13:40+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:13:40+09:00"
     },
     {
       "id": "guild",
@@ -3360,7 +3363,7 @@
       },
       "prices": {
         "homura": {
-          "price": 226100,
+          "price": 226600,
           "url": "https://kaitori-homura.com/products/5104"
         },
         "shouten": {
@@ -12453,7 +12456,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=141&cat2=259&cat3=&page=1"
         },
         "sakumoba": {
-          "price": 54500,
+          "price": 54300,
           "url": "https://sakumoba.jp/accessories/meta-vr/meta-quest-3s/"
         },
         "kaumobile": {
@@ -16144,7 +16147,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7411"
         },
         "morimori": {
-          "price": 209000,
+          "price": 209500,
           "url": "https://www.morimori-kaitori.jp/category/0301069/product/344294"
         },
         "keitaigod": {
@@ -18184,7 +18187,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7394"
         },
         "morimori": {
-          "price": 229500,
+          "price": 229000,
           "url": "https://www.morimori-kaitori.jp/category/0301070/product/344310"
         },
         "keitaigod": {
@@ -21111,7 +21114,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 176000,
+          "price": 178000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17pro%e3%80%90256gb%e3%80%91/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -22204,7 +22207,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 181000,
+          "price": 182000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17pro-max%e3%80%90256gb%e3%80%91/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -22378,7 +22381,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6247"
         },
         "morimori": {
-          "price": 194000,
+          "price": 196000,
           "url": "https://www.morimori-kaitori.jp/category/0301066/product/299639"
         },
         "keitaigod": {
@@ -24808,7 +24811,7 @@
           "note": "Apple Store版の価格"
         },
         "jcka": {
-          "price": 134000,
+          "price": 135000,
           "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90128gb%e3%80%91-2/",
           "note": "Apple Storeで購入した証明が必要"
         },
@@ -28704,7 +28707,7 @@
           "url": "https://kaitori-homura.com/products/3169"
         },
         "kaikyo": {
-          "price": 205000,
+          "price": 195000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -28799,7 +28802,7 @@
           "url": "https://kaitori-homura.com/products/3170"
         },
         "kaikyo": {
-          "price": 205000,
+          "price": 195000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -28894,7 +28897,7 @@
           "url": "https://kaitori-homura.com/products/3171"
         },
         "kaikyo": {
-          "price": 205000,
+          "price": 195000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -28989,7 +28992,7 @@
           "url": "https://kaitori-homura.com/products/3172"
         },
         "kaikyo": {
-          "price": 205000,
+          "price": 195000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -29084,7 +29087,7 @@
           "url": "https://kaitori-homura.com/products/3165"
         },
         "kaikyo": {
-          "price": 220000,
+          "price": 205000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -29180,7 +29183,7 @@
           "url": "https://kaitori-homura.com/products/3166"
         },
         "kaikyo": {
-          "price": 220000,
+          "price": 205000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -29276,7 +29279,7 @@
           "url": "https://kaitori-homura.com/products/3167"
         },
         "kaikyo": {
-          "price": 220000,
+          "price": 205000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -29372,7 +29375,7 @@
           "url": "https://kaitori-homura.com/products/3168"
         },
         "kaikyo": {
-          "price": 220000,
+          "price": 205000,
           "url": "https://www.mobile-ichiban.com/Prod/1/01/32"
         },
         "ichome": {
@@ -48568,7 +48571,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/wifi-ipad-air6-11inch/"
         },
         "dragon": {
@@ -48576,7 +48579,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=2"
         },
         "sakumoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/wifi-ipad-air6-11inch/"
         },
         "kaumobile": {
@@ -48630,7 +48633,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/wifi-ipad-air6-11inch/"
         },
         "dragon": {
@@ -48638,7 +48641,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=2"
         },
         "sakumoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/wifi-ipad-air6-11inch/"
         },
         "kaumobile": {
@@ -48692,7 +48695,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/wifi-ipad-air6-11inch/"
         },
         "dragon": {
@@ -48700,7 +48703,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=2"
         },
         "sakumoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/wifi-ipad-air6-11inch/"
         },
         "kaumobile": {
@@ -48754,7 +48757,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/wifi-ipad-air6-11inch/"
         },
         "dragon": {
@@ -48762,7 +48765,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=2"
         },
         "sakumoba": {
-          "price": 80000,
+          "price": 77000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/wifi-ipad-air6-11inch/"
         },
         "kaumobile": {
@@ -48808,7 +48811,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/ipad-air6-11inch-simfree/"
         },
         "dragon": {
@@ -48816,7 +48819,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=4"
         },
         "sakumoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/ipad-air6-11inch-simfree/"
         },
         "kaumobile": {
@@ -48858,7 +48861,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/ipad-air6-11inch-simfree/"
         },
         "dragon": {
@@ -48866,7 +48869,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=4"
         },
         "sakumoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/ipad-air6-11inch-simfree/"
         },
         "kaumobile": {
@@ -48908,7 +48911,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/ipad-air6-11inch-simfree/"
         },
         "dragon": {
@@ -48916,7 +48919,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=4"
         },
         "sakumoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/ipad-air6-11inch-simfree/"
         },
         "kaumobile": {
@@ -48958,7 +48961,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air6/ipad-air6-11inch-simfree/"
         },
         "dragon": {
@@ -48966,7 +48969,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=4"
         },
         "sakumoba": {
-          "price": 83000,
+          "price": 80000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air6-11inch/ipad-air6-11inch-simfree/"
         },
         "kaumobile": {
@@ -52076,7 +52079,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52084,7 +52087,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 57000,
+          "price": 56000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52122,7 +52125,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52130,7 +52133,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 57000,
+          "price": 56000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52172,7 +52175,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52180,7 +52183,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 57000,
+          "price": 56000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52222,7 +52225,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52230,7 +52233,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 57000,
+          "price": 56000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52272,7 +52275,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 56000,
+          "price": 55000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52280,7 +52283,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 57000,
+          "price": 56000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52318,7 +52321,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 65000,
+          "price": 63000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52326,7 +52329,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 66000,
+          "price": 64000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52368,7 +52371,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 65000,
+          "price": 63000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52376,7 +52379,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 66000,
+          "price": 64000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52418,7 +52421,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 65000,
+          "price": 63000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52426,7 +52429,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 66000,
+          "price": 64000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52468,7 +52471,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 65000,
+          "price": 63000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52476,7 +52479,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 66000,
+          "price": 64000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -52518,7 +52521,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 65000,
+          "price": 63000,
           "url": "https://amemoba.com/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "dragon": {
@@ -52526,7 +52529,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 66000,
+          "price": 64000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad-air/ipad-air5/wifi-ipad-air5/"
         },
         "kaumobile": {
@@ -56580,7 +56583,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://amemoba.com/tablet/ipad/ipad10/ipad-10th-generation-wifi-cellular-simfree/"
         },
         "dragon": {
@@ -56588,7 +56591,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad10/ipad-10th-simfree-generation/"
         },
         "kaumobile": {
@@ -56635,7 +56638,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://amemoba.com/tablet/ipad/ipad10/ipad-10th-generation-wifi-cellular-simfree/"
         },
         "dragon": {
@@ -56643,7 +56646,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad10/ipad-10th-simfree-generation/"
         },
         "kaumobile": {
@@ -56690,7 +56693,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://amemoba.com/tablet/ipad/ipad10/ipad-10th-generation-wifi-cellular-simfree/"
         },
         "dragon": {
@@ -56698,7 +56701,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad10/ipad-10th-simfree-generation/"
         },
         "kaumobile": {
@@ -56740,7 +56743,7 @@
           "url": "https://keitaikoukakaitori.com/price/tablet/ipad/"
         },
         "amemoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://amemoba.com/tablet/ipad/ipad10/ipad-10th-generation-wifi-cellular-simfree/"
         },
         "dragon": {
@@ -56748,7 +56751,7 @@
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=149&cat3=&page=7"
         },
         "sakumoba": {
-          "price": 54000,
+          "price": 53000,
           "url": "https://sakumoba.jp/tablet/ipad/ipad10/ipad-10th-simfree-generation/"
         },
         "kaumobile": {
@@ -80230,11 +80233,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80325,11 +80328,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80420,11 +80423,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80515,11 +80518,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 63000,
+          "price": 65000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80610,11 +80613,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80705,11 +80708,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80800,11 +80803,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 75000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -80895,11 +80898,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/google-pixel/"
         },
         "amemoba": {
-          "price": 73000,
+          "price": 75000,
           "url": "https://amemoba.com/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "sakumoba": {
-          "price": 73000,
+          "price": 75000,
           "url": "https://sakumoba.jp/smartphone/google-pixel/google-pixel10a/google-pixe10a-simfree/"
         },
         "kaumobile": {
@@ -86096,7 +86099,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26-plus/galaxy-s26-plus-softbank/"
         },
         "dragon": {
@@ -86105,7 +86108,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-plus/softbank-galaxy-s26-plus-sm-s947z/"
         },
         "linxas": {
@@ -86143,7 +86146,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26-plus/galaxy-s26-plus-softbank/"
         },
         "dragon": {
@@ -86152,7 +86155,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-plus/softbank-galaxy-s26-plus-sm-s947z/"
         },
         "linxas": {
@@ -86190,7 +86193,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26-plus/galaxy-s26-plus-softbank/"
         },
         "dragon": {
@@ -86199,7 +86202,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-plus/softbank-galaxy-s26-plus-sm-s947z/"
         },
         "linxas": {
@@ -86237,7 +86240,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26-plus/galaxy-s26-plus-softbank/"
         },
         "dragon": {
@@ -86246,7 +86249,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 128000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26-plus/softbank-galaxy-s26-plus-sm-s947z/"
         },
         "linxas": {
@@ -87719,11 +87722,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26/galaxy-s26-softbank/"
         },
         "sakumoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26/softbank-galaxy-s26-sm-s942z/"
         },
         "linxas": {
@@ -87765,11 +87768,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26/galaxy-s26-softbank/"
         },
         "sakumoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26/softbank-galaxy-s26-sm-s942z/"
         },
         "linxas": {
@@ -87811,11 +87814,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26/galaxy-s26-softbank/"
         },
         "sakumoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26/softbank-galaxy-s26-sm-s942z/"
         },
         "linxas": {
@@ -87857,11 +87860,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s26/galaxy-s26-softbank/"
         },
         "sakumoba": {
-          "price": 109000,
+          "price": 100000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s26/softbank-galaxy-s26-sm-s942z/"
         },
         "linxas": {
@@ -89535,7 +89538,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 128000,
+          "price": 127000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "dragon": {
@@ -89544,7 +89547,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 128000,
+          "price": 127000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "linxas": {
@@ -89582,7 +89585,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 128000,
+          "price": 127000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "dragon": {
@@ -89591,7 +89594,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 128000,
+          "price": 127000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "linxas": {
@@ -89629,7 +89632,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "dragon": {
@@ -89638,7 +89641,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 132000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "linxas": {
@@ -89676,7 +89679,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 133000,
+          "price": 132000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "dragon": {
@@ -89685,7 +89688,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 133000,
+          "price": 132000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25-ultra/galaxy-s25-ultra-softbank/"
         },
         "linxas": {
@@ -91025,11 +91028,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "sakumoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "pocket": {
@@ -91079,11 +91082,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "sakumoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "pocket": {
@@ -91133,11 +91136,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "sakumoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "pocket": {
@@ -91187,11 +91190,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "sakumoba": {
-          "price": 86000,
+          "price": 80000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-s25/galaxy-s25-softbank/"
         },
         "pocket": {
@@ -91817,11 +91820,11 @@
       },
       "prices": {
         "amemoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-softbank-sm-f976z/"
         },
         "sakumoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-sm-f976z-softbank/"
         }
       }
@@ -91839,11 +91842,11 @@
       },
       "prices": {
         "amemoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-softbank-sm-f976z/"
         },
         "sakumoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-sm-f976z-softbank/"
         }
       }
@@ -91861,11 +91864,11 @@
       },
       "prices": {
         "amemoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-softbank-sm-f976z/"
         },
         "sakumoba": {
-          "price": 216000,
+          "price": 208000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-sm-f976z-softbank/"
         }
       }
@@ -91883,11 +91886,11 @@
       },
       "prices": {
         "amemoba": {
-          "price": 241000,
+          "price": 192000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-softbank-sm-f976z/"
         },
         "sakumoba": {
-          "price": 241000,
+          "price": 228000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-sm-f976z-softbank/"
         }
       }
@@ -91905,7 +91908,7 @@
       },
       "prices": {
         "amemoba": {
-          "price": 255000,
+          "price": 203000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-softbank-sm-f976z/"
         },
         "dragon": {
@@ -91914,7 +91917,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 255000,
+          "price": 248000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8-ultra/galaxy-z-fold8-ultra-sm-f976z-softbank/"
         }
       }
@@ -92705,11 +92708,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-softbank-sm-f971z/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-sm-f971z-softbank/"
         }
       }
@@ -92731,11 +92734,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-softbank-sm-f971z/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-sm-f971z-softbank/"
         }
       }
@@ -92757,11 +92760,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-softbank-sm-f971z/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-sm-f971z-softbank/"
         }
       }
@@ -92782,11 +92785,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         }
       }
@@ -92807,11 +92810,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         }
       }
@@ -92832,11 +92835,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         },
         "sakumoba": {
-          "price": 197000,
+          "price": 187000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-fold8/galaxy-z-fold8-rakuten/"
         }
       }
@@ -93338,11 +93341,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-softbank-sm-f776z/"
         },
         "sakumoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-sm-f776z-softbank/"
         }
       }
@@ -93364,11 +93367,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-softbank-sm-f776z/"
         },
         "sakumoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-sm-f776z-softbank/"
         }
       }
@@ -93390,11 +93393,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/galaxy/"
         },
         "amemoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://amemoba.com/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-softbank-sm-f776z/"
         },
         "sakumoba": {
-          "price": 124000,
+          "price": 98000,
           "url": "https://sakumoba.jp/smartphone/galaxy/galaxy-z-flip8/galaxy-z-flip8-sm-f776z-softbank/"
         }
       }
@@ -98465,11 +98468,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://amemoba.com/smartphone/xperia/xperia1m8/xperia1-8-softbank-a601so/"
         },
         "sakumoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia1-8/softbank-xperia1-8-a601so/"
         }
       }
@@ -98495,11 +98498,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://amemoba.com/smartphone/xperia/xperia1m8/xperia1-8-softbank-a601so/"
         },
         "sakumoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia1-8/softbank-xperia1-8-a601so/"
         }
       }
@@ -98525,11 +98528,11 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://amemoba.com/smartphone/xperia/xperia1m8/xperia1-8-softbank-a601so/"
         },
         "sakumoba": {
-          "price": 168000,
+          "price": 163000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia1-8/softbank-xperia1-8-a601so/"
         }
       }
@@ -99165,7 +99168,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 102000,
+          "price": 93000,
           "url": "https://amemoba.com/smartphone/xperia/xperia1m7/xperia1-7-softbank/"
         },
         "dragon": {
@@ -99174,7 +99177,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 102000,
+          "price": 93000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia1-7/xperia1-7-softbank/"
         },
         "pocket": {
@@ -99212,7 +99215,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 102000,
+          "price": 93000,
           "url": "https://amemoba.com/smartphone/xperia/xperia1m7/xperia1-7-softbank/"
         },
         "dragon": {
@@ -99221,7 +99224,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 102000,
+          "price": 93000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia1-7/xperia1-7-softbank/"
         },
         "pocket": {
@@ -100151,7 +100154,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 53000,
+          "price": 42000,
           "url": "https://amemoba.com/smartphone/xperia/xperia10m7/xperia10-7-softbank/"
         },
         "dragon": {
@@ -100160,7 +100163,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 53000,
+          "price": 42000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia10-7/softbank-xperia10-7/"
         },
         "pocket": {
@@ -100202,7 +100205,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/xperia/"
         },
         "amemoba": {
-          "price": 53000,
+          "price": 42000,
           "url": "https://amemoba.com/smartphone/xperia/xperia10m7/xperia10-7-softbank/"
         },
         "dragon": {
@@ -100211,7 +100214,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 53000,
+          "price": 42000,
           "url": "https://sakumoba.jp/smartphone/xperia/xperia10-7/softbank-xperia10-7/"
         },
         "pocket": {
@@ -101482,7 +101485,7 @@
           "url": "https://www.guestmobile.jp/sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "amemoba": {
-          "price": 102000,
+          "price": 81000,
           "url": "https://amemoba.com/smartphone/aquos/aquos-r11/aquos-r11-softbank-a601sh/"
         },
         "dragon": {
@@ -101491,7 +101494,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 102000,
+          "price": 81000,
           "url": "https://sakumoba.jp/smartphone/aquos/aquos-r11/aquos-r11-softbank/"
         }
       }
@@ -101513,7 +101516,7 @@
           "url": "https://www.guestmobile.jp/sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
         "amemoba": {
-          "price": 102000,
+          "price": 81000,
           "url": "https://amemoba.com/smartphone/aquos/aquos-r11/aquos-r11-softbank-a601sh/"
         },
         "dragon": {
@@ -101522,7 +101525,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 102000,
+          "price": 81000,
           "url": "https://sakumoba.jp/smartphone/aquos/aquos-r11/aquos-r11-softbank/"
         }
       }
@@ -102263,6 +102266,14 @@
         "guest": {
           "price": 76200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102290,6 +102301,14 @@
         "guest": {
           "price": 76200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102317,6 +102336,14 @@
         "guest": {
           "price": 76200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102344,6 +102371,14 @@
         "guest": {
           "price": 76200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102371,6 +102406,14 @@
         "guest": {
           "price": 91200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 75000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 75000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102398,6 +102441,14 @@
         "guest": {
           "price": 91200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 75000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 75000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102425,6 +102476,14 @@
         "guest": {
           "price": 91200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 75000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 75000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102452,6 +102511,14 @@
         "guest": {
           "price": 91200,
           "url": "https://www.guestmobile.jp/sim%e3%83%95%e3%83%aa%e3%83%bc%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 75000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-simfree-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 75000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-simfree/"
         }
       }
     },
@@ -102471,6 +102538,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/docomo%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-docomo-sh-53g/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-53g-docomo/"
         }
       }
     },
@@ -102490,6 +102565,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/docomo%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-docomo-sh-53g/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-53g-docomo/"
         }
       }
     },
@@ -102509,6 +102592,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/docomo%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-docomo-sh-53g/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-53g-docomo/"
         }
       }
     },
@@ -102528,6 +102619,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/docomo%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-docomo-sh-53g/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-53g-docomo/"
         }
       }
     },
@@ -102548,9 +102647,17 @@
           "price": 60000,
           "url": "https://www.guestmobile.jp/au%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-au-shg16/"
+        },
         "dragon": {
           "price": 60000,
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=146&cat3=&page=1"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-shg16-au/"
         }
       }
     },
@@ -102571,9 +102678,17 @@
           "price": 60000,
           "url": "https://www.guestmobile.jp/au%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-au-shg16/"
+        },
         "dragon": {
           "price": 60000,
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=146&cat3=&page=1"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-shg16-au/"
         }
       }
     },
@@ -102594,9 +102709,17 @@
           "price": 60000,
           "url": "https://www.guestmobile.jp/au%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-au-shg16/"
+        },
         "dragon": {
           "price": 60000,
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=146&cat3=&page=1"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-shg16-au/"
         }
       }
     },
@@ -102617,9 +102740,17 @@
           "price": 60000,
           "url": "https://www.guestmobile.jp/au%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
         },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-au-shg16/"
+        },
         "dragon": {
           "price": 60000,
           "url": "https://mobileone.co.jp/sell.html?cat1=140&cat2=146&cat3=&page=1"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-shg16-au/"
         }
       }
     },
@@ -102639,6 +102770,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-softbank-a605sh/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-a605sh-softbank/"
         }
       }
     },
@@ -102658,6 +102797,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-softbank-a605sh/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-a605sh-softbank/"
         }
       }
     },
@@ -102677,6 +102824,14 @@
         "guest": {
           "price": 60000,
           "url": "https://www.guestmobile.jp/sb%e8%b2%b7%e5%8f%96%e4%be%a1%e6%a0%bc/"
+        },
+        "amemoba": {
+          "price": 67000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-softbank-a605sh/"
+        },
+        "sakumoba": {
+          "price": 67000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-a605sh-softbank/"
         }
       }
     },
@@ -102700,6 +102855,14 @@
         "rakuen": {
           "price": 64000,
           "url": "https://www.keitairakuen.com/product/aquos-sense11-sh-m37-8g128g-%e6%a5%bd%e5%a4%a9%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab-%e3%82%ab%e3%83%83%e3%83%91%e3%83%bc/"
+        },
+        "amemoba": {
+          "price": 62000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-rakutenmobile-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 62000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-rakutenmobile/"
         }
       }
     },
@@ -102723,6 +102886,14 @@
         "rakuen": {
           "price": 64000,
           "url": "https://www.keitairakuen.com/product/aquos-sense11-sh-m37-8g128g-%e6%a5%bd%e5%a4%a9%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab-%e3%82%b7%e3%83%ab%e3%83%90%e3%83%bc/"
+        },
+        "amemoba": {
+          "price": 62000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-rakutenmobile-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 62000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-rakutenmobile/"
         }
       }
     },
@@ -102746,6 +102917,14 @@
         "rakuen": {
           "price": 64000,
           "url": "https://www.keitairakuen.com/product/aquos-sense11-sh-m37-8g128g-%e6%a5%bd%e5%a4%a9%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab-%e3%83%96%e3%83%a9%e3%83%83%e3%82%af/"
+        },
+        "amemoba": {
+          "price": 62000,
+          "url": "https://amemoba.com/smartphone/aquos/aquos-sense11/aquos-sense11-rakutenmobile-sh-m37/"
+        },
+        "sakumoba": {
+          "price": 62000,
+          "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense11/aquos-sense11-sh-m37-rakutenmobile/"
         }
       }
     },
@@ -104258,7 +104437,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/aquos/"
         },
         "amemoba": {
-          "price": 44000,
+          "price": 35000,
           "url": "https://amemoba.com/smartphone/aquos/aquos-sense10/aquos-sense10-softbank-a505sh/"
         },
         "dragon": {
@@ -104267,7 +104446,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 42000,
+          "price": 33000,
           "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense10/aquos-sense10-a505sh-softbank/"
         },
         "daiwan": {
@@ -104301,7 +104480,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/aquos/"
         },
         "amemoba": {
-          "price": 44000,
+          "price": 35000,
           "url": "https://amemoba.com/smartphone/aquos/aquos-sense10/aquos-sense10-softbank-a505sh/"
         },
         "dragon": {
@@ -104310,7 +104489,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 42000,
+          "price": 33000,
           "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense10/aquos-sense10-a505sh-softbank/"
         },
         "daiwan": {
@@ -104344,7 +104523,7 @@
           "url": "https://keitaikoukakaitori.com/price/smartphone/aquos/"
         },
         "amemoba": {
-          "price": 44000,
+          "price": 35000,
           "url": "https://amemoba.com/smartphone/aquos/aquos-sense10/aquos-sense10-softbank-a505sh/"
         },
         "dragon": {
@@ -104353,7 +104532,7 @@
           "note": "一括購入の証明と、安心サポートに入っていないことがわかる画面が必要（ないと判定不明品として買取）"
         },
         "sakumoba": {
-          "price": 42000,
+          "price": 33000,
           "url": "https://sakumoba.jp/smartphone/aquos/aquos-sense10/aquos-sense10-a505sh-softbank/"
         },
         "kaden": {
@@ -118621,10 +118800,6 @@
           "price": 2047000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 2110000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 2000000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/151-XY-P/"
@@ -124679,10 +124854,6 @@
           "price": 91800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 99000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 100000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/174-086-SV11W-B/"
@@ -125666,10 +125837,6 @@
         "shinsoku": {
           "price": 148000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 155000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 155000,
@@ -127138,6 +127305,10 @@
         "shinsoku": {
           "price": 54400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank_store": {
+          "price": 65000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 57000,
@@ -129143,6 +129314,10 @@
           "price": 42900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank_store": {
+          "price": 50000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        },
         "club": {
           "price": 46500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/083-069-S6A-B/"
@@ -130789,10 +130964,6 @@
           "price": 34600,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 40000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "club": {
           "price": 38000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/107-095-SM12-B/"
@@ -131737,10 +131908,6 @@
           "price": 26000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 27000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 24500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/070-SV-P/"
@@ -132339,10 +132506,6 @@
         "shinsoku": {
           "price": 31000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 45500,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 31100,
@@ -134800,6 +134963,10 @@
         "torecabank": {
           "price": 15000,
           "url": "https://store.torecabank.com/mail_buy_list"
+        },
+        "torecabank_store": {
+          "price": 15000,
+          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 14500,
@@ -139716,10 +139883,6 @@
           "price": 5900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 6800,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 6500,
           "url": "https://torecaclub.com/pokemon/cards/psa10/089-063-M1L-B/"
@@ -143850,7 +144013,12 @@
         "origin": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/wLD082JgteQDbBm72GcTiTjff7TgJdcPcNGdiHQ2.png",
         "source": "トレカラウンジ"
       },
-      "prices": {}
+      "prices": {
+        "torecabank_store": {
+          "price": 5000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-890119b63d",
@@ -144018,10 +144186,6 @@
         "lounge": {
           "price": 4300,
           "url": "https://kaitori.toreca-lounge.com/product/5RT3gEOaV8lLXYhviXnqVE"
-        },
-        "torecabank_store": {
-          "price": 4800,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "birth": {
           "price": 4100,
