@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T18:28:39+09:00",
+  "updated_at": "2026-11-27T18:43:34+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T18:43:34+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T18:43:34+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T18:43:34+09:00"
     },
     {
       "id": "guild",
@@ -3287,7 +3290,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 50500,
+          "price": 51000,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=2"
         },
         "rakuen": {
@@ -3360,7 +3363,7 @@
       },
       "prices": {
         "homura": {
-          "price": 227100,
+          "price": 228000,
           "url": "https://kaitori-homura.com/products/5104"
         },
         "shouten": {
@@ -3388,7 +3391,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/307430"
         },
         "panda": {
-          "price": 228000,
+          "price": 228500,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=7"
         },
         "rakuen": {
@@ -3960,7 +3963,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 102000,
+          "price": 70000,
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/288266"
         },
         "guest": {
@@ -15391,7 +15394,7 @@
           "url": "https://www.guestmobile.jp/%e3%83%94%e3%83%83%e3%82%af%e3%82%a2%e3%83%83%e3%83%97%e8%b2%b7%e5%8f%96%e6%a9%9f%e7%a8%ae/"
         },
         "panda": {
-          "price": 9300,
+          "price": 9400,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=5"
         },
         "dragon": {
@@ -64508,7 +64511,7 @@
       },
       "prices": {
         "rudeya": {
-          "price": 285500,
+          "price": 285400,
           "url": "https://kaitori-rudeya.com/product/item/5385"
         },
         "morimori": {
@@ -64794,7 +64797,7 @@
           "url": "https://www.1-chome.com/wineDetail/7591/7621"
         },
         "rudeya": {
-          "price": 173900,
+          "price": 173700,
           "url": "https://kaitori-rudeya.com/product/item/5393"
         },
         "morimori": {
@@ -64832,7 +64835,7 @@
           "url": "https://www.1-chome.com/wineDetail/7593/7623"
         },
         "rudeya": {
-          "price": 178400,
+          "price": 173700,
           "url": "https://kaitori-rudeya.com/product/item/5395"
         },
         "morimori": {
@@ -64870,7 +64873,7 @@
           "url": "https://www.1-chome.com/wineDetail/7592/7622"
         },
         "rudeya": {
-          "price": 181400,
+          "price": 173700,
           "url": "https://kaitori-rudeya.com/product/item/5394"
         },
         "morimori": {
@@ -64908,7 +64911,7 @@
           "url": "https://www.1-chome.com/wineDetail/7594/7624"
         },
         "rudeya": {
-          "price": 160200,
+          "price": 157800,
           "url": "https://kaitori-rudeya.com/product/item/5396"
         },
         "morimori": {
@@ -74265,7 +74268,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0602001/product/299660"
         },
         "keitaigod": {
-          "price": 33000,
+          "price": 32000,
           "url": "https://keitai-god.com/price/model.php?moid=4717"
         },
         "guest": {
@@ -124049,7 +124052,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 161000,
+          "price": 157000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8+119%2F100&grade=psa10",
           "mode": "郵送"
         },
@@ -125050,7 +125053,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 124000,
+          "price": 125000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S-P+002&grade=psa10",
           "mode": "郵送"
         },
@@ -126409,7 +126412,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 119000,
+          "price": 124000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S5a+086%2F070&grade=psa10",
           "mode": "郵送"
         },
@@ -126730,7 +126733,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 71200,
+          "price": 70400,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV8+132%2F106&grade=psa10",
           "mode": "郵送"
         },
@@ -126776,7 +126779,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 73900,
+          "price": 73100,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV10+125%2F098&grade=psa10",
           "mode": "郵送"
         },
@@ -126838,7 +126841,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 85000,
+          "price": 84600,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV2a+025%2F165&grade=psa10",
           "mode": "郵送"
         },
@@ -126892,7 +126895,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 79900,
+          "price": 79800,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S-P+323&grade=psa10",
           "mode": "郵送"
         },
@@ -127462,7 +127465,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 60400,
+          "price": 60200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV8a+217%2F187&grade=psa10",
           "mode": "郵送"
         },
@@ -128685,7 +128688,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 51800,
+          "price": 51400,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S12a+205%2F172&grade=psa10",
           "mode": "郵送"
         },
@@ -129014,7 +129017,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 50500,
+          "price": 46700,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S9+103%2F100&grade=psa10",
           "mode": "郵送"
         },
@@ -129468,7 +129471,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 47400,
+          "price": 45000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SM11b+054%2F049&grade=psa10",
           "mode": "郵送"
         },
@@ -129624,7 +129627,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 46300,
+          "price": 48300,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SM9+038%2F095&grade=psa10",
           "mode": "郵送"
         },
@@ -130118,7 +130121,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 40300,
+          "price": 39900,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S6a+083%2F069&grade=psa10",
           "mode": "郵送"
         },
@@ -130693,7 +130696,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 34500,
+          "price": 34000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8+106%2F100&grade=psa10",
           "mode": "郵送"
         },
@@ -130755,7 +130758,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 35800,
+          "price": 35300,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S4a+308%2F190&grade=psa10",
           "mode": "郵送"
         },
@@ -130818,7 +130821,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/2kEhqfP9DJM6G7s5zRj771"
         },
         "shinsoku": {
-          "price": 33500,
+          "price": 32300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -131524,6 +131527,10 @@
           "price": 48100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 50000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 51000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -131728,7 +131735,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 22900,
+          "price": 22800,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S12a+262%2F172&grade=psa10",
           "mode": "郵送"
         },
@@ -132165,7 +132172,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 20800,
+          "price": 20700,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S12a+212%2F172&grade=psa10",
           "mode": "郵送"
         },
@@ -132543,7 +132550,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 20900,
+          "price": 20800,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S12a+221%2F172&grade=psa10",
           "mode": "郵送"
         },
@@ -134696,7 +134703,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 15100,
+          "price": 15200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=M1S+087%2F063&grade=psa10",
           "mode": "郵送"
         },
@@ -135125,10 +135132,6 @@
           "price": 27500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 37000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 37000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -135165,7 +135168,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 16800,
+          "price": 16500,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8a-P+020%2F025&grade=psa10",
           "mode": "郵送"
         },
@@ -135339,7 +135342,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 18400,
+          "price": 18300,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8b+234%2F184&grade=psa10",
           "mode": "郵送"
         },
@@ -135925,7 +135928,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 13600,
+          "price": 13500,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S10a+073%2F071&grade=psa10",
           "mode": "郵送"
         },
@@ -137494,7 +137497,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 14800,
+          "price": 15500,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV8+122%2F106&grade=psa10",
           "mode": "郵送"
         },
@@ -138372,7 +138375,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 9900,
+          "price": 10100,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8a+021%2F028&grade=psa10",
           "mode": "郵送"
         },
@@ -138383,6 +138386,10 @@
         "shinsoku": {
           "price": 10300,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 11500,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 11500,
@@ -138824,7 +138831,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 10900,
+          "price": 11200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV9+127%2F100&grade=psa10",
           "mode": "郵送"
         },
@@ -139777,7 +139784,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 6100,
+          "price": 6200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=M1S+089%2F063&grade=psa10",
           "mode": "郵送"
         },
@@ -139821,7 +139828,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 9300,
+          "price": 9500,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8a+024%2F028&grade=psa10",
           "mode": "郵送"
         },
@@ -140123,7 +140130,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 8700,
+          "price": 8600,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV9a+072%2F063&grade=psa10",
           "mode": "郵送"
         },
@@ -140757,7 +140764,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 7400,
+          "price": 7600,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=S8b+189%2F184&grade=psa10",
           "mode": "郵送"
         },
@@ -140796,7 +140803,7 @@
       },
       "prices": {
         "macho": {
-          "price": 7700,
+          "price": 7600,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV4a+327%2F190&grade=psa10",
           "mode": "郵送"
         },
@@ -143596,10 +143603,6 @@
           "price": 3900,
           "url": "https://kaitori.toreca-lounge.com/product/7VPeXAfPyRJ1eXWM1mBQEY"
         },
-        "torecabank": {
-          "price": 4100,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 4100,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -144437,10 +144440,6 @@
         "shinsoku": {
           "price": 223000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 230000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 220000,
@@ -150403,7 +150402,7 @@
       },
       "prices": {
         "macho": {
-          "price": 16700,
+          "price": 16800,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SV5K+088%2F071&grade=psa10",
           "mode": "郵送"
         }
@@ -156969,7 +156968,7 @@
       },
       "prices": {
         "macho": {
-          "price": 34400,
+          "price": 34200,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=SM-P+249&grade=psa10",
           "mode": "郵送"
         }
@@ -175859,7 +175858,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6058"
         },
         "morimori": {
-          "price": 3500,
+          "price": 3000,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/303237"
         },
         "kaumobile": {
@@ -178947,7 +178946,7 @@
       },
       "prices": {
         "homura": {
-          "price": 6100,
+          "price": 6200,
           "url": "https://kaitori-homura.com/products/5123"
         },
         "shouten": {
@@ -179069,7 +179068,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1554"
         },
         "morimori": {
-          "price": 6950,
+          "price": 6550,
           "url": "https://www.morimori-kaitori.jp/category/0104003/product/71899"
         },
         "panda": {
@@ -180243,7 +180242,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503003/product/68545"
         },
         "kaden": {
-          "price": 60200,
+          "price": 60300,
           "url": "https://www.kaden-ichiba.com/item/detail/b4155ce7be"
         }
       }
@@ -180264,7 +180263,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503003/product/68546"
         },
         "kaden": {
-          "price": 60200,
+          "price": 60300,
           "url": "https://www.kaden-ichiba.com/item/detail/b4155ce7be"
         }
       }
@@ -180285,7 +180284,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0503003/product/68547"
         },
         "kaden": {
-          "price": 60200,
+          "price": 60300,
           "url": "https://www.kaden-ichiba.com/item/detail/b4155ce7be"
         }
       }
