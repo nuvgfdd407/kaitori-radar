@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T13:43:34+09:00",
+  "updated_at": "2026-11-27T13:58:37+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:58:37+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:58:37+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-27T13:58:37+09:00"
     },
     {
       "id": "guild",
@@ -3388,7 +3391,7 @@
           "url": "https://www.morimori-kaitori.jp/category/0101001/product/307430"
         },
         "panda": {
-          "price": 223000,
+          "price": 228000,
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=7"
         },
         "rakuen": {
@@ -108221,7 +108224,7 @@
           "url": "https://keitai-god.com/price/model.php?moid=5364"
         },
         "pocket": {
-          "price": 7200,
+          "price": 7000,
           "url": "https://pocketmall.jp/kaitori6/",
           "note": "予約が必要"
         },
@@ -122233,10 +122236,6 @@
           "price": 315000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 330000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 305000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/221-XY-P/"
@@ -135642,10 +135641,6 @@
           "price": 10500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank_store": {
-          "price": 11000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 11000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/168-165-SV2A-B/"
@@ -141929,10 +141924,6 @@
         "lounge": {
           "price": 4600,
           "url": "https://kaitori.toreca-lounge.com/product/6kdd8NUDPYlFRtO4SHHyF6"
-        },
-        "torecabank_store": {
-          "price": 5000,
-          "url": "https://store.torecabank.com/kaitori_list"
         }
       }
     },
