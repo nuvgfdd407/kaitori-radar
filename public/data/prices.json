@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T20:13:34+09:00",
+  "updated_at": "2026-11-28T20:28:36+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-28T20:13:34+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -77,8 +76,7 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T20:13:34+09:00"
+      "ok": true
     },
     {
       "id": "quick",
@@ -155,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T20:13:34+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -5168,7 +5165,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1792722545-384385"
         },
         "kaden": {
-          "price": 49500,
+          "price": 50100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z36N0M0Y8X"
         },
         "mirai": {
@@ -44747,7 +44744,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5661"
         },
         "morimori": {
-          "price": 77000,
+          "price": 78700,
           "url": "https://www.morimori-kaitori.jp/category/0401002/product/288613"
         },
         "keitaigod": {
@@ -70976,8 +70973,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6235"
         },
         "morimori": {
-          "price": 45000,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303773"
+          "price": 45500,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303769"
         },
         "keitaigod": {
           "price": 45000,
@@ -71110,8 +71107,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6227"
         },
         "morimori": {
-          "price": 45000,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303772"
+          "price": 45500,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303768"
         },
         "keitaigod": {
           "price": 45000,
@@ -71517,7 +71514,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6209"
         },
         "morimori": {
-          "price": 50000,
+          "price": 50500,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303779"
         },
         "keitaigod": {
@@ -71582,7 +71579,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6237"
         },
         "morimori": {
-          "price": 50000,
+          "price": 50500,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303781"
         },
         "keitaigod": {
@@ -71647,7 +71644,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6232"
         },
         "morimori": {
-          "price": 50000,
+          "price": 50500,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303782"
         },
         "keitaigod": {
@@ -109114,7 +109111,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 13500,
+          "price": 13300,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3B4JQMZTM",
           "note": "正規代理店の購入証明が必要"
         },
@@ -118350,7 +118347,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/1sVSdkjx6GNgwiAHySowGa"
         },
         "shinsoku": {
-          "price": 2370000,
+          "price": 2300000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -119123,7 +119120,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/6ECpdyY7Q8E5DeLEnrvxBe"
         },
         "shinsoku": {
-          "price": 1080000,
+          "price": 1060000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "torecabank": {
@@ -126955,10 +126952,6 @@
         "shinsoku": {
           "price": 66100,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 74500,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "club": {
           "price": 72000,
@@ -139394,6 +139387,10 @@
           "price": 8700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 9200,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -139874,6 +139871,10 @@
         "lounge": {
           "price": 9000,
           "url": "https://kaitori.toreca-lounge.com/product/0oFxudKCEaTHDbtHLnf1nn"
+        },
+        "torecabank": {
+          "price": 9200,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 9200,
@@ -141133,7 +141134,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/59IcAq0Twc3vr8gQY93BdQ"
         },
         "shinsoku": {
-          "price": 6100,
+          "price": 10900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -151549,10 +151550,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank": {
-          "price": 9200,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -173477,7 +173474,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4223"
         },
         "morimori": {
-          "price": 4500,
+          "price": 4600,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/302"
         },
         "panda": {
@@ -174232,7 +174229,7 @@
           "url": "https://panda-kaitori.co.jp/?cpro=game&nowpage=3"
         },
         "kaden": {
-          "price": 4700,
+          "price": 4800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ZTSKE6OX"
         },
         "mirai": {
