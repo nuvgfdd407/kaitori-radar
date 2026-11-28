@@ -6553,5 +6553,30 @@
     "time": "2026-11-28T10:28:36+09:00",
     "shop": "ゴールデンホビー",
     "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
+  },
+  {
+    "time": "2026-11-28T10:43:24+09:00",
+    "shop": "買取当番",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "time": "2026-11-28T10:43:24+09:00",
+    "shop": "携帯楽園",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "time": "2026-11-28T10:43:24+09:00",
+    "shop": "ハチ買取",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "time": "2026-11-28T10:43:24+09:00",
+    "shop": "買取北斎",
+    "error": "AttributeError: 'NoneType' object has no attribute 'get_text'"
+  },
+  {
+    "time": "2026-11-28T10:43:24+09:00",
+    "shop": "ゴールデンホビー",
+    "error": "商品を1件も読み取れませんでした（ページの構成が変わった可能性があります）"
   }
 ]
