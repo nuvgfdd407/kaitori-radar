@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T16:28:33+09:00",
+  "updated_at": "2026-11-28T16:43:33+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-28T16:28:33+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -77,8 +76,7 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T16:28:33+09:00"
+      "ok": true
     },
     {
       "id": "quick",
@@ -155,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T16:28:33+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -3728,7 +3725,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/26297"
         },
         "kaikyo": {
-          "price": 57000,
+          "price": 58000,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/02"
         },
         "ichome": {
@@ -12769,7 +12766,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5086"
         },
         "shouten": {
@@ -12824,7 +12821,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5085"
         },
         "shouten": {
@@ -12879,7 +12876,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5084"
         },
         "shouten": {
@@ -12934,7 +12931,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5083"
         },
         "shouten": {
@@ -12989,7 +12986,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5082"
         },
         "shouten": {
@@ -13048,7 +13045,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5081"
         },
         "shouten": {
@@ -13107,7 +13104,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5080"
         },
         "shouten": {
@@ -13170,7 +13167,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5079"
         },
         "shouten": {
@@ -13229,7 +13226,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5078"
         },
         "shouten": {
@@ -13292,7 +13289,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5077"
         },
         "shouten": {
@@ -13355,7 +13352,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5075"
         },
         "shouten": {
@@ -13418,7 +13415,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5076"
         },
         "shouten": {
@@ -13481,7 +13478,7 @@
       },
       "prices": {
         "homura": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://kaitori-homura.com/products/5074"
         },
         "shouten": {
@@ -16176,6 +16173,10 @@
           "price": 206000,
           "url": "https://mobax-ohsu.com/p-561/"
         },
+        "somurie": {
+          "price": 209500,
+          "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
+        },
         "linxas": {
           "price": 191500,
           "url": "https://linx-as.co.jp/services/brand/iphone"
@@ -18707,6 +18708,10 @@
         "mobax": {
           "price": 255000,
           "url": "https://mobax-ohsu.com/p-561/"
+        },
+        "somurie": {
+          "price": 259000,
+          "url": "https://somurie-kaitori.com/products?category=1&subcategory=58"
         },
         "linxas": {
           "price": 240500,
@@ -44820,11 +44825,6 @@
           "price": 78500,
           "url": "https://kaumobile.jp/category/ipad/"
         },
-        "kaden": {
-          "price": 82000,
-          "url": "https://www.kaden-ichiba.com/item/detail/Z31G2KTXS8",
-          "note": "Apple Store版の価格"
-        },
         "daiwan": {
           "price": 88000,
           "url": "https://shiroromu.jp/item/iPad_air_7th?id=7777"
@@ -69800,7 +69800,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7457"
         },
         "morimori": {
-          "price": 58500,
+          "price": 58100,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/344599"
         },
         "keitaigod": {
@@ -107802,7 +107802,7 @@
           "url": "https://www.morimori-kaitori.jp/category/2401/product/344245"
         },
         "keitaigod": {
-          "price": 7000,
+          "price": 6000,
           "url": "https://keitai-god.com/price/model.php?moid=5364"
         },
         "pocket": {
@@ -113932,7 +113932,7 @@
           "url": "https://kaitori-homura.com/products/7780"
         },
         "toban": {
-          "price": 11500,
+          "price": 11000,
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%80%e3%83%9d%e3%82%b1%e3%83%a2%e3%83%b3%e3%82%ab%e3%83%bc%e3%83%89%e3%82%b2%e3%83%bc%e3%83%a0mega%e3%80%8c30th-celebration-%e3%82%ab%e3%83%bc%e3%83%89/"
         },
         "rudeya": {
@@ -117232,7 +117232,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/27379"
         },
         "toban": {
-          "price": 5500,
+          "price": 5800,
           "url": "https://tobansyoji.co.jp/product/%e9%83%b5%e9%80%81%e5%b0%82%e7%94%a8%e3%80%90eb-05%e3%80%91one-piece-tcg-heroines-edition-vol-2/"
         },
         "rudeya": {
@@ -120795,10 +120795,6 @@
         "shinsoku": {
           "price": 378000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 440000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 370000,
@@ -132510,10 +132506,6 @@
           "price": 33500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 37000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 37000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -137004,10 +136996,6 @@
         "shinsoku": {
           "price": 10800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank_store": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/kaitori_list"
         },
         "club": {
           "price": 11000,
@@ -148116,7 +148104,7 @@
       },
       "prices": {
         "shinsoku": {
-          "price": 135000,
+          "price": 133000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         }
       }
