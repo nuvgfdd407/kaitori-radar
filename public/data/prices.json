@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T17:43:24+09:00",
+  "updated_at": "2026-11-28T17:58:30+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:58:30+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:58:30+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:58:30+09:00"
     },
     {
       "id": "guild",
@@ -2308,7 +2311,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 28500,
+          "price": 28600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z342MYSHVH"
         },
         "mirai": {
@@ -2602,7 +2605,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 29600,
+          "price": 29700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3GOHJETGD"
         },
         "mirai": {
@@ -13140,7 +13143,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 8300,
+          "price": 8200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JYKKHNXT"
         },
         "mirai": {
@@ -14292,7 +14295,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 10500,
+          "price": 10000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3GNQXEWQG"
         },
         "tojo": {
@@ -14634,7 +14637,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 8800,
+          "price": 8500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3LQUTULBR"
         },
         "mirai": {
@@ -15057,7 +15060,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 11000,
+          "price": 11500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WT9G0KFH"
         },
         "mirai": {
@@ -58935,7 +58938,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7478"
         },
         "morimori": {
-          "price": 242000,
+          "price": 237000,
           "url": "https://www.morimori-kaitori.jp/category/0202002/product/344722"
         },
         "sakumoba": {
@@ -73864,7 +73867,7 @@
           "url": "https://www.mobile-ichiban.com/Prod/2/02/01"
         },
         "ichome": {
-          "price": 32500,
+          "price": 31500,
           "url": "https://www.1-chome.com/wineDetail/7470/7500"
         },
         "toban": {
@@ -73876,7 +73879,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6201"
         },
         "morimori": {
-          "price": 32400,
+          "price": 32300,
           "url": "https://www.morimori-kaitori.jp/category/0602001/product/299660"
         },
         "keitaigod": {
@@ -108160,7 +108163,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 10100,
+          "price": 9600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3UHIHGDIW",
           "note": "正規代理店の購入証明が必要"
         },
@@ -108246,7 +108249,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 14800,
+          "price": 14100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z31HIWCGUN",
           "note": "正規代理店の購入証明が必要"
         },
@@ -118831,10 +118834,6 @@
         "shinsoku": {
           "price": 1500000,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 1700000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 1750000,
@@ -129475,6 +129474,10 @@
           "price": 34000,
           "url": "https://kaitori.toreca-lounge.com/product/3u6hD2L9SQCTbshklYk9MY"
         },
+        "torecabank": {
+          "price": 37000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 37000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -132493,10 +132496,6 @@
         "shinsoku": {
           "price": 33500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 37000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 37000,
@@ -175190,7 +175189,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 4500,
+          "price": 4400,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3TKWANSGR"
         },
         "mobax": {
@@ -175302,7 +175301,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 5000,
+          "price": 5200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z340THCYMY"
         },
         "mirai": {
@@ -175616,7 +175615,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 4000,
+          "price": 4200,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3IVQJRGDR"
         },
         "mirai": {
@@ -175827,7 +175826,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 6600,
+          "price": 6800,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3XKFKCNDY"
         },
         "mirai": {
