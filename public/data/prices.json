@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T19:28:33+09:00",
+  "updated_at": "2026-11-28T19:43:26+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,7 +34,8 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T19:43:26+09:00"
     },
     {
       "id": "rudeya",
@@ -76,7 +77,8 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T19:43:26+09:00"
     },
     {
       "id": "quick",
@@ -153,7 +155,8 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T19:43:26+09:00"
     },
     {
       "id": "guild",
@@ -139395,6 +139398,10 @@
           "price": 8700,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
+        "torecabank": {
+          "price": 9200,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -151506,10 +151513,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank": {
-          "price": 9200,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -151554,10 +151557,6 @@
         "source": "買取ホムラ"
       },
       "prices": {
-        "torecabank": {
-          "price": 9200,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -156907,12 +156906,7 @@
         "origin": "https://store.torecabank.com/uploads/product_master/pm_5798_69f300c513cbd.png",
         "source": "トレカバンク"
       },
-      "prices": {
-        "torecabank_store": {
-          "price": 87000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        }
-      }
+      "prices": {}
     },
     {
       "jan": "psa-b89a72a108",
