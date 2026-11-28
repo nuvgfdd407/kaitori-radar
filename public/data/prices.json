@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T18:13:36+09:00",
+  "updated_at": "2026-11-28T18:28:34+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-28T17:58:30+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -77,8 +76,7 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T17:58:30+09:00"
+      "ok": true
     },
     {
       "id": "quick",
@@ -155,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T17:58:30+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -338,7 +335,7 @@
       },
       "prices": {
         "homura": {
-          "price": 54600,
+          "price": 54200,
           "url": "https://kaitori-homura.com/products/5148"
         },
         "shouten": {
@@ -5085,7 +5082,7 @@
           "note": "正規販売店の購入証明書が必要"
         },
         "kaden": {
-          "price": 35700,
+          "price": 37400,
           "url": "https://www.kaden-ichiba.com/item/detail/Z35MMPAVBL"
         },
         "mirai": {
@@ -9614,7 +9611,7 @@
           "url": "https://kaitori-rudeya.com/product/item/3228"
         },
         "morimori": {
-          "price": 9600,
+          "price": 9400,
           "url": "https://www.morimori-kaitori.jp/category/0505003/product/40490"
         },
         "kaumobile": {
@@ -10704,7 +10701,7 @@
           "url": "https://www.1-chome.com/wineDetail/7448/7478"
         },
         "morimori": {
-          "price": 30600,
+          "price": 30500,
           "url": "https://www.morimori-kaitori.jp/category/0503006/product/301321"
         },
         "kaden": {
@@ -10729,7 +10726,7 @@
           "url": "https://www.1-chome.com/wineDetail/7449/7479"
         },
         "morimori": {
-          "price": 45100,
+          "price": 45000,
           "url": "https://www.morimori-kaitori.jp/category/0503006/product/301322"
         },
         "kaden": {
@@ -11107,7 +11104,7 @@
           "url": "https://www.1-chome.com/wineDetail/7536/7566"
         },
         "morimori": {
-          "price": 48100,
+          "price": 47000,
           "url": "https://www.morimori-kaitori.jp/category/0503006/product/301328"
         },
         "aboutec": {
@@ -14844,7 +14841,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7547"
         },
         "panda": {
-          "price": 14840,
+          "price": 14860,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "tojo": {
@@ -14891,7 +14888,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7548"
         },
         "panda": {
-          "price": 14840,
+          "price": 14860,
           "url": "https://panda-kaitori.co.jp/?cpro=game"
         },
         "tojo": {
@@ -24726,7 +24723,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6281"
         },
         "morimori": {
-          "price": 133000,
+          "price": 132000,
           "url": "https://www.morimori-kaitori.jp/category/0301064/product/299613"
         },
         "keitaigod": {
@@ -44727,7 +44724,7 @@
           "url": "https://kaitori-rudeya.com/product/item/5661"
         },
         "morimori": {
-          "price": 78700,
+          "price": 77000,
           "url": "https://www.morimori-kaitori.jp/category/0401002/product/288613"
         },
         "keitaigod": {
@@ -70952,8 +70949,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6235"
         },
         "morimori": {
-          "price": 45500,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303769"
+          "price": 45000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303773"
         },
         "keitaigod": {
           "price": 45000,
@@ -71086,8 +71083,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6227"
         },
         "morimori": {
-          "price": 45500,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303768"
+          "price": 45000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303772"
         },
         "keitaigod": {
           "price": 45000,
@@ -71493,7 +71490,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6209"
         },
         "morimori": {
-          "price": 50500,
+          "price": 50000,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303779"
         },
         "keitaigod": {
@@ -71558,7 +71555,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6237"
         },
         "morimori": {
-          "price": 50500,
+          "price": 50000,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303781"
         },
         "keitaigod": {
@@ -71623,7 +71620,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6232"
         },
         "morimori": {
-          "price": 50500,
+          "price": 50000,
           "url": "https://www.morimori-kaitori.jp/category/0303001/product/303782"
         },
         "keitaigod": {
@@ -72203,8 +72200,8 @@
           "url": "https://kaitori-rudeya.com/product/item/7121"
         },
         "morimori": {
-          "price": 90100,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303754"
+          "price": 90000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303752"
         },
         "keitaigod": {
           "price": 86000,
@@ -72581,8 +72578,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6239"
         },
         "morimori": {
-          "price": 36800,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303737"
+          "price": 35000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/344608"
         },
         "keitaigod": {
           "price": 37000,
@@ -72650,8 +72647,8 @@
           "url": "https://kaitori-rudeya.com/product/item/6245"
         },
         "morimori": {
-          "price": 36800,
-          "url": "https://www.morimori-kaitori.jp/category/0303001/product/303740"
+          "price": 35000,
+          "url": "https://www.morimori-kaitori.jp/category/0303001/product/344605"
         },
         "keitaigod": {
           "price": 37000,
@@ -79610,7 +79607,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6105"
         },
         "morimori": {
-          "price": 160100,
+          "price": 165500,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/299541"
         },
         "keitaigod": {
@@ -80235,7 +80232,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6912"
         },
         "morimori": {
-          "price": 92000,
+          "price": 84000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/331567"
         },
         "keitaigod": {
@@ -80425,7 +80422,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6910"
         },
         "morimori": {
-          "price": 82000,
+          "price": 84000,
           "url": "https://www.morimori-kaitori.jp/category/0304001/product/331576"
         },
         "keitaigod": {
@@ -101288,7 +101285,7 @@
           "url": "https://www.1-chome.com/productDetail/1328/1828"
         },
         "morimori": {
-          "price": 73500,
+          "price": 70000,
           "url": "https://www.morimori-kaitori.jp/category/0304003/product/298726"
         },
         "keitaigod": {
@@ -108843,7 +108840,7 @@
           "note": "予約が必要"
         },
         "kaden": {
-          "price": 20100,
+          "price": 19100,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3WPSWXVKU",
           "note": "正規代理店の購入証明が必要"
         },
@@ -129478,10 +129475,6 @@
           "price": 34000,
           "url": "https://kaitori.toreca-lounge.com/product/3u6hD2L9SQCTbshklYk9MY"
         },
-        "torecabank": {
-          "price": 37000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 37000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -132500,6 +132493,10 @@
         "shinsoku": {
           "price": 33500,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
+        },
+        "torecabank": {
+          "price": 37000,
+          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 37000,
@@ -136708,10 +136705,6 @@
           "price": 11400,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
-        "torecabank": {
-          "price": 12000,
-          "url": "https://store.torecabank.com/mail_buy_list"
-        },
         "torecabank_store": {
           "price": 12000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -138736,7 +138729,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 8500,
+          "price": 8400,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=M2a+223%2F193&grade=psa10",
           "mode": "郵送"
         },
@@ -138780,7 +138773,7 @@
           "mode": "郵送"
         },
         "macho": {
-          "price": 9100,
+          "price": 9000,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=M-P+020&grade=psa10",
           "mode": "郵送"
         },
@@ -142007,7 +142000,7 @@
       },
       "prices": {
         "macho": {
-          "price": 5000,
+          "price": 4900,
           "url": "https://kaitori.alc-japan.co.jp/buyback-prices?game=pokemon&type=single&code=M2a+236%2F193&grade=psa10",
           "mode": "郵送"
         },
@@ -173482,7 +173475,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4223"
         },
         "morimori": {
-          "price": 4600,
+          "price": 4500,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/302"
         },
         "panda": {
@@ -174393,7 +174386,7 @@
           "url": "https://kaitori-rudeya.com/product/item/1600"
         },
         "morimori": {
-          "price": 4400,
+          "price": 4300,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/142004"
         },
         "panda": {
@@ -175495,7 +175488,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4713"
         },
         "morimori": {
-          "price": 4500,
+          "price": 4400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/218150"
         },
         "panda": {
@@ -175673,7 +175666,7 @@
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "kaden": {
-          "price": 3500,
+          "price": 3600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z36XD878SQ"
         },
         "mirai": {
@@ -175718,7 +175711,7 @@
           "url": "https://kaitori-rudeya.com/product/item/4605"
         },
         "morimori": {
-          "price": 3400,
+          "price": 3300,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/203738"
         },
         "panda": {
@@ -175876,7 +175869,7 @@
           "url": "https://kaitori-rudeya.com/product/item/6729"
         },
         "morimori": {
-          "price": 5700,
+          "price": 5600,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/329174"
         },
         "kaumobile": {
@@ -176804,7 +176797,7 @@
           "url": "https://kaumobile.jp/category/game-soft/"
         },
         "kaden": {
-          "price": 3000,
+          "price": 2900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z35QJFCBB3"
         },
         "mobax": {
@@ -176939,7 +176932,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7027"
         },
         "morimori": {
-          "price": 6700,
+          "price": 6600,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/343470"
         }
       }
@@ -177261,7 +177254,7 @@
           "url": "https://kaitori-rudeya.com/product/item/3827"
         },
         "morimori": {
-          "price": 3550,
+          "price": 3400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/187421"
         },
         "panda": {
@@ -177654,7 +177647,7 @@
           "url": "https://www.1-chome.com/wineDetail/10862/10898"
         },
         "morimori": {
-          "price": 3500,
+          "price": 3400,
           "url": "https://www.morimori-kaitori.jp/category/0104002/product/343510"
         },
         "pocket": {
