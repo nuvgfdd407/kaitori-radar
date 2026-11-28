@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T19:13:25+09:00",
+  "updated_at": "2026-11-28T19:28:33+09:00",
   "shops": [
     {
       "id": "homura",
@@ -34,8 +34,7 @@
       "name": "買取当番",
       "short": "当番",
       "url": "https://tobansyoji.co.jp/",
-      "ok": false,
-      "failing_since": "2026-11-28T19:13:25+09:00"
+      "ok": true
     },
     {
       "id": "rudeya",
@@ -77,8 +76,7 @@
       "name": "携帯楽園",
       "short": "楽園",
       "url": "https://www.keitairakuen.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T19:13:25+09:00"
+      "ok": true
     },
     {
       "id": "quick",
@@ -155,8 +153,7 @@
       "name": "ハチ買取",
       "short": "ハチ",
       "url": "https://hachiden.com/",
-      "ok": false,
-      "failing_since": "2026-11-28T19:13:25+09:00"
+      "ok": true
     },
     {
       "id": "guild",
@@ -24783,6 +24780,11 @@
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
+        "jcka": {
+          "price": 134500,
+          "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90128gb%e3%80%91-2/",
+          "note": "Apple Storeで購入した証明が必要"
+        },
         "onmyplan": {
           "price": 126000,
           "url": "https://onmyplan.jp/price/?cid=1&pid=p182"
@@ -24889,6 +24891,11 @@
           "price": 125000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
+        },
+        "jcka": {
+          "price": 135500,
+          "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90128gb%e3%80%91-2/",
+          "note": "Apple Storeで購入した証明が必要"
         },
         "onmyplan": {
           "price": 126000,
@@ -24997,6 +25004,11 @@
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
         },
+        "jcka": {
+          "price": 135500,
+          "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90128gb%e3%80%91-2/",
+          "note": "Apple Storeで購入した証明が必要"
+        },
         "onmyplan": {
           "price": 126000,
           "url": "https://onmyplan.jp/price/?cid=1&pid=p182"
@@ -25103,6 +25115,11 @@
           "price": 125000,
           "url": "https://www.kaitoristar.com/mobile?cate=1",
           "note": "Apple Store版の価格"
+        },
+        "jcka": {
+          "price": 135500,
+          "url": "https://www.jcka-mobile.co.jp/kaitori_price/iphone17%e3%80%90128gb%e3%80%91-2/",
+          "note": "Apple Storeで購入した証明が必要"
         },
         "onmyplan": {
           "price": 126000,
@@ -48444,6 +48461,10 @@
         "pocket": {
           "price": 63000,
           "url": "https://pocketmall.jp/huaz2/"
+        },
+        "kaden": {
+          "price": 64500,
+          "url": "https://www.kaden-ichiba.com/item/detail/Z3PLIKOCKU"
         },
         "star": {
           "price": 63000,
@@ -131484,7 +131505,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/39HjnBmwuPz3yA7UjNxXBr"
         },
         "shinsoku": {
-          "price": 38400,
+          "price": 35800,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -160803,6 +160824,10 @@
         "source": "トレカバンク"
       },
       "prices": {
+        "torecabank": {
+          "price": 9200,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 9200,
           "url": "https://store.torecabank.com/kaitori_list"
