@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T17:13:34+09:00",
+  "updated_at": "2026-11-28T17:28:31+09:00",
   "shops": [
     {
       "id": "homura",
@@ -55,7 +55,8 @@
       "name": "ケータイゴッド",
       "short": "ゴッド",
       "url": "https://keitai-god.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:28:31+09:00"
     },
     {
       "id": "guest",
@@ -167,7 +168,8 @@
       "name": "モバックス名古屋大須店",
       "short": "モバックス",
       "url": "https://mobax-ohsu.com/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:28:31+09:00"
     },
     {
       "id": "somurie",
@@ -181,7 +183,8 @@
       "name": "リンクサス買取",
       "short": "リンクサス",
       "url": "https://linx-as.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:28:31+09:00"
     },
     {
       "id": "daiwan",
@@ -202,7 +205,8 @@
       "name": "ジェーシカモバイル",
       "short": "JCKA",
       "url": "https://www.jcka-mobile.co.jp/",
-      "ok": true
+      "ok": false,
+      "failing_since": "2026-11-28T17:28:31+09:00"
     },
     {
       "id": "base",
@@ -343,7 +347,7 @@
           "url": "https://www.kaitorishouten-co.jp/products/detail/23170"
         },
         "kaikyo": {
-          "price": 54400,
+          "price": 54200,
           "url": "https://www.mobile-ichiban.com/Prod/2/01/11"
         },
         "ichome": {
@@ -2952,7 +2956,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 29500,
+          "price": 30000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FWY87QZ6"
         },
         "mirai": {
@@ -3023,7 +3027,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 29500,
+          "price": 30000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3GUA59IZ0"
         },
         "mirai": {
@@ -5453,7 +5457,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 88700,
+          "price": 89000,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ZB4TRPCW"
         },
         "mirai": {
@@ -11696,7 +11700,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 50100,
+          "price": 50400,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3TAGDGEDI"
         },
         "mirai": {
@@ -14943,7 +14947,7 @@
           "url": "https://kaumobile.jp/category/game/"
         },
         "kaden": {
-          "price": 10000,
+          "price": 10500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3E5BZBDL7"
         },
         "mirai": {
@@ -38718,7 +38722,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 79800,
+          "price": 79700,
           "url": "https://www.morimori-kaitori.jp/category/0401001/product/154030"
         },
         "guest": {
@@ -67687,7 +67691,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 138700,
+          "price": 138600,
           "url": "https://www.morimori-kaitori.jp/category/0202001/product/190802"
         },
         "quick": {
@@ -67903,7 +67907,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 118800,
+          "price": 118700,
           "url": "https://www.morimori-kaitori.jp/category/0202001/product/190810"
         },
         "quick": {
@@ -67951,7 +67955,7 @@
       },
       "prices": {
         "morimori": {
-          "price": 103700,
+          "price": 103600,
           "url": "https://www.morimori-kaitori.jp/category/0202001/product/190808"
         },
         "quick": {
@@ -117598,7 +117602,7 @@
           "url": "https://kaitori-rudeya.com/product/item/7187"
         },
         "morimori": {
-          "price": 6050,
+          "price": 6000,
           "url": "https://www.morimori-kaitori.jp/category/2404/product/344255"
         },
         "keitaigod": {
@@ -129471,6 +129475,10 @@
           "price": 34000,
           "url": "https://kaitori.toreca-lounge.com/product/3u6hD2L9SQCTbshklYk9MY"
         },
+        "torecabank": {
+          "price": 37000,
+          "url": "https://store.torecabank.com/mail_buy_list"
+        },
         "torecabank_store": {
           "price": 37000,
           "url": "https://store.torecabank.com/kaitori_list"
@@ -138551,7 +138559,7 @@
           "url": "https://kaitori.toreca-lounge.com/product/2OjJfu5SYxf9USUamLyxeU"
         },
         "shinsoku": {
-          "price": 9400,
+          "price": 8900,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
         },
         "club": {
@@ -146507,10 +146515,6 @@
         "shinsoku": {
           "price": 34200,
           "url": "https://shinsoku-tcg.com/yuso-kaitori"
-        },
-        "torecabank": {
-          "price": 37000,
-          "url": "https://store.torecabank.com/mail_buy_list"
         },
         "torecabank_store": {
           "price": 45000,
@@ -172560,7 +172564,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 7000,
+          "price": 7300,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3CXZZ3JGR"
         },
         "mirai": {
@@ -172867,7 +172871,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 6600,
+          "price": 6900,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3ESDEF9HE"
         },
         "mirai": {
@@ -172941,7 +172945,7 @@
           "url": "https://pocketmall.jp/huaz4/"
         },
         "kaden": {
-          "price": 6400,
+          "price": 6500,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3FSMVBKUG"
         },
         "mirai": {
@@ -179927,7 +179931,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1730509261-595140"
         },
         "kaden": {
-          "price": 89100,
+          "price": 88600,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3K8JBZWJG"
         }
       }
