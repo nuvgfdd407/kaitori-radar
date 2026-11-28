@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T13:13:32+09:00",
+  "updated_at": "2026-11-28T13:28:28+09:00",
   "shops": [
     {
       "id": "homura",
@@ -338,7 +338,7 @@
       },
       "prices": {
         "homura": {
-          "price": 54600,
+          "price": 54000,
           "url": "https://kaitori-homura.com/products/5148"
         },
         "shouten": {
@@ -414,7 +414,7 @@
           "url": "https://kaitoritojo.jp/products/cmpv7yt3i00ts01r410jg3yvk"
         },
         "guild": {
-          "price": 54600,
+          "price": 54000,
           "url": "https://kaitoriguild.co.jp/catalog?q=4902370553024"
         },
         "mobax": {
@@ -69688,7 +69688,7 @@
           "url": "https://www.aboutec.jp/purchase/?pid=1789700081-668835"
         },
         "kaden": {
-          "price": 60200,
+          "price": 58700,
           "url": "https://www.kaden-ichiba.com/item/detail/Z3JUBQADI4"
         },
         "somurie": {
@@ -73716,7 +73716,7 @@
       },
       "prices": {
         "homura": {
-          "price": 32500,
+          "price": 33000,
           "url": "https://kaitori-homura.com/products/4973"
         },
         "shouten": {
@@ -120697,10 +120697,6 @@
           "price": 480000,
           "url": "https://store.torecabank.com/mail_buy_list"
         },
-        "torecabank_store": {
-          "price": 480000,
-          "url": "https://store.torecabank.com/kaitori_list"
-        },
         "club": {
           "price": 400000,
           "url": "https://torecaclub.com/pokemon/cards/psa10/038-SM-P/"
@@ -154923,7 +154919,12 @@
         "origin": "https://store.torecabank.com/uploads/product_master/1791171771_fe5a27ba82c917d70df4.jpg",
         "source": "トレカバンク"
       },
-      "prices": {}
+      "prices": {
+        "torecabank_store": {
+          "price": 75000,
+          "url": "https://store.torecabank.com/kaitori_list"
+        }
+      }
     },
     {
       "jan": "psa-9fd040e67c",
